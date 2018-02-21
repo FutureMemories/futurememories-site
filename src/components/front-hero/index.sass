@@ -1,0 +1,68 @@
+.front-hero
+  height: 100%
+
+  > .inner
+    margin: 0 auto
+    max-width: 120rem
+    display: flex
+    flex-direction: column
+    padding: 5rem 3rem
+    height: 100%
+
+    > .header
+      display: flex
+      justify-content: space-between
+
+    > .content
+      flex: 1
+      display: flex
+      align-items: center
+
+      > .title
+        color: white
+        font-size: 4rem
+        line-height: 6rem
+        max-width: 82rem
+
+        > em
+          color: $color-red
+          font-style: normal
+          position: relative
+
+          &:before
+            content: ''
+            height: .2rem
+            width: 100rem
+            background: currentColor
+            right: 100%
+            top: 50%
+            margin-right: 3rem
+            position: absolute
+
+    > .social
+      font-size: 0
+
+      > a
+        display: inline-block
+        margin-right: 5rem
+
+  @media screen and (max-width: 1200px)
+    > .inner > .content > .title > em:before
+      margin-right: 1.1rem
+
+  @media screen and (max-width: 375px)
+    height: auto
+
+    > .inner
+      padding: 3rem
+
+      > .content
+        margin-top: 10rem
+        padding: 0 2rem
+
+        > .title
+          font-size: 3rem
+          line-height: 4rem
+
+      > .social
+        display: none

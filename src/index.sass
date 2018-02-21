@@ -1,0 +1,27 @@
+@import './colors'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html, body
+  height: 100%
+
+html
+  font-size: 62.5%
+  background: $color-dark-blue
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  background: $color-dark-blue url('./images/hills@0,55x.jpg') top no-repeat
+  background-size: cover
+
+  @media screen and (min-width: #{375px + 1px})
+    background-image: url('./images/hills.jpg')
+
+@import './fonts'
+@import './components/front-hero/index.sass'
+@import './components/nav-menu/index.sass'

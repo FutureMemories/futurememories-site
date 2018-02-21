@@ -1,0 +1,16 @@
+{
+  "name": "FutureMemoriesWeb",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.pug",
+    "build": "parcel build src/index.pug --public-url /"
+  },
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.6.2",
+    "parcel-plugin-pug": "^0.2.5"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
