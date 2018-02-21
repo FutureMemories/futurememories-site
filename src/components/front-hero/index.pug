@@ -1,16 +1,12 @@
+include ../nav-menu/index.pug
+
 mixin front-hero
   .front-hero
     .inner
       .header
         img(src='./images/logo-circle.svg', alt='Future Memories Logo')
 
-        .nav-menu
-          button.toggler
-
-          ul.menu
-            li: a(href='#cases') Our cases
-            li: a(href='#team') The team
-            li: a(href='#contact') Contact
+        +nav-menu
 
       .content
         h1.title
