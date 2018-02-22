@@ -59,6 +59,32 @@
       > a
         text-decoration: none
         color: white
+        transition: color .2s ease
+        position: relative
+
+        &:before
+          content: ''
+          position: absolute
+          top: 50%
+          right: 100%
+          width: 100rem
+          height: .2rem
+          background: $color-red
+          margin-top: -.1rem
+          margin-right: 2rem
+          transition: opacity .2s ease, transform .2s ease, visibility .2s ease
+          visibility: hidden
+          opacity: 0
+          transform: translateX(-3rem)
+
+        .no-touchevents &:hover
+          opacity: 1
+          color: $color-red
+
+          &:before
+            visibility: visible
+            opacity: 1
+            transform: none
 
   &.-open
     > .menu
@@ -74,11 +100,6 @@
 
     > .toggler:after
       transform: translateY(-.1rem) rotate(-45deg)
-
-  // @supports (backdrop-filter: blur(4px))
-  //   > .menu
-  //     backdrop-filter: blur(4px)
-  //     background: rgba(#111722, 0.9)
 
 body.-locked
   overflow: hidden
