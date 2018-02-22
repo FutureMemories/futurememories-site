@@ -3,7 +3,7 @@
 
   > .inner
     margin: 0 auto
-    max-width: 120rem
+    max-width: $max-width
     display: flex
     flex-direction: column
     padding: 5rem 3rem
@@ -51,7 +51,7 @@
     > .inner > .content > .title > em:before
       margin-right: 1.1rem
 
-  @media screen and (max-width: 400px)
+  @media screen and (max-width: $mobile)
     height: auto
 
     > .inner
