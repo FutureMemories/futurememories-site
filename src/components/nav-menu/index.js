@@ -1,6 +1,7 @@
 const navMenu = document.querySelector('.nav-menu')
 const toggler = navMenu.querySelector('.toggler')
 
-toggler.addEventListener('click', () => (
+toggler.addEventListener('click', () => {
   navMenu.classList.toggle('-open')
-))
+  document.body.classList.toggle('-locked')
+})
