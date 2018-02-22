@@ -6,10 +6,10 @@ const mouseMove = card => ev => {
   const rect = card.getBoundingClientRect()
   const mouseX = ev.clientX - rect.left
   const mouseY = ev.clientY - rect.top
-  const x = (0.5 - (mouseX / rect.width)) * 5
-  const y = (0.5 - (mouseY / rect.height)) * -5
+  const x = (0.5 - (mouseX / rect.width)) * 1
+  const y = (0.5 - (mouseY / rect.height)) * -1
 
-  card.style.transform = `perspective(20rem) translateZ(1rem) rotateX(${y}deg) rotateY(${x}deg)`
+  card.style.transform = `perspective(20rem) translateZ(0.1rem) rotateX(${y}deg) rotateY(${x}deg)`
 }
 
 if (!Modernizr.touchevents) {
