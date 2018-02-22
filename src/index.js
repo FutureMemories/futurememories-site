@@ -1,5 +1,6 @@
 import 'browsernizr/test/touchevents'
 import 'browsernizr'
+import './components/astronaut-card'
 import './components/nav-menu'
 import './components/team-block'
 

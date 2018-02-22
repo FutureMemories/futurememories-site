@@ -1,3 +1,7 @@
+@keyframes from-transform
+  from
+    transform: none
+
 .astronaut-card
   color: white
   position: relative
@@ -5,17 +9,18 @@
   display: flex
   flex-direction: column
   justify-content: flex-end
-  overflow: hidden
 
   &:before
     content: ''
-    background: rgba(#0b0c0e, 0.7)
+    background: #0b0c0e
     z-index: 2
     position: absolute
     top: 0
     left: 0
     right: 0
     bottom: 0
+    opacity: .7
+    transition: opacity .2s ease
 
   > img
     position: absolute
@@ -35,6 +40,7 @@
   > .name, > .info
     position: relative
     z-index: 3
+    transition: transform .2s ease
 
   > .info
     padding-top: 1.5rem
@@ -52,12 +58,23 @@
       margin-bottom: 0
 
   .no-touchevents &:hover
+    z-index: 10
+    animation: from-transform .5s ease
+    box-shadow: 0 0.5rem 2rem rgba(black, 0.2)
+
+    &:before
+      opacity: .6
+
     > .info
       opacity: 1
 
-  .no-touchevents &:not(:hover) > .info
-    height: 0 !important
-    padding-top: 0 !important
+  .no-touchevents &:not(:hover)
+    transform: none !important
+    transition: transform .5s ease
+
+    > .info
+      height: 0 !important
+      padding-top: 0 !important
 
   .touchevents & > .info
     display: none
