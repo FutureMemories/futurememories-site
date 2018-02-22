@@ -26,13 +26,12 @@ body
 a
   transition: opacity .2s ease
 
-  &:hover
+  .no-touchevents &:hover
     opacity: 0.7
 
-    @media (-moz-touch-enabled:1), (pointer:coarse)
-      opacity: 1
-
 @import './fonts'
-@import './components/front-hero/index.sass'
-@import './components/nav-menu/index.sass'
-@import './components/footer-block/index.sass'
+@import './components/astronaut-card/astronaut-card.sass'
+@import './components/footer-block/footer-block.sass'
+@import './components/front-hero/front-hero.sass'
+@import './components/nav-menu/nav-menu.sass'
+@import './components/team-block/team-block.sass'
