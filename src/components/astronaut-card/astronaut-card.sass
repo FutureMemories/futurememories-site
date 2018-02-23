@@ -32,6 +32,9 @@
     left: 0
     width: 100%
     height: 100%
+    opacity: 0
+    pointer-events: none
+    transition: opacity .2s ease
 
   > img
     position: absolute
@@ -73,7 +76,7 @@
     animation: from-transform .5s ease
     box-shadow: 0 0.5rem 10rem rgba(black, 0.2)
 
-    > .info
+    > .info, > .shine
       opacity: 1
 
   .no-touchevents &:not(:hover)
