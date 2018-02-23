@@ -12,3 +12,6 @@ const handleHeights = () => {
 
 handleHeights()
 window.addEventListener('resize', debounce(handleHeights, 200))
+
+// Wait for font
+setTimeout(handleHeights, 3000)

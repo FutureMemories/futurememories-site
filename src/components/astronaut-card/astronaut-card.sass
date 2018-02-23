@@ -54,10 +54,9 @@
   > .name, > .info
     position: relative
     z-index: 3
-    transition: transform .2s ease
+    transition: transform .2s ease, margin .2s ease
 
   > .info
-    padding-top: 1.5rem
     height: 0
     opacity: 0
     transition: height .3s ease, opacity .3s ease, padding .3s ease
@@ -76,6 +75,9 @@
     animation: from-transform .5s ease
     box-shadow: 0 0.5rem 10rem rgba(black, 0.2)
 
+    > .name
+      margin-bottom: 1.5rem
+
     > .info, > .shine
       opacity: 1
 
@@ -87,7 +89,6 @@
   .touchevents &:not(:focus)
     > .info
       height: 0 !important
-      padding-top: 0 !important
 
   &:focus
     outline: none
