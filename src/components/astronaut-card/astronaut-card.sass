@@ -83,9 +83,19 @@
     transform: none !important
     transition: transform .5s ease
 
+  .no-touchevents &:not(:hover):not(:focus)
     > .info
       height: 0 !important
       padding-top: 0 !important
+
+  &:focus
+    outline: none
+
+    &:before
+      opacity: 0.6
+
+    > .info
+      opacity: 1
 
   .touchevents & > .info
     display: none
