@@ -9,6 +9,8 @@ toggler.addEventListener('click', () => {
   document.body.classList.toggle('-locked')
 })
 
+toggler.addEventListener('mousedown', ev => ev.preventDefault())
+
 for (let i = 0; i < links.length; i++) {
   const link = links[i]
   const id = link.href.substr(link.href.indexOf('#') + 1)
