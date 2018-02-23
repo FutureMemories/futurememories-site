@@ -62,7 +62,7 @@
 
   > .info > p
     font-size: 1.6rem
-    line-height: 2.4rem
+    line-height: 1.5
     margin-bottom: 1em
 
     &:last-child
@@ -73,9 +73,6 @@
     animation: from-transform .5s ease
     box-shadow: 0 0.5rem 10rem rgba(black, 0.2)
 
-    // &:before
-    //   opacity: .6
-
     > .info
       opacity: 1
 
@@ -83,7 +80,8 @@
     transform: none !important
     transition: transform .5s ease
 
-  .no-touchevents &:not(:hover):not(:focus)
+  .no-touchevents &:not(:hover):not(:focus),
+  .touchevents &:not(:focus)
     > .info
       height: 0 !important
       padding-top: 0 !important
@@ -97,12 +95,12 @@
     > .info
       opacity: 1
 
-  .touchevents & > .info
-    display: none
-
   @media screen and (max-width: $small-grid)
     padding: 1.5rem
 
     > .name
       font-size: 1.6rem
       line-height: 2rem
+
+    > .info > p
+      font-size: 1.4rem
