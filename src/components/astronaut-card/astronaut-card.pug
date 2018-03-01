@@ -1,12 +1,13 @@
 mixin astronaut-card(name, desc, phone)
   article.astronaut-card(tabindex='1')
-    .shine
+    .card
+      .shine
 
-    //- Send image as block because of bug: https://github.com/Ty3uK/parcel-plugin-pug/issues/1
-    block
+      //- Send image as block because of bug: https://github.com/Ty3uK/parcel-plugin-pug/issues/1
+      block
 
-    h3.name= name
+      h3.name= name
 
-    .info
-      p= desc
-      p= phone
+      .info
+        p= desc
+        p= phone

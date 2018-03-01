@@ -16,8 +16,9 @@ const mouseMove = (card, shine) => ev => {
 
 if (!Modernizr.touchevents) {
   for (let i = 0; i < cards.length; i++) {
-    const card = cards[i]
+    const wrapper = cards[i]
+    const card = wrapper.querySelector('.card')
     const shine = card.querySelector('.shine')
-    card.addEventListener('mousemove', mouseMove(card, shine))
+    wrapper.addEventListener('mousemove', mouseMove(card, shine))
   }
 }
