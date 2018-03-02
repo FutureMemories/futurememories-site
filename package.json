@@ -1,6 +1,7 @@
 {
   "name": "FutureMemoriesWeb",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "parcel src/index.pug",
     "build": "rm -rf dist && parcel build src/index.pug --public-url / && inline-source --root ./dist dist/index.html dist/index.html && cp -r static/* dist/."
