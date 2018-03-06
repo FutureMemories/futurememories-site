@@ -13,9 +13,9 @@ const cacheName = 'files'
 
 addEventListener('fetch', fetchEvent => {
   const request = fetchEvent.request
-  if (request.method !== 'GET') {
-    return
-  }
+
+  if (request.method !== 'GET') return
+
   fetchEvent.respondWith(async function () {
     const responseFromFetch = fetch(request)
 
