@@ -13,6 +13,7 @@
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.6.2",
     "parcel-plugin-pug": "^0.2.5",
+    "parcel-plugin-sw-precache": "^0.2.0",
     "smoothscroll": "^0.4.0",
     "to-ico": "^1.1.5"
   },
