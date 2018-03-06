@@ -5,3 +5,7 @@ import './components/nav-menu'
 import './components/team-block'
 
 console.log('%cWelcome to Future Memories! 🚀', 'background:#000; color:#fff; padding:0.5em 1em; font-size:1em')
+
+if (navigator.serviceWorker && !navigator.serviceWorker.controller) {
+  navigator.serviceWorker.register('./serviceworker.js')
+}
