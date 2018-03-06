@@ -16,3 +16,7 @@ body
   +footer-block
 
   script(src='./index.js' async)
+  script.
+    if (navigator.serviceWorker && !navigator.serviceWorker.controller) {
+      navigator.serviceWorker.register('/serviceworker.js')
+    }
