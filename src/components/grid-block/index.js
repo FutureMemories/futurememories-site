@@ -1,7 +1,6 @@
 import debounce from 'debounce'
 
-const block = document.querySelector('.team-block')
-const infoBlocks = block.querySelectorAll('.item .info')
+const infoBlocks = document.querySelectorAll('.grid-block .item .info')
 const handleHeights = () => {
   for (let i = 0; i < infoBlocks.length; i++) {
     let info = infoBlocks[i]

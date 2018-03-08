@@ -1,0 +1,46 @@
+.case-block
+  > .grid > .item
+    width: (100% / 2)
+
+  @supports(display: grid)
+    > .grid
+      grid-template-columns: 10fr 7fr
+      grid-auto-rows: 1rem
+      grid-gap: 2rem
+
+      > .item
+        width: auto
+        grid-row: span 16
+
+      @media screen and (min-width: 1041px)
+        > .item
+          &:nth-child(1)
+            grid-row: 3 / span 16
+
+          &:nth-child(2)
+            grid-row: span 20
+
+          &:nth-child(3)
+            grid-row: span 13
+
+          &:nth-child(4)
+            grid-row: span 10
+
+      @media screen and (max-width: $medium-grid)
+        grid-template-columns: repeat(2, 1fr)
+
+        > .item
+          grid-row: span 14
+
+          &:nth-child(2)
+            grid-row: span 17
+
+          &:nth-child(4)
+            grid-row: span 10
+
+      @media screen and (max-width: $small-grid)
+        grid-auto-rows: 0.5rem
+        grid-gap: 1.5rem
+
+        > .item
+          height: auto

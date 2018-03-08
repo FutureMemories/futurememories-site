@@ -1,0 +1,41 @@
+- var caseUrl = '/cases'
+
+mixin case-block
+  section#cases.case-block.grid-block
+    h2.heading Selected Projects
+    p.subheading We're only as good as our latest work
+
+    .grid
+      .item
+        +case-card(
+          'Nelly App',
+          'A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.',
+          'Nelly.com',
+          'iOS',
+          [
+            { type: 'ios', url: 'https://itunes.apple.com/se/app/nelly/id1157319834' }
+          ]
+        )
+          img(src='./images/cases/nelly.jpg' alt='Nelly')
+
+      .item
+        +case-card(
+          'Retts Plus',
+          'Lorem ipsum',
+          'Predicare',
+          'UI/UX'
+        )
+          img(src='./images/cases/retts-plus.jpg' alt='Retts Plus')
+
+      .item
+        +case-card(
+          'Driver App',
+          'Lorem ipsum',
+          'Mat.se',
+          'iOS, UX/UI'
+        )
+          img(src='./images/cases/driver-app.jpg' alt='Mat.se')
+
+      a(href=caseUrl).item.-promotion
+        span.text Se all cases & clients
+        .right-arrow

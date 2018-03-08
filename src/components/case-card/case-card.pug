@@ -1,0 +1,31 @@
+mixin case-card(name, desc, client, type, actions)
+  article.grid-card(tabindex='1')
+    .card
+      .shine
+
+      //- Send image as block because of bug: https://github.com/Ty3uK/parcel-plugin-pug/issues/1
+      block
+
+      h3.name.-large= name
+
+      .info
+        p= desc
+
+      .meta
+        .data
+          h4.title Client
+          p.value= client
+
+        .data
+          h4.title Type
+          p.value= type
+
+        if actions && actions.length > 0
+          .action
+            each action in actions
+              if action.type === 'ios'
+                a.link(href=action.url): img(src='./images/ios.svg' width='37' height='37' alt='Download on iOS' title='Download on iOS')
+              else if action.type === 'android'
+                a.link(href=action.url): img(src='./images/android.svg' width='37' height='37' alt='Download on Android' title='Download on Android')
+              else if action.type === 'play'
+                a.link(href=action.url): img(src='./images/play.svg' width='37' height='37' alt='Play' title='Play')

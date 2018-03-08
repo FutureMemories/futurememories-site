@@ -1,0 +1,90 @@
+.grid-block
+  max-width: $max-width
+  padding: 5rem 3rem
+  margin: 0 auto 5rem
+  overflow: hidden
+
+  > .heading
+    font-size: 4rem
+    font-weight: normal
+    text-transform: uppercase
+    color: $color-red
+    margin-bottom: 1rem
+
+  > .subheading
+    font-size: 3rem
+    color: white
+    margin-bottom: 5rem
+    max-width: 40rem
+
+  > .grid
+    display: flex
+    flex-wrap: wrap
+
+    > .item
+      display: block
+      text-decoration: none
+      width: (100% / 3)
+      height: 48rem
+
+      > .right-arrow
+        margin-top: 1.6rem
+
+      > .grid-card
+        width: 100%
+        height: 100%
+
+      .no-touchevents &:hover
+        opacity: 1
+
+      &.-promotion
+        overflow: hidden
+        background: $color-red
+        color: white
+        padding: 3rem
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+
+        > .text
+          font-size: 4rem
+          line-height: 5rem
+          font-weight: bold
+          text-transform: uppercase
+
+      @media screen and (max-width: 1040px)
+        width: 50%
+
+  @media screen and (max-width: $small-grid)
+    padding-left: 0
+    padding-right: 0
+    margin-bottom: 0
+
+    > .heading, > .subheading
+      padding: 0 3rem
+
+    > .heading
+      font-size: 1.8rem
+      margin-bottom: 2rem
+
+    > .subheading
+      display: none
+
+    > .grid
+      > .item
+        height: 22rem
+
+        &.-promotion
+          padding: 1.5rem
+
+          > .text
+            font-size: 1.6rem
+            line-height: 2rem
+
+  @supports(display: grid)
+    > .grid
+      display: grid
+
+      > .item
+        width: auto
+        height: auto

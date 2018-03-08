@@ -1,3 +1,5 @@
+- var INCLUDE_CASES = true
+
 include components/index.pug
 
 doctype html
@@ -12,6 +14,8 @@ head
   link(rel='stylesheet' href='./index.sass' inline)
 body
   +front-hero
+  if INCLUDE_CASES
+    +case-block
   +team-block
   +footer-block
 

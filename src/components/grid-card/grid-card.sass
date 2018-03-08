@@ -2,7 +2,7 @@
   from
     transform: none
 
-.astronaut-card
+.grid-card
   color: white
   position: relative
 
@@ -55,7 +55,11 @@
       font-weight: bold
       text-transform: uppercase
 
-    > .name, > .info
+      &.-large
+        font-size: 6rem
+        line-height: 1
+
+    > .name, > .info, > .meta
       position: relative
       z-index: 3
       transition: transform .2s ease, margin .2s ease
@@ -65,6 +69,7 @@
       opacity: 0
       transition: height .3s ease, opacity .3s ease, padding .3s ease
       overflow: hidden
+      max-width: 49rem
 
     > .info > p
       font-size: 1.6rem
@@ -77,6 +82,44 @@
       &:last-child
         margin-bottom: 0
 
+    > .meta
+      display: flex
+      margin-top: 1.5rem
+      align-items: center
+      flex-wrap: wrap
+
+      > .data
+        font-size: 1.6rem
+        margin-right: 2.5rem
+
+        > .title
+          color: $color-red
+          text-transform: uppercase
+          margin-bottom: 0.5rem
+
+        > .value
+          color: white
+
+      > .action
+        border-left: 1px solid rgba(white, 0.3)
+        padding-left: 2.5rem
+        display: flex
+
+        > .link
+          margin-right: 2rem
+          display: inline-block
+          height: 3.7rem
+
+    @media screen and (max-width: $medium-grid)
+      > .meta
+        > .action
+          width: 100%
+          border-left: 0
+          border-top: 1px solid rgba(white, 0.3)
+          margin-top: 2rem
+          padding-top: 2rem
+          padding-left: 0
+
     @media screen and (max-width: $small-grid)
       padding: 1.5rem
 
@@ -84,8 +127,14 @@
         font-size: 1.6rem
         line-height: 2rem
 
+        &.-large
+          font-size: 2rem
+
       > .info > p
         font-size: 1.4rem
+
+      > .meta
+        display: none
 
   .no-touchevents &:hover
     > .card

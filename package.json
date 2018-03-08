@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "parcel src/index.pug",
+    "start": "rm -rf .cache && parcel src/index.pug",
     "build": "rm -rf dist && parcel build src/index.pug --public-url / && inline-source --root ./dist dist/index.html dist/index.html && cp -r static/* dist/."
   },
   "dependencies": {
@@ -11,9 +11,9 @@
     "debounce": "^1.1.0",
     "inline-source-cli": "^1.2.0",
     "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.6.2",
-    "parcel-plugin-pug": "^0.2.5",
-    "parcel-plugin-sw-precache": "https://github.com/hesselbom/parcel-plugin-sw-precache",
+    "parcel-bundler": "^1.1.0",
+    "parcel-plugin-pug": "hesselbom/parcel-plugin-pug.git#test",
+    "parcel-plugin-sw-precache": "^0.2.1",
     "smoothscroll": "^0.4.0",
     "to-ico": "^1.1.5"
   },

@@ -1,6 +1,6 @@
 import Modernizr from 'browsernizr'
 
-const cards = document.querySelectorAll('.astronaut-card')
+const cards = document.querySelectorAll('.grid-card')
 
 const mouseMove = (card, shine) => ev => {
   const rect = card.getBoundingClientRect()

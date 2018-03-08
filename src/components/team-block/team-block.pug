@@ -1,5 +1,5 @@
 mixin team-block
-  section#team.team-block
+  section#team.team-block.grid-block
     h2.heading The Team
     p.subheading A look under the hood
 
@@ -68,5 +68,6 @@ mixin team-block
         )
           img(src='./images/team/pa.jpg' alt='P-A Gustafsson')
 
-      .item.-promotion
+      a(href='mailto:hello@futurememories.se').item.-promotion
         span.text Come and work with us!
+        .right-arrow
