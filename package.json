@@ -12,7 +12,7 @@
     "inline-source-cli": "^1.2.0",
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.1.0",
-    "parcel-plugin-pug": "hesselbom/parcel-plugin-pug.git#test",
+    "parcel-plugin-pug": "https://github.com/hesselbom/parcel-plugin-pug.git#test",
     "parcel-plugin-sw-precache": "^0.2.1",
     "smoothscroll": "^0.4.0",
     "to-ico": "^1.1.5"
