@@ -1,34 +1,5 @@
 @import './settings'
-
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-
-html, body
-  height: 100%
-
-html
-  font-size: 62.5%
-  font-family: 'Gilroy', sans-serif
-  background: $color-darker-blue
-
-body
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-
-  background: $color-darker-blue url('./images/hills@0,55x.jpg') top no-repeat
-  background-size: cover
-
-  @media screen and (min-width: #{375px + 1px})
-    background-image: url('./images/hills.jpg')
-
-a
-  transition: opacity .2s ease
-
-  .no-touchevents &:hover
-    opacity: 0.7
-
+@import './base'
 @import './fonts'
 @import './components/grid-block/grid-block.sass'
 @import './components/case-block/case-block.sass'

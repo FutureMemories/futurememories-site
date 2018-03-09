@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "rm -rf .cache && parcel src/index.pug",
-    "build": "rm -rf dist && parcel build src/index.pug --public-url / && inline-source --root ./dist dist/index.html dist/index.html && cp -r static/* dist/."
+    "start": "rm -rf .cache && parcel src/pages.pug",
+    "build": "rm -rf .cache && rm -rf dist && parcel build src/pages.pug --public-url / && inline-source --root ./dist dist/index.html dist/index.html && inline-source --root ./dist dist/404.html dist/404.html && cp -r static/* dist/."
   },
   "dependencies": {
-    "browsernizr": "^2.2.0",
-    "debounce": "^1.1.0",
-    "inline-source-cli": "^1.2.0",
-    "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.1.0",
-    "parcel-plugin-pug": "hesselbom/parcel-plugin-pug.git#test",
-    "parcel-plugin-sw-precache": "^0.2.1",
-    "smoothscroll": "^0.4.0",
-    "to-ico": "^1.1.5"
+    "browsernizr": "2.2.0",
+    "debounce": "1.1.0",
+    "inline-source-cli": "1.2.0",
+    "node-sass": "4.7.2",
+    "parcel-bundler": "1.6.2",
+    "parcel-plugin-pug": "https://github.com/hesselbom/parcel-plugin-pug.git#test",
+    "parcel-plugin-sw-precache": "https://github.com/hesselbom/parcel-plugin-sw-precache.git#feature/navigateFallback",
+    "smoothscroll": "0.4.0",
+    "to-ico": "1.1.5"
   },
   "browserslist": [
     "last 2 versions"
