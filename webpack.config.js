@@ -1,6 +1,5 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const HtmlInlineSourceWebpackPlugin = require('html-inline-source-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const prod = process.env.NODE_ENV === 'production'
@@ -61,7 +60,6 @@ module.exports = {
   plugins: [].concat(
     extractHtml,
     extractStyle,
-    prod ? new HtmlInlineSourceWebpackPlugin() : [],
     prod ? new CopyWebpackPlugin(['static']) : []
   )
 }

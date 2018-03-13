@@ -3532,12 +3532,6 @@ html-entities@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
 
-"html-inline-source-webpack-plugin@https://github.com/hesselbom/html-inline-source-webpack-plugin.git":
-  version "1.1.0"
-  resolved "https://github.com/hesselbom/html-inline-source-webpack-plugin.git#06c820fa535854fab86d4b820b3c19ee098866e6"
-  dependencies:
-    inline-source "^5.1.2"
-
 html-loader@^0.5.5:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/html-loader/-/html-loader-0.5.5.tgz#6356dbeb0c49756d8ebd5ca327f16ff06ab5faea"
@@ -3718,7 +3712,7 @@ inline-source-cli@1.2.0:
     inline-source "^5.0.0"
     yargs "^4.1.0"
 
-inline-source@^5.0.0, inline-source@^5.1.2:
+inline-source@^5.0.0:
   version "5.2.7"
   resolved "https://registry.yarnpkg.com/inline-source/-/inline-source-5.2.7.tgz#443dcd2e2948664db872a64fa5bb4c91fd1fbf84"
   dependencies:
