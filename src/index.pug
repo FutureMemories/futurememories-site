@@ -1,26 +1,8 @@
-- var INCLUDE_CASES = true
+extends _base.pug
 
-include components/index.pug
-
-doctype html
-head
-  title Future Memories
-  meta(name='viewport' content='width=device-width, initial-scale=1')
-  meta(name='description' content='Future Memories is a digital studio where strategic design and technology unite into products of tomorrow.')
-  meta(property='og:image' content='https://futurememories.se/ogimage.jpg')
-  meta(property='og:image:width' content='1200')
-  meta(property='og:image:height' content='630')
-  link(rel='icon' href='../static/favicon.ico')
-  link(rel='stylesheet' href='./index.sass' inline)
-body
+block content
   +front-hero
   if INCLUDE_CASES
     +case-block
   +team-block
   +footer-block
-
-  script(src='./index.js' async)
-  script.
-    if (navigator.serviceWorker && !navigator.serviceWorker.controller) {
-      navigator.serviceWorker.register('/service-worker.js')
-    }

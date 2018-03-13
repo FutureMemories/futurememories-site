@@ -9,8 +9,10 @@ const handleHeights = () => {
   }
 }
 
-handleHeights()
-window.addEventListener('resize', debounce(handleHeights, 200))
+if (infoBlocks.length > 0) {
+  handleHeights()
+  window.addEventListener('resize', debounce(handleHeights, 200))
 
-// TODO: Wait for font load in a better way
-setTimeout(handleHeights, 3000)
+  // TODO: Wait for font load in a better way
+  setTimeout(handleHeights, 3000)
+}
