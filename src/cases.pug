@@ -1,5 +1,9 @@
 extends _base.pug
 
+block vars
+  - bodyClass = '-subpage'
+
 block content
+  +header-hero('Our cases & clients')
   +case-block
   +footer-block

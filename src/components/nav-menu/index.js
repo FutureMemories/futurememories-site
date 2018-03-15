@@ -19,6 +19,10 @@ if (navMenu) {
     const target = document.getElementById(id)
 
     link.addEventListener('click', (ev) => {
+      if (document.location.pathname.length > 1) {
+        return
+      }
+
       navMenu.classList.remove('-open')
       document.body.classList.remove('-locked')
 

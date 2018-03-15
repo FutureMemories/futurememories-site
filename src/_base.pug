@@ -1,4 +1,7 @@
 - var INCLUDE_CASES = true
+- var bodyClass = ''
+
+block vars
 
 include components/index.pug
 
@@ -11,7 +14,7 @@ head
   meta(property='og:image:width' content='1200')
   meta(property='og:image:height' content='630')
   link(rel='stylesheet' href='/style.css')
-body
+body(class=bodyClass)
   block content
 
   script(src='/script.js' async)

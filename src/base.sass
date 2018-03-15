@@ -18,8 +18,14 @@ body
   background: $color-darker-blue url('./images/hills@0,55x.jpg') top no-repeat
   background-size: cover
 
+  &.-subpage
+    background-image: url('./images/subhero@0,55x.jpg')
+
   @media screen and (min-width: #{375px + 1px})
     background-image: url('./images/hills.jpg')
+
+    &.-subpage
+      background-image: url('./images/subhero.jpg')
 
 a
   transition: opacity .2s ease

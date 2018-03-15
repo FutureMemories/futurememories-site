@@ -1,4 +1,4 @@
-.front-hero
+.header-hero
   height: 100%
   margin-bottom: 5rem
 
@@ -69,3 +69,15 @@
 
       > .social
         display: none
+
+  &.-subpage
+    height: auto
+
+    > .inner
+      > .content
+        justify-content: center
+        margin-top: 15rem
+
+        @media screen and (max-width: $mobile)
+          margin-top: 5rem
+          padding-right: 0
