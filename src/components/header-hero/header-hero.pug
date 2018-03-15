@@ -2,7 +2,7 @@ mixin header-hero(title)
   .header-hero(class=title ? '-subpage' : '')
     .inner
       .header
-        img(src='./images/logo-circle.svg' alt='Future Memories Logo')
+        a(href='/'): img(src='./images/logo-circle.svg' alt='Future Memories Logo')
 
         +nav-menu
 
