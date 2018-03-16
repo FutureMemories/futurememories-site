@@ -26,5 +26,5 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
                 a.link(href=action.url): img(src='./images/ios.svg' width='37' height='37' alt='Download on iOS' title='Download on iOS')
               else if action.type === 'android'
                 a.link(href=action.url): img(src='./images/android.svg' width='37' height='37' alt='Download on Android' title='Download on Android')
-              else if action.type === 'play'
-                a.link(href=action.url): img(src='./images/play.svg' width='37' height='37' alt='Play' title='Play')
+              else if action.type === 'video'
+                a.link(href=action.url): img(src='./images/play.svg' width='37' height='37' alt='Play Video' title='Play Video')
