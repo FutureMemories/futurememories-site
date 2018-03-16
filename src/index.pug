@@ -2,7 +2,6 @@ extends _base.pug
 
 block content
   +header-hero
-  if INCLUDE_CASES
-    +case-block(data.frontCases, 'preview')
+  +case-block(data.frontCases, 'preview')
   +team-block
   +footer-block
