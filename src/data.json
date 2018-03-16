@@ -87,11 +87,17 @@
       ]
     },
     {
-      "name": "Lorem",
+      "name": "Aventus SIGMA",
       "image": "./images/cases/avtech.jpg",
-      "desc": "Lorem ipsum",
-      "client": "Avtech",
-      "type": "iOS"
+      "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UX/UI",
+      "actions": [
+        {
+          "type": "link",
+          "url": "http://avtech.aero/products/aventus-sigma/"
+        }
+      ]
     },
     {
       "name": "Tennis Watch",
