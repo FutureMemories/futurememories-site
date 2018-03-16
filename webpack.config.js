@@ -26,7 +26,10 @@ module.exports = {
           {
             loader: 'pug-html-loader',
             options: {
-              data: { data: require('./src/data.json') }
+              data: {
+                prod,
+                data: require('./src/data.json')
+              }
             }
           }
         ])
