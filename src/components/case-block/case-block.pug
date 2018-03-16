@@ -18,7 +18,7 @@ mixin case-block(items, type)
           )
 
       if type === 'preview'
-        a(href='/cases').item.-promotion
+        a(href=prod ? '/cases' : '/cases.html').item.-promotion
           span.text Se all cases & clients
           .right-arrow
 

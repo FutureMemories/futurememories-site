@@ -11,13 +11,15 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
         p= desc
 
       .meta
-        .data
-          h4.title Client
-          p.value= client
+        if client
+          .data
+            h4.title Client
+            p.value= client
 
-        .data
-          h4.title Type
-          p.value= type
+        if type
+          .data
+            h4.title Type
+            p.value= type
 
         if actions && actions.length > 0
           .action(class=isPreview ? '' : '-block')
@@ -26,5 +28,7 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
                 a.link(href=action.url): img(src='./images/ios.svg' width='37' height='37' alt='Download on iOS' title='Download on iOS')
               else if action.type === 'android'
                 a.link(href=action.url): img(src='./images/android.svg' width='37' height='37' alt='Download on Android' title='Download on Android')
-              else if action.type === 'play'
-                a.link(href=action.url): img(src='./images/play.svg' width='37' height='37' alt='Play' title='Play')
+              else if action.type === 'video'
+                a.link(href=action.url): img(src='./images/play.svg' width='37' height='37' alt='Play Video' title='Play Video')
+              else if action.type === 'link'
+                a.link(href=action.url): img(src='./images/link.svg' width='37' height='37' alt='Visit link' title='Visit link')
