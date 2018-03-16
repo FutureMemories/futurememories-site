@@ -19,7 +19,13 @@
       "image": "./images/cases/retts-plus.jpg",
       "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
       "client": "Predicare",
-      "type": "UI/UX"
+      "type": "UI/UX",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/258259422?autoplay=1"
+        }
+      ]
     },
     {
       "name": "Mat.se Driver App",
@@ -48,7 +54,13 @@
       "image": "./images/cases/retts-plus.jpg",
       "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
       "client": "Predicare",
-      "type": "UI/UX"
+      "type": "UI/UX",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/258259422?autoplay=1"
+        }
+      ]
     },
     {
       "name": "Mat.se Driver App",
@@ -84,15 +96,25 @@
     {
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
-      "desc": "Lorem ipsum",
-      "client": "Future Memories X",
-      "type": "iOS"
+      "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
+      "client": "",
+      "type": "iOS",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/embed/YOvwwEN-xao?autoplay=1"
+        },
+        {
+          "type": "iOS",
+          "url": "https://itunes.apple.com/us/app/tennis-watch-tennis-score/id959541448?mt=8"
+        }
+      ]
     },
     {
       "name": "Collector Bank",
       "image": "./images/cases/collector.jpg",
       "desc": "Lorem ipsum",
-      "client": "Varvet",
+      "client": "Collector Bank / Varvet",
       "type": "iOS"
     },
     {
