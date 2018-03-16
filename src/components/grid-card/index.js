@@ -24,10 +24,10 @@ if (Modernizr.touchevents) {
     wrapper.addEventListener('touchstart', toggleOpen(wrapper))
   }
 } else {
-  for (let i = 0; i < cards.length; i++) {
-    const wrapper = cards[i]
-    const card = wrapper.querySelector('.card')
-    const shine = card.querySelector('.shine')
-    wrapper.addEventListener('mousemove', mouseMove(card, shine))
-  }
+  // for (let i = 0; i < cards.length; i++) {
+  //   const wrapper = cards[i]
+  //   const card = wrapper.querySelector('.card')
+  //   const shine = card.querySelector('.shine')
+  //   wrapper.addEventListener('mousemove', mouseMove(card, shine))
+  // }
 }
