@@ -14,7 +14,16 @@ const mouseMove = (card, shine) => ev => {
   shine.style.background = `linear-gradient(${deg}deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0))`
 }
 
-if (!Modernizr.touchevents) {
+const toggleOpen = (wrapper) => ev => {
+  wrapper.classList.toggle('-open')
+}
+
+if (Modernizr.touchevents) {
+  for (let i = 0; i < cards.length; i++) {
+    const wrapper = cards[i]
+    wrapper.addEventListener('touchstart', toggleOpen(wrapper))
+  }
+} else {
   for (let i = 0; i < cards.length; i++) {
     const wrapper = cards[i]
     const card = wrapper.querySelector('.card')

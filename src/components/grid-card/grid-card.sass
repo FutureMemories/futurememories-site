@@ -164,13 +164,13 @@
       transform: none !important
       transition: transform .5s ease
 
-  .no-touchevents &:not(:hover):not(:focus),
-  .touchevents &:not(:focus)
+  .no-touchevents &:not(:hover):not(.-open),
+  .touchevents &:not(.-open)
     > .card
       > .info
         height: 0 !important
 
-  &:focus
+  &.-open
     outline: none
 
     > .card
