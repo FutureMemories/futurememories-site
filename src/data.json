@@ -111,17 +111,23 @@
           "url": "https://www.youtube.com/embed/YOvwwEN-xao?autoplay=1"
         },
         {
-          "type": "iOS",
+          "type": "ios",
           "url": "https://itunes.apple.com/us/app/tennis-watch-tennis-score/id959541448?mt=8"
         }
       ]
     },
     {
-      "name": "Collector Bank",
+      "name": "Spira",
       "image": "./images/cases/collector.jpg",
-      "desc": "Lorem ipsum",
-      "client": "Collector Bank / Varvet",
-      "type": "iOS"
+      "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
+      "client": "Collector Bank, Varvet",
+      "type": "Android",
+      "actions": [
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=se.collector.spira"
+        }
+      ]
     },
     {
       "name": "Travelmate",
@@ -131,7 +137,7 @@
       "type": "iOS, Android",
       "actions": [
         {
-          "type": "iOS",
+          "type": "ios",
           "url": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
         },
         {
