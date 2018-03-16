@@ -23,7 +23,12 @@ module.exports = {
         test: /\.pug$/,
         loader: extractHtml.extract([
           'html-loader',
-          'pug-html-loader?exports=false'
+          {
+            loader: 'pug-html-loader',
+            options: {
+              data: { data: require('./src/data.json') }
+            }
+          }
         ])
       },
       {

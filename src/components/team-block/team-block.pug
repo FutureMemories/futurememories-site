@@ -4,70 +4,14 @@ mixin team-block
     p.subheading A look under the hood
 
     .grid
-      .item
+      each astronaut in data.astronauts
         +astronaut-card(
-          'Andreas Kaltenbach',
-          './images/team/andreas.jpg',
-          'Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.',
-          '+46 (0)735 201950'
+          astronaut.name,
+          astronaut.image,
+          astronaut.desc,
+          astronaut.phone
         )
 
-      .item
-        +astronaut-card(
-          'Mikael Hellqvist',
-          './images/team/mikael.jpg',
-          'Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.',
-          '+46 (0)723 411322'
-        )
-
-      .item
-        +astronaut-card(
-          'Viktor Hesselbom',
-          './images/team/viktor.jpg',
-          'Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.',
-          '+46 (0)732 628555'
-        )
-
-      .item
-        +astronaut-card(
-          'Pontus Börjesson',
-          './images/team/pontus.jpg',
-          'Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.',
-          '+46 (0)707 959011'
-        )
-
-      .item
-        +astronaut-card(
-          'Oskar Jönsson',
-          './images/team/oskar.jpg',
-          'Mobile Developer in his mid-twenties with some years into iOS, Android and React Native.',
-          '+46 (0)722 536161'
-        )
-
-      .item
-        +astronaut-card(
-          'Martin Egri',
-          './images/team/martin.jpg',
-          'Lead Backend Developer who has been building cloud-based services and platforms for more than six years.',
-          '+46 (0)763 490500'
-        )
-
-      .item
-        +astronaut-card(
-          'Mattias Lundell',
-          './images/team/mattias.jpg',
-          'Mobile developer with extensive experience in Android and iOS. Android is his platform of choice.',
-          '+46 (0)705 905595'
-        )
-
-      .item
-        +astronaut-card(
-          'P-A Gustafsson',
-          './images/team/pa.jpg',
-          'Co-founder and CEO. Over 17 years as product manager and designer across five industries.',
-          '+46 (0)760 338822'
-        )
-
-      a(href='mailto:hello@futurememories.se').item.-promotion
+      a(href=`mailto:${data.contactMail}`).item.-promotion
         span.text Come and work with us!
         .right-arrow

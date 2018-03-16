@@ -1,0 +1,146 @@
+{
+  "contactMail": "hello@futurememories.se",
+  "frontCases": [
+    {
+      "name": "Nelly Shopping App",
+      "image": "./images/cases/nelly.jpg",
+      "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
+      "client": "NLY Scandinavia",
+      "type": "iOS",
+      "actions": [
+        {
+          "type": "ios",
+          "url": "https://itunes.apple.com/se/app/nelly/id1157319834"
+        }
+      ]
+    },
+    {
+      "name": "Retts Plus",
+      "image": "./images/cases/retts-plus.jpg",
+      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client": "Predicare",
+      "type": "UI/UX"
+    },
+    {
+      "name": "Mat.se Driver App",
+      "image": "./images/cases/driver-app.jpg",
+      "desc": "On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.",
+      "client": "Mat.se",
+      "type": "iOS, UX/UI"
+    }
+  ],
+  "allCases": [
+    {
+      "name": "Nelly Shopping App",
+      "image": "./images/cases/nelly.jpg",
+      "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
+      "client": "NLY Scandinavia",
+      "type": "iOS",
+      "actions": [
+        {
+          "type": "ios",
+          "url": "https://itunes.apple.com/se/app/nelly/id1157319834"
+        }
+      ]
+    },
+    {
+      "name": "Retts Plus",
+      "image": "./images/cases/retts-plus.jpg",
+      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client": "Predicare",
+      "type": "UI/UX"
+    },
+    {
+      "name": "Mat.se Driver App",
+      "image": "./images/cases/driver-app.jpg",
+      "desc": "On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.",
+      "client": "Mat.se",
+      "type": "iOS, UX/UI"
+    },
+    {
+      "name": "Forces of Freedom",
+      "image": "./images/cases/bravo-co.jpg",
+      "desc": "Lorem ipsum",
+      "client": "Bravo Co",
+      "type": "Android, iOS"
+    },
+    {
+      "name": "Lorem",
+      "image": "./images/cases/avtech.jpg",
+      "desc": "Lorem ipsum",
+      "client": "Avtech",
+      "type": "iOS"
+    },
+    {
+      "name": "Tennis Watch",
+      "image": "./images/cases/tennis-watch.jpg",
+      "desc": "Lorem ipsum",
+      "client": "Future Memories X",
+      "type": "iOS"
+    },
+    {
+      "name": "Collector Bank",
+      "image": "./images/cases/collector.jpg",
+      "desc": "Lorem ipsum",
+      "client": "Varvet",
+      "type": "iOS"
+    },
+    {
+      "name": "Stena Line App",
+      "image": "./images/cases/stena-line.jpg",
+      "desc": "Lorem ipsum",
+      "client": "Stena Line",
+      "type": "Android, iOS, UX/UI"
+    }
+  ],
+  "astronauts": [
+    {
+      "name": "Andreas Kaltenbach",
+      "image": "./images/team/andreas.jpg",
+      "desc": "Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.",
+      "phone": "+46 (0)735 201950"
+    },
+    {
+      "name": "Mikael Hellqvist",
+      "image": "./images/team/mikael.jpg",
+      "desc": "Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
+      "phone": "+46 (0)723 411322"
+    },
+    {
+      "name": "Viktor Hesselbom",
+      "image": "./images/team/viktor.jpg",
+      "desc": "Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.",
+      "phone": "+46 (0)732 628555"
+    },
+    {
+      "name": "Pontus Börjesson",
+      "image": "./images/team/pontus.jpg",
+      "desc": "Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.",
+      "phone": "+46 (0)707 959011"
+    },
+    {
+      "name": "Oskar Jönsson",
+      "image": "./images/team/oskar.jpg",
+      "desc": "Mobile Developer in his mid-twenties with some years into iOS, Android and React Native.",
+      "phone": "+46 (0)722 536161"
+    },
+    {
+      "name": "Martin Egri",
+      "image": "./images/team/martin.jpg",
+      "desc": "Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
+      "phone": "+46 (0)763 490500"
+    },
+    {
+      "name": "Mattias Lundell",
+      "image": "./images/team/mattias.jpg",
+      "desc": "Mobile developer with extensive experience in Android and iOS. Android is his platform of choice.",
+      "phone": "+46 (0)705 905595"
+    },
+    {
+      "name": "P-A Gustafsson",
+      "image": "./images/team/pa.jpg",
+      "desc": "Co-founder and CEO. Over 17 years as product manager and designer across five industries.",
+      "phone": "+46 (0)760 338822"
+    }
+  ]
+}

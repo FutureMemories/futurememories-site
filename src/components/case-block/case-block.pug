@@ -1,39 +1,27 @@
-mixin case-block
-  section#cases.case-block.grid-block
-    h2.heading Selected Projects
-    p.subheading We're only as good as our latest work
+mixin case-block(items, type)
+  section#cases.case-block.grid-block(class=`-${type}`)
+    if type === 'preview'
+      h2.heading Selected Projects
+      p.subheading We're only as good as our latest work
 
     .grid
-      .item
-        +case-card(
-          'Nelly Shopping App',
-          './images/cases/nelly.jpg',
-          'A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.',
-          'NLY Scandinavia',
-          'iOS',
-          [
-            { type: 'ios', url: 'https://itunes.apple.com/se/app/nelly/id1157319834' }
-          ]
-        )
+      each item in items
+        .item
+          +case-card(
+            item.name,
+            item.image,
+            item.desc,
+            item.client,
+            item.type,
+            item.actions
+          )
 
-      .item
-        +case-card(
-          'Retts Plus',
-          './images/cases/retts-plus.jpg',
-          'Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.',
-          'Predicare',
-          'UI/UX'
-        )
+      if type === 'preview'
+        a(href='/cases').item.-promotion
+          span.text Se all cases & clients
+          .right-arrow
 
-      .item
-        +case-card(
-          'Mat.se Driver App',
-          './images/cases/driver-app.jpg',
-          'On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.',
-          'Mat.se',
-          'iOS, UX/UI'
-        )
-
-      a(href='/cases').item.-promotion
-        span.text Se all cases & clients
-        .right-arrow
+      if type === 'full'
+        a(href=`mailto:${data.contactMail}`).item.-promotion
+          span.text Create something awesome with us!
+          .right-arrow
