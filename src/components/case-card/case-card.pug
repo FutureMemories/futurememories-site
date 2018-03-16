@@ -11,13 +11,15 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
         p= desc
 
       .meta
-        .data
-          h4.title Client
-          p.value= client
+        if client
+          .data
+            h4.title Client
+            p.value= client
 
-        .data
-          h4.title Type
-          p.value= type
+        if type
+          .data
+            h4.title Type
+            p.value= type
 
         if actions && actions.length > 0
           .action(class=isPreview ? '' : '-block')
