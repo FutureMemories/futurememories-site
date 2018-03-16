@@ -13,7 +13,8 @@ mixin case-block(items, type)
             item.desc,
             item.client,
             item.type,
-            item.actions
+            item.actions,
+            type === 'preview'
           )
 
       if type === 'preview'

@@ -1,11 +1,11 @@
-mixin case-card(name, image, desc, client, type, actions)
+mixin case-card(name, image, desc, client, type, actions, isPreview)
   article.grid-card(tabindex='1')
     .card
       .shine
 
       img(src=image alt=name)
 
-      h3.name.-large= name
+      h3.name(class=isPreview ? '-large' : '')= name
 
       .info
         p= desc
@@ -20,7 +20,7 @@ mixin case-card(name, image, desc, client, type, actions)
           p.value= type
 
         if actions && actions.length > 0
-          .action
+          .action(class=isPreview ? '' : '-block')
             each action in actions
               if action.type === 'ios'
                 a.link(href=action.url): img(src='./images/ios.svg' width='37' height='37' alt='Download on iOS' title='Download on iOS')
