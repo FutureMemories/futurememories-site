@@ -5,12 +5,13 @@ mixin team-block
 
     .grid
       each astronaut in data.astronauts
-        +astronaut-card(
-          astronaut.name,
-          astronaut.image,
-          astronaut.desc,
-          astronaut.phone
-        )
+        .item
+          +astronaut-card(
+            astronaut.name,
+            astronaut.image,
+            astronaut.desc,
+            astronaut.phone
+          )
 
       a(href=`mailto:${data.contactMail}`).item.-promotion
         span.text Come and work with us!
