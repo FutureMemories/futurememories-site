@@ -103,7 +103,7 @@
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
       "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "client": "",
+      "client": "-",
       "type": "iOS",
       "actions": [
         {
@@ -124,11 +124,21 @@
       "type": "iOS"
     },
     {
-      "name": "Stena Line App",
+      "name": "Travelmate",
       "image": "./images/cases/stena-line.jpg",
-      "desc": "Lorem ipsum",
+      "desc": "Mobile travel companion app which keeps all your trip details in one place when travelling within Stena Line’s ferry network.",
       "client": "Stena Line",
-      "type": "Android, iOS, UX/UI"
+      "type": "iOS, Android",
+      "actions": [
+        {
+          "type": "iOS",
+          "url": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
+        },
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.stenaline.mobile"
+        }
+      ]
     }
   ],
   "astronauts": [
