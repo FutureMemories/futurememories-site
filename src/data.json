@@ -60,9 +60,19 @@
     {
       "name": "Forces of Freedom",
       "image": "./images/cases/bravo-co.jpg",
-      "desc": "Lorem ipsum",
-      "client": "Bravo Co",
-      "type": "Android, iOS"
+      "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
+      "client": "Koyoki Ltd",
+      "type": "UI/UX",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/zSw2mC8ZdO8"
+        },
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.koyokiservices.FoF"
+        }
+      ]
     },
     {
       "name": "Lorem",
