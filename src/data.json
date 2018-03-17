@@ -2,7 +2,7 @@
   "contactMail": "hello@futurememories.se",
   "frontCases": [
     {
-      "name": "Nelly Shopping App",
+      "name": "Nelly App",
       "image": "./images/cases/nelly.jpg",
       "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
       "client": "NLY Scandinavia",
@@ -37,7 +37,7 @@
   ],
   "allCases": [
     {
-      "name": "Nelly Shopping App",
+      "name": "Nelly App",
       "image": "./images/cases/nelly.jpg",
       "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
       "client": "NLY Scandinavia",
