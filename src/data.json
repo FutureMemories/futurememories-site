@@ -19,13 +19,7 @@
       "image": "./images/cases/retts-plus.jpg",
       "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
       "client": "Predicare",
-      "type": "UI/UX",
-      "actions": [
-        {
-          "type": "video",
-          "url": "https://player.vimeo.com/video/258259422?autoplay=1"
-        }
-      ]
+      "type": "UI/UX"
     },
     {
       "name": "Mat.se Driver App",
