@@ -74,7 +74,7 @@
       "image": "./images/cases/bravo-co.jpg",
       "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
       "client": "Koyoki Ltd",
-      "type": "UI/UX",
+      "type": "UX/UI",
       "actions": [
         {
           "type": "video",
@@ -143,6 +143,41 @@
         {
           "type": "android",
           "url": "https://play.google.com/store/apps/details?id=com.stenaline.mobile"
+        }
+      ]
+    },
+
+    {
+      "name": "WYA Network",
+      "image": "./images/cases/wya.jpg",
+      "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration between fashion professionals.",
+      "client": "WHOYOUARE LLC",
+      "type": "iOS, UX/UI",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/113123599?autoplay=1"
+        }
+      ]
+    },
+    {
+      "name": "Wake Up Problem",
+      "image": "./images/cases/wake-up-problem.jpg",
+      "desc": "An alarm app helping students to kick-start their day in a playful and competitive way.",
+      "client": "Karlstad University, Ord & Bild",
+      "type": "iOS, Android",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/260766295?autoplay=1"
+        },
+        {
+          "type": "ios",
+          "url": "https://itunes.apple.com/se/app/wake-up-problem/id1347926779?mt=8"
+        },
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=se.futurememories.WakeUpProblem"
         }
       ]
     }
