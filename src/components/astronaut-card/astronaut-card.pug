@@ -1,4 +1,4 @@
-mixin astronaut-card(name, image, desc, email)
+mixin astronaut-card(name, image, desc, email, phone)
   article.grid-card
     .card
       .shine
@@ -10,3 +10,5 @@ mixin astronaut-card(name, image, desc, email)
       .info
         p= desc
         p.email= email
+        if phone
+          p= phone
