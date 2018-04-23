@@ -187,49 +187,69 @@
       "name": "Andreas Kaltenbach",
       "image": "./images/team/andreas.jpg",
       "desc": "Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.",
-      "phone": "+46 (0)735 201950"
+      "phoneOld": "+46 (0)735 201950",
+      "email": "andreas@futurememories.se"
     },
     {
       "name": "Mikael Hellqvist",
       "image": "./images/team/mikael.jpg",
       "desc": "Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
-      "phone": "+46 (0)723 411322"
+      "phoneOld": "+46 (0)723 411322",
+      "email": "mikael@futurememories.se"
     },
     {
       "name": "Viktor Hesselbom",
       "image": "./images/team/viktor.jpg",
       "desc": "Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.",
-      "phone": "+46 (0)732 628555"
+      "phoneOld": "+46 (0)732 628555",
+      "email": "viktor@futurememories.se"
     },
     {
       "name": "Pontus Börjesson",
       "image": "./images/team/pontus.jpg",
       "desc": "Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.",
-      "phone": "+46 (0)707 959011"
+      "phoneOld": "+46 (0)707 959011",
+      "email": "pontus@futurememories.se"
     },
     {
       "name": "Oskar Jönsson",
       "image": "./images/team/oskar.jpg",
       "desc": "Mobile Developer in his mid-twenties with years of experience in iOS, Android and React Native.",
-      "phone": "+46 (0)722 536161"
+      "phoneOld": "+46 (0)722 536161",
+      "email": "oskar@futurememories.se"
     },
     {
       "name": "Martin Egri",
       "image": "./images/team/martin.jpg",
       "desc": "Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
-      "phone": "+46 (0)763 490500"
+      "phoneOld": "+46 (0)763 490500",
+      "email": "martin@futurememories.se"
     },
     {
       "name": "Mattias Lundell",
       "image": "./images/team/mattias.jpg",
       "desc": "Mobile developer with extensive experience in Android and iOS. Android is his platform of choice.",
-      "phone": "+46 (0)705 905595"
+      "phoneOld": "+46 (0)705 905595",
+      "email": "mattias@futurememories.se"
     },
     {
       "name": "P-A Gustafsson",
       "image": "./images/team/pa.jpg",
       "desc": "Co-founder and CEO. Over 17 years as product manager and designer across five industries.",
-      "phone": "+46 (0)760 338822"
+      "phone": "+46 (0)760 338822",
+      "email": "pa@futurememories.se"
+    },
+    {
+      "name": "Erik Hallgren",
+      "image": "./images/team/erik.jpg",
+      "desc": "Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
+      "email": "erik@futurememories.se"
+    },
+    {
+      "name": "Anders Olausson",
+      "image": "./images/team/anders.jpg",
+      "desc": "Design Director and Partner. Award winning designer with years of experience in digital media.",
+      "email": "anders@futurememories.se"
     }
   ]
 }
