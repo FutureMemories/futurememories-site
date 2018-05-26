@@ -146,7 +146,6 @@
         }
       ]
     },
-
     {
       "name": "WYA Network",
       "image": "./images/cases/wya.jpg",
@@ -214,9 +213,15 @@
     {
       "name": "Oskar Jönsson",
       "image": "./images/team/oskar.jpg",
-      "desc": "Mobile Developer in his mid-twenties with years of experience in iOS, Android and React Native.",
+      "desc": "Mobile Developer with years of experience in iOS, Android and React Native.",
       "phoneOld": "+46 (0)722 536161",
       "email": "oskar@futurememories.se"
+    },
+    {
+      "name": "Mattias Lönn",
+      "image": "./images/team/mattias.jpg",
+      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
+      "email": "mattias.lonn@futurememories.se"
     },
     {
       "name": "Martin Egri",
