@@ -18,21 +18,16 @@ if (navMenu) {
     const id = link.href.substr(link.href.lastIndexOf('/') + 1)
     const target = document.getElementById(id.substr(1))
 
-    link.addEventListener('click', (ev) => {
-      if (document.location.pathname.length > 1) {
-        return
-      }
+    if (!target) continue
 
+    link.addEventListener('click', (ev) => {
       navMenu.classList.remove('-open')
       document.body.classList.remove('-locked')
 
       ev.preventDefault()
 
       if (window.history.pushState) {
-        if (id.includes('#'))
-          window.history.pushState({}, '', id)
-        else
-          window.location.assign(`/${id}`)
+        window.history.pushState({}, '', id)
       }
 
       if (target) {

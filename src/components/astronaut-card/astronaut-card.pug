@@ -1,4 +1,4 @@
-mixin astronaut-card(name, image, desc, email, phone)
+mixin astronaut-card(name, image, title, desc, email, phone)
   article.grid-card
     .card
       .shine
@@ -8,7 +8,8 @@ mixin astronaut-card(name, image, desc, email, phone)
       h3.name= name
 
       .info
-        p= desc
-        p.email= email
+        p.info-mobile= title
+        p.info-desktop= desc
+        a(href=`mailto:${email}`).email= email
         if phone
-          p= phone
+          a(href=`tel:${phone}`).phone= phone

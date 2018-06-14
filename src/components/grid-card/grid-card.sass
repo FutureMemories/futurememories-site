@@ -70,15 +70,16 @@
       overflow: hidden
       max-width: 49rem
 
-    > .info > p
+    > .info > p, .email, .phone
       font-size: 1.6rem
       line-height: 1.5
       margin-bottom: 1em
 
-      &.email
-        width: 100%
-        overflow: hidden
-        text-overflow: ellipsis
+    .email, .phone
+      color: #fff
+      overflow: hidden
+      text-decoration: none
+      display: block
 
       > a
         color: inherit
@@ -132,8 +133,34 @@
           padding-top: 2rem
           padding-left: 0
 
+    @media screen and (min-width: $small-grid + 1px)
+      .info-mobile
+        display: none
+
+      .info-desktop
+        display: block
+
     @media screen and (max-width: $small-grid)
       padding: 1.5rem
+
+      .info-desktop
+        display: none
+
+      .info-mobile
+        display: block
+
+      .email, .phone
+        text-indent: -9999px
+        height: 16px
+        width: 20px
+        background: url('./images/mail-red.svg') no-repeat center/cover
+        display: inline-flex
+        margin-bottom: 0
+
+      .phone
+        margin-left: 2rem
+        width: 16px
+        background-image: url('./images/phone.svg')
 
       > .name
         font-size: 1.6rem
