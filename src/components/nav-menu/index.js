@@ -15,21 +15,19 @@ if (navMenu) {
 
   for (let i = 0; i < links.length; i++) {
     const link = links[i]
-    const id = link.href.substr(link.href.indexOf('#') + 1)
-    const target = document.getElementById(id)
+    const id = link.href.substr(link.href.lastIndexOf('/') + 1)
+    const target = document.getElementById(id.substr(1))
+
+    if (!target) continue
 
     link.addEventListener('click', (ev) => {
-      if (document.location.pathname.length > 1) {
-        return
-      }
-
       navMenu.classList.remove('-open')
       document.body.classList.remove('-locked')
 
       ev.preventDefault()
 
       if (window.history.pushState) {
-        window.history.pushState({}, '', '#' + id)
+        window.history.pushState({}, '', id)
       }
 
       if (target) {
