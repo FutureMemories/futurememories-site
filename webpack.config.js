@@ -11,11 +11,13 @@ module.exports = {
   entry: {
     'index.html': path.resolve(__dirname, 'src/index.pug'),
     'cases.html': path.resolve(__dirname, 'src/cases.pug'),
+    'cases/picular.html': path.resolve(__dirname, 'src/cases-picular.pug'),
     '404.html': path.resolve(__dirname, 'src/404.pug'),
     'script.js': path.resolve(__dirname, 'src/index.js')
   },
   output: {
-    filename: '[name]'
+    filename: '[name]',
+    publicPath: '/'
   },
   module: {
     rules: [

@@ -23,6 +23,10 @@
       display: flex
       align-items: center
 
+      > .subtitle
+        font-size: 4rem
+        font-weight: normal
+
       > .title
         color: white
         font-size: 4rem
@@ -85,3 +89,12 @@
         @media screen and (max-width: $mobile)
           margin-top: 5rem
           padding-right: 0
+
+  &.-case
+    > .inner
+      > .content
+        align-items: flex-start
+        flex-direction: column
+
+        > .title
+          text-transform: uppercase

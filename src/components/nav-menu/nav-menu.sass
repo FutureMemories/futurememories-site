@@ -7,6 +7,7 @@
     position: relative
     z-index: 11
     cursor: pointer
+    color: white
 
     &:before, &:after
       content: ''
@@ -15,7 +16,7 @@
       left: 0
       right: 0
       height: .2rem
-      background: white
+      background: currentColor
       transition: transform .2s ease
 
     &:before
@@ -97,6 +98,13 @@
 
     > .toggler:after
       transform: translateY(-.1rem) rotate(-45deg)
+
+  body.-case &
+    > .toggler
+      color: $color-dark-blue
+
+    &.-open > .toggler
+      color: white
 
 body.-locked
   overflow: hidden

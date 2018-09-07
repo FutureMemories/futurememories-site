@@ -1,8 +1,12 @@
-mixin header-hero(title)
-  .header-hero(class=title ? '-subpage' : '')
+mixin header-hero(title, modifier, subtitle)
+  .header-hero(class=modifier ? modifier : '')
     .inner
       .header
-        a(href='/'): img(src='./images/logo-circle.svg' alt='Future Memories Logo')
+        a(href='/')
+          if modifier && modifier.indexOf('-inverted') > -1
+            img(src='./images/logo-circle-inverted.svg' alt='Future Memories Logo')
+          else
+            img(src='./images/logo-circle.svg' alt='Future Memories Logo')
 
         +nav-menu
 
@@ -13,6 +17,9 @@ mixin header-hero(title)
           h1.title
             em Future Memories
             |  is a digital studio where strategic design and technology unite into products of tomorrow.
+
+        if subtitle
+          h2.subtitle= subtitle
 
       if !title
         .social
