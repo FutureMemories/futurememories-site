@@ -1,20 +1,20 @@
-mixin footer-block
-  .footer-block#contact
+mixin footer-block(style)
+  .footer-block#contact(class=(style === 'grey') && 'grey')
     .inner
-      img.logo(src='./images/logo-circle.svg', alt='Future Memories Logo')
+      img.logo(src=`./images/logo-circle${style === 'grey' ? '-inverted' : ''}.svg`, alt='Future Memories Logo')
 
       .social
         .mail
           a(href='mailto:hello@futurememories.se')
-            img(src='./images/mail.svg', alt='Email')
+            img(src=`./images/mail${style === 'grey' ? '-black' : ''}.svg`, alt='Email')
             span.title Say hi!
             span.text hello@futurememories.se
 
         a(href='https://www.facebook.com/futurememoriesab/')
-          img(src='./images/facebook.svg', alt='Facebook')
+          img(src=`./images/facebook${style === 'grey' ? '-black' : ''}.svg`, alt='Facebook')
 
         a(href='https://www.instagram.com/futurememoriesab/')
-          img(src='./images/instagram.svg', alt='Instagram')
+          img(src=`./images/instagram${style === 'grey' ? '-black' : ''}.svg`, alt='Instagram')
 
         a(href='https://www.linkedin.com/company/5100963/')
-          img(src='./images/linkedin.svg', alt='LinkedIn')
+          img(src=`./images/linkedin${style === 'grey' ? '-black' : ''}.svg`, alt='Linkedin')

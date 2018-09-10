@@ -35,6 +35,59 @@
       "type": "iOS, UX/UI"
     }
   ],
+  "browseCases": [
+    {
+      "name": "Tennis Watch",
+      "image": "./images/cases/tennis-watch.jpg",
+      "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
+      "client": "-",
+      "type": "iOS",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/embed/YOvwwEN-xao?autoplay=1"
+        },
+        {
+          "type": "ios",
+          "url": "https://itunes.apple.com/us/app/tennis-watch-tennis-score/id959541448?mt=8"
+        }
+      ]
+    },
+    {
+      "name": "Collector Bank",
+      "image": "./images/cases/collector.jpg",
+      "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
+      "client": "Varvet",
+      "type": "Android",
+      "actions": [
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=se.collector.spira"
+        }
+      ]
+    },
+    {
+      "name": "Wake Up Problem",
+      "image": "./images/cases/wake-up-problem.jpg",
+      "desc": "An alarm app helping students to kick-start their day in a playful and competitive way.",
+      "client": "Karlstad University",
+      "type": "iOS, Android",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://player.vimeo.com/video/260766295?autoplay=1"
+        },
+        {
+          "type": "ios",
+          "url": "https://itunes.apple.com/se/app/wake-up-problem/id1347926779?mt=8"
+        },
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=se.futurememories.WakeUpProblem"
+        }
+      ]
+    }
+  ],
   "allCases": [
     {
       "name": "Nelly App",

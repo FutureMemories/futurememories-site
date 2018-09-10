@@ -1,0 +1,41 @@
+.text-block
+  background: #fff
+
+  > .inner
+    display: flex
+    flex-direction: column
+    margin: auto
+    max-width: $max-width
+    padding: 9.6rem 3rem
+    font-weight: normal
+
+    > .subheading
+      font-size: 4rem
+      font-weight: normal
+
+    > .text
+      margin: 1.5rem 0
+      font-size: 2rem
+      max-width: 56rem
+      color: #737780
+
+    > .link
+      margin-top: -0.5rem
+      font-size: 1.8rem
+      color: $color-red
+      text-decoration: none
+
+      &:after
+        content: ''
+        display: inline-block
+        position: relative
+        top: 0.6rem
+        margin-top: 2rem
+        margin-left: 2rem
+        background: url('./images/arrow-red.svg') no-repeat 0 0/100%
+        width: 7.7rem
+        height: 2.3rem
+
+    > img
+      width: 100%
+      height: auto

@@ -1,0 +1,10 @@
+mixin text-block(title, text, content = [], background)
+  .text-block(style=(background) && `background: ${background}`)
+    .inner
+      h1.subheading= title
+      p.text= text
+
+      if content[0] === 'image'
+        img(src=content[2], alt=content[1])
+      else if content[0] === 'link'
+        a.link(href=content[2])= content[1]

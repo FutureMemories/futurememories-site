@@ -1,0 +1,75 @@
+.bookmark-block
+  background: #F2F5F6
+
+  > .inner
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: auto
+    max-width: $max-width
+    padding: 8.6rem 3rem
+    font-weight: normal
+
+    > .iphone-x
+      width: 38.4rem
+      height: 77.1rem
+      background: #fff url('./images/picular-screenshot-1.jpg') no-repeat
+      background-size: 34.8rem
+      background-position: calc(50% - 343px) 0
+      background-attachment: fixed
+      position: relative
+      transform: translateZ(-1px) scale(1.08)
+      margin: 3.5rem
+      @media screen and (max-width: 1192px)
+        background-position: 8.3rem 0 
+
+      > .phone-frame
+        width: 38.5rem
+        height: 77.3rem
+        perspective: 2px
+        transform-style: preserve-3d
+        overflow-x: hidden
+        overflow-y: scroll
+
+    > .content
+      padding-right: 4rem
+      display: flex
+      flex-direction: column
+      justify-content: center
+      
+      > .item
+        margin-top: 2.6rem
+
+        &.-text
+          margin: 1.6rem 0 4.1rem
+
+        &.-droplet, &.-hash, &.-image
+          &:before
+            content: ''
+            display: inline-block
+            position: relative
+            top: 0.5rem
+            margin-right: 1.8rem
+            width: 1.7rem
+            height: 2.1rem
+
+        &.-droplet:before
+          background: url('./images/droplet.svg') no-repeat 0 0/100%
+
+        &.-hash:before
+          background: url('./images/hash.svg') no-repeat 0 0/100%
+
+        &.-image:before
+          background: url('./images/image.svg') no-repeat 0 0/100%
+
+      > .subheading
+        font-size: 4rem
+        font-weight: normal
+
+      > p
+        font-size: 2rem
+        max-width: 52rem
+        margin-top: 1.6rem
+        line-height: 2.8rem
+        color: #737780
+        

@@ -4,7 +4,7 @@ mixin case-block(items, type)
       h2.heading Selected Projects
       p.subheading What we have done so far
 
-    .grid
+    .grid(class=(type === 'linkto') && `-linkto`)
       each item in items
         .item
           +case-card(

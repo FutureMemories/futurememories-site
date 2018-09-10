@@ -1,0 +1,11 @@
+mixin projects-block()
+  .projects-block#projects
+    .inner
+
+      div.block
+        h1.subheading See more projects
+        a.link(href='/cases.html') Browse all projects
+
+      div.block
+
+        +case-block(data.browseCases, 'linkto')

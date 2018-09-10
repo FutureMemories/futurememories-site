@@ -54,6 +54,9 @@
         width: auto
         grid-row: span 17
 
+    &.-linkto > .grid
+      grid-gap: 2rem
+
       @media screen and (max-width: $medium-grid)
         > .item
           grid-row: span 17
@@ -104,3 +107,10 @@
           &.-promotion
             grid-column-start: 3
             grid-row: 26 / span 15
+
+        &.-linkto
+          height: 48.4rem
+
+          *
+            grid-row: 1 !important
+            
