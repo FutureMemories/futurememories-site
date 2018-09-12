@@ -1,21 +1,6 @@
 mixin parallax-device(type, background)
-  
-  script.
-    function parallaxMockup(){
-      window.requestAnimationFrame(parallaxMockup)
-      scrollPoint = document.documentElement.scrollTop+(window.innerHeight/2)
-      document.querySelectorAll('.parallax').forEach(function(div) {
-          if (scrollPoint > div.offsetTop) {
-            div.querySelectorAll('.parallax-content').forEach(function(child) {
-              child.scrollTop = (scrollPoint - div.offsetTop) / 3
-            })
-          }
-      })
-    }
-    window.requestAnimationFrame(parallaxMockup)  
-
-  .parallax(class=(type === 'iphoneX') && `-iphoneX`)
-    img.parallax-device(src='./images/iphone-x-empty.png')
+  .parallax-device(class=(type === 'iphoneX') && `-iphoneX`)
+    if (type === 'iphoneX')
+    img.parallax-frame(src='./images/iphone-x-empty.png')
     .parallax-content
       img.parallax-background(src=background)
-      

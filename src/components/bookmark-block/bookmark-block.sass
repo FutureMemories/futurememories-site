@@ -15,8 +15,9 @@
       display: flex
       flex-direction: column
       justify-content: center
+      padding-left: 5rem
       
-      > .item
+      > .item 
         margin-top: 2.6rem
 
         &.-text
@@ -56,12 +57,30 @@
         padding-right: 1rem
         flex: 1
         
+        > .item
+          margin-top: 1rem
+
+          &.-text
+            margin: 1rem 0 2.1rem
+
         > .subheading
           font-size: 2.5rem
 
         > p
-          font-size: 2em
           max-width: 35rem
           
     @media screen and (max-width: 590px)
       flex-direction: column
+
+      > .content
+        padding-left: 0
+        padding-top: 3rem
+
+        > .subheading
+          font-size: 3rem
+
+        > p
+          font-size: 2em
+          max-width: 100%
+          line-height: 2.1rem
+          margin-top: 11rem
