@@ -10,29 +10,8 @@
     padding: 8.6rem 3rem
     font-weight: normal
 
-    > .iphone-x
-      width: 38.4rem
-      height: 77.1rem
-      background: #fff url('./images/picular-screenshot-1.jpg') no-repeat
-      background-size: 34.8rem
-      background-position: calc(50% - 343px) 0
-      background-attachment: fixed
-      position: relative
-      transform: translateZ(-1px) scale(1.08)
-      margin: 3.5rem
-      @media screen and (max-width: 1192px)
-        background-position: 8.3rem 0 
-
-      > .phone-frame
-        width: 38.5rem
-        height: 77.3rem
-        perspective: 2px
-        transform-style: preserve-3d
-        overflow-x: hidden
-        overflow-y: scroll
-
     > .content
-      padding-right: 4rem
+      padding-right: 2rem
       display: flex
       flex-direction: column
       justify-content: center
@@ -72,4 +51,17 @@
         margin-top: 1.6rem
         line-height: 2.8rem
         color: #737780
+      
+      @media screen and (max-width: 750px)
+        padding-right: 1rem
+        flex: 1
         
+        > .subheading
+          font-size: 2.5rem
+
+        > p
+          font-size: 2em
+          max-width: 35rem
+          
+    @media screen and (max-width: 590px)
+      flex-direction: column
