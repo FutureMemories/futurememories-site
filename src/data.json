@@ -276,11 +276,11 @@
       "email": "oskar@futurememories.se"
     },
     {
-      "name": "Mattias Lönn",
-      "image": "./images/team/mattias.jpg",
-      "title": "Web Developer",
-      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
-      "email": "mattias.lonn@futurememories.se"
+      "name": "Siri Nohlström",
+      "image": "./images/team/siri.jpg",
+      "title": "Management Assistant",
+      "desc": "Passionate Management Assistant who keeps the studio up and running. The life and soul of Future Memories",
+      "email": "siri@futurememories.se"
     },
     {
       "name": "Martin Egri",
@@ -299,11 +299,11 @@
       "email": "pa@futurememories.se"
     },
     {
-      "name": "Erik Hallgren",
-      "image": "./images/team/erik.jpg",
-      "title": "Partner and UX Director",
-      "desc": "Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
-      "email": "erik@futurememories.se"
+      "name": "Mattias Lönn",
+      "image": "./images/team/mattias.jpg",
+      "title": "Web Developer",
+      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
+      "email": "mattias.lonn@futurememories.se"
     },
     {
       "name": "Anders Olausson",
@@ -311,6 +311,13 @@
       "title": "Design Director and Partner",
       "desc": "Design Director and Partner. Award winning designer with years of experience in digital media.",
       "email": "anders@futurememories.se"
+    },
+    {
+      "name": "Erik Hallgren",
+      "image": "./images/team/erik.jpg",
+      "title": "Partner and UX Director",
+      "desc": "Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
+      "email": "erik@futurememories.se"
     }
   ]
 }
