@@ -2,15 +2,16 @@
   "contactMail": "hello@futurememories.se",
   "frontCases": [
     {
-      "name": "Nelly App",
-      "image": "./images/cases/nelly.jpg",
-      "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
-      "client": "NLY Scandinavia",
-      "type": "iOS",
+      "name": "Picular",
+      "image": "./images/cases/picular.jpg",
+      "desc": "Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.",
+      "client": "Futurememories.se",
+      "type": "WEB",
       "actions": [
         {
-          "type": "ios",
-          "url": "https://itunes.apple.com/se/app/nelly/id1157319834"
+          "type": "link",
+          "url": "https://picular.co/",
+          "showcase": "picular"
         }
       ]
     },
@@ -89,6 +90,20 @@
     }
   ],
   "allCases": [
+    {
+      "name": "Picular",
+      "image": "./images/cases/picular.jpg",
+      "desc": "Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.",
+      "client": "Futurememories.se",
+      "type": "WEB",
+      "actions": [
+        {
+          "type": "link",
+          "url": "https://picular.co/",
+          "showcase": "picular"
+        }
+      ]
+    },
     {
       "name": "Nelly App",
       "image": "./images/cases/nelly.jpg",
