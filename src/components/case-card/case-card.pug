@@ -6,6 +6,10 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
       img(src=image alt=name)
 
       h3.name(class=isPreview ? '-large' : '')= name
+        if actions && actions.length > 0
+          each action in actions
+            if action.showcase
+              div.right-arrow(class='mobile-case-link -block')
 
       .info
         p= desc

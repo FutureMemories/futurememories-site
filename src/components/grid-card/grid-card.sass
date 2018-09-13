@@ -58,6 +58,9 @@
         font-size: 6rem
         line-height: 1
 
+      > .mobile-case-link
+        display: none
+
     > .name, > .info, > .meta
       position: relative
       z-index: 3
@@ -116,7 +119,7 @@
           height: 3.7rem
 
         > .button
-          padding: 1rem 2rem 0.6rem
+          padding: 0.9rem 2rem 0.4rem
           border: 2px solid $color-red
           border-radius: 2.5rem
           color: #fff
@@ -127,6 +130,7 @@
           font-weight: bold
           position: absolute
           right: 0
+          white-space: nowrap
 
         &.-block
           width: 100%
@@ -182,11 +186,38 @@
         &.-large
           font-size: 2rem
 
+        > .mobile-case-link
+          display: block
+
       > .info > p
         font-size: 1.4rem
 
       > .meta
-        display: none
+        display: block
+        position: absolute
+        margin: 0
+        padding: 0
+        top: -3rem
+        right: 0
+
+        > .data
+          display: none
+
+        > .action 
+          
+          &.-block
+            border: none
+          
+          > .link
+            display: none
+
+          > .button 
+            width: 35rem
+            height: 40rem
+            border-radius: 0
+            border: none
+            color: rgba(white, 0)
+            background: none
 
   .no-touchevents &:hover
     > .card

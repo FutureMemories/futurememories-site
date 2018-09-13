@@ -6,7 +6,7 @@
       "image": "./images/cases/picular.jpg",
       "desc": "Picular is a rocket fast primary color generator using Google's image search.",
       "client": "-",
-      "type": "Web",
+      "type": "UI/UX, Web",
       "actions": [
         {
           "type": "link",
@@ -16,33 +16,45 @@
       ]
     },
     {
-      "name": "Retts Plus",
-      "image": "./images/cases/retts-plus.jpg",
-      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-      "client": "Predicare",
-      "type": "UI/UX",
+      "name": "Aventus SIGMA",
+      "image": "./images/cases/avtech.jpg",
+      "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UX/UI",
       "actions": [
         {
-          "type": "video",
-          "url": "https://player.vimeo.com/video/258259422?autoplay=1"
+          "type": "link",
+          "url": "http://avtech.aero/products/aventus-sigma/"
         }
       ]
     },
     {
-      "name": "Mat.se Driver App",
-      "image": "./images/cases/driver-app.jpg",
-      "desc": "On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.",
-      "client": "Mat.se",
-      "type": "iOS, UX/UI"
+      "name": "Paykartan",
+      "image": "./images/cases/paykartan.jpg",
+      "desc": "Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone.",
+      "client": "-",
+      "type": "UX/UI, Web",
+      "actions": [
+        {
+          "type": "link",
+          "url": "https://paykartan.se/"
+        }
+      ]
     }
   ],
   "browseCases": [
     {
-      "name": "Mat.se Driver App",
-      "image": "./images/cases/driver-app.jpg",
-      "desc": "On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.",
-      "client": "Mat.se",
-      "type": "iOS, UX/UI"
+      "name": "Paykartan",
+      "image": "./images/cases/paykartan.jpg",
+      "desc": "Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone.",
+      "client": "-",
+      "type": "UX/UI, Web",
+      "actions": [
+        {
+          "type": "link",
+          "url": "https://paykartan.se/"
+        }
+      ]
     },
     {
       "name": "Retts Plus",
@@ -81,7 +93,7 @@
       "image": "./images/cases/picular.jpg",
       "desc": "Picular is a rocket fast primary color generator using Google's image search.",
       "client": "-",
-      "type": "Web",
+      "type": "UI/UX, Web",
       "actions": [
         {
           "type": "link",
@@ -91,15 +103,28 @@
       ]
     },
     {
-      "name": "Nelly App",
-      "image": "./images/cases/nelly.jpg",
-      "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
-      "client": "NLY Scandinavia",
-      "type": "iOS",
+      "name": "Paykartan",
+      "image": "./images/cases/paykartan.jpg",
+      "desc": "Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone.",
+      "client": "-",
+      "type": "UX/UI, Web",
       "actions": [
         {
-          "type": "ios",
-          "url": "https://itunes.apple.com/se/app/nelly/id1157319834"
+          "type": "link",
+          "url": "https://paykartan.se/"
+        }
+      ]
+    },
+    {
+      "name": "Aventus SIGMA",
+      "image": "./images/cases/avtech.jpg",
+      "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UX/UI",
+      "actions": [
+        {
+          "type": "link",
+          "url": "http://avtech.aero/products/aventus-sigma/"
         }
       ]
     },
@@ -141,15 +166,36 @@
       ]
     },
     {
-      "name": "Aventus SIGMA",
-      "image": "./images/cases/avtech.jpg",
-      "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
-      "client": "Avtech, Invencon",
-      "type": "iOS, UX/UI",
+      "name": "Wake Up Problem",
+      "image": "./images/cases/wake-up-problem.jpg",
+      "desc": "An alarm app helping students to kick-start their day in a playful and competitive way.",
+      "client": "Karlstad University, Ord & Bild",
+      "type": "iOS, Android",
       "actions": [
         {
-          "type": "link",
-          "url": "http://avtech.aero/products/aventus-sigma/"
+          "type": "video",
+          "url": "https://player.vimeo.com/video/260766295?autoplay=1"
+        },
+        {
+          "type": "ios",
+          "url": "https://itunes.apple.com/se/app/wake-up-problem/id1347926779?mt=8"
+        },
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=se.futurememories.WakeUpProblem"
+        }
+      ]
+    },
+    {
+      "name": "Nelly App",
+      "image": "./images/cases/nelly.jpg",
+      "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
+      "client": "NLY Scandinavia",
+      "type": "iOS",
+      "actions": [
+        {
+          "type": "ios",
+          "url": "https://itunes.apple.com/se/app/nelly/id1157319834"
         }
       ]
     },
@@ -210,27 +256,6 @@
         {
           "type": "video",
           "url": "https://player.vimeo.com/video/113123599?autoplay=1"
-        }
-      ]
-    },
-    {
-      "name": "Wake Up Problem",
-      "image": "./images/cases/wake-up-problem.jpg",
-      "desc": "An alarm app helping students to kick-start their day in a playful and competitive way.",
-      "client": "Karlstad University, Ord & Bild",
-      "type": "iOS, Android",
-      "actions": [
-        {
-          "type": "video",
-          "url": "https://player.vimeo.com/video/260766295?autoplay=1"
-        },
-        {
-          "type": "ios",
-          "url": "https://itunes.apple.com/se/app/wake-up-problem/id1347926779?mt=8"
-        },
-        {
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=se.futurememories.WakeUpProblem"
         }
       ]
     }
