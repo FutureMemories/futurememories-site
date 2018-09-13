@@ -1,17 +1,23 @@
-const parallaxBlock = document.querySelector('.parallax-device')
+const parallaxBlocks = document.querySelectorAll('.parallax-device')
 
-if (parallaxBlock) {
-  function parallaxMockup () {
-    window.requestAnimationFrame(parallaxMockup)
-    const scrollPoint = document.documentElement.scrollTop + (window.innerHeight / 2)
-    document.querySelectorAll('.parallax-device').forEach(function (div) {
-      if (scrollPoint > div.offsetTop) {
-        div.querySelectorAll('.parallax-content').forEach(function (child) {
-          // Scroll solution: child.scrollTop = (scrollPoint - div.offsetTop) / 3
-          child.style.transform = `translateY(-${(scrollPoint - div.offsetTop) / 5}px)`
-        })
-      }
+if (parallaxBlocks.length > 0) {
+  let parallaxes = []
+  parallaxBlocks.forEach(function (div) {
+    div.querySelectorAll('.parallax-content').forEach(function (child) {
+      parallaxes.push({'data': child, 'offsetTop': div.offsetTop})
     })
+  })
+
+  const parallaxMockup = () => {
+    window.requestAnimationFrame(parallaxMockup)
+    const scrollPoint = window.pageYOffset + (window.innerHeight / 2)
+    for (let i = 0; i < parallaxes.length; i++) {
+      let parallax = parallaxes[i]
+      if (scrollPoint > parallax.offsetTop) {
+        parallax.data.style.transform = `translateY(-${(scrollPoint - parallax.offsetTop) / 5}px)`
+      }
+    }
   }
+
   window.requestAnimationFrame(parallaxMockup)
 }
