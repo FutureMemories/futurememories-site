@@ -4,7 +4,7 @@
     {
       "name": "Picular",
       "image": "./images/cases/picular.jpg",
-      "desc": "Picular is a rocket fast primary color generator using Google's image search.",
+      "desc": "A rocket fast color search tool. Enables designers to extract primary colors using Google’s image search.",
       "client": "-",
       "type": "UI/UX, Web",
       "actions": [
@@ -31,7 +31,7 @@
     {
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
-      "desc": "Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone.",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
       "client": "-",
       "type": "UX/UI, Web",
       "actions": [
@@ -46,7 +46,7 @@
     {
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
-      "desc": "Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone.",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
       "client": "-",
       "type": "UX/UI, Web",
       "actions": [
@@ -91,7 +91,7 @@
     {
       "name": "Picular",
       "image": "./images/cases/picular.jpg",
-      "desc": "Picular is a rocket fast primary color generator using Google's image search.",
+      "desc": "A rocket fast color search tool. Enables designers to extract primary colors using Google’s image search.",
       "client": "-",
       "type": "UI/UX, Web",
       "actions": [
@@ -105,7 +105,7 @@
     {
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
-      "desc": "Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone.",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
       "client": "-",
       "type": "UX/UI, Web",
       "actions": [
