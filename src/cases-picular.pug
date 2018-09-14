@@ -1,11 +1,11 @@
 extends ./_base.pug
 
 block vars
-  - bodyClass = '-case'
+  - bodyClass = '-case -dark-toggler'
 
 block content
   +header-hero('Picular', '-subpage -case -inverted', 'Google, but for colors')
-  +large-image('./images/picular-1.jpg', 2880, 1276)
+  +large-image('./images/picular-1.jpg', 2880, 1276, 'picular')
   +text-block('Search enginge for colors', `Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.`, ['link', 'Visit the site', 'https://picular.co/'])
   +bookmark-block()
   +text-block('Putting colors to words', `Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in.`, ['image', 'Lemon baby', './images/picular-2.jpg'])

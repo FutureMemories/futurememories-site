@@ -12,6 +12,7 @@ module.exports = {
     'index.html': path.resolve(__dirname, 'src/index.pug'),
     'cases.html': path.resolve(__dirname, 'src/cases.pug'),
     'cases/picular.html': path.resolve(__dirname, 'src/cases-picular.pug'),
+    'cases/retts-plus.html': path.resolve(__dirname, 'src/cases-retts-plus.pug'),
     '404.html': path.resolve(__dirname, 'src/404.pug'),
     'script.js': path.resolve(__dirname, 'src/index.js')
   },

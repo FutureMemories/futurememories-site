@@ -1,0 +1,11 @@
+mixin slide-in-block(image, title, text, background = '#fff', color = '#000')
+  .slide-in-block(style={color: color, background: background})
+    .inner
+
+      .slider(style= `max-width: 700px`)
+        +slide-in('./images/retts-plus-2.png')
+        
+      div.content
+        h1.subheading= title
+        p= text
+        .slider(style= `max-width: 700px`)

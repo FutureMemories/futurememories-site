@@ -1,0 +1,44 @@
+.text-block-multiple
+
+  > .inner
+    display: flex
+    flex-direction: row
+    margin: auto
+    max-width: $max-width
+    padding: 10.5rem 3rem
+    font-weight: normal
+
+    > .box-left
+      display: flex
+      flex-direction: column
+      width: 40%
+
+      > .subheading
+        font-size: 4rem
+        font-weight: normal
+
+      > .text
+        margin-top: 1.6rem
+        font-size: 2rem
+        line-height: 2.8rem
+
+    > .box-right
+      width: 60%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding-left: 5rem
+
+      > p
+        font-size: 1.8rem
+        line-height: 2.5rem
+
+        &:not(:last-child)
+          margin-bottom: 2.5rem
+
+    @media screen and (max-width: $small-grid)
+      flex-direction: column
+
+      > .box-left, > .box-right
+        width: 100%
+        padding: 0

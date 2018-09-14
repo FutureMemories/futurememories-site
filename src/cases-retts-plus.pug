@@ -1,0 +1,23 @@
+extends ./_base.pug
+
+block vars
+  - bodyClass = '-case -dark'
+
+block content
+  +header-hero('Retts Plus', '-subpage -case -dark', 'Safe medical decisions')
+  +large-image('./images/retts-plus-1.jpg')
+  +text-block-multiple(
+    'Efficiency for patients', 
+    `<b>Explain the product</b> startup Cowboy came to Ueno with a prototype and a name. We worked with them to develop a fully fleshed-out brand, ready to conquer the world.`, 
+    [
+      `<b>Insert backstory</b>, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui.`, 
+      `Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`, 
+      `<b>What we did</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
+    ],
+    `#1A2132`, `#fff`)
+  +slide-in-block(
+    './images/retts-plus-1.jpg', 
+    'You U and I', 
+    'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui.', 
+    '#161D2B', '#fff')
+  +footer-block()

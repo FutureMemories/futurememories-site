@@ -5,6 +5,7 @@ import './components/grid-block'
 import './components/grid-card'
 import './components/nav-menu'
 import './components/parallax-device'
+import './components/slide-in'
 
 import './index.sass'
 

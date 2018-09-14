@@ -1,0 +1,52 @@
+.slide-in-block
+  background: #F2F5F6
+  
+  > .inner
+    display: flex
+    flex-direction: row
+    margin: auto
+    max-width: $max-width
+    padding: 8.6rem 3rem
+    font-weight: normal
+
+    > .slider
+      margin-left: -16rem
+      width: 100%
+
+    > .content
+      padding-right: 2rem
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding-left: 10rem
+      
+      > .subheading
+        font-size: 4rem
+        font-weight: normal
+
+      > p
+        font-size: 2rem
+        max-width: 52rem
+        margin-top: 1.6rem
+        line-height: 2.8rem
+        opacity: 0.8
+
+    @media screen and (max-width: $medium-grid)
+      > .slider
+        max-width: 70%
+
+      > .content
+        padding-left: 5rem
+    
+    @media screen and (max-width: $small-grid)
+      flex-direction: column
+
+      > .slider
+        max-width: 70%
+        margin-left: 0
+
+      > .content
+        padding-left: 0
+        margin-top: 5rem
+
+   

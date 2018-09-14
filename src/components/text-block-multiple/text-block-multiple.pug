@@ -1,0 +1,11 @@
+mixin text-block-multiple(title, text, content = [], background = '#fff', color = '#000')
+  .text-block-multiple(style={color: color, background: background})
+    .inner
+
+      .box-left
+        h1.subheading= title
+        p.text!= text
+
+      .box-right
+        each test in content
+          p!= test
