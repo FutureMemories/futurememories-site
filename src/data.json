@@ -5,7 +5,6 @@
       "name": "Picular",
       "image": "./images/cases/picular.jpg",
       "desc": "A rocket fast color search tool. Enables designers to extract primary colors using Google’s image search.",
-      "client": "-",
       "type": "UI/UX, Web",
       "actions": [
         {
@@ -32,7 +31,6 @@
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "client": "-",
       "type": "UX/UI, Web",
       "actions": [
         {
@@ -47,7 +45,6 @@
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "client": "-",
       "type": "UX/UI, Web",
       "actions": [
         {
@@ -73,7 +70,6 @@
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
       "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "client": "-",
       "type": "iOS",
       "actions": [
         {
@@ -92,7 +88,6 @@
       "name": "Picular",
       "image": "./images/cases/picular.jpg",
       "desc": "A rocket fast color search tool. Enables designers to extract primary colors using Google’s image search.",
-      "client": "-",
       "type": "UI/UX, Web",
       "actions": [
         {
@@ -106,7 +101,6 @@
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "client": "-",
       "type": "UX/UI, Web",
       "actions": [
         {
@@ -203,7 +197,6 @@
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
       "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "client": "-",
       "type": "iOS",
       "actions": [
         {
