@@ -1,7 +1,8 @@
 mixin footer-block(style)
   .footer-block#contact(class=(style === 'grey') && 'grey')
     .inner
-      img.logo(src=`./images/logo-circle${style === 'grey' ? '-inverted' : ''}.svg`, alt='Future Memories Logo')
+      a(href='/')
+        img.logo(src=`./images/logo-circle${style === 'grey' ? '-inverted' : ''}.svg`, alt='Future Memories Logo')
 
       .social
         .mail
