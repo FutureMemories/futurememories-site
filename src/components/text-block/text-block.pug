@@ -1,5 +1,5 @@
-mixin text-block(title, text, content = [], background)
-  .text-block(style=(background) && `background: ${background}`)
+mixin text-block(title, text, content = [], background, color)
+  .text-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner
       h1.subheading= title
       p.text= text

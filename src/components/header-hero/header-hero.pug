@@ -1,5 +1,5 @@
-mixin header-hero(title, modifier, subtitle)
-  .header-hero(class=modifier ? modifier : '')
+mixin header-hero(title, modifier, subtitle, background, color)
+  .header-hero(class=modifier ? modifier : '', style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner
       .header
         a(href='/')
@@ -9,7 +9,7 @@ mixin header-hero(title, modifier, subtitle)
             img(src='./images/logo-circle.svg' alt='Future Memories Logo')
 
         +nav-menu
-
+        
       .content
         if title
           h1.title: em=title

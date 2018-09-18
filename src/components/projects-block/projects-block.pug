@@ -1,5 +1,5 @@
-mixin projects-block()
-  .projects-block#projects
+mixin projects-block(background, color)
+  .projects-block#projects(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner
 
       div.block
