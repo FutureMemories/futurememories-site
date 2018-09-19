@@ -1,4 +1,4 @@
-mixin projects-block(background, color)
+mixin projects-block(current, background, color)
   .projects-block#projects(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner
 
@@ -8,4 +8,4 @@ mixin projects-block(background, color)
 
       div.block(class='project')
 
-        +case-block(data.browseCases, 'linkto')
+        +case-block(data.browseCases, 'more-projects', current)

@@ -9,6 +9,21 @@
     max-width: $max-width
     padding: 8.6rem 3rem
     font-weight: normal
+    overflow: hidden
+
+    &.-right
+      flex-direction: row-reverse
+      padding-bottom: 17rem
+      position: relative
+
+    > .image
+      width: 57%
+      height: 57%
+      position: relative
+      margin-bottom: -38rem
+      margin-right: -10rem
+      @media screen and (max-width: 720px)
+        width: 56%
 
     > .content
       padding-right: 2rem
@@ -16,68 +31,64 @@
       flex-direction: column
       justify-content: center
       padding-left: 5rem
-      
-      > .item 
+
+      > .item
         margin-top: 2.6rem
+        display: flex
+        align-items: center
 
         &.-text
           margin: 1.6rem 0 4.1rem
 
-        &.-droplet, &.-hash, &.-image
-          &:before
-            content: ''
-            display: inline-block
-            position: relative
-            top: 0.5rem
-            margin-right: 1.8rem
-            width: 1.7rem
-            height: 2.1rem
+        > img
+          width: 1.7rem
+          height: auto
+          position: relative
+          margin-top: -0.3rem
 
-        &.-droplet:before
-          background: url('./images/droplet.svg') no-repeat 0 0/100%
-
-        &.-hash:before
-          background: url('./images/hash.svg') no-repeat 0 0/100%
-
-        &.-image:before
-          background: url('./images/image.svg') no-repeat 0 0/100%
+        > span
+          margin-left: 1.8rem
 
       > .subheading
         font-size: 4rem
         font-weight: normal
+        white-space: pre-line
 
       > p
         font-size: 2rem
         max-width: 52rem
         margin-top: 1.6rem
         line-height: 2.8rem
-        color: #737780
-      
-      @media screen and (max-width: 750px)
+
+      @media screen and (max-width: 820px)
         padding-right: 1rem
         flex: 1
-        
+
         > .item
           margin-top: 2rem
 
           &.-text
             margin: 1rem 0 2.1rem
 
-        > .subheading
-          font-size: 2.5rem
-
         > p
           max-width: 35rem
-          
-    @media screen and (max-width: 590px)
+
+    @media screen and (max-width: 700px)
       flex-direction: column
+
+      &.-right
+        flex-direction: column-reverse
+
+      > .image
+        margin-top: 5rem
+        width: 70%
+        height: 70%
+        margin-bottom: -23rem
+        margin-left: 22vw
 
       > .content
         padding-left: 0
         padding-top: 3rem
-
-        > .subheading
-          font-size: 3rem
 
         > p
           font-size: 2em

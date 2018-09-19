@@ -1,12 +1,19 @@
-mixin bookmark-block()
-  .bookmark-block
-    .inner
+mixin bookmark-block(title, text, items, type, background, color, align = 'right')
+  .bookmark-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
+    .inner(class=(align==='left') && '-right')
 
-      +parallax-device('iphoneX', './images/picular-screenshot-1.jpg')
-        
+      if (type[0] === 'parallax')
+        +parallax-scroll(type[1], type[2])
+
+      else if (type[0] === 'image')
+        img.image(src=type[1] width='603' height='852')
+
       div.content
-        h1.subheading One for the bookmarks.
-        p(class='item -text') The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.
-        p(class='item -droplet') Correct color tones
-        p(class='item -hash') Grab the HEX color code
-        p(class='item -image') See the reference image
+        h1.subheading= title
+        p(class='item -text')= text
+
+
+        each item in items
+          p(class='item')
+            img(src=item.image)
+            span= item.name

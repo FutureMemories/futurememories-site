@@ -11,6 +11,7 @@ module.exports = {
   entry: {
     'index.html': path.resolve(__dirname, 'src/index.pug'),
     'cases.html': path.resolve(__dirname, 'src/cases.pug'),
+    'cases/paykartan.html': path.resolve(__dirname, 'src/cases-paykartan.pug'),
     'cases/picular.html': path.resolve(__dirname, 'src/cases-picular.pug'),
     'cases/retts-plus.html': path.resolve(__dirname, 'src/cases-retts-plus.pug'),
     '404.html': path.resolve(__dirname, 'src/404.pug'),

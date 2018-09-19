@@ -1,5 +1,5 @@
-mixin parallax-device(type, background)
-  .parallax-device(class=(type === 'iphoneX') && `-iphoneX`)
+mixin parallax-scroll(type, background)
+  .parallax-scroll(class=(type === 'iphoneX') && `-iphoneX`)
     if (type === 'iphoneX')
     img.parallax-frame(src='./images/iphone-x-empty.png')
     .parallax-content

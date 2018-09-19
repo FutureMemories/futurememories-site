@@ -1,0 +1,3 @@
+mixin parallax-object(image, speed, startPos)
+  .parallax-object(data-parallax-speed= speed)
+    img.parallax-background(src=image, style=`top: ${startPos}%`)

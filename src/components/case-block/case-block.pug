@@ -1,21 +1,22 @@
-mixin case-block(items, type)
+mixin case-block(items, type, current)
   section#cases.case-block.grid-block(class=`-${type}`)
     if type === 'preview'
       h2.heading Selected Projects
       p.subheading What we have done so far
 
-    .grid(class=(type === 'linkto') && `-linkto`)
+    .grid(class=(type === 'more-projects') && `-more-projects`)
       each item in items
-        .item
-          +case-card(
-            item.name,
-            item.image,
-            item.desc,
-            item.client,
-            item.type,
-            item.actions,
-            type === 'preview'
-          )
+        if (item.name !== current)
+          .item
+            +case-card(
+              item.name,
+              item.image,
+              item.desc,
+              item.client,
+              item.type,
+              item.actions,
+              type === 'preview'
+            )
 
       if type === 'preview'
         a(href=prod ? '/cases' : '/cases.html').item.-promotion

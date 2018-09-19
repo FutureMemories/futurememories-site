@@ -7,8 +7,16 @@ block content
   +header-hero('Picular', '-subpage -case -inverted', 'Google, but for colors')
   +large-image('./images/picular-1.jpg', 2880, 1276)
   +text-block('Search engine for colors', `Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.`, ['link', 'Visit the site', 'https://picular.co/'])
-  +bookmark-block()
+  +bookmark-block('Search engine for colors',
+  `Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.`,
+  [
+    {name: 'Correct color tones', image: './images/icons/droplet.svg'},
+    {name: 'Grab the HEX color code', image: './images/icons/hash.svg'},
+    {name: 'See the reference image', image: './images/icons/image.svg'}
+    ],
+    ['parallax', 'iphoneX', './images/picular-screenshot-1.jpg']
+  )
   +text-block('Putting colors to words', `Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in.`, ['image', 'Picular Screenshoot - sunflower', './images/picular-2.jpg'])
   +devices-block()
-  +projects-block()
+  +projects-block('Picular')
   +footer-block('grey')

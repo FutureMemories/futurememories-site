@@ -105,16 +105,19 @@
             grid-column-start: 3
             grid-row: 26 / span 15
 
-        &.-linkto
+        &.-more-projects
           height: 48.4rem
 
           *
             grid-row: 1 !important
-            
-    &.-linkto > .grid
+
+    &.-more-projects > .grid
       grid-template-columns: repeat(3, 1fr)
       grid-auto-rows: 48rem
       grid-gap: 2rem
+
+      > .item:nth-child(n+4)
+        display: none
 
       @media screen and (max-width: $medium-grid)
         grid-template-columns: repeat(2, 1fr)
@@ -128,7 +131,6 @@
         grid-auto-rows: 20rem
         padding-left: 3rem
         padding-right: 3rem
-
 
         > .item:nth-child(2)
           grid-row: 1 / span 1

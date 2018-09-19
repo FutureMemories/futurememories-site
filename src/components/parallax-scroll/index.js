@@ -1,4 +1,4 @@
-const parallaxBlocks = document.querySelectorAll('.parallax-device')
+const parallaxBlocks = document.querySelectorAll('.parallax-scroll')
 
 if (parallaxBlocks.length > 0) {
   let parallaxes = []

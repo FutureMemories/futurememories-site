@@ -23,7 +23,7 @@
       "actions": [
         {
           "type": "link",
-          "url": "http://avtech.aero/products/aventus-sigma/"
+          "url": "http://www.avtech.aero/products--services"
         }
       ]
     },
@@ -35,7 +35,8 @@
       "actions": [
         {
           "type": "link",
-          "url": "https://paykartan.se/"
+          "url": "https://paykartan.se/",
+          "showcase": "paykartan"
         }
       ]
     }
@@ -49,7 +50,8 @@
       "actions": [
         {
           "type": "link",
-          "url": "https://paykartan.se/"
+          "url": "https://paykartan.se/",
+          "showcase": "paykartan"
         }
       ]
     },
@@ -81,6 +83,19 @@
           "url": "https://itunes.apple.com/us/app/tennis-watch-tennis-score/id959541448?mt=8"
         }
       ]
+    },
+    {
+      "name": "Picular",
+      "image": "./images/cases/picular.jpg",
+      "desc": "A rocket fast color search tool. Enables designers to extract primary colors using Google’s image search.",
+      "type": "UI/UX, Web",
+      "actions": [
+        {
+          "type": "link",
+          "url": "https://picular.co/",
+          "showcase": "picular"
+        }
+      ]
     }
   ],
   "allCases": [
@@ -105,7 +120,8 @@
       "actions": [
         {
           "type": "link",
-          "url": "https://paykartan.se/"
+          "url": "https://paykartan.se/",
+          "showcase": "paykartan"
         }
       ]
     },
@@ -118,7 +134,7 @@
       "actions": [
         {
           "type": "link",
-          "url": "http://avtech.aero/products/aventus-sigma/"
+          "url": "http://www.avtech.aero/products--services"
         }
       ]
     },
