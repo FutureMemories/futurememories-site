@@ -3,7 +3,8 @@ const parallaxObjects = document.querySelectorAll('.parallax-object')
 if (parallaxObjects.length > 0) {
   let parallaxes = []
   parallaxObjects.forEach(function (div) {
-    parallaxes.push({'data': div, 'offsetTop': div.offsetTop})
+    const speed = div.getAttribute('data-parallax-speed')
+    parallaxes.push({'data': div, 'offsetTop': div.offsetTop, 'speed': speed})
   })
 
   const parallaxObject = () => {
@@ -11,9 +12,8 @@ if (parallaxObjects.length > 0) {
     const scrollPoint = window.pageYOffset + window.innerHeight
     for (let i = 0; i < parallaxes.length; i++) {
       let parallax = parallaxes[i]
-      const speed = parallax.data.getAttribute('data-parallax-speed')
       if (scrollPoint > parallax.offsetTop) {
-        parallax.data.style.transform = `translateY(${(scrollPoint - parallax.offsetTop) / speed}px)`
+        parallax.data.style.transform = `translateY(${(scrollPoint - parallax.offsetTop) / parallax.speed}px)`
       }
     }
   }

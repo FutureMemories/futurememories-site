@@ -15,6 +15,27 @@
     > .content
       width: 100%
       max-width: 95rem
-      overflow: hidden
       display: inline-flex
       justify-content: space-between
+      position: relative
+
+      &.-diagonassl
+        transform: rotate(60deg)
+        margin-top: -60rem
+        width: 80vw
+        position: relative
+        margin-top: -52%
+        margin-left: -50%
+
+  &.-diagonal
+    height: 50vw
+    width: 100%
+    max-height: 70rem
+
+    > .inner > .content
+      transform: rotate(60deg)
+      margin-top: -60rem
+      width: 80vw
+      position: relative
+      margin-top: -50%
+      margin-left: -50%

@@ -1,7 +1,7 @@
-mixin parallax-object-block(items, background)
-  .parallax-object-block(style=`background: ${background}`)
+mixin parallax-object-block(items, background, diagonal)
+  .parallax-object-block(class= diagonal && `-diagonal`, style=`background: ${background}`)
     .inner
 
      .content
         each item in items
-          +parallax-object(item.image, item.speed, item.startPos)
+          +parallax-object(item.image, item.speed, item.startPos, diagonal)

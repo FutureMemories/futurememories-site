@@ -26,7 +26,7 @@ module.exports = {
       {
         test: /\.pug$/,
         loader: extractHtml.extract([
-          'html-loader',
+          'html-loader?attrs=img:src source:src video:poster',
           {
             loader: 'pug-html-loader',
             options: {
@@ -64,7 +64,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg|gif|svg|woff|woff2)$/,
+        test: /\.(png|jpg|gif|svg|woff|woff2|mp4)$/,
         use: ['file-loader']
       }
     ]

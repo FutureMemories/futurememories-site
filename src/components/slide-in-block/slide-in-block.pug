@@ -1,11 +1,10 @@
-mixin slide-in-block(image, title, text, background, color)
-  .slide-in-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
-    .inner
+mixin slide-in-block(image, title, text, background, color, align)
+  .slide-in-block(class=(align === 'right') && `-right`, style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
 
-      .slider(style= `max-width: 700px`)
-        +slide-in('./images/retts-plus-2.png')
-        
+    .slider
+      img(src=image)
+
+    .inner
       div.content
         h1.subheading= title
         p= text
-        .slider(style= `max-width: 700px`)

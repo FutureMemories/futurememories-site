@@ -1,25 +1,37 @@
 .slide-in-block
   background: #F2F5F6
-  
+  overflow: hidden
+  display: flex
+  flex-direction: row
+
+  > .slider
+    position: relative
+    width: 100%
+    margin-left: -15.5rem
+    max-width: 90rem
+    padding: 8.6rem 0
+
+    > img
+      position: relative
+      width: 100%
+      height: auto
+
   > .inner
     display: flex
     flex-direction: row
     margin: auto
     max-width: $max-width
+    width: 100%
     padding: 8.6rem 3rem
     font-weight: normal
-
-    > .slider
-      margin-left: -16rem
-      width: 100%
+    position: relative
 
     > .content
-      padding-right: 2rem
+      margin-left: 4rem
       display: flex
       flex-direction: column
       justify-content: center
-      padding-left: 10rem
-      
+
       > .subheading
         font-size: 4rem
         font-weight: normal
@@ -31,22 +43,35 @@
         line-height: 2.8rem
         opacity: 0.8
 
-    @media screen and (max-width: $medium-grid)
-      > .slider
-        max-width: 70%
+  &.-right
+    flex-direction: row-reverse
+
+    > .slider
+      margin-right: -15.5rem
+      margin-left: 0
+
+    > .inner
+      position: relative
+      display: flex
+      justify-content: flex-end
 
       > .content
-        padding-left: 5rem
-    
-    @media screen and (max-width: $small-grid)
-      flex-direction: column
+        position: relative
+        margin-right: 4rem
 
-      > .slider
-        max-width: 70%
-        margin-left: 0
+  @media screen and (max-width: $small-grid)
+    flex-direction: column
+
+    &.-right
+      flex-direction: column !important
+
+    > .slider
+      max-width: 100%
+      margin: 0
+      padding: 8rem 3rem 0
+
+    > .inner
+      padding: 3rem
 
       > .content
-        padding-left: 0
-        margin-top: 5rem
-
-   
+        margin: 0
