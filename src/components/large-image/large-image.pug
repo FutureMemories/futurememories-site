@@ -1,6 +1,6 @@
-mixin large-image(src, width, height, badges)
-  .large-image
-    img(src=src)
+mixin large-image(src, width, height, badges, background)
+  .large-image(class=(background) && `-small-image`, style=(background) && `background:${background}`)
+    img(src=src, width=width)
 
     if badges === 'picular'
       .badges
