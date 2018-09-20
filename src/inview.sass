@@ -1,0 +1,32 @@
+body.-case
+  .text-block > .inner
+    transform: translateY(5rem) translateZ(0)
+
+  .bookmark-block .content
+    transform: translateX(-5rem) translateZ(0)
+
+  .devices-block > .inner
+    transform: translateX(5rem) translateZ(0)
+
+  .text-block > .inner,
+  .bookmark-block .content,
+  .devices-block > .inner
+    opacity: 0
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
+
+  .grid-block.-more-projects .item
+    transform: translateY(5rem) translateZ(0)
+    opacity: 0
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
+
+    &:nth-child(2)
+      transition-delay: 0.15s
+    &:nth-child(3)
+      transition-delay: 0.3s
+
+  .text-block.-inview > .inner,
+  .bookmark-block .content.-inview,
+  .devices-block.-inview > .inner,
+  .grid-block.-more-projects.-inview .item
+    transform: none
+    opacity: 1

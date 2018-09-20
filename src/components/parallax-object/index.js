@@ -4,7 +4,7 @@ if (parallaxObjects.length > 0) {
   let parallaxes = []
   parallaxObjects.forEach(function (div) {
     const speed = div.getAttribute('data-parallax-speed')
-    parallaxes.push({'data': div, 'offsetTop': div.offsetTop, 'speed': speed})
+    parallaxes.push({ 'data': div, 'offsetTop': div.offsetTop, 'speed': speed })
   })
 
   const parallaxObject = () => {

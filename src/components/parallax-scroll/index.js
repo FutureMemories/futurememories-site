@@ -4,7 +4,7 @@ if (parallaxBlocks.length > 0) {
   let parallaxes = []
   parallaxBlocks.forEach(function (div) {
     div.querySelectorAll('.parallax-content').forEach(function (child) {
-      parallaxes.push({'data': child, 'offsetTop': div.offsetTop})
+      parallaxes.push({ 'data': child, 'offsetTop': div.offsetTop })
     })
   })
 
