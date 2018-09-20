@@ -3,7 +3,7 @@ const parallaxObjects = document.querySelectorAll('.parallax-object')
 if (parallaxObjects.length > 0) {
   let parallaxes = []
   parallaxObjects.forEach(function (div) {
-    parallaxes.push({'data': div, 'offsetTop': div.offsetTop})
+    parallaxes.push({ 'data': div, 'offsetTop': div.offsetTop })
   })
 
   const parallaxObject = () => {

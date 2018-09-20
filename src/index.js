@@ -7,6 +7,7 @@ import './components/nav-menu'
 import './components/parallax-scroll'
 import './components/parallax-object'
 import './components/slide-in'
+import './inview'
 
 import './index.sass'
 

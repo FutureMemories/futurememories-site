@@ -4,7 +4,7 @@ if (slideIn.length > 0) {
   let sliders = []
 
   slideIn.forEach(function (div) {
-    sliders.push({'data': div, 'offsetTop': div.offsetTop}) // 'offsetBottom': div.offsetTop + div.offsetHeight
+    sliders.push({ 'data': div, 'offsetTop': div.offsetTop }) // 'offsetBottom': div.offsetTop + div.offsetHeight
   })
 
   const slideIt = () => {
