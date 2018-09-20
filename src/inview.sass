@@ -2,14 +2,26 @@ body.-case
   .text-block > .inner
     transform: translateY(5rem) translateZ(0)
 
+  .text-block-multiple > .inner
+    transform: translateY(5rem) translateZ(0)
+
   .bookmark-block .content
     transform: translateX(-5rem) translateZ(0)
+
+  .slide-in-block
+    > .inner
+      transform: translateX(-5rem) translateZ(0)
+    &.-right > .inner
+      transform: translateX(5rem) translateZ(0)
+
 
   .devices-block > .inner
     transform: translateX(5rem) translateZ(0)
 
   .text-block > .inner,
+  .text-block-multiple > .inner,
   .bookmark-block .content,
+  .slide-in-block .inner,
   .devices-block > .inner
     opacity: 0
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
@@ -25,8 +37,10 @@ body.-case
       transition-delay: 0.3s
 
   .text-block.-inview > .inner,
+  .text-block-multiple.-inview > .inner,
   .bookmark-block .content.-inview,
   .devices-block.-inview > .inner,
+  .slide-in-block.-inview > .inner,
   .grid-block.-more-projects.-inview .item
     transform: none
     opacity: 1
