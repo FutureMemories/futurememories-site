@@ -1,0 +1,23 @@
+extends ./_base.pug
+
+block vars
+  - bodyClass = '-case -dark'
+
+block content
+  +header-hero('Sigma Aventus', '-subpage -case -dark', 'Flight planning for comfort')
+  +large-image('./images/cases/sigma-aventus-1.jpg')
+  +text-block-multiple(
+    'Flightmode on',
+    `<b>Explain the product</b> startup Cowboy came to Ueno with a prototype and a name. We worked with them to develop a fully fleshed-out brand, ready to conquer the world.`,
+    [
+      `Sigma Aventus, works by measuring and assessing a number of vital parameters at the first examination, as well as by gathering a structured and standardised medical history regarding the reason for the visit and the patient’s current symptoms.`,
+      `From the majority of user tests and surveys we worked on a digital user interface that took advantage of the entire RETTS capability. We also developed a timeline that logged all interactions with each patient to provide a clearer overview of the patient's entire care stay.`,
+      `This project was nominated in the Design S, Sweden’s biggest and most comprehensive design award, backed by the entire design industry. The award is aimed at professional designers, architects, individual specialists, producers and companies that work with design in a broad sense.`
+    ],
+    `#1A2132`, `#fff`)
+
+
+  +text-block('One flight ahead', `Signa Aventus is just a nice buffet of choices. Get that nice overview of your city and all the yummy places nearby. `, ['image', 'Paykartan Screenshoot - gothenburg', './images/cases/sigma-aventus-2.png', 882], '#161D2B', '#fff')
+
+  +projects-block('Retts Plus', '#1A2132', '#fff')
+  +footer-block()

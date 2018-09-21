@@ -1,5 +1,5 @@
 mixin video-block(video, videoImage, background)
   .video-block(style=background && `background: ${background}`)
     .inner
-      video.video(poster=videoImage, controls, height='auto', width='100%', loop='yes', muted='yes', preload='none', onclick=`this.paused ? this.play() : this.pause()`)
+      video.video(poster=videoImage, controls, height='auto', width='100%', preload='metadata')
         source(src=video, type='video/mp4')
