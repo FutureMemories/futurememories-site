@@ -1,0 +1,14 @@
+mixin text-grid-block(blocks, background, color)
+  .text-grid-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
+    .inner
+
+    .blocks
+      each block in blocks
+        .block
+          if (block.image && block.title)
+            h1.subheading=block.title
+          else if (block.image)
+            img(src=block.image)
+          else if (block.title)
+            h1.subheading=block.title
+            p=block.desc

@@ -1,0 +1,53 @@
+.text-grid-block
+  position: relative
+
+  > .inner
+    display: flex
+    flex-direction: row
+    margin: auto
+    max-width: $max-width
+    padding: 10.5rem 3rem 0
+    font-weight: normal
+
+  > .blocks
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+    > .block
+      position: relative
+      left: 0
+      max-width: 90rem
+      width: 100%
+
+      &:nth-child(1)
+        grid-row: span 8
+        overflow: hidden
+        left: -14rem
+
+      &:nth-child(2)
+        grid-row: span 2
+
+      &:nth-child(3)
+        grid-row: span 8
+        right: 14rem
+
+      &:nth-child(4)
+        grid-row: span 3
+        overflow: hidden
+        max-height: 65%
+        left: -14rem
+
+      > img
+        width: 100%
+        height: auto
+
+      > .subheading
+        font-size: 4rem
+        font-weight: normal
+
+      > p
+        font-size: 2rem
+        max-width: 52rem
+        margin-top: 1.6rem
+        line-height: 2.8rem
+        opacity: 0.9
