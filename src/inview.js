@@ -6,7 +6,8 @@ const selectors = [
   '.bookmark-block .content',
   '.devices-block',
   '.grid-block.-more-projects',
-  '.slide-in-block'
+  '.slide-in-block',
+  '.parallax-object-block'
 ].join(',')
 
 if (document.body.classList.contains('-case')) {

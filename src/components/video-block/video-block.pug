@@ -1,5 +1,16 @@
-mixin video-block(video, videoImage, background)
+mixin video-block(video, videoImage, background, badges)
   .video-block(style=background && `background: ${background}`)
     .inner
       video.video(poster=videoImage, controls, height='auto', width='100%', preload='metadata')
         source(src=video, type='video/mp4')
+
+    if (badges)
+      .badges
+        each badge in badges
+          .badge(class=!badge.title && '-center', style=badge.background && `background: ${badge.background}`)
+            img(src=badge.image)
+            if(badge.title)
+              .desc
+                span.title=badge.title
+                if(badge.date)
+                  span.date=badge.date
