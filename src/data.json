@@ -64,7 +64,8 @@
       "actions": [
         {
           "type": "video",
-          "url": "https://player.vimeo.com/video/258259422?autoplay=1"
+          "url": "https://player.vimeo.com/video/258259422?autoplay=1",
+          "showcase": "retts-plus"
         }
       ]
     },
@@ -147,7 +148,8 @@
       "actions": [
         {
           "type": "video",
-          "url": "https://player.vimeo.com/video/258259422?autoplay=1"
+          "url": "https://player.vimeo.com/video/258259422?autoplay=1",
+          "showcase": "retts-plus"
         }
       ]
     },
