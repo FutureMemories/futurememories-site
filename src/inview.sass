@@ -14,6 +14,14 @@ body.-case
     &.-right > .inner
       transform: translateX(5rem) translateZ(0)
 
+  .text-grid-block
+    > .blocks > .block
+      transform: translateX(-5rem) translateZ(0)
+      &:nth-child(2)
+        transform: translateY(5rem) translateZ(0)
+      &:nth-child(3)
+        transform: translateX(5rem) translateZ(0)
+
   .devices-block > .inner
     transform: translateX(5rem) translateZ(0)
 
@@ -22,6 +30,7 @@ body.-case
   .bookmark-block .content,
   .slide-in-block .inner,
   .slide-in-block .slider,
+  .text-grid-block > .blocks > .block,
   .devices-block > .inner
     opacity: 0
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
@@ -42,6 +51,7 @@ body.-case
   .devices-block.-inview > .inner,
   .slide-in-block.-inview > .inner,
   .slide-in-block.-inview > .slider,
+  .text-grid-block.-inview > .blocks > .block,
   .grid-block.-more-projects.-inview .item
     transform: none
     opacity: 1

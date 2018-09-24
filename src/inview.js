@@ -7,6 +7,7 @@ const selectors = [
   '.devices-block',
   '.grid-block.-more-projects',
   '.slide-in-block',
+  '.text-grid-block',
   '.parallax-object-block'
 ].join(',')
 

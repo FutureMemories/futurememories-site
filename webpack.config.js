@@ -14,7 +14,7 @@ module.exports = {
     'cases/paykartan.html': path.resolve(__dirname, 'src/cases-paykartan.pug'),
     'cases/picular.html': path.resolve(__dirname, 'src/cases-picular.pug'),
     'cases/retts-plus.html': path.resolve(__dirname, 'src/cases-retts-plus.pug'),
-    //'cases/signa-aventus.html': path.resolve(__dirname, 'src/cases-signa-aventus.pug'),
+    'cases/signa-aventus.html': path.resolve(__dirname, 'src/cases-signa-aventus.pug'),
     '404.html': path.resolve(__dirname, 'src/404.pug'),
     'script.js': path.resolve(__dirname, 'src/index.js')
   },

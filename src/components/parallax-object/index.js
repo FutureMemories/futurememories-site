@@ -8,15 +8,17 @@ if (parallaxObjects.length > 0) {
   })
 
   const parallaxObject = () => {
-    window.requestAnimationFrame(parallaxObject)
     const scrollPoint = window.pageYOffset + window.innerHeight
     for (let i = 0; i < parallaxes.length; i++) {
       let parallax = parallaxes[i]
       if (scrollPoint > parallax.offsetTop) {
-        parallax.data.style.transform = `translateY(${(scrollPoint - parallax.offsetTop) / parallax.speed}px)`
+        const positon = (scrollPoint - parallax.offsetTop) / parallax.speed
+        parallax.data.style.transform = `translateY(${positon.toFixed(1)}px)`
       }
     }
   }
 
-  window.requestAnimationFrame(parallaxObject)
+  setInterval(() => {
+    window.requestAnimationFrame(parallaxObject)
+  }, 100)
 }

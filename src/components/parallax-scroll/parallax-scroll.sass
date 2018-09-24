@@ -10,13 +10,15 @@
     position: absolute
     z-index: 10
     overflow: hidden
-    
+
   > .parallax-content
     position: absolute
     display: block
     max-width: inherit
     max-height: calc(100% - 1px)
     padding: 2.6rem 2.7rem
+    transition: transform 200ms ease
+    transform: translateZ(0)
 
     > .parallax-background
       width: 100%
