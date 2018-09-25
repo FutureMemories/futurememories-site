@@ -12,7 +12,6 @@ mixin bookmark-block(title, text, items, type, background, color, align = 'right
         h1.subheading= title
         p(class='item -text')= text
 
-
         each item in items
           p(class='item')
             img(src=item.image)
