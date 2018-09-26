@@ -8,7 +8,8 @@ const selectors = [
   '.grid-block.-more-projects',
   '.slide-in-block',
   '.text-grid-block',
-  '.parallax-object-block'
+  '.parallax-object-block',
+  '.center-block'
 ].join(',')
 
 if (document.body.classList.contains('-case')) {

@@ -1,6 +1,6 @@
-mixin text-block(title, text, content = [], background, color)
+mixin text-block(title, text, content = [], background, color, modifier)
   .text-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
-    .inner
+    .inner(class=modifier)
       h1.subheading= title
       p.text= text
 

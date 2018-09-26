@@ -1,0 +1,22 @@
+extends ./_base.pug
+
+block vars
+  - bodyClass = '-case -dark'
+
+block content
+  +header-hero('TENNIS WATCH', '-subpage -case -dark', 'Grand slam')
+  +video-block('./videos/tennis-watch.mp4', './images/cases/tennis-watch-video.jpg', '#000301', [{image: './images/cases/tennis-watch-badge-best-new-app.svg', title: 'Apple App Store'}, {image: './images/cases/tennis-watch-badge-amazing-app.svg', title: 'Apple App Store'}])
+  +center-block('First in the game', 'Tennis Watch was the first tennis app designed for Apple Watch. It turns your Apple Watch into a simple and easy-to-use score tracking device. All matches are stored on your iPhone and sophisticated statistics give you insights on how to improve your game.', '', '', '', '#161D2B', '#fff')
+  +slide-in-block(
+    {path: './images/cases/tennis-watch-1.png', width: 427, height: 703, positon: 'inside'},
+    'Match trends and performance statistics',
+    `Giving a doctor or nurse an overview of the patient's visit is a key feature for making the right decision and giving proper care. At the right time.`,
+    '#0C0F16', '#fff', '-tennis-watch')
+  +slide-in-block(
+    {path: './images/cases/tennis-watch-2.png', width: 243, height: 438, positon: 'inside'},
+    'Point by point score tracker',
+    `We developed a timeline that shows the entire patient’s journey from first contact until it was time to go home. This improved the ability to track  events during a patient’s visit better, and enabled nurses and doctors to take make the correct decision at any point.`,
+    '#0C0F16', '#fff', '-right')
+  +center-block('Available in app store', '', './images/cases/tennis-watch-3.jpg', './images/cases/tennis-watch-logo.svg', {ios: 'https://itunes.apple.com/us/app/tennis-watch-tennis-score/id959541448?mt=8'}, '', '#fff')
+  +projects-block('Tennis Watch', '#1A2132', '#fff')
+  +footer-block()

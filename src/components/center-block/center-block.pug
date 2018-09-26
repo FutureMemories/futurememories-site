@@ -1,0 +1,24 @@
+mixin center-block(title, text, src, icon, devices, background, color)
+  .center-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
+    .inner(class=!src && `-block`)
+      if (src)
+        img(src=src)
+
+      .content
+        if (devices)
+          img(src=icon)
+
+        .block(class=text && `-center`)
+          if (title)
+            h1= title
+          if (text)
+            p= text
+
+          if (devices)
+            if (devices.ios)
+              a(href=devices.ios, target="_blank")
+                img(src='./images/icons/app-store.svg')
+
+            if (devices.andriod)
+              a(href=devices.andriod)
+                img(src='./images/icons/google-play.svg')

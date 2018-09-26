@@ -1,10 +1,17 @@
-mixin slide-in-block(image, title, text, background, color, align)
-  .slide-in-block(class=(align === 'right') && `-right`, style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
+mixin slide-in-block(image, title, text, background, color, modifier)
+  .slide-in-block(class=modifier, style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
 
-    .slider
-      img(src=image)
+    if (image.positon === 'inside')
+      .inner(class=modifier)
+        img(src=image.path, width=image.width, height=image.height)
+        div.content
+          h1.subheading= title
+          p= text
 
-    .inner
-      div.content
-        h1.subheading= title
-        p= text
+    else
+      .slider
+        img(src=image)
+      .inner
+        div.content
+          h1.subheading= title
+          p= text

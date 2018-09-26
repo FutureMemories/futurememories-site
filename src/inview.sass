@@ -25,13 +25,17 @@ body.-case
   .devices-block > .inner
     transform: translateX(5rem) translateZ(0)
 
+  .center-block > .inner > .content
+    transform: translateY(5rem) translateZ(0)
+
   .text-block > .inner,
   .text-block-multiple > .inner,
   .bookmark-block .content,
   .slide-in-block .inner,
   .slide-in-block .slider,
   .text-grid-block > .blocks > .block,
-  .devices-block > .inner
+  .devices-block > .inner,
+  .center-block > .inner > .content
     opacity: 0
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
 
@@ -52,6 +56,7 @@ body.-case
   .slide-in-block.-inview > .inner,
   .slide-in-block.-inview > .slider,
   .text-grid-block.-inview > .blocks > .block,
-  .grid-block.-more-projects.-inview .item
+  .grid-block.-more-projects.-inview .item,
+  .center-block.-inview > .inner > .content,
     transform: none
     opacity: 1
