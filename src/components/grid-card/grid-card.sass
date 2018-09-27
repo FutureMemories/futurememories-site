@@ -99,6 +99,10 @@
       margin-top: 1.5rem
       align-items: center
       flex-wrap: wrap
+      width: 100%
+
+      &.-has-case
+        width: calc(100% - 14.5rem)
 
       > .data
         font-size: 1.6rem
@@ -122,19 +126,30 @@
           display: inline-block
           height: 3.7rem
 
-        > .button
+        > .view-case
           padding: 0.9rem 2rem 0.4rem
-          border: 2px solid $color-red
-          border-radius: 2.5rem
           color: #fff
-          background: rgba(black, 0.3)
           text-decoration: none
           font-size: 1.6rem
-          text-transform: uppercase
           font-weight: bold
-          position: absolute
-          right: 0
+          position: fixed
+          right: 3rem
           white-space: pre
+          margin-right: 3.5rem
+
+          &:after
+            content: ''
+            display: inline-block
+            position: absolute
+            background: url('./images/arrow-red-small.svg') no-repeat 0 0/100%
+            width: 4.8rem
+            height: 2.3rem
+            margin-left: 1rem
+            transition: all 0.2s ease
+            top: 0.8rem
+
+          &:hover::after
+            margin-left: 1.8rem
 
         &.-block
           width: 100%
@@ -146,6 +161,10 @@
 
     @media screen and (max-width: $medium-grid)
       > .meta
+
+        &.-has-case
+          width: 100%
+
         > .action
           width: 100%
           border-left: 0

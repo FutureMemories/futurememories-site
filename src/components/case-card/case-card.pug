@@ -16,7 +16,7 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
         .info
           p.description= desc
 
-      .meta
+      .meta(class=actions && actions[0].showcase && `-has-case`)
         if client
           .data
             h4.title Client
@@ -40,4 +40,4 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
                 a.link(href=action.url): img(src='./images/link.svg' width='37' height='37' alt='Visit link' title='Visit link')
 
               if action.showcase
-                a.button(href=`/cases/${action.showcase}.html`) View Case
+                a.view-case(href=`/cases/${action.showcase}.html`) View Case

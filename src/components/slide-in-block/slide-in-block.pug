@@ -1,5 +1,5 @@
 mixin slide-in-block(image, title, text, background, color, modifier)
-  .slide-in-block(class=modifier, style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
+  .slide-in-block(class=modifier, style=`${background ? `background-color:${background};` : ''}${color ? `color:${color};` : ''}`)
 
     if (image.positon === 'inside')
       .inner(class=modifier)
