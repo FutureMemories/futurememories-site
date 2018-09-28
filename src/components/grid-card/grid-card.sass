@@ -101,9 +101,6 @@
       flex-wrap: wrap
       width: 100%
 
-      &.-has-case
-        width: calc(100% - 14.5rem)
-
       > .data
         font-size: 1.6rem
         margin-right: 2.5rem
@@ -136,6 +133,7 @@
           right: 3rem
           white-space: pre
           margin-right: 3.5rem
+          bottom: 2.5rem
 
           &:after
             content: ''
@@ -159,11 +157,14 @@
           padding-top: 2rem
           padding-left: 0
 
+      &.-has-case
+        width: calc(100% - 14.5rem)
+
+        > .action
+          width: 0px
+
     @media screen and (max-width: $medium-grid)
       > .meta
-
-        &.-has-case
-          width: 100%
 
         > .action
           width: 100%
@@ -172,6 +173,12 @@
           margin-top: 2rem
           padding-top: 2rem
           padding-left: 0
+
+        &.-has-case
+          width: 100%
+
+          > .action
+            width: 0
 
       > .name
         &.-large

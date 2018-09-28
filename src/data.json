@@ -8,8 +8,6 @@
       "type": "UI/UX, Web",
       "actions": [
         {
-          "type": "link",
-          "url": "https://picular.co/",
           "showcase": "picular"
         }
       ]
@@ -34,8 +32,6 @@
       "type": "UX/UI, Web",
       "actions": [
         {
-          "type": "link",
-          "url": "https://paykartan.se/",
           "showcase": "paykartan"
         }
       ]
@@ -49,8 +45,6 @@
       "type": "UX/UI, Web",
       "actions": [
         {
-          "type": "link",
-          "url": "https://paykartan.se/",
           "showcase": "paykartan"
         }
       ]
@@ -63,8 +57,6 @@
       "type": "UI/UX",
       "actions": [
         {
-          "type": "video",
-          "url": "https://player.vimeo.com/video/258259422?autoplay=1",
           "showcase": "retts-plus"
         }
       ]
@@ -76,12 +68,7 @@
       "type": "iOS",
       "actions": [
         {
-          "type": "video",
-          "url": "https://www.youtube.com/embed/YOvwwEN-xao?autoplay=1"
-        },
-        {
-          "type": "ios",
-          "url": "https://itunes.apple.com/us/app/tennis-watch-tennis-score/id959541448?mt=8"
+          "showcase": "tennis-watch"
         }
       ]
     },
@@ -107,8 +94,6 @@
       "type": "UI/UX, Web",
       "actions": [
         {
-          "type": "link",
-          "url": "https://picular.co/",
           "showcase": "picular"
         }
       ]
@@ -120,8 +105,6 @@
       "type": "UX/UI, Web",
       "actions": [
         {
-          "type": "link",
-          "url": "https://paykartan.se/",
           "showcase": "paykartan"
         }
       ]
@@ -147,8 +130,6 @@
       "type": "UI/UX",
       "actions": [
         {
-          "type": "video",
-          "url": "https://player.vimeo.com/video/258259422?autoplay=1",
           "showcase": "retts-plus"
         }
       ]
@@ -218,12 +199,7 @@
       "type": "iOS",
       "actions": [
         {
-          "type": "video",
-          "url": "https://www.youtube.com/embed/YOvwwEN-xao?autoplay=1"
-        },
-        {
-          "type": "ios",
-          "url": "https://itunes.apple.com/us/app/tennis-watch-tennis-score/id959541448?mt=8"
+          "showcase": "tennis-watch"
         }
       ]
     },
