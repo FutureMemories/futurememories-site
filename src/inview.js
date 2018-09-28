@@ -9,6 +9,7 @@ const selectors = [
   '.slide-in-block',
   '.text-grid-block',
   '.parallax-object-block',
+  '.parallax-bump-block',
   '.center-block'
 ].join(',')
 

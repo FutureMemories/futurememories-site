@@ -28,6 +28,10 @@ body.-case
   .center-block > .inner > .content
     transform: translateY(5rem) translateZ(0)
 
+  .parallax-bump-block > .inner
+    > .content
+      transform: translateY(5rem) translateZ(0)
+
   .text-block > .inner,
   .text-block-multiple > .inner,
   .bookmark-block .content,
@@ -35,7 +39,9 @@ body.-case
   .slide-in-block .slider,
   .text-grid-block > .blocks > .block,
   .devices-block > .inner,
-  .center-block > .inner > .content
+  .center-block > .inner > .content,
+  .parallax-bump-block > .inner > .content,
+  .parallax-bump-block > .inner > .parallaxes
     opacity: 0
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
 
@@ -58,5 +64,7 @@ body.-case
   .text-grid-block.-inview > .blocks > .block,
   .grid-block.-more-projects.-inview .item,
   .center-block.-inview > .inner > .content,
+  .parallax-bump-block.-inview > .inner > .content,
+  .parallax-bump-block.-inview > .inner > .parallaxes
     transform: none
     opacity: 1

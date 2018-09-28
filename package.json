@@ -22,6 +22,7 @@
     "node-sass": "^4.9.3",
     "pug-html-loader": "^1.1.5",
     "sass-loader": "^7.1.0",
+    "sine-waves": "^0.3.0",
     "smoothscroll": "0.4.0",
     "style-loader": "^0.23.0",
     "to-ico": "1.1.5",

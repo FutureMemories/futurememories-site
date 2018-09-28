@@ -1,3 +1,3 @@
-mixin parallax-object(image, speed, startPos, diagonal)
+mixin parallax-object(image, speed, startPos, diagonal, width)
   .parallax-object(data-parallax-speed= speed)
-    img.parallax-background(src=image, style=`top: ${startPos}%`, class=diagonal && `-diagonal`)
+    img.parallax-background(src=image, style=`top: ${startPos}%;${width ? ` max-width: ${width};` : ''}`, class=diagonal && `-diagonal`)

@@ -6,6 +6,7 @@ import './components/grid-card'
 import './components/nav-menu'
 import './components/parallax-scroll'
 import './components/parallax-object'
+import './components/wave-object'
 import './inview'
 
 import './index.sass'

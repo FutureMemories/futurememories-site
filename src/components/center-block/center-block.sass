@@ -38,23 +38,31 @@
       > .block
         display: block
 
-        &.-center
-          text-align: center
-
         > h1
           margin-bottom: 2rem
           font-size: 4rem
           font-weight: normal
           white-space: pre-line
+          text-align: center
+          max-width: $max-width
+          padding: 3rem
+          margin: auto
 
         > p
           font-size: 2rem
           max-width: 74rem
           line-height: 2.8rem
           opacity: 0.9
+          white-space: pre-line
 
         > a:not(:last-child)
           margin-right: 2rem
+
+        &.-center
+          text-align: center
+
+          > p
+            margin: auto
 
     &.-block
       > .content

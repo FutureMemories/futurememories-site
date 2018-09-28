@@ -1,4 +1,4 @@
-mixin center-block(title, text, src, icon, devices, background, color)
+mixin center-block(title, text, src, icon, devices, background, color, waves)
   .center-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner(class=!src && `-block`)
       if (src)
@@ -11,6 +11,10 @@ mixin center-block(title, text, src, icon, devices, background, color)
         .block(class=text && `-center`)
           if (title)
             h1= title
+
+          if (waves)
+            +wave-object()
+
           if (text)
             p= text
 
