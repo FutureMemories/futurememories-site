@@ -1,0 +1,24 @@
+extends ./_base.pug
+
+block vars
+  - bodyClass = '-case -dark-toggler'
+
+block content
+  +header-hero('Antistress', '-subpage -case -inverted', 'Take a deep breath')
+  +center-block('Speak your mind', 'Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone. The app includes Swish, Apple Pay and Beam.', '', '', '', '', '', '-antistress-loop')
+
+  +parallax-bump-block(
+    'Lunch time and… #!?@%!!\nYou forgot your wallet…',
+    'Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone. The app includes Swish, Apple Pay and Beam.',
+    [
+      {image: './images/cases/antistress-phone-3.png', speed: -15, startPos: 53, width: '412px', align: 'right'},
+      {image: './images/cases/antistress-phone-2.png', speed: -28, startPos: -30, width: '522px', align: 'right'},
+      {image: './images/cases/antistress-phone-1.png', speed: 0, startPos: -115, width: '568px', align: 'right'}
+    ]
+  )
+
+  +center-block('Att öva medveten andning gör dig bättre rustad när stressen slår till, samtidigt förebygger det stresspåslag.', '', './images/cases/antistress-1.jpg', '', '', '', '#fff')
+
+
+  +projects-block('Antistress')
+  +footer-block('grey')

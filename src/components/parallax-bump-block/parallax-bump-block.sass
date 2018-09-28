@@ -1,0 +1,70 @@
+.parallax-bump-block
+  background: #F2F5F6
+  max-height: 90rem
+  overflow: hidden
+  position: relative
+
+  > .inner
+    display: flex
+    margin: auto
+    justify-content: space-between
+    max-width: $max-width
+    width: 100%
+    padding: 9.6rem 0 9.6rem 3rem
+    font-weight: normal
+    position: relative
+
+    > .content
+      > h1
+        margin: 10rem 0 2rem
+        font-size: 4rem
+        font-weight: normal
+        white-space: pre-line
+
+      > p
+        font-size: 2rem
+        max-width: 74rem
+        line-height: 2.8rem
+        opacity: 0.9
+        white-space: pre-line
+
+    > .parallaxes
+      width: 60%
+      display: flex
+      flex-wrap: wrap
+      position: relative
+      margin-bottom: -35%
+      margin-top: -7rem
+      margin-left: auto
+      justify-content: flex-end
+
+      *
+        &:nth-child(1)
+          z-index: 4
+          right: -2rem
+
+        &:nth-child(2)
+          z-index: 3
+          right: 4rem
+
+        &:nth-child(3)
+          z-index: 2
+          right: 2rem
+
+    @media screen and (max-width: $medium-grid)
+      > .content > h1
+        margin-top: 0
+
+      > .parallaxes
+        width: 70%
+        margin: -7rem auto -35%
+
+    @media screen and (max-width: $small-grid + 100px)
+      flex-direction: column-reverse
+      text-align: center
+
+      > .content > h1
+        margin-top: 0rem
+
+      > .parallaxes
+        width: 55%

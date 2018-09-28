@@ -1,0 +1,11 @@
+mixin parallax-bump-block(title, text, items, background, diagonal)
+  .parallax-bump-block
+    .inner
+
+      .content
+        h1= title
+        p= text
+
+      .parallaxes(class='-right')
+        each item in items
+          +parallax-object(item.image, item.speed, item.startPos, diagonal, item.width)
