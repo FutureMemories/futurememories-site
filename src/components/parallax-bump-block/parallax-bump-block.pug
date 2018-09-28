@@ -1,5 +1,5 @@
-mixin parallax-bump-block(title, text, items, background, diagonal)
-  .parallax-bump-block
+mixin parallax-bump-block(title, text, items, background, color)
+  .parallax-bump-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner
 
       .content
@@ -8,4 +8,4 @@ mixin parallax-bump-block(title, text, items, background, diagonal)
 
       .parallaxes(class='-right')
         each item in items
-          +parallax-object(item.image, item.speed, item.startPos, diagonal, item.width)
+          +parallax-object(item.image, item.speed, item.startPos, '', item.width)
