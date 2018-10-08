@@ -104,7 +104,7 @@
       > .data
         font-size: 1.6rem
         margin-right: 2.5rem
-        
+
         > .title
           color: $color-red
           text-transform: uppercase
@@ -133,14 +133,14 @@
           right: 0
           bottom: -0.4rem
           white-space: pre
-          margin-right: 3.5rem
-          
+          margin-right: 2.5rem
+
           &:after
             content: ''
             display: inline-block
             position: absolute
             background: url('./images/arrow-red-small.svg') no-repeat 0 0/100%
-            width: 4.8rem
+            width: 4.2rem
             height: 2.3rem
             margin-left: 1rem
             transition: all 0.2s ease
@@ -162,6 +162,21 @@
 
         > .action
           width: 0px
+
+    @media screen and (max-width: $medium-grid + 100px)
+      > .meta
+
+        > .data
+          font-size: 1.5rem
+          margin-right: 1.5rem
+
+        > .action
+
+          > .view-case
+            font-size: 1.5rem
+            margin-right: 2rem
+            &:after
+              width: 4rem
 
     @media screen and (max-width: $medium-grid)
       > .meta
