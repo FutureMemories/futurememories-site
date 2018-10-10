@@ -1,8 +1,8 @@
 mixin center-block(title, text, src, icon, devices, background, color, waves)
   .center-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
-    .inner(class=!src && `-block`)
+    .inner(class=!src && `-block`, class=src.align && `-${src.align}`)
       if (src)
-        img(src=src)
+        img(src=src.path ? src.path : src)
 
       .content
         if (devices)
