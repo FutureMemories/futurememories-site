@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "rm -rf dist && NODE_ENV=production webpack --mode production"
+    "build": "rm -rf dist && NODE_ENV=production webpack --mode production",
+    "build-dev": "rm -rf dist && NODE_ENV=development webpack --mode development"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "babel-loader": "^8.0.4",
     "browsernizr": "2.2.0",
-    "copy-webpack-plugin": "^4.5.2",
+    "copy-webpack-plugin": "^4.5.3",
     "css-loader": "^1.0.0",
     "debounce": "1.2.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",

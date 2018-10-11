@@ -39,7 +39,8 @@
       "name": "Mat.se",
       "image": "./images/cases/mat-se.jpg",
       "desc": "Mat.se is a Gothenburg-based startup and online grocery shopping service with its own logistics and supply chain platform.",
-      "type": "UX/UI, Web",
+      "client": "Mat.se",
+      "type": "iOS, UX/UI",
       "actions": [
         {
           "showcase": "mat-se"
@@ -158,7 +159,12 @@
       "image": "./images/cases/mat-se.jpg",
       "desc": "Mat.se is a Gothenburg-based startup and online grocery shopping service with its own logistics and supply chain platform.",
       "client": "Mat.se",
-      "type": "iOS, UX/UI"
+      "type": "iOS, UX/UI",
+      "actions": [
+        {
+          "showcase": "mat-se"
+        }
+      ]
     },
     {
       "name": "Forces of Freedom",

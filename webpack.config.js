@@ -7,20 +7,27 @@ const prod = process.env.NODE_ENV === 'production'
 const extractHtml = new ExtractTextPlugin('[name]')
 const extractStyle = new ExtractTextPlugin('style.css')
 
-module.exports = {
-  entry: {
-    'index.html': path.resolve(__dirname, 'src/index.pug'),
-    'cases.html': path.resolve(__dirname, 'src/cases.pug'),
-    'cases/paykartan.html': path.resolve(__dirname, 'src/cases-paykartan.pug'),
-    'cases/picular.html': path.resolve(__dirname, 'src/cases-picular.pug'),
-    'cases/retts-plus.html': path.resolve(__dirname, 'src/cases-retts-plus.pug'),
-    'cases/sigma-aventus.html': path.resolve(__dirname, 'src/cases-sigma-aventus.pug'),
-    'cases/tennis-watch.html': path.resolve(__dirname, 'src/cases-tennis-watch.pug'),
+let entry = {
+  'index.html': path.resolve(__dirname, 'src/index.pug'),
+  '404.html': path.resolve(__dirname, 'src/404.pug'),
+  'script.js': path.resolve(__dirname, 'src/index.js'),
+  'cases.html': path.resolve(__dirname, 'src/cases.pug'),
+  'cases/paykartan.html': path.resolve(__dirname, 'src/cases-paykartan.pug'),
+  'cases/picular.html': path.resolve(__dirname, 'src/cases-picular.pug'),
+  'cases/retts-plus.html': path.resolve(__dirname, 'src/cases-retts-plus.pug'),
+  'cases/tennis-watch.html': path.resolve(__dirname, 'src/cases-tennis-watch.pug')
+}
+
+if (!prod) {
+  Object.assign(entry, {
     'cases/antistress.html': path.resolve(__dirname, 'src/cases-antistress.pug'),
     'cases/mat-se.html': path.resolve(__dirname, 'src/cases-mat-se.pug'),
-    '404.html': path.resolve(__dirname, 'src/404.pug'),
-    'script.js': path.resolve(__dirname, 'src/index.js')
-  },
+    'cases/sigma-aventus.html': path.resolve(__dirname, 'src/cases-sigma-aventus.pug')
+  })
+}
+
+module.exports = {
+  entry: entry,
   output: {
     filename: '[name]',
     publicPath: '/'
