@@ -133,16 +133,11 @@
       ]
     },
     {
-      "name": "Mat.se Driver App",
+      "name": "Mat.se",
       "image": "./images/cases/driver-app.jpg",
       "desc": "On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.",
       "client": "Mat.se",
-      "type": "iOS, UX/UI",
-      "actions": [
-        {
-          "showcase": "mat-se"
-        }
-      ]
+      "type": "iOS, UX/UI"
     },
     {
       "name": "Forces of Freedom",

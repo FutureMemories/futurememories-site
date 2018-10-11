@@ -6,7 +6,7 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
       img(src=image alt=name)
 
       if actions && actions[0].showcase
-        h3.name(class=`-showcase${isPreview ? ' -large' : ''}`)= actions[0].showcase
+        h3.name(class=`-showcase${isPreview ? ' -large' : ''}`)= name
           a.right-arrow(class='mobile-case-link -block', href=`/cases/${actions[0].showcase}.html`)
         .info
           p.description(class='-mobile-desc')= desc
