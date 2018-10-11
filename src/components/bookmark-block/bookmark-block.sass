@@ -12,20 +12,10 @@
     padding: 8.6rem 3rem
     font-weight: normal
 
-
     &.-right
       flex-direction: row-reverse
-      padding-bottom: 17rem
+      //padding-bottom: 17rem
       position: relative
-
-    > .image
-      width: 57%
-      height: 57%
-      position: relative
-      margin-bottom: -38rem
-      margin-right: -10rem
-      @media screen and (max-width: 720px)
-        width: 56%
 
     > .content
       padding-right: 2rem
@@ -40,8 +30,8 @@
         align-items: center
 
         &.-text
-          margin: 1.6rem 0 4.1rem
-          opacity: 0.9
+          margin: 1.6rem 0
+          opacity: 0.8
           white-space: pre-line
 
         > img
@@ -52,7 +42,7 @@
 
         > span
           margin-left: 1.8rem
-          opacity: 0.9
+          opacity: 0.8
 
       > .subheading
         font-size: 4rem
@@ -78,6 +68,31 @@
         > p
           max-width: 35rem
 
+    /* Modifiers */
+
+    > .paykartan
+      width: 57%
+      height: 57%
+      position: relative
+      margin-bottom: -38rem
+      margin-right: -10rem
+      padding-bottom: 12rem
+      @media screen and (max-width: 720px)
+        width: 56%
+        padding-top: 5rem
+        padding-bottom: 25rem
+
+    > .mat-se
+      width: 64%
+      height: 64%
+      position: relative
+      margin-bottom: -35rem
+      margin-right: -11rem
+      @media screen and (max-width: 720px)
+        width: 56%
+        margin: 0 auto -5rem
+
+
     @media screen and (max-width: 700px)
       flex-direction: column
 
@@ -86,8 +101,7 @@
 
       > .image
         margin-top: 5rem
-        width: 70%
-        height: 70%
+        width: 100%
         margin-bottom: -23rem
         margin-left: 22vw
 

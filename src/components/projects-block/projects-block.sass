@@ -6,12 +6,13 @@
     flex-direction: column
     margin: auto
     max-width: $max-width
-    padding: 9.6rem 3rem 0
+    padding: $global-padding 0
     font-weight: normal
 
     > .block
       display: inline-flex
       justify-content: space-between
+
       @media screen and (max-width: 700px)
         display: flex
         flex-direction: column
@@ -42,6 +43,7 @@
           margin: 2rem 0 0 2.5rem
 
     > .project
+
       > .grid-block
         padding-left: 0
         padding-right: 0

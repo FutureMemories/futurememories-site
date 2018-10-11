@@ -1,4 +1,4 @@
-mixin bookmark-block(title, text, items, type, background, color, align = 'right')
+mixin bookmark-block(title, texts, items, type, background, color, align = 'right')
   .bookmark-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner(class=(align==='left') && '-right')
 
@@ -6,11 +6,12 @@ mixin bookmark-block(title, text, items, type, background, color, align = 'right
         +parallax-scroll(type[1], type[2])
 
       else if (type[0] === 'image')
-        img.image(src=type[1] width='603' height='852')
+        img(src=type[1] width='603' height='852', class=type[2])
 
       div.content
         h1.subheading= title
-        p(class='item -text')= text
+        each text in texts
+          p(class='item -text')= text
 
         each item in items
           p(class='item')

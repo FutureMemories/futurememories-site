@@ -1,0 +1,100 @@
+.three-block
+  background: #fff
+  position: relative
+
+  > .inner
+    display: flex
+    flex-direction: row
+    font-weight: normal
+    margin: auto
+    max-width: $max-width
+
+    > .blocks
+      display: flex
+      flex-wrap: wrap
+      padding: $global-padding
+      width: 100%
+
+      > .block
+        position: relative
+        width: 50%
+
+        &:nth-child(1)
+          padding-top: auto
+
+        &:nth-child(2)
+          margin-bottom: 11rem
+          padding-left: 9rem
+
+        &:nth-child(3)
+          display: flex
+          justify-content: center
+          margin-top: -11rem
+          text-align: center
+          width: 100%
+
+        > p, > ul
+          font-size: 2rem
+          line-height: 2.8rem
+          opacity: 0.8
+
+        > ul
+          margin: 2rem 0 0 1.5rem
+
+        > h1
+          font-size: 4rem
+          font-weight: normal
+
+        > p
+          margin-top: 1.6rem
+          max-width: 52rem
+
+        > .mat-se-ipad
+          height: auto
+          margin-left: -75%
+          width: 185%
+
+          @media screen and (max-width: $small-grid + 50px)
+            margin-left: 0
+            width: 80%
+
+      @media screen and (max-width: $medium-grid)
+
+        > .block
+
+          &:nth-child(1)
+            position: relative
+            top: 10%
+
+      @media screen and (max-width: $small-grid + 50px)
+        display: flex
+        flex-direction: column
+
+        > .block
+          margin: 0
+          padding: 0
+          text-align: center
+          width: 100%
+
+          > p
+            margin: auto
+            text-align: center
+
+          > ul
+            list-style: none
+            text-decoration: underline
+
+          &:nth-child(1)
+            padding-left: 0
+            top: 0
+
+          &:nth-child(2)
+            margin: 2rem 0 0
+            padding: 0
+
+          &:nth-child(3)
+            display: flex
+            justify-content: center
+            margin-top: 3rem
+            text-align: center
+            width: 100%

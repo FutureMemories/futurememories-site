@@ -1,16 +1,17 @@
 import inView from 'in-view'
 
 const selectors = [
-  '.text-block',
-  '.text-block-multiple',
   '.bookmark-block .content',
+  '.center-block',
   '.devices-block',
   '.grid-block.-more-projects',
-  '.slide-in-block',
-  '.text-grid-block',
-  '.parallax-object-block',
   '.parallax-bump-block',
-  '.center-block'
+  '.parallax-object-block',
+  '.slide-in-block',
+  '.text-block',
+  '.text-block-multiple',
+  '.text-grid-block',
+  '.three-block'
 ].join(',')
 
 if (document.body.classList.contains('-case')) {

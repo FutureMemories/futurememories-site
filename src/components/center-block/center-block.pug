@@ -1,4 +1,4 @@
-mixin center-block(title, text, src, icon, devices, background, color, waves)
+mixin center-block(title, text, src = '', icon, devices, background, color, waves)
   .center-block(style=`${background ? `background:${background};` : ''}${color ? `color:${color};` : ''}`)
     .inner(class=!src && `-block`, class=src.align && `-${src.align}`)
       if (src)

@@ -4,42 +4,42 @@
   > .inner
     display: flex
     flex-direction: row
+    font-weight: normal
     margin: auto
     max-width: $max-width
     padding: 10.5rem 3rem 0
-    font-weight: normal
 
   > .blocks
     display: grid
+    grid-gap: 10rem
     grid-template-columns: repeat(2, 1fr)
     overflow: hidden
-    grid-gap: 10rem
 
     > .block
+      align-self: end
       position: relative
       width: 100%
-      align-self: end
 
       &:nth-child(1)
         grid-row: span 2
 
       &:nth-child(2)
-        grid-row: span 1
-        top: 5rem
-        padding-right: 1rem
         align-self: center
+        grid-row: span 1
+        padding-right: 1rem
+        top: 5rem
 
       &:nth-child(3)
         grid-row: span 2
 
       &:nth-child(4)
         grid-row: span 2
-        overflow: hidden
         margin: -0.3rem
+        overflow: hidden
 
       > img
-        width: 100%
         height: auto
+        width: 100%
 
       > .subheading
         font-size: 4rem
@@ -47,10 +47,10 @@
 
       > p
         font-size: 2rem
-        max-width: 52rem
-        margin-top: 1.6rem
         line-height: 2.8rem
-        opacity: 0.9
+        margin-top: 1.6rem
+        max-width: 52rem
+        opacity: 0.8
 
     @media screen and (max-width: $medium-grid)
       grid-gap: 5rem
@@ -63,11 +63,12 @@
       padding-top: 16rem
 
       > .block
+
         &:nth-child(2)
-          top: 40px
-          position: absolute
           display: block
           padding: 0 3rem
+          position: absolute
+          top: 40px
 
         &:nth-child(3)
           grid-row: span 2

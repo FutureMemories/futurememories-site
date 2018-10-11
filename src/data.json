@@ -79,8 +79,6 @@
       "type": "UI/UX, Web",
       "actions": [
         {
-          "type": "link",
-          "url": "https://picular.co/",
           "showcase": "picular"
         }
       ]
@@ -139,7 +137,12 @@
       "image": "./images/cases/driver-app.jpg",
       "desc": "On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.",
       "client": "Mat.se",
-      "type": "iOS, UX/UI"
+      "type": "iOS, UX/UI",
+      "actions": [
+        {
+          "showcase": "mat-se"
+        }
+      ]
     },
     {
       "name": "Forces of Freedom",

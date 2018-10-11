@@ -22,7 +22,6 @@
       position: absolute
       display: flex
       justify-content: center
-      flex-direction: column
       align-items: center
       flex-direction: row
       margin: auto
@@ -52,7 +51,7 @@
           font-size: 2rem
           max-width: 74rem
           line-height: 2.8rem
-          opacity: 0.9
+          opacity: 0.8
           white-space: pre-line
 
         > a:not(:last-child)
@@ -67,25 +66,25 @@
     &.-block
       > .content
         position: relative
-        padding: 9.6rem 3rem
+        padding: $global-padding
 
-    &.-left
-      > img
-        width: 30rem
-        margin-top: 3rem
-
+    &.-left, &.-right
+      padding: 4rem 0
       > .content > .block
         padding-left: 310px
-        margin-right: 15%
+        padding-right: 310px
 
-    &.-right
+      @media screen and (max-width: 980px)
+        > .content
+          position: relative
+          margin-bottom: 3rem
+
+          > .block
+            padding: 3rem
+
       > img
         width: 30rem
         margin-top: 3rem
-
-      > .block
-        padding-right: 310px
-        margin-left: 15%
 
     @media screen and (max-width: $small-grid)
       > .content

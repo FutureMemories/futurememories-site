@@ -1,4 +1,4 @@
-mixin slide-in-block(image, title, text, background, color, modifier)
+mixin slide-in-block(image, title, texts, background, color, modifier)
   .slide-in-block(class=modifier, style=`${background ? `background-color:${background};` : ''}${color ? `color:${color};` : ''}`)
 
     if (image.positon === 'inside')
@@ -6,7 +6,8 @@ mixin slide-in-block(image, title, text, background, color, modifier)
         img(src=image.path, width=image.width, height=image.height)
         div.content
           h1.subheading= title
-          p= text
+          each text in texts
+            p= text
 
     else
       .slider
@@ -14,4 +15,5 @@ mixin slide-in-block(image, title, text, background, color, modifier)
       .inner
         div.content
           h1.subheading= title
-          p= text
+          each text in texts
+            p= text
