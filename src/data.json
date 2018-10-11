@@ -13,19 +13,6 @@
       ]
     },
     {
-      "name": "Aventus SIGMA",
-      "image": "./images/cases/avtech.jpg",
-      "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
-      "client": "Avtech, Invencon",
-      "type": "iOS, UX/UI",
-      "actions": [
-        {
-          "type": "link",
-          "url": "http://www.avtech.aero/products--services"
-        }
-      ]
-    },
-    {
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
@@ -33,6 +20,40 @@
       "actions": [
         {
           "showcase": "paykartan"
+        }
+      ]
+    },
+    {
+      "name": "Retts Plus",
+      "image": "./images/cases/retts-plus.jpg",
+      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client": "Predicare",
+      "type": "UI/UX",
+      "actions": [
+        {
+          "showcase": "retts-plus"
+        }
+      ]
+    },
+    {
+      "name": "Mat.se",
+      "image": "./images/cases/mat-se.jpg",
+      "desc": "Mat.se is a Gothenburg-based startup and online grocery shopping service with its own logistics and supply chain platform.",
+      "type": "UX/UI, Web",
+      "actions": [
+        {
+          "showcase": "mat-se"
+        }
+      ]
+    },
+    {
+      "name": "Tennis Watch",
+      "image": "./images/cases/tennis-watch.jpg",
+      "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
+      "type": "iOS",
+      "actions": [
+        {
+          "showcase": "tennis-watch"
         }
       ]
     }
@@ -134,8 +155,8 @@
     },
     {
       "name": "Mat.se",
-      "image": "./images/cases/driver-app.jpg",
-      "desc": "On-time front door grocery deliveries through real-time positioning and waypoint-to-waypoint navigation.",
+      "image": "./images/cases/mat-se.jpg",
+      "desc": "Mat.se is a Gothenburg-based startup and online grocery shopping service with its own logistics and supply chain platform.",
       "client": "Mat.se",
       "type": "iOS, UX/UI"
     },
