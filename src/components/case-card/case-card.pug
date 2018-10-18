@@ -17,15 +17,15 @@ mixin case-card(name, image, desc, client, type, actions, isPreview)
           p.description= desc
 
       .meta(class=actions && actions[0].showcase && `-has-case`)
-        if client
-          .data
-            h4.title Client
-            p.value= client
-
         if type
           .data
             h4.title Type
             p.value= type
+
+        if client
+          .data
+            h4.title Client
+            p.value= client
 
         if actions && actions.length > 0
           .action(class=isPreview ? '' : '-block' )

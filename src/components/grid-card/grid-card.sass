@@ -97,13 +97,14 @@
     > .meta
       display: flex
       margin-top: 1.5rem
-      align-items: center
+      align-items: left
       flex-wrap: wrap
       width: 100%
 
       > .data
         font-size: 1.6rem
         margin-right: 2.5rem
+        margin-top: 1rem
 
         > .title
           color: $color-red
@@ -131,7 +132,7 @@
           font-weight: bold
           position: absolute
           right: 0
-          bottom: -0.4rem
+          bottom: -0.3rem
           white-space: pre
           margin-right: 2.5rem
 
@@ -159,9 +160,12 @@
 
       &.-has-case
         width: 100%
+        flex-direction: column
 
         > .action
           width: 0px
+          padding: 0
+          margin: 0
 
     @media screen and (max-width: $medium-grid + 100px)
       > .meta
@@ -185,8 +189,6 @@
           width: 100%
           border-left: 0
           border-top: 1px solid rgba(white, 0.3)
-          margin-top: 2rem
-          padding-top: 2rem
           padding-left: 0
 
         &.-has-case
