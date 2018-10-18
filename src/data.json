@@ -94,7 +94,7 @@
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
       "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "type": "iOS, watchOS",
+      "type": "UI/UX, iOS, watchOS",
       "actions": [
         {
           "showcase": "tennis-watch"
@@ -228,7 +228,7 @@
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
       "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "type": "iOS",
+      "type": "UI/UX, iOS, watchOS",
       "actions": [
         {
           "showcase": "tennis-watch"
