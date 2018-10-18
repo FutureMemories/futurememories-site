@@ -13,34 +13,22 @@
       ]
     },
     {
-      "name": "Paykartan",
-      "image": "./images/cases/paykartan.jpg",
-      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "type": "UX/UI, Web",
+      "name": "Tennis Watch",
+      "image": "./images/cases/tennis-watch.jpg",
+      "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
+      "type": "iOS, watchOS",
       "actions": [
         {
-          "showcase": "paykartan"
-        }
-      ]
-    },
-    {
-      "name": "Retts Plus",
-      "image": "./images/cases/retts-plus.jpg",
-      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-      "client": "Predicare",
-      "type": "UI/UX",
-      "actions": [
-        {
-          "showcase": "retts-plus"
+          "showcase": "tennis-watch"
         }
       ]
     },
     {
       "name": "Mat.se",
       "image": "./images/cases/mat-se.jpg",
-      "desc": "Mat.se is a Gothenburg-based startup and online grocery shopping service with its own logistics and supply chain platform.",
+      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
-      "type": "iOS, UX/UI",
+      "type": "UI/UX, Java, Spring, iOS",
       "actions": [
         {
           "showcase": "mat-se"
@@ -48,15 +36,34 @@
       ]
     },
     {
-      "name": "Tennis Watch",
-      "image": "./images/cases/tennis-watch.jpg",
-      "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "type": "iOS",
+      "name": "Paykartan",
+      "image": "./images/cases/paykartan.jpg",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
+      "type": "UI/UX, Web",
       "actions": [
         {
-          "showcase": "tennis-watch"
+          "showcase": "paykartan"
         }
       ]
+    },
+    {
+      "name": "Retts Plus",
+      "image": "./images/cases/retts-plus.jpg",
+      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client": "Predicare",
+      "type": "UI/UX",
+      "actions": [
+        {
+          "showcase": "retts-plus"
+        }
+      ]
+    },
+    {
+      "name": "Sleep Cycle Dashboard",
+      "image": "./images/cases/mat-se.jpg",
+      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client": "Sleep Cycle",
+      "type": "Scala, Reactive Streams"
     }
   ],
   "browseCases": [
@@ -64,7 +71,7 @@
       "name": "Paykartan",
       "image": "./images/cases/paykartan.jpg",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "type": "UX/UI, Web",
+      "type": "UI/UX, Web",
       "actions": [
         {
           "showcase": "paykartan"
@@ -87,7 +94,7 @@
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
       "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "type": "iOS",
+      "type": "iOS, watchOS",
       "actions": [
         {
           "showcase": "tennis-watch"
@@ -157,9 +164,9 @@
     {
       "name": "Mat.se",
       "image": "./images/cases/mat-se.jpg",
-      "desc": "Mat.se is a Gothenburg-based startup and online grocery shopping service with its own logistics and supply chain platform.",
+      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
-      "type": "iOS, UX/UI",
+      "type": "UI/UX, Java, Spring, iOS",
       "actions": [
         {
           "showcase": "mat-se"
