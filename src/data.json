@@ -47,18 +47,6 @@
       ]
     },
     {
-      "name": "Retts Plus",
-      "image": "./images/cases/retts-plus.jpg",
-      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-      "client": "Predicare",
-      "type": "UI/UX",
-      "actions": [
-        {
-          "showcase": "retts-plus"
-        }
-      ]
-    },
-    {
       "name": "Sleep Cycle Dashboard",
       "image": "./images/cases/mat-se.jpg",
       "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
