@@ -200,6 +200,13 @@
       ]
     },
     {
+      "name": "Sleep Cycle Dashboard",
+      "image": "./images/cases/mat-se.jpg",
+      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client": "Sleep Cycle",
+      "type": "Scala, Reactive Streams"
+    },
+    {
       "name": "Nelly App",
       "image": "./images/cases/nelly.jpg",
       "desc": "A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
