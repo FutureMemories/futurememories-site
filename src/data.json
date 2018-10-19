@@ -13,13 +13,15 @@
       ]
     },
     {
-      "name": "Tennis Watch",
-      "image": "./images/cases/tennis-watch.jpg",
-      "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-      "type": "iOS, watchOS",
+      "name": "Aventus SIGMA",
+      "image": "./images/cases/avtech.jpg",
+      "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UI/U",
       "actions": [
         {
-          "showcase": "tennis-watch"
+          "type": "link",
+          "url": "http://www.avtech.aero/products--services"
         }
       ]
     },
@@ -31,13 +33,13 @@
       "type": "UI/UX, Java, Spring, iOS"
     },
     {
-      "name": "Paykartan",
-      "image": "./images/cases/paykartan.jpg",
-      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "type": "UI/UX, Web",
+      "name": "Tennis Watch",
+      "image": "./images/cases/tennis-watch.jpg",
+      "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
+      "type": "iOS, watchOS",
       "actions": [
         {
-          "showcase": "paykartan"
+          "showcase": "tennis-watch"
         }
       ]
     },
@@ -202,7 +204,7 @@
       "image": "./images/cases/wya.jpg",
       "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration between fashion professionals.",
       "client": "WHOYOUARE LLC",
-      "type": "iOS, UX/UI",
+      "type": "iOS, UI/UX",
       "actions": [
         {
           "type": "video",
