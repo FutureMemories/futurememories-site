@@ -12,12 +12,6 @@
         width: auto
         grid-row: span 16
 
-        &:nth-child(6)
-          order: 5
-
-        &:nth-child(5)
-          order: 6
-
       @media screen and (min-width: 1041px)
         > .item
           &:nth-child(1)
@@ -30,7 +24,10 @@
             grid-row: span 13
 
           &:nth-child(4)
-            grid-row: span 10
+            grid-row: span 15
+
+          &:nth-child(6)
+            grid-row: span 12
 
       @media screen and (max-width: $medium-grid)
         grid-template-columns: repeat(2, 1fr)
@@ -42,7 +39,10 @@
             grid-row: span 17
 
           &:nth-child(4)
-            grid-row: span 10
+            grid-row: span 15
+
+          &:nth-child(6)
+            grid-row: span 11
 
       @media screen and (max-width: $small-grid)
         grid-auto-rows: 0.5rem
