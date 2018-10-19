@@ -17,7 +17,7 @@
       "image": "./images/cases/avtech.jpg",
       "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
       "client": "Avtech, Invencon",
-      "type": "iOS, UI/U",
+      "type": "iOS, UI/UX",
       "actions": [
         {
           "type": "link",
