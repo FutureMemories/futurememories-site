@@ -28,12 +28,7 @@
       "image": "./images/cases/mat-se.jpg",
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
-      "type": "UI/UX, Java, Spring, iOS",
-      "actions": [
-        {
-          "showcase": "mat-se"
-        }
-      ]
+      "type": "UI/UX, Java, Spring, iOS"
     },
     {
       "name": "Paykartan",
@@ -47,11 +42,16 @@
       ]
     },
     {
-      "name": "Sleep Cycle Dashboard",
-      "image": "./images/cases/mat-se.jpg",
-      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client": "Sleep Cycle",
-      "type": "Scala, Reactive Streams"
+      "name": "Retts Plus",
+      "image": "./images/cases/retts-plus.jpg",
+      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client": "Predicare",
+      "type": "UI/UX",
+      "actions": [
+        {
+          "showcase": "retts-plus"
+        }
+      ]
     }
   ],
   "browseCases": [
@@ -154,12 +154,7 @@
       "image": "./images/cases/mat-se.jpg",
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
-      "type": "UI/UX, Java, Spring, iOS",
-      "actions": [
-        {
-          "showcase": "mat-se"
-        }
-      ]
+      "type": "UI/UX, Java, Spring, iOS"
     },
     {
       "name": "Forces of Freedom",
@@ -198,13 +193,6 @@
           "url": "https://play.google.com/store/apps/details?id=se.futurememories.WakeUpProblem"
         }
       ]
-    },
-    {
-      "name": "Sleep Cycle Dashboard",
-      "image": "./images/cases/mat-se.jpg",
-      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client": "Sleep Cycle",
-      "type": "Scala, Reactive Streams"
     },
     {
       "name": "Nelly App",
