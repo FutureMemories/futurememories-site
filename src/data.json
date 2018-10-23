@@ -30,7 +30,12 @@
       "image": "./images/cases/mat-se.jpg",
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
-      "type": "UX/UI, Java, Spring, iOS"
+      "type": "UX/UI, Java, Spring, iOS",
+      "actions": [
+        {
+          "showcase": "mat-se"
+        }
+      ]
     },
     {
       "name": "Tennis Watch",
@@ -156,7 +161,12 @@
       "image": "./images/cases/mat-se.jpg",
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
-      "type": "UX/UI, Java, Spring, iOS"
+      "type": "UX/UI, Java, Spring, iOS",
+      "actions": [
+        {
+          "showcase": "mat-se"
+        }
+      ]
     },
     {
       "name": "Forces of Freedom",
