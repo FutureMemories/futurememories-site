@@ -13,15 +13,14 @@
       ]
     },
     {
-      "name": "Aventus SIGMA",
+      "name": "proFLIGHT",
       "image": "./images/cases/avtech.jpg",
       "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
       "client": "Avtech, Invencon",
       "type": "iOS, UX/UI",
       "actions": [
         {
-          "type": "link",
-          "url": "http://www.avtech.aero/products--services"
+          "showcase": "proflight"
         }
       ]
     },
@@ -132,15 +131,14 @@
       ]
     },
     {
-      "name": "Aventus SIGMA",
+      "name": "proFLIGHT",
       "image": "./images/cases/avtech.jpg",
       "desc": "An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
       "client": "Avtech, Invencon",
       "type": "iOS, UX/UI",
       "actions": [
         {
-          "type": "link",
-          "url": "http://www.avtech.aero/products--services"
+          "showcase": "proflight"
         }
       ]
     },

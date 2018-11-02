@@ -16,13 +16,13 @@ let entry = {
   'cases/picular.html': path.resolve(__dirname, 'src/cases-picular.pug'),
   'cases/retts-plus.html': path.resolve(__dirname, 'src/cases-retts-plus.pug'),
   'cases/tennis-watch.html': path.resolve(__dirname, 'src/cases-tennis-watch.pug'),
-  'cases/mat-se.html': path.resolve(__dirname, 'src/cases-mat-se.pug')
+  'cases/mat-se.html': path.resolve(__dirname, 'src/cases-mat-se.pug'),
+  'cases/proflight.html': path.resolve(__dirname, 'src/cases-proflight.pug')
 }
 
 if (!prod) {
   Object.assign(entry, {
-    'cases/antistress.html': path.resolve(__dirname, 'src/cases-antistress.pug'),
-    'cases/sigma-aventus.html': path.resolve(__dirname, 'src/cases-sigma-aventus.pug')
+    'cases/antistress.html': path.resolve(__dirname, 'src/cases-antistress.pug')
   })
 }
 
