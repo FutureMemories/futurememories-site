@@ -60,7 +60,7 @@
 
     @media screen and (max-width: $small-grid + 100px)
       grid-gap: 2rem
-      padding-top: 16rem
+      padding-top: 25rem
 
       > .block
 
@@ -68,8 +68,16 @@
           display: block
           padding: 0 3rem
           position: absolute
-          top: 40px
+          max-height: 48rem
+          overflow: auto
+          top: 4rem
 
         &:nth-child(3)
           grid-row: span 2
           top: 25vw
+
+    @media screen and (max-width: 420px)
+      padding-top: 35rem
+
+    @media screen and (max-width: 350px)
+      padding-top: 41rem
