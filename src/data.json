@@ -208,6 +208,13 @@
       ]
     },
     {
+      "name": "Sleep Cycle Dashboard",
+      "image": "./images/cases/sleepcycle.jpg",
+      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client": "Sleep Cycle",
+      "type": "Scala, Reactive Streams"
+    },
+    {
       "name": "WYA Network",
       "image": "./images/cases/wya.jpg",
       "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration between fashion professionals.",
