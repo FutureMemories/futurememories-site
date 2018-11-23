@@ -167,19 +167,15 @@
       ]
     },
     {
-      "name": "Forces of Freedom",
-      "image": "./images/cases/bravo-co.jpg",
-      "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
-      "client": "Koyoki Ltd",
-      "type": "UX/UI",
+      "name": "Sleep Cycle Dashboard",
+      "image": "./images/cases/sleepcycle.jpg",
+      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client": "Sleep Cycle",
+      "type": "Scala, Reactive Streams",
       "actions": [
         {
-          "type": "video",
-          "url": "https://youtu.be/zSw2mC8ZdO8"
-        },
-        {
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=com.koyokiservices.FoF"
+          "type": "link",
+          "url": "https://www.sleepcycle.com/"
         }
       ]
     },
@@ -208,11 +204,21 @@
       ]
     },
     {
-      "name": "Sleep Cycle Dashboard",
-      "image": "./images/cases/sleepcycle.jpg",
-      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client": "Sleep Cycle",
-      "type": "Scala, Reactive Streams"
+      "name": "Forces of Freedom",
+      "image": "./images/cases/bravo-co.jpg",
+      "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
+      "client": "Koyoki Ltd",
+      "type": "UX/UI",
+      "actions": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/zSw2mC8ZdO8"
+        },
+        {
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.koyokiservices.FoF"
+        }
+      ]
     },
     {
       "name": "WYA Network",
