@@ -262,27 +262,6 @@
           "url": "https://play.google.com/store/apps/details?id=com.stenaline.mobile"
         }
       ]
-    },
-    {
-      "name": "Wake Up Problem",
-      "image": "./images/cases/wake-up-problem.jpg",
-      "desc": "An alarm app helping students to kick-start their day in a playful and competitive way.",
-      "client": "Karlstad University, Ord & Bild",
-      "type": "iOS, Android",
-      "actions": [
-        {
-          "type": "video",
-          "url": "https://player.vimeo.com/video/260766295?autoplay=1"
-        },
-        {
-          "type": "ios",
-          "url": "https://itunes.apple.com/se/app/wake-up-problem/id1347926779?mt=8"
-        },
-        {
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=se.futurememories.WakeUpProblem"
-        }
-      ]
     }
   ],
   "astronauts": [
