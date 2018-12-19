@@ -181,7 +181,7 @@
     },
     {
       "name": "Bauer University",
-      "image": "./images/cases/sleepcycle.jpg",
+      "image": "./images/cases/baueruniversity.jpg",
       "desc": "Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
       "client": "Bauer, Bond Communications",
       "type": "React, Python, Django",
