@@ -180,6 +180,19 @@
       ]
     },
     {
+      "name": "Bauer University",
+      "image": "./images/cases/sleepcycle.jpg",
+      "desc": "Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
+      "client": "Bauer, Bond Communications",
+      "type": "React, Python, Django",
+      "actions": [
+        {
+          "type": "link",
+          "url": "https://www.baueruniversity.com/"
+        }
+      ]
+    },
+    {
       "name": "Tennis Watch",
       "image": "./images/cases/tennis-watch.jpg",
       "desc": "The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
