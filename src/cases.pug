@@ -1,9 +1,0 @@
-extends _base.pug
-
-block vars
-  - bodyClass = '-subpage'
-
-block content
-  +header-hero('Our cases & clients', '-subpage')
-  +case-block(data.allCases, 'full')
-  +footer-block

@@ -1,37 +1,32 @@
 {
-  "name": "FutureMemoriesWeb",
-  "version": "1.0.0",
   "private": true,
+  "name": "futurememories",
+  "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "build": "rm -rf dist && NODE_ENV=production webpack --mode production",
-    "build-dev": "rm -rf dist && NODE_ENV=development webpack --mode development"
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build --template src/template.html",
+    "serve": "preact build --template src/template.html && preact serve",
+    "dev": "preact watch",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0",
+    "classnames": "^2.2.6",
+    "eslint": "^4.5.0",
+    "eslint-config-synacor": "^1.1.0",
+    "if-env": "^1.0.0",
+    "preact-cli": "^2.2.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
   },
   "dependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.0",
-    "babel-loader": "^8.0.4",
-    "browsernizr": "2.3.0",
-    "copy-webpack-plugin": "^4.6.0",
-    "css-loader": "^1.0.0",
-    "debounce": "1.2.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "file-loader": "^2.0.0",
-    "html-loader": "^0.5.5",
-    "in-view": "^0.6.1",
-    "inline-source-cli": "1.2.0",
-    "node-sass": "^4.11.0",
-    "pug-html-loader": "^1.1.5",
-    "sass-loader": "^7.1.0",
-    "sine-waves": "^0.3.0",
-    "smoothscroll": "0.4.0",
-    "style-loader": "^0.23.1",
-    "to-ico": "1.1.5",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ]
+    "preact": "^8.4.2",
+    "preact-compat": "^3.18.4"
+  }
 }

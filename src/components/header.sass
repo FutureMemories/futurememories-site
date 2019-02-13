@@ -1,0 +1,150 @@
+@import '../settings.sass'
+
+.header
+  width: 100%
+  height: 5.5rem
+  display: flex
+  justify-content: center
+  position: relative
+  background: none
+  height: 14rem
+
+  > .inner
+    max-width: $max-width
+    padding: 5rem 3rem
+    width: 100%
+    height: 100%
+    display: inline-flex
+    justify-content: space-between
+    align-items: center
+
+    > a
+      color: #fff
+
+      > svg
+        width: 4rem
+
+    > .navMenu
+      color: #fff
+      width: 2.5rem
+      height: 2rem
+      background: none
+      border: none
+      position: relative
+      z-index: 11
+      cursor: pointer
+      display: block
+      margin-left: 2rem
+      cursor: pointer
+
+      &:before, &:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+        height: .2rem
+        background: #fff
+        transition: transform .2s ease
+
+      &:before
+        transform: translateY(-.5rem)
+
+      &:after
+        transform: translateY(.3rem)
+
+      &.open
+        &:before
+          transform: translateY(-.1rem) rotate(45deg)
+        &:after
+          transform: translateY(-.1rem) rotate(-45deg)
+
+      > .menu
+        display: flex
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: rgba(#111722, 0.97)
+        z-index: -1
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        list-style: none
+        opacity: 0
+        visibility: hidden
+        transition: opacity .2s ease, visibility .2s ease
+        pointer-events: none
+
+        > li
+          font-size: 3rem
+          font-weight: bold
+          margin: .8em 0
+          transition: transform .2s ease, opacity .2s ease
+          transform: translateX(-8rem)
+          opacity: 0
+          pointer-events: auto
+
+          @for $i from 1 through 4
+            &:nth-child(#{$i})
+              transition-duration: #{0.1 + $i * 0.1}s
+
+          > a
+            text-decoration: none
+            color: white
+            transition: color .2s ease
+            position: relative
+
+            &:before
+              content: ''
+              position: absolute
+              top: 50%
+              right: 100%
+              width: 100rem
+              height: .2rem
+              background: $color-red
+              margin-top: -.1rem
+              margin-right: 2rem
+              transition: opacity .2s ease, transform .2s ease, visibility .2s ease
+              visibility: hidden
+              opacity: 0
+              transform: translateX(-10rem)
+
+            .no-touchevents &:hover
+              opacity: 1
+              color: $color-red
+
+              &:before
+                visibility: visible
+                opacity: 1
+                transform: none
+
+      &.open
+        > .menu
+          opacity: 1
+          visibility: visible
+
+          > li
+            transform: none
+            opacity: 1
+
+  &.dark
+
+    > .inner
+
+      > a
+        color: #000
+
+      > .navMenu
+        color: #000
+
+        &:before, &:after
+          background: #000
+
+        > .menu
+          background: rgba(#F4F4F4, 0.97)
+
+          > li > a
+            color: #000
+
