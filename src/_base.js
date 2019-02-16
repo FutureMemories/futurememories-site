@@ -1,6 +1,6 @@
 import { Component } from 'preact'
 import Header from './components/header'
-// import Footer from './components/footer'
+import Footer from './components/footer'
 
 export default class extends Component {
   render ({ children, active }) {
@@ -8,6 +8,7 @@ export default class extends Component {
       <div class='app'>
         <Header active={active} />
         {children}
+        <Footer />
       </div>
     )
   }

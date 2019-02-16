@@ -1,0 +1,59 @@
+.projects
+  display: grid
+  grid-gap: 2rem
+  grid-template-columns: repeat(2, 1fr)
+  margin-top: 5rem
+  position: relative
+
+  > .project
+    background: #eee
+    display: inline-flex
+    height: 34rem
+    justify-content: space-between
+    overflow: hidden
+    padding: 4rem 4rem 0
+    position: relative
+
+    > .details
+      margin-right: 2rem
+      min-width: 25rem
+      position: relative
+
+      > .arrow
+        bottom: 2rem
+        position: absolute
+        width: 3.8rem
+
+      > h3
+        font-size: 2rem
+        max-width: 20rem
+
+      > .desc
+        font-size: 2rem
+        margin: 2rem 0
+
+      > .type
+        font-size: 1.6rem
+        font-weight: 600
+        text-transform: uppercase
+
+    > img
+      position: relative
+
+    &.small
+      height: 4rem
+
+    &.medium
+      height: 34rem
+
+    &:first-child
+      grid-column: span 2
+      height: 40rem
+
+  @media screen and (max-width: 800px)
+    display: block
+    left: -3rem
+    width: 100vw
+
+    > .project > .details
+      margin-right: 0

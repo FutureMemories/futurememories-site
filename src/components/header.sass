@@ -1,50 +1,50 @@
 @import '../settings.sass'
 
 .header
-  width: 100%
-  height: 5.5rem
+  background: none
   display: flex
+  height: 14rem
   justify-content: center
   position: relative
-  background: none
-  height: 14rem
+  width: 100%
 
   > .inner
+    align-items: center
+    color: white
+    display: inline-flex
+    height: 100%
+    justify-content: space-between
     max-width: $max-width
     padding: 5rem 3rem
     width: 100%
-    height: 100%
-    display: inline-flex
-    justify-content: space-between
-    align-items: center
 
     > a
-      color: #fff
+      color: inherit
 
       > svg
         width: 4rem
 
     > .navMenu
-      color: #fff
-      width: 2.5rem
-      height: 2rem
       background: none
       border: none
-      position: relative
-      z-index: 11
+      color: inherit
+      cursor: pointer
       cursor: pointer
       display: block
+      height: 2rem
       margin-left: 2rem
-      cursor: pointer
+      position: relative
+      width: 2.5rem
+      z-index: 11
 
       &:before, &:after
+        background: white
         content: ''
-        position: absolute
-        top: 50%
-        left: 0
-        right: 0
         height: .2rem
-        background: #fff
+        left: 0
+        position: absolute
+        right: 0
+        top: 50%
         transition: transform .2s ease
 
       &:before
@@ -60,65 +60,64 @@
           transform: translateY(-.1rem) rotate(-45deg)
 
       > .menu
-        display: flex
-        position: fixed
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        background: rgba(#111722, 0.97)
-        z-index: -1
-        flex-direction: column
         align-items: center
+        background: rgba(#111722, 0.97)
+        bottom: 0
+        display: flex
+        flex-direction: column
         justify-content: center
+        left: 0
         list-style: none
         opacity: 0
-        visibility: hidden
-        transition: opacity .2s ease, visibility .2s ease
         pointer-events: none
+        position: fixed
+        right: 0
+        top: 0
+        transition: opacity .2s ease, visibility .2s ease
+        visibility: hidden
+        z-index: -1
 
         > li
           font-size: 3rem
           font-weight: bold
           margin: .8em 0
-          transition: transform .2s ease, opacity .2s ease
-          transform: translateX(-8rem)
           opacity: 0
           pointer-events: auto
+          transform: translateX(-8rem)
+          transition: transform .2s ease, opacity .2s ease
 
           @for $i from 1 through 4
             &:nth-child(#{$i})
               transition-duration: #{0.1 + $i * 0.1}s
 
           > a
-            text-decoration: none
-            color: white
-            transition: color .2s ease
+            color: inherit
             position: relative
+            text-decoration: none
+            transition: color .2s ease
 
             &:before
-              content: ''
-              position: absolute
-              top: 50%
-              right: 100%
-              width: 100rem
-              height: .2rem
               background: $color-red
-              margin-top: -.1rem
-              margin-right: 2rem
+              content: ''
+              height: .2rem
+              margin: -.1rem 2rem 0 0
+              opacity: 0
+              position: absolute
+              right: 100%
+              top: 50%
+              transform: translateX(-10rem)
               transition: opacity .2s ease, transform .2s ease, visibility .2s ease
               visibility: hidden
-              opacity: 0
-              transform: translateX(-10rem)
+              width: 100rem
 
             .no-touchevents &:hover
-              opacity: 1
               color: $color-red
+              opacity: 1
 
               &:before
-                visibility: visible
                 opacity: 1
                 transform: none
+                visibility: visible
 
       &.open
         > .menu
@@ -126,25 +125,17 @@
           visibility: visible
 
           > li
-            transform: none
             opacity: 1
+            transform: none
 
   &.dark
-
     > .inner
-
-      > a
-        color: #000
+      color: black
 
       > .navMenu
-        color: #000
 
         &:before, &:after
-          background: #000
+          background: black
 
         > .menu
           background: rgba(#F4F4F4, 0.97)
-
-          > li > a
-            color: #000
-

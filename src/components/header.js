@@ -10,34 +10,33 @@ const links = [
   { label: 'Clients', to: '/clients' }
 ]
 
-  export default class extends Component {
+export default class extends Component {
 
-    handleOpener = () => {
-      this.setState({ open: !this.state.open })
-    }
-
-    render ({ dark }, { open }) {
-      return (
-        <header class={cx(s.header, dark && s.dark)}>
-          <div class={s.inner}>
-
-            <a href='/'>
-              <Icon id='logo' />
-            </a>
-
-            <button class={cx(s.navMenu, open && s.open)} onClick={this.handleOpener}>
-              <ul class={s.menu}>
-                {links.map(link => (
-                  <li>
-                    <a href={link.to}>{link.label}</a>
-                  </li>
-                ))}
-              </ul>
-            </button>
-
-          </div>
-        </header>
-      )
-    }
+  handleOpener = () => {
+    this.setState({ open: !this.state.open })
   }
 
+  render ({ dark }, { open }) {
+    return (
+      <header class={cx(s.header, dark && s.dark)}>
+        <div class={s.inner}>
+
+          <a href='/'>
+            <Icon id='logo' />
+          </a>
+
+          <button class={cx(s.navMenu, open && s.open)} onClick={this.handleOpener}>
+            <ul class={s.menu}>
+              {links.map(link => (
+                <li>
+                  <a href={link.to}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </button>
+
+        </div>
+      </header>
+    )
+  }
+}

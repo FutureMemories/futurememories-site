@@ -1,0 +1,109 @@
+@import '../settings.sass'
+
+.footer
+  display: flex
+  justify-content: center
+  position: relative
+  width: 100%
+
+  > .inner
+    align-items: center
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: space-between
+    max-width: $max-width
+    padding: 5rem 3rem
+    width: 100%
+
+    > .first
+      display: inline-flex
+      justify-content: space-between
+      position: relative
+      width: 100%
+
+      > .talkToUs
+        max-width: 25rem
+
+        > h2
+          font-size: 3rem
+          margin-bottom: 2rem
+
+        > a
+          color: inherit
+          font-size: 2rem
+          opacity: 0.3
+          text-decoration: underline
+
+      > .menu
+        display: flex
+        flex-direction: column
+        font-size: 1.8rem
+        font-weight: lighter
+        letter-spacing: 0.045rem
+        line-height: 3rem
+
+        > a
+          color: inherit
+
+      > .contact
+        font-size: 1.8rem
+        font-weight: lighter
+        line-height: 2.5rem
+
+        *:nth-child(4), *:nth-child(6)
+          margin-top: 3rem
+
+    > hr
+      background: white
+      border: 0
+      height: 0.1rem
+      margin: 5rem 0
+      opacity: 0.1
+      width: 100%
+
+    > .second
+      align-items: center
+      display: flex
+      justify-content: space-between
+      width: 100%
+
+      > a
+        color: inherit
+
+        > .logo
+          width: 4rem
+
+      > .social
+
+        > a
+          color: inherit
+
+          > svg
+            width: 1.9rem
+
+        *:not(:last-child)
+          margin-right: 5rem
+
+  &.dark
+    background: #F9F9F9
+
+    > .inner
+      color: black
+
+      > hr
+        background: black
+
+  @media screen and (max-width: 800px)
+    > .inner
+
+      > .first
+        display: block
+        width: 100%
+
+        > .talkToUs
+          margin-bottom: 4rem
+          max-width: 100%
+
+        > .menu
+          display: none

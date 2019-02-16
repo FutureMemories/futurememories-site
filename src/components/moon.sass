@@ -1,0 +1,124 @@
+.space
+  position: relative
+  width: 45rem
+  height: 45rem
+
+  > .background
+    content: ''
+    height: 60%
+    width: 60%
+    background: #081333
+    box-shadow: 0 0 140px 50px #081439
+    border-radius: 50%
+    position: absolute
+    display: block
+    top: 55%
+    left: 60%
+    transform: translate(-50%) translateY(-50%)
+
+    &.animate
+      animation: float 6s ease-in-out infinite
+
+    &:after
+      content: ''
+      height: 5rem
+      width: 5rem
+      border-radius: 50%
+      background: #919696
+      box-shadow: 0 0 120px 50px #ABAFA8
+      position: absolute
+      display: block
+      top: 20%
+      right: 20%
+
+  > .planet
+    content: ''
+    height: 100%
+    width: 100%
+    background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)
+    position: absolute
+    display: block
+    top: 50%
+    left: 50%
+    border-radius: 50%
+    transform: translate(-50%) translateY(-50%)
+    overflow: hidden
+    margin-top: 8rem
+
+    > .shine
+      content: ''
+      height: 0.1rem
+      width: 0.1rem
+      background: black
+      box-shadow: 0 0 204px 100px #18254E
+      position: absolute
+      display: block
+      top: -2rem
+      right: 5rem
+      z-index: 99
+
+  // Moon size
+  &.small
+    transform: scale(0.75)
+
+  &.medium
+    transform: scale(1.56)
+
+  // Moon colors
+  &.blue
+    > .planet > .shine
+      box-shadow: 0 0 204px 100px #18254e
+
+    > .background
+      background: #081333
+      box-shadow: 0 0 140px 50px #081439
+
+      &:after
+        background: #919696
+        box-shadow: 0 0 120px 50px #ABAFA8
+
+  &.red
+    > .planet > .shine
+      box-shadow: 0 0 204px 100px #4A083E
+
+    > .background
+      background: #081333
+      box-shadow: 0 0 140px 50px #081439
+
+      &:after
+        background: #EA061F
+        box-shadow: 0 0 120px 50px #EA061F
+
+  // Light position
+  &.bottomLeft
+    > .planet
+      background-image: linear-gradient(-180deg, #070B13 0%, #03060C 73%)
+
+      > .shine
+        top: auto
+        bottom: -2rem
+        left: 4rem
+        right: auto
+
+    > .background
+      top: 80%
+      left: 40%
+
+      &:after
+        top: auto
+        bottom: 20%
+        left: 20%
+        right: auto
+
+  @keyframes float
+    0%
+      margin-top: 0
+      margin-left: 0
+
+    50%
+      margin-top: 20px
+      margin-left: 5px
+    100%
+      margin-top: 0
+      margin-left: 0
+

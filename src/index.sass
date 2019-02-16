@@ -1,4 +1,5 @@
 @import './settings.sass'
+@import './fonts'
 
 *
   box-sizing: border-box
@@ -14,9 +15,7 @@ html
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   background: $color-darker-blue
-
-html, input, button
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Space Grotesk'
 
 a
   color: #000
@@ -26,6 +25,9 @@ a
   &:hover
     opacity: 0.7
 
+h1
+  font-size: 4rem
+
 .app
   display: block
   -webkit-overflow-scrolling: touch
@@ -33,3 +35,4 @@ a
   min-height: 100%
   width: 100%
   font-size: 1.6rem
+  overflow-x: hidden

@@ -3,9 +3,192 @@
 .view
 
   > .inner
-    margin: 0 auto
-    max-width: $max-width
     display: flex
     flex-direction: column
-    padding: 5rem 3rem
     height: 100%
+    width: 100%
+    margin: 0 auto
+    max-width: $max-width
+    padding: 5rem 3rem
+
+    > .welcome
+      align-items: center
+      display: flex
+      height: 100vh
+      margin-top: -19rem
+      min-height: 45rem
+      position: relative
+
+      > h1
+        font-weight: bold
+        margin-left: 10rem
+        max-width: 63rem
+        position: relative
+        z-index: 1
+
+        > span
+          color: $color-red
+
+      > .moon
+        left: 34rem
+        margin-top: -8rem
+        position: absolute
+
+    > .information
+      align-items: center
+      display: flex
+      height: 75rem
+      justify-content: center
+      position: relative
+
+      > .foundationPillar
+        left: -10rem
+        position: absolute
+
+        &:after
+          background-image: linear-gradient(90deg, rgba(7,11,19,0.00) 0%, #070B13 85%)
+          content: ''
+          height: 100%
+          position: absolute
+          top: 0
+          width: 100%
+
+        > h2
+          color: #0E1626
+          font-size: 14rem
+          line-height: 14rem
+          text-transform: uppercase
+
+      > p
+        font-size: 2.4rem
+        max-width: 56.3rem
+        position: relative
+        text-align: center
+        z-index: 1
+
+        > span
+          color: $color-red
+
+      > .moon
+        position: absolute
+        right: -18rem
+        top: 2rem
+
+    > .work
+      position: relative
+
+      > .text
+        margin-left: 10rem
+
+        > h1
+          color: $color-red
+
+        > p
+          font-size: 1.8rem
+          letter-spacing: 0.045rem
+          line-height: 2.5rem
+          margin-top: 2rem
+          max-width: 37.7rem
+
+      > button
+        left: calc(100% - 10rem)
+        position: relative
+        top: 2rem
+        transform: translateX(-100%)
+
+      > .projects
+        display: grid
+        grid-gap: 2rem
+        grid-template-columns: auto
+        margin-top: 5rem
+
+        > .project
+          background: #eee
+          height: 34rem
+
+          &:first-child
+            grid-column: span 2
+            height: 40rem
+
+      > .moon
+        bottom: -8rem
+        position: absolute
+        right: -10rem
+
+    > .team
+      margin-top: 26rem
+
+      > .text
+        margin-left: 10rem
+
+        > h1
+          color: $color-red
+
+        > p
+          font-size: 1.8rem
+          letter-spacing: 0.045rem
+          line-height: 2.5rem
+          margin-top: 2rem
+          max-width: 37.7rem
+
+      > .teamPictures
+        display: flex
+        flex-wrap: wrap
+        margin-top: 5rem
+        position: relative
+        right: 1rem
+        width: calc(100% + 2rem)
+
+        > .block
+          flex-basis: calc(66% - 2rem)
+          height: 33.5rem
+          margin: 1rem
+          overflow: hidden
+
+          &:nth-child(2n)
+            flex-basis: calc(34% - 2rem)
+
+          &:nth-child(3)
+            order: 4
+
+          &:nth-child(4)
+            order: 3
+
+          > img
+            min-height: 100%
+            object-fit: cover
+            width: 100%
+
+    @media screen and (max-width: 1350px)
+      > .information > .foundationPillar
+        left: -2rem
+
+    @media screen and (max-width: 800px)
+      > .welcome > h1, > .work > .text, > .team > .text
+        margin-left: 0
+        font-size: 3rem
+
+      > .information > p, > .work > .text > p
+        font-size: 1.6rem
+        line-height: 2.2rem
+
+      > .welcome > .moon
+        left: calc(50% - 23rem)
+        margin-top: -8rem
+        position: absolute
+
+      > .information > .moon
+        left: 85%
+        right: auto
+        top: 2rem
+
+      > .work > button
+        left: 100%
+
+      > .team > .teamPictures
+        display: block
+        width: 100vw
+        left: -3rem
+
+        > .block:last-child
+          height: 20rem

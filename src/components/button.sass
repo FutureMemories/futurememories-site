@@ -1,0 +1,68 @@
+@import '../settings'
+
+.button
+  background: $color-red
+  border: 0
+  color: #fff
+  cursor: pointer
+  font-size: 1.6rem
+  font-weight: bold
+  padding: 3rem 5rem
+  position: relative
+  transition: all 0.2s ease
+
+  &.fullsize
+    display: flex
+    flex-direction: column
+    font-size: 4rem
+    height: 100%
+    justify-content: flex-end
+    padding: 3rem
+    text-align: left
+    width: 100%
+
+    > svg
+      margin-top: 2rem
+
+  &:hover
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.28)
+
+  &[disabled]
+    background: rgba(#eee, 0.5)
+    color: #444
+    pointer-events: none
+
+  > span
+    transition: opacity 0.1s ease
+
+  > .arrow
+    left: 1rem
+    position: relative
+    top: 0.2rem
+    width: 3.6rem
+
+  &.loading
+    > span
+      opacity: 0.3
+
+    &:before
+      animation: loader 1.1s infinite linear
+      border-bottom: 1.1em solid rgba(255, 255, 255, 0.2)
+      border-left: 1.1em solid #196866
+      border-radius: 50%
+      border-right: 1.1em solid rgba(255, 255, 255, 0.2)
+      border-top: 1.1em solid rgba(255, 255, 255, 0.2)
+      content: ''
+      font-size: 3px
+      height: 10em
+      left: 50%
+      margin: -5em 0 0 -5em
+      position: absolute
+      top: 40%
+      width: 10em
+
+@keyframes loader
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
