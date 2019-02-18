@@ -24,11 +24,9 @@
     &:hover
       opacity: 1 !important
 
-      > span
-        transform: scale(1.03)
-
-      > .arrow
-       margin-left: 2rem
+      > span, > .arrow
+        margin-left: 2rem
+        margin-right: 0
 
     > svg
       margin-top: 2rem
@@ -41,8 +39,11 @@
     color: #444
     pointer-events: none
 
+  > span, > .arrow
+    margin-right: 2rem
+
   > span
-    transition: all 0.1s ease
+    transition: margin 0.2s ease
 
   > .arrow
     left: 1rem
