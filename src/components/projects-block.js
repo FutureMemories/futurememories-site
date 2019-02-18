@@ -6,21 +6,24 @@ export default ({ projects, customClass }) => (
   <div class={cx(s.projects, customClass && customClass)}>
     {projects.map((project, i) => {
       let style = ''
-      for (let property in project.style[0]) {
-        if (project.style[0].hasOwnProperty(property)) {
-          style += ` ${property}: ${project.style[0][property]};`
-        }
-      }
-
       let detailsStyle = ''
-      for (let property in project.style[1]) {
-        if (project.style[1].hasOwnProperty(property)) {
-          detailsStyle += ` ${property}: ${project.style[1][property]};`
+
+      if (project.style) {
+        for (let property in project.style[0]) {
+          if (project.style[0].hasOwnProperty(property)) {
+            style += ` ${property}: ${project.style[0][property]};`
+          }
+        }
+
+        for (let property in project.style[1]) {
+          if (project.style[1].hasOwnProperty(property)) {
+            detailsStyle += ` ${property}: ${project.style[1][property]};`
+          }
         }
       }
 
       return (
-        <div class={s.project} style={project.style[0] && style}>
+        <div class={s.project} style={style}>
           <div
             class={cx(
               s.details,

@@ -28,13 +28,11 @@ const App = () => {
 }
 
 export default () => (
-  <div class='app'>
-    <Match>
-      { ({ url }) => (
-        <Base active={url}>
-          <App class='app' />
-        </Base>
-      )}
-    </Match>
-  </div>
+  <Match>
+    { ({ url }) => (
+      <Base active={url}>
+        <App class='app' />
+      </Base>
+    )}
+  </Match>
 )
