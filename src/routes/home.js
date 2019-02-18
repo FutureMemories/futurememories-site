@@ -57,7 +57,7 @@ moveLight = (e) => {
                 </div>
               ))}
               <div class={s.block}>
-                <Button label='SEE THE WHOLE TEAM' fullsize arrow />
+                <Button label='See the whole team' fullsize arrow />
               </div>
             </div>
           </div>
