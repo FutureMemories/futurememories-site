@@ -42,7 +42,7 @@ moveLight = (e) => {
               <p>We develop cutting-edge platforms and apps of exceptional quality in a short space of time.</p>
             </div>
             <ProjectsBlock projects={frontCases} limit='3' />
-            <Button label='See all projects' arrow />
+            <Button to='/work' label='See all projects' arrow />
           </div>
 
           <div class={s.team}>

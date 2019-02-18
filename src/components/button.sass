@@ -21,6 +21,15 @@
     text-align: left
     width: 100%
 
+    &:hover
+      opacity: 1 !important
+
+      > span
+        transform: scale(1.03)
+
+      > .arrow
+       margin-left: 2rem
+
     > svg
       margin-top: 2rem
 
@@ -33,13 +42,14 @@
     pointer-events: none
 
   > span
-    transition: opacity 0.1s ease
+    transition: all 0.1s ease
 
   > .arrow
     left: 1rem
     position: relative
     top: 0.2rem
     width: 3.6rem
+    transition: margin 0.2s ease
 
   &.loading
     > span

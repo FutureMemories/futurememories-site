@@ -5,7 +5,7 @@ import Base from './_base'
 
 import Home from './routes/home'
 import NotFound from './routes/404'
-// import Work from './routes/work'
+import Work from './routes/work'
 // import Case from './routes/cases'
 // import About from './routes/about'
 // import Team from './routes/team'
@@ -17,8 +17,8 @@ const App = () => {
   return (
     <Router>
       <Home path='/' />
-      {/* <Work path='/work' />
-<Case path='/work/:case' />
+      <Work path='/work' />
+      {/* <Case path='/work/:case' />
 <About path='/about' />
 <Team path='/team' />
 <Clients path='/clients' /> */}

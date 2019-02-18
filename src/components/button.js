@@ -10,24 +10,39 @@ export default ({
   loading,
   disabled,
   to,
+  mailto,
   fullsize,
   arrow,
   ...props
 }) => (
-  <button
-    type={type}
-    class={cx(
-      s.button,
-      loading && s.loading,
-      fullsize && s.fullsize
-    )}
-    disabled={loading || disabled}
-    onClick={
-      to ? () => route(to, true) : onClick
-    }
-    {...props}
-  >
-    {label && (<span>{label}</span>)}
-    {arrow && (<Icon class={s.arrow} id='arrow' />)}
-  </button>
+  mailto ? (
+    <a
+      class={cx(
+        s.button,
+        loading && s.loading,
+        fullsize && s.fullsize
+      )}
+      href={`mailto:${mailto}`}
+    >
+      {label && (<span>{label}</span>)}
+      {arrow && (<Icon class={s.arrow} id='arrow' />)}
+    </a>
+  ) : (
+    <button
+      type={type}
+      class={cx(
+        s.button,
+        loading && s.loading,
+        fullsize && s.fullsize
+      )}
+      disabled={loading || disabled}
+      onClick={
+        to ? () => route(to, true) : onClick
+      }
+      {...props}
+    >
+      {label && (<span>{label}</span>)}
+      {arrow && (<Icon class={s.arrow} id='arrow' />)}
+    </button>
+  )
 )

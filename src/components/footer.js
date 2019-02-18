@@ -1,5 +1,6 @@
 import cx from 'classnames'
 import Icon from './icon'
+import { company } from '../data.json'
 import s from './footer.sass'
 
 export default ({ dark }) => (
@@ -9,29 +10,29 @@ export default ({ dark }) => (
       <div class={s.first}>
         <div class={s.talkToUs}>
           <h2>Got something on your mind?</h2>
-          <a href='#'>Talk with us!</a>
+          <a href={`mailto:${company.email}`}>Talk with us!</a>
         </div>
 
         <div />
 
         <div class={s.menu}>
-          <a href='#'>Home</a>
-          <a href='#'>Work</a>
+          <a href='/'>Home</a>
+          <a href='/work'>Work</a>
           <a href='#'>About</a>
           <a href='#'>Clients</a>
           <a href='#'>Contact</a>
         </div>
 
         <div class={s.contact}>
-          <p>Future Memoires AB</p>
-          <p>Vallgatan 25</p>
-          <p>413 00, Gothenburg</p>
+          <p>{company.name}</p>
+          <p>{company.steret}</p>
+          <p>{company.zip}, {company.city}</p>
 
           <p>Call office</p>
-          <p>0702 00 00 00</p>
+          <a href={`tel:tel:+46 (0)${company.phone.substr(1)}`}>{company.phone}</a>
 
           <p>Email office</p>
-          <p>hello@futurememories.se</p>
+          <a href={`mailto:${company.email}`}>{company.email}</a>
         </div>
       </div>
 

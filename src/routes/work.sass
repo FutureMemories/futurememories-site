@@ -1,0 +1,79 @@
+@import '../settings.sass'
+
+.view
+
+  > .inner
+    display: flex
+    flex-direction: column
+    height: 100%
+    width: 100%
+    margin: 0 auto
+    max-width: $max-width
+    padding: 5rem 3rem
+
+    > .welcome
+      align-items: center
+      display: flex
+      height: 100vh
+      margin-top: -19rem
+      min-height: 70rem
+      position: relative
+
+      > h1
+        font-weight: bold
+        margin-left: 10rem
+        max-width: 84rem
+        position: relative
+        z-index: 1
+
+        > span
+          color: $color-red
+
+      > .moon
+        left: 13rem
+        margin-top: -20rem
+        position: absolute
+
+    > .work
+      position: relative
+
+      > .text
+        margin-left: 10rem
+
+        > h1
+          color: $color-red
+
+        > p
+          font-size: 1.8rem
+          letter-spacing: 0.045rem
+          line-height: 2.5rem
+          margin-top: 2rem
+          max-width: 37.7rem
+
+      > button
+        left: calc(100% - 10rem)
+        position: relative
+        top: 2rem
+        transform: translateX(-100%)
+
+      > .projects
+        display: grid
+        grid-gap: 2rem
+        grid-template-columns: auto
+        margin-top: 5rem
+
+        > .project
+          background: #eee
+          height: 34rem
+
+          &:first-child
+            grid-column: span 2
+            height: 40rem
+
+    @media screen and (max-width: 800px)
+      > .welcome > h1, > .work > .text
+        margin-left: 0
+        font-size: 3rem
+
+      > .work > button
+        left: 100%

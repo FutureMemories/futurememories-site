@@ -1,371 +1,421 @@
 {
-  "contactMail":"hello@futurememories.se",
+  "company":{
+    "name":"Future Memoires AB",
+    "street":"Vallgatan 25",
+    "zip":"413 00",
+    "city":"Gothenburg",
+    "phone":"0702 00 00 00",
+    "email":"hello@futurememories.se"
+  },
   "frontTeamPictures":[
-     "team-1.jpg",
-     "team-2.jpg",
-     "team-3.jpg"
+    "team-1.jpg",
+    "team-2.jpg",
+    "team-3.jpg"
   ],
   "frontCases":[
-     {
-        "name":"Picular",
-        "desc":"A rocket fast primary color generator using Google's image search.",
-        "type":"UX/UI, WEB",
-        "image":"cases/picular-image.jpg",
-        "style":[
-           {
-              "background":"#F2F5F6",
-              "color":"#070B13"
-           }
-        ],
-        "actions":[
-           {
-              "showcase":"picular"
-           }
-        ]
-     },
-     {
-        "name":"Mat.se",
-        "image":"cases/mat-se-image.png",
-        "desc":"A new look for the Gothenburg-based startup and online grocery shopping service.",
-        "client":"Mat.se",
-        "type":"UX/UI, JAVA, SPRING, iOS",
-        "style":[
-           {
-              "background":"#FF6002",
-              "color":"#FFFFFF"
-           },
-           {
-              "min-width":"20rem"
-           }
-        ],
-        "imageStyle":{
-           "left":"0"
+    {
+      "name":"Picular",
+      "desc":"A rocket fast primary color generator using Google's image search.",
+      "type":"UX/UI, WEB",
+      "image":"cases/picular.jpg",
+      "style":[
+        {
+          "background":"#F2F5F6",
+          "color":"#070B13"
+        }
+      ],
+      "showcase":"picular"
+    },
+    {
+      "name":"Mat.se",
+      "image":"cases/mat-se.png",
+      "desc":"A new look for the Gothenburg-based startup and online grocery shopping service.",
+      "client":"Mat.se",
+      "type":"UX/UI, JAVA, SPRING, iOS",
+      "style":[
+        {
+          "background":"#FF6002",
+          "color":"#FFFFFF"
         },
-        "actions":[
-           {
-              "showcase":"mat-se"
-           }
-        ]
-     },
-     {
-        "name":"Paykartan",
-        "image":"cases/paykartan-image.png",
-        "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
-        "type":"UX/UI, Web",
-        "style":[
-           {
-              "background":"#FFD2D2",
-              "color":"#070B13"
-           }
-        ],
-        "actions":[
-           {
-              "showcase":"paykartan"
-           }
-        ]
-     }
+        {
+          "min-width":"20rem"
+        }
+      ],
+      "imageStyle":{
+        "left":"0"
+      },
+      "showcase":"mat-se"
+    },
+    {
+      "name":"Paykartan",
+      "image":"cases/paykartan.png",
+      "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
+      "type":"UX/UI, Web",
+      "style":[
+        {
+          "background":"#FFD2D2",
+          "color":"#070B13"
+        }
+      ],
+      "showcase":"paykartan"
+    }
   ],
   "browseCases":[
-     {
-        "name":"Paykartan",
-        "image":"./images/cases/paykartan.jpg",
-        "desc":"Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-        "type":"UX/UI, Web",
-        "actions":[
-           {
-              "showcase":"paykartan"
-           }
-        ]
-     },
-     {
-        "name":"Retts Plus",
-        "image":"./images/cases/retts-plus.jpg",
-        "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-        "client":"Predicare",
-        "type":"UX/UI",
-        "actions":[
-           {
-              "showcase":"retts-plus"
-           }
-        ]
-     },
-     {
-        "name":"Tennis Watch",
-        "image":"./images/cases/tennis-watch.jpg",
-        "desc":"The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-        "type":"UX/UI, iOS, watchOS",
-        "actions":[
-           {
-              "showcase":"tennis-watch"
-           }
-        ]
-     },
-     {
-        "name":"Picular",
-        "image":"./images/cases/picular.jpg",
-        "desc":"A rocket fast color search tool. Enables designers to extract primary colors using Google’s image search.",
-        "type":"UX/UI, Web",
-        "actions":[
-           {
-              "showcase":"picular"
-           }
-        ]
-     }
+    {
+      "name":"Picular",
+      "desc":"A rocket fast primary color generator using Google's image search.",
+      "type":"UX/UI, WEB",
+      "image":"cases/picular.jpg",
+      "style":[
+        {
+          "background":"#F2F5F6",
+          "color":"#070B13"
+        }
+      ],
+      "showcase":"picular"
+    },
+    {
+      "name":"Bauer University",
+      "image":"cases/bauer-university.png",
+      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
+      "client":"Bauer, Bond Communications",
+      "type":"React, Python, Django",
+      "style":[
+        {
+          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
+          "color":"#fff"
+        },
+        {
+          "min-width":"24.5rem"
+        }
+      ],
+      "actions":[
+        {
+          "type":"link",
+          "url":"https://www.baueruniversity.com/"
+        }
+      ]
+    },
+    {
+      "name":"Tennis Watch",
+      "image":"cases/tennis-watch.png",
+      "imageBg":[
+        "cases/tennis-watch-bg.jpg",
+        "height"
+      ],
+      "desc":"The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
+      "type":"UX/UI, iOS, watchOS",
+      "style":[
+        {
+          "background":"#2D2D2D",
+          "color":"#fff"
+        },
+        {
+          "min-width":"22.4rem"
+        },
+        {
+          "bottom":"2rem"
+        }
+      ],
+      "showcase":"tennis-watch"
+    },
+    {
+      "name":"Picular",
+      "desc":"A rocket fast primary color generator using Google's image search.",
+      "type":"UX/UI, WEB",
+      "image":"cases/picular.jpg",
+      "style":[
+        {
+          "background":"#F2F5F6",
+          "color":"#070B13"
+        }
+      ],
+      "showcase":"picular"
+    }
   ],
   "allCases":[
-     {
-        "name":"Picular",
-        "image":"./images/cases/picular.jpg",
-        "desc":"A rocket fast color search tool. Enables designers to extract primary colors using Google’s image search.",
-        "type":"UX/UI, Web",
-        "actions":[
-           {
-              "showcase":"picular"
-           }
-        ]
-     },
-     {
-        "name":"Paykartan",
-        "image":"./images/cases/paykartan.jpg",
-        "desc":"Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-        "type":"UX/UI, Web",
-        "actions":[
-           {
-              "showcase":"paykartan"
-           }
-        ]
-     },
-     {
-        "name":"proFLIGHT",
-        "image":"./images/cases/avtech.jpg",
-        "desc":"An iPad app for commercial aircraft pilots. Delivers real-time wind conditions and weather alerts right into the flight deck.",
-        "client":"Avtech, Invencon",
-        "type":"iOS, UX/UI",
-        "actions":[
-           {
-              "showcase":"proflight"
-           }
-        ]
-     },
-     {
-        "name":"Retts Plus",
-        "image":"./images/cases/retts-plus.jpg",
-        "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-        "client":"Predicare",
-        "type":"UX/UI",
-        "actions":[
-           {
-              "showcase":"retts-plus"
-           }
-        ]
-     },
-     {
-        "name":"Mat.se",
-        "image":"./images/cases/mat-se.jpg",
-        "desc":"A modern logistics and supply chain platform to get fresh food delivered to your door.",
-        "client":"Mat.se",
-        "type":"UX/UI, Java, Spring, iOS",
-        "actions":[
-           {
-              "showcase":"mat-se"
-           }
-        ]
-     },
-     {
-        "name":"Sleep Cycle Dashboard",
-        "image":"./images/cases/sleepcycle.jpg",
-        "desc":"Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-        "client":"Sleep Cycle",
-        "type":"Scala, Reactive Streams",
-        "actions":[
-           {
-              "type":"link",
-              "url":"https://www.sleepcycle.com/"
-           }
-        ]
-     },
-     {
-        "name":"Bauer University",
-        "image":"./images/cases/baueruniversity.jpg",
-        "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
-        "client":"Bauer, Bond Communications",
-        "type":"React, Python, Django",
-        "actions":[
-           {
-              "type":"link",
-              "url":"https://www.baueruniversity.com/"
-           }
-        ]
-     },
-     {
-        "name":"Tennis Watch",
-        "image":"./images/cases/tennis-watch.jpg",
-        "desc":"The first tennis app designed for Apple Watch. Turns your watch into a score tracking device and brings in-depth match statistics to your iPhone.",
-        "type":"UX/UI, iOS, watchOS",
-        "actions":[
-           {
-              "showcase":"tennis-watch"
-           }
-        ]
-     },
-     {
-        "name":"Nelly App",
-        "image":"./images/cases/nelly.jpg",
-        "desc":"A digital shopping experience for iPhone and iPad enhanced with community features to share and discuss latest fashion trends.",
-        "client":"NLY Scandinavia",
-        "type":"iOS",
-        "actions":[
-           {
-              "type":"ios",
-              "url":"https://itunes.apple.com/se/app/nelly/id1157319834"
-           }
-        ]
-     },
-     {
-        "name":"Forces of Freedom",
-        "image":"./images/cases/bravo-co.jpg",
-        "desc":"Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
-        "client":"Koyoki Ltd",
-        "type":"UX/UI",
-        "actions":[
-           {
-              "type":"video",
-              "url":"https://youtu.be/zSw2mC8ZdO8"
-           },
-           {
-              "type":"android",
-              "url":"https://play.google.com/store/apps/details?id=com.koyokiservices.FoF"
-           }
-        ]
-     },
-     {
-        "name":"WYA Network",
-        "image":"./images/cases/wya.jpg",
-        "desc":"A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration between fashion professionals.",
-        "client":"WHOYOUARE LLC",
-        "type":"iOS, UX/UI",
-        "actions":[
-           {
-              "type":"video",
-              "url":"https://player.vimeo.com/video/113123599?autoplay=1"
-           }
-        ]
-     },
-     {
-        "name":"Spira",
-        "image":"./images/cases/collector.jpg",
-        "desc":"A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
-        "client":"Collector Bank, Varvet",
-        "type":"Android",
-        "actions":[
-           {
-              "type":"android",
-              "url":"https://play.google.com/store/apps/details?id=se.collector.spira"
-           }
-        ]
-     },
-     {
-        "name":"Travelmate",
-        "image":"./images/cases/stena-line.jpg",
-        "desc":"Mobile travel companion app which keeps all your trip details in one place when travelling within Stena Line’s ferry network.",
-        "client":"Stena Line",
-        "type":"iOS, Android",
-        "actions":[
-           {
-              "type":"ios",
-              "url":"https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
-           },
-           {
-              "type":"android",
-              "url":"https://play.google.com/store/apps/details?id=com.stenaline.mobile"
-           }
-        ]
-     }
+    {
+      "name":"Picular",
+      "desc":"A rocket fast primary color generator using Google's image search.",
+      "type":"UX/UI, WEB",
+      "image":"cases/picular.jpg",
+      "style":[
+        {
+          "background":"#F2F5F6",
+          "color":"#070B13"
+        }
+      ],
+      "showcase":"picular"
+    },
+    {
+      "name":"Mat.se",
+      "image":"cases/mat-se.png",
+      "desc":"A new look for the Gothenburg-based startup and online grocery shopping service.",
+      "client":"Mat.se",
+      "type":"UX/UI, JAVA, SPRING, iOS",
+      "style":[
+        {
+          "background":"#FF6002",
+          "color":"#FFFFFF"
+        },
+        {
+          "min-width":"20rem"
+        }
+      ],
+      "imageStyle":{
+        "left":"0"
+      },
+      "showcase":"mat-se"
+    },
+    {
+      "name":"Paykartan",
+      "image":"cases/paykartan.png",
+      "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
+      "type":"UX/UI, Web",
+      "style":[
+        {
+          "background":"#FFD2D2",
+          "color":"#070B13"
+        }
+      ],
+      "showcase":"paykartan"
+    },
+    {
+      "name":"proFLIGHT",
+      "image":"cases/proflight.png",
+      "desc":"Presents in real time all required weather related information to the pilot in a nice and clear interface.",
+      "client":"Avtech, Invencon",
+      "type":"iOS, UX/UI",
+      "style":[
+        {
+          "background":"#3E4C65",
+          "color":"#fff"
+        },
+        {
+          "min-width":"19.5rem"
+        }
+      ],
+      "showcase":"proflight"
+    },
+    {
+      "name":"Tennis Watch",
+      "image":"cases/tennis-watch.png",
+      "imageBg":[
+        "cases/tennis-watch-bg.jpg",
+        "height"
+      ],
+      "desc":"The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
+      "type":"UX/UI, iOS, watchOS",
+      "style":[
+        {
+          "background":"#2D2D2D",
+          "color":"#fff"
+        },
+        {
+          "min-width":"22.4rem"
+        },
+        {
+          "bottom":"2rem"
+        }
+      ],
+      "showcase":"tennis-watch"
+    },
+    {
+      "button":true,
+      "type":"mailto",
+      "label":"Create something awesome with us!",
+      "to":"hello@futurememories.se"
+    },
+    {
+      "name":"Sleep Cycle Dashboard",
+      "imageBg":[
+        "cases/sleep-cycle-dashboard-bg.jpg",
+        "width"
+      ],
+      "desc":"Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client":"Sleep Cycle",
+      "type":"Scala, Reactive Streams",
+      "style":[
+        {
+          "background":"#192452",
+          "color":"#fff"
+        },
+        {
+          "max-width":"20rem"
+        }
+      ],
+      "actions":[
+        {
+          "type":"link",
+          "url":"https://www.sleepcycle.com/"
+        }
+      ]
+    },
+    {
+      "name":"Bauer University",
+      "image":"cases/bauer-university.png",
+      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
+      "client":"Bauer, Bond Communications",
+      "type":"React, Python, Django",
+      "style":[
+        {
+          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
+          "color":"#fff"
+        },
+        {
+          "min-width":"24.5rem"
+        }
+      ],
+      "actions":[
+        {
+          "type":"link",
+          "url":"https://www.baueruniversity.com/"
+        }
+      ]
+    },
+    {
+      "name":"Forces of Freedom",
+      "desc":"Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
+      "client":"Koyoki Ltd",
+      "type":"UX/UI",
+      "style":[
+        {
+          "background":"#A87052",
+          "color":"#fff"
+        }
+      ],
+      "actions":[
+        {
+          "type":"video",
+          "url":"https://youtu.be/zSw2mC8ZdO8"
+        },
+        {
+          "type":"android",
+          "url":"https://play.google.com/store/apps/details?id=com.koyokiservices.FoF"
+        }
+      ]
+    },
+    {
+      "name":"Spira",
+      "desc":"A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
+      "client":"Collector Bank, Varvet",
+      "type":"Android",
+      "style":[
+        {
+          "background":"linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)",
+          "color":"#fff"
+        }
+      ],
+      "actions":[
+        {
+          "type":"android",
+          "url":"https://play.google.com/store/apps/details?id=se.collector.spira"
+        }
+      ]
+    },
+    {
+      "name":"WYA Network",
+      "desc":"A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
+      "client":"WHOYOUARE LLC",
+      "type":"iOS, UX/UI",
+      "style":[
+        {
+          "background":"#3E4C65",
+          "color":"#fff"
+        }
+      ],
+      "actions":[
+        {
+          "type":"video",
+          "url":"https://player.vimeo.com/video/113123599?autoplay=1"
+        }
+      ]
+    }
   ],
   "astronauts":[
-     {
-        "name":"Andreas Kaltenbach",
-        "image":"./images/team/andreas-kaltenbach.jpg",
-        "title":"Co-founder and COO",
-        "desc":"Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.",
-        "phoneOld":"+46 (0)735 201950",
-        "email":"andreas@futurememories.se"
-     },
-     {
-        "name":"Mikael Hellqvist",
-        "image":"./images/team/mikael-hellqvist.jpg",
-        "title":"Partner and CTO",
-        "desc":"Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
-        "phoneOld":"+46 (0)723 411322",
-        "email":"mikael@futurememories.se"
-     },
-     {
-        "name":"Viktor Hesselbom",
-        "image":"./images/team/viktor-hesselbom.jpg",
-        "title":"Partner and Lead Web/Unity developer",
-        "desc":"Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.",
-        "phoneOld":"+46 (0)732 628555",
-        "email":"viktor@futurememories.se"
-     },
-     {
-        "name":"Pontus Börjesson",
-        "image":"./images/team/pontus-bjornesson.jpg",
-        "title":"Digital Designer",
-        "desc":"Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.",
-        "phoneOld":"+46 (0)707 959011",
-        "email":"pontus@futurememories.se"
-     },
-     {
-        "name":"Oskar Jönsson",
-        "image":"./images/team/oskar-jonsson.jpg",
-        "title":"Mobile Developer",
-        "desc":"Mobile Developer with years of experience in iOS, Android and React Native.",
-        "phoneOld":"+46 (0)722 536161",
-        "email":"oskar@futurememories.se"
-     },
-     {
-        "name":"Siri Nohlström",
-        "image":"./images/team/siri-nohlstrom.jpg",
-        "title":"Management Assistant",
-        "desc":"Passionate Management Assistant who keeps the studio up and running. The life and soul of Future Memories",
-        "email":"siri@futurememories.se"
-     },
-     {
-        "name":"Martin Egri",
-        "image":"./images/team/martin-egri.jpg",
-        "title":"Lead Backend Developer",
-        "desc":"Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
-        "phoneOld":"+46 (0)763 490500",
-        "email":"martin@futurememories.se"
-     },
-     {
-        "name":"P-A Gustafsson",
-        "image":"./images/team/pa-gustafsson.jpg",
-        "title":"Co-founder and CEO",
-        "desc":"Co-founder and CEO. Over 17 years as product manager and designer across five industries.",
-        "phone":"+46 (0)760 338822",
-        "email":"pa@futurememories.se"
-     },
-     {
-        "name":"Mattias Lönn",
-        "image":"./images/team/mattias-lonn.jpg",
-        "title":"Web Developer",
-        "desc":"Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
-        "email":"mattias@futurememories.se"
-     },
-     {
-        "name":"Anders Olausson",
-        "image":"./images/team/anders-olausson.jpg",
-        "title":"Design Director and Partner",
-        "desc":"Design Director and Partner. Award winning designer with years of experience in digital media.",
-        "email":"anders@futurememories.se"
-     },
-     {
-        "name":"Erik Hallgren",
-        "image":"./images/team/erik-hallgren.jpg",
-        "title":"Partner and UX Director",
-        "desc":"Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
-        "email":"erik@futurememories.se"
-     }
+    {
+      "name":"Andreas Kaltenbach",
+      "image":"./images/team/andreas-kaltenbach.jpg",
+      "title":"Co-founder and COO",
+      "desc":"Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.",
+      "phoneOld":"+46 (0)735 201950",
+      "email":"andreas@futurememories.se"
+    },
+    {
+      "name":"Mikael Hellqvist",
+      "image":"./images/team/mikael-hellqvist.jpg",
+      "title":"Partner and CTO",
+      "desc":"Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
+      "phoneOld":"+46 (0)723 411322",
+      "email":"mikael@futurememories.se"
+    },
+    {
+      "name":"Viktor Hesselbom",
+      "image":"./images/team/viktor-hesselbom.jpg",
+      "title":"Partner and Lead Web/Unity developer",
+      "desc":"Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.",
+      "phoneOld":"+46 (0)732 628555",
+      "email":"viktor@futurememories.se"
+    },
+    {
+      "name":"Pontus Börjesson",
+      "image":"./images/team/pontus-bjornesson.jpg",
+      "title":"Digital Designer",
+      "desc":"Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.",
+      "phoneOld":"+46 (0)707 959011",
+      "email":"pontus@futurememories.se"
+    },
+    {
+      "name":"Oskar Jönsson",
+      "image":"./images/team/oskar-jonsson.jpg",
+      "title":"Mobile Developer",
+      "desc":"Mobile Developer with years of experience in iOS, Android and React Native.",
+      "phoneOld":"+46 (0)722 536161",
+      "email":"oskar@futurememories.se"
+    },
+    {
+      "name":"Siri Nohlström",
+      "image":"./images/team/siri-nohlstrom.jpg",
+      "title":"Management Assistant",
+      "desc":"Passionate Management Assistant who keeps the studio up and running. The life and soul of Future Memories",
+      "email":"siri@futurememories.se"
+    },
+    {
+      "name":"Martin Egri",
+      "image":"./images/team/martin-egri.jpg",
+      "title":"Lead Backend Developer",
+      "desc":"Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
+      "phoneOld":"+46 (0)763 490500",
+      "email":"martin@futurememories.se"
+    },
+    {
+      "name":"P-A Gustafsson",
+      "image":"./images/team/pa-gustafsson.jpg",
+      "title":"Co-founder and CEO",
+      "desc":"Co-founder and CEO. Over 17 years as product manager and designer across five industries.",
+      "phone":"+46 (0)760 338822",
+      "email":"pa@futurememories.se"
+    },
+    {
+      "name":"Mattias Lönn",
+      "image":"./images/team/mattias-lonn.jpg",
+      "title":"Web Developer",
+      "desc":"Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
+      "email":"mattias@futurememories.se"
+    },
+    {
+      "name":"Anders Olausson",
+      "image":"./images/team/anders-olausson.jpg",
+      "title":"Design Director and Partner",
+      "desc":"Design Director and Partner. Award winning designer with years of experience in digital media.",
+      "email":"anders@futurememories.se"
+    },
+    {
+      "name":"Erik Hallgren",
+      "image":"./images/team/erik-hallgren.jpg",
+      "title":"Partner and UX Director",
+      "desc":"Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
+      "email":"erik@futurememories.se"
+    }
   ]
 }
