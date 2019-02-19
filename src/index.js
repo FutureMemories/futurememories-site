@@ -6,9 +6,9 @@ import Base from './_base'
 import Home from './routes/home'
 import NotFound from './routes/404'
 import Work from './routes/work'
+import Team from './routes/team'
 // import Case from './routes/cases'
 // import About from './routes/about'
-// import Team from './routes/team'
 // import Clients from './routes/clients'
 
 import './index.sass'
@@ -18,9 +18,9 @@ const App = () => {
     <Router>
       <Home path='/' />
       <Work path='/work' />
+      <Team path='/team' />
       {/* <Case path='/work/:case' />
 <About path='/about' />
-<Team path='/team' />
 <Clients path='/clients' /> */}
       <NotFound default />
     </Router>

@@ -4,7 +4,6 @@ import Header from './components/header'
 import Footer from './components/footer'
 
 export default class extends Component {
-
   handleLocked = () => {
     this.setState({ locked: !this.state.locked })
   }

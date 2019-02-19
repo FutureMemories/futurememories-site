@@ -11,7 +11,6 @@ const links = [
 ]
 
 export default class extends Component {
-
   handleOpener = () => {
     this.props.handleLocked()
     this.setState({ open: !this.state.open })

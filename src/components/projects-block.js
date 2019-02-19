@@ -1,5 +1,6 @@
 import Icon from './icon'
 import Button from './button'
+import Card from './card'
 import cx from 'classnames'
 import s from './projects-block.sass'
 
@@ -41,7 +42,7 @@ export default ({ projects, customClass }) => (
             />
           </div>
         ) : (
-          <div class={s.project} style={style}>
+          <Card customClass={s.project} customStyle={style}>
             <div
               class={cx(
                 s.details,
@@ -67,7 +68,7 @@ export default ({ projects, customClass }) => (
                 src={require(`../images/${project.imageBg[0]}`)}
               />
             )}
-          </div>
+          </Card>
         )
 
       )

@@ -1,0 +1,76 @@
+@import '../settings.sass'
+
+.view
+
+  > .inner
+    display: flex
+    flex-direction: column
+    height: 100%
+    width: 100%
+    margin: 0 auto
+    max-width: $max-width
+    padding: 5rem 3rem
+
+    > .text
+      align-items: center
+      display: flex
+      height: 100vh
+      margin-top: -19rem
+      min-height: 70rem
+      position: relative
+
+      > h1
+        font-weight: bold
+        margin-left: 10rem
+        max-width: 84rem
+        position: relative
+        z-index: 1
+
+        > span
+          color: $color-red
+
+      > .moonDesktop
+        left: -10rem
+        top: 110%
+        position: absolute
+        z-index: -1
+
+      > .moonMobile
+        left: calc(50% - 22.5rem)
+        margin-top: -8rem
+        position: absolute
+        display: none
+
+    > .astronauts
+      position: relative
+
+      > .text
+        margin-left: 10rem
+        margin-bottom: 6rem
+
+        > h1
+          color: $color-red
+
+        > p
+          font-size: 1.8rem
+          letter-spacing: 0.045rem
+          line-height: 2.5rem
+          margin-top: 2rem
+          max-width: 37.7rem
+
+    @media screen and (max-width: 800px)
+      > .text > h1, > .astronauts > .text
+        margin-left: 0
+        font-size: 3rem
+
+      > .text
+
+        > .moonDesktop
+          left: auto
+          right: calc(100% + 14rem)
+          top: 120%
+          position: absolute
+          z-index: -1
+
+        > .moonMobile
+          display: block

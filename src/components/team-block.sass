@@ -1,0 +1,157 @@
+.astronauts
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-auto-rows: 1rem
+  grid-gap: 2rem
+
+  > .astronaut
+    grid-row: span 17
+    position: relative
+    overflow: hidden
+    z-index: 1
+    display: flex
+    align-items: flex-end
+    transition: all 0.2s ease
+
+    > .shine
+      content: ''
+      z-index: 3
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      opacity: 1
+      pointer-events: none
+      transition: opacity .2s ease
+
+    > .inner
+      padding: 3rem
+      overflow: hidden
+      margin-bottom: -1rem
+
+      > h3
+        font-size: 4rem
+        text-transform: uppercase
+        line-height: 5rem
+
+      > .desc
+        font-size: 1.5rem
+        line-height: 0rem// 2.4rem
+        transition: all 0.2s ease-in-out
+        opacity: 0
+
+        > .desktop
+          display: block
+
+        > .mobile
+          display: none
+
+        > .email, > .phone
+          color: #fff
+          display: block
+
+    &:hover
+
+      > .inner
+        margin-bottom: 0
+
+        > .desc
+          line-height: 2.4rem
+          opacity: 1
+
+          > .desktop, > .mobile
+            margin-bottom: 1.5rem
+
+    > img
+      position: absolute
+      top: 0
+      left: 0
+      object-fit: cover
+      z-index: -1
+      width: 100%
+      min-height: 100%
+      opacity: 1
+
+    &:after
+      content: ''
+      height: 100%
+      width: 100%
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -1
+      opacity: 0.81
+      background: rgba(4,21,54,0.70)
+
+    @media screen and (min-width: 1040px)
+
+      &:nth-child(4)
+        grid-row: span 23
+
+      &:nth-child(6)
+        grid-row: span 16
+
+      &:nth-child(8)
+        grid-row: span 20
+
+      &:nth-child(2)
+        grid-column: 2
+
+      &:nth-child(3)
+        grid-column: 3
+        grid-row: 1 / span 23
+
+      &:nth-child(8)
+        grid-column: 3
+        grid-row: 40 / span 23
+
+  @media screen and (max-width: 1040px)
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 2rem
+
+    > .astronaut
+      grid-row: span 12
+      width: auto
+      min-width: 0
+
+      > .inner
+        padding: 1.5rem
+
+        > h3
+          font-size: 3rem
+
+      &:nth-child(2), &:nth-child(4), &:nth-child(5)
+        grid-row: span 17
+
+
+  @media screen and (max-width: 500px)
+    display: block
+
+    > .astronaut
+      height: 44rem
+      width: 100vw
+      left: -3rem
+
+      > .inner > .desc
+
+        > .desktop
+          display: none
+
+        > .mobile
+          display: block
+
+        > .email, .phone
+          text-indent: -9999px
+          height: 16px
+          width: 20px
+          background: url('../images/mail-red.svg') no-repeat center/cover
+          display: inline-flex
+          margin-bottom: 0
+          line-height: 3rem
+
+        > .phone
+          margin-left: 2rem
+          width: 16px
+          background-image: url('../images/phone-red.svg')

@@ -25,11 +25,11 @@ export default ({ dark }) => (
 
         <div class={s.contact}>
           <p>{company.name}</p>
-          <p>{company.steret}</p>
+          <p>{company.street}</p>
           <p>{company.zip}, {company.city}</p>
 
           <p>Call office</p>
-          <a href={`tel:tel:+46 (0)${company.phone.substr(1)}`}>{company.phone}</a>
+          <a href={`tel:+46 (0)${company.phone.substr(1)}`}>{company.phone}</a>
 
           <p>Email office</p>
           <a href={`mailto:${company.email}`}>{company.email}</a>
