@@ -11,7 +11,7 @@
     z-index: 1
     display: flex
     align-items: flex-end
-    transition: all 0.2s ease
+    transition: opacity 0.2s ease
 
     > .shine
       content: ''
@@ -37,9 +37,12 @@
 
       > .desc
         font-size: 1.5rem
-        line-height: 0rem// 2.4rem
-        transition: all 0.2s ease-in-out
+        line-height: 0rem
+        transition: opacity 0.2s ease-in-out
         opacity: 0
+
+        > p
+          transition: all 0.2s ease-in-out
 
         > .desktop
           display: block
