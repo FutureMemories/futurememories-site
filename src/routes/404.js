@@ -1,15 +1,26 @@
 import { Component } from 'preact'
-import g from './_global.sass'
-// import s from './404.sass'
+import Base from '../_base'
+import Button from '../components/button'
+import Moon from '../components/moon'
+import s from './404.sass'
 
 export default class extends Component {
+  componentDidMount () {
+    console.log('%cGET https://futurememories.se/images/404_page_not_found.jpg 404 (Not Found)', 'color: red')
+  }
+
   render () {
     return (
-      <div class={g.view}>
-        <div class={g.inner}>
-          <h2>Not Found</h2>
+      <Base removeFooter>
+        <div class={s.view}>
+          <div class={s.notFound}>
+            <img src={require('../images/broken-document.svg')} />
+            <h2>404_page_not_found.jpg</h2>
+            <Button small to='/' label='Go back to the future' />
+          </div>
+          <Moon size='big' position='topLeft' background='blue' customClass={s.moon} />
         </div>
-      </div>
+      </Base>
     )
   }
 }

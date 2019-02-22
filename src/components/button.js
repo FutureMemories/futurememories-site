@@ -12,6 +12,7 @@ export default ({
   to,
   mailto,
   fullsize,
+  small,
   arrow,
   ...props
 }) => (
@@ -33,7 +34,8 @@ export default ({
       class={cx(
         s.button,
         loading && s.loading,
-        fullsize && s.fullsize
+        fullsize && s.fullsize,
+        small && s.small
       )}
       disabled={loading || disabled}
       onClick={
