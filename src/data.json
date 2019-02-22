@@ -5,7 +5,24 @@
     "zip":"413 00",
     "city":"Gothenburg",
     "phone":"0702 00 00 00",
-    "email":"hello@futurememories.se"
+    "email":"hello@futurememories.se",
+    "partners":[
+      {"name": "Mat.se", "logo": "partners/mat-se.svg"},
+      {"name": "AVTECH", "logo": "partners/avtech.svg"},
+      {"name": "STENDAHLS", "logo": "partners/stendahls.svg"},
+      {"name": "COLD CARGO", "logo": "partners/cold-cargo.svg"},
+      {"name": "SKF", "logo": "partners/skf.svg"},
+      {"name": "Predicare", "logo": "partners/predicare.svg"},
+      {"name": "Creuna", "logo": "partners/creuna.svg"},
+      {"name": "Nelly.com", "logo": "partners/nelly-com.svg"},
+      {"name": "Recorded Future", "logo": "partners/recorded-future.svg"},
+      {"name": "collector Bank", "logo": "partners/collector-bank.svg"},
+      {"name": "Stena Line", "logo": "partners/stena-line.svg"},
+      {"name": "WHOYOUARE", "logo": "partners/whoyouare.svg"},
+      {"name": "BAUER", "logo": "partners/bauer.svg"},
+      {"name": "nouw", "logo": "partners/nouw.svg"},
+      {"name": "Sleep Cycle", "logo": "partners/sleep-cycle.svg"}
+    ]
   },
   "frontTeamPictures":[
     "team-1.jpg",

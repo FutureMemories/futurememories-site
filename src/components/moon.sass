@@ -58,6 +58,9 @@
       z-index: 99
 
   // Moon size
+  &.extraSmall
+    transform: scale(0.40)
+
   &.small
     transform: scale(0.75)
 
@@ -113,6 +116,24 @@
         left: 20%
         right: auto
 
+  &.topLeft
+    > .planet
+      > .shine
+        bottom: auto
+        top: -2rem
+        left: 4rem
+        right: auto
+
+    > .background
+      bottom: 80%
+      left: 40%
+
+      &:after
+        bottom: auto
+        top: 20%
+        left: 20%
+        right: auto
+
   @keyframes float
     0%
       margin-top: 0
@@ -124,4 +145,3 @@
     100%
       margin-top: 0
       margin-left: 0
-

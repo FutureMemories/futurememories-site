@@ -18,7 +18,7 @@ export default ({ dark }) => (
         <div class={s.menu}>
           <a href='/'>Home</a>
           <a href='/work'>Work</a>
-          <a href='#'>About</a>
+          <a href='/about'>About</a>
           <a href='#'>Clients</a>
           <a href='#'>Contact</a>
         </div>
