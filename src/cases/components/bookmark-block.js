@@ -2,7 +2,7 @@ import cx from 'classnames'
 import s from './bookmark-block.sass'
 
 export default ({ title, text, items, type, background, color, align, children }) => (
-  <div class={s.bookmarkBlock} style={(background && `background: ${background};`) || (color && `color:${color};`)}>
+  <div class={s.bookmarkBlock} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
     <div class={cx(s.inner, align === 'left' && s.right)}>
       {children}
       <div class={s.content}>

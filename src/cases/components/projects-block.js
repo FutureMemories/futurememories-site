@@ -4,7 +4,7 @@ import ProjectsBlock from '../../components/projects-block'
 import { browseCases } from '../../data.json'
 
 export default ({ current, background, color }) => (
-  <div class={cx(s.projectsBlock, s.projects)} style={(background && `background: ${background};`) || (color && `color:${color};`)}>
+  <div class={cx(s.projectsBlock, s.projects)} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
     <div class={s.inner}>
 
       <div class={s.block}>

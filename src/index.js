@@ -8,6 +8,7 @@ import About from './routes/about'
 import NotFound from './routes/404'
 
 import Picular from './cases/picular'
+import TennisWatch from './cases/tennis-watch'
 
 import './index.sass'
 
@@ -20,6 +21,7 @@ const App = () => {
       <About path='/about' />
 
       <Picular path='/cases/picular' />
+      <TennisWatch path='/cases/tennis-watch' />
 
       <NotFound default />
     </Router>

@@ -1,0 +1,60 @@
+@import '../settings.sass'
+
+.view
+  background: #070B13
+  color: #fff
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  > .inner
+
+    > .heroHeader
+      width: 100%
+      max-width: $max-width
+      padding: 5rem 3rem 10rem
+      margin: auto
+
+      > h1
+        color: $color-red
+        font-size: 5rem
+        font-weight: bold
+
+      > h2
+        font-size: 4rem
+
+    .badges
+      position: absolute
+      top: 4rem
+      left: 4rem
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif
+      color: #999
+
+      > .badge
+        background: white
+        border: 0.1rem solid rgba(black, 0.15)
+        border-radius: 0.6rem
+        margin-bottom: 1.2rem
+        padding: 0.8rem 1rem
+        display: flex
+        align-items: center
+        box-shadow: 0 0.5rem 2rem -0.5rem rgba(black, 0.1)
+
+        > img
+          width: 3.8rem
+          height: 3.8rem
+          margin-right: 0.5rem
+
+        > .desc
+          line-height: 1.4
+
+          > .title
+            display: block
+            font-size: 1.1rem
+            font-weight: 700
+
+          > .date
+            display: block
+            font-size: 1rem
+            font-weight: 400
+

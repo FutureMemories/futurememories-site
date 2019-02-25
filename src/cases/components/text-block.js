@@ -2,7 +2,7 @@ import cx from 'classnames'
 import s from './text-block.sass'
 
 export default ({ title, text, image, link, background, color, modifier }) => (
-  <div class={s.textBlock} style={(background && `background: ${background};`) || (color && `color:${color};`)}>
+  <div class={s.textBlock} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
     <div class={cx(s.inner, modifier && modifier)}>
       <h1>{title}</h1>
       <p>{text}</p>
