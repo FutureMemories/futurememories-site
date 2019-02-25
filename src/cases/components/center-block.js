@@ -3,7 +3,7 @@ import s from './center-block.sass'
 
 export default ({ title, text, src, icon, devices, background, color, waves, children }) => (
   <div class={s.centerBlock} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
-    <div class={cx(s.inner, !src && s.block, src.align && s[src.align])}>
+    <div class={cx(s.inner, !src && s.block, src && src.align && s[src.align])}>
       {src && (<img src={require(`../../images/${src.path || src}`)} />)}
       <div class={s.content}>
         {devices && (<img src={require(`../../images/${icon}`)} />)}
