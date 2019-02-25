@@ -1,0 +1,55 @@
+@import '../../settings.sass'
+
+.projectsBlock
+  background: #fff
+
+  > .inner
+    display: flex
+    flex-direction: column
+    margin: auto
+    max-width: $max-width
+    padding: $global-padding 0
+    font-weight: normal
+
+    > .block
+      display: inline-flex
+      justify-content: space-between
+
+      @media screen and (max-width: 700px)
+        display: flex
+        flex-direction: column
+
+      > h2
+        font-size: 4rem
+        font-weight: normal
+        margin-bottom: 3.5rem
+
+      > .link
+        margin-top: -0.5rem
+        font-size: 1.8rem
+        color: $color-red
+        text-decoration: none
+
+        &:after
+          content: ''
+          display: inline-block
+          position: relative
+          top: 0.6rem
+          margin: 2rem 0.5rem 0 2rem
+          background: url('../../images/arrow-red.svg') no-repeat 0 0/100%
+          width: 7.7rem
+          height: 2.3rem
+          transition: all 0.2s ease
+
+        &:hover::after
+          margin: 2rem 0 0 2.5rem
+
+    > .project
+
+      > .gridBlock
+        padding-left: 0
+        padding-right: 0
+
+        > .grid
+          padding-left: 0
+          padding-right: 0

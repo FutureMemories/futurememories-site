@@ -1,0 +1,40 @@
+.parallaxScroll
+  position: relative
+
+  > .parallaxFrame
+    position: absolute
+    width: 100%
+    height: calc(100% + 1px)
+    max-height: 83.5rem
+    display: block
+    position: absolute
+    z-index: 10
+    overflow: hidden
+
+  > .parallaxContent
+    position: absolute
+    display: block
+    max-width: inherit
+    max-height: calc(100% - 1px)
+    padding: 2.6rem 2.7rem
+    transition: transform 200ms ease
+    transform: translateZ(0)
+
+    > .parallaxBackground
+      width: 100%
+      height: inherit
+      overflow: hidden
+
+  // Frames
+  &.iphonex
+    max-width: 41.6rem
+    max-height: 83.4rem
+    height: 100rem
+    width: 41.6rem
+    overflow: hidden
+    background: #fff
+    @media screen and (max-width: 930px)
+      height: 41.7rem
+      width: 20.8rem
+      > .parallaxContent
+        padding: 2.6rem 1.3rem

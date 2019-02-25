@@ -4,9 +4,16 @@ import Card from './card'
 import cx from 'classnames'
 import s from './projects-block.sass'
 
-export default ({ projects, customClass }) => (
-  <div class={cx(s.projects, customClass && customClass)}>
+let count = 0
+
+export default ({ projects, customClass, limit, currentBrowseCase }) => (
+  <div class={cx(s.projects, customClass && customClass, currentBrowseCase && s.browseCase)}>
     {projects.map((project, i) => {
+      if (currentBrowseCase && currentBrowseCase === project.showcase) return
+
+      ++count
+      if (count > limit) return
+
       let style = ''
       let detailsStyle = ''
       let imageStyle = ''
@@ -42,7 +49,7 @@ export default ({ projects, customClass }) => (
             />
           </div>
         ) : (
-          <Card customClass={s.project} customStyle={style}>
+          <Card customClass={s.project} customStyle={style} to={project.showcase && `/cases/${project.showcase}`}>
             <div
               class={cx(
                 s.details,
@@ -56,7 +63,6 @@ export default ({ projects, customClass }) => (
               {project.showcase && (
                 <Icon id='arrow' class={s.arrow} />
               )}
-
             </div>
             {project.image && (
               <img style={imageStyle}
@@ -70,9 +76,9 @@ export default ({ projects, customClass }) => (
             )}
           </Card>
         )
-
       )
     }
-    )}
+    )
+    }
   </div>
 )

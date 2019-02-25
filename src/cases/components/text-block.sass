@@ -1,0 +1,53 @@
+@import '../../settings.sass'
+
+.textBlock
+  background: #fff
+
+  > .inner
+    display: flex
+    flex-direction: column
+    margin: auto
+    max-width: $max-width
+    padding: $global-padding
+    font-weight: normal
+
+    > h1
+      font-size: 4rem
+      font-weight: normal
+      white-space: pre-line
+
+    > p
+      margin: 2rem 0
+      font-size: 2rem
+      max-width: 56rem
+      line-height: 2.8rem
+      opacity: 0.8
+
+    > a
+      margin-top: -0.7rem
+      font-size: 1.8rem
+      color: $color-red
+      text-decoration: none
+
+      &:after
+        content: ''
+        display: inline-block
+        position: relative
+        top: 0.6rem
+        margin: 2rem 0.5rem 0 2rem
+        background: url('../../images/arrow-red.svg') no-repeat 0 0/100%
+        width: 7.7rem
+        height: 2.3rem
+        transition: all 0.2s ease
+
+      &:hover::after
+        margin: 2rem 0 0 2.5rem
+
+    > img
+      margin: 7rem auto 0
+      max-width: 100%
+      width: 100%
+      height: auto
+
+      &.shadow
+        box-shadow: 0 0 30px 0 rgba(84,98,109,0.1)

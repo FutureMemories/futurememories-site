@@ -15,14 +15,13 @@ export default class extends Component {
     this.setState({ locked: !this.state.locked })
   }
 
-  render ({ children, removeFooter }) {
-
+  render ({ children, dark, removeFooter }) {
     return (
       <div class={cx('app', this.state.locked && 'locked')}>
-        <Header links={links} handleLocked={this.handleLocked} />
+        <Header dark={dark} links={links} handleLocked={this.handleLocked} />
         {children}
         {!removeFooter && (
-          <Footer links={links} />
+          <Footer dark={dark} links={links} />
         )}
       </div>
     )

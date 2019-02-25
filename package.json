@@ -16,17 +16,24 @@
     "build/*"
   ],
   "devDependencies": {
-    "copy-webpack-plugin": "^4.6.0",
+    "babel-eslint": "^10.0.1",
     "classnames": "^2.2.6",
-    "eslint": "^4.5.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^4.19.1",
     "eslint-config-synacor": "^1.1.0",
     "if-env": "^1.0.0",
-    "preact-cli": "^2.2.1",
     "node-sass": "^4.11.0",
+    "preact-cli": "^2.2.1",
     "sass-loader": "^7.1.0"
   },
   "dependencies": {
     "preact": "^8.4.2",
     "preact-compat": "^3.18.4"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "build"
+    ]
   }
 }

@@ -61,7 +61,7 @@
       "imageStyle":{
         "left":"0"
       },
-      "showcase":"mat-se"
+      "showcase":""
     },
     {
       "name":"Paykartan",
@@ -74,7 +74,7 @@
           "color":"#070B13"
         }
       ],
-      "showcase":"paykartan"
+      "showcase":""
     }
   ],
   "browseCases":[
@@ -92,27 +92,19 @@
       "showcase":"picular"
     },
     {
-      "name":"Bauer University",
-      "image":"cases/bauer-university.png",
-      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
-      "client":"Bauer, Bond Communications",
-      "type":"React, Python, Django",
-      "style":[
-        {
-          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
-          "color":"#fff"
-        },
-        {
-          "min-width":"24.5rem"
-        }
-      ],
-      "actions":[
-        {
-          "type":"link",
-          "url":"https://www.baueruniversity.com/"
-        }
-      ]
-    },
+
+        "name":"Paykartan",
+        "image":"cases/paykartan.png",
+        "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
+        "type":"UX/UI, Web",
+        "style":[
+          {
+            "background":"#FFD2D2",
+            "color":"#070B13"
+          }
+        ],
+        "showcase":""
+      },
     {
       "name":"Tennis Watch",
       "image":"cases/tennis-watch.png",
@@ -134,20 +126,24 @@
           "bottom":"2rem"
         }
       ],
-      "showcase":"tennis-watch"
+      "showcase":""
     },
     {
-      "name":"Picular",
-      "desc":"A rocket fast primary color generator using Google's image search.",
-      "type":"UX/UI, WEB",
-      "image":"cases/picular.jpg",
+      "name":"proFLIGHT",
+      "image":"cases/proflight.png",
+      "desc":"Presents in real time all required weather related information to the pilot in a nice and clear interface.",
+      "client":"Avtech, Invencon",
+      "type":"iOS, UX/UI",
       "style":[
         {
-          "background":"#F2F5F6",
-          "color":"#070B13"
+          "background":"#3E4C65",
+          "color":"#fff"
+        },
+        {
+          "min-width":"19.5rem"
         }
       ],
-      "showcase":"picular"
+      "showcase":""
     }
   ],
   "allCases":[
@@ -182,7 +178,7 @@
       "imageStyle":{
         "left":"0"
       },
-      "showcase":"mat-se"
+      "showcase":""
     },
     {
       "name":"Paykartan",
@@ -195,7 +191,7 @@
           "color":"#070B13"
         }
       ],
-      "showcase":"paykartan"
+      "showcase":""
     },
     {
       "name":"proFLIGHT",
@@ -212,7 +208,7 @@
           "min-width":"19.5rem"
         }
       ],
-      "showcase":"proflight"
+      "showcase":""
     },
     {
       "name":"Tennis Watch",
@@ -235,7 +231,7 @@
           "bottom":"2rem"
         }
       ],
-      "showcase":"tennis-watch"
+      "showcase":""
     },
     {
       "button":true,

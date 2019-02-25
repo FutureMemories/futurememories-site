@@ -42,7 +42,7 @@ render (_, { lightLeft, lightTop }) {
               <h1>Some of our work</h1>
               <p>We develop cutting-edge platforms and apps of exceptional quality in a short space of time.</p>
             </div>
-            <ProjectsBlock projects={frontCases} limit='3' />
+            <ProjectsBlock projects={frontCases} />
             <Button to='/work' label='See all projects' arrow />
           </div>
 
@@ -67,4 +67,5 @@ render (_, { lightLeft, lightTop }) {
       </div>
     </Base>
   )
-}}
+}
+}

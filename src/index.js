@@ -7,6 +7,8 @@ import Team from './routes/team'
 import About from './routes/about'
 import NotFound from './routes/404'
 
+import Picular from './cases/picular'
+
 import './index.sass'
 
 const App = () => {
@@ -16,6 +18,9 @@ const App = () => {
       <Work path='/work' />
       <Team path='/team' />
       <About path='/about' />
+
+      <Picular path='/cases/picular' />
+
       <NotFound default />
     </Router>
   )

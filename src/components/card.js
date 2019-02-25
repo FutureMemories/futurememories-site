@@ -1,4 +1,5 @@
 import { Component } from 'preact'
+import cx from 'classnames'
 import s from './card.sass'
 
 const ease = (target, current) => {
@@ -45,10 +46,13 @@ export default class extends Component {
     })
   }
 
-  render ({ customClass, customStyle, children }, state) {
+  render ({ customClass, customStyle, children, to }, state) {
+    const CurrentTag = to ? 'a' : 'div'
+
     return (
-      <div
-        class={customClass}
+      <CurrentTag
+        class={cx(s.card, customClass)}
+        href={to}
         style={
           `transform:
           perspective(${state.perspective}rem)
@@ -68,7 +72,7 @@ export default class extends Component {
           }
         />
         {children}
-      </div>
+      </CurrentTag>
     )
   }
 }

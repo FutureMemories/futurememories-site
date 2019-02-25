@@ -1,0 +1,49 @@
+@import '../../settings.sass'
+
+.brandBlock
+  overflow: hidden
+
+  > .content
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    margin: auto
+    max-width: $max-width
+    padding: $global-padding
+
+    > svg
+      width: 100%
+
+      &.name
+        max-width: 48.7rem
+        min-width: 40rem
+        margin-right: 22rem
+        @media screen and (max-width: 900px)
+          margin-right: 3rem
+          min-width: auto
+
+      &.logo
+        width: 15%
+        margin-right: 10rem
+        @media screen and (max-width: 900px)
+          display: none
+
+      &.logoWithLines
+        width: 19%
+
+      * > .lines
+        stroke-width: 1px
+        stroke-dasharray: 0
+        stroke-dashoffset: 0
+        stroke-linecap: butt
+        transition: all 0.5s ease-in
+
+    &:hover
+      * > .lines
+        stroke-width: 1px
+        stroke-dasharray: 125
+        stroke-dashoffset: -125
+        stroke-linecap: butt
+        transition: all 0.7s ease-out
+        opacity: 0
