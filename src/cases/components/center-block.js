@@ -9,7 +9,7 @@ export default ({ title, text, src, icon, devices, background, color, waves, chi
         {devices && (<img src={require(`../../images/${icon}`)} />)}
         <div class={cx(s.block, text && s.center)}>
           {title && (<h1>{title}</h1>)}
-          {children && (children)}
+          {children}
           {text && (<p>{text}</p>)}
           {devices && (
             devices.ios && (

@@ -70,30 +70,6 @@
         > p
           max-width: 35rem
 
-    /* Modifiers */
-    > .paykartan
-      width: 57%
-      height: 57%
-      position: relative
-      margin-bottom: -38rem
-      margin-right: -10rem
-      padding-bottom: 12rem
-      @media screen and (max-width: 720px)
-        width: 56%
-        padding-top: 5rem
-        padding-bottom: 25rem
-
-    > .mat-se
-      width: 64%
-      height: 64%
-      position: relative
-      margin-bottom: -35rem
-      margin-right: -11rem
-      @media screen and (max-width: 720px)
-        width: 80%
-        margin: 0 auto
-        margin-bottom: -40%
-
     @media screen and (max-width: 720px)
       flex-direction: column
 
@@ -115,3 +91,27 @@
           max-width: 100%
           line-height: 2.1rem
           margin-top: 11rem
+
+  /* Modifiers */
+  &.paykartan > .inner > img
+    width: 57%
+    height: 57%
+    position: relative
+    margin-bottom: -38rem
+    margin-right: -10rem
+    padding-bottom: 12rem
+    @media screen and (max-width: 720px)
+      width: 56%
+      padding-top: 5rem
+      padding-bottom: 25rem
+
+  &.matSe > .inner > img
+    width: 64%
+    height: 64%
+    position: relative
+    margin-bottom: -35rem
+    margin-right: -11rem
+    @media screen and (max-width: 720px)
+      width: 80%
+      margin: 0 auto
+      margin-bottom: -40%

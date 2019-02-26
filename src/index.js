@@ -9,6 +9,7 @@ import NotFound from './routes/404'
 
 import Picular from './cases/picular'
 import TennisWatch from './cases/tennis-watch'
+import MatSe from './cases/mat-se'
 
 import './index.sass'
 
@@ -22,6 +23,7 @@ const App = () => {
 
       <Picular path='/cases/picular' />
       <TennisWatch path='/cases/tennis-watch' />
+      <MatSe path='/cases/mat-se' />
 
       <NotFound default />
     </Router>
