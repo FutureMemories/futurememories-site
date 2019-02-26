@@ -41,7 +41,7 @@
 
       > h1
         font-size: 4rem
-        font-weight: normal
+        font-weight: 500
         white-space: pre-line
 
       > p
@@ -72,6 +72,11 @@
     > .slider
       margin: 0 -15.5rem 0 0
 
+      > img
+        min-height: 100%
+        object-fit: cover
+        object-position: 0 0
+
     > .inner
       display: flex
       flex-direction: row-reverse
@@ -79,7 +84,8 @@
       padding-bottom: 10rem
 
       > .content
-        margin-right: 4rem
+        margin-right: 11rem
+        margin-left: 0
         position: relative
 
   &.flexEnd
@@ -109,6 +115,9 @@
     &.right
       flex-direction: column !important
       padding-top: 4rem
+
+      > .inner > .content
+        margin-right: 0
 
     > .slider
       margin: 0

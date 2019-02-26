@@ -22,7 +22,7 @@ export default class extends Component {
             <div class={s.work}>
               <div class={s.text}>
                 <h1>What we’ve been up to</h1>
-                <p>We develop cutting-edge platforms and apps of exceptional quality in a short space of time.</p>
+                <p>We work with exceptional companies tirelessly to create products that makes all of our lives better.</p>
               </div>
               <ProjectsBlock projects={allCases} />
             </div>

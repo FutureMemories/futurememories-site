@@ -64,8 +64,8 @@ export default class extends Component {
             />
 
             <BookmarkBlock
-              title='Search engine for colors'
-              text={`Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.`}
+              title='One for the bookmarks.'
+              text={`The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.`}
               items={[
                 { name: 'Correct color tones', image: 'icons/droplet.svg' },
                 { name: 'Grab the HEX color code', image: 'icons/hash.svg' },
