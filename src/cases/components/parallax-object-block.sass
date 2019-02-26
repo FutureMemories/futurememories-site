@@ -1,0 +1,44 @@
+@import '../../settings.sass'
+
+.parallaxObjectBlock
+  background: #F2F5F6
+  max-height: 86rem
+  overflow: hidden
+
+  > .inner
+    display: flex
+    margin: auto
+    justify-content: center
+    max-width: $max-width
+    width: 100%
+    padding: 0 3rem
+    font-weight: normal
+
+    > .content
+      width: 100%
+      max-width: 95rem
+      display: inline-flex
+      justify-content: space-between
+      position: relative
+
+  &.diagonal
+    height: 50vw
+    width: 90.9%
+    max-height: 80rem
+    transform: scale(1.2)
+    margin: 7rem 0
+
+    > .inner > .content
+      transform: rotate(60deg)
+      width: 80vw
+      position: relative
+      margin-top: -43%
+      margin-left: -50%
+
+    @media screen and (max-width: 1350px)
+      transform: scale(1)
+      margin: 0
+      width: 100%
+
+      > .inner > .content
+        margin-top: -50%

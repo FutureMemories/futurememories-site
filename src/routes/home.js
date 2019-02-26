@@ -40,7 +40,7 @@ render (_, { lightLeft, lightTop }) {
             <Moon size='small' position='bottomLeft' background='red' customClass={s.moon} />
             <div class={s.text}>
               <h1>Some of our work</h1>
-              <p>We develop cutting-edge platforms and apps of exceptional quality in a short space of time.</p>
+              <p>We work with exceptional companies tirelessly to create products that makes all of our lives better.</p>
             </div>
             <ProjectsBlock projects={frontCases} />
             <Button to='/work' label='See all projects' arrow />

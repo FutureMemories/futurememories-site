@@ -2,6 +2,7 @@ import { Component } from 'preact'
 import s from './mat-se.sass'
 import Base from '../_base'
 
+import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import SlideInBlock from './components/slide-in-block'
 import ProjectsBlock from './components/projects-block'
@@ -16,10 +17,10 @@ export default class extends Component {
         <div class={s.view} >
           <div class={s.inner}>
 
-            <div class={s.heroHeader}>
-              <h1>MAT.SE</h1>
-              <h2>Fresh food delivered to your door</h2>
-            </div>
+            <HeroHeader
+              title='MAT.SE'
+              subtitle='Fresh food delivered to your door'
+            />
 
             <LargeImage src='cases/mat-se-1.jpg' />
 

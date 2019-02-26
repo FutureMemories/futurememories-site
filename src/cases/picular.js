@@ -2,6 +2,7 @@ import { Component } from 'preact'
 import s from './picular.sass'
 import Base from '../_base'
 
+import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import TextBlock from './components/text-block'
 import BookmarkBlock from './components/bookmark-block'
@@ -31,10 +32,10 @@ export default class extends Component {
         <div class={s.view} >
           <div class={s.inner}>
 
-            <div class={s.heroHeader}>
-              <h1>PICULAR</h1>
-              <h2>Google, but for colors</h2>
-            </div>
+            <HeroHeader
+              title='PICULAR'
+              subtitle='Google, but for colors'
+            />
 
             <LargeImage
               src='cases/picular-1.png'

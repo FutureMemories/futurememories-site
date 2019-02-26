@@ -74,7 +74,7 @@
           "color":"#070B13"
         }
       ],
-      "showcase":""
+      "showcase":"paykartan"
     }
   ],
   "browseCases":[
@@ -92,7 +92,6 @@
       "showcase":"picular"
     },
     {
-
         "name":"Paykartan",
         "image":"cases/paykartan.png",
         "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
@@ -103,7 +102,7 @@
             "color":"#070B13"
           }
         ],
-        "showcase":""
+        "showcase":"paykartan"
       },
     {
       "name":"Tennis Watch",
@@ -191,7 +190,7 @@
           "color":"#070B13"
         }
       ],
-      "showcase":""
+      "showcase":"paykartan"
     },
     {
       "name":"proFLIGHT",
