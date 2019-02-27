@@ -17,7 +17,7 @@ export default class extends Component {
   }
 
   mouseOver = (ev) => {
-    const { left, top, width, height } = ev.srcElement.getBoundingClientRect()
+    const { left, top, width, height } = ev.currentTarget.getBoundingClientRect()
     const mouseX = ev.clientX - left
     const mouseY = ev.clientY - top
     const x = (0.5 - (mouseX / width)) * 1
@@ -29,14 +29,13 @@ export default class extends Component {
     this.setState({
       perspective: 20,
       translateZ: 0.1,
-      rotateX: ease(x, rotateX && !isNaN(rotateX) ? rotateX : 0),
-      rotateY: ease(y, rotateY && !isNaN(rotateY) ? rotateY : 0),
+      rotateX: ease(x, rotateX),
+      rotateY: ease(y, rotateY),
       shineDeg: deg
     })
   }
 
   mouseOut = () => {
-    // TODO: bug: we get onMouseOut on block.
     this.setState({
       perspective: 0,
       translateZ: 0,
@@ -60,7 +59,7 @@ export default class extends Component {
           rotateX(${state.rotateX}deg)
           rotateY(${state.rotateY}deg);${customStyle ? ' ' + customStyle : ''}`
         }
-        onMouseMove={(ev) => this.mouseOver(ev)}
+        onMouseMove={this.mouseOver}
         onMouseLeave={this.mouseOut}
       >
         <div

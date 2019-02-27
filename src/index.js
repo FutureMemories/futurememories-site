@@ -16,7 +16,7 @@ import './index.sass'
 
 export default () => (
   <div id='app'>
-    <Router>
+    <Router onChange={() => window.scrollTo(0, 0)}>
       <Home path='/' />
       <Work path='/work' />
       <Team path='/team' />

@@ -16,9 +16,7 @@
     left: 60%
     transform: translate(-50%) translateY(-50%)
     transition: margin 0.35s ease
-
-    &.animate
-      animation: float 5s ease-in-out infinite
+    animation: eclipse 5s ease-in-out infinite
 
     &:after
       content: ''
@@ -136,14 +134,12 @@
         left: 20%
         right: auto
 
-  @keyframes float
+  @keyframes eclipse
     0%
-      margin-top: 0
-      margin-left: 0
+      transform: translate(-50%) translateY(-50%) scale(1)
 
     50%
-      margin-top: 15px
-      margin-left: 5px
+      transform: translate(-50%) translateY(-50%) scale(1.09)
+
     100%
-      margin-top: 0
-      margin-left: 0
+      transform: translate(-50%) translateY(-50%) scale(1)
