@@ -16,7 +16,7 @@ export default class extends Component {
   }
 
   parallaxMockup () {
-    this.scrollPoint = window.pageYOffset + (window.innerHeight / 2)
+    this.scrollPoint = window.pageYOffset + (window.innerHeight / 2.2)
     if (this.scrollPoint > this.parallax.offsetTop && window.pageYOffset < (this.parallax.offsetTop + this.parallax.offsetHeight)) {
       const positon = (this.scrollPoint - this.parallax.offsetTop) / 5
       // console.log(this.parallax.lastChild)

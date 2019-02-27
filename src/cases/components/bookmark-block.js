@@ -8,7 +8,7 @@ export default ({ title, text, items, image, background, color, align, modifier,
       {image && (<img src={require(`../../images/${image}`)} />)}
       <div class={s.content}>
         <h1>{title}</h1>
-        <p>{Array.isArray(text) ? text.join('\n\n') : text}</p>
+        <p class={s.text}>{Array.isArray(text) ? text.join('\n\n') : text}</p>
         {items && items.map(item => (
           <p class={cx(s.item)}>
             <img src={require(`../../images/${item.image}`)} />

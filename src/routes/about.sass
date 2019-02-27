@@ -111,7 +111,6 @@
       > .content
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
         left: -2rem
         margin-top: 5rem
         position: relative
@@ -120,11 +119,11 @@
         > .partner
           display: flex
           justify-content: center
-          margin: 4rem
+          margin: 5.1rem
 
           > img
             max-height: 10rem
-            width: 22rem
+            width: 19.3rem
 
     @media screen and (max-width: 1200px)
       > .whoWeAre
@@ -143,11 +142,14 @@
             &:nth-child(3)
               width: 100%
 
+      > .partners > .content > .partner > img
+        width: 15rem
+
     @media screen and (max-width: 950px)
       > .partners > .content > .partner > img
         width: 16.5rem
 
-    @media screen and (max-width: 800px)
+    @media screen and (max-width: 835px)
       > .heroText > h1, > .whoWeAre > .text, > .partners > .text
         font-size: 3rem
         margin-left: 0
