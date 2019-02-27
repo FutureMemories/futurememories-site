@@ -32,18 +32,16 @@
       &.logoWithLines
         width: 19%
 
-      * > .lines
+      \:global(.brandLines)
         stroke-width: 1px
-        stroke-dasharray: 0
-        stroke-dashoffset: 0
-        stroke-linecap: butt
-        transition: all 0.5s ease-in
+        // stroke-dasharray: 0
+        // stroke-dashoffset: 0
+        // stroke-linecap: butt
+        transition: all 0.3s ease-in
 
     &:hover
-      * > .lines
-        stroke-width: 1px
-        stroke-dasharray: 125
-        stroke-dashoffset: -125
-        stroke-linecap: butt
-        transition: all 0.7s ease-out
+      \:global(.brandLines)
+        // stroke-dasharray: 125
+        // stroke-dashoffset: 125
+        // stroke-linecap: butt
         opacity: 0

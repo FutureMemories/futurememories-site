@@ -61,7 +61,7 @@ export default class extends Component {
           rotateY(${state.rotateY}deg);${customStyle ? ' ' + customStyle : ''}`
         }
         onMouseMove={(ev) => this.mouseOver(ev)}
-        onMouseOut={this.mouseOut}
+        onMouseLeave={this.mouseOut}
       >
         <div
           class={s.shine}

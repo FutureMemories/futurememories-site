@@ -14,8 +14,8 @@ import Paykartan from './cases/paykartan'
 
 import './index.sass'
 
-const App = () => {
-  return (
+export default () => (
+  <div id='app'>
     <Router>
       <Home path='/' />
       <Work path='/work' />
@@ -29,9 +29,5 @@ const App = () => {
 
       <NotFound default />
     </Router>
-  )
-}
-
-export default () => (
-  <App class='app' />
+  </div>
 )

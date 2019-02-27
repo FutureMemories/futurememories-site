@@ -19,6 +19,10 @@ export default class extends Component {
     this.scrollPoint = window.pageYOffset + (window.innerHeight / 2)
     if (this.scrollPoint > this.parallax.offsetTop && window.pageYOffset < (this.parallax.offsetTop + this.parallax.offsetHeight)) {
       const positon = (this.scrollPoint - this.parallax.offsetTop) / 5
+      // console.log(this.parallax.lastChild)
+      if (!this.parallax.lastChild) {
+        console.log('rerr')
+      }
       this.parallax.lastChild.style.transform = `translateY(-${positon.toFixed(1)}px)`
     }
   }
