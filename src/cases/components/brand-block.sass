@@ -12,36 +12,98 @@
     max-width: $max-width
     padding: $global-padding
 
-    > svg
-      width: 100%
+    &.picular
 
-      &.name
-        max-width: 48.7rem
-        min-width: 40rem
-        margin-right: 22rem
-        @media screen and (max-width: 900px)
-          margin-right: 3rem
-          min-width: auto
+      > .block
+        width: 100%
+        position: relative
+        z-index: 1
 
-      &.logo
-        width: 15%
-        margin-right: 10rem
-        @media screen and (max-width: 900px)
-          display: none
+        &.grey
+          width: 40%
+          padding-left: 10%
 
-      &.logoWithLines
-        width: 19%
+          &:after
+            content: ''
+            display: inline-block
+            position: absolute
+            top: -12rem
+            left: 0
+            margin: 2rem 0.5rem 0 2rem
+            background: #E9EDEE
+            width: 60vw
+            height: calc(100% + 20rem)
+            transition: all 0.2s ease
+            z-index: -1
 
-      \:global(.brandLines)
-        stroke-width: 1px
-        // stroke-dasharray: 0
-        // stroke-dashoffset: 0
-        // stroke-linecap: butt
-        transition: opacity 0.3s ease-in
+        > svg
+          width: 100%
 
-    &:hover
-      \:global(.brandLines)
-        // stroke-dasharray: 125
-        // stroke-dashoffset: 125
-        // stroke-linecap: butt
-        opacity: 0
+          &.name, &.logoWithLines
+            \:global(.logoPrime),
+            \:global(.logoSecond),
+            \:global(.text)
+              transition: color 0.3s ease-in-out
+
+            \:global(.logoPrime)
+              color: #439CBC
+
+            \:global(.logoSecond)
+              color: #A2CEDE
+
+            \:global(.text)
+              color: #778A99
+
+          &.name
+            max-width: 48.7rem
+            width: 100%
+            //margin-right: 22rem
+
+          &.logoWithLines
+            width: 18rem
+
+          \:global(.brandLines)
+            opacity: 0
+            transition: opacity 0.3s ease-in-out
+
+      &:hover
+        > .block
+          > svg
+            &.name, &.logoWithLines
+              \:global(.logoPrime),
+              \:global(.logoSecond),
+              \:global(.text)
+                color: #CFD4D7
+
+            \:global(.brandLines)
+              opacity: 1
+
+      @media screen and (max-width: 550px)
+        flex-direction: column-reverse
+
+        > .block
+          &.grey
+            width: 100%
+            padding-left: 0
+            text-align: center
+            top: -5rem
+
+            &:after
+              content: ''
+              display: inline-block
+              position: absolute
+              top: -7rem
+              left: -5rem
+              margin: 2rem 0.5rem 0 2rem
+              background: #E9EDEE
+              width: 100vw
+              height: calc(100% + 10rem)
+              transition: all 0.2s ease
+              z-index: -1
+          > svg
+            &.name
+              margin-right: 0
+              margin-top: 10rem
+
+            &.logoWithLines
+              width: 40%
