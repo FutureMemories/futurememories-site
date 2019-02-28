@@ -3,7 +3,8 @@ import Base from '../_base'
 import ProjectsBlock from '../components/projects-block'
 import Button from '../components/button'
 import Moon from '../components/moon'
-import { frontCases, frontTeamPictures } from '../data.json'
+import TeamPictures from '../components/team-pictures'
+import { frontCases } from '../data.json'
 import s from './home.sass'
 
 export default class extends Component {
@@ -16,7 +17,7 @@ export default class extends Component {
     if (!this._frameId) {
       this._frameId = setInterval(() => {
         this.setState({ lightLeft: this.clientX / 30, lightTop: this.clientY / 30 })
-      }, 150)
+      }, 300)
     }
   }
 
@@ -59,22 +60,10 @@ export default class extends Component {
               <Button to='/work' label='See all projects' arrow />
             </div>
 
-            <div class={s.team}>
-              <div class={s.text}>
-                <h1>Behind the surface</h1>
-                <p>Behind every project there’s faces, faces with a broad range of skills. Make sure to check us out.</p>
-              </div>
-              <div class={s.teamPictures}>
-                {frontTeamPictures.map((picture, i) => (
-                  <div class={s.block}>
-                    <img src={require(`../images/${picture}`)} />
-                  </div>
-                ))}
-                <div class={s.block}>
-                  <Button to='/team' label='See the whole team' fullsize arrow />
-                </div>
-              </div>
-            </div>
+            <TeamPictures
+              title='Behind the surface'
+              text='Behind every project there’s faces, faces with a broad range of skills. Make sure to check us out.'
+            />
 
           </div>
         </div>

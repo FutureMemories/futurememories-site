@@ -1,0 +1,57 @@
+@import '../settings.sass'
+
+.team
+
+  > .text
+    margin-left: 10rem
+
+    > h1
+      color: $color-red
+
+    > p
+      font-size: 1.8rem
+      letter-spacing: 0.045rem
+      line-height: 2.5rem
+      margin-top: 2rem
+      max-width: 37.7rem
+
+  > .teamPictures
+    display: flex
+    flex-wrap: wrap
+    margin-top: 5rem
+    position: relative
+    right: 1rem
+    width: calc(100% + 2rem)
+
+    > .block
+      flex-basis: calc(66% - 2rem)
+      height: 33.5rem
+      margin: 1rem
+      overflow: hidden
+
+      &:nth-child(2n)
+        flex-basis: calc(34% - 2rem)
+
+      &:nth-child(3)
+        order: 4
+
+      &:nth-child(4)
+        order: 3
+
+      > img
+        min-height: 100%
+        object-fit: cover
+        width: 100%
+
+  @media screen and (max-width: 800px)
+    > .text
+      margin-left: 0
+      font-size: 3rem
+
+    > .teamPictures
+      display: block
+      width: 100vw
+      left: -3rem
+
+      > .block:last-child
+        height: 20rem

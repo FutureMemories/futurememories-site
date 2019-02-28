@@ -1,0 +1,216 @@
+@import '../settings.sass'
+
+.view
+  overflow-x: hidden
+  padding-top: 14rem
+
+  > .inner
+    display: flex
+    flex-direction: column
+    height: 100%
+    margin: 0 auto
+    max-width: $max-width
+    padding: 5rem 3rem
+    width: 100%
+
+    > .heroText
+      align-items: center
+      display: flex
+      height: 100vh
+      margin-top: -19rem
+      min-height: 70rem
+      position: relative
+
+      > h1
+        font-weight: bold
+        margin-left: 10rem
+        max-width: 84rem
+        position: relative
+        white-space: pre-line
+        z-index: 1
+
+        > span
+          color: $color-red
+
+      > .moon
+        left: -5rem
+        margin-top: -47rem
+        position: absolute
+
+    > .workplaces
+      position: relative
+
+      > .text
+        margin: 0 0 10rem 10rem
+
+        > h1
+          color: $color-red
+
+        > p
+          font-size: 1.8rem
+          letter-spacing: 0.045rem
+          line-height: 2.5rem
+          margin-top: 2rem
+          max-width: 55.4rem
+
+      > .content
+        display: flex
+        flex-direction: column
+        position: relative
+        right: 1rem
+        width: calc(100% + 2rem)
+
+        > .workplace
+          display: flex
+          flex-direction: row
+          height: 34rem
+          overflow: hidden
+
+          > img
+            height: 34rem
+            margin-right: 8rem
+            max-width: 53rem
+            object-fit: cover
+            width: 100%
+
+          > .desc
+            display: flex
+            flex-direction: column
+            justify-content: center
+            max-width: 53rem
+            width: 100%
+
+            > h3
+              font-size: 3rem
+              margin-bottom: 3rem
+
+            > p
+              line-height: 2.4rem
+              white-space: pre-line
+
+          &:not(:last-child)
+            margin-bottom: 10rem
+
+          &:nth-child(2n)
+            flex-direction: row-reverse
+
+            > img
+              margin: 0 0 0 8rem
+
+    > .positions
+      margin: 25rem 0
+      position: relative
+
+      > .text
+        margin-left: 10rem
+
+        > h1
+          color: $color-red
+
+        > p
+          font-size: 1.8rem
+          letter-spacing: 0.045rem
+          line-height: 2.5rem
+          margin-top: 2rem
+          max-width: 55.4rem
+
+      > .content
+        display: flex
+        flex-direction: column
+        margin-top: 10rem
+        position: relative
+        right: 1rem
+        width: calc(100% + 2rem)
+
+        > .position
+          background: rgba(34,39,48,0.25)
+          display: flex
+          flex-direction: row
+          height: 43rem
+          overflow: hidden
+
+          > img
+            height: 43rem
+            max-width: 58rem
+            object-fit: cover
+            width: 100%
+
+          > .desc
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding: 4rem
+            width: 100%
+
+            > .title
+              align-items: center
+              display: inline-flex
+              margin-bottom: 3rem
+
+              > svg
+                height: 2rem
+                margin: 0.5rem 1.6rem 0 0
+
+              > h3
+                font-size: 3rem
+
+            > p
+              line-height: 2.4rem
+              white-space: pre-line
+
+              &.tasks
+                font-size: 1.6rem
+                font-weight: 600
+                margin: 3rem 0 5rem
+
+          &:not(:last-child)
+            margin-bottom: 5rem
+
+          &:nth-child(2n)
+            flex-direction: row-reverse
+
+    @media screen and (max-width: 800px)
+      > .heroText > h1, > .workplaces > .text, > .positions > .text
+        font-size: 3rem
+        margin-left: 0
+
+      > .heroText > .moon
+        left: calc(50% - 22.5rem)
+        margin-top: -8rem
+        position: absolute
+        transform: scale(1)
+
+      > .positions
+        margin: 4rem 0
+
+      > .workplaces, > .positions
+        left: -3rem
+        width: 100vw
+
+        > .text
+          margin-bottom: 6rem
+          padding: 0 4rem
+
+        > .content > .workplace, > .content > .position,
+          background: #0E121A
+          flex-direction: column !important
+          height: auto
+
+          > .desc
+            padding: 5rem 4rem
+
+          > img
+            max-width: 100%
+
+          &:nth-child(2n)
+            flex-direction: column !important
+            height: auto
+
+            > img
+              margin-left: 0
+
+          &:not(:last-child)
+            margin-bottom: 0
+
+      > .positions > .content > .position > .desc > a
+        margin: auto

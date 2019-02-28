@@ -29,6 +29,51 @@
     "team-2.jpg",
     "team-3.jpg"
   ],
+  "careersWorkplaces":[
+    {
+      "label": "For the thrill of it. 🕵️‍",
+      "text": "We never compromise on quality and always deliver the best imaginable product. It goes without saying that our employees get the best equipment in order to do the job in the best possible way.\n\nTeams are entitled to pick whatever toolset they want to make their work more efficient and enjoyable. Creatives and developers have the freedom to test new ways of working, exploring promising tools, languages, frameworks and platforms.",
+      "image": "workspace-1.jpg"
+    },
+    {
+      "label": "Tailored for you, by you. ✂️",
+      "text": "We expect professionalism, commitment and respect to each other and offer flat hierarchies, freedom, responsibility and room for personal development in return. There is enough time to find and define your role inside the company and we decide together with you on which projects you will be working on.\n\nWe incubate, develop and release own products, both within Future Memories and in collaboration with other entrepreneurs. This gives you plenty of new possibilities to boost your career in unexpected ways.",
+      "image": "workspace-2.jpg"
+    },
+    {
+      "label": "Home, swede, home. 🏠",
+      "text": "No overtime, no weekend work, no crunch because successful products are only made of healthy teams. We offer flextime so that your professional life harmonizes perfectly with your personal life.  We start off every week with an extensive Monday breakfast to get everybody energized and brought up to speed with the latest news within the company.",
+      "image": "workspace-1.jpg"
+    },
+    {
+      "label": "We call it fika. 🍬",
+      "text": "On Friday afternoons we round up the week with our weekly table football competition, a few beers and a big bowl of ‘fredagsgodis’ before signing out. Regular team lunches help us to stay current about all ongoing projects and once a year, we organize a company retreat leaving our office to work from another remote and sunny place for a few days.",
+      "image": "workspace-2.jpg"
+    }
+  ],
+  "careersPositions":[
+    {
+      "icon": "screen",
+      "label": "Web Developer",
+      "text": "A Web Developer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and timeline.",
+      "tasks": "Java, Scala, React, NodeJS, React Native",
+      "image": "position-1.jpg"
+    },
+    {
+      "icon": "screen",
+      "label": "Backend Developer",
+      "text": "A Backend Developer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and.",
+      "tasks": "Java, Scala, React, NodeJS, React Native",
+      "image": "position-2.jpg"
+    },
+    {
+      "icon": "roller",
+      "label": "Digital designer",
+      "text": "A Digital Designer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and timeline.",
+      "tasks": "Sketch, Photoshop, Illustrator",
+      "image": "position-1.jpg"
+    }
+  ],
   "frontCases":[
     {
       "name":"Picular",

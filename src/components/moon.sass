@@ -15,7 +15,7 @@
     top: 55%
     left: 60%
     transform: translate(-50%) translateY(-50%)
-    transition: margin 0.35s ease
+    transition: margin 0.5s ease
     animation: eclipse 5s ease-in-out infinite
 
     &:after
@@ -67,6 +67,9 @@
   &.medium
     transform: scale(1.56)
 
+  &.large
+    transform: scale(2.1)
+
   &.big
     transform: scale(2.7)
 
@@ -96,6 +99,26 @@
         box-shadow: 0 0 120px 50px #EA061F
 
   // Light position
+  &.bottomRight
+    > .planet
+      background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)
+
+      > .shine
+        top: auto
+        bottom: -2rem
+        left: auto
+        right: 5rem
+
+    > .background
+      top: 77%
+      left: 60%
+
+      &:after
+        top: auto
+        bottom: 20%
+        left: 45%
+        right: auto
+
   &.bottomLeft
     > .planet
       background-image: linear-gradient(-180deg, #070B13 0%, #03060C 73%)

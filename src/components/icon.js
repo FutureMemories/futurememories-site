@@ -37,5 +37,19 @@ export default ({ id, ...props }) => {
           <path d='M16 15h-3.536v-4.922c0-1.288-.553-2.167-1.77-2.167-.93 0-1.448.593-1.688 1.165-.09.205-.077.491-.077.777V15H5.426s.045-8.718 0-9.51H8.93v1.492c.207-.653 1.327-1.584 3.113-1.584C14.26 5.398 16 6.766 16 9.712V15zM1.883 4.3h-.022C.73 4.3 0 3.573 0 2.65 0 1.711.754 1 1.905 1c1.15 0 1.858.71 1.88 1.649 0 .921-.73 1.65-1.902 1.65zM.403 5.49h3.12V15H.402V5.49z' fill='currentColor' fill-rule='evenodd' />
         </svg>
       )
+
+    case 'screen':
+      return (
+        <svg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 20' {...props}>
+          <path d='M20 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h7v2H7v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14H2V2h18v12z' fill='currentColor' fill-rule='evenodd' />
+        </svg>
+      )
+
+    case 'roller':
+      return (
+        <svg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 20' {...props}>
+          <path d='M14 2V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v4c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4h1v4H5v11c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-9h8V2h-3z' fill='currentColor' fill-rule='evenodd' />
+        </svg>
+      )
   }
 }

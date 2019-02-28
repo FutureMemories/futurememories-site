@@ -5,6 +5,7 @@ import Home from './routes/home'
 import Work from './routes/work'
 import Team from './routes/team'
 import About from './routes/about'
+import Careers from './routes/careers'
 import NotFound from './routes/404'
 
 import Picular from './cases/picular'
@@ -21,6 +22,7 @@ export default () => (
       <Work path='/work' />
       <Team path='/team' />
       <About path='/about' />
+      <Careers path='/careers' />
 
       <Picular path='/cases/picular' />
       <TennisWatch path='/cases/tennis-watch' />
