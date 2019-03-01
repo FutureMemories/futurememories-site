@@ -11,10 +11,9 @@ export default class extends Component {
           astronaut.button ? (
             <div class={s.astronaut}>
               <Button
-                to={astronaut.type !== 'mailto' && astronaut.to}
-                mailto={astronaut.type === 'mailto' && astronaut.to}
+                to={astronaut.type === 'mailto' ? `mailto:${astronaut.to}` : astronaut.to}
                 label={astronaut.label}
-                fullsize arrow
+                fullsize arrow transition='move'
               />
             </div>
           ) : (

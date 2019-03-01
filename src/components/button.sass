@@ -9,7 +9,10 @@
   font-weight: bold
   padding: 3rem 5rem
   position: relative
+  display: inline-flex
   transition: box-shadow 0.2s ease
+  overflow: hidden
+  height: 8rem
 
   &.fullsize
     display: flex
@@ -20,40 +23,28 @@
     padding: 4rem
     text-align: left
     width: 100%
-    transition: opacity 0.2s ease, margin 0.2s ease
-
-    &:hover
-      opacity: 1 !important
-
-      > span, > .arrow
-        margin-left: 2rem
-        margin-right: 0
 
     > svg
       margin-top: 2rem
 
   &.small
     padding: 1.5rem 2.5rem
+    height: 5rem
 
   &.center
-    text-align: center
+    justify-content: center
 
     > span
-      margin: 2rem
-
-  &:hover
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.28)
+      margin: 0
 
   &[disabled]
     background: rgba(#eee, 0.5)
     color: #444
     pointer-events: none
 
-  > span, > .arrow
-    margin-right: 2rem
-
   > span
-    transition: margin 0.2s ease
+    margin-right: 2rem
+    display: inline-block
 
   > .arrow
     left: 1rem
@@ -81,6 +72,55 @@
       position: absolute
       top: 40%
       width: 10em
+
+  &:hover
+    opacity: 1
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.28)
+
+  // Transitions
+  &.move
+    > span, > .arrow
+      position: relative
+      transition: transform 0.2s ease-in-out
+
+    &:hover
+
+      > span, > .arrow
+        transform: translateX(20px)
+
+
+  &.slide
+    > span // off
+      transition: transform 0.2s ease-in-out
+      transition-delay: 0s
+
+    > .arrow
+
+      &.first
+        opacity: 0
+        top: calc(50% - 0.8rem)
+        left: 0
+        transform: translateX(-35px)
+        position: absolute
+        transition: transform 0.2s ease-in-out, opacity 0.3s ease
+        transition-delay: 0s
+
+      &.second
+        transition: transform 0.2s ease-in-out, opacity 0.3s ease
+
+    &:hover // on
+      > .label
+        transition-delay: 0.2s
+        transform: translateX(35px) scale(1.15)
+
+      > .arrow.first
+        transition-delay: 0.2s
+        transform: translateX(10px)
+        opacity: 1
+
+      > .arrow.second
+        opacity: 0
+        transform: translateX(40px)
 
 @keyframes loader
   from

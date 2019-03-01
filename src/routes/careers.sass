@@ -63,15 +63,18 @@
         > .workplace
           display: flex
           flex-direction: row
-          height: 34rem
+          min-height: 34rem
           overflow: hidden
 
-          > img
-            height: 34rem
+          > .image
+            height: inherit
             margin-right: 8rem
-            max-width: 53rem
-            object-fit: cover
-            width: 100%
+
+            > img
+              height: 100%
+              max-width: 53rem
+              object-fit: cover
+              width: 100%
 
           > .desc
             display: flex
@@ -94,7 +97,7 @@
           &:nth-child(2n)
             flex-direction: row-reverse
 
-            > img
+            > .image
               margin: 0 0 0 8rem
 
     > .positions
@@ -125,22 +128,29 @@
         > .position
           background: rgba(34,39,48,0.25)
           display: flex
+          position: relative
           flex-direction: row
-          height: 43rem
+          min-height: 43rem
+          height: auto
           overflow: hidden
 
-          > img
-            height: 43rem
-            max-width: 58rem
-            object-fit: cover
-            width: 100%
+          > .image
+            height: inherit
+
+            > img
+              height: 100%
+              max-width: 58rem
+              object-fit: cover
+              width: 100%
 
           > .desc
             display: flex
+            position: relative
             flex-direction: column
             justify-content: center
             padding: 4rem
-            width: 100%
+            width: 50vw
+            min-width: 43rem
 
             > .title
               align-items: center
@@ -201,15 +211,21 @@
 
           > .desc
             padding: 5rem 4rem
+            width: 100%
+            min-width: auto
 
-          > img
-            max-width: 100%
+          > .image
+            margin-right: 0
+            height: 43rem
+
+            > img
+              max-width: 100%
 
           &:nth-child(2n)
             flex-direction: column !important
             height: auto
 
-            > img
+            > .image
               margin-left: 0
 
           &:not(:last-child)

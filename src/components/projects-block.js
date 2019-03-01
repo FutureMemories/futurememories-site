@@ -42,8 +42,7 @@ export default ({ projects, customClass, limit, currentBrowseCase }) => (
         project.button ? (
           <div class={cx(s.project, s.button)} style={style}>
             <Button
-              to={project.type !== 'mailto' && project.to}
-              mailto={project.type === 'mailto' && project.to}
+              to={project.type === 'mailto' ? `mailto:${project.to}` : project.to}
               label={project.label}
               fullsize arrow
             />

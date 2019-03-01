@@ -29,7 +29,9 @@ export default class extends Component {
               <div class={s.content}>
                 {careersWorkplaces.map(row => (
                   <div class={s.workplace}>
-                    <img src={require(`../images/${row.image}`)} />
+                    <div class={s.image}>
+                      <img src={require(`../images/${row.image}`)} />
+                    </div>
                     <div class={s.desc}>
                       <h3>{row.label}</h3>
                       <p>{row.text}</p>
@@ -47,7 +49,9 @@ export default class extends Component {
               <div class={s.content}>
                 {careersPositions.map(row => (
                   <div class={s.position}>
-                    <img src={require(`../images/${row.image}`)} />
+                    <div class={s.image}>
+                      <img src={require(`../images/${row.image}`)} />
+                    </div>
                     <div class={s.desc}>
                       <div class={s.title}>
                         <Icon id={row.icon} />
@@ -55,7 +59,7 @@ export default class extends Component {
                       </div>
                       <p>{row.text}</p>
                       <p class={s.tasks}>{row.tasks}</p>
-                      <Button mailto={company.email} label='Apply' small center width='216' />
+                      <Button to={`mailto:${company.email}`} label='Apply' small center width='216' />
                     </div>
                   </div>
                 ))}

@@ -15,7 +15,7 @@ export default ({ title, text }) => (
         </div>
       ))}
       <div class={s.block}>
-        <Button to='/team' label='See the whole team' fullsize arrow />
+        <Button to='/team' label='See the whole team' fullsize arrow transition='move' />
       </div>
     </div>
   </div>

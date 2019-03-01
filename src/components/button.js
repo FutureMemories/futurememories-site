@@ -1,4 +1,3 @@
-import { route } from 'preact-router'
 import Icon from './icon'
 import cx from 'classnames'
 import s from './button.sass'
@@ -10,47 +9,37 @@ export default ({
   loading,
   disabled,
   to,
-  mailto,
   fullsize,
   small,
   center,
   width,
   arrow,
+  transition,
+  customClass,
   ...props
-}) => (
-  mailto ? (
-    <a
+}) => {
+  const CurrentTag = to ? 'a' : 'button'
+  return (
+    <CurrentTag
+      type={!to && type}
       class={cx(
         s.button,
         loading && s.loading,
         fullsize && s.fullsize,
         small && s.small,
-        center && s.center
-      )}
-      style={width && `width: ${width}px;`}
-      href={`mailto:${mailto}`}
-    >
-      {label && (<span>{label}</span>)}
-      {arrow && (<Icon class={s.arrow} id='arrow' />)}
-    </a>
-  ) : (
-    <button
-      type={type}
-      class={cx(
-        s.button,
-        loading && s.loading,
-        fullsize && s.fullsize,
-        small && s.small
+        center && s.center,
+        transition && s[transition],
+        customClass && customClass
       )}
       style={width && `width: ${width}px;`}
       disabled={loading || disabled}
-      onClick={
-        to ? () => route(to, true) : onClick
-      }
+      href={to}
+      onClick={onClick}
       {...props}
     >
-      {label && (<span>{label}</span>)}
-      {arrow && (<Icon class={s.arrow} id='arrow' />)}
-    </button>
+      {arrow && transition === 'slide' && (<Icon class={cx(s.arrow, s.first)} id='arrow' />)}
+      {label && (<span class={s.label} >{label}</span>)}
+      {arrow && (<Icon class={cx(s.arrow, s.second)} id='arrow' />)}
+    </CurrentTag>
   )
-)
+}
