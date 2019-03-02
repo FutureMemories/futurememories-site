@@ -17,7 +17,7 @@ export default class extends Component {
     if (!this._frameId) {
       this._frameId = setInterval(() => {
         this.setState({ lightLeft: this.clientX / 30, lightTop: this.clientY / 30 })
-      }, 300)
+      }, 100)
     }
   }
 

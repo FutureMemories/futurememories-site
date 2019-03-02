@@ -56,7 +56,7 @@ export default class extends Component {
 
             <div class={s.partners}>
               <Moon position='topRight' size='extraSmall' background='blue' customClass={s.smallMoon} />
-              <Moon position='topLeft' size='medium' background='blue' customClass={s.moon} style='opacity: 0.2;' />
+              <Moon position='topLeft' size='medium' background='blue' customClass={s.moon} style='opacity: 0.5;' />
               <div class={s.text}>
                 <h1>Howdy, partner!</h1>
                 <p>Say hi to some of our partners</p>

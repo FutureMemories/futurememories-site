@@ -29,8 +29,8 @@ export default class extends Component {
     this.setState({
       perspective: 20,
       translateZ: 0.1,
-      rotateX: ease(x, rotateX),
-      rotateY: ease(y, rotateY),
+      rotateX: ease(y, rotateX),
+      rotateY: ease(x, rotateY),
       shineDeg: deg
     })
   }

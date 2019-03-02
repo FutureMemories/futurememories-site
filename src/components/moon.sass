@@ -5,17 +5,16 @@
 
   > .background
     content: ''
-    height: 60%
-    width: 60%
-    background: #081333
-    box-shadow: 0 0 140px 50px #081439
+    height: 100%
+    width: 100%
+    background: radial-gradient(50% 50% ellipse at center, #081439, transparent)
     border-radius: 50%
     position: absolute
     display: block
-    top: 55%
+    top: 50%
     left: 60%
     transform: translate(-50%) translateY(-50%)
-    transition: margin 0.5s ease
+    transition: margin 0.8s ease
     animation: eclipse 5s ease-in-out infinite
 
     &:after
@@ -27,8 +26,8 @@
       box-shadow: 0 0 120px 50px #ABAFA8
       position: absolute
       display: block
-      top: 20%
-      right: 20%
+      bottom: 53%
+      left: 54%
 
   > .planet
     content: ''
@@ -46,14 +45,13 @@
 
     > .shine
       content: ''
-      height: 0.1rem
-      width: 0.1rem
-      background: black
-      box-shadow: 0 0 204px 100px #18254E
+      height: 50rem
+      width: 50rem
+      background: radial-gradient(200px 200px ellipse at center, #182A4D, transparent)
       position: absolute
       display: block
-      top: -2rem
-      right: 5rem
+      bottom: 50%
+      left: 35%
       z-index: 99
       transition: margin 0.35s ease
 
@@ -76,11 +74,10 @@
   // Moon colors
   &.blue
     > .planet > .shine
-      box-shadow: 0 0 204px 100px #18254e
+      background: radial-gradient(200px 200px ellipse at center, #182A4D, transparent)
 
     > .background
-      background: #081333
-      box-shadow: 0 0 140px 50px #081439
+      background: radial-gradient(50% 50% ellipse at center, #081439, transparent)
 
       &:after
         background: #919696
@@ -88,11 +85,10 @@
 
   &.red
     > .planet > .shine
-      box-shadow: 0 0 204px 100px #4A083E
+      background: radial-gradient(200px 200px ellipse at center, #4A083E, transparent)
 
     > .background
-      background: #081333
-      box-shadow: 0 0 140px 50px #081439
+      background: radial-gradient(50% 50% ellipse at center, #081439, transparent)
 
       &:after
         background: #EA061F
@@ -104,58 +100,58 @@
       background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)
 
       > .shine
-        top: auto
-        bottom: -2rem
-        left: auto
-        right: 5rem
+        bottom: auto
+        right: auto
+        top: 50%
+        left: 35%
 
     > .background
-      top: 77%
+      top: 85%
       left: 60%
 
       &:after
-        top: auto
-        bottom: 20%
-        left: 45%
+        bottom: auto
         right: auto
+        top: 50%
+        left: 50%
 
   &.bottomLeft
     > .planet
       background-image: linear-gradient(-180deg, #070B13 0%, #03060C 73%)
 
       > .shine
-        top: auto
-        bottom: -2rem
-        left: 4rem
-        right: auto
+        bottom: auto
+        left: auto
+        top: 50%
+        right: 35%
 
     > .background
-      top: 80%
-      left: 40%
+      top: 85%
+      left: 35%
 
       &:after
-        top: auto
-        bottom: 20%
-        left: 20%
+        bottom: auto
         right: auto
+        top: 50%
+        left: 35%
 
   &.topLeft
     > .planet
       > .shine
-        bottom: auto
-        top: -2rem
-        left: 4rem
-        right: auto
+        top: auto
+        left: auto
+        bottom: 50%
+        right: 35%
 
     > .background
-      bottom: 80%
-      left: 40%
+      top: 50%
+      left: 35%
 
       &:after
-        bottom: auto
-        top: 20%
-        left: 20%
         right: auto
+        top: auto
+        bottom: 47%
+        left: 47%
 
   @keyframes eclipse
     0%
