@@ -16,17 +16,19 @@
       padding: 3rem
       overflow: hidden
       margin-bottom: -1rem
+      transition: margin 0.2s ease
 
       > h3
         font-size: 4rem
         text-transform: uppercase
         line-height: 5rem
+        margin-bottom: 0.5rem
 
       > .desc
         font-size: 1.5rem
         line-height: 0rem
         opacity: 0
-        transition: line-height 0.2s ease-in-out, opacity 0.3s ease-in-out
+        transition: line-height 0.2s 0.1s ease-in-out, opacity 0.2s ease
 
         > p
           transition: margin 0.2s ease-in-out
@@ -44,11 +46,12 @@
     &:hover
 
       > .inner
-        margin-bottom: 0
+        margin-bottom: 0rem
 
         > .desc
           line-height: 2.4rem
           opacity: 1
+          transition: line-height 0.2s ease-in-out, opacity 0.2s 0.1s ease
 
           > .desktop, > .mobile
             margin-bottom: 1.5rem

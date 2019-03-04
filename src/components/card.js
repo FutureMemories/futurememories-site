@@ -3,12 +3,12 @@ import cx from 'classnames'
 import s from './card.sass'
 
 const ease = (target, current) => {
-  const value = current + ((target - current) * 0.1)
-  return value < 0.0001 ? 0 : value
+  return current + ((target - current) * 0.1)
 }
 
 export default class extends Component {
   state = {
+    ease: false,
     perspective: 0,
     translateZ: 0,
     rotateX: 0,
@@ -43,6 +43,14 @@ export default class extends Component {
       rotateY: 0,
       shineDeg: 0
     })
+    this.easeCard()
+  }
+
+  easeCard = () => {
+    this.setState({ ease: true })
+    setTimeout(() => {
+      this.setState({ ease: false })
+    }, 200)
   }
 
   render ({ customClass, customStyle, children, to }, state) {
@@ -50,7 +58,7 @@ export default class extends Component {
 
     return (
       <CurrentTag
-        class={cx(s.card, customClass)}
+        class={cx(s.card, customClass, state.ease && s.ease)}
         href={to}
         style={
           `transform:

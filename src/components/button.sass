@@ -47,7 +47,7 @@
     display: inline-block
 
   > .arrow
-    left: 1rem
+    left: 0
     position: relative
     top: 0.2rem
     width: 3.6rem
@@ -88,9 +88,8 @@
       > span, > .arrow
         transform: translateX(20px)
 
-
   &.slide
-    > span // off
+    > span
       transition: transform 0.2s ease-in-out
       transition-delay: 0s
 
@@ -108,14 +107,14 @@
       &.second
         transition: transform 0.2s ease-in-out, opacity 0.3s ease
 
-    &:hover // on
+    &:hover
       > .label
         transition-delay: 0.2s
-        transform: translateX(35px) scale(1.15)
+        transform: translateX(55px)
 
       > .arrow.first
         transition-delay: 0.2s
-        transform: translateX(10px)
+        transform: translateX(50px)
         opacity: 1
 
       > .arrow.second
