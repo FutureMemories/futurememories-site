@@ -1,3 +1,5 @@
+$eclipseTransition: margin 0.8s ease
+
 .space
   position: relative
   width: 45rem
@@ -14,7 +16,7 @@
     top: 50%
     left: 60%
     transform: translate(-50%) translateY(-50%)
-    transition: margin 0.8s ease
+    transition: $eclipseTransition
     animation: eclipse 5s ease-in-out infinite
 
     &:after
@@ -53,7 +55,7 @@
       bottom: 50%
       left: 35%
       z-index: 99
-      transition: margin 0.35s ease
+      transition: $eclipseTransition
 
   // Moon size
   &.extraSmall

@@ -16,7 +16,6 @@ export default ({ dark, links }) => (
         <div />
 
         <div class={s.menu}>
-          <a href='/'>Home</a>
           {links.map(link => (
             <a href={link.to}>{link.label}</a>
           ))}

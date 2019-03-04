@@ -4,6 +4,7 @@ import Header from './components/header'
 import Footer from './components/footer'
 
 const links = [
+  { label: 'Home', to: '/' },
   { label: 'Our work', to: '/work' },
   { label: 'About us', to: '/about' },
   { label: 'The team', to: '/team' },
