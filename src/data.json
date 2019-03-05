@@ -21,7 +21,8 @@
       {"name": "WHOYOUARE", "logo": "partners/whoyouare.svg"},
       {"name": "BAUER", "logo": "partners/bauer.svg"},
       {"name": "nouw", "logo": "partners/nouw.svg"},
-      {"name": "Sleep Cycle", "logo": "partners/sleep-cycle.svg"}
+      {"name": "Sleep Cycle", "logo": "partners/sleep-cycle.svg"},
+      {"name": "Västra Götalandsregionen", "logo": "partners/vgregion.svg"}
     ]
   },
   "frontTeamPictures":[

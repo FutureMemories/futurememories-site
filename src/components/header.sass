@@ -62,81 +62,97 @@
         &:after
           transform: translateY(-.1rem) rotate(-45deg)
 
-      > .menu
+      > .menuBlock
         align-items: center
         background: radial-gradient(circle at top, rgba(7,11,19,0.97) 0%, rgba(7,11,19,0.97) 100%)
         bottom: 0
+        cursor: default
         display: flex
         flex-direction: column
         justify-content: center
         left: 0
-        list-style: none
         opacity: 0
-        cursor: default
+        pointer-events: auto
         position: fixed
         right: 0
         top: 0
-        transition: opacity .2s ease, visibility .2s ease
         visibility: hidden
         z-index: -1
 
-        > li
-          font-size: 3rem
-          font-weight: bold
-          margin: 1.5rem 0
-          padding: 0.5rem
+        > .menu
+          bottom: 0
+          display: flex
+          flex-direction: column
+          justify-content: center
+          list-style: none
           opacity: 0
-          pointer-events: auto
-          transform: translateX(-8rem)
+          padding: 0.5rem
+          position: relative
+          transition: opacity .2s ease, visibility .2s ease
+          visibility: hidden
+          z-index: 100
 
-          @media screen and (max-height: 500px)
+          > li
+            font-size: 3rem
+            font-weight: bold
             margin: 1.5rem 0
+            opacity: 0
+            padding: 0.5rem
+            pointer-events: auto
+            transform: translateX(-8rem)
 
-          @media screen and (max-height: 400px)
-            font-size: 2rem
-            margin: 1rem 0
+            @media screen and (max-height: 500px)
+              margin: 1.5rem 0
 
-          @for $i from 1 through 5
-            &:nth-child(#{$i})
-              transition-duration: #{0.1 + $i * 0.1}s
+            @media screen and (max-height: 400px)
+              font-size: 2rem
+              margin: 1rem 0
 
-          > a
-            color: inherit
-            position: relative
-            text-decoration: none
-            transition: color .2s ease
+            @for $i from 1 through 5
+              &:nth-child(#{$i})
+                transition-duration: #{0.1 + $i * 0.1}s
 
-            &:before
-              background: $color-red
-              content: ''
-              height: .2rem
-              margin: -.1rem 2rem 0 0
-              opacity: 0
-              position: absolute
-              right: 100%
-              top: 50%
-              transform: translateX(-10rem)
-              transition: opacity .2s ease, transform .2s ease, visibility .2s ease
-              visibility: hidden
-              width: 100rem
-
-            .no-touchevents &:hover
-              color: $color-red
-              opacity: 1
+            > a
+              color: inherit
+              position: relative
+              text-decoration: none
+              transition: color .2s ease
 
               &:before
+                background: $color-red
+                content: ''
+                height: .2rem
+                margin: -.1rem 2rem 0 0
+                opacity: 0
+                position: absolute
+                right: 100%
+                top: 50%
+                transform: translateX(-10rem)
+                transition: opacity .2s ease, transform .2s ease, visibility .2s ease
+                visibility: hidden
+                width: 100rem
+
+              .no-touchevents &:hover
+                color: $color-red
                 opacity: 1
-                transform: none
-                visibility: visible
+
+                &:before
+                  opacity: 1
+                  transform: none
+                  visibility: visible
 
       &.open
-        > .menu
+        > .menuBlock
           opacity: 1
           visibility: visible
 
-          > li
+          > .menu
             opacity: 1
-            transform: none
+            visibility: visible
+
+            > li
+              opacity: 1
+              transform: none
 
   &.dark
     background: white
@@ -149,5 +165,6 @@
         &:before, &:after
           background: black
 
-        > .menu
-          background: rgba(#F4F4F4, 0.97)
+        > .menuBlock
+          > .menu
+            background: rgba(#F4F4F4, 0.97)

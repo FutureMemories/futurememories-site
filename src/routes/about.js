@@ -6,15 +6,15 @@ import s from './about.sass'
 
 const data = [
   {
-    label: 'We are',
+    label: 'We are 🤘',
     items: ['Designers', 'Front-End Developers', 'Specialists', 'Strategists', 'Back-End Developers', 'Consultants', 'Illustrators', 'Collaborators']
   },
   {
-    label: 'We are not',
+    label: 'We are not 🙅‍',
     items: ['Lost in space', 'Backward thinking', 'Boring', 'Freelancers']
   },
   {
-    label: 'We do',
+    label: 'We do 💅',
     items: ['Brand strategy & positioning', 'Research', 'UI & UX', 'Websites', 'Mobile applications', 'Visual identities', 'Product design', 'Data visualisation']
   }
 ]
