@@ -85,6 +85,14 @@
         {
           "background":"#F2F5F6",
           "color":"#070B13"
+
+        },
+        {
+          "min-width":"21rem",
+          "max-width": "25rem"
+        },
+        {
+          "margin-left": "-80px"
         }
       ],
       "showcase":"picular"
@@ -133,6 +141,14 @@
         {
           "background":"#F2F5F6",
           "color":"#070B13"
+
+        },
+        {
+          "min-width":"21rem",
+          "max-width": "25rem"
+        },
+        {
+          "margin-left": "-80px"
         }
       ],
       "showcase":"picular"
@@ -201,6 +217,14 @@
         {
           "background":"#F2F5F6",
           "color":"#070B13"
+
+        },
+        {
+          "min-width":"21rem",
+          "max-width": "25rem"
+        },
+        {
+          "margin-left": "-80px"
         }
       ],
       "showcase":"picular"

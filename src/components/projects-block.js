@@ -4,16 +4,9 @@ import Card from './card'
 import cx from 'classnames'
 import s from './projects-block.sass'
 
-let count = 0
-
 export default ({ projects, customClass, limit, currentBrowseCase }) => (
   <div class={cx(s.projects, customClass && customClass, currentBrowseCase && s.browseCase)}>
-    {projects.map((project, i) => {
-      if (currentBrowseCase && currentBrowseCase === project.showcase) return
-
-      ++count
-      if (count > limit) return
-
+    {projects.filter(p => !p.showcase || p.showcase !== currentBrowseCase).slice(0, limit).map((project, i) => {
       let style = ''
       let detailsStyle = ''
       let imageStyle = ''

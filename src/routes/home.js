@@ -56,7 +56,7 @@ export default class extends Component {
                 <h1>Some of our work</h1>
                 <p>We work with exceptional companies tirelessly to create products that makes all of our lives better.</p>
               </div>
-              <ProjectsBlock projects={frontCases} />
+              <ProjectsBlock projects={frontCases} limit={9898} />
               <Button customClass={s.button} to='/work' label='See all projects' arrow transition='slide' />
             </div>
 
