@@ -1,0 +1,18 @@
+import cx from 'classnames'
+import s from './text-block-multiple.sass'
+
+export default ({ title, text, content, background, color }) => (
+  <div class={s.textBlockMultiple} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
+    <div class={s.inner}>
+      <div class={s.leftBlock}>
+        <h1>{title}</h1>
+        <p>{text}</p>
+      </div>
+      <div class={s.rightBlock}>
+        {content.map(paragraf => (
+          <p>{paragraf}</p>
+        ))}
+      </div>
+    </div>
+  </div>
+)

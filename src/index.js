@@ -12,6 +12,7 @@ import Picular from './cases/picular'
 import TennisWatch from './cases/tennis-watch'
 import MatSe from './cases/mat-se'
 import Paykartan from './cases/paykartan'
+import RettsPlus from './cases/retts-plus'
 
 import './index.sass'
 
@@ -28,6 +29,7 @@ export default () => (
       <TennisWatch path='/cases/tennis-watch' />
       <MatSe path='/cases/mat-se' />
       <Paykartan path='/cases/paykartan' />
+      <RettsPlus path='/cases/retts-plus' />
 
       <NotFound default />
     </Router>

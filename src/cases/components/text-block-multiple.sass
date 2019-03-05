@@ -1,0 +1,52 @@
+@import '../../settings.sass'
+
+.textBlockMultiple
+
+  > .inner
+    display: flex
+    flex-direction: row
+    font-weight: normal
+    margin: auto
+    max-width: $max-width
+    padding: 10.5rem 3rem
+
+    > .leftBlock
+      display: flex
+      flex-direction: column
+      width: 40%
+
+      > h1
+        font-size: 4rem
+        font-weight: normal
+        white-space: pre-line
+
+      > p
+        font-size: 2rem
+        line-height: 2.8rem
+        margin-top: 1.6rem
+        opacity: 0.8
+
+    > .rightBlock
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding-left: 5rem
+      width: 60%
+
+      > p
+        font-size: 1.8rem
+        line-height: 2.5rem
+        opacity: 0.8
+
+        &:not(:last-child)
+          margin-bottom: 2.5rem
+
+    @media screen and (max-width: $small-grid)
+      flex-direction: column
+
+      > .leftBlock, > .rightBlock
+        padding: 0
+        width: 100%
+
+      > .rightBlock
+        padding-top: 2rem
