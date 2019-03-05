@@ -64,7 +64,7 @@ export default class extends Component {
               diagonal
             />
 
-            <ProjectsBlock current='picular' background='#070B13' />
+            <ProjectsBlock current='retts-plus' background='#070B13' />
 
           </div>
         </div>

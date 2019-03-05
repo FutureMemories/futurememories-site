@@ -204,7 +204,7 @@
           "min-width":"19.5rem"
         }
       ],
-      "showcase":""
+      "showcase":"proflight"
     }
   ],
   "allCases":[
@@ -277,7 +277,7 @@
           "min-width":"19.5rem"
         }
       ],
-      "showcase":""
+      "showcase":"proflight"
     },
     {
       "name":"Tennis Watch",
@@ -412,6 +412,19 @@
           "url":"https://player.vimeo.com/video/113123599?autoplay=1"
         }
       ]
+    },
+    {
+      "name":"Retts Plus",
+      "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client":"Predicare",
+      "type":"UX/UI",
+      "style":[
+        {
+          "background":"linear-gradient(180deg, #152135 0%, #090E18 100%)",
+          "color":"#fff"
+        }
+      ],
+      "showcase":"retts-plus"
     }
   ],
   "astronauts":[

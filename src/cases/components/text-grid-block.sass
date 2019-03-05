@@ -1,0 +1,85 @@
+@import '../../settings.sass'
+
+.textGridBlock
+  position: relative
+
+  > .inner
+    display: flex
+    flex-direction: row
+    font-weight: normal
+    margin: auto
+    max-width: $max-width
+    padding: 10.5rem 3rem 0
+
+  > .blocks
+    display: grid
+    grid-gap: 10rem
+    grid-template-columns: repeat(2, 1fr)
+    overflow: hidden
+
+    > .block
+      align-self: end
+      position: relative
+      width: 100%
+
+      &:nth-child(1)
+        grid-row: span 2
+
+      &:nth-child(2)
+        align-self: center
+        grid-row: span 1
+        padding-right: 1rem
+        top: 5rem
+
+      &:nth-child(3)
+        grid-row: span 2
+
+      &:nth-child(4)
+        grid-row: span 2
+        margin: -0.3rem
+        overflow: hidden
+
+      > img
+        height: auto
+        width: 100%
+
+      > h1
+        font-size: 4rem
+        font-weight: normal
+
+      > p
+        font-size: 2rem
+        line-height: 2.8rem
+        margin-top: 1.6rem
+        max-width: 52rem
+        opacity: 0.8
+
+    @media screen and (max-width: $medium-grid)
+      grid-gap: 5rem
+
+      > .block:nth-child(2)
+        top: 0
+
+    @media screen and (max-width: $small-grid + 100px)
+      grid-gap: 2rem
+      padding-top: 25rem
+
+      > .block
+
+        &:nth-child(2)
+          display: block
+          max-height: 48rem
+          overflow: auto
+          padding: 0 3rem
+          position: absolute
+          top: 4rem
+
+        &:nth-child(3)
+          grid-row: span 2
+          top: 25vw
+
+    @media screen and (max-width: 420px)
+      padding-top: 35rem
+
+    @media screen and (max-width: 350px)
+      padding-top: 41rem
