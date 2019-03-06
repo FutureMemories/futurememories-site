@@ -1,5 +1,9 @@
 import { Component } from 'preact'
-import SineWaves from 'sine-waves'
+
+let SineWaves
+if (typeof window !== 'undefined') {
+  SineWaves = require('sine-waves')
+}
 
 export default class extends Component {
   componentDidMount () {
