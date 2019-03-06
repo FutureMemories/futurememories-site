@@ -16,7 +16,7 @@ export default class extends Component {
           <div class={s.notFound}>
             <img src={require('../images/broken-document.svg')} />
             <h2>404_page_not_found.jpg</h2>
-            <Button small to='/' label='Go back to the future' />
+            <Button to='/' label='Go back' transition='slide' arrow reverse small />
           </div>
           <Moon size='big' position='topLeft' background='blue' customClass={s.moon} />
         </div>

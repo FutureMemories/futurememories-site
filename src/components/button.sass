@@ -89,6 +89,11 @@
         transform: translateX(20px)
 
   &.slide
+
+    &.small:hover
+      > .arrow.first
+        transform: translateX(25px)
+
     > span
       transition: transform 0.2s ease-in-out
       transition-delay: 0s
@@ -97,7 +102,7 @@
 
       &.first
         opacity: 0
-        top: calc(50% - 0.8rem)
+        top: calc(50% - 0.7rem)
         left: 0
         transform: translateX(-35px)
         position: absolute
@@ -120,6 +125,35 @@
       > .arrow.second
         opacity: 0
         transform: translateX(40px)
+
+  &.reverse
+    flex-direction: row-reverse
+
+    > .label
+      transform: translateX(20px)
+
+    > .arrow
+
+      &.first
+        transform: scale(-1) translateX(-35px)
+        left: auto
+        right: 0
+
+      &.second
+        transform: scale(-1)
+
+    &:hover
+
+      > .label
+        transform: translateX(-40px)
+
+      > .arrow
+
+        &.first
+          transform: scale(-1) translateX(25px) !important
+
+        &.second
+          transform: scale(-1) translateX(25px) !important
 
 @keyframes loader
   from

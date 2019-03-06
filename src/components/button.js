@@ -14,6 +14,7 @@ export default ({
   center,
   width,
   arrow,
+  reverse,
   transition,
   customClass,
   ...props
@@ -29,7 +30,8 @@ export default ({
         small && s.small,
         center && s.center,
         transition && s[transition],
-        customClass && customClass
+        customClass && customClass,
+        reverse && s.reverse
       )}
       style={width && `width: ${width}px;`}
       disabled={loading || disabled}

@@ -59,7 +59,8 @@ export default class extends Component {
                       </div>
                       <p>{row.text}</p>
                       <p class={s.tasks}>{row.tasks}</p>
-                      <Button to={`mailto:${company.email}`} label='Apply' small center width='216' />
+                      <p class={s.tasks}>{row.tasks}</p>
+                      <Button to={`mailto:${company.email}`} label='Apply' arrow transition='slide' small width='150' />
                     </div>
                   </div>
                 ))}

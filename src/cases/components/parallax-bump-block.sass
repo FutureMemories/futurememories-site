@@ -41,6 +41,7 @@
       position: relative
       width: 60%
 
+      *
         &:nth-child(1)
           right: -2rem
           z-index: 4
@@ -54,8 +55,9 @@
           z-index: 2
 
     @media screen and (max-width: $medium-grid)
-      > .content > h1: undefined
-      margin-top: 0
+      > .content
+        > h1
+          margin-top: 0
 
       > .parallaxes
         margin: -7rem auto -35%
