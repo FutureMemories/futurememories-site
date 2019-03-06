@@ -5,9 +5,9 @@ import Base from '../_base'
 import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import ProjectsBlock from './components/projects-block'
-import TextBlockMultiple from './components/text-block-multiple'
 import TextGridBlock from './components/text-grid-block'
 import TextBlock from './components/text-block'
+import CenterBlock from './components/center-block'
 
 export default class extends Component {
   render () {
@@ -23,14 +23,9 @@ export default class extends Component {
 
             <LargeImage src='cases/proflight-1.jpg' />
 
-            <TextBlockMultiple
+            <CenterBlock
               title='Flightmode on'
-              text='The AVTECH Aventus SIGMA is a unique weather uplink service that sends weather alerts directly to the pilots’ tablet devices. The app is used in the cockpit during flight to optimise comfort and fuel efficiency.'
-              content={[
-                `Aventus SIGMA, a high-quality tool that very adequately presents Weather hazards (such as Icing, Turbulence, Volcanic ash, etc) to your aircraft, is a real-time weather alerting system which communicates through ACARS and assures your company’s aircraft are notified to new meteorological hazards related to the actual route in the FMS. `,
-                `The design of Aventus SIGMA reduces pilot workload and relieves the crew of difficult and inexact interpretation of weather maps, who sometimes can be 6 hours old.`,
-                `Made in collaboration with Future Memories, Invencon and AVTECH.`
-              ]}
+              text={`Presents in real time all required weather related information to the pilot in a nice and clear interface. The pilot can access everything from significant weather charts, SIGMETS and station information to tailored high resolution weather such as turbulence and winds along the flight plan route.`}
               background='#1A2132'
               color='#ffffff'
             />
@@ -38,7 +33,7 @@ export default class extends Component {
             <TextGridBlock
               blocks={[
                 { image: 'cases/proflight-2.png' },
-                { title: 'Turbulence is so 2017', desc: `Because the pilots can get a weather report with current winds, they can plan their flight to avoid any turbulence and get a more fuel efficient, smoother journey.` },
+                { title: 'The sky’s the limit.', desc: `Developed in close cooperation with professional airline pilots to achieve a user friendly interface and a clear view of the weather and warnings/hazards along the planned flight route. The combination of the synchronized horizontal- and vertical view improves the pilot ́s situational awareness.` },
                 { image: 'cases/proflight-3.png' }, { image: 'cases/proflight-4.png' }
               ]}
               background='#161D2B'

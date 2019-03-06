@@ -14,6 +14,7 @@ import MatSe from './cases/mat-se'
 import Paykartan from './cases/paykartan'
 import RettsPlus from './cases/retts-plus'
 import ProFlight from './cases/proflight'
+import AntiStress from './cases/antistress'
 
 import './index.sass'
 
@@ -32,6 +33,7 @@ export default () => (
       <Paykartan path='/cases/paykartan' />
       <RettsPlus path='/cases/retts-plus' />
       <ProFlight path='/cases/proflight' />
+      <AntiStress path='/cases/antistress' />
 
       <NotFound default />
     </Router>

@@ -1,0 +1,72 @@
+@import '../../settings.sass'
+
+.parallaxBumpBlock
+  background: #F2F5F6
+  max-height: 90rem
+  overflow: hidden
+  position: relative
+
+  > .inner
+    display: flex
+    font-weight: normal
+    justify-content: space-between
+    margin: auto
+    max-width: $max-width
+    padding: 9.6rem 0 9.6rem 3rem
+    position: relative
+    width: 100%
+
+    > .content
+      max-width: 50rem
+      overflow: hidden
+
+      > h1
+        font-size: 4rem
+        font-weight: normal
+        margin: 10rem 0 2rem
+        white-space: pre-line
+
+      > p
+        font-size: 2rem
+        line-height: 2.8rem
+        max-width: 74rem
+        opacity: 0.8
+        white-space: pre-line
+
+    > .parallaxes
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-end
+      margin: -7rem 0 -35% auto
+      position: relative
+      width: 60%
+
+        &:nth-child(1)
+          right: -2rem
+          z-index: 4
+
+        &:nth-child(2)
+          right: 4rem
+          z-index: 3
+
+        &:nth-child(3)
+          right: 2rem
+          z-index: 2
+
+    @media screen and (max-width: $medium-grid)
+      > .content > h1: undefined
+      margin-top: 0
+
+      > .parallaxes
+        margin: -7rem auto -35%
+        width: 70%
+
+    @media screen and (max-width: $small-grid + 100px)
+      flex-direction: column-reverse
+      text-align: center
+
+      > .content > h1
+        margin-top: 0rem
+
+      > .parallaxes
+        width: 55%

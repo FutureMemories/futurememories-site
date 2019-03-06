@@ -425,6 +425,19 @@
         }
       ],
       "showcase":"retts-plus"
+    },
+    {
+      "name":"Antistress",
+      "desc":"The purpose is to act as a diary to see their progress or stress level and also listen to meditative soundtracks to reduce stress.",
+      "client":"Västra Götalandsregionen",
+      "type":"iOS, UX/UI",
+      "style":[
+        {
+          "background":"linear-gradient(120deg, #90AAE7 0%, #E57376 100%)",
+          "color":"#fff"
+        }
+      ],
+      "showcase":"antistress"
     }
   ],
   "astronauts":[

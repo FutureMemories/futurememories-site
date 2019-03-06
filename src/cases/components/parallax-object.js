@@ -37,7 +37,7 @@ export default class extends Component {
       >
         <img
           class={cx(s.parallaxBackground, diagonal && s.diagonal)}
-          style={cx(`top: ${startPos};`, width && `max-width: ${width};`)}
+          style={cx(`top: ${startPos}%;`, width && `max-width: ${width};`)}
           src={require(`../../images/${image}`)}
         />
       </div>
