@@ -1,6 +1,6 @@
 {
   "company":{
-    "name":"Future Memoires AB",
+    "name":"Future Memories AB",
     "street":"Vallgatan 25",
     "zip":"413 00",
     "city":"Gothenburg",
@@ -115,17 +115,28 @@
       "showcase":"mat-se"
     },
     {
-      "name":"Paykartan",
-      "image":"cases/paykartan.png",
-      "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
-      "type":"UX/UI, Web",
+      "name":"Antistress",
+      "image":"cases/antistress.png",
+      "imageBg":[
+        "cases/antistress-bg.jpg",
+        "height"
+      ],
+      "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "client":"Västra Götalandsregionen",
+      "type":"iOS, UX/UI",
       "style":[
         {
-          "background":"#FFD2D2",
-          "color":"#070B13"
+          "background":"#2D2D2D",
+          "color":"#fff"
+        },
+        {
+          "min-width":"24.4rem"
+        },
+        {
+          "right": "14rem"
         }
       ],
-      "showcase":"paykartan"
+      "showcase":"antistress"
     }
   ],
   "browseCases":[
@@ -247,17 +258,28 @@
       "showcase":"mat-se"
     },
     {
-      "name":"Paykartan",
-      "image":"cases/paykartan.png",
-      "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
-      "type":"UX/UI, Web",
+      "name":"Antistress",
+      "image":"cases/antistress.png",
+      "imageBg":[
+        "cases/antistress-bg.jpg",
+        "height"
+      ],
+      "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "client":"Västra Götalandsregionen",
+      "type":"iOS, UX/UI",
       "style":[
         {
-          "background":"#FFD2D2",
-          "color":"#070B13"
+          "background":"#2D2D2D",
+          "color":"#fff"
+        },
+        {
+          "min-width":"24.4rem"
+        },
+        {
+          "right": "14rem"
         }
       ],
-      "showcase":"paykartan"
+      "showcase":"antistress"
     },
     {
       "name":"proFLIGHT",
@@ -306,52 +328,33 @@
       "to":"hello@futurememories.se"
     },
     {
-      "name":"Sleep Cycle Dashboard",
-      "imageBg":[
-        "cases/sleep-cycle-dashboard-bg.jpg",
-        "width"
-      ],
-      "desc":"Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client":"Sleep Cycle",
-      "type":"Scala, Reactive Streams",
+      "name":"Retts Plus",
+      "image":"cases/retts-plus.png",
+      "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client":"Predicare",
+      "type":"UX/UI",
       "style":[
         {
-          "background":"#192452",
+          "background":"linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
           "color":"#fff"
-        },
-        {
-          "max-width":"20rem"
         }
       ],
-      "actions":[
-        {
-          "type":"link",
-          "url":"https://www.sleepcycle.com/"
-        }
-      ]
+      "showcase":"retts-plus"
     },
     {
-      "name":"Bauer University",
-      "image":"cases/bauer-university.png",
-      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
-      "client":"Bauer, Bond Communications",
-      "type":"React, Python, Django",
+      "name":"Paykartan",
+      "image":"cases/paykartan.png",
+      "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
+      "type":"UX/UI, Web",
       "style":[
         {
-          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
-          "color":"#fff"
-        },
-        {
-          "min-width":"24.5rem"
+          "background":"#FFD2D2",
+          "color":"#070B13"
         }
       ],
-      "actions":[
-        {
-          "type":"link",
-          "url":"https://www.baueruniversity.com/"
-        }
-      ]
+      "showcase":"paykartan"
     },
+
     {
       "name":"Forces of Freedom",
       "desc":"Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
@@ -411,30 +414,51 @@
       ]
     },
     {
-      "name":"Retts Plus",
-      "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-      "client":"Predicare",
-      "type":"UX/UI",
+      "name":"Sleep Cycle Dashboard",
+      "imageBg":[
+        "cases/sleep-cycle-dashboard-bg.jpg",
+        "width"
+      ],
+      "desc":"Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client":"Sleep Cycle",
+      "type":"Scala, Reactive Streams",
       "style":[
         {
-          "background":"linear-gradient(180deg, #152135 0%, #090E18 100%)",
+          "background":"#192452",
           "color":"#fff"
+        },
+        {
+          "max-width":"20rem"
         }
       ],
-      "showcase":"retts-plus"
+      "actions":[
+        {
+          "type":"link",
+          "url":"https://www.sleepcycle.com/"
+        }
+      ]
     },
     {
-      "name":"Antistress",
-      "desc":"The purpose is to act as a diary to see their progress or stress level and also listen to meditative soundtracks to reduce stress.",
-      "client":"Västra Götalandsregionen",
-      "type":"iOS, UX/UI",
+      "name":"Bauer University",
+      "image":"cases/bauer-university.png",
+      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
+      "client":"Bauer, Bond Communications",
+      "type":"React, Python, Django",
       "style":[
         {
-          "background":"linear-gradient(120deg, #90AAE7 0%, #E57376 100%)",
+          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
           "color":"#fff"
+        },
+        {
+          "min-width":"24.5rem"
         }
       ],
-      "showcase":"antistress"
+      "actions":[
+        {
+          "type":"link",
+          "url":"https://www.baueruniversity.com/"
+        }
+      ]
     }
   ],
   "astronauts":[
