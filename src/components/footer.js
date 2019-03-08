@@ -26,10 +26,7 @@ export default ({ dark, links }) => (
           <p>{company.street}</p>
           <p>{company.zip}, {company.city}</p>
 
-          <p>Call office</p>
-          <a href={`tel:+46 (0)${company.phone.substr(1)}`}>{company.phone}</a>
-
-          <p>Email office</p>
+          <p>Business enquiries</p>
           <a href={`mailto:${company.email}`}>{company.email}</a>
         </div>
       </div>
