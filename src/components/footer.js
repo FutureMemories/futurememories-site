@@ -10,7 +10,7 @@ export default ({ dark, links }) => (
       <div class={s.first}>
         <div class={s.talkToUs}>
           <h2>Got something on your mind?</h2>
-          <a href={`mailto:${company.email}`}>Talk with us!</a>
+          <a href={`mailto:${company.email}`}>Let's talk!</a>
         </div>
 
         <div />

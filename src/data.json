@@ -54,24 +54,21 @@
   ],
   "careersPositions":[
     {
-      "icon": "screen",
-      "label": "Web Developer",
-      "text": "A Web Developer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and timeline.",
+      "label": "🖥  Backend Developer",
+      "text": "A Backend Developer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and.",
       "tasks": "Java, Scala, React, NodeJS, React Native",
       "image": "position-1.jpg"
     },
     {
-      "icon": "screen",
-      "label": "Backend Developer",
-      "text": "A Backend Developer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and.",
-      "tasks": "Java, Scala, React, NodeJS, React Native",
+      "label": "📱 Mobile Developer",
+      "text": "A Digital Designer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and timeline.",
+      "tasks": "Sketch, Photoshop, Illustrator",
       "image": "position-2.jpg"
     },
     {
-      "icon": "roller",
-      "label": "Digital designer",
-      "text": "A Digital Designer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and timeline.",
-      "tasks": "Sketch, Photoshop, Illustrator",
+      "label": "💻  Web Developer",
+      "text": "A Web Developer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and timeline.",
+      "tasks": "Java, Scala, React, NodeJS, React Native",
       "image": "position-3.jpg"
     }
   ],

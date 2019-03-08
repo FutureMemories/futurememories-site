@@ -61,9 +61,9 @@ export default class extends Component {
 
             <div class={cx(s.information, this.state.inViewInformationBlock && s.inView)} ref={(el) => { this.informationBlock = el }}>
               <div class={s.foundationPillar}>
-                <h2 class={(!InformationActive || InformationActive) === 'design' && s.active}>Design</h2>
-                <h2 class={InformationActive === 'develop' && s.active}>Develop</h2>
-                <h2 class={InformationActive === 'strategy' && s.active}>Strategy</h2>
+                <h2 class={(!InformationActive || InformationActive) === 'design' && s.active} onMouseEnter={() => this.setState({ InformationActive: 'design' })}>Design</h2>
+                <h2 class={InformationActive === 'develop' && s.active} onMouseEnter={() => this.setState({ InformationActive: 'develop' })}>Develop</h2>
+                <h2 class={InformationActive === 'strategy' && s.active} onMouseEnter={() => this.setState({ InformationActive: 'strategy' })}>Strategy</h2>
               </div>
               <Moon size='medium' position='bottomLeft' background='red' customClass={s.moon} />
               <p class={(!InformationActive || InformationActive) === 'design' && s.active}>

@@ -42,6 +42,7 @@
       height: 75rem
       justify-content: center
       position: relative
+      pointer-events: none
 
       > .foundationPillar
         left: -10rem
@@ -49,8 +50,11 @@
 
         > h2
           position: relative
+          display: block
           transform: translateX(20rem) translateZ(0)
           opacity: 0
+          pointer-events: auto
+          cursor: default
 
           @for $i from 1 through 3
             &:nth-child(#{$i})

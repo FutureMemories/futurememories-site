@@ -2,7 +2,6 @@ import { Component } from 'preact'
 import Base from '../_base'
 import Moon from '../components/moon'
 import Button from '../components/button'
-import Icon from '../components/icon'
 import TeamPictures from '../components/team-pictures'
 import { company, careersWorkplaces, careersPositions } from '../data.json'
 import s from './careers.sass'
@@ -23,7 +22,7 @@ export default class extends Component {
 
             <div class={s.workplaces}>
               <div class={s.text}>
-                <h1>The modern workplace</h1>
+                <h1>The modern workspace</h1>
                 <p>Our studio in downtown Gothenburg are the center of Future Memories. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team.</p>
               </div>
               <div class={s.content}>
@@ -54,7 +53,6 @@ export default class extends Component {
                     </div>
                     <div class={s.desc}>
                       <div class={s.title}>
-                        <Icon id={row.icon} />
                         <h3>{row.label}</h3>
                       </div>
                       <p>{row.text}</p>

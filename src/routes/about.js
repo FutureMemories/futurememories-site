@@ -7,15 +7,15 @@ import s from './about.sass'
 const data = [
   {
     label: 'We are 🤘',
-    items: ['Designers', 'Front-End Developers', 'Specialists', 'Strategists', 'Back-End Developers', 'Consultants', 'Illustrators', 'Collaborators']
+    items: ['Designers', 'Front-End Developers', 'Specialists', 'Strategists', 'Back-End Developers', 'Illustrators', 'Collaborators', 'In-house']
   },
   {
-    label: 'We are not 🙅‍',
-    items: ['Lost in space', 'Backward thinking', 'Boring', 'Freelancers']
+    label: 'We love 💜',
+    items: ['Space']
   },
   {
     label: 'We do 💅',
-    items: ['Brand strategy & positioning', 'Research', 'UI & UX', 'Websites', 'Mobile applications', 'Visual identities', 'Product design', 'Data visualisation']
+    items: ['Research', 'UI & UX', 'Product design & strategy', 'Web & mobile apps', 'Business development', 'Visual identities', 'Brand strategy & positioning', 'Data visualisation']
   }
 ]
 
@@ -35,8 +35,8 @@ export default class extends Component {
 
             <div class={s.whoWeAre}>
               <div class={s.text}>
-                <h1>It is not rocket science</h1>
-                <p>We develop cutting-edge platforms and apps of exceptional quality in a short space of time.</p>
+                <h1>It’s like rocket science</h1>
+                <p>We are who we are and we are good at what we do.</p>
               </div>
               <div class={s.content}>
                 {data.map(row => (
