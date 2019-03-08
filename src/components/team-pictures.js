@@ -1,4 +1,5 @@
 import Button from '../components/button'
+import cx from 'classnames'
 import { frontTeamPictures } from '../data.json'
 import s from './team-pictures.sass'
 
@@ -10,12 +11,12 @@ export default ({ title, text }) => (
     </div>
     <div class={s.teamPictures}>
       {frontTeamPictures.map((picture, i) => (
-        <div class={s.block}>
+        <div class={cx(s.block, s.filter)}>
           <img src={require(`../images/${picture}`)} />
         </div>
       ))}
       <div class={s.block}>
-        <Button to='/team' label='See the whole team' fullsize arrow transition='move' />
+        <Button to='/team' label='See the whole team' fullsize arrow transition='slideArrow' />
       </div>
     </div>
   </div>

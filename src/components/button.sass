@@ -88,8 +88,35 @@
       > span, > .arrow
         transform: translateX(20px)
 
-  &.slide
+  &.slideArrow
+    > .arrow
+      &.first
+        opacity: 0
+        position: absolute
+        top: calc(100% - 7.4rem)
+        left: 4rem
+        transform: translateX(-40px)
+        transition: transform 0.2s ease-in-out, opacity 0.3s ease
+        transition-delay: 0s
 
+      &.second
+        transition: transform 0.2s ease-in-out, opacity 0.3s ease
+        transition-delay: 0.2s
+
+
+    &:hover
+      > .arrow
+        &.first
+          opacity: 1
+          transform: translateX(0px)
+          transition-delay: 0.2s
+
+        &.second
+          opacity: 0
+          transform: translateX(40px)
+          transition-delay: 0s
+
+  &.slide
     &.small:hover
       > .arrow.first
         transform: translateX(25px)

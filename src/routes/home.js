@@ -32,7 +32,7 @@ export default class extends Component {
           <div class={s.inner}>
 
             <div class={s.welcome} ref={(el) => { this.welcomeBlock = el }}>
-              <Moon ref={(el) => { this.hej = el }} size='normal' position='topRight' background='blue' customClass={s.moon} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
+              <Moon size='normal' position='topRight' background='blue' customClass={s.moon} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
               <h1>
                 <span>Future Memories</span> is a digital studio where strategic design and technology unite into products of tomorrow.
               </h1>
@@ -40,9 +40,9 @@ export default class extends Component {
 
             <div class={s.information}>
               <div class={s.foundationPillar}>
-                <h2>UX</h2>
                 <h2>Design</h2>
-                <h2>Tech</h2>
+                <h2>Develop</h2>
+                <h2>Strategy</h2>
               </div>
               <Moon size='medium' position='bottomLeft' background='red' customClass={s.moon} />
               <p>

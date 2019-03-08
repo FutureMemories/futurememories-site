@@ -25,10 +25,34 @@
       position: relative
       z-index: 2
 
-      > .arrow
+      \:global(.slideArrow)
         bottom: 4rem
         position: absolute
-        width: 3.8rem
+
+        > span, > .arrow
+          transition: transform 0.2s ease-in, opacity 0.3s ease
+
+        > span
+          opacity: 0
+          top: calc(50% - 1.3rem)
+          left: 0
+          transform: translateX(-40px)
+          position: absolute
+          white-space: nowrap
+          font-weight: bold
+
+        > .arrow
+          position: absolute
+          width: 3.8rem
+          top: calc(50% - 1.1rem)
+
+          &:first-child
+            opacity: 0
+            left: -20px
+
+          &:last-child
+            left: 0
+            transition-delay: 0s
 
       > h3
         font-size: 2rem

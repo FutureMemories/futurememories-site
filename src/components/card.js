@@ -53,12 +53,12 @@ export default class extends Component {
     }, 200)
   }
 
-  render ({ customClass, customStyle, children, to }, state) {
+  render ({ customClass, customStyle, children, to, transition }, state) {
     const CurrentTag = to ? 'a' : 'div'
 
     return (
       <CurrentTag
-        class={cx(s.card, customClass, state.ease && s.ease)}
+        class={cx(s.card, customClass, state.ease && s.ease, transition && s[transition])}
         href={to}
         style={
           `transform:

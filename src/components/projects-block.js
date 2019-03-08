@@ -41,9 +41,10 @@ export default ({ projects, customClass, limit, currentBrowseCase }) => (
             />
           </div>
         ) : (
-          <Card customClass={s.project} customStyle={style} to={project.showcase && `/cases/${project.showcase}`}>
+          <Card transition='viewCase' customClass={s.project} customStyle={style} to={project.showcase && `/cases/${project.showcase}`}>
             <div
               class={cx(
+                s.slideArrow,
                 s.details,
                 (project.image || project.layout === 'two') && s.leftAngled
               )}
@@ -53,7 +54,11 @@ export default ({ projects, customClass, limit, currentBrowseCase }) => (
               <p class={s.desc}>{project.desc}</p>
               <p class={s.type}>{project.type}</p>
               {project.showcase && (
-                <Icon id='arrow' class={s.arrow} />
+                <div class='slideArrow'>
+                  <Icon id='arrow' class={cx(s.arrow, s.first)} />
+                  <span>View Case</span>
+                  <Icon id='arrow' class={cx(s.arrow, s.second)} />
+                </div>
               )}
             </div>
             {project.image && (
