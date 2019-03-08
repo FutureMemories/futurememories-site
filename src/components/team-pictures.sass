@@ -28,6 +28,7 @@
       height: 33.5rem
       margin: 1rem
       overflow: hidden
+      position: relative
 
       &:nth-child(2n)
         flex-basis: calc(34% - 2rem)
@@ -42,6 +43,18 @@
         min-height: 100%
         object-fit: cover
         width: 100%
+
+      &:after
+        content: ''
+        height: 100%
+        width: 100%
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 121211
+        opacity: 0.3
+        background: rgba(4,21,54,0.70)
 
   @media screen and (max-width: 800px)
     > .text

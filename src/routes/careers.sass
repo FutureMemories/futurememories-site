@@ -10,7 +10,7 @@
     height: 100%
     margin: 0 auto
     max-width: $max-width
-    padding: 5rem 3rem
+    padding: 5rem 3rem 25rem
     width: 100%
 
     > .heroText
@@ -69,12 +69,25 @@
           > .image
             height: inherit
             margin-right: 8rem
+            position: relative
 
             > img
               height: 100%
               max-width: 53rem
               object-fit: cover
               width: 100%
+
+            &:after
+              content: ''
+              height: 100%
+              width: 100%
+              display: block
+              position: absolute
+              top: 0
+              left: 0
+              z-index: 121211
+              opacity: 0.3
+              background: rgba(4,21,54,0.70)
 
           > .desc
             display: flex
@@ -142,6 +155,18 @@
               max-width: 58rem
               object-fit: cover
               width: 100%
+
+            &:after
+              content: ''
+              height: 100%
+              width: 100%
+              display: block
+              position: absolute
+              top: 0
+              left: 0
+              z-index: 121211
+              opacity: 0.3
+              background: rgba(4,21,54,0.70)
 
           > .desc
             display: flex
