@@ -81,15 +81,15 @@ export default class extends Component {
               <Moon size='small' position='bottomLeft' background='red' customClass={s.moon} />
               <div class={s.text}>
                 <h1>Some of our work</h1>
-                <p>We work with exceptional companies tirelessly to create products that makes all of our lives better.</p>
+                <p>Forward-thinking digital products making life easier and bringing value to clients and consumers.</p>
               </div>
               <ProjectsBlock projects={frontCases} limit={9898} />
               <Button customClass={s.button} to='/work' label='See all projects' arrow transition='slide' />
             </div>
 
             <TeamPictures
-              title='Behind the surface'
-              text='Behind every project there’s faces, faces with a broad range of skills. Make sure to check us out.'
+              title='Behind the scenes'
+              text='May we introduce ourselves? A well-attuned group of professionals enjoying working together.'
             />
 
           </div>
