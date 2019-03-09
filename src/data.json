@@ -97,7 +97,7 @@
     {
       "name":"Mat.se",
       "image":"cases/mat-se.png",
-      "desc":"A new look for the Gothenburg-based startup and online grocery shopping service.",
+      "desc":"A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client":"Mat.se",
       "type":"UX/UI, JAVA, SPRING, iOS",
       "style":[
@@ -115,7 +115,7 @@
       "showcase":"mat-se"
     },
     {
-      "name":"Antistress",
+      "name":"AntiStress",
       "image":"cases/antistress.png",
       "imageBg":[
         "cases/antistress-bg.jpg",
@@ -123,7 +123,7 @@
       ],
       "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client":"Västra Götalandsregionen",
-      "type":"UX/UI, iOS",
+      "type":"UX/UI, iOS, Android",
       "style":[
         {
           "background":"#2D2D2D",
@@ -240,9 +240,9 @@
     {
       "name":"Mat.se",
       "image":"cases/mat-se.png",
-      "desc":"A new look for the Gothenburg-based startup and online grocery shopping service.",
+      "desc":"A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client":"Mat.se",
-      "type":"UX/UI, JAVA, SPRING, iOS",
+      "type":"UX/UI, Java, Spring, iOS",
       "style":[
         {
           "background":"#FF6002",
@@ -258,7 +258,7 @@
       "showcase":"mat-se"
     },
     {
-      "name":"Antistress",
+      "name":"AntiStress",
       "image":"cases/antistress.png",
       "imageBg":[
         "cases/antistress-bg.jpg",
@@ -266,7 +266,7 @@
       ],
       "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client":"Västra Götalandsregionen",
-      "type":"UX/UI, iOS",
+      "type":"UX/UI, iOS, Android",
       "style":[
         {
           "background":"#2D2D2D",
