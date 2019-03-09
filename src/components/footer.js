@@ -19,6 +19,7 @@ export default ({ dark, links }) => (
           {links.map(link => (
             <a href={link.to}>{link.label}</a>
           ))}
+          <a href='https://goo.gl/maps/rWZkuD1fT8J2' target='_blank'>Find us</a>
         </div>
 
         <div class={s.contact}>

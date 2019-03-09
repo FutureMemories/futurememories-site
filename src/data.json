@@ -10,12 +10,12 @@
       {"name": "Mat.se", "logo": "partners/mat-se.svg"},
       {"name": "AVTECH", "logo": "partners/avtech.svg"},
       {"name": "STENDAHLS", "logo": "partners/stendahls.svg"},
-      {"name": "COLD CARGO", "logo": "partners/cold-cargo.svg"},
+      {"name": "Axfood", "logo": "partners/axfood.svg"},
       {"name": "SKF", "logo": "partners/skf.svg"},
       {"name": "Predicare", "logo": "partners/predicare.svg"},
       {"name": "Creuna", "logo": "partners/creuna.svg"},
       {"name": "Nelly.com", "logo": "partners/nelly-com.svg"},
-      {"name": "Recorded Future", "logo": "partners/recorded-future.svg"},
+      {"name": "STC", "logo": "partners/stc.svg"},
       {"name": "collector Bank", "logo": "partners/collector-bank.svg"},
       {"name": "Stena Line", "logo": "partners/stena-line.svg"},
       {"name": "WHOYOUARE", "logo": "partners/whoyouare.svg"},
@@ -123,7 +123,7 @@
       ],
       "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client":"Västra Götalandsregionen",
-      "type":"iOS, UX/UI",
+      "type":"UX/UI, iOS",
       "style":[
         {
           "background":"#2D2D2D",
@@ -266,7 +266,7 @@
       ],
       "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client":"Västra Götalandsregionen",
-      "type":"iOS, UX/UI",
+      "type":"UX/UI, iOS",
       "style":[
         {
           "background":"#2D2D2D",
@@ -330,9 +330,9 @@
     {
       "name":"Retts Plus",
       "image":"cases/retts-plus.png",
-      "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "desc":"Giving doctors an overview of the patient's visit to make the right decision and give proper care, at the right time.",
       "client":"Predicare",
-      "type":"UX/UI",
+      "type":"UX/UI, iOS",
       "style":[
         {
           "background":"linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
