@@ -13,7 +13,7 @@ export default class extends Component {
               <Button
                 to={astronaut.type === 'mailto' ? `mailto:${astronaut.to}` : astronaut.to}
                 label={astronaut.label}
-                fullsize arrow transition='move'
+                fullsize arrow transition='slideArrow'
               />
             </div>
           ) : (

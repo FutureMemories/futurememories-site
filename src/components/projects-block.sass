@@ -30,29 +30,26 @@
         position: absolute
 
         > span, > .arrow
-          transition: transform 0.2s ease-in, opacity 0.3s ease
+          transition: margin 0.2s ease-in, transform 0.2s ease-in, opacity 0.3s ease
 
         > span
-          opacity: 0
-          top: calc(50% - 1.3rem)
-          left: 0
-          transform: translateX(-40px)
-          position: absolute
+          position: relative
           white-space: nowrap
           font-weight: bold
 
         > .arrow
-          position: absolute
           width: 3.8rem
-          top: calc(50% - 1.1rem)
+          top: calc(50% - 0.7rem) !important
 
           &:first-child
+            position: absolute
             opacity: 0
-            left: -20px
+            left: -8rem
 
           &:last-child
-            left: 0
             transition-delay: 0s
+            position: absolute
+            margin-left: 2rem
 
       > h3
         font-size: 2rem

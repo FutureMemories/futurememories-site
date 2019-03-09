@@ -37,7 +37,7 @@ export default ({ projects, customClass, limit, currentBrowseCase }) => (
             <Button
               to={project.type === 'mailto' ? `mailto:${project.to}` : project.to}
               label={project.label}
-              fullsize arrow transition='move'
+              fullsize arrow transition='slideArrow'
             />
           </div>
         ) : (
