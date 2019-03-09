@@ -84,7 +84,7 @@ export default class extends Component {
                 <p>Forward-thinking digital products making life easier and bringing value to clients and consumers.</p>
               </div>
               <ProjectsBlock projects={frontCases} limit={9898} />
-              <Button customClass={s.button} to='/work' label='See all projects' arrow transition='slide' />
+              <Button customClass={s.button} to='/work' label='See more projects' arrow transition='slide' />
             </div>
 
             <TeamPictures

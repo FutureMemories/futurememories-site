@@ -9,7 +9,7 @@ export default ({ current, background, color }) => (
 
       <div class={s.block}>
         <h2>Other projects</h2>
-        <a class={s.link} href='/work'>Browse all projects</a>
+        <a class={s.link} href='/work'>Browse more projects</a>
       </div>
 
       <div class={s.block}>
