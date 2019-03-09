@@ -164,7 +164,7 @@
     {
         "name":"Paykartan",
         "image":"cases/paykartan.png",
-        "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
+        "desc":"Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
         "type":"UX/UI, Web",
         "style":[
           {
@@ -200,7 +200,7 @@
     {
       "name":"proFLIGHT",
       "image":"cases/proflight.png",
-      "desc":"Presents in real time all required weather related information to the pilot in a nice and clear interface.",
+      "desc":"An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "client":"Avtech, Invencon",
       "type":"iOS, UX/UI",
       "style":[
@@ -284,7 +284,7 @@
     {
       "name":"proFLIGHT",
       "image":"cases/proflight.png",
-      "desc":"Presents in real time all required weather related information to the pilot in a nice and clear interface.",
+      "desc":"An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "client":"Avtech, Invencon",
       "type":"iOS, UX/UI",
       "style":[
@@ -328,9 +328,56 @@
       "to":"hello@futurememories.se"
     },
     {
+      "name":"Sleep Cycle Dashboard",
+      "imageBg":[
+        "cases/sleep-cycle-dashboard-bg.jpg",
+        "width"
+      ],
+      "desc":"Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client":"Sleep Cycle",
+      "type":"Scala, Reactive Streams",
+      "style":[
+        {
+          "background":"#192452",
+          "color":"#fff"
+        },
+        {
+          "max-width":"20rem"
+        }
+      ],
+      "actions":[
+        {
+          "type":"link",
+          "url":"https://www.sleepcycle.com/"
+        }
+      ]
+    },
+    {
+      "name":"Bauer University",
+      "image":"cases/bauer-university.png",
+      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
+      "client":"Bauer, Bond Communications",
+      "type":"React, Python, Django",
+      "style":[
+        {
+          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
+          "color":"#fff"
+        },
+        {
+          "min-width":"24.5rem"
+        }
+      ],
+      "actions":[
+        {
+          "type":"link",
+          "url":"https://www.baueruniversity.com/"
+        }
+      ]
+    },
+    {
       "name":"Retts Plus",
       "image":"cases/retts-plus.png",
-      "desc":"Giving doctors an overview of the patient's visit to make the right decision and give proper care, at the right time.",
+      "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
       "client":"Predicare",
       "type":"UX/UI, iOS",
       "style":[
@@ -344,7 +391,7 @@
     {
       "name":"Paykartan",
       "image":"cases/paykartan.png",
-      "desc":"A web app that shows all restaurants near you where you can pay with your smartphone.",
+      "desc":"Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
       "type":"UX/UI, Web",
       "style":[
         {
@@ -410,53 +457,6 @@
         {
           "type":"video",
           "url":"https://player.vimeo.com/video/113123599?autoplay=1"
-        }
-      ]
-    },
-    {
-      "name":"Sleep Cycle Dashboard",
-      "imageBg":[
-        "cases/sleep-cycle-dashboard-bg.jpg",
-        "width"
-      ],
-      "desc":"Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client":"Sleep Cycle",
-      "type":"Scala, Reactive Streams",
-      "style":[
-        {
-          "background":"#192452",
-          "color":"#fff"
-        },
-        {
-          "max-width":"20rem"
-        }
-      ],
-      "actions":[
-        {
-          "type":"link",
-          "url":"https://www.sleepcycle.com/"
-        }
-      ]
-    },
-    {
-      "name":"Bauer University",
-      "image":"cases/bauer-university.png",
-      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
-      "client":"Bauer, Bond Communications",
-      "type":"React, Python, Django",
-      "style":[
-        {
-          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
-          "color":"#fff"
-        },
-        {
-          "min-width":"24.5rem"
-        }
-      ],
-      "actions":[
-        {
-          "type":"link",
-          "url":"https://www.baueruniversity.com/"
         }
       ]
     }
