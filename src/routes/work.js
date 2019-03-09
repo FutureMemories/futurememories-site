@@ -15,14 +15,14 @@ export default class extends Component {
             <div class={s.welcome} >
               <Moon position='bottomLeft' size='medium' background='red' customClass={s.moon} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
               <h1>
-                We do not have clients, <span>we have partners.</span> And together we create digital products and services of tomorrow.
+                We team up with our clients to create <span>exceptional digital products and services</span> that make a difference.
               </h1>
             </div>
 
             <div class={s.work}>
               <div class={s.text}>
                 <h1>What we’ve been up to</h1>
-                <p>We work with exceptional companies tirelessly to create products that makes all of our lives better.</p>
+                <p>Some of the most noticeable digital productions we have accomplished together so far.</p>
               </div>
               <ProjectsBlock projects={allCases} />
             </div>
