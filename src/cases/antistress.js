@@ -67,7 +67,7 @@ export default class extends Component {
             />
 
             <CenterBlock
-              title={`Att öva medveten andning gör dig bättre rustad när stressen slår till, samtidigt förebygger det stresspåslag. `}
+              title={`Exercising conscious breathing makes you better equipped when stress strikes, and potentially preventing it.`}
               src={{ path: 'cases/antistress-2.jpg', style: 'max-height: 715px;' }}
               color='#ffffff'
             />
