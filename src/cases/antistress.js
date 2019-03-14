@@ -1,4 +1,5 @@
 import { Component } from 'preact'
+import inView from 'in-view'
 import s from './antistress.sass'
 import Base from '../_base'
 
@@ -10,7 +11,24 @@ import DeviceBlock from './components/device-block'
 import WaveObject from './components/wave-object'
 import ParallaxBumpBlock from './components/parallax-bump-block'
 
+const inViewClasses = [
+  `${s.inner} > div:nth-child(3) > div:first-child > div`,
+  `${s.inner} > div:nth-child(4) > div:first-child`,
+  `${s.inner} > div:nth-child(5) > div:first-child > div`
+].join(',.')
+
 export default class extends Component {
+  componentDidMount () {
+    this.inView = inView
+    this.inView.offset(200)
+    this.inView(`.${inViewClasses}`).on('enter', el => {
+      el.classList.add('inView')
+    })
+  }
+  componentWillUnmount () {
+    this.inView(`.${inViewClasses}`).off()
+  }
+
   render () {
     return (
       <Base dark>
@@ -25,6 +43,7 @@ export default class extends Component {
             <LargeImage src='cases/antistress-1.jpg' />
 
             <CenterBlock
+              inView='inViewBottom'
               modifer='antistress'
               title={`Speak your mind`}
               text={`Together with VGR, we have developed an app for iOS and Android whose purpose is to act as a diary to see their progress or stress level and also listen to meditation soundtracks to reduce stress`}
@@ -53,6 +72,7 @@ export default class extends Component {
             </CenterBlock>
 
             <ParallaxBumpBlock
+              inView='inViewRight'
               title='Putting your stress to the test'
               text={[
                 `Every fifth woman in the Västra Götaland region has contacted primary care due to stress-related mental illness and the number is increasing. 21.1 percent of women sought help in 2016, which can be compared with 20 percent in 2015.`,
@@ -67,6 +87,7 @@ export default class extends Component {
             />
 
             <CenterBlock
+              inView='inViewBottom'
               title={`Exercising conscious breathing makes you better equipped when stress strikes, and potentially preventing it.`}
               src={{ path: 'cases/antistress-2.jpg', style: 'max-height: 715px;' }}
               color='#ffffff'

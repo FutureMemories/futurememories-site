@@ -28,6 +28,7 @@
     "sine-waves": "^0.3.0"
   },
   "dependencies": {
+    "in-view": "git+https://github.com/losthumans/in-view.git",
     "preact": "^8.4.2",
     "preact-compat": "^3.18.4"
   },
