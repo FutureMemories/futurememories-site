@@ -4,7 +4,7 @@ import ParallaxObject from './parallax-object'
 
 export default ({ title, text, items, align, background, color, inView }) => (
   <div class={s.parallaxBumpBlock} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
-    <div class={cx(s.inner, inView && inView)}>
+    <div class={cx(s.inner, inView)}>
 
       <div class={s.content}>
         <h1>{title}</h1>

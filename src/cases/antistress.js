@@ -19,14 +19,13 @@ const inViewClasses = [
 
 export default class extends Component {
   componentDidMount () {
-    this.inView = inView
-    this.inView.offset(200)
-    this.inView(`.${inViewClasses}`).on('enter', el => {
+    inView.offset(200)
+    inView(`.${inViewClasses}`).on('enter', el => {
       el.classList.add('inView')
     })
   }
   componentWillUnmount () {
-    this.inView(`.${inViewClasses}`).off()
+    inView(`.${inViewClasses}`).off('enter')
   }
 
   render () {

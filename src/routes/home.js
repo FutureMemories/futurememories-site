@@ -43,6 +43,8 @@ export default class extends Component {
   }
 
   componentWillUnmount () {
+    document.onmousemove = null
+    document.onscroll = null
     window.clearInterval(this._frameId)
   }
 
