@@ -1,4 +1,5 @@
 import { Component } from 'preact'
+import inView from 'in-view'
 import s from './retts-plus.sass'
 import Base from '../_base'
 
@@ -9,7 +10,23 @@ import ProjectsBlock from './components/projects-block'
 import TextBlockMultiple from './components/text-block-multiple'
 import ParallaxObjectBlock from './components/parallax-object-block'
 
+const inViewClasses = [
+  `${s.inner} > div:nth-child(3) > div:first-child`,
+  `${s.inner} > div:nth-child(4) > div:last-child`,
+  `${s.inner} > div:nth-child(5) > div:last-child`
+].join(',.')
+
 export default class extends Component {
+  componentDidMount () {
+    inView.offset(200)
+    inView(`.${inViewClasses}`).on('enter', el => {
+      el.classList.add('inView')
+    })
+  }
+  componentWillUnmount () {
+    inView(`.${inViewClasses}`).off('enter')
+  }
+
   render () {
     return (
       <Base>
@@ -28,6 +45,7 @@ export default class extends Component {
             />
 
             <TextBlockMultiple
+              inView='inViewBottom'
               title='Efficiency for patients'
               text='Predicare provides 95% of emergency departments in Sweden, and many in Norway, with a system that algorithmically classifies a patient according to the severity of their symptoms, and suggests the next course of action.'
               content={[
@@ -40,6 +58,7 @@ export default class extends Component {
             />
 
             <SlideInBlock
+              inView='inViewLeft'
               title='A clear overview'
               text={`Giving a doctor or nurse an overview of the patient's visit is a key feature for making the right decision and giving proper care. At the right time.`}
               image='cases/retts-plus-2.png'
@@ -47,6 +66,7 @@ export default class extends Component {
             />
 
             <SlideInBlock
+              inView='inViewRight'
               title='Every step on the way'
               text={`We developed a timeline that shows the entire patient’s journey from first contact until it was time to go home. This improved the ability to track  events during a patient’s visit better, and enabled nurses and doctors to take make the correct decision at any point.`}
               image='cases/retts-plus-3.png'

@@ -1,4 +1,5 @@
 import { Component } from 'preact'
+import inView from 'in-view'
 import s from './picular.sass'
 import Base from '../_base'
 
@@ -25,7 +26,24 @@ const badges = [{
   date: 'August 2018'
 }]
 
+const inViewClasses = [
+  `${s.inner} > div:nth-child(3) > div:first-child`,
+  `${s.inner} > div:nth-child(4) > div:first-child > div`,
+  `${s.inner} > div:nth-child(5) > div:last-child`,
+  `${s.inner} > div:nth-child(6) > div:first-child`
+].join(',.')
+
 export default class extends Component {
+  componentDidMount () {
+    inView.offset(200)
+    inView(`.${inViewClasses}`).on('enter', el => {
+      el.classList.add('inView')
+    })
+  }
+  componentWillUnmount () {
+    inView(`.${inViewClasses}`).off('enter')
+  }
+
   render () {
     return (
       <Base dark>
@@ -58,12 +76,14 @@ export default class extends Component {
             </LargeImage>
 
             <TextBlock
+              inView='inViewBottom'
               title='Search engine for colors'
               text={`Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.`}
               link={['Visit the site', 'https://picular.co/']}
             />
 
             <BookmarkBlock
+              inView='inViewLeft'
               title='One for the bookmarks.'
               text={`The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.`}
               items={[
@@ -76,6 +96,7 @@ export default class extends Component {
             </BookmarkBlock>
 
             <SlideInBlock
+              inView='inViewRight'
               title='Putting colors to words'
               text={`Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in.`}
               image='cases/picular-2.png'
@@ -84,7 +105,11 @@ export default class extends Component {
               modifier='noPadding'
             />
 
-            <BrandBlock showcase='picular' background='#F2F5F6' />
+            <BrandBlock
+              inView='inViewBottom'
+              showcase='picular'
+              background='#F2F5F6'
+            />
 
             <ProjectsBlock current='picular' />
 

@@ -1,11 +1,11 @@
 import cx from 'classnames'
 import s from './brand-block.sass'
 
-export default ({ showcase, background }) => (
+export default ({ showcase, background, inView }) => (
   <div class={s.brandBlock} style={background && `background: ${background};`}>
 
     {showcase === 'picular' && (
-      <div class={cx(s.content, s.picular)}>
+      <div class={cx(s.content, s.picular, inView)}>
         <div class={s.block}>
           <svg class={s.name} viewBox='0 0 487 123' xmlns='http://www.w3.org/2000/svg'>
             <g fill='none' fill-rule='evenodd'>

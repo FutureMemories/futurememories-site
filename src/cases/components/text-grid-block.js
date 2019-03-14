@@ -6,7 +6,7 @@ export default ({ blocks, background, color }) => (
     <div class={s.inner} />
     <div class={s.blocks}>
       {blocks.map(block => (
-        <div class={s.block}>
+        <div class={cx(s.block, block.inView)}>
           {
             block.image && block.title ? (
               <h1>{block.title}</h1>
