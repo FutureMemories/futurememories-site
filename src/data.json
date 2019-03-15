@@ -516,20 +516,20 @@
       "email":"siri@futurememories.se"
     },
     {
-      "name":"Martin Egri",
-      "image":"team/martin-egri.jpg",
-      "title":"Lead Backend Developer",
-      "desc":"Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
-      "phoneOld":"+46 (0)763 490500",
-      "email":"martin@futurememories.se"
-    },
-    {
       "name":"P-A Gustafsson",
       "image":"team/pa-gustafsson.jpg",
       "title":"Co-founder and CEO",
       "desc":"Co-founder and CEO. Over 17 years as product manager and designer across five industries.",
       "phone":"+46 (0)760 338822",
       "email":"pa@futurememories.se"
+    },
+    {
+      "name":"Martin Egri",
+      "image":"team/martin-egri.jpg",
+      "title":"Lead Backend Developer",
+      "desc":"Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
+      "phoneOld":"+46 (0)763 490500",
+      "email":"martin@futurememories.se"
     },
     {
       "name":"Mattias Lönn",

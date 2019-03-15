@@ -15,9 +15,7 @@ export default class extends Component {
 
             <div class={s.heroText} >
               <Moon position='bottomRight' size='large' background='blue' customClass={s.moon} />
-              <h1>
-                {`Remember what you did tomorrow?\nJoin our space now.`}
-              </h1>
+              <h1>Remember what you did tomorrow?{`\n`}<span>Join</span> our space now</h1>
             </div>
 
             <div class={s.workplaces}>

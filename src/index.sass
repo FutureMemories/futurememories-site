@@ -43,10 +43,6 @@ h1
     overflow: hidden
     max-height: 100vh
 
-.inView
-  transform: none !important
-  opacity: 1 !important
-
 .inViewBottom, .inViewRight, .inViewLeft
   opacity: 0
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
@@ -59,3 +55,7 @@ h1
 
 .inViewLeft
   transform: translateX(-5rem) translateZ(0)
+
+.inView
+  transform: none
+  opacity: 1
