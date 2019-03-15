@@ -18,7 +18,7 @@ export default class extends Component {
             <Icon id='logo' />
           </a>
 
-          <button class={cx(s.navMenu, open && s.open)} onClick={!disableClick && this.handleOpener} />
+          <button aria-label='Navigation Menu' class={cx(s.navMenu, open && s.open)} onClick={!disableClick && this.handleOpener} />
 
           <div onClick={!disableClick && this.handleOpener} class={cx(s.menuBlock, open && s.open)}>
             <ul

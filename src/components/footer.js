@@ -37,13 +37,13 @@ export default ({ dark, links }) => (
       <div class={s.second}>
         <a href='/' title='Home'><Icon id='logo' class={s.logo} /></a>
         <div class={s.social}>
-          <a target='_blank' rel='nofollow' href='https://www.facebook.com/futurememoriesab/' aria-label='Futurememories on Facebook'>
+          <a target='_blank' rel='noreferrer' href='https://www.facebook.com/futurememoriesab/' aria-label='Futurememories on Facebook'>
             <Icon id='facebook' />
           </a>
-          <a target='_blank' rel='nofollow' href='https://www.instagram.com/futurememoriesab/' aria-label='Futurememories on Instagram'>
+          <a target='_blank' rel='noreferrer' href='https://www.instagram.com/futurememoriesab/' aria-label='Futurememories on Instagram'>
             <Icon id='instagram' />
           </a>
-          <a target='_blank' rel='nofollow' href='https://www.linkedin.com/company/5100963/' aria-label='Futurememories on Linkedin'>
+          <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/company/5100963/' aria-label='Futurememories on Linkedin'>
             <Icon id='linkedin' />
           </a>
         </div>

@@ -75,10 +75,83 @@
             grid-column: span 2
             height: 40rem
 
+    > .partners
+      margin-top: 24rem
+      position: relative
+
+      > .smallMoon
+        bottom: 89%
+        left: -8rem
+        position: absolute
+        z-index: -2
+
+      > .moon
+        left: 15rem
+        margin-top: -10rem
+        position: absolute
+        z-index: -1
+
+      > .text
+        margin-left: 10rem
+
+        > h1
+          color: $color-red
+
+        > p
+          font-size: 1.8rem
+          letter-spacing: 0.045rem
+          line-height: 2.5rem
+          margin-top: 2rem
+          max-width: 37.7rem
+
+      > .content
+        display: flex
+        flex-wrap: wrap
+        left: -2rem
+        margin-top: 5rem
+        position: relative
+        width: calc(100% + 4rem)
+
+        > .partner
+          display: flex
+          justify-content: center
+          margin: 5.1rem
+
+          > img
+            max-height: 10rem
+            width: 19.3rem
+
+    @media screen and (max-width: 1200px)
+      > .partners > .content > .partner > img
+        width: 15rem
+
+    @media screen and (max-width: 950px)
+      > .partners > .content > .partner > img
+        width: 16.5rem
+
     @media screen and (max-width: 800px)
-      > .welcome > h1, > .work > .text
+      > .welcome > h1, > .work > .text, > .partners > .text
         font-size: 3rem
         margin-left: 0
 
       > .work > button
         left: 100%
+
+      > .partners
+        margin-top: 10rem
+
+        > .smallMoon, > .moon
+          display: none
+
+        > .content > .partner
+          margin: 2rem
+
+      @media screen and (max-width: 670px)
+        > .partners > .content > .partner > img
+          height: auto
+          max-height: 6rem
+          width: 12.5rem
+
+          @media screen and (max-width: 350px)
+            margin-top: 5rem
+            width: 90%
