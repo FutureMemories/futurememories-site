@@ -10,16 +10,16 @@ import s from './home.sass'
 
 export default class extends Component {
   componentDidMount () {
-    document.onmousemove = e => {
-      this.clientX = e.clientX
-      this.clientY = e.clientY
-    }
+    // document.onmousemove = e => {
+    //   this.clientX = e.clientX
+    //   this.clientY = e.clientY
+    // }
 
-    if (!this._frameId) {
-      this._frameId = setInterval(() => {
-        this.setState({ lightLeft: this.clientX / 30, lightTop: this.clientY / 30 })
-      }, 100)
-    }
+    // if (!this._frameId) {
+    //   this._frameId = setInterval(() => {
+    //     this.setState({ lightLeft: this.clientX / 30, lightTop: this.clientY / 30 })
+    //   }, 100)
+    // }
 
     document.onscroll = () => {
       this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.5)
@@ -45,7 +45,7 @@ export default class extends Component {
   componentWillUnmount () {
     document.onmousemove = null
     document.onscroll = null
-    window.clearInterval(this._frameId)
+    // window.clearInterval(this._frameId)
   }
 
   render (_, { lightLeft, lightTop, InformationActive }) {
