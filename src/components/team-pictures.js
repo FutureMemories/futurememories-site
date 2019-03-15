@@ -12,7 +12,7 @@ export default ({ title, text }) => (
     <div class={s.teamPictures}>
       {frontTeamPictures.map((picture, i) => (
         <div class={cx(s.block, s.filter)}>
-          <img src={require(`../images/${picture}`)} />
+          <img alt='Team picture' src={require(`../images/${picture}`)} />
         </div>
       ))}
       <div class={s.block}>

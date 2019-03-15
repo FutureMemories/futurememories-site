@@ -14,7 +14,7 @@ export default class extends Component {
       <header class={cx(s.header, dark && s.dark)}>
         <div class={s.inner}>
 
-          <a href='/'>
+          <a href='/' title='Home'>
             <Icon id='logo' />
           </a>
 

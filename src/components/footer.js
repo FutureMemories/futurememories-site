@@ -35,15 +35,15 @@ export default ({ dark, links }) => (
       <hr />
 
       <div class={s.second}>
-        <a href='/'><Icon id='logo' class={s.logo} /></a>
+        <a href='/' title='Home'><Icon id='logo' class={s.logo} /></a>
         <div class={s.social}>
-          <a target='_blank' href='https://www.facebook.com/futurememoriesab/'>
+          <a target='_blank' rel='nofollow' href='https://www.facebook.com/futurememoriesab/' aria-label='Futurememories on Facebook'>
             <Icon id='facebook' />
           </a>
-          <a target='_blank' href='https://www.instagram.com/futurememoriesab/'>
+          <a target='_blank' rel='nofollow' href='https://www.instagram.com/futurememoriesab/' aria-label='Futurememories on Instagram'>
             <Icon id='instagram' />
           </a>
-          <a target='_blank' href='https://www.linkedin.com/company/5100963/'>
+          <a target='_blank' rel='nofollow' href='https://www.linkedin.com/company/5100963/' aria-label='Futurememories on Linkedin'>
             <Icon id='linkedin' />
           </a>
         </div>
