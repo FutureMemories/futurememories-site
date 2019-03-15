@@ -37,13 +37,13 @@ export default ({ dark, links }) => (
       <div class={s.second}>
         <a href='/'><Icon id='logo' class={s.logo} /></a>
         <div class={s.social}>
-          <a target='_new' href='https://www.facebook.com/futurememoriesab/'>
+          <a target='_blank' href='https://www.facebook.com/futurememoriesab/'>
             <Icon id='facebook' />
           </a>
-          <a target='_new' href='https://www.instagram.com/futurememoriesab/'>
+          <a target='_blank' href='https://www.instagram.com/futurememoriesab/'>
             <Icon id='instagram' />
           </a>
-          <a target='_new' href='https://www.linkedin.com/company/5100963/'>
+          <a target='_blank' href='https://www.linkedin.com/company/5100963/'>
             <Icon id='linkedin' />
           </a>
         </div>

@@ -4,7 +4,6 @@ import { Router } from 'preact-router'
 import Home from './routes/home'
 import Work from './routes/work'
 import Team from './routes/team'
-import About from './routes/about'
 import Careers from './routes/careers'
 import NotFound from './routes/404'
 
@@ -24,7 +23,6 @@ export default () => (
       <Home path='/' />
       <Work path='/work' />
       <Team path='/team' />
-      <About path='/about' />
       <Careers path='/careers' />
 
       <Picular path='/cases/picular' />
