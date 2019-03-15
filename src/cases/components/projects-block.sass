@@ -14,6 +14,7 @@
     > .block
       display: inline-flex
       justify-content: space-between
+      position: relative
 
       @media screen and (max-width: 700px)
         display: flex
@@ -24,25 +25,19 @@
         font-weight: 500
         margin-bottom: 3.5rem
 
-      > .link
-        margin-top: -0.5rem
-        font-size: 1.8rem
-        color: $color-red
-        text-decoration: none
+      > .button
+        position: absolute
+        right: -5rem
+        margin-top: -1rem
 
-        &:after
-          content: ''
-          display: inline-block
+      @media screen and (max-width: 600px)
+        > .button
           position: relative
-          top: 0.6rem
-          margin: 2rem 0.5rem 0 2rem
-          background: url('../../images/arrow-red.svg') no-repeat 0 0/100%
-          width: 7.7rem
-          height: 2.3rem
-          transition: margin 0.2s ease
+          right: auto
+          left: -5rem
+          margin-top: 0
 
-        &:hover::after
-          margin: 2rem 0 0 2.5rem
+
 
     > .project
 

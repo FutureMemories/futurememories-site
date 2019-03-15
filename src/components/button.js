@@ -5,6 +5,7 @@ import s from './button.sass'
 export default ({
   type = 'button',
   label,
+  background,
   onClick,
   loading,
   disabled,
@@ -25,6 +26,7 @@ export default ({
       type={!to && type}
       class={cx(
         s.button,
+        background && s[background],
         loading && s.loading,
         fullsize && s.fullsize,
         small && s.small,

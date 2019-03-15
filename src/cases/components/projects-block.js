@@ -1,4 +1,5 @@
 import cx from 'classnames'
+import Button from '../../components/button'
 import s from './projects-block.sass'
 import ProjectsBlock from '../../components/projects-block'
 import { browseCases } from '../../data.json'
@@ -9,7 +10,7 @@ export default ({ current, background, color }) => (
 
       <div class={s.block}>
         <h2>Other projects</h2>
-        <a class={s.link} href='/work'>Browse more projects</a>
+        <Button background='transparent' customClass={s.button} to='/work' label='Browse more projects' arrow transition='slide' />
       </div>
 
       <div class={s.block}>
