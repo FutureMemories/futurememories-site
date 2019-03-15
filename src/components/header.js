@@ -18,21 +18,21 @@ export default class extends Component {
             <Icon id='logo' />
           </a>
 
-          <button class={cx(s.navMenu, open && s.open)} onClick={!disableClick && this.handleOpener}>
-            <div class={s.menuBlock}>
-              <ul
-                class={s.menu}
-                onMouseEnter={() => this.setState({ disableClick: true })}
-                onMouseLeave={() => this.setState({ disableClick: false })}
-              >
-                {links.map(link => (
-                  <li>
-                    <a href={link.to}>{link.label}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </button>
+          <button class={cx(s.navMenu, open && s.open)} onClick={!disableClick && this.handleOpener} />
+
+          <div onClick={!disableClick && this.handleOpener} class={cx(s.menuBlock, open && s.open)}>
+            <ul
+              class={s.menu}
+              onMouseEnter={() => this.setState({ disableClick: true })}
+              onMouseLeave={() => this.setState({ disableClick: false })}
+            >
+              {links.map(link => (
+                <li>
+                  <a href={link.to}>{link.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
         </div>
       </header>
