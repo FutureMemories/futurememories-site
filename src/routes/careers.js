@@ -21,7 +21,7 @@ export default class extends Component {
             <div class={s.workplaces}>
               <div class={s.text}>
                 <h1>The modern workspace</h1>
-                <p>Our studio in downtown Gothenburg are the center of Future Memories. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team.</p>
+                <p>Our studio in downtown Gothenburg is the center of Future Memories. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team.</p>
               </div>
               <div class={s.content}>
                 {careersWorkplaces.map(row => (
@@ -63,8 +63,8 @@ export default class extends Component {
             </div>
 
             <TeamPictures
-              title='Behind the surface'
-              text='Behind every project there’s faces, faces with a broad range of skills. Make sure to check us out.'
+              title='Behind the scenes'
+              text='May we introduce ourselves? A well-attuned group of professionals enjoying working together.'
             />
 
           </div>

@@ -1,12 +1,12 @@
 {
-  "company":{
-    "name":"Future Memories AB",
-    "street":"Vallgatan 25",
-    "zip":"411 16",
-    "city":"Gothenburg",
-    "phone":"+46 (0) 760 33 88 22‬",
-    "email":"hello@futurememories.se",
-    "partners":[
+  "company": {
+    "name": "Future Memories AB",
+    "street": "Vallgatan 25",
+    "zip": "411 16",
+    "city": "Gothenburg",
+    "phone": "+46 (0) 760 33 88 22‬",
+    "email": "hello@futurememories.se",
+    "partners": [
       {"name": "Mat.se", "logo": "partners/mat-se.svg"},
       {"name": "AVTECH", "logo": "partners/avtech.svg"},
       {"name": "STENDAHLS", "logo": "partners/stendahls.svg"},
@@ -25,34 +25,29 @@
       {"name": "Västra Götalandsregionen", "logo": "partners/vgregion.svg"}
     ]
   },
-  "frontTeamPictures":[
+  "frontTeamPictures": [
     "team-1.jpg",
     "team-2.jpg",
     "team-3.jpg"
   ],
-  "careersWorkplaces":[
+  "careersWorkplaces": [
     {
       "label": "For the thrill of it. 🕵️‍",
       "text": "We never compromise on quality and always deliver the best imaginable product. It goes without saying that our employees get the best equipment in order to do the job in the best possible way.\n\nTeams are entitled to pick whatever toolset they want to make their work more efficient and enjoyable. Creatives and developers have the freedom to test new ways of working, exploring promising tools, languages, frameworks and platforms.",
       "image": "workspace-1.jpg"
     },
     {
-      "label": "Tailored for you, by you. ✂️",
-      "text": "We expect professionalism, commitment and respect to each other and offer flat hierarchies, freedom, responsibility and room for personal development in return. There is enough time to find and define your role inside the company and we decide together with you on which projects you will be working on.\n\nWe incubate, develop and release own products, both within Future Memories and in collaboration with other entrepreneurs. This gives you plenty of new possibilities to boost your career in unexpected ways.",
-      "image": "workspace-2.jpg"
-    },
-    {
       "label": "Home, swede, home. 🏠",
-      "text": "No overtime, no weekend work, no crunch because successful products are only made of healthy teams. We offer flextime so that your professional life harmonizes perfectly with your personal life.  We start off every week with an extensive Monday breakfast to get everybody energized and brought up to speed with the latest news within the company.",
+      "text": "No overtime, no weekend work, no crunch because successful products are only made of healthy teams. We offer flextime so that your professional life harmonizes perfectly with your personal life.\n\nWe start off every week with an extensive Monday breakfast to get everybody energized and informed. On Friday afternoon, we round up the week with our weekly table football competition, a few beers and a big bowl of ‘fredagsgodis’ before signing out.\n\nRegular team lunches help us to stay current about all ongoing projects and once a year, we organize a company retreat leaving our Gothenburg offices to work from another remote and sunny place for a few days.",
       "image": "workspace-3.jpg"
     },
     {
-      "label": "We call it fika. 🍬",
-      "text": "On Friday afternoons we round up the week with our weekly table football competition, a few beers and a big bowl of ‘fredagsgodis’ before signing out. Regular team lunches help us to stay current about all ongoing projects and once a year, we organize a company retreat leaving our office to work from another remote and sunny place for a few days.",
+      "label": "Tailored for you, by you. ✂️",
+      "text": "We expect professionalism, commitment and respect to each other and offer flat hierarchies, freedom, responsibility and room for personal development in return. There is enough time to find and define your role inside the company and we decide together with you on which projects you will be working on.\n\nWe grow, develop and release own products, both within Future Memories and in collaboration with other entrepreneurs. This gives you plenty of new possibilities to boost your career in unexpected ways.",
       "image": "workspace-4.jpg"
     }
   ],
-  "careersPositions":[
+  "careersPositions": [
     {
       "label": "🖥  Backend Developer",
       "text": "A Backend Developer at Future Memories runs small to mid-sized projects with minimal oversight from a Creative Director. Design Leads are responsible for the quality and creativity of their projects. They lead colleagues, work directly with clients, and stay on track with budget and.",
@@ -72,448 +67,444 @@
       "image": "position-3.jpg"
     }
   ],
-  "frontCases":[
+  "frontCases": [
     {
-      "name":"Picular",
-      "desc":"A rocket fast primary color generator using Google's image search.",
-      "type":"UX/UI, WEB",
-      "image":"cases/picular.jpg",
-      "style":[
+      "name": "Picular",
+      "desc": "A rocket fast primary color generator using Google's image search.",
+      "type": "UX/UI, WEB",
+      "image": "cases/picular.jpg",
+      "style": [
         {
-          "background":"#F2F5F6",
-          "color":"#070B13"
-
+          "background": "#F2F5F6",
+          "color": "#070B13"
         },
         {
-          "min-width":"21rem",
+          "min-width": "21rem",
           "max-width": "25rem"
         },
         {
           "margin-left": "-80px"
         }
       ],
-      "showcase":"picular"
+      "showcase": "picular"
     },
     {
-      "name":"Mat.se",
-      "image":"cases/mat-se.png",
-      "desc":"A modern logistics and supply chain platform to get fresh food delivered to your door.",
-      "client":"Mat.se",
-      "type":"UX/UI, JAVA, SPRING, iOS",
-      "style":[
+      "name": "Mat.se",
+      "image": "cases/mat-se.png",
+      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
+      "client": "Mat.se",
+      "type": "UX/UI, JAVA, SPRING, iOS",
+      "style": [
         {
-          "background":"#FF6002",
-          "color":"#FFFFFF"
+          "background": "#FF6002",
+          "color": "#FFFFFF"
         },
         {
-          "min-width":"20rem"
+          "min-width": "20rem"
         }
       ],
-      "imageStyle":{
-        "left":"0"
+      "imageStyle": {
+        "left": "0"
       },
-      "showcase":"mat-se"
+      "showcase": "mat-se"
     },
     {
-      "name":"AntiStress",
-      "image":"cases/antistress.png",
-      "imageBg":[
+      "name": "AntiStress",
+      "image": "cases/antistress.png",
+      "imageBg": [
         "cases/antistress-bg.jpg",
         "height"
       ],
-      "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
-      "client":"Västra Götalandsregionen",
-      "type":"UX/UI, iOS, Android",
-      "style":[
+      "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "client": "Västra Götalandsregionen",
+      "type": "UX/UI, iOS, Android",
+      "style": [
         {
-          "background":"#2D2D2D",
-          "color":"#fff"
+          "background": "#2D2D2D",
+          "color": "#fff"
         },
         {
-          "min-width":"24.4rem"
+          "min-width": "24.4rem"
         },
         {
           "right": "14rem"
         }
       ],
-      "showcase":"antistress"
+      "showcase": "antistress"
     }
   ],
-  "browseCases":[
+  "browseCases": [
     {
-      "name":"Picular",
-      "desc":"A rocket fast primary color generator using Google's image search.",
-      "type":"UX/UI, WEB",
-      "image":"cases/picular.jpg",
-      "style":[
+      "name": "Picular",
+      "desc": "A rocket fast primary color generator using Google's image search.",
+      "type": "UX/UI, WEB",
+      "image": "cases/picular.jpg",
+      "style": [
         {
-          "background":"#F2F5F6",
-          "color":"#070B13"
-
+          "background": "#F2F5F6",
+          "color": "#070B13"
         },
         {
-          "min-width":"21rem",
+          "min-width": "21rem",
           "max-width": "25rem"
         },
         {
           "margin-left": "-80px"
         }
       ],
-      "showcase":"picular"
+      "showcase": "picular"
     },
     {
-        "name":"Paykartan",
-        "image":"cases/paykartan.png",
-        "desc":"Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-        "type":"UX/UI, Web",
-        "style":[
-          {
-            "background":"#FFD2D2",
-            "color":"#070B13"
-          }
-        ],
-        "showcase":"paykartan"
-      },
+      "name": "Paykartan",
+      "image": "cases/paykartan.png",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
+      "type": "UX/UI, Web",
+      "style": [
+        {
+          "background": "#FFD2D2",
+          "color": "#070B13"
+        }
+      ],
+      "showcase": "paykartan"
+    },
     {
-      "name":"Tennis Watch",
-      "image":"cases/tennis-watch.png",
-      "imageBg":[
+      "name": "Tennis Watch",
+      "image": "cases/tennis-watch.png",
+      "imageBg": [
         "cases/tennis-watch-bg.jpg",
         "height"
       ],
-      "desc":"The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
-      "type":"UX/UI, iOS, watchOS",
-      "style":[
+      "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
+      "type": "UX/UI, iOS, watchOS",
+      "style": [
         {
-          "background":"#2D2D2D",
-          "color":"#fff"
+          "background": "#2D2D2D",
+          "color": "#fff"
         },
         {
-          "min-width":"22.4rem"
+          "min-width": "22.4rem"
         },
         {
-          "bottom":"2rem"
+          "bottom": "2rem"
         }
       ],
-      "showcase":"tennis-watch"
+      "showcase": "tennis-watch"
     },
     {
-      "name":"proFLIGHT",
-      "image":"cases/proflight.png",
-      "desc":"An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "client":"Avtech, Invencon",
-      "type":"iOS, UX/UI",
-      "style":[
+      "name": "proFLIGHT",
+      "image": "cases/proflight.png",
+      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UX/UI",
+      "style": [
         {
-          "background":"#3E4C65",
-          "color":"#fff"
+          "background": "#3E4C65",
+          "color": "#fff"
         },
         {
-          "min-width":"19.5rem"
+          "min-width": "19.5rem"
         }
       ],
-      "showcase":"proflight"
+      "showcase": "proflight"
     }
   ],
-  "allCases":[
+  "allCases": [
     {
-      "name":"Picular",
-      "desc":"A rocket fast primary color generator using Google's image search.",
-      "type":"UX/UI, WEB",
-      "image":"cases/picular.jpg",
-      "style":[
+      "name": "Picular",
+      "desc": "A rocket fast primary color generator using Google's image search.",
+      "type": "UX/UI, WEB",
+      "image": "cases/picular.jpg",
+      "style": [
         {
-          "background":"#F2F5F6",
-          "color":"#070B13"
-
+          "background": "#F2F5F6",
+          "color": "#070B13"
         },
         {
-          "min-width":"21rem",
+          "min-width": "21rem",
           "max-width": "25rem"
         },
         {
           "margin-left": "-80px"
         }
       ],
-      "showcase":"picular"
+      "showcase": "picular"
     },
     {
-      "name":"Mat.se",
-      "image":"cases/mat-se.png",
-      "desc":"A modern logistics and supply chain platform to get fresh food delivered to your door.",
-      "client":"Mat.se",
-      "type":"UX/UI, Java, Spring, iOS",
-      "style":[
+      "name": "Mat.se",
+      "image": "cases/mat-se.png",
+      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
+      "client": "Mat.se",
+      "type": "UX/UI, Java, Spring, iOS",
+      "style": [
         {
-          "background":"#FF6002",
-          "color":"#FFFFFF"
+          "background": "#FF6002",
+          "color": "#FFFFFF"
         },
         {
-          "min-width":"20rem"
+          "min-width": "20rem"
         }
       ],
-      "imageStyle":{
-        "left":"0"
+      "imageStyle": {
+        "left": "0"
       },
-      "showcase":"mat-se"
+      "showcase": "mat-se"
     },
     {
-      "name":"AntiStress",
-      "image":"cases/antistress.png",
-      "imageBg":[
+      "name": "AntiStress",
+      "image": "cases/antistress.png",
+      "imageBg": [
         "cases/antistress-bg.jpg",
         "height"
       ],
-      "desc":"A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
-      "client":"Västra Götalandsregionen",
-      "type":"UX/UI, iOS, Android",
-      "style":[
+      "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "client": "Västra Götalandsregionen",
+      "type": "UX/UI, iOS, Android",
+      "style": [
         {
-          "background":"#2D2D2D",
-          "color":"#fff"
+          "background": "#2D2D2D",
+          "color": "#fff"
         },
         {
-          "min-width":"24.4rem"
+          "min-width": "24.4rem"
         },
         {
           "right": "14rem"
         }
       ],
-      "showcase":"antistress"
+      "showcase": "antistress"
     },
     {
-      "name":"proFLIGHT",
-      "image":"cases/proflight.png",
-      "desc":"An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "client":"Avtech, Invencon",
-      "type":"iOS, UX/UI",
-      "style":[
+      "name": "proFLIGHT",
+      "image": "cases/proflight.png",
+      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UX/UI",
+      "style": [
         {
-          "background":"#3E4C65",
-          "color":"#fff"
+          "background": "#3E4C65",
+          "color": "#fff"
         },
         {
-          "min-width":"19.5rem"
+          "min-width": "19.5rem"
         }
       ],
-      "showcase":"proflight"
+      "showcase": "proflight"
     },
     {
-      "name":"Tennis Watch",
-      "image":"cases/tennis-watch.png",
-      "imageBg":[
+      "name": "Tennis Watch",
+      "image": "cases/tennis-watch.png",
+      "imageBg": [
         "cases/tennis-watch-bg.jpg",
         "height"
       ],
-      "desc":"The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
-      "type":"UX/UI, iOS, watchOS",
-      "style":[
+      "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
+      "type": "UX/UI, iOS, watchOS",
+      "style": [
         {
-          "background":"#2D2D2D",
-          "color":"#fff"
+          "background": "#2D2D2D",
+          "color": "#fff"
         },
         {
-          "min-width":"22.4rem"
+          "min-width": "22.4rem"
         },
         {
-          "bottom":"2rem"
+          "bottom": "2rem"
         }
       ],
-      "showcase":"tennis-watch"
+      "showcase": "tennis-watch"
     },
     {
-      "button":true,
-      "type":"mailto",
-      "label":"Create something awesome with us!",
-      "to":"hello@futurememories.se"
+      "button": true,
+      "type": "mailto",
+      "label": "Create something awesome with us!",
+      "to": "hello@futurememories.se"
     },
     {
-      "name":"Sleep Cycle Dashboard",
-      "imageBg":[
+      "name": "Sleep Cycle Dashboard",
+      "imageBg": [
         "cases/sleep-cycle-dashboard-bg.jpg",
         "width"
       ],
-      "desc":"Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client":"Sleep Cycle",
-      "type":"Scala, Reactive Streams",
-      "style":[
+      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client": "Sleep Cycle",
+      "type": "Scala, Reactive Streams",
+      "style": [
         {
-          "background":"#192452",
-          "color":"#fff"
+          "background": "#192452",
+          "color": "#fff"
         },
         {
-          "max-width":"20rem"
+          "max-width": "20rem"
         }
       ],
-      "actions":[
+      "actions": [
         {
-          "type":"link",
-          "url":"https://www.sleepcycle.com/"
+          "type": "link",
+          "url": "https://www.sleepcycle.com/"
         }
       ]
     },
     {
-      "name":"Bauer University",
-      "image":"cases/bauer-university.png",
-      "desc":"Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
-      "client":"Bauer, Bond Communications",
-      "type":"React, Python, Django",
-      "style":[
+      "name": "Bauer University",
+      "image": "cases/bauer-university.png",
+      "desc": "Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
+      "client": "Bauer, Bond Communications",
+      "type": "React, Python, Django",
+      "style": [
         {
-          "background":"linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
-          "color":"#fff"
+          "background": "linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
+          "color": "#fff"
         },
         {
-          "min-width":"24.5rem"
+          "min-width": "24.5rem"
         }
       ],
-      "actions":[
+      "actions": [
         {
-          "type":"link",
-          "url":"https://www.baueruniversity.com/"
+          "type": "link",
+          "url": "https://www.baueruniversity.com/"
         }
       ]
     },
     {
-      "name":"Retts Plus",
-      "image":"cases/retts-plus.png",
-      "desc":"Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-      "client":"Predicare",
-      "type":"UX/UI, iOS",
-      "style":[
+      "name": "Retts Plus",
+      "image": "cases/retts-plus.png",
+      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client": "Predicare",
+      "type": "UX/UI, iOS",
+      "style": [
         {
-          "background":"linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
-          "color":"#fff"
+          "background": "linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
+          "color": "#fff"
         }
       ],
-      "showcase":"retts-plus"
+      "showcase": "retts-plus"
     },
     {
-      "name":"Paykartan",
-      "image":"cases/paykartan.png",
-      "desc":"Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "type":"UX/UI, Web",
-      "style":[
+      "name": "Paykartan",
+      "image": "cases/paykartan.png",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
+      "type": "UX/UI, Web",
+      "style": [
         {
-          "background":"#FFD2D2",
-          "color":"#070B13"
+          "background": "#FFD2D2",
+          "color": "#070B13"
         }
       ],
-      "showcase":"paykartan"
+      "showcase": "paykartan"
     },
-
     {
-      "name":"Forces of Freedom",
-      "desc":"Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
-      "client":"Koyoki Ltd",
-      "type":"UX/UI",
-      "style":[
+      "name": "Forces of Freedom",
+      "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
+      "client": "Koyoki Ltd",
+      "type": "UX/UI",
+      "style": [
         {
-          "background":"#A87052",
-          "color":"#fff"
+          "background": "#A87052",
+          "color": "#fff"
         }
       ],
-      "actions":[
+      "actions": [
         {
-          "type":"video",
-          "url":"https://youtu.be/zSw2mC8ZdO8"
+          "type": "video",
+          "url": "https://youtu.be/zSw2mC8ZdO8"
         },
         {
-          "type":"android",
-          "url":"https://play.google.com/store/apps/details?id=com.koyokiservices.FoF"
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=com.koyokiservices.FoF"
         }
       ]
     },
     {
-      "name":"Spira",
-      "desc":"A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
-      "client":"Collector Bank, Varvet",
-      "type":"Android",
-      "style":[
+      "name": "Spira",
+      "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
+      "client": "Collector Bank, Varvet",
+      "type": "Android",
+      "style": [
         {
-          "background":"linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)",
-          "color":"#fff"
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)",
+          "color": "#fff"
         }
       ],
-      "actions":[
+      "actions": [
         {
-          "type":"android",
-          "url":"https://play.google.com/store/apps/details?id=se.collector.spira"
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=se.collector.spira"
         }
       ]
     },
     {
-      "name":"WYA Network",
-      "desc":"A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
-      "client":"WHOYOUARE LLC",
-      "type":"iOS, UX/UI",
-      "style":[
+      "name": "WYA Network",
+      "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
+      "client": "WHOYOUARE LLC",
+      "type": "iOS, UX/UI",
+      "style": [
         {
-          "background":"#3E4C65",
-          "color":"#fff"
+          "background": "#3E4C65",
+          "color": "#fff"
         }
       ],
-      "actions":[
+      "actions": [
         {
-          "type":"video",
-          "url":"https://player.vimeo.com/video/113123599?autoplay=1"
+          "type": "video",
+          "url": "https://player.vimeo.com/video/113123599?autoplay=1"
         }
       ]
     }
   ],
-  "astronauts":[
+  "astronauts": [
     {
-      "name":"Andreas Kaltenbach",
-      "image":"team/andreas-kaltenbach.jpg",
-      "title":"Co-founder and COO",
-      "desc":"Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.",
-      "phoneOld":"+46 (0)735 201950",
-      "email":"andreas@futurememories.se"
+      "name": "Andreas Kaltenbach",
+      "image": "team/andreas-kaltenbach.jpg",
+      "title": "Co-founder and COO",
+      "desc": "Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.",
+      "phoneOld": "+46 (0)735 201950",
+      "email": "andreas@futurememories.se"
     },
     {
-      "name":"Mikael Hellqvist",
-      "image":"team/mikael-hellqvist.jpg",
-      "title":"Partner and CTO",
-      "desc":"Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
-      "phoneOld":"+46 (0)723 411322",
-      "email":"mikael@futurememories.se"
+      "name": "Mikael Hellqvist",
+      "image": "team/mikael-hellqvist.jpg",
+      "title": "Partner and CTO",
+      "desc": "Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
+      "phoneOld": "+46 (0)723 411322",
+      "email": "mikael@futurememories.se"
     },
     {
-      "name":"Viktor Hesselbom",
-      "image":"team/viktor-hesselbom.jpg",
-      "title":"Partner and Lead Web/Unity developer",
-      "desc":"Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.",
-      "phoneOld":"+46 (0)732 628555",
-      "email":"viktor@futurememories.se"
+      "name": "Viktor Hesselbom",
+      "image": "team/viktor-hesselbom.jpg",
+      "title": "Partner and Lead Web/Unity developer",
+      "desc": "Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.",
+      "phoneOld": "+46 (0)732 628555",
+      "email": "viktor@futurememories.se"
     },
     {
-      "name":"Pontus Börjesson",
-      "image":"team/pontus-borjesson.jpg",
-      "title":"Digital Designer",
-      "desc":"Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.",
-      "phoneOld":"+46 (0)707 959011",
-      "email":"pontus@futurememories.se"
+      "name": "Pontus Börjesson",
+      "image": "team/pontus-borjesson.jpg",
+      "title": "Digital Designer",
+      "desc": "Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.",
+      "phoneOld": "+46 (0)707 959011",
+      "email": "pontus@futurememories.se"
     },
     {
-      "name":"Oskar Jönsson",
-      "image":"team/oskar-jonsson.jpg",
-      "title":"Mobile Developer",
-      "desc":"Mobile Developer with years of experience in iOS, Android and React Native.",
-      "phoneOld":"+46 (0)722 536161",
-      "email":"oskar@futurememories.se"
+      "name": "Oskar Jönsson",
+      "image": "team/oskar-jonsson.jpg",
+      "title": "Mobile Developer",
+      "desc": "Mobile Developer with years of experience in iOS, Android and React Native.",
+      "phoneOld": "+46 (0)722 536161",
+      "email": "oskar@futurememories.se"
     },
     {
-      "button":true,
-      "type":"mailto",
-      "label":"Come and work with us!",
-      "to":"hello@futurememories.se"
+      "button": true,
+      "type": "mailto",
+      "label": "Come and work with us!",
+      "to": "hello@futurememories.se"
     },
     {
-      "name":"Siri Nohlström",
-      "image":"team/siri-nohlstrom.jpg",
-      "title":"Management Assistant",
-      "desc":"Passionate Management Assistant who keeps the studio up and running. The life and soul of Future Memories",
-      "email":"siri@futurememories.se"
+      "name": "Siri Nohlström",
+      "image": "team/siri-nohlstrom.jpg",
+      "title": "Management Assistant",
+      "desc": "Passionate Management Assistant who keeps the studio up and running. The life and soul of Future Memories",
+      "email": "siri@futurememories.se"
     },
     {
       "name":"P-A Gustafsson",
@@ -524,40 +515,40 @@
       "email":"pa@futurememories.se"
     },
     {
-      "name":"Martin Egri",
-      "image":"team/martin-egri.jpg",
-      "title":"Lead Backend Developer",
-      "desc":"Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
-      "phoneOld":"+46 (0)763 490500",
-      "email":"martin@futurememories.se"
+      "name": "Martin Egri",
+      "image": "team/martin-egri.jpg",
+      "title": "Lead Backend Developer",
+      "desc": "Lead Backend Developer who has been building cloud-based services and platforms for more than six years.",
+      "phoneOld": "+46 (0)763 490500",
+      "email": "martin@futurememories.se"
     },
     {
-      "name":"Mattias Lönn",
-      "image":"team/mattias-lonn.jpg",
-      "title":"Web Developer",
-      "desc":"Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
-      "email":"mattias@futurememories.se"
+      "name": "Mattias Lönn",
+      "image": "team/mattias-lonn.jpg",
+      "title": "Web Developer",
+      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
+      "email": "mattias@futurememories.se"
     },
     {
-      "name":"Anders Olausson",
-      "image":"team/anders-olausson.jpg",
-      "title":"Design Director and Partner",
-      "desc":"Design Director and Partner. Award winning designer with years of experience in digital media.",
-      "email":"anders@futurememories.se"
+      "name": "Anders Olausson",
+      "image": "team/anders-olausson.jpg",
+      "title": "Design Director and Partner",
+      "desc": "Design Director and Partner. Award winning designer with years of experience in digital media.",
+      "email": "anders@futurememories.se"
     },
     {
-      "name":"Erik Hallgren",
-      "image":"team/erik-hallgren.jpg",
-      "title":"Partner and UX Director",
-      "desc":"Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
-      "email":"erik@futurememories.se"
+      "name": "Erik Hallgren",
+      "image": "team/erik-hallgren.jpg",
+      "title": "Partner and UX Director",
+      "desc": "Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
+      "email": "erik@futurememories.se"
     },
     {
-      "name":"Victoria Wånsander",
-      "image":"team/victoria-wansander.jpg",
-      "title":"UX",
-      "desc":"Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
-      "email":"victoria@futurememories.se"
+      "name": "Victoria Wånsander",
+      "image": "team/victoria-wansander.jpg",
+      "title": "UX",
+      "desc": "Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
+      "email": "victoria@futurememories.se"
     }
   ]
 }
