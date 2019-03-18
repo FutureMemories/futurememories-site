@@ -1,4 +1,4 @@
-
+import { Component } from 'preact'
 import { Router } from 'preact-router'
 
 import Home from './routes/home'
@@ -17,23 +17,40 @@ import AntiStress from './cases/antistress'
 
 import './index.sass'
 
-export default () => (
-  <div id='app'>
-    <Router onChange={() => typeof window !== 'undefined' && window.scrollTo(0, 0)}>
-      <Home path='/' />
-      <Work path='/work' />
-      <Team path='/team' />
-      <Careers path='/careers' />
+export default class extends Component {
+  state = { firstView: true }
 
-      <Picular path='/cases/picular' />
-      <TennisWatch path='/cases/tennis-watch' />
-      <MatSe path='/cases/mat-se' />
-      <Paykartan path='/cases/paykartan' />
-      <RettsPlus path='/cases/retts-plus' />
-      <ProFlight path='/cases/proflight' />
-      <AntiStress path='/cases/antistress' />
+  handleRoute = () => {
+    if (this.notOnFirstView) {
+      this.setState({ firstView: false })
+    }
+    this.notOnFirstView = true
 
-      <NotFound default />
-    </Router>
-  </div>
-)
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0)
+    }
+  }
+
+  render () {
+    return (
+      <div id='app'>
+        <Router onChange={this.handleRoute}>
+          <Home path='/' firstView={this.state.firstView} />
+          <Work path='/work' />
+          <Team path='/team' />
+          <Careers path='/careers' />
+
+          <Picular path='/cases/picular' />
+          <TennisWatch path='/cases/tennis-watch' />
+          <MatSe path='/cases/mat-se' />
+          <Paykartan path='/cases/paykartan' />
+          <RettsPlus path='/cases/retts-plus' />
+          <ProFlight path='/cases/proflight' />
+          <AntiStress path='/cases/antistress' />
+
+          <NotFound default />
+        </Router>
+      </div>
+    )
+  }
+}

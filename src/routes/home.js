@@ -21,42 +21,43 @@ export default class extends Component {
     //   }, 100)
     // }
 
-    document.onscroll = () => {
-      this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.5)
+    window.addEventListener('scroll', this.onScroll)
+  }
 
-      if (this.scrollPoint > this.informationBlock.offsetTop && window.pageYOffset < (this.informationBlock.offsetTop + this.informationBlock.offsetHeight)) {
-        const blockTop = this.scrollPoint - this.informationBlock.offsetTop
-        const aThird = (window.innerHeight / 3 - 80)
+  onScroll = () => {
+    this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.5)
 
-        if (!this.state.inViewInformationBlock) {
-          this.setState({ inViewInformationBlock: true })
-        }
-        if (blockTop < aThird * 1) {
-          this.setState({ InformationActive: 'design' })
-        } else if (blockTop > aThird * 2 && blockTop < aThird * 3) {
-          this.setState({ InformationActive: 'develop' })
-        } else if (blockTop > aThird * 3) {
-          this.setState({ InformationActive: 'strategy' })
-        }
+    if (this.scrollPoint > this.informationBlock.offsetTop && window.pageYOffset < (this.informationBlock.offsetTop + this.informationBlock.offsetHeight)) {
+      const blockTop = this.scrollPoint - this.informationBlock.offsetTop
+      const aThird = (window.innerHeight / 3 - 80)
+
+      if (!this.state.inViewInformationBlock) {
+        this.setState({ inViewInformationBlock: true })
+      }
+      if (blockTop < aThird * 1) {
+        this.setState({ InformationActive: 'design' })
+      } else if (blockTop > aThird * 2 && blockTop < aThird * 3) {
+        this.setState({ InformationActive: 'develop' })
+      } else if (blockTop > aThird * 3) {
+        this.setState({ InformationActive: 'strategy' })
       }
     }
   }
 
   componentWillUnmount () {
-    document.onmousemove = null
-    document.onscroll = null
+    window.removeEventListener('scroll', this.onScroll)
     // window.clearInterval(this._frameId)
   }
 
-  render (_, { lightLeft, lightTop, InformationActive }) {
+  render ({ firstView }, { lightLeft, lightTop, InformationActive }) {
     return (
-      <Base>
+      <Base firstView={firstView}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <div class={s.welcome}>
-              <Moon size='normal' position='topRight' background='blue' customClass={s.moon} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
-              <h1>
+              <Moon size='normal' position='topRight' background='blue' customClass={cx(s.moon, firstView && s.firstView)} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
+              <h1 class={firstView && s.firstView}>
                 <span>Future Memories</span> is a digital studio where strategic design and technology unite into products of tomorrow.
               </h1>
             </div>

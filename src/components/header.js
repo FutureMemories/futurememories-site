@@ -9,9 +9,9 @@ export default class extends Component {
     this.setState({ open: !this.state.open })
   }
 
-  render ({ dark, links }, { open, disableClick }) {
+  render ({ dark, links, fadeIn }, { open, disableClick }) {
     return (
-      <header class={cx(s.header, dark && s.dark)}>
+      <header class={cx(s.header, dark && s.dark, fadeIn && s.fadeIn)}>
         <div class={s.inner}>
 
           <a href='/' title='Home'>

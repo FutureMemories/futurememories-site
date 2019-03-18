@@ -31,6 +31,9 @@
         opacity: 0
         animation: slideInLeft 0.3s forwards
 
+        &.firstView
+          animation: slideInBottom 0.8s 0.8s forwards
+
         > span
           color: $color-red
 
@@ -38,6 +41,10 @@
         left: 34rem
         margin-top: -8rem
         position: absolute
+
+        &.firstView
+          opacity: 0
+          animation: rotateIn 1.6s forwards linear
 
     > .information
       align-items: center
