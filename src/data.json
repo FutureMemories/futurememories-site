@@ -395,12 +395,16 @@
     },
     {
       "name": "Forces of Freedom",
+      "imageBg": [
+        "cases/forces-of-freedom-bg.jpg",
+        "height"
+      ],
       "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
       "client": "Koyoki Ltd",
       "type": "UX/UI",
       "style": [
         {
-          "background": "#A87052",
+          "background": "#5A4645",
           "color": "#fff"
         }
       ],

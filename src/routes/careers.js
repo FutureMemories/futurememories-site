@@ -7,6 +7,20 @@ import { company, careersWorkplaces, careersPositions } from '../data.json'
 import s from './careers.sass'
 
 export default class extends Component {
+  componentDidMount () {
+    window.addEventListener('scroll', this.onScroll)
+  }
+
+  onScroll = () => {
+    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
+      this.heroText.style = `top: -${(window.pageYOffset / 5).toFixed(1)}px`
+    }
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.onScroll)
+  }
+
   render () {
     return (
       <Base>
@@ -15,7 +29,9 @@ export default class extends Component {
 
             <div class={s.heroText} >
               <Moon position='bottomRight' size='large' background='blue' customClass={s.moon} />
-              <h1>Remember what you did tomorrow?{`\n`}<span>Join</span> our space now</h1>
+              <h1 ref={(el) => { this.heroText = el }}>
+                Remember what you did tomorrow?{`\n`}<span>Join</span> our space now
+              </h1>
             </div>
 
             <div class={s.workplaces}>

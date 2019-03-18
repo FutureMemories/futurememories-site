@@ -6,6 +6,20 @@ import { allCases, company } from '../data.json'
 import s from './work.sass'
 
 export default class extends Component {
+  componentDidMount () {
+    window.addEventListener('scroll', this.onScroll)
+  }
+
+  onScroll = () => {
+    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
+      this.heroText.style = `top: -${(window.pageYOffset / 5).toFixed(1)}px`
+    }
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.onScroll)
+  }
+
   render (_, { lightLeft, lightTop }) {
     return (
       <Base>
@@ -14,7 +28,7 @@ export default class extends Component {
 
             <div class={s.welcome} >
               <Moon position='bottomLeft' size='medium' background='red' customClass={s.moon} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
-              <h1>
+              <h1 ref={(el) => { this.heroText = el }}>
                 We team up with our clients to create <span>exceptional digital products and services</span> that make a difference.
               </h1>
             </div>

@@ -27,6 +27,10 @@ export default class extends Component {
   onScroll = () => {
     this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.5)
 
+    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
+      this.heroText.style = `top: -${(window.pageYOffset / 5).toFixed(1)}px`
+    }
+
     if (this.scrollPoint > this.informationBlock.offsetTop && window.pageYOffset < (this.informationBlock.offsetTop + this.informationBlock.offsetHeight)) {
       const blockTop = this.scrollPoint - this.informationBlock.offsetTop
       const aThird = (window.innerHeight / 3 - 80)
@@ -56,8 +60,8 @@ export default class extends Component {
           <div class={s.inner}>
 
             <div class={s.welcome}>
-              <Moon size='normal' position='topRight' background='blue' customClass={cx(s.moon, firstView && s.firstView)} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
-              <h1 class={firstView && s.firstView}>
+              <Moon position='topRight' size='medium' background='blue' customClass={cx(s.moon, firstView && s.firstView)} /* style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} */ />
+              <h1 class={firstView && s.firstView} ref={(el) => { this.heroText = el }}>
                 <span>Future Memories</span> is a digital studio where strategic design and technology unite into products of tomorrow.
               </h1>
             </div>

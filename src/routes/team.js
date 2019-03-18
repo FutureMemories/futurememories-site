@@ -6,6 +6,20 @@ import { astronauts } from '../data.json'
 import s from './team.sass'
 
 export default class extends Component {
+  componentDidMount () {
+    window.addEventListener('scroll', this.onScroll)
+  }
+
+  onScroll = () => {
+    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
+      this.heroText.style = `top: -${(window.pageYOffset / 5).toFixed(1)}px`
+    }
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.onScroll)
+  }
+
   render () {
     return (
       <Base>
@@ -15,7 +29,7 @@ export default class extends Component {
             <div class={s.text} >
               <Moon position='topRight' size='big' background='blue' customClass={s.moonDesktop} />
               <Moon size='normal' position='topRight' background='blue' customClass={s.moonMobile} />
-              <h1>
+              <h1 ref={(el) => { this.heroText = el }}>
                 <span>We are</span> designers, developers, creators and inventors with different backgrounds and expertise merged into a company called Future Memories.
               </h1>
             </div>
