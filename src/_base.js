@@ -13,8 +13,10 @@ const links = [
 export default class extends Component {
   componentWillMount () {
     const title = (this.props.title ? `Future Memories - ${this.props.title}` : 'Future Memories')
-    document.title = title
-    document.querySelector('title').innerText = title
+    if (typeof document !== 'undefined') {
+      document.title = title
+      document.querySelector('title').innerText = title
+    }
   }
 
   handleLocked = () => {
