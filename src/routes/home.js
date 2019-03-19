@@ -21,6 +21,16 @@ export default class extends Component {
     //   }, 100)
     // }
 
+    // Move planet light if firstView is true
+    if (this.props.firstView) {
+      let x = 0
+      this._planetShine = setInterval(() => {
+        x++
+        if (x > 16) { clearInterval(this._planetShine) }
+        this.setState({ lightLeft: 3 * x, lightTop: 3 * x })
+      }, 145)
+    }
+
     window.addEventListener('scroll', this.onScroll)
   }
 
@@ -50,6 +60,7 @@ export default class extends Component {
 
   componentWillUnmount () {
     window.removeEventListener('scroll', this.onScroll)
+    window.clearInterval(this._planetShine)
     // window.clearInterval(this._frameId)
   }
 
@@ -60,7 +71,7 @@ export default class extends Component {
           <div class={s.inner}>
 
             <div class={s.welcome}>
-              <Moon position='topRight' size='medium' background='blue' customClass={cx(s.moon, firstView && s.firstView)} /* style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} */ />
+              <Moon position={firstView ? 'middleRight' : 'topRight'} size='medium' background='blue' customClass={cx(s.moon, firstView && s.firstView)} style={{ left: lightLeft, top: lightTop }} />
               <h1 class={firstView && s.firstView} ref={(el) => { this.heroText = el }}>
                 <span>Future Memories</span> is a digital studio where strategic design and technology unite into products of tomorrow.
               </h1>

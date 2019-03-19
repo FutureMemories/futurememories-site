@@ -20,16 +20,16 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render (_, { lightLeft, lightTop }) {
+  render () {
     return (
       <Base>
         <div class={s.view}>
           <div class={s.inner}>
 
             <div class={s.welcome} >
-              <Moon position='bottomLeft' size='medium' background='red' customClass={s.moon} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
+              <Moon position='bottomLeft' size='medium' background='red' customClass={s.moon} />
               <h1 ref={(el) => { this.heroText = el }}>
-                We team up with our clients to create <span>exceptional digital products and services</span> that make a difference.
+                We team up with our clients to create exceptional <span>digital products and services</span> that make a difference.
               </h1>
             </div>
 
