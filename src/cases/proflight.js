@@ -29,7 +29,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base>
+      <Base title='proFLIGHT'>
         <div class={s.view} >
           <div class={s.inner}>
 

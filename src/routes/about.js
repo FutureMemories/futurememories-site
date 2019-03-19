@@ -22,7 +22,7 @@ const data = [
 export default class extends Component {
   render () {
     return (
-      <Base>
+      <Base title='About us'>
         <div class={s.view}>
           <div class={s.inner}>
 
