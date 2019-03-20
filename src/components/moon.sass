@@ -1,4 +1,4 @@
-$eclipseTransition: margin 0.8s ease
+$eclipseTransition: margin 0.8s ease-out
 
 .space
   position: relative
@@ -13,11 +13,10 @@ $eclipseTransition: margin 0.8s ease
     border-radius: 50%
     position: absolute
     display: block
-    top: 50%
-    left: 60%
+    top: 43%
+    left: 58%
     transform: translate(-50%) translateY(-50%)
     transition: $eclipseTransition
-    //animation: eclipse 5s ease-in-out infinite
 
     &:after
       content: ''
@@ -28,7 +27,7 @@ $eclipseTransition: margin 0.8s ease
       box-shadow: 0 0 120px 50px #ABAFA8
       position: absolute
       display: block
-      bottom: 53%
+      bottom: 43%
       left: 54%
 
   > .planet
@@ -52,8 +51,8 @@ $eclipseTransition: margin 0.8s ease
       background: radial-gradient(200px 200px ellipse at center, #182A4D, transparent)
       position: absolute
       display: block
-      bottom: 50%
-      left: 26%
+      bottom: 55%
+      left: 33%
       z-index: 99
       transition: $eclipseTransition
 
@@ -97,6 +96,26 @@ $eclipseTransition: margin 0.8s ease
         box-shadow: 0 0 120px 50px #EA061F
 
   // Light position
+  &.middleRight
+    > .planet
+      background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)
+
+      > .shine
+        bottom: 20%
+        right: auto
+        top: auto
+        left: 58%
+
+    > .background
+      top: 50%
+      left: 72%
+
+      &:after
+        bottom: auto
+        right: auto
+        top: 50%
+        left: 50%
+
   &.bottomRight
     > .planet
       background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)

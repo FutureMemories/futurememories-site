@@ -29,7 +29,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base dark>
+      <Base title='Paykartan' dark>
         <div class={s.view} >
           <div class={s.inner}>
 

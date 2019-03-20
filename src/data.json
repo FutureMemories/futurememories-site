@@ -115,16 +115,12 @@
     {
       "name": "AntiStress",
       "image": "cases/antistress.png",
-      "imageBg": [
-        "cases/antistress-bg.jpg",
-        "height"
-      ],
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client": "Västra Götalandsregionen",
       "type": "UX/UI, iOS, Android",
       "style": [
         {
-          "background": "#2D2D2D",
+          "background": "linear-gradient(-241deg, #90C8DD 14%, #95B2C7 90%)",
           "color": "#fff"
         },
         {
@@ -256,16 +252,12 @@
     {
       "name": "AntiStress",
       "image": "cases/antistress.png",
-      "imageBg": [
-        "cases/antistress-bg.jpg",
-        "height"
-      ],
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client": "Västra Götalandsregionen",
       "type": "UX/UI, iOS, Android",
       "style": [
         {
-          "background": "#2D2D2D",
+          "background": "linear-gradient(-241deg, #90C8DD 14%, #95B2C7 90%)",
           "color": "#fff"
         },
         {
@@ -410,6 +402,9 @@
         {
           "background": "#5A4645",
           "color": "#fff"
+        },
+        {
+          "min-width": "4rem"
         }
       ],
       "actions": [
@@ -443,13 +438,20 @@
     },
     {
       "name": "WYA Network",
+      "image": "cases/wya-network.png",
       "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
       "client": "WHOYOUARE LLC",
       "type": "iOS, UX/UI",
       "style": [
         {
-          "background": "#3E4C65",
+          "background": "#000000",
           "color": "#fff"
+        },
+        {},
+        {
+          "height": "50%",
+          "margin-top": "auto",
+          "margin-left": "calc(100% - 43rem)"
         }
       ],
       "actions": [
