@@ -40,6 +40,7 @@ export default class extends Component {
 
             <LargeImage
               src='cases/paykartan-1.png'
+              alt='Paykartan phone mockups'
               width='590'
               height='530'
               background='#FFD2D2'
@@ -57,11 +58,12 @@ export default class extends Component {
               title='No worries'
               text={`The perfect solution when you forget your wallet or if you simply left it on purpose. The app is super easy to use, just fire it up and follow these steps:`}
               items={[
-                { name: 'Find the spot', image: 'icons/location.svg' },
-                { name: 'Eat', image: 'icons/hamburger.svg' },
-                { name: 'Pay', image: 'icons/phone.svg' }
+                { name: 'Find the spot', image: 'icons/location.svg', alt: 'location icon' },
+                { name: 'Eat', image: 'icons/hamburger.svg', alt: 'hamburger icon' },
+                { name: 'Pay', image: 'icons/phone.svg', alt: 'phone icon' }
               ]}
               image='cases/paykartan-2.png'
+              alt='Holding a phone with a Paykartan open'
               background='#FFD2D2'
               align='left'
               modifier='paykartan'
@@ -76,8 +78,8 @@ export default class extends Component {
 
             <ParallaxObjectBlock
               items={[
-                { image: 'cases/paykartan-phone-1.png', speed: -20, startPos: 17 },
-                { image: 'cases/paykartan-phone-2.png', speed: 11, startPos: -39 }
+                { image: 'cases/paykartan-phone-1.png', alt: 'Paykartan mockup: start screen', speed: -20, startPos: 17 },
+                { image: 'cases/paykartan-phone-2.png', alt: 'Paykartan mockup: map view', speed: 11, startPos: -39 }
               ]}
               background='#FFD2D2'
             />

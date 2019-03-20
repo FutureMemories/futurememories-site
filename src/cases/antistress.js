@@ -39,7 +39,7 @@ export default class extends Component {
               subtitle='Take a deep breath'
             />
 
-            <LargeImage src='cases/antistress-1.jpg' />
+            <LargeImage src='cases/antistress-1.jpg' alt='Antistress phone mockups' />
 
             <CenterBlock
               inView='inViewBottom'
@@ -78,9 +78,9 @@ export default class extends Component {
                 `In order to meet the large group affected by stress-related mental illness, development of new innovative methods is needed. The app's interface is designed with calm colors in mind and a color spectra that illustrate the balance between feelings while moving in a harmonious movement when you start the app.`
               ]}
               items={[
-                { image: 'cases/antistress-phone-3.png', speed: -15, startPos: 53, width: '412px', align: 'right' },
-                { image: 'cases/antistress-phone-2.png', speed: -28, startPos: -30, width: '522px', align: 'right' },
-                { image: 'cases/antistress-phone-1.png', speed: 0, startPos: -115, width: '568px', align: 'right' }
+                { image: 'cases/antistress-phone-3.png', alt: 'AntiStress phone mockup', speed: -15, startPos: 53, width: '412px', align: 'right' },
+                { image: 'cases/antistress-phone-2.png', alt: 'AntiStress phone mockup', speed: -28, startPos: -30, width: '522px', align: 'right' },
+                { image: 'cases/antistress-phone-1.png', alt: 'AntiStress phone mockup', speed: 0, startPos: -115, width: '568px', align: 'right' }
               ]}
               background='#FAFAFA'
             />

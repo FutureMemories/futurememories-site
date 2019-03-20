@@ -38,7 +38,7 @@ export default class extends Component {
               subtitle='Pilot Decision support'
             />
 
-            <LargeImage src='cases/proflight-1.jpg' />
+            <LargeImage src='cases/proflight-1.jpg' alt='proFLIGHT tablet mockup' />
 
             <CenterBlock
               inView='inViewBottom'

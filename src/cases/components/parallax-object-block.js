@@ -9,6 +9,7 @@ export default ({ items, background, diagonal }) => (
         {items.map(item => (
           <ParallaxObject
             image={item.image}
+            alt={item.alt}
             speed={item.speed}
             startPos={item.startPos}
             diagonal={diagonal}

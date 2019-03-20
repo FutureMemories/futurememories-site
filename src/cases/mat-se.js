@@ -41,7 +41,7 @@ export default class extends Component {
               subtitle='Fresh food delivered to your door'
             />
 
-            <LargeImage src='cases/mat-se-1.jpg' />
+            <LargeImage src='cases/mat-se-1.jpg' alt='Mat.se mockup' />
 
             <CenterBlock
               inView='inViewBottom'
@@ -91,7 +91,7 @@ export default class extends Component {
               text='Beside day to day logistics, the platform is even used by managers for strategic purposes. We have developed features on top of the platform to give managers insights in purchasing, sales and delivery performance and other reports which help decision-making executives.'
             />
 
-            <LargeImage src='cases/mat-se-4.jpg' />
+            <LargeImage src='cases/mat-se-4.jpg' alt='Mat.se phone mockups' />
 
             <ProjectsBlock current='mat-se' />
 

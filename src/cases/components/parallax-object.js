@@ -25,7 +25,7 @@ export default class extends Component {
     }
   }
 
-  render ({ image, speed, startPos, diagonal, width }) {
+  render ({ image, alt = 'image', speed, startPos, diagonal, width }) {
     return (
       <div
         class={cx(s.parallaxObject)}
@@ -39,6 +39,7 @@ export default class extends Component {
           class={cx(s.parallaxBackground, diagonal && s.diagonal)}
           style={cx(`top: ${startPos}%;`, width && `max-width: ${width};`)}
           src={require(`../../images/${image}`)}
+          alt={alt}
         />
       </div>
     )

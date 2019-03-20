@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import s from './large-image.sass'
 
-export default ({ src, video, width, height, background, modifier, children }) => (
+export default ({ src, alt = 'image', video, width, height, background, modifier, children }) => (
   <div class={cx(s.largeImage, background && !video && s.smallImage, modifier && s[modifier])} style={background && `background: ${background}`}>
     {video ? (
       <div class={s.videoBlock}>
@@ -10,7 +10,7 @@ export default ({ src, video, width, height, background, modifier, children }) =
         </video>
       </div>
     ) : (
-      <img src={require(`../../images/${src}`)} width={width} />
+      <img alt={alt} src={require(`../../images/${src}`)} width={width} />
     )}
     {children}
   </div>

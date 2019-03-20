@@ -57,6 +57,7 @@ export default class extends Component {
 
             <LargeImage
               src='cases/picular-1.png'
+              alt='Picular desktop mockup'
               width='993'
               height='527'
               background='#F2F5F6'
@@ -65,7 +66,7 @@ export default class extends Component {
               <div class={s.badges}>
                 {badges.map(badge => (
                   <div class={s.badge}>
-                    <img src={require(`../images/cases/${badge.img}`)} />
+                    <img alt={`Product Hunt: ${badge.title}`} src={require(`../images/cases/${badge.img}`)} />
                     <div class={s.desc}>
                       <span class={s.title}>{badge.title}</span>
                       <span class={s.date}>{badge.date}</span>
@@ -87,9 +88,9 @@ export default class extends Component {
               title='One for the bookmarks.'
               text={`The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.`}
               items={[
-                { name: 'Correct color tones', image: 'icons/droplet.svg' },
-                { name: 'Grab the HEX color code', image: 'icons/hash.svg' },
-                { name: 'See the reference image', image: 'icons/image.svg' }
+                { name: 'Correct color tones', image: 'icons/droplet.svg', alt: 'droplet icon' },
+                { name: 'Grab the HEX color code', image: 'icons/hash.svg', alt: 'hash icon' },
+                { name: 'See the reference image', image: 'icons/image.svg', alt: 'image icon' }
               ]}
             >
               <ParallaxScroll frame='iphonex' background='cases/picular-screenshot-1.jpg' />

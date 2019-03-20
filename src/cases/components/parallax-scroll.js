@@ -31,9 +31,9 @@ export default class extends Component {
         class={cx(s.parallaxScroll, frame && s[frame])}
         ref={(el) => { this.parallax = el }}
       >
-        <img class={s.parallaxFrame} src={require(`../../images/frame-${frame}.png`)} />
+        <img class={s.parallaxFrame} alt={`${frame} frame`} src={require(`../../images/frame-${frame}.png`)} />
         <div class={s.parallaxContent} style={`transform: translateY(-2px)`}>
-          <img class={s.parallaxBackground} src={require(`../../images/${background}`)} />
+          <img alt='mockup content' class={s.parallaxBackground} src={require(`../../images/${background}`)} />
         </div>
       </div>
     )
