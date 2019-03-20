@@ -25,7 +25,7 @@ export default class extends Component {
     if (this.props.firstView) {
       setTimeout(() => {
         this.setState({ lightLeft: 51, lightTop: 51 })
-      }, 800)
+      }, 100)
     }
 
     window.addEventListener('scroll', this.onScroll)
@@ -58,14 +58,14 @@ export default class extends Component {
     // window.clearInterval(this._frameId)
   }
 
-  render ({ firstView }, { lightLeft, lightTop, InformationActive }) {
+  render ({ firstView }, { lightLeft, lightTop }) {
     return (
       <Base firstView={firstView}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <div class={s.welcome}>
-              <Moon position={firstView ? 'middleRight' : 'topRight'} size='medium' background='blue' customClass={cx(s.moon, firstView && s.firstView)} style={{ left: lightLeft, top: lightTop }} />
+              <Moon position={firstView ? 'middleRight' : 'bottomLeft'} size='medium' background='blue' customClass={cx(s.moon, firstView && s.firstView)} style={{ left: lightLeft, top: lightTop }} />
               <h1 class={firstView && s.firstView} ref={(el) => { this.heroText = el }}>
                 <span>Future Memories</span> is a digital studio where strategic design and technology unite into products of tomorrow.
               </h1>
@@ -86,9 +86,9 @@ export default class extends Component {
               <Moon size='small' position='bottomLeft' background='red' customClass={s.moon} />
               <div class={s.text}>
                 <h1>Some of our work</h1>
-                <p>Forward-thinking digital products making life easier and bringing value to clients and consumers.</p>
+                <p>Forward-thinking digital products that makes life easier and brings value to clients and consumers.</p>
               </div>
-              <ProjectsBlock projects={frontCases} limit={9898} />
+              <ProjectsBlock projects={frontCases} limit={3} />
               <Button customClass={s.button} to='/work' label='See more projects' arrow transition='slide' />
             </div>
 
