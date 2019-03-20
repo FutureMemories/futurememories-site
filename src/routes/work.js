@@ -8,6 +8,7 @@ import s from './work.sass'
 export default class extends Component {
   componentDidMount () {
     window.addEventListener('scroll', this.onScroll)
+    this.heroText.style = undefined
   }
 
   onScroll = () => {

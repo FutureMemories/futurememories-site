@@ -44,7 +44,7 @@
 
         &.firstView
           opacity: 0
-          animation: fadeIn 1.6s forwards ease-in
+          animation: fadeIn 1.6s 0.2s forwards ease-in
 
     > .information
       display: flex
@@ -141,6 +141,7 @@
         left: calc(50% - 22.5rem)
         margin-top: -8rem
         position: absolute
+        transform: scale(1)
 
       > .information
         min-height: 70rem
@@ -174,7 +175,7 @@
 
           > p
             font-size: 4.5rem
-            line-height: 8rem
+            line-height: 7rem
 
       > .work > .button
         left: 100%

@@ -22,14 +22,9 @@ export default class extends Component {
     // }
 
     // Move planet light if firstView is true
-    if (this.props.firstView) {
-      let x = 0
-      this._planetShine = setInterval(() => {
-        x++
-        if (x > 16) { clearInterval(this._planetShine) }
-        this.setState({ lightLeft: 3 * x, lightTop: 3 * x })
-      }, 145)
-    }
+    setTimeout(() => {
+      this.setState({ lightLeft: 51, lightTop: 51 })
+    }, 800)
 
     window.addEventListener('scroll', this.onScroll)
   }

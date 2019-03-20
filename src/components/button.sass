@@ -23,6 +23,8 @@
     padding: 4rem
     text-align: left
     width: 100%
+    @media screen and (max-width: 800px)
+      height: auto
 
     > svg
       margin-top: 2rem
@@ -109,7 +111,6 @@
       &.second
         transition: transform 0.15s ease-in-out, opacity 0.25s ease
         transition-delay: 0.2s
-
 
     &:hover
       > .arrow
