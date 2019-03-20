@@ -53,19 +53,22 @@
       "label": "🖥  Backend Developer",
       "text": "All our products are backed by high-quality distributed systems built and maintained by our backend engineers. Become a part of that team and help us developing large-scale applications in Kotlin, Scala or Python. We advocate the use of proven and scalable technologies like Kafka, Elasticsearch and NoSQL databases, preferably using Docker and orchestrated with Kubernetes.",
       "tasks": "Kotlin, Scala, Python, Kafka, NoSQL, Docker, Kubernetes, Google Cloud, AWS",
-      "image": "position-1.jpg"
+      "image": "position-1.jpg",
+      "subject": "Future Memories - Backend Developer"
     },
     {
       "label": "📱 Mobile Developer",
       "text": "Join our team of mobile developers and build mobile applications that delight and impress users. We prefer to build apps natively using Swift for iOS and Kotlin on Android. Our mobile developers work in close collaboration with the design team and require an eye for detail when it comes to user interface design and user experience.",
       "tasks": "iOS, Swift, Android, Kotlin",
-      "image": "position-2.jpg"
+      "image": "position-2.jpg",
+      "subject": "Future Memories - Mobile Developer"
     },
     {
       "label": "💻  Web Developer",
       "text": "Become part of our web development team and build tomorrow’s web applications together with us. We leverage latest web technologies and like to incorporate new and promising approaches into our workflow. All of our web developers are full-stack and fully capable of building web solutions end-to-end.",
       "tasks": "JavaScript, React, Node.js",
-      "image": "position-3.jpg"
+      "image": "position-3.jpg",
+      "subject": "Future Memories - Web Developer"
     }
   ],
   "frontCases": [
