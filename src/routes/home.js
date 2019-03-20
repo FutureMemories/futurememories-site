@@ -45,15 +45,12 @@ export default class extends Component {
       const blockTop = this.scrollPoint - this.informationBlock.offsetTop
       const aThird = (window.innerHeight / 3 - 80)
 
-      if (!this.state.inViewInformationBlock) {
-        this.setState({ inViewInformationBlock: true })
-      }
       if (blockTop < aThird * 1) {
-        this.setState({ InformationActive: 'design' })
-      } else if (blockTop > aThird * 2 && blockTop < aThird * 3) {
-        this.setState({ InformationActive: 'develop' })
-      } else if (blockTop > aThird * 3) {
         this.setState({ InformationActive: 'strategy' })
+      } else if (blockTop > aThird * 2 && blockTop < aThird * 3) {
+        this.setState({ InformationActive: 'design' })
+      } else if (blockTop > aThird * 3) {
+        this.setState({ InformationActive: 'develop' })
       }
     }
   }
@@ -79,20 +76,13 @@ export default class extends Component {
 
             <div class={cx(s.information, this.state.inViewInformationBlock && s.inView)} ref={(el) => { this.informationBlock = el }}>
               <div class={s.foundationPillar}>
-                <h2 class={(!InformationActive || InformationActive) === 'design' && s.active} onMouseEnter={() => this.setState({ InformationActive: 'design' })}>Design</h2>
-                <h2 class={InformationActive === 'develop' && s.active} onMouseEnter={() => this.setState({ InformationActive: 'develop' })}>Develop</h2>
-                <h2 class={InformationActive === 'strategy' && s.active} onMouseEnter={() => this.setState({ InformationActive: 'strategy' })}>Strategy</h2>
+                <h1>What we do</h1>
+                <p>
+                  <span>Strategy</span>, <span>Design</span> & <span>Development</span>
+                </p>
               </div>
               <Moon size='medium' position='bottomLeft' background='red' customClass={s.moon} />
-              <p class={(!InformationActive || InformationActive) === 'design' && s.active}>
-                <span>Design</span> means different things to different people. For us, design means everything. The way it look and feels doesn’t really matter unless the core is thoroughly built. We deliver thoughtful and beautiful solutions with the user in mind.
-              </p>
-              <p class={InformationActive === 'develop' && s.active}>
-                <span>Our developers</span> are our thrustors behind every successful launch. Making advanced technology solutions feel like first grade matchs and having it run like clockwork. Never afraid of diving deep into the universe to find solutions, and the results speak for itself.
-              </p>
-              <p class={InformationActive === 'strategy' && s.active}>
-                <span>We use strategy</span> in order to figure out who you are and where you wish to go. The path could be quirky but doesn’t have to be. We take on complex business challenges and turn them into waterproof, yet often simple solutions.
-              </p>
+              <Moon size='normal' position='topRight' background='blue' customClass={s.moonSmall} />
             </div>
 
             <div class={s.work}>
