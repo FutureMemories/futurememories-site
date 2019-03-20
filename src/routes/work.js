@@ -29,7 +29,7 @@ export default class extends Component {
             <div class={s.welcome} >
               <Moon position='bottomLeft' size='medium' background='red' customClass={s.moon} style={`margin-left: -${lightLeft}px; margin-top: -${lightTop}px;`} />
               <h1 ref={(el) => { this.heroText = el }}>
-                We team up with our clients to create <span>exceptional digital products and services</span> that make a difference.
+                We team up to create <span>exceptional digital products and services</span> of tomorrow.
               </h1>
             </div>
 
