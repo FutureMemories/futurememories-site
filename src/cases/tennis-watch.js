@@ -11,10 +11,12 @@ import CenterBlock from './components/center-block'
 
 const badges = [{
   img: 'tennis-watch-badge-best-new-app.svg',
-  title: 'Apple App Store'
+  title: 'Apple App Store',
+  alt: 'Best new app 2015'
 }, {
   img: 'tennis-watch-badge-amazing-app.svg',
-  title: 'Apple App Store'
+  title: 'Apple App Store',
+  alt: 'Amazing app 2015'
 }]
 
 const inViewClasses = [
@@ -57,7 +59,7 @@ export default class extends Component {
               <div class={s.badges}>
                 {badges.map(badge => (
                   <div class={s.badge}>
-                    <img src={require(`../images/cases/${badge.img}`)} />
+                    <img alt={`Apple App Store prize: ${badge.alt}`} src={require(`../images/cases/${badge.img}`)} />
                     <div class={s.desc}>
                       <span class={s.title}>{badge.title}</span>
                       <span class={s.date}>{badge.date}</span>
@@ -80,6 +82,7 @@ export default class extends Component {
               title={`Match trends and\nperformance statistics`}
               text={`Keep track of your progress with statistics and match trend trackning to improve your game. It’s all about winning right?`}
               image={{ path: 'cases/tennis-watch-1.png', width: 427, height: 703, positon: 'inside' }}
+              alt='Tennis Watch (phone and watch mockup)'
               background='#0C0F16'
               color='#fff'
               modifier='tennisWatch'
@@ -90,6 +93,7 @@ export default class extends Component {
               title={`Tennis score tracker and\nstatistics for Apple Watch`}
               text={`Keeping track of your matches and opponents. Designed for any scoring method.`}
               image={{ path: 'cases/tennis-watch-2.png', width: 243, height: 438, positon: 'inside' }}
+              alt='Tennis Watch (watch mockup)'
               background='#0C0F16'
               color='#fff'
               align='right'
@@ -99,6 +103,7 @@ export default class extends Component {
               inView='inViewBottom'
               title='Match point.'
               src='cases/tennis-watch-3.jpg'
+              alt='tennis match game'
               color='#fff'
             />
 

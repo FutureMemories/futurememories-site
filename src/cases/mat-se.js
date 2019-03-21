@@ -48,6 +48,7 @@ export default class extends Component {
               title={`Shop online,\ndinner at home`}
               text={`Mat.se is a Gothenburg-based startup and online grocery shopping service operating in Stockholm, Gothenburg and Malmö. Consumers can shop on the web or in Mat.se's apps for iOS and Android and groceries get delivered to your home or workplace.`}
               src={{ path: 'cases/mat-se-2.png', align: 'left' }}
+              alt='Mat.se truck'
             />
 
             <SlideInBlock
@@ -58,6 +59,7 @@ export default class extends Component {
                 'We at Future Memories teamed up with Mat.se to improve and extend their technical platform. The Mat.se backbone is based on Java technologies and leverages message-driven processing for high throughput.'
               ]}
               image={{ path: 'cases/mat-se-5.svg', width: 824, height: 262, positon: 'inside' }}
+              alt='Mat.se storage illustration'
               align='right'
               modifier='flexEnd'
             />

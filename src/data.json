@@ -95,12 +95,16 @@
     {
       "name": "Mat.se",
       "image": "cases/mat-se.png",
+      "imageBg": [
+        "cases/mat-se-bg.jpg",
+        "width"
+      ],
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
       "type": "UX/UI, JAVA, SPRING, iOS",
       "style": [
         {
-          "background": "#FF6002",
+          "background": "#993600",
           "color": "#FFFFFF"
         },
         {
@@ -163,6 +167,9 @@
         {
           "background": "#FFD2D2",
           "color": "#070B13"
+        },
+        {
+          "min-width": "21.2rem"
         }
       ],
       "showcase": "paykartan"
@@ -232,12 +239,16 @@
     {
       "name": "Mat.se",
       "image": "cases/mat-se.png",
+      "imageBg": [
+        "cases/mat-se-bg.jpg",
+        "width"
+      ],
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "client": "Mat.se",
-      "type": "UX/UI, Java, Spring, iOS",
+      "type": "UX/UI, JAVA, SPRING, iOS",
       "style": [
         {
-          "background": "#FF6002",
+          "background": "#993600",
           "color": "#FFFFFF"
         },
         {
@@ -372,6 +383,12 @@
         {
           "background": "linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
           "color": "#fff"
+        },
+        {
+          "min-width": "23rem"
+        },
+        {
+          "margin-left": "-10px"
         }
       ],
       "showcase": "retts-plus"
@@ -385,6 +402,9 @@
         {
           "background": "#FFD2D2",
           "color": "#070B13"
+        },
+        {
+          "min-width": "21.2rem"
         }
       ],
       "showcase": "paykartan"
@@ -520,7 +540,7 @@
       "name": "P-A Gustafsson",
       "image": "team/pa-gustafsson.jpg",
       "title": "Co-founder and CEO",
-      "desc": "Co-founder and CEO. Over 17 years as product manager and designer across five industries.",
+      "desc": "Co-founder and CEO. Manager and UX designer for digital products since 1996.",
       "phone": "+46 (0)760 338822",
       "email": "pa@futurememories.se"
     },
@@ -535,7 +555,7 @@
     {
       "name": "Victoria Wånsander",
       "image": "team/victoria-wansander.jpg",
-      "title": "UX",
+      "title": "UX and Service designer",
       "desc": "Service Designer with background in UX Design and Cognitive Sciences. Shaping digital services of tomorrow, one at a time.",
       "email": "victoria@futurememories.se"
     },

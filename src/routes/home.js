@@ -65,7 +65,7 @@ export default class extends Component {
           <div class={s.inner}>
 
             <div class={s.welcome}>
-              <Moon position={firstView ? 'middleRight' : 'bottomLeft'} size='medium' background='blue' customClass={cx(s.moon, firstView && s.firstView)} style={{ left: lightLeft, top: lightTop }} />
+              <Moon position={firstView ? 'middleRight' : 'topRight'} size='medium' background='blue' customClass={cx(s.moon, firstView && s.firstView)} style={{ left: lightLeft, top: lightTop }} />
               <h1 class={firstView && s.firstView} ref={(el) => { this.heroText = el }}>
                 <span>Future Memories</span> is a digital studio where strategic design and technology unite into products of tomorrow.
               </h1>

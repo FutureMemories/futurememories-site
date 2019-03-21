@@ -62,6 +62,7 @@ export default class extends Component {
               title='A clear overview'
               text={`Giving a doctor or nurse an overview of the patient's visit is a key feature for making the right decision and giving proper care. At the right time.`}
               image='cases/retts-plus-2.png'
+              alt='Retts Plus tablet mockup'
               background='#090E18'
             />
 
@@ -70,6 +71,7 @@ export default class extends Component {
               title='Every step on the way'
               text={`We developed a timeline that shows the entire patient’s journey from first contact until it was time to go home. This improved the ability to track  events during a patient’s visit better, and enabled nurses and doctors to take make the correct decision at any point.`}
               image='cases/retts-plus-3.png'
+              alt='Retts Plus tablet mockup'
               background='#090E18'
               align='right'
               modifier='moveUp'

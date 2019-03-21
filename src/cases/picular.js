@@ -101,6 +101,7 @@ export default class extends Component {
               title='Putting colors to words'
               text={`Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in.`}
               image='cases/picular-2.png'
+              alt='Picular grid of colors'
               background='#fff'
               align='right'
               modifier='noPadding'
