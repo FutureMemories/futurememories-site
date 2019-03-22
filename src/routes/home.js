@@ -22,6 +22,10 @@ export default class extends Component {
     //   }, 100)
     // }
 
+    this.heroText.style = undefined
+    this.thirdPlanet.base.style = undefined
+    this.fourthPlanet.base.style = undefined
+
     // Move planet light if firstView is true
     if (this.props.firstView) {
       let x = 0
@@ -50,10 +54,18 @@ export default class extends Component {
   }
 
   onScroll = () => {
-    this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.5)
+    this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.4)
 
     if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
       this.heroText.style = `top: -${(window.pageYOffset / 5).toFixed(1)}px`
+    }
+
+    // Parallax effect on 'What We Do' block
+    if ((this.scrollPoint) > this.informationBlock.offsetTop && window.pageYOffset < (this.informationBlock.offsetTop + this.informationBlock.offsetHeight)) {
+      const planetScrollPoint = this.scrollPoint - this.informationBlock.offsetTop
+      const fourthPlanetPosition = 200 - (planetScrollPoint / 11).toFixed(1)
+      this.thirdPlanet.base.style = `top: ${(planetScrollPoint / 7).toFixed(1)}px`
+      this.fourthPlanet.base.style = `bottom:  ${fourthPlanetPosition < 0 ? '' : '-'}${Math.abs(fourthPlanetPosition)}px`
     }
   }
 
@@ -114,8 +126,8 @@ export default class extends Component {
                   </span>
                 </p>
               </div>
-              <Moon size='medium' position='bottomLeft' background='red' customClass={s.moon} />
-              <Moon size='normal' position='topRight' background='blue' customClass={s.moonSmall} />
+              <Moon size='medium' position='bottomLeft' background='red' customClass={s.moon} ref={(el) => { this.thirdPlanet = el }} />
+              <Moon size='normal' position='topRight' background='blue' customClass={s.moonSmall} ref={(el) => { this.fourthPlanet = el }} />
             </div>
 
             <div class={s.work}>
