@@ -75,8 +75,8 @@
               mix-blend-mode: lighten
 
               &:after
-                animation: noise 3s infinite linear alternate-reverse
-                background: $color-darker-blue
+                animation: glitch 3s infinite linear alternate-reverse
+                background: #060A11
                 clip: rect(0,900px,0,0)
                 color: white
                 content: attr(data-text)
@@ -84,12 +84,12 @@
                 letter-spacing: -0.1rem
                 overflow: hidden
                 position: absolute
-                text-shadow: -0.1rem 0 $color-red
+                text-shadow: -0.2rem 0 $color-red
                 top: -0.3rem
 
               &:before
-                animation: noise 4s infinite linear alternate-reverse
-                background: $color-darker-blue
+                animation: glitch 4s infinite linear alternate-reverse
+                background: #060A11
                 clip: rect(0,900px,0,0)
                 color: white
                 content: attr(data-text)
@@ -97,7 +97,7 @@
                 letter-spacing: -0.1rem
                 overflow: hidden
                 position: absolute
-                text-shadow: 0.1rem 0 #253657
+                text-shadow: 0.2rem 0 #71A1FF
                 top: -0.3rem
 
       > .moon
@@ -211,7 +211,7 @@
         left: 100%
 
   $steps: 20
-  @keyframes noise
+  @keyframes glitch
     @for $i from 0 through $steps
       #{percentage($i*(1/$steps))}
         clip: rect(random(100)+px,9999px,random(200)+px,0)
