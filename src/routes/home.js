@@ -34,13 +34,11 @@ export default class extends Component {
 
     // randomize glitch effect
     const foundationPillars = ['strategy', 'design', 'develop']
-    const glitchColors = [s.red, s.blue, s.white]
     this.randomizer = setInterval(() => {
       const randomPillar = foundationPillars[Math.floor(Math.random() * foundationPillars.length)]
-      const randomColor = glitchColors[Math.floor(Math.random() * glitchColors.length)]
       this.setState({
         preActivePillar: this.state.activePillar,
-        activePillar: [randomPillar, randomColor]
+        activePillar: randomPillar
       })
       // Remove old pillar after x milliseconds
       setTimeout(() => {
@@ -84,9 +82,9 @@ export default class extends Component {
                 <p>
                   <span
                     class={cx(
-                      (activePillar[0] === 'strategy' || preActivePillar[0] === 'strategy') && s.glitch,
-                      activePillar[0] === 'strategy' && activePillar[1],
-                      preActivePillar[0] === 'strategy' && preActivePillar[1]
+                      (activePillar === 'strategy' || preActivePillar === 'strategy') && s.glitch,
+                      activePillar === 'strategy' && activePillar,
+                      preActivePillar === 'strategy' && preActivePillar
                     )}
                     data-text='Str4t3gy'
                   >
@@ -95,9 +93,9 @@ export default class extends Component {
                   {`, `}
                   <span
                     class={cx(
-                      (activePillar[0] === 'design' || preActivePillar[0] === 'design') && s.glitch,
-                      activePillar[0] === 'design' && activePillar[1],
-                      preActivePillar[0] === 'design' && preActivePillar[1]
+                      (activePillar === 'design' || preActivePillar === 'design') && s.glitch,
+                      activePillar === 'design' && activePillar,
+                      preActivePillar === 'design' && preActivePillar
                     )}
                     data-text='Des1gn'
                   >
@@ -106,9 +104,9 @@ export default class extends Component {
                   {` & `}
                   <span
                     class={cx(
-                      (activePillar[0] === 'develop' || preActivePillar[0] === 'develop') && s.glitch,
-                      activePillar[0] === 'develop' && activePillar[1],
-                      preActivePillar[0] === 'develop' && preActivePillar[1]
+                      (activePillar === 'develop' || preActivePillar === 'develop') && s.glitch,
+                      activePillar === 'develop' && activePillar,
+                      preActivePillar === 'develop' && preActivePillar
                     )}
                     data-text='Devel0pm3nt'
                   >
