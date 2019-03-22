@@ -72,6 +72,7 @@
 
             &.glitch
               position: relative
+              mix-blend-mode: lighten
 
               &:after
                 animation: noise 3s infinite linear alternate-reverse
@@ -87,7 +88,7 @@
                 top: -0.3rem
 
               &:before
-                animation: noiseTwo 4s infinite linear alternate-reverse
+                animation: noise 4s infinite linear alternate-reverse
                 background: $color-darker-blue
                 clip: rect(0,900px,0,0)
                 color: white
@@ -211,11 +212,6 @@
 
   $steps: 20
   @keyframes noise
-    @for $i from 0 through $steps
-      #{percentage($i*(1/$steps))}
-        clip: rect(random(100)+px,9999px,random(200)+px,0)
-
-  @keyframes noiseTwo
     @for $i from 0 through $steps
       #{percentage($i*(1/$steps))}
         clip: rect(random(100)+px,9999px,random(200)+px,0)
