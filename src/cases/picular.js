@@ -92,6 +92,7 @@ export default class extends Component {
                 { name: 'Grab the HEX color code', image: 'icons/hash.svg', alt: 'hash icon' },
                 { name: 'See the reference image', image: 'icons/image.svg', alt: 'image icon' }
               ]}
+              modifier='picular'
             >
               <ParallaxScroll frame='iphonex' background='cases/picular-screenshot-1.jpg' />
             </BookmarkBlock>

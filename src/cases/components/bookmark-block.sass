@@ -25,6 +25,7 @@
       flex-direction: column
       justify-content: center
       padding-left: 0
+      margin-left: 2rem
 
       > .text
         margin-bottom: 2.5rem
@@ -90,14 +91,20 @@
       > .content
         padding-left: 0
         padding-top: 3rem
+        margin-left: 0
 
         > p
           font-size: 2rem
           max-width: 100%
           line-height: 2.1rem
-          margin-top: 11rem
+          margin-top: 2rem
 
   /* Modifiers */
+  &.picular > .inner
+    @media screen and (max-width: 720px)
+      > .content
+        margin-top: 4.5rem
+
   &.paykartan > .inner > img
     width: 57%
     height: 57%
