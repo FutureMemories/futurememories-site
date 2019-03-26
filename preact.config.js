@@ -27,6 +27,9 @@ export default function (config, env, helpers) {
     path.resolve(__dirname, '', 'src/routes')
   ]
 
+  // Always use file-loader instead of url-loader
+  config.module.loaders[8].loader = 'file-loader'
+
   const sw = config.plugins.find(p => p.constructor.name === 'SWPrecacheWebpackPlugin')
   if (sw) {
     sw.options.staticFileGlobsIgnorePatterns.push(/_redirects/)
