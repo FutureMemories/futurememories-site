@@ -11,16 +11,12 @@ import s from './home.sass'
 export default class extends Component {
   state = { preActivePillar: [], activePillar: [] }
   componentDidMount () {
-    // document.onmousemove = e => {
-    //   this.clientX = e.clientX
-    //   this.clientY = e.clientY
-    // }
+    const futureMemories = `Futur${Math.random() >= 0.5 ? 'e' : '3'} Mem${Math.random() >= 0.5 ? 'o' : '0'}r${Math.random() >= 0.5 ? 'i' : '1'}es`
 
-    // if (!this._frameId) {
-    //   this._frameId = setInterval(() => {
-    //     this.setState({ lightLeft: this.clientX / 30, lightTop: this.clientY / 30 })
-    //   }, 100)
-    // }
+    console.log(
+      `%c🌑︎ Welcome to ${futureMemories}! 🚀`,
+      'background:#070B13; color:#fff; display: block; padding:0.5em 1em; font-size:1em'
+    )
 
     this.heroText.style = undefined
     this.thirdPlanet.base.style = undefined
