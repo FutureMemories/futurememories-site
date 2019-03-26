@@ -20,6 +20,14 @@ import './index.sass'
 export default class extends Component {
   state = { firstView: true }
 
+  componentDidMount () {
+    const futureMemories = `Futur${Math.random() >= 0.5 ? 'e' : '3'} Mem${Math.random() >= 0.5 ? 'o' : '0'}r${Math.random() >= 0.5 ? 'i' : '1'}es`
+    console.log(
+      `%c🌑︎ Welcome to ${futureMemories}! 🚀`,
+      'background:#070B13; color:#fff; display: block; padding:0.5em 1em; font-size:1em'
+    )
+  }
+
   handleRoute = () => {
     if (this.notOnFirstView) {
       this.setState({ firstView: false })

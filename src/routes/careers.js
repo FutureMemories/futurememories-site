@@ -14,7 +14,7 @@ export default class extends Component {
 
   onScroll = () => {
     if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
-      this.heroText.style = `top: -${(window.pageYOffset / 5).toFixed(1)}px`
+      this.heroText.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
     }
   }
 

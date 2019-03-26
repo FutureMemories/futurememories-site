@@ -10,14 +10,8 @@ import s from './home.sass'
 
 export default class extends Component {
   state = { preActivePillar: [], activePillar: [] }
+
   componentDidMount () {
-    const futureMemories = `Futur${Math.random() >= 0.5 ? 'e' : '3'} Mem${Math.random() >= 0.5 ? 'o' : '0'}r${Math.random() >= 0.5 ? 'i' : '1'}es`
-
-    console.log(
-      `%c🌑︎ Welcome to ${futureMemories}! 🚀`,
-      'background:#070B13; color:#fff; display: block; padding:0.5em 1em; font-size:1em'
-    )
-
     this.heroText.style = undefined
     this.thirdPlanet.base.style = undefined
     this.fourthPlanet.base.style = undefined
@@ -53,15 +47,15 @@ export default class extends Component {
     this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.4)
 
     if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
-      this.heroText.style = `top: -${(window.pageYOffset / 5).toFixed(1)}px`
+      this.heroText.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
     }
 
     // Parallax effect on 'What We Do' block
     if ((this.scrollPoint) > this.informationBlock.offsetTop && window.pageYOffset < (this.informationBlock.offsetTop + this.informationBlock.offsetHeight)) {
-      const planetScrollPoint = this.scrollPoint - this.informationBlock.offsetTop
-      const fourthPlanetPosition = 200 - (planetScrollPoint / 11).toFixed(1)
-      this.thirdPlanet.base.style = `top: ${(planetScrollPoint / 7).toFixed(1)}px`
-      this.fourthPlanet.base.style = `bottom:  ${fourthPlanetPosition < 0 ? '' : '-'}${Math.abs(fourthPlanetPosition)}px`
+      this.planetScrollPoint = this.scrollPoint - this.informationBlock.offsetTop
+      this.fourthPlanetPosition = (this.planetScrollPoint / 11).toFixed(1)
+      this.thirdPlanet.base.style.transform = `scale(1.56) translateY(${(this.planetScrollPoint / 7).toFixed(1)}px`
+      this.fourthPlanet.base.style.transform = `translateY(${this.fourthPlanetPosition < 0 ? '' : '-'}${Math.abs(this.fourthPlanetPosition)}px`
     }
   }
 
@@ -123,7 +117,7 @@ export default class extends Component {
                 </p>
               </div>
               <Moon size='medium' position='bottomLeft' background='red' customClass={s.moon} ref={(el) => { this.thirdPlanet = el }} />
-              <Moon size='normal' position='topRight' background='blue' customClass={s.moonSmall} ref={(el) => { this.fourthPlanet = el }} />
+              <Moon size='normal' position='topMiddle' background='blue' customClass={s.moonSmall} ref={(el) => { this.fourthPlanet = el }} />
             </div>
 
             <div class={s.work}>
