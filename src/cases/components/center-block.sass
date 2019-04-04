@@ -112,12 +112,18 @@
             margin-right: 1rem
 
   &.antistress
-   > .inner > .content > .block > p:before
-     background: linear-gradient(-90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,0) 100%)
-     content: ''
-     height: 16rem
-     left: -6rem
-     position: absolute
-     top: -2.5rem
-     width: calc(100% + 12rem)
-     z-index: -1
+    > .inner > .content > .block > p:before
+      background: linear-gradient(-90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,0) 100%)
+      content: ''
+      height: 16rem
+      left: -6rem
+      position: absolute
+      top: -2.5rem
+      width: calc(100% + 12rem)
+      z-index: -1
+
+  @media screen and (max-width: 1000px)
+    > .inner > .content > .block
+
+      > h1
+        font-size: 2.5rem

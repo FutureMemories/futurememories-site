@@ -14,6 +14,7 @@ import Paykartan from './cases/paykartan'
 import RettsPlus from './cases/retts-plus'
 import ProFlight from './cases/proflight'
 import AntiStress from './cases/antistress'
+import BauerUniversity from './cases/bauer-university'
 
 import './index.sass'
 
@@ -55,6 +56,7 @@ export default class extends Component {
           <RettsPlus path='/cases/retts-plus' />
           <ProFlight path='/cases/proflight' />
           <AntiStress path='/cases/antistress' />
+          <BauerUniversity path='/cases/bauer-university' />
 
           <NotFound default />
         </Router>
