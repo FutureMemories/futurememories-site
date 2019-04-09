@@ -62,7 +62,7 @@
           color: white
           font-size: 10rem
           font-weight: bold
-          line-height: 14rem
+          line-height: 13rem
           max-width: 80rem
           opacity: 1
           position: relative
@@ -143,6 +143,18 @@
         position: relative
         top: 2rem
         transform: translateX(-100%)
+        background: #A1112A
+
+        &:before
+          content: ''
+          background: #EC193E
+          display: block
+          position: absolute
+          top: 0
+          left: 0
+          height: 100%
+          width: 100%
+          z-index: -1
 
       > .projects
         display: grid
@@ -202,6 +214,10 @@
       > .work > .button
         left: 100%
 
+    @media screen and (max-width: 1000px)
+      > .welcome > h1
+        margin: auto
+
     @media screen and (max-width: 560px)
       > .information
         > .moon
@@ -218,7 +234,7 @@
 
           > p
             font-size: 4.5rem
-            line-height: 7rem
+            line-height: 6rem
 
       > .work > .button
         left: 100%
