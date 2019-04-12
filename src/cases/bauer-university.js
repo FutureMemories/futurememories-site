@@ -69,7 +69,7 @@ export default class extends Component {
             <CenterBlock
               inView='inViewBottom'
               background='#F5F5F5'
-              text={`Bauer University is the result of combining forces with our\ncreative friends over at The Bond Communication. 🖤`}
+              component={<p>{`Bauer University is the result of combining forces with our\ncreative friends over at `}<a href='https://thebond.se/' target='_blank'>The Bond Communication</a>. {`🖤`}</p>}
             />
 
             <ProjectsBlock current='bauer-university' background='#ffffff' />
