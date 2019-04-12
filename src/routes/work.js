@@ -47,7 +47,7 @@ export default class extends Component {
               <Moon position='topLeft' size='medium' background='blue' customClass={s.moon} style='opacity: 0.5;' />
               <div class={s.text}>
                 <h1>Howdy, partner!</h1>
-                <p>Say hi to some of our partners</p>
+                <p>Say hi to some of our friends</p>
               </div>
               <div class={s.content}>
                 {company.partners.map(partner => (

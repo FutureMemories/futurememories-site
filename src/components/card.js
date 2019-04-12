@@ -53,13 +53,14 @@ export default class extends Component {
     }, 200)
   }
 
-  render ({ customClass, customStyle, children, to, transition }, state) {
+  render ({ customClass, customStyle, children, to, transition, newTab }, state) {
     const CurrentTag = to ? 'a' : 'div'
 
     return (
       <CurrentTag
         class={cx(s.card, customClass, state.ease && s.ease, transition && s[transition])}
         href={to}
+        target={newTab && '_blank'}
         style={
           `transform:
           perspective(${state.perspective}rem)

@@ -440,22 +440,24 @@
       ]
     },
     {
-      "name": "Spira",
-      "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
-      "client": "Collector Bank, Varvet",
-      "type": "Android",
+      "name": "Nordish Market",
+      "image": "cases/nordish-market.png",
+      "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion throughout a working day. Perfect for breakfast meetings, team lunches or big events.",
+      "type": "REACT, PYTHON, DJANGO",
       "style": [
         {
-          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)",
-          "color": "#fff"
+          "background": "#FDC853",
+          "color": "#070B13"
+        },
+        {
+          "min-width": "32rem"
+        },
+        {
+          "height": "calc(100% + 40px)",
+          "margin-top": "-40px"
         }
       ],
-      "actions": [
-        {
-          "type": "android",
-          "url": "https://play.google.com/store/apps/details?id=se.collector.spira"
-        }
-      ]
+      "link": "https://www.nordishmarket.com/"
     },
     {
       "name": "WYA Network",
@@ -474,11 +476,74 @@
           "margin-top": "auto",
           "margin-left": "calc(100% - 43rem)"
         }
+      ]
+    },
+    {
+      "name": "Travelmate",
+      "image": "cases/travelmate.png",
+      "desc": "Mobile travel companion app which keeps all your trip details in one place when travelling within Stena Line’s ferry network.",
+      "type": "iOS, Android",
+      "style": [
+        {
+          "background": "#2765CB",
+          "color": "#FFFFFF"
+        },
+        {},
+        {
+          "height": "50%",
+          "margin-top": "auto",
+          "margin-left": "calc(100% - 43rem)"
+        }
+      ]
+    },
+    {
+      "name": "Spira",
+      "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
+      "client": "Collector Bank, Varvet",
+      "type": "Android",
+      "style": [
+        {
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)",
+          "color": "#fff"
+        }
       ],
       "actions": [
         {
-          "type": "video",
-          "url": "https://player.vimeo.com/video/113123599?autoplay=1"
+          "type": "android",
+          "url": "https://play.google.com/store/apps/details?id=se.collector.spira"
+        }
+      ]
+    },
+    {
+      "name": "PaperQuiz",
+      "image": "cases/paperquiz.png",
+      "desc": "A quiz about relativity. Each question is about sorting according to a parameter. Whoever comes closest to the right order wins.",
+      "type": "iOS, Android, Web",
+      "style": [
+        {
+          "background": "#E9E7DB",
+          "color": "#070B13"
+        },
+        {
+          "min-width": "28.7rem"
+        },
+        {
+          "height": "50%",
+          "margin-top": "auto",
+          "margin-left": "calc(100% - 43rem)"
+        }
+      ]
+    }
+  ],
+  "notUsedCases": [
+    {
+      "name": "Nelly.com App",
+      "desc": "A digital shopping experience for iOS with community features to share and discuss latest fashion trends.",
+      "type": "iOS",
+      "style": [
+        {
+          "background": "#FFD0DA",
+          "color": "#070B13"
         }
       ]
     }
