@@ -356,7 +356,7 @@
       "image": "cases/bauer-university.png",
       "desc": "Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
       "client": "Bauer, Bond Communications",
-      "type": "React, Python, Django",
+      "type": "React, Python, GraphQL",
       "style": [
         {
           "background": "linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
