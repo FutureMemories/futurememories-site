@@ -62,25 +62,24 @@
         top: 0
 
     @media screen and (max-width: $small-grid + 100px)
-      grid-gap: 2rem
-      padding-top: 25rem
+      display: flex
+      flex-direction: column
+      padding-top: 0
 
       > .block
+        position: relative
+        display: block
+        padding: 0 3rem
+
+        &.image
+          padding: 0
+
+          &:nth-child(1), &:nth-child(3)
+            display: none
+
+          &:nth-child(4)
+            order: 2
+            margin-top: 6rem
 
         &:nth-child(2)
-          display: block
-          max-height: 48rem
-          overflow: auto
-          padding: 0 3rem
-          position: absolute
-          top: 4rem
-
-        &:nth-child(3)
-          grid-row: span 2
-          top: 25vw
-
-    @media screen and (max-width: 420px)
-      padding-top: 35rem
-
-    @media screen and (max-width: 350px)
-      padding-top: 41rem
+          order: 1
