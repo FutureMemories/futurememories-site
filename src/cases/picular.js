@@ -114,7 +114,9 @@ export default class extends Component {
               background='#F2F5F6'
             />
 
-            <ProjectsBlock current='picular' />
+            <ProjectsBlock
+              current='picular'
+            />
 
           </div>
         </div>

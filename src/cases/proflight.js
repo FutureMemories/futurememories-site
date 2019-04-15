@@ -65,7 +65,10 @@ export default class extends Component {
               background='#1A2132'
             />
 
-            <ProjectsBlock current='proflight' background='#161D2B' />
+            <ProjectsBlock
+              current='proflight'
+              background='#161D2B'
+            />
 
           </div>
         </div>

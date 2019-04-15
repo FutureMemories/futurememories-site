@@ -72,7 +72,10 @@ export default class extends Component {
               component={<p>{`Bauer University is the result of combining forces with our\ncreative friends over at `}<a href='https://thebond.se/' target='_blank'>The Bond Communication</a>. {`🖤`}</p>}
             />
 
-            <ProjectsBlock current='bauer-university' background='#ffffff' />
+            <ProjectsBlock
+              current='bauer-university'
+              background='#ffffff'
+            />
 
           </div>
         </div>

@@ -84,7 +84,9 @@ export default class extends Component {
               background='#FFD2D2'
             />
 
-            <ProjectsBlock current='paykartan' />
+            <ProjectsBlock
+              current='paykartan'
+            />
 
           </div>
         </div>

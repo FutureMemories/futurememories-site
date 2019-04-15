@@ -95,7 +95,9 @@ export default class extends Component {
 
             <LargeImage src='cases/mat-se-4.jpg' alt='Mat.se phone mockups' />
 
-            <ProjectsBlock current='mat-se' />
+            <ProjectsBlock
+              current='mat-se'
+            />
 
           </div>
         </div>

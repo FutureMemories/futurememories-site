@@ -39,7 +39,7 @@ export default class extends Component {
                 <h1>What we’ve been up to</h1>
                 <p>Some of the most noticeable digital productions we have accomplished together so far.</p>
               </div>
-              <ProjectsBlock projects={allCases} />
+              <ProjectsBlock allProjects={allCases} />
             </div>
 
             <div class={s.partners}>

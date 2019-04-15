@@ -107,7 +107,11 @@ export default class extends Component {
               color='#fff'
             />
 
-            <ProjectsBlock background='#0C0F16' current='tennis-watch' />
+            <ProjectsBlock
+              background='#0C0F16'
+              current='tennis-watch'
+              similar={['proflight', 'antistress', 'retts-plus']}
+            />
 
           </div>
         </div>

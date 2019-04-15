@@ -93,7 +93,9 @@ export default class extends Component {
               color='#ffffff'
             />
 
-            <ProjectsBlock current='antistress' />
+            <ProjectsBlock
+              current='antistress'
+            />
 
           </div>
         </div>

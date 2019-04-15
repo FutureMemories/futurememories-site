@@ -71,152 +71,11 @@
       "subject": "Future Memories - Web Developer"
     }
   ],
-  "frontCases": [
-    {
-      "name": "Picular",
-      "desc": "A rocket fast primary color generator using Google's image search.",
-      "type": "UX/UI, WEB",
-      "image": "cases/picular.jpg",
-      "style": [
-        {
-          "background": "#F2F5F6",
-          "color": "#070B13"
-        },
-        {
-          "min-width": "21rem",
-          "max-width": "25rem"
-        },
-        {
-          "margin-left": "-80px"
-        }
-      ],
-      "showcase": "picular"
-    },
-    {
-      "name": "Mat.se",
-      "image": "cases/mat-se.png",
-      "imageBg": [
-        "cases/mat-se-bg.jpg",
-        "width"
-      ],
-      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
-      "client": "Mat.se",
-      "type": "UX/UI, JAVA, SPRING, iOS",
-      "style": [
-        {
-          "background": "#993600",
-          "color": "#FFFFFF"
-        },
-        {
-          "min-width": "20rem"
-        }
-      ],
-      "imageStyle": {
-        "left": "0"
-      },
-      "showcase": "mat-se"
-    },
-    {
-      "name": "AntiStress",
-      "image": "cases/antistress.png",
-      "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
-      "client": "Västra Götalandsregionen",
-      "type": "UX/UI, iOS, Android",
-      "style": [
-        {
-          "background": "linear-gradient(-241deg, #90C8DD 14%, #95B2C7 90%)",
-          "color": "#fff"
-        },
-        {
-          "min-width": "24.4rem"
-        },
-        {
-          "right": "14rem"
-        }
-      ],
-      "showcase": "antistress"
-    }
-  ],
-  "browseCases": [
-    {
-      "name": "Picular",
-      "desc": "A rocket fast primary color generator using Google's image search.",
-      "type": "UX/UI, WEB",
-      "image": "cases/picular.jpg",
-      "style": [
-        {
-          "background": "#F2F5F6",
-          "color": "#070B13"
-        },
-        {
-          "min-width": "21rem",
-          "max-width": "25rem"
-        },
-        {
-          "margin-left": "-80px"
-        }
-      ],
-      "showcase": "picular"
-    },
-    {
-      "name": "Paykartan",
-      "image": "cases/paykartan.png",
-      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "type": "UX/UI, Web",
-      "style": [
-        {
-          "background": "#FFD2D2",
-          "color": "#070B13"
-        },
-        {
-          "min-width": "21.2rem"
-        }
-      ],
-      "showcase": "paykartan"
-    },
-    {
-      "name": "Tennis Watch",
-      "image": "cases/tennis-watch.png",
-      "imageBg": [
-        "cases/tennis-watch-bg.jpg",
-        "height"
-      ],
-      "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
-      "type": "UX/UI, iOS, watchOS",
-      "style": [
-        {
-          "background": "#2D2D2D",
-          "color": "#fff"
-        },
-        {
-          "min-width": "22.4rem"
-        },
-        {
-          "bottom": "2rem"
-        }
-      ],
-      "showcase": "tennis-watch"
-    },
-    {
-      "name": "proFLIGHT",
-      "image": "cases/proflight.png",
-      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "client": "Avtech, Invencon",
-      "type": "iOS, UX/UI",
-      "style": [
-        {
-          "background": "#3E4C65",
-          "color": "#fff"
-        },
-        {
-          "min-width": "19.5rem"
-        }
-      ],
-      "showcase": "proflight"
-    }
-  ],
+  "frontCases": ["picular", "mat-se", "antistress"],
+  "defaultOtherCases": ["picular", "paykartan", "tennis-watch", "proflight"],
   "allCases": [
     {
+      "id": "picular",
       "name": "Picular",
       "desc": "A rocket fast primary color generator using Google's image search.",
       "type": "UX/UI, WEB",
@@ -234,9 +93,10 @@
           "margin-left": "-80px"
         }
       ],
-      "showcase": "picular"
+      "showcase": true
     },
     {
+      "id": "mat-se",
       "name": "Mat.se",
       "image": "cases/mat-se.png",
       "imageBg": [
@@ -258,9 +118,10 @@
       "imageStyle": {
         "left": "0"
       },
-      "showcase": "mat-se"
+      "showcase": true
     },
     {
+      "id": "antistress",
       "name": "AntiStress",
       "image": "cases/antistress.png",
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
@@ -278,9 +139,10 @@
           "right": "14rem"
         }
       ],
-      "showcase": "antistress"
+      "showcase": true
     },
     {
+      "id": "proflight",
       "name": "proFLIGHT",
       "image": "cases/proflight.png",
       "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
@@ -295,9 +157,10 @@
           "min-width": "19.5rem"
         }
       ],
-      "showcase": "proflight"
+      "showcase": true
     },
     {
+      "id": "tennis-watch",
       "name": "Tennis Watch",
       "image": "cases/tennis-watch.png",
       "imageBg": [
@@ -318,15 +181,17 @@
           "bottom": "2rem"
         }
       ],
-      "showcase": "tennis-watch"
+      "showcase": true
     },
     {
+      "id": "job-apply",
       "button": true,
       "type": "mailto",
       "label": "Create something awesome with us!",
       "to": "hello@futurememories.se"
     },
     {
+      "id": "sleep-cycle-dashboard",
       "name": "Sleep Cycle Dashboard",
       "imageBg": [
         "cases/sleep-cycle-dashboard-bg.jpg",
@@ -352,6 +217,7 @@
       ]
     },
     {
+      "id": "bauer-university",
       "name": "Bauer University",
       "image": "cases/bauer-university.png",
       "desc": "Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
@@ -372,9 +238,10 @@
           "url": "https://www.baueruniversity.com/"
         }
       ],
-      "showcase": "bauer-university"
+      "showcase": true
     },
     {
+      "id": "retts-plus",
       "name": "Retts Plus",
       "image": "cases/retts-plus.png",
       "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
@@ -392,9 +259,10 @@
           "margin-left": "-10px"
         }
       ],
-      "showcase": "retts-plus"
+      "showcase": true
     },
     {
+      "id": "paykartan",
       "name": "Paykartan",
       "image": "cases/paykartan.png",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
@@ -408,9 +276,10 @@
           "min-width": "21.2rem"
         }
       ],
-      "showcase": "paykartan"
+      "showcase": true
     },
     {
+      "id": "forces-of-freedom",
       "name": "Forces of Freedom",
       "imageBg": [
         "cases/forces-of-freedom-bg.jpg",
@@ -440,6 +309,7 @@
       ]
     },
     {
+      "id": "nordish-market",
       "name": "Nordish Market",
       "image": "cases/nordish-market.png",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion throughout a working day. Perfect for breakfast meetings, team lunches or big events.",
@@ -460,6 +330,7 @@
       "link": "https://www.nordishmarket.com/"
     },
     {
+      "id": "wya-network",
       "name": "WYA Network",
       "image": "cases/wya-network.png",
       "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
@@ -479,6 +350,7 @@
       ]
     },
     {
+      "id": "travelmate",
       "name": "Travelmate",
       "image": "cases/travelmate.png",
       "desc": "Mobile travel companion app which keeps all your trip details in one place when travelling within Stena Line’s ferry network.",
@@ -497,6 +369,7 @@
       ]
     },
     {
+      "id": "spira",
       "name": "Spira",
       "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
       "client": "Collector Bank, Varvet",
@@ -515,6 +388,7 @@
       ]
     },
     {
+      "id": "paperquiz",
       "name": "PaperQuiz",
       "image": "cases/paperquiz.png",
       "desc": "A quiz about relativity. Each question is about sorting according to a parameter. Whoever comes closest to the right order wins.",
@@ -537,6 +411,7 @@
   ],
   "notUsedCases": [
     {
+      "id": "nelly-app",
       "name": "Nelly.com App",
       "desc": "A digital shopping experience for iOS with community features to share and discuss latest fashion trends.",
       "type": "iOS",

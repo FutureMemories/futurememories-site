@@ -126,7 +126,7 @@ export default class extends Component {
                 <h1>Some of our work</h1>
                 <p>Forward-thinking digital products that makes life easier and brings value to clients and consumers.</p>
               </div>
-              <ProjectsBlock projects={frontCases} limit={3} />
+              <ProjectsBlock projects={frontCases} />
               <Button customClass={s.button} to='/work' label='See more projects' arrow transition='slide' />
             </div>
 
