@@ -88,6 +88,7 @@ export default class extends Component {
 
             <ProjectsBlock
               current='retts-plus'
+              similar={['proflight', 'antistress', 'tennis-watch']}
               background='#070B13'
             />
 
