@@ -220,7 +220,7 @@
       "id": "bauer-university",
       "name": "Bauer University",
       "image": "cases/bauer-university.png",
-      "desc": "Gamification-based online training platform. Turns worldwide Bauer retailers into Bauer hockey gear experts.",
+      "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
       "client": "Bauer, Bond Communications",
       "type": "React, Python, GraphQL",
       "style": [
