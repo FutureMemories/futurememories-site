@@ -87,6 +87,9 @@
       grid-column: span 6
       height: 40rem
 
+      &.hide
+        display: none
+
     &:nth-child(4), &:nth-child(5), &:nth-child(6),
     &:nth-child(9), &:nth-child(10), &:nth-child(11),
     &:nth-child(14), &:nth-child(15), &:nth-child(16),
@@ -114,3 +117,11 @@
 
       > .details
         margin-right: 1rem
+
+  // special rules for cases
+  \:global(#nordish-market)
+    @media screen and (max-width: 875px)
+      padding-right: 1rem
+      > div:nth-child(2)
+        min-width: 100% !important
+        padding-right: 0

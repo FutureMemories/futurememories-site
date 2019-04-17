@@ -5,7 +5,7 @@ import cx from 'classnames'
 import { allCases } from '../data.json'
 import s from './projects-block.sass'
 
-export default ({ allProjects, projects, customClass, limit, currentBrowseCase }) => {
+export default ({ allProjects, projects, page, customClass, limit, currentBrowseCase }) => {
   const projectsArray = []
 
   if (!allProjects) {
@@ -22,6 +22,9 @@ export default ({ allProjects, projects, customClass, limit, currentBrowseCase }
   return (
     <div class={cx(s.projects, customClass && customClass, currentBrowseCase && s.browseCase)}>
 
+      {page === 'front' && (
+        <div class={cx(s.project, s.hide)} />
+      )}
       {
         projectsData.map((project, i) => {
           let style = ''
@@ -60,7 +63,7 @@ export default ({ allProjects, projects, customClass, limit, currentBrowseCase }
                 />
               </div>
             ) : (
-              <Card transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={project.link && true}>
+              <Card id={project.id} transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={project.link && true}>
                 <div
                   class={cx(
                     s.slideArrow,

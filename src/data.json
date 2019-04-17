@@ -71,7 +71,7 @@
       "subject": "Future Memories - Web Developer"
     }
   ],
-  "frontCases": ["picular", "mat-se", "antistress"],
+  "frontCases": ["bauer-university", "mat-se", "proflight", "picular", "sleep-cycle-dashboard"],
   "defaultOtherCases": ["picular", "paykartan", "tennis-watch", "proflight"],
   "allCases": [
     {
@@ -80,7 +80,7 @@
       "image": "cases/bauer-university.png",
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
       "client": "Bauer, Bond Communications",
-      "type": "React, Python, GraphQL",
+      "type": "React, Python, GraphQL, UX",
       "style": [
         {
           "background": "linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
@@ -222,7 +222,7 @@
           "color": "#070B13"
         },
         {
-          "min-width": "32rem"
+          "min-width": "34.4rem"
         },
         {
           "height": "calc(100% + 40px)",
@@ -443,9 +443,9 @@
     },
     {
       "button": true,
-      "type": "mailto",
+      "type": "link",
       "label": "Come and work with us!",
-      "to": "hello@futurememories.se"
+      "to": "/careers"
     },
     {
       "name": "Oskar Jönsson",
