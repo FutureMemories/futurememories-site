@@ -180,7 +180,8 @@
         {
           "max-width": "20rem"
         }
-      ]
+      ],
+      "link": "https://www.sleepcycle.com/"
     },
     {
       "id": "job-apply",
@@ -312,7 +313,8 @@
           "margin-top": "auto",
           "margin-left": "calc(100% - 43rem)"
         }
-      ]
+      ],
+      "appLink": "https://itunes.apple.com/se/app/paper-quiz-klurig-fr%C3%A5gesport/id1447129683"
     },
     {
       "id": "forces-of-freedom",
@@ -351,7 +353,8 @@
           "margin-top": "auto",
           "margin-left": "calc(100% - 43rem)"
         }
-      ]
+      ],
+      "appLink": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
     },
     {
       "id": "spira",

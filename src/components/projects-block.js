@@ -51,7 +51,7 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
             }
           }
 
-          const linkTo = project.showcase ? `/cases/${project.id}` : project.link && project.link
+          const linkTo = project.showcase ? `/cases/${project.id}` : (project.link || project.appLink) && (project.link || project.appLink)
 
           return (
             project.button ? (
@@ -63,7 +63,7 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
                 />
               </div>
             ) : (
-              <Card id={project.id} transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={project.link && true}>
+              <Card id={project.id} transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={(project.link || project.appLink) && true}>
                 <div
                   class={cx(
                     s.slideArrow,
@@ -86,6 +86,13 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
                     <div class='slideArrow'>
                       <Icon id='arrow' class={cx(s.arrow, s.first)} />
                       <span>Visit Site</span>
+                      <Icon id='arrow' class={cx(s.arrow, s.second)} />
+                    </div>
+                  )}
+                  {!project.showcase && project.appLink && (
+                    <div class='slideArrow'>
+                      <Icon id='arrow' class={cx(s.arrow, s.first)} />
+                      <span>Get App</span>
                       <Icon id='arrow' class={cx(s.arrow, s.second)} />
                     </div>
                   )}

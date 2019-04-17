@@ -44,7 +44,7 @@ export default class extends Component {
             <CenterBlock
               inView='inViewBottom'
               title={`Taking sales from Rookie to Pro`}
-              text='Bauer University is a global learning platform for retailers. It educates sales personel about Bauer’s assortment and teaches how to help customers finding the right hockey gear for their specific needs.'
+              text='Bauer University is a global learning platform for retailers. It educates sales personnel in Bauer’s product range and how they can help customers find the right hockey gear for their specific needs.'
             />
 
             <TextGridBlock
