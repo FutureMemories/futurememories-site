@@ -367,7 +367,8 @@
           "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)",
           "color": "#fff"
         }
-      ]
+      ],
+      "appLink": "https://play.google.com/store/apps/details?id=se.collector.spira&hl=en"
     },
     {
       "id": "wya-network",
