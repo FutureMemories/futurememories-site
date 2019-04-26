@@ -27,7 +27,7 @@ export default class extends Component {
     }
 
     // randomize glitch effect + pauses
-    const foundationPillars = ['strategy', 'design', 'develop', '', '', '']
+    const foundationPillars = ['strategy', 'design', 'develop']
     this.randomizer = setInterval(() => {
       const randomPillar = foundationPillars[Math.floor(Math.random() * foundationPillars.length)]
       this.setState({
