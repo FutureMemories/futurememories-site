@@ -29,7 +29,12 @@ export default class extends Component {
           <div class={s.inner}>
 
             <div class={s.heroText} >
-              <Moon position='bottomRight' size='large' background='blue' customClass={s.moon} />
+              <Moon
+                position='bottomRight'
+                size='large'
+                background='blue'
+                customClass={s.moon}
+              />
               <h1 ref={(el) => { this.heroText = el }}>
                 Remember what you did tomorrow?{`\n`}<span>Join</span> our space now
               </h1>

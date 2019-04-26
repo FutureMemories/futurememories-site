@@ -9,11 +9,13 @@ export default class extends Component {
   componentDidMount () {
     window.addEventListener('scroll', this.onScroll)
     this.heroText.style = undefined
+    this.teamPlanetXL.base.style = undefined
   }
 
   onScroll = () => {
-    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
+    if (window.pageYOffset < (this.heroText.offsetTop + (this.heroText.offsetHeight + 500))) {
       this.heroText.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
+      this.teamPlanetXL.base.style.transform = `scale(2.7) translateY(${(window.pageYOffset / 25).toFixed(1)}px`
     }
   }
 
@@ -28,8 +30,19 @@ export default class extends Component {
           <div class={s.inner}>
 
             <div class={s.text} >
-              <Moon position='topRight' size='big' background='blue' customClass={s.moonDesktop} />
-              <Moon size='normal' position='topRight' background='blue' customClass={s.moonMobile} />
+              <Moon
+                position='topRight'
+                size='big'
+                background='blue'
+                customClass={s.moonDesktop}
+                ref={(el) => { this.teamPlanetXL = el }}
+              />
+              <Moon
+                size='normal'
+                position='topRight'
+                background='blue'
+                customClass={s.moonMobile}
+              />
               <h1 ref={(el) => { this.heroText = el }}>
                 <span>We are</span> designers, developers, creators and inventors with different backgrounds and expertise merged into a company called Future Memories.
               </h1>

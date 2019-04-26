@@ -61,6 +61,7 @@ export default class extends Component {
         id={id}
         class={cx(s.card, customClass, state.ease && s.ease, transition && s[transition])}
         href={to}
+        rel={to && 'noopener'}
         target={newTab && '_blank'}
         style={
           `transform:
