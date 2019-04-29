@@ -1,4 +1,5 @@
 import { Component } from 'preact'
+import cx from 'classnames'
 import Button from './button'
 import Card from './card'
 import s from './team-block.sass'
@@ -9,7 +10,7 @@ export default class extends Component {
       <div class={s.astronauts}>
         {astronauts.map((astronaut, i) => (
           astronaut.button ? (
-            <div class={s.astronaut}>
+            <div class={cx(s.astronaut, s.button)}>
               <Button
                 to={astronaut.type === 'mailto' ? `mailto:${astronaut.to}` : astronaut.to}
                 label={astronaut.label}

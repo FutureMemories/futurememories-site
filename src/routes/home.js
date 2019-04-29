@@ -9,7 +9,7 @@ import { frontCases } from '../data.json'
 import s from './home.sass'
 
 export default class extends Component {
-  state = { preActivePillar: [], activePillar: [] }
+  state = { preActivePillar: '', activePillar: 'develop' }
 
   componentDidMount () {
     this.heroText.style = undefined
@@ -32,13 +32,14 @@ export default class extends Component {
     this.randomizer = setInterval(() => {
       const randomPillar = foundationPillars[Math.floor(Math.random() * foundationPillars.length)]
       this.setState({
-        preActivePillar: this.state.activePillar,
+        // preActivePillar: this.state.activePillar,
         activePillar: randomPillar
       })
+
       // Remove old pillar after x milliseconds
-      setTimeout(() => {
-        this.setState({ preActivePillar: [] })
-      }, Math.floor(Math.random() * 1000))
+      // setTimeout(() => {
+      //   this.setState({ preActivePillar: [] })
+      // }, Math.floor(Math.random() * 1000))
     }, Math.floor(Math.random() * 1000) + 1000)
 
     window.addEventListener('scroll', this.onScroll)

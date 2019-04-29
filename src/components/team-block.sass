@@ -22,6 +22,9 @@
         > h3
           transform: translateY(-100%)
 
+    &.button
+      height: auto
+
     > .inner
       padding: 0 3rem 3rem 3rem
 
@@ -117,6 +120,12 @@
 
       &:nth-child(2), &:nth-child(4), &:nth-child(5)
         grid-row: span 17
+
+  @media screen and (min-width: 501px)
+    > .astronaut
+      &.button
+        > a
+          height: 100%
 
   @media screen and (max-width: 500px)
     display: block
