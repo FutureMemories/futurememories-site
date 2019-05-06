@@ -22,8 +22,9 @@
     "eslint": "^5.16.0",
     "eslint-config-synacor": "^3.0.3",
     "if-env": "^1.0.4",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "preact-cli": "^2.2.1",
+    "preact-cli-workbox-plugin": "^1.1.1",
     "sass-loader": "^7.1.0",
     "sine-waves": "^0.3.0"
   },

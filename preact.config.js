@@ -1,4 +1,5 @@
 import CopyWebpackPlugin from 'copy-webpack-plugin'
+const { generateSw } = require('preact-cli-workbox-plugin')
 const path = require('path')
 
 /**
@@ -30,8 +31,5 @@ export default function (config, env, helpers) {
   // Always use file-loader instead of url-loader
   config.module.loaders[8].loader = 'file-loader'
 
-  const sw = config.plugins.find(p => p.constructor.name === 'SWPrecacheWebpackPlugin')
-  if (sw) {
-    sw.options.staticFileGlobsIgnorePatterns.push(/_redirects/)
-  }
+  generateSw(config, helpers, {})
 }
