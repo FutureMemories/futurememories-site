@@ -75,7 +75,7 @@ export default class extends Component {
 
   render ({ firstView }, { lightLeft, lightTop, activePillar, preActivePillar }) {
     return (
-      <Base firstView={firstView}>
+      <Base firstView={firstView} route='/'>
         <div class={s.view}>
           <div class={s.inner}>
 

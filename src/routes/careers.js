@@ -24,7 +24,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Careers'>
+      <Base title='Careers' route='/careers'>
         <div class={s.view}>
           <div class={s.inner}>
 

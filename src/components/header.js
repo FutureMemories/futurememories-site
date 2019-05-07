@@ -4,12 +4,24 @@ import Icon from './icon'
 import s from './header.sass'
 
 export default class extends Component {
-  handleOpener = (ev) => {
+  componentWillMount () {
+    window.addEventListener('keydown', this.onKey)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('keydown', this.onKey)
+  }
+
+  onKey = (e) => {
+    if (e.keyCode === 27 && this.state.open) { this.handleOpener() }
+  }
+
+  handleOpener = () => {
     this.props.handleLocked()
     this.setState({ open: !this.state.open })
   }
 
-  render ({ dark, links, fadeIn }, { open, disableClick }) {
+  render ({ dark, links, fadeIn, route }, { open, disableClick }) {
     return (
       <header class={cx(s.header, dark && s.dark, fadeIn && s.fadeIn)}>
         <div class={s.inner}>
@@ -28,7 +40,12 @@ export default class extends Component {
             >
               {links.map(link => (
                 <li>
-                  <a href={link.to}>{link.label}</a>
+                  <a
+                    class={route === link.to && s.active}
+                    href={link.to}
+                  >
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -35,7 +35,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Our work'>
+      <Base title='Our work' route='/work'>
         <div class={s.view}>
           <div class={s.inner}>
 
