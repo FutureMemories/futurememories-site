@@ -4,7 +4,7 @@ import Icon from './icon'
 import s from './header.sass'
 
 export default class extends Component {
-  componentWillMount () {
+  componentDidMount () {
     window.addEventListener('keydown', this.onKey)
   }
 
