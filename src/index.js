@@ -18,11 +18,6 @@ import BauerUniversity from './cases/bauer-university'
 
 import './index.sass'
 
-const ExternalRedirect = ({ link }) => {
-  window.location = link
-  return <h2 style='position: absolute; top: 50%; width: 100%; text-align: center;'>Redirecting...</h2>
-}
-
 export default class extends Component {
   state = { firstView: true }
 
@@ -63,9 +58,7 @@ export default class extends Component {
           <AntiStress path='/cases/antistress' />
           <BauerUniversity path='/cases/bauer-university' />
 
-          <ExternalRedirect path='wwdc' link='https://www.meetup.com/cocoaheads-goteborg/events/261226390/' />
-
-          <NotFound default />
+          <NotFound type='404' default />
         </Router>
       </div>
     )
