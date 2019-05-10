@@ -64,11 +64,11 @@ export default class extends Component {
         rel={to && 'noopener'}
         target={newTab && '_blank'}
         style={
-          `transform:
-          perspective(${state.perspective}rem)
-          translateZ(${state.translateZ}rem)
-          rotateX(${state.rotateX}deg)
-          rotateY(${state.rotateY}deg);${customStyle ? ' ' + customStyle : ''}`
+          `transform:`
+          + ` perspective(${state.perspective}rem)`
+          + ` translateZ(${state.translateZ}rem)`
+          + ` rotateX(${state.rotateX}deg)`
+          + ` rotateY(${state.rotateY}deg);${customStyle ? ' ' + customStyle : ''}`
         }
         onMouseMove={this.mouseOver}
         onMouseLeave={this.mouseOut}
