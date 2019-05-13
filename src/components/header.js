@@ -13,15 +13,15 @@ export default class extends Component {
   }
 
   onKey = (e) => {
-    if (e.keyCode === 27 && this.state.open) { this.handleOpener() }
+    if (e.keyCode === 27 && this.navCheck.checked) { this.closeMenu() }
   }
 
-  handleOpener = () => {
+  closeMenu = () => {
     this.props.handleLocked()
-    this.setState({ open: !this.state.open })
+    this.navCheck.checked = false
   }
 
-  render ({ dark, links, fadeIn, route }, { open, disableClick }) {
+  render ({ dark, links, fadeIn, route }, { disableClick }) {
     return (
       <header class={cx(s.header, dark && s.dark, fadeIn && s.fadeIn)}>
         <div class={s.inner}>
@@ -30,9 +30,10 @@ export default class extends Component {
             <Icon id='logo' />
           </a>
 
-          <button aria-label='Navigation Menu' class={cx(s.navMenu, open && s.open)} onClick={!disableClick && this.handleOpener} />
+          <input class={s.navCheck} id='nav-check' type='checkbox' ref={(el) => { this.navCheck = el }} />
+          <label onClick={this.props.handleLocked} aria-label='Navigation Menu' for='nav-check' class={s.navMenu} />
 
-          <div onClick={!disableClick && this.handleOpener} class={cx(s.menuBlock, open && s.open)}>
+          <div onClick={!disableClick && this.closeMenu} class={s.menuBlock}>
             <ul
               class={s.menu}
               onMouseEnter={() => this.setState({ disableClick: true })}
@@ -42,6 +43,7 @@ export default class extends Component {
                 <li>
                   <a
                     class={route === link.to && s.active}
+                    onClick={this.closeMenu}
                     href={link.to}
                   >
                     {link.label}

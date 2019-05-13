@@ -162,18 +162,6 @@
                 transform: none
                 visibility: visible
 
-      &.open
-        opacity: 1
-        visibility: visible
-
-        > .menu
-          opacity: 1
-          visibility: visible
-
-          > li
-            opacity: 1
-            transform: none
-
   &.dark
     background: white
 
@@ -187,3 +175,28 @@
 
       > .menuBlock
         background: rgba(#F4F4F4, 0.97)
+
+  .navCheck
+    display: none
+
+    &:checked
+
+      ~ .navMenu
+
+        &:before
+          transform: translateY(-.11rem) rotate(45deg)
+
+        &:after
+          transform: translateY(-.1rem) rotate(-45deg)
+
+      ~ .menuBlock
+        opacity: 1
+        visibility: visible
+
+        > .menu
+          opacity: 1
+          visibility: visible
+
+          > li
+            opacity: 1
+            transform: none
