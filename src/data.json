@@ -502,6 +502,13 @@
       "title": "Web Developer",
       "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
       "email": "mattias@futurememories.se"
+    },
+    {
+      "name": "Donovan Söderlund",
+      "image": "team/donovan-soderlund.jpg",
+      "title": "Senior Mobile Developer",
+      "desc": "Senior Mobile Developer and a true software craftsman. iOS is his platform of choice.",
+      "email": "donovan@fututememories.se"
     }
   ]
 }
