@@ -19,7 +19,9 @@ import BauerUniversity from './cases/bauer-university'
 import './index.sass'
 
 export default class extends Component {
-  state = { firstView: true }
+  state = {
+    firstView: true
+  }
 
   componentDidMount () {
     const futureMemories = `Futur${Math.random() >= 0.5 ? 'e' : '3'} Mem${Math.random() >= 0.5 ? 'o' : '0'}r${Math.random() >= 0.5 ? 'i' : '1'}es`
