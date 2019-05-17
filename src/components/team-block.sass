@@ -65,6 +65,9 @@
       min-height: 100%
       opacity: 1
 
+      &[alt='Anders Olausson'], &[alt='Donovan Söderlund'], &[alt='Viktor Hesselbom']
+        height: 45rem
+
     &:after
       content: ''
       height: 100%
@@ -98,6 +101,9 @@
       &:nth-child(8)
         grid-column: 3
         grid-row: 40 / span 23
+
+      &:nth-child(14)
+        grid-row: span 23
 
   @media screen and (max-width: 1040px)
     grid-template-columns: repeat(2, 1fr)
