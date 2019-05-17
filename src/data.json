@@ -411,7 +411,7 @@
       "image": "team/andreas-kaltenbach.jpg",
       "title": "Co-founder and COO",
       "desc": "Co-founder and COO. Full-stack developer and tech lead with over 12 years of experience.",
-      "phoneOld": "+46 (0)735 201950",
+      "phone": "+46 (0)735 201950",
       "email": "andreas@futurememories.se"
     },
     {
@@ -419,7 +419,7 @@
       "image": "team/mikael-hellqvist.jpg",
       "title": "Partner and CTO",
       "desc": "Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
-      "phoneOld": "+46 (0)723 411322",
+      "phone": "+46 (0)723 411322",
       "email": "mikael@futurememories.se"
     },
     {
