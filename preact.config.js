@@ -31,5 +31,8 @@ export default function (config, env, helpers) {
   // Always use file-loader instead of url-loader
   config.module.loaders[8].loader = 'file-loader'
 
-  generateSw(config, helpers, {})
+  generateSw(config, helpers, {
+    skipWaiting: true,
+    clientsClaim: true
+  })
 }
