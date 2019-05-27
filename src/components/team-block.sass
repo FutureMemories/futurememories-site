@@ -12,21 +12,12 @@
     display: flex
     align-items: flex-end
 
-    &:not(:hover)
-      > .inner
-        transform: translateY(100%)
-
-        > .desc
-          opacity: 0
-
-        > h3
-          transform: translateY(-100%)
-
     &.button
       height: auto
 
     > .inner
       padding: 0 3rem 3rem 3rem
+      transform: translateY(100%)
 
       &, > h3, > .desc
         transition: transform 0.3s ease, opacity 0.3s ease
@@ -35,9 +26,11 @@
         font-size: 4rem
         padding-bottom: 2rem
         text-transform: uppercase
+        transform: translateY(-100%)
 
       > .desc
         font-size: 1.5rem
+        opacity: 0
 
         > p:not(:last-child)
           margin-bottom: 2rem
@@ -54,6 +47,16 @@
         > .email, > .phone
           color: #fff
           display: block
+
+    &:hover, &:focus-within
+      > .inner
+        transform: none
+
+        > h3
+          transform: none
+
+        > .desc
+          opacity: 1
 
     > img
       position: absolute
