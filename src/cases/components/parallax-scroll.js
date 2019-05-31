@@ -32,7 +32,7 @@ export default class extends Component {
         ref={(el) => { this.parallax = el }}
       >
         <img class={s.parallaxFrame} alt={`${frame} frame`} src={require(`../../images/frame-${frame}.png`)} />
-        <div class={s.parallaxContent} style={`transform: translateY(-2px)`}>
+        <div class={s.parallaxContent} style={{ transform: 'translateY(-2px)' }}>
           <img alt='mockup content' class={s.parallaxBackground} src={require(`../../images/${background}`)} />
         </div>
       </div>

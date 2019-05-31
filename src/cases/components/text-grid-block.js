@@ -2,7 +2,10 @@ import cx from 'classnames'
 import s from './text-grid-block.sass'
 
 export default ({ blocks, background, color }) => (
-  <div class={s.textGridBlock} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
+  <div
+    class={s.textGridBlock}
+    style={{ background, color }}
+  >
     <div class={s.inner} />
     <div class={s.blocks}>
       {blocks.map(block => (

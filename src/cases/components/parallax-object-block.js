@@ -3,7 +3,10 @@ import s from './parallax-object-block.sass'
 import ParallaxObject from './parallax-object'
 
 export default ({ items, background, diagonal }) => (
-  <div class={cx(s.parallaxObjectBlock, diagonal && s.diagonal)} style={background && `background: ${background};`}>
+  <div
+    class={cx(s.parallaxObjectBlock, diagonal && s.diagonal)}
+    style={{ background }}
+  >
     <div class={s.inner}>
       <div class={s.content}>
         {items.map(item => (

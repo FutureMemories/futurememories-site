@@ -2,7 +2,10 @@ import cx from 'classnames'
 import s from './three-block.sass'
 
 export default ({ blocks, background, color, inView }) => (
-  <div class={s.threeBlock} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
+  <div
+    class={s.threeBlock}
+    style={{ background, color }}
+  >
     <div class={cx(s.inner, inView)}>
       <div class={s.blocks}>
         {blocks.map(block => (

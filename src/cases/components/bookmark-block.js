@@ -2,7 +2,10 @@ import cx from 'classnames'
 import s from './bookmark-block.sass'
 
 export default ({ title, text, items, image, alt = 'image', background, color, align, modifier, children, inView }) => (
-  <div class={cx(s.bookmarkBlock, modifier && s[modifier])} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
+  <div
+    class={cx(s.bookmarkBlock, modifier && s[modifier])}
+    style={{ background, color }}
+  >
     <div class={cx(s.inner, align === 'left' && s.right)}>
       {children}
       {image && (<img alt={alt} src={require(`../../images/${image}`)} />)}

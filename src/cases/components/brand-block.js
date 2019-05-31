@@ -2,7 +2,10 @@ import cx from 'classnames'
 import s from './brand-block.sass'
 
 export default ({ showcase, background, inView }) => (
-  <div class={s.brandBlock} style={background && `background: ${background};`}>
+  <div
+    class={s.brandBlock}
+    style={{ background }}
+  >
 
     {showcase === 'picular' && (
       <div class={cx(s.content, s.picular, inView)}>

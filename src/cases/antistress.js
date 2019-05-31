@@ -88,7 +88,7 @@ export default class extends Component {
             <CenterBlock
               inView='inViewBottom'
               title={`Exercising conscious breathing makes you better equipped when stress strikes, and potentially preventing it.`}
-              src={{ path: 'cases/antistress-2.jpg', style: 'max-height: 715px;' }}
+              src={{ path: 'cases/antistress-2.jpg', style: { maxHeight: '715px' } }}
               alt='AntiStress gradient background'
               color='#ffffff'
             />

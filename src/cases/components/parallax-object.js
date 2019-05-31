@@ -29,7 +29,7 @@ export default class extends Component {
     return (
       <div
         class={cx(s.parallaxObject)}
-        style={`transform: translateY(-12px)`}
+        style={{ transform: 'translateY(-12px)' }}
         ref={(el) => {
           this.parallax = el
           this.speed = speed
@@ -37,7 +37,7 @@ export default class extends Component {
       >
         <img
           class={cx(s.parallaxBackground, diagonal && s.diagonal)}
-          style={cx(`top: ${startPos}%;`, width && `max-width: ${width};`)}
+          style={{ top: `${startPos}%`, maxWidth: width }}
           src={require(`../../images/${image}`)}
           alt={alt}
         />

@@ -3,7 +3,10 @@ import s from './parallax-bump-block.sass'
 import ParallaxObject from './parallax-object'
 
 export default ({ title, text, items, align, background, color, inView }) => (
-  <div class={s.parallaxBumpBlock} style={cx(background && `background: ${background};`, color && `color:${color};`)}>
+  <div
+    class={s.parallaxBumpBlock}
+    style={{ background, color }}
+  >
     <div class={cx(s.inner, inView)}>
 
       <div class={s.content}>
