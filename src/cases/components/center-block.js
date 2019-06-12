@@ -10,7 +10,7 @@ export default ({ title, text, component, src, alt = 'image', background, color,
       {src && (<img alt={alt} src={require(`../../images/${src.path || src}`)} style={src.style} />)}
       <div class={cx(s.content, inView)}>
         <div class={cx(s.block, text && s.center)}>
-          {title && (<h1>{title}</h1>)}
+          {title && (<h1 class={cx(!text && s.removePadding)}>{title}</h1>)}
           {text && (<p>{text}</p>)}
           {component && (component)}
           {children}
