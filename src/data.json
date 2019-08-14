@@ -8,22 +8,70 @@
     "email": "hello@futurememories.se",
     "jobs": "jobs@futurememories.se",
     "partners": [
-      {"name": "Mat.se", "logo": "partners/mat-se.svg"},
-      {"name": "AVTECH", "logo": "partners/avtech.svg"},
-      {"name": "STENDAHLS", "logo": "partners/stendahls.svg"},
-      {"name": "Axfood", "logo": "partners/axfood.svg"},
-      {"name": "SKF", "logo": "partners/skf.svg"},
-      {"name": "Predicare", "logo": "partners/predicare.svg"},
-      {"name": "Creuna", "logo": "partners/creuna.svg"},
-      {"name": "Nelly.com", "logo": "partners/nelly-com.svg"},
-      {"name": "STC", "logo": "partners/stc.svg"},
-      {"name": "collector Bank", "logo": "partners/collector-bank.svg"},
-      {"name": "Stena Line", "logo": "partners/stena-line.svg"},
-      {"name": "bond", "logo": "partners/bond.svg"},
-      {"name": "BAUER", "logo": "partners/bauer.svg"},
-      {"name": "nouw", "logo": "partners/nouw.svg"},
-      {"name": "Sleep Cycle", "logo": "partners/sleep-cycle.svg"},
-      {"name": "Västra Götalandsregionen", "logo": "partners/vgregion.svg"}
+      {
+        "name": "Mat.se",
+        "logo": "partners/mat-se.svg"
+      },
+      {
+        "name": "AVTECH",
+        "logo": "partners/avtech.svg"
+      },
+      {
+        "name": "STENDAHLS",
+        "logo": "partners/stendahls.svg"
+      },
+      {
+        "name": "Axfood",
+        "logo": "partners/axfood.svg"
+      },
+      {
+        "name": "SKF",
+        "logo": "partners/skf.svg"
+      },
+      {
+        "name": "Predicare",
+        "logo": "partners/predicare.svg"
+      },
+      {
+        "name": "Creuna",
+        "logo": "partners/creuna.svg"
+      },
+      {
+        "name": "Nelly.com",
+        "logo": "partners/nelly-com.svg"
+      },
+      {
+        "name": "STC",
+        "logo": "partners/stc.svg"
+      },
+      {
+        "name": "collector Bank",
+        "logo": "partners/collector-bank.svg"
+      },
+      {
+        "name": "Stena Line",
+        "logo": "partners/stena-line.svg"
+      },
+      {
+        "name": "bond",
+        "logo": "partners/bond.svg"
+      },
+      {
+        "name": "BAUER",
+        "logo": "partners/bauer.svg"
+      },
+      {
+        "name": "nouw",
+        "logo": "partners/nouw.svg"
+      },
+      {
+        "name": "Sleep Cycle",
+        "logo": "partners/sleep-cycle.svg"
+      },
+      {
+        "name": "Västra Götalandsregionen",
+        "logo": "partners/vgregion.svg"
+      }
     ]
   },
   "frontTeamPictures": [
@@ -50,29 +98,40 @@
   ],
   "careersPositions": [
     {
-      "label": "🖥  Backend Developer",
-      "text": "All our products are backed by high-quality distributed systems built and maintained by our backend engineers. Become a part of that team and help us developing large-scale applications in Kotlin, Scala or Python. We advocate the use of proven and scalable technologies like Kafka, Elasticsearch and NoSQL databases, preferably using Docker and orchestrated with Kubernetes.",
-      "tasks": "Kotlin, Scala, Python, Kafka, NoSQL, Docker, Kubernetes, Google Cloud, AWS",
-      "image": "position-1.jpg",
-      "subject": "Future Memories - Backend Developer"
+      "label": "📝  Service-/UX-designer",
+      "text": "We work inhouse in tightly knit teams that takes initial ideas to realized digital products and services.\nYou should be fluent in research, exploration and validation methods, knowing when to adjust the methods to meet the needs. You should enjoy expressing your results as concepts and wireframes for validation, iteration and specifications for UI-designers and developers.\nOur designers work self-organized and appreciate the variation of different challenges. No project is ever the same.",
+      "tasks": "Service Design, UX design, research, validation, journey maps, service blueprints",
+      "image": "position-3.jpg",
+      "subject": "Future Memories - Service-/UX-designer"
     },
     {
-      "label": "📱 Mobile Developer",
-      "text": "Join our team of mobile developers and build mobile applications that delight and impress users. We prefer to build apps natively using Swift for iOS and Kotlin on Android. Our mobile developers work in close collaboration with the design team and require an eye for detail when it comes to user interface design and user experience.",
-      "tasks": "iOS, Swift, Android, Kotlin",
-      "image": "position-2.jpg",
-      "subject": "Future Memories - Mobile Developer"
+      "label": "☕ Digital Project Manager",
+      "text": "Apply for the position as Project Manager and become an essential part of Future Memories.\n\nWe do short and agile development cycles where you have an active role in sprint and release planning, sprint execution and customer communication. You will be working closely with the management team to decide on project priorization, staffing and strategic alignment of Future Memories.\n\nExperience in Digital Design or Software Development is a plus.",
+      "tasks": "",
+      "image": "position-4.jpg",
+      "subject": "Future Memories - Digital Project Manager"
     },
     {
       "label": "💻  Web Developer",
       "text": "Become part of our web development team and build tomorrow’s web applications together with us. We leverage latest web technologies and like to incorporate new and promising approaches into our workflow. All of our web developers are full-stack and fully capable of building web solutions end-to-end.",
       "tasks": "JavaScript, React, Node.js",
-      "image": "position-3.jpg",
+      "image": "position-1.jpg",
       "subject": "Future Memories - Web Developer"
     }
   ],
-  "frontCases": ["bauer-university", "mat-se", "proflight", "picular", "sleep-cycle-dashboard"],
-  "defaultOtherCases": ["picular", "paykartan", "tennis-watch", "proflight"],
+  "frontCases": [
+    "bauer-university",
+    "mat-se",
+    "proflight",
+    "picular",
+    "sleep-cycle-dashboard"
+  ],
+  "defaultOtherCases": [
+    "picular",
+    "paykartan",
+    "tennis-watch",
+    "proflight"
+  ],
   "allCases": [
     {
       "id": "bauer-university",
@@ -516,6 +575,13 @@
       "title": "Senior Developer",
       "desc": "Senior Developer, Project Lead and a real jack-of-all-trades when it comes to software development.",
       "email": "pontus.backlund@fututememories.se"
+    },
+    {
+      "name": "Axel Olivecrona",
+      "image": "team/axel-olivecrona.jpg",
+      "title": "Software Developer",
+      "desc": "Software Developer, fluent in web technologies with a decent understanding of containerization & cloud infrastructures.",
+      "email": "axel@futurememories.se"
     }
   ]
 }
