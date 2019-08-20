@@ -5,7 +5,7 @@ function getFiles (dir, fileTypes) {
   const filesToReturn = []
   function currentDir (currentPath) {
     const files = fs.readdirSync(currentPath)
-    for (let i in files) {
+    for (const i in files) {
       const curFile = path.join(currentPath, files[i])
       if (fs.statSync(curFile).isFile() && fileTypes.indexOf(path.extname(curFile)) !== -1) {
         const orginalFile = fs.readFileSync(curFile).toString()

@@ -36,6 +36,7 @@ export default class extends Component {
       }
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }

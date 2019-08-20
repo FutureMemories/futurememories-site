@@ -23,6 +23,7 @@ export default class extends Component {
       el.classList.add('inView')
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }

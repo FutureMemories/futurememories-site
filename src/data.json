@@ -98,6 +98,7 @@
   ],
   "careersPositions": [
     {
+      "id": "service-ux-designer",
       "label": "📝  Service-/UX-designer",
       "text": "We work inhouse in tightly knit teams that takes initial ideas to realized digital products and services.\nYou should be fluent in research, exploration and validation methods, knowing when to adjust the methods to meet the needs. You should enjoy expressing your results as concepts and wireframes for validation, iteration and specifications for UI-designers and developers.\nOur designers work self-organized and appreciate the variation of different challenges. No project is ever the same.",
       "tasks": "Service Design, UX design, research, validation, journey maps, service blueprints",
@@ -105,6 +106,7 @@
       "subject": "Future Memories - Service-/UX-designer"
     },
     {
+      "id": "project-manager",
       "label": "☕ Digital Project Manager",
       "text": "Apply for the position as Project Manager and become an essential part of Future Memories.\n\nWe do short and agile development cycles where you have an active role in sprint and release planning, sprint execution and customer communication. You will be working closely with the management team to decide on project priorization, staffing and strategic alignment of Future Memories.\n\nExperience in Digital Design or Software Development is a plus.",
       "tasks": "",
@@ -112,6 +114,7 @@
       "subject": "Future Memories - Digital Project Manager"
     },
     {
+      "id": "web-developer",
       "label": "💻  Web Developer",
       "text": "Become part of our web development team and build tomorrow’s web applications together with us. We leverage latest web technologies and like to incorporate new and promising approaches into our workflow. All of our web developers are full-stack and fully capable of building web solutions end-to-end.",
       "tasks": "JavaScript, React, Node.js",
