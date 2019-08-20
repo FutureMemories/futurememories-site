@@ -20,7 +20,7 @@ export default ({ title, text, image, link, background, color, modifier, inView 
       )}
 
       {link && (
-        <a href={link[1]}>{link[0]}</a>
+        <a href={link[1]} target='_blank' rel='noopener noreferrer'>{link[0]}</a>
       )}
 
     </div>

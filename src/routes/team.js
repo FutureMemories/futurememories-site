@@ -29,7 +29,7 @@ export default class extends Component {
         <div class={s.view}>
           <div class={s.inner}>
 
-            <div class={s.text} >
+            <div class={s.text}>
               <Moon
                 position='topRight'
                 size='big'

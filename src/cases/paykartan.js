@@ -31,7 +31,7 @@ export default class extends Component {
   render () {
     return (
       <Base title='Paykartan' dark>
-        <div class={s.view} >
+        <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
@@ -49,15 +49,15 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
-              title={`Lunch time and… #!?@%!!\nYou forgot your wallet…`}
-              text={`Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone. The app includes Swish, Apple Pay and Beam.`}
+              title={'Lunch time and… #!?@%!!\nYou forgot your wallet…'}
+              text='Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone. The app includes Swish, Apple Pay and Beam.'
               link={['Visit the site', 'https://paykartan.se/']}
             />
 
             <BookmarkBlock
               inView='inViewLeft'
               title='No worries'
-              text={`The perfect solution when you forget your wallet or if you simply left it on purpose. The app is super easy to use, just fire it up and follow these steps:`}
+              text='The perfect solution when you forget your wallet or if you simply left it on purpose. The app is super easy to use, just fire it up and follow these steps:'
               items={[
                 { name: 'Find the spot', image: 'icons/location.svg', alt: 'location icon' },
                 { name: 'Eat', image: 'icons/hamburger.svg', alt: 'hamburger icon' },
@@ -72,8 +72,8 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
-              title={`One step ahead`}
-              text={`Paykartan is just a nice buffet of choices. Get that nice overview of your city and all the yummy places nearby.`}
+              title='One step ahead'
+              text='Paykartan is just a nice buffet of choices. Get that nice overview of your city and all the yummy places nearby.'
               image={['Paykartan Screenshoot - gothenburg', 'cases/paykartan-3.jpg']}
             />
 

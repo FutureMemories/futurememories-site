@@ -8,16 +8,16 @@ export default ({ blocks, background, color }) => (
   >
     <div class={s.inner} />
     <div class={s.blocks}>
-      {blocks.map(block => (
-        <div class={cx(s.block, block.inView, block.image && s.image)}>
+      {blocks.map((block, i) => (
+        <div key={'text-grid_' + i} class={cx(s.block, block.inView, block.image && s.image)}>
           {
             block.image && block.title ? (
               <h1>{block.title}</h1>
             ) : block.image ? (
               <img alt={block.alt || 'Image'} src={require(`../../images/${block.image}`)} />
             ) : block.title && ([
-              <h1>{block.title}</h1>,
-              <p>{block.desc}</p>
+              <h1 key={'text-grid_h1_' + i}>{block.title}</h1>,
+              <p key={'text-grid_p_' + i}>{block.desc}</p>
             ])
           }
         </div>

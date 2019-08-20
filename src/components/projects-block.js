@@ -98,12 +98,14 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
                   )}
                 </div>
                 {project.image && (
-                  <img alt={project.name} style={imageStyle}
+                  <img
+                    alt={project.name} style={imageStyle}
                     src={require(`../images/${project.image}`)}
                   />
                 )}
                 {project.imageBg && (
-                  <img alt={project.name} class={cx(s.background, s[project.imageBg[1]])} style={imageStyle}
+                  <img
+                    alt={project.name} class={cx(s.background, s[project.imageBg[1]])} style={imageStyle}
                     src={require(`../images/${project.imageBg[0]}`)}
                   />
                 )}

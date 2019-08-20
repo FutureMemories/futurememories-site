@@ -15,7 +15,7 @@ export default class extends Component {
     const element = document.getElementById(hash)
     if (element) {
       const { offsetParent, offsetTop } = element
-      window.scrollTo(0 , this.positions.offsetTop + offsetParent.offsetTop + offsetTop - 50)
+      window.scrollTo(0, this.positions.offsetTop + offsetParent.offsetTop + offsetTop - 50)
     }
   }
 
@@ -35,7 +35,7 @@ export default class extends Component {
         <div class={s.view}>
           <div class={s.inner}>
 
-            <div class={s.heroText} >
+            <div class={s.heroText}>
               <Moon
                 position='bottomRight'
                 size='large'
@@ -43,7 +43,7 @@ export default class extends Component {
                 customClass={s.moon}
               />
               <h1 ref={(el) => { this.heroText = el }}>
-                Remember what you did tomorrow?{`\n`}<span>Join</span> our space now
+                Remember what you did tomorrow?{'\n'}<span>Join</span> our space now
               </h1>
             </div>
 
@@ -53,8 +53,8 @@ export default class extends Component {
                 <p>Our studio in downtown Gothenburg is the center of Future Memories. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team.</p>
               </div>
               <div class={s.content}>
-                {careersWorkplaces.map(row => (
-                  <div class={s.workplace}>
+                {careersWorkplaces.map((row, i) => (
+                  <div key={'workplace_' + i} class={s.workplace}>
                     <div class={s.image}>
                       <img alt={`workplace: ${row.label}`} src={require(`../images/${row.image}`)} />
                     </div>
@@ -72,9 +72,9 @@ export default class extends Component {
                 <h1>Available positions</h1>
                 <p>Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business.</p>
               </div>
-              <div class={s.content} >
+              <div class={s.content}>
                 {careersPositions.map(row => (
-                  <div id={row.id} class={s.position}>
+                  <div key={'position_' + row.id} id={row.id} class={s.position}>
                     <div class={s.image}>
                       <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
                     </div>

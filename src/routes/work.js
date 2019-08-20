@@ -39,7 +39,7 @@ export default class extends Component {
         <div class={s.view}>
           <div class={s.inner}>
 
-            <div class={s.welcome} >
+            <div class={s.welcome}>
               <Moon
                 position='bottomLeft'
                 size='medium'
@@ -81,7 +81,7 @@ export default class extends Component {
               </div>
               <div class={s.content}>
                 {company.partners.map(partner => (
-                  <div class={s.partner}>
+                  <div key={'partner_' + partner.name} class={s.partner}>
                     <img alt={`${partner.name} logo`} src={require(`../images/${partner.logo}`)} />
                   </div>
                 ))}

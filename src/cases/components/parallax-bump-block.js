@@ -15,8 +15,9 @@ export default ({ title, text, items, align, background, color, inView }) => (
       </div>
 
       <div class={cx(s.parallaxes, align && s[align])}>
-        {items.map(item => (
+        {items.map((item, i) => (
           <ParallaxObject
+            key={'parallax_bump_' + i}
             image={item.image}
             speed={item.speed}
             startPos={item.startPos}
