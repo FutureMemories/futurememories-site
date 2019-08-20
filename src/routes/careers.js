@@ -10,6 +10,13 @@ export default class extends Component {
   componentDidMount () {
     window.addEventListener('scroll', this.onScroll)
     this.heroText.style = undefined
+
+    const hash = window.location.hash.substr(1)
+    const element = document.getElementById(hash)
+    if (element) {
+      const { offsetParent, offsetTop } = element
+      window.scrollTo(0 , this.positions.offsetTop + offsetParent.offsetTop + offsetTop - 50)
+    }
   }
 
   onScroll = () => {
@@ -60,12 +67,12 @@ export default class extends Component {
               </div>
             </div>
 
-            <div class={s.positions}>
+            <div class={s.positions} ref={e => { this.positions = e }}>
               <div class={s.text}>
                 <h1>Available positions</h1>
                 <p>Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business.</p>
               </div>
-              <div class={s.content}>
+              <div class={s.content} >
                 {careersPositions.map(row => (
                   <div id={row.id} class={s.position}>
                     <div class={s.image}>
