@@ -11,7 +11,7 @@ export default ({ title, text }) => (
     </div>
     <div class={s.teamPictures}>
       {frontTeamPictures.map((picture, i) => (
-        <div class={cx(s.block, s.filter)}>
+        <div key={'team_pic_' + i} class={cx(s.block, s.filter)}>
           <img alt='Team picture' src={require(`../images/${picture}`)} />
         </div>
       ))}

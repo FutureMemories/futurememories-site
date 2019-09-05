@@ -12,8 +12,8 @@ export default ({ title, text, items, image, alt = 'image', background, color, a
       <div class={cx(s.content, inView)}>
         <h1>{title}</h1>
         <p class={s.text}>{Array.isArray(text) ? text.join('\n\n') : text}</p>
-        {items && items.map(item => (
-          <p class={cx(s.item)}>
+        {items && items.map((item, i) => (
+          <p key={'bookmark_block_' + i} class={cx(s.item)}>
             <img alt={item.alt} src={require(`../../images/${item.image}`)} />
             <span>{item.name}</span>
           </p>

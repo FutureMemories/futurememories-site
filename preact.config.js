@@ -13,7 +13,7 @@ const path = require('path')
 export default function (config, env, helpers) {
   config.plugins.push(new CopyWebpackPlugin([{
     context: `${__dirname}/src/assets`,
-    from: `*`
+    from: '*'
   }]))
 
   config.module.loaders[4].include = [

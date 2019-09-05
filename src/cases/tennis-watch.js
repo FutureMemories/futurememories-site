@@ -36,6 +36,7 @@ export default class extends Component {
       }
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }
@@ -43,7 +44,7 @@ export default class extends Component {
   render () {
     return (
       <Base title='Tennis Watch'>
-        <div class={s.view} >
+        <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
@@ -57,8 +58,8 @@ export default class extends Component {
               background='#000301'
             >
               <div class={s.badges}>
-                {badges.map(badge => (
-                  <div class={s.badge}>
+                {badges.map((badge, i) => (
+                  <div key={'tennis_badge_' + i} class={s.badge}>
                     <img alt={`Apple App Store prize: ${badge.alt}`} src={require(`../images/cases/${badge.img}`)} />
                     <div class={s.desc}>
                       <span class={s.title}>{badge.title}</span>
@@ -79,8 +80,8 @@ export default class extends Component {
 
             <SlideInBlock
               inView='inViewLeft'
-              title={`Match trends and\nperformance statistics`}
-              text={`Keep track of your progress with statistics and match trend trackning to improve your game. It’s all about winning right?`}
+              title={'Match trends and\nperformance statistics'}
+              text='Keep track of your progress with statistics and match trend trackning to improve your game. It’s all about winning right?'
               image={{ path: 'cases/tennis-watch-1.png', width: 427, height: 703, positon: 'inside' }}
               alt='Tennis Watch (phone and watch mockup)'
               background='#0C0F16'
@@ -90,8 +91,8 @@ export default class extends Component {
 
             <SlideInBlock
               inView='inViewRight'
-              title={`Tennis score tracker and\nstatistics for Apple Watch`}
-              text={`Keeping track of your matches and opponents. Designed for any scoring method.`}
+              title={'Tennis score tracker and\nstatistics for Apple Watch'}
+              text='Keeping track of your matches and opponents. Designed for any scoring method.'
               image={{ path: 'cases/tennis-watch-2.png', width: 243, height: 438, positon: 'inside' }}
               alt='Tennis Watch (watch mockup)'
               background='#0C0F16'

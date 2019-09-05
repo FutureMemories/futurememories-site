@@ -40,6 +40,7 @@ export default class extends Component {
       el.classList.add('inView')
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }
@@ -47,7 +48,7 @@ export default class extends Component {
   render () {
     return (
       <Base title='Picular' dark>
-        <div class={s.view} >
+        <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
@@ -64,8 +65,8 @@ export default class extends Component {
               modifier='picular'
             >
               <div class={s.badges}>
-                {badges.map(badge => (
-                  <div class={s.badge}>
+                {badges.map((badge, i) => (
+                  <div key={'picular_badge_' + i} class={s.badge}>
                     <img alt={`Product Hunt: ${badge.title}`} src={require(`../images/cases/${badge.img}`)} />
                     <div class={s.desc}>
                       <span class={s.title}>{badge.title}</span>
@@ -79,14 +80,14 @@ export default class extends Component {
             <TextBlock
               inView='inViewBottom'
               title='Search engine for colors'
-              text={`Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.`}
+              text={'Picular is a rocket fast primary color generator using Google\'s image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.'}
               link={['Visit the site', 'https://picular.co/']}
             />
 
             <BookmarkBlock
               inView='inViewLeft'
               title='One for the bookmarks.'
-              text={`The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.`}
+              text='The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.'
               items={[
                 { name: 'Correct color tones', image: 'icons/droplet.svg', alt: 'droplet icon' },
                 { name: 'Grab the HEX color code', image: 'icons/hash.svg', alt: 'hash icon' },
@@ -100,7 +101,7 @@ export default class extends Component {
             <SlideInBlock
               inView='inViewRight'
               title='Putting colors to words'
-              text={`Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in.`}
+              text='Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in.'
               image='cases/picular-2.png'
               alt='Picular grid of colors'
               background='#fff'

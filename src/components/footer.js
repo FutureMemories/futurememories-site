@@ -17,9 +17,9 @@ export default ({ dark, links }) => (
 
         <div class={s.menu}>
           {links.map(link => (
-            <a href={link.to}>{link.label}</a>
+            <a key={'footer_' + link.to} href={link.to}>{link.label}</a>
           ))}
-          <a href='https://goo.gl/maps/rWZkuD1fT8J2' target='_blank' rel='noreferrer'>Find us</a>
+          <a href='https://goo.gl/maps/rWZkuD1fT8J2' target='_blank' rel='noopener noreferrer'>Find us</a>
         </div>
 
         <div class={s.contact}>
@@ -37,13 +37,13 @@ export default ({ dark, links }) => (
       <div class={s.second}>
         <a href='/' title='Home'><Icon id='logo' class={s.logo} /></a>
         <div class={s.social}>
-          <a target='_blank' rel='noreferrer' href='https://www.facebook.com/futurememoriesab/' aria-label='Futurememories on Facebook'>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/futurememoriesab/' aria-label='Futurememories on Facebook'>
             <Icon id='facebook' />
           </a>
-          <a target='_blank' rel='noreferrer' href='https://www.instagram.com/futurememoriesab/' aria-label='Futurememories on Instagram'>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/futurememoriesab/' aria-label='Futurememories on Instagram'>
             <Icon id='instagram' />
           </a>
-          <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/company/5100963/' aria-label='Futurememories on Linkedin'>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/company/5100963/' aria-label='Futurememories on Linkedin'>
             <Icon id='linkedin' />
           </a>
         </div>

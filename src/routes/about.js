@@ -26,7 +26,7 @@ export default class extends Component {
         <div class={s.view}>
           <div class={s.inner}>
 
-            <div class={s.heroText} >
+            <div class={s.heroText}>
               <Moon position='bottomLeft' size='medium' background='blue' customClass={s.moon} />
               <h1>
               Based in the heart of <span>Gothenburg.</span> We create brands, products and marketing. And we use strategy, design, content and development to do it.
@@ -39,13 +39,13 @@ export default class extends Component {
                 <p>We are who we are and we are good at what we do.</p>
               </div>
               <div class={s.content}>
-                {data.map(row => (
-                  <div class={s.row}>
+                {data.map((row, i) => (
+                  <div key={'about_' + i} class={s.row}>
                     <h3>{row.label}</h3>
                     <ul class={s.list}>
                       {
-                        row.items.map(item => (
-                          <li>{item}</li>
+                        row.items.map((item, i) => (
+                          <li key={'about_item_' + i}>{item + i}}</li>
                         ))
                       }
                     </ul>
@@ -63,7 +63,7 @@ export default class extends Component {
               </div>
               <div class={s.content}>
                 {company.partners.map(partner => (
-                  <div class={s.partner}>
+                  <div key={'partner_' + partner.name} class={s.partner}>
                     <img alt={`${partner.name} logo`} src={require(`../images/${partner.logo}`)} />
                   </div>
                 ))}

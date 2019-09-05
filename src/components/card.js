@@ -61,17 +61,17 @@ export default class extends Component {
         id={id}
         class={cx(s.card, customClass, state.ease && s.ease, transition && s[transition])}
         href={to}
-        rel={to && 'noopener'}
+        rel={to && 'noopener noreferrer'}
         target={newTab && '_blank'}
         style={
-          `transform:` +
+          'transform:' +
           ` perspective(${state.perspective}rem)` +
           ` translateZ(${state.translateZ}rem)` +
           ` rotateX(${state.rotateX}deg)` +
           ` rotateY(${state.rotateY}deg);${customStyle ? ' ' + customStyle : ''}`
         }
-        onMouseMove={this.mouseOver}
-        onMouseLeave={this.mouseOut}
+        onMouseMove={e => this.mouseOver(e)}
+        onMouseLeave={() => this.mouseOut()}
       >
         <div
           class={s.shine}

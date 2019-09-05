@@ -17,7 +17,7 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
     })
   }
 
-  let projectsData = allProjects || projectsArray
+  const projectsData = allProjects || projectsArray
 
   return (
     <div class={cx(s.projects, customClass && customClass, currentBrowseCase && s.browseCase)}>
@@ -32,21 +32,21 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
           let imageStyle = ''
 
           if (project.style) {
-            for (let property in project.style[0]) {
-              if (project.style[0].hasOwnProperty(property)) {
-                style += ` ${property}: ${project.style[0][property]};`
+            for (const p in project.style[0]) {
+              if ({}.hasOwnProperty.call(project.style[0], p) && project.style[0][p] !== undefined) {
+                style += ` ${p}: ${project.style[0][p]};`
               }
             }
 
-            for (let property in project.style[1]) {
-              if (project.style[1].hasOwnProperty(property)) {
-                detailsStyle += ` ${property}: ${project.style[1][property]};`
+            for (const p in project.style[1]) {
+              if ({}.hasOwnProperty.call(project.style[1], p) && project.style[1][p] !== undefined) {
+                detailsStyle += ` ${p}: ${project.style[1][p]};`
               }
             }
 
-            for (let property in project.style[2]) {
-              if (project.style[2].hasOwnProperty(property)) {
-                imageStyle += ` ${property}: ${project.style[2][property]};`
+            for (const p in project.style[2]) {
+              if ({}.hasOwnProperty.call(project.style[2], p) && project.style[2][p] !== undefined) {
+                imageStyle += ` ${p}: ${project.style[2][p]};`
               }
             }
           }
@@ -98,12 +98,14 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
                   )}
                 </div>
                 {project.image && (
-                  <img alt={project.name} style={imageStyle}
+                  <img
+                    alt={project.name} style={imageStyle}
                     src={require(`../images/${project.image}`)}
                   />
                 )}
                 {project.imageBg && (
-                  <img alt={project.name} class={cx(s.background, s[project.imageBg[1]])} style={imageStyle}
+                  <img
+                    alt={project.name} class={cx(s.background, s[project.imageBg[1]])} style={imageStyle}
                     src={require(`../images/${project.imageBg[0]}`)}
                   />
                 )}

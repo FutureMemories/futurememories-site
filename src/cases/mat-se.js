@@ -26,6 +26,7 @@ export default class extends Component {
       el.classList.add('inView')
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }
@@ -33,7 +34,7 @@ export default class extends Component {
   render () {
     return (
       <Base title='Mat.se' dark>
-        <div class={s.view} >
+        <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
@@ -45,8 +46,8 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title={`Shop online,\ndinner at home`}
-              text={`Mat.se is a Gothenburg-based startup and online grocery shopping service operating in Stockholm, Gothenburg and Malmö. Consumers can shop on the web or in Mat.se's apps for iOS and Android and groceries get delivered to your home or workplace.`}
+              title={'Shop online,\ndinner at home'}
+              text={'Mat.se is a Gothenburg-based startup and online grocery shopping service operating in Stockholm, Gothenburg and Malmö. Consumers can shop on the web or in Mat.se\'s apps for iOS and Android and groceries get delivered to your home or workplace.'}
               src={{ path: 'cases/mat-se-2.png', align: 'left' }}
               alt='Mat.se truck'
             />

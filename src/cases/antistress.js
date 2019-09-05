@@ -24,6 +24,7 @@ export default class extends Component {
       el.classList.add('inView')
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }
@@ -31,7 +32,7 @@ export default class extends Component {
   render () {
     return (
       <Base title='Antistress' dark>
-        <div class={s.view} >
+        <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
@@ -44,8 +45,8 @@ export default class extends Component {
             <CenterBlock
               inView='inViewBottom'
               modifer='antistress'
-              title={`Speak your mind`}
-              text={`Together with VGR, we have developed an app for iOS and Android whose purpose is to act as a diary to see their progress or stress level and also listen to meditation soundtracks to reduce stress`}
+              title='Speak your mind'
+              text='Together with VGR, we have developed an app for iOS and Android whose purpose is to act as a diary to see their progress or stress level and also listen to meditation soundtracks to reduce stress'
             >
               <DeviceBlock
                 customClass={s.deviceBlock}
@@ -74,8 +75,8 @@ export default class extends Component {
               inView='inViewRight'
               title='Putting your stress to the test'
               text={[
-                `Every fifth woman in the Västra Götaland region has contacted primary care due to stress-related mental illness and the number is increasing. 21.1 percent of women sought help in 2016, which can be compared with 20 percent in 2015.`,
-                `In order to meet the large group affected by stress-related mental illness, development of new innovative methods is needed. The app's interface is designed with calm colors in mind and a color spectra that illustrate the balance between feelings while moving in a harmonious movement when you start the app.`
+                'Every fifth woman in the Västra Götaland region has contacted primary care due to stress-related mental illness and the number is increasing. 21.1 percent of women sought help in 2016, which can be compared with 20 percent in 2015.',
+                'In order to meet the large group affected by stress-related mental illness, development of new innovative methods is needed. The app\'s interface is designed with calm colors in mind and a color spectra that illustrate the balance between feelings while moving in a harmonious movement when you start the app.'
               ]}
               items={[
                 { image: 'cases/antistress-phone-3.png', alt: 'AntiStress phone mockup', speed: -15, startPos: 53, width: '412px', align: 'right' },
@@ -87,7 +88,7 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title={`Exercising conscious breathing makes you better equipped when stress strikes, and potentially preventing it.`}
+              title='Exercising conscious breathing makes you better equipped when stress strikes, and potentially preventing it.'
               src={{ path: 'cases/antistress-2.jpg', style: { maxHeight: '715px' } }}
               alt='AntiStress gradient background'
               color='#ffffff'

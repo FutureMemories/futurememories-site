@@ -25,7 +25,7 @@ export default class extends Component {
     }
   }
 
-  render ({ image, alt = 'image', speed, startPos, diagonal, width }) {
+  render ({ image, alt = 'image', speed, startPos, diagonal, width, ...props }) {
     return (
       <div
         class={cx(s.parallaxObject)}
@@ -34,6 +34,7 @@ export default class extends Component {
           this.parallax = el
           this.speed = speed
         }}
+        {...props}
       >
         <img
           class={cx(s.parallaxBackground, diagonal && s.diagonal)}

@@ -40,10 +40,10 @@ export default class extends Component {
               onMouseLeave={() => this.setState({ disableClick: false })}
             >
               {links.map(link => (
-                <li>
+                <li key={'header_' + link.to}>
                   <a
                     class={route === link.to && s.active}
-                    onClick={this.closeMenu}
+                    onClick={() => this.closeMenu()}
                     href={link.to}
                   >
                     {link.label}

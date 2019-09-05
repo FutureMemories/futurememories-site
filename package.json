@@ -17,7 +17,7 @@
     "build/*"
   ],
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.0.2",
     "classnames": "^2.2.6",
     "copy-webpack-plugin": "^4.6.0",
     "eslint": "^5.16.0",
@@ -26,13 +26,13 @@
     "node-sass": "^4.12.0",
     "preact-cli": "^2.2.1",
     "preact-cli-workbox-plugin": "^1.1.1",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.3.1",
     "sine-waves": "^0.3.0"
   },
   "dependencies": {
     "in-view": "git+https://github.com/losthumans/in-view.git",
-    "preact": "^8.4.2",
-    "preact-compat": "^3.18.5"
+    "preact": "^8.5.2",
+    "preact-compat": "^3.19.0"
   },
   "standard": {
     "parser": "babel-eslint",

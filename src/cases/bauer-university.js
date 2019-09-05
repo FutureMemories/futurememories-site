@@ -24,6 +24,7 @@ export default class extends Component {
       el.classList.add('inView')
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }
@@ -31,7 +32,7 @@ export default class extends Component {
   render () {
     return (
       <Base title='Bauer University' dark>
-        <div class={s.view} >
+        <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
@@ -43,14 +44,14 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title={`Taking sales from Rookie to Pro`}
+              title='Taking sales from Rookie to Pro'
               text='Bauer University is a global learning platform for retailers. It educates sales personnel in Bauer’s product range and how they can help customers find the right hockey gear for their specific needs.'
             />
 
             <TextGridBlock
               blocks={[
                 { inView: 'inViewLeft', image: 'cases/bauer-university-2.png', alt: 'Bauer University (Sales Training) tablet mockup' },
-                { inView: 'inViewRight', title: 'Gamification is the carrot, Bauer makes the sticks', desc: `Bauer University helps retailers to become more knowledgeable through product trainings for Bauer equipment and real-world sales scenarios. Motivation is kept up by well thought-out gamification concepts where achievements result in both physical and digital rewards. All wrapped up in an extremely polished web-based experience.` },
+                { inView: 'inViewRight', title: 'Gamification is the carrot, Bauer makes the sticks', desc: 'Bauer University helps retailers to become more knowledgeable through product trainings for Bauer equipment and real-world sales scenarios. Motivation is kept up by well thought-out gamification concepts where achievements result in both physical and digital rewards. All wrapped up in an extremely polished web-based experience.' },
                 { inView: 'inViewRight', image: 'cases/bauer-university-3.png', alt: 'Bauer University (Product Category) tablet mockup' }, { inView: 'inViewLeft', image: 'cases/bauer-university-4.png', alt: 'Bauer University (Product Training) tablet mockup' }
               ]}
               background='#151D20'
@@ -69,7 +70,7 @@ export default class extends Component {
             <CenterBlock
               inView='inViewBottom'
               background='#F5F5F5'
-              component={<p>{`Bauer University is the result of combining forces with our\ncreative friends over at `}<a href='https://thebond.se/' target='_blank'>The Bond Communication</a>. {`🖤`}</p>}
+              component={<p>{'Bauer University is the result of combining forces with our\ncreative friends over at '}<a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. {'🖤'}</p>}
             />
 
             <ProjectsBlock

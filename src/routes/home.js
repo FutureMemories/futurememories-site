@@ -106,7 +106,7 @@ export default class extends Component {
                   >
                     Strategy
                   </span>
-                  {`, `}
+                  {', '}
                   <span
                     class={cx(
                       (activePillar === 'design' || preActivePillar === 'design') && s.glitch,
@@ -117,7 +117,7 @@ export default class extends Component {
                   >
                     Design
                   </span>
-                  {` & `}
+                  {' & '}
                   <span
                     class={cx(
                       (activePillar === 'develop' || preActivePillar === 'develop') && s.glitch,

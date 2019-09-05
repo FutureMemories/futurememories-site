@@ -12,8 +12,8 @@ export default ({ title, text, content, background, color, inView }) => (
         <p>{text}</p>
       </div>
       <div class={s.rightBlock}>
-        {content.map(paragraf => (
-          <p>{paragraf}</p>
+        {content.map((paragraf, i) => (
+          <p key={'text-block-multi_' + i}>{paragraf}</p>
         ))}
       </div>
     </div>

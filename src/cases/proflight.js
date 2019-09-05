@@ -23,6 +23,7 @@ export default class extends Component {
       el.classList.add('inView')
     })
   }
+
   componentWillUnmount () {
     inView(`.${inViewClasses}`).off('enter')
   }
@@ -30,7 +31,7 @@ export default class extends Component {
   render () {
     return (
       <Base title='proFLIGHT'>
-        <div class={s.view} >
+        <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
@@ -43,7 +44,7 @@ export default class extends Component {
             <CenterBlock
               inView='inViewBottom'
               title='Flightmode on'
-              text={`Presents in real time all required weather related information to the pilot in a nice and clear interface. The pilot can access everything from significant weather charts, SIGMETS and station information to tailored high resolution weather such as turbulence and winds along the flight plan route.`}
+              text='Presents in real time all required weather related information to the pilot in a nice and clear interface. The pilot can access everything from significant weather charts, SIGMETS and station information to tailored high resolution weather such as turbulence and winds along the flight plan route.'
               background='#1A2132'
               color='#ffffff'
             />
@@ -51,7 +52,7 @@ export default class extends Component {
             <TextGridBlock
               blocks={[
                 { inView: 'inViewLeft', image: 'cases/proflight-2.png' },
-                { inView: 'inViewRight', title: 'The sky’s the limit.', desc: `Developed in close cooperation with professional airline pilots to achieve a user friendly interface and a clear view of the weather and warnings/hazards along the planned flight route. The combination of the synchronized horizontal- and vertical view improves the pilot ́s situational awareness.` },
+                { inView: 'inViewRight', title: 'The sky’s the limit.', desc: 'Developed in close cooperation with professional airline pilots to achieve a user friendly interface and a clear view of the weather and warnings/hazards along the planned flight route. The combination of the synchronized horizontal- and vertical view improves the pilot ́s situational awareness.' },
                 { inView: 'inViewRight', image: 'cases/proflight-3.png' }, { inView: 'inViewLeft', image: 'cases/proflight-4.png' }
               ]}
               background='#161D2B'
@@ -59,8 +60,8 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
-              title={`One flight ahead`}
-              text={`Combining the real time access to high resolution weather and flight path optimization, assists the pilot in making better pre- and in-flight decisions leading to a safer and more efficient flight.`}
+              title='One flight ahead'
+              text='Combining the real time access to high resolution weather and flight path optimization, assists the pilot in making better pre- and in-flight decisions leading to a safer and more efficient flight.'
               image={['Paykartan Screenshoot - gothenburg', 'cases/proflight-5.png', 882]}
               background='#1A2132'
             />

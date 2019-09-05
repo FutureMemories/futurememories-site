@@ -9,8 +9,9 @@ export default ({ items, background, diagonal }) => (
   >
     <div class={s.inner}>
       <div class={s.content}>
-        {items.map(item => (
+        {items.map((item, i) => (
           <ParallaxObject
+            key={'parallax_object_' + i}
             image={item.image}
             alt={item.alt}
             speed={item.speed}
