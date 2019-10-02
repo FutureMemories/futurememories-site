@@ -31,16 +31,16 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Antistress' dark>
+      <Base title='AntiStress' dark>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='ANTISTRESS'
+              title='AntiStress'
               subtitle='Take a deep breath'
             />
 
-            <LargeImage src='cases/antistress-1.jpg' alt='Antistress phone mockups' />
+            <LargeImage src='cases/antistress-1.jpg' alt='AntiStress phone mockups' />
 
             <CenterBlock
               inView='inViewBottom'

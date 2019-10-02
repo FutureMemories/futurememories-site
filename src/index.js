@@ -15,6 +15,7 @@ import RettsPlus from './cases/retts-plus'
 import ProFlight from './cases/proflight'
 import AntiStress from './cases/antistress'
 import BauerUniversity from './cases/bauer-university'
+import CaseComponents from './cases/components'
 
 import './index.sass'
 
@@ -59,6 +60,7 @@ export default class extends Component {
           <ProFlight path='/cases/proflight' />
           <AntiStress path='/cases/antistress' />
           <BauerUniversity path='/cases/bauer-university' />
+          <CaseComponents path='/cases/__components' />
 
           <NotFound type='404' default />
         </Router>

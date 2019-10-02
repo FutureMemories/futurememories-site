@@ -68,7 +68,8 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
                   class={cx(
                     s.slideArrow,
                     s.details,
-                    (project.image || project.layout === 'two') && s.leftAngled
+                    (project.image || project.layout === 'two') && s.leftAngled,
+                    project.desc.length > 150 && s.small
                   )}
                   style={detailsStyle}
                 >

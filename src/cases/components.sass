@@ -1,0 +1,24 @@
+.view
+
+  > .component
+    position: relative
+
+    &:not(:last-child)
+      border-bottom: 1px grey solid
+
+    > .name
+      position: absolute
+      background: white
+      top: 1rem
+      left: 1rem
+      padding: 0.5rem 1rem
+      border-radius: 1rem
+      color: black
+      font-size: 1.3rem
+      opacity: 0.2
+      transition: opacity .3s ease, box-shadow .3s ease
+      z-index: 10
+
+      &:hover
+        opacity: 1
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.28)
