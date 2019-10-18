@@ -217,6 +217,23 @@
       "showcase": true
     },
     {
+      "id": "sleepcure",
+      "name": "SleepCure",
+      "image": "cases/sleepcure.png",
+      "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
+      "type": "IOS, HealthKit",
+      "style": [
+        {
+          "background": "#F6D7D3",
+          "color": "#F35C49"
+        },
+        {
+          "min-width": "21.2rem"
+        }
+      ],
+      "showcase": true
+    },
+    {
       "id": "sleep-cycle-dashboard",
       "name": "Sleep Cycle Dashboard",
       "imageBg": [
