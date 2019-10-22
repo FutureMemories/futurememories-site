@@ -217,25 +217,42 @@
       "showcase": true
     },
     {
-      "id": "sleep-cycle-dashboard",
-      "name": "Sleep Cycle Dashboard",
-      "imageBg": [
-        "cases/sleep-cycle-dashboard-bg.jpg",
-        "width"
-      ],
-      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client": "Sleep Cycle",
-      "type": "Scala, Reactive Streams",
+      "id": "sleepcure",
+      "name": "SleepCure",
+      "image": "cases/sleepcure.png",
+      "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
+      "type": "IOS, HealthKit",
       "style": [
         {
-          "background": "#192452",
+          "background": "#F6D7D3",
+          "color": "#F35C49"
+        },
+        {
+          "min-width": "21.2rem"
+        }
+      ],
+      "showcase": true
+    },
+    {
+      "id": "retts-plus",
+      "name": "Retts Plus",
+      "image": "cases/retts-plus.png",
+      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "client": "Predicare",
+      "type": "UX/UI, iOS",
+      "style": [
+        {
+          "background": "linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
           "color": "#fff"
         },
         {
-          "max-width": "20rem"
+          "min-width": "23rem"
+        },
+        {
+          "margin-left": "-10px"
         }
       ],
-      "link": "https://www.sleepcycle.com/"
+      "showcase": true
     },
     {
       "id": "job-apply",
@@ -311,25 +328,25 @@
       "showcase": true
     },
     {
-      "id": "retts-plus",
-      "name": "Retts Plus",
-      "image": "cases/retts-plus.png",
-      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-      "client": "Predicare",
-      "type": "UX/UI, iOS",
+      "id": "sleep-cycle-dashboard",
+      "name": "Sleep Cycle Dashboard",
+      "imageBg": [
+        "cases/sleep-cycle-dashboard-bg.jpg",
+        "width"
+      ],
+      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client": "Sleep Cycle",
+      "type": "Scala, Reactive Streams",
       "style": [
         {
-          "background": "linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
+          "background": "#192452",
           "color": "#fff"
         },
         {
-          "min-width": "23rem"
-        },
-        {
-          "margin-left": "-10px"
+          "max-width": "20rem"
         }
       ],
-      "showcase": true
+      "link": "https://www.sleepcycle.com/"
     },
     {
       "id": "paykartan",

@@ -20,7 +20,7 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
   const projectsData = allProjects || projectsArray
 
   return (
-    <div class={cx(s.projects, customClass && customClass, currentBrowseCase && s.browseCase)}>
+    <div class={cx(s.projects, page === 'front' && s.homeProjects, customClass && customClass, currentBrowseCase && s.browseCase)}>
 
       {page === 'front' && (
         <div class={cx(s.project, s.hide)} />
