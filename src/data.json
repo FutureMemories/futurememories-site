@@ -349,23 +349,6 @@
       "link": "https://www.sleepcycle.com/"
     },
     {
-      "id": "paykartan",
-      "name": "Paykartan",
-      "image": "cases/paykartan.png",
-      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "type": "UX/UI, Web",
-      "style": [
-        {
-          "background": "#FFD2D2",
-          "color": "#070B13"
-        },
-        {
-          "min-width": "21.2rem"
-        }
-      ],
-      "showcase": true
-    },
-    {
       "id": "paperquiz",
       "name": "PaperQuiz",
       "image": "cases/paperquiz.png",
@@ -386,6 +369,23 @@
         }
       ],
       "appLink": "https://itunes.apple.com/se/app/paper-quiz-klurig-fr%C3%A5gesport/id1447129683"
+    },
+    {
+      "id": "paykartan",
+      "name": "Paykartan",
+      "image": "cases/paykartan.png",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
+      "type": "UX/UI, Web",
+      "style": [
+        {
+          "background": "#FFD2D2",
+          "color": "#070B13"
+        },
+        {
+          "min-width": "21.2rem"
+        }
+      ],
+      "showcase": true
     },
     {
       "id": "forces-of-freedom",
