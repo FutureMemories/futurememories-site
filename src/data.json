@@ -523,12 +523,11 @@
       "to": "/careers"
     },
     {
-      "name": "Oskar Jönsson",
-      "image": "team/oskar-jonsson.jpg",
-      "title": "Mobile Developer and Partner",
-      "desc": "Experienced Mobile Developer and Partner, bringing app experiences and customer value to life.",
-      "phoneOld": "+46 (0)722 536161",
-      "email": "oskar@futurememories.se"
+      "name": "Hannah Miklin",
+      "image": "team/hannah-miklin.png",
+      "title": "UX and Service Designer",
+      "desc": "Interaction Designer with background in Information Systems. Creating amazing digital experiences with a user centric approach.",
+      "email": "hannah@futurememories.se"
     },
     {
       "name": "P-A Gustafsson",
