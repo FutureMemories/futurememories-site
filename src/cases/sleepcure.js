@@ -48,7 +48,6 @@ export default class extends Component {
               modifier='sleepcure'
             />
 
-
             <CenterBlock
               inView='inViewBottom'
               title='Your digital sleep coach'
@@ -62,11 +61,13 @@ export default class extends Component {
               inView='inViewLeft'
               background={'#F6D7D3'}
               blocks={[
-                { type: 'image', modifier: 'sleepcureImg', image: 'cases/sleepcure-2.png', },
-                { type: 'text-array', modifier: 'sleepcure', array: [
-                  { type: 'text', title: 'Research-based treatment', text: 'SleepCure is a CE-marked medical device for non-pharmacological treatment of sleeping disorders. It takes latest results in behaviour therapy and sleep research into account when giving advice on how to improve your sleep patterns.'},
-                  { type: 'text', title: 'Your mobile assistant', text: 'SleepCure is available as an iPhone app and only requires a few minutes attention every day to reflect on your day. In return, the app provides you with advice on how to adjust your lifestyle for a better sleep and quality of life, little by little.'}
-                ]},
+                { type: 'image', modifier: 'sleepcureImg', image: 'cases/sleepcure-2.png' },
+                { type: 'text-array',
+                  modifier: 'sleepcure',
+                  array: [
+                    { type: 'text', title: 'Research-based treatment', text: 'SleepCure is a CE-marked medical device for non-pharmacological treatment of sleeping disorders. It takes latest results in behaviour therapy and sleep research into account when giving advice on how to improve your sleep patterns.' },
+                    { type: 'text', title: 'Your mobile assistant', text: 'SleepCure is available as an iPhone app and only requires a few minutes attention every day to reflect on your day. In return, the app provides you with advice on how to adjust your lifestyle for a better sleep and quality of life, little by little.' }
+                  ] }
               ]}
             />
 
@@ -77,8 +78,7 @@ export default class extends Component {
               background='#FFFFFF'
               color='#737780'
               modifer='sleepcureByTheWay'
-            >
-            </CenterBlock>
+            />
 
             <DeviceBlock
               customClass={s.deviceBlock}

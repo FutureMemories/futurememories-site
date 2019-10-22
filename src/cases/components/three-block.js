@@ -28,14 +28,13 @@ export default ({ blocks, background, color, inView }) => (
               <div class={s[block.modifier]}>
                 {
                   block.array.map(textBlock => (
-                      <div class={s.arrayBlock}>
-                        {textBlock.title && (<h1>{textBlock.title}</h1>)}
-                        {<p key={'three_block_p_' + i}>{textBlock.text}</p>}
-                      </div>
-                    )
-                  )
+                    <div class={s.arrayBlock}>
+                      {textBlock.title && (<h1>{textBlock.title}</h1>)}
+                      {<p key={'three_block_p_' + i}>{textBlock.text}</p>}
+                    </div>
+                  ))
                 }
-              </div> 
+              </div>
             )}
           </div>
         ))}
