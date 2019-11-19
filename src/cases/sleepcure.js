@@ -87,7 +87,7 @@ export default class extends Component {
 
             <ProjectsBlock
               current='sleepcure'
-              similar={['picular', 'tennis-watch', 'retts-plus']}
+              similar={['antistress', 'retts-plus', 'picular']}
             />
 
           </div>

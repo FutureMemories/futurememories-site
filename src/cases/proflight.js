@@ -68,7 +68,7 @@ export default class extends Component {
 
             <ProjectsBlock
               current='proflight'
-              similar={['tennis-watch', 'antistress']}
+              similar={['mat-se', 'bauer-university', 'retts-plus']}
               background='#161D2B'
             />
 
