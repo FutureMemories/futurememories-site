@@ -147,7 +147,7 @@
       "name": "Bauer University",
       "image": "cases/bauer-university.png",
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
-      "metaDesc": "",
+      "metaDesc": "Bauer University, a gamification-based online training platform written in React and Python leveraging Django and GraphQL.",
       "client": "Bauer, Bond Communications",
       "type": "React, Python, GraphQL, UX",
       "style": [
@@ -176,9 +176,9 @@
         "width"
       ],
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
-      "metaDesc": "",
+      "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
       "client": "Mat.se",
-      "type": "UX/UI, JAVA, SPRING, iOS",
+      "type": "UX/UI, Java, Spring, iOS",
       "style": [
         {
           "background": "#993600",
@@ -198,7 +198,7 @@
       "name": "proFLIGHT",
       "image": "cases/proflight.png",
       "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "metaDesc": "",
+      "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "client": "Avtech, Invencon",
       "type": "iOS, UX/UI",
       "style": [
@@ -216,8 +216,8 @@
       "id": "picular",
       "name": "Picular",
       "desc": "A rocket fast primary color generator using Google's image search.",
-      "metaDesc": "",
-      "type": "UX/UI, WEB",
+      "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
+      "type": "UX/UI, React",
       "image": "cases/picular.jpg",
       "style": [
         {
@@ -239,8 +239,8 @@
       "name": "SleepCure",
       "image": "cases/sleepcure.png",
       "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
-      "metaDesc": "",
-      "type": "IOS, HealthKit",
+      "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
+      "type": "iOS, HealthKit",
       "style": [
         {
           "background": "#F6D7D3",
@@ -257,7 +257,7 @@
       "name": "Retts Plus",
       "image": "cases/retts-plus.png",
       "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
-      "metaDesc": "",
+      "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
       "client": "Predicare",
       "type": "UX/UI, iOS",
       "style": [
@@ -286,7 +286,7 @@
       "name": "AntiStress",
       "image": "cases/antistress.png",
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
-      "metaDesc": "",
+      "metaDesc": "AntiStress, a pocket diary for iOS and Android to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client": "Västra Götalandsregionen",
       "type": "UX/UI, iOS, Android",
       "style": [
@@ -308,7 +308,7 @@
       "name": "Nordish Market",
       "image": "cases/nordish-market.png",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion throughout a working day. Perfect for breakfast meetings, team lunches or big events.",
-      "type": "REACT, PYTHON, DJANGO",
+      "type": "React, Python, Django",
       "style": [
         {
           "background": "#FDC853",
@@ -333,7 +333,7 @@
         "height"
       ],
       "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
-      "metaDesc": "",
+      "metaDesc": "Tennis Watch, the first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
       "type": "UX/UI, iOS, watchOS",
       "style": [
         {
@@ -397,7 +397,7 @@
       "name": "Paykartan",
       "image": "cases/paykartan.png",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "metaDesc": "",
+      "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
       "type": "UX/UI, Web",
       "style": [
         {
