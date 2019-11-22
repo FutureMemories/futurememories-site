@@ -47,8 +47,6 @@ const init = async () => {
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">${sitemapData}
 </urlset>`
 
-  console.log(sitemap)
-
   // Create prerender-urls.json file
   writeFileSync(resolve(__dirname, 'prerender-urls.json'), JSON.stringify(prerenderUrls))
 
