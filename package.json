@@ -6,6 +6,7 @@
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build --prerender --template src/template.html",
     "postbuild": "node postbuild.js",
+    "prebuild": "node prebuild.js",
     "serve": "preact build --prerender --template src/template.html && preact serve",
     "dev": "preact watch",
     "lint": "eslint src"
@@ -17,6 +18,7 @@
     "build/*"
   ],
   "devDependencies": {
+    "fs-extra": "^8.1.0",
     "babel-eslint": "^10.0.3",
     "classnames": "^2.2.6",
     "copy-webpack-plugin": "^4.6.0",

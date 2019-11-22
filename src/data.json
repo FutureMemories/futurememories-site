@@ -74,6 +74,28 @@
       }
     ]
   },
+  "routes": [
+    {
+      "url": "/",
+      "title": "Future Memories",
+      "description": "Future Memories is a digital studio where strategic design and technology unite into products of tomorrow."
+    },
+    {
+      "url": "/work",
+      "title": "Future Memories - Our work",
+      "description": ""
+    },
+    {
+      "url": "/team",
+      "title": "Future Memories - The team",
+      "description": ""
+    },
+    {
+      "url": "/careers",
+      "title": "Future Memories - Careers",
+      "description": ""
+    }
+  ],
   "frontTeamPictures": [
     "team-1.jpg",
     "team-2.jpg",
@@ -125,6 +147,7 @@
       "name": "Bauer University",
       "image": "cases/bauer-university.png",
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
+      "metaDesc": "",
       "client": "Bauer, Bond Communications",
       "type": "React, Python, GraphQL, UX",
       "style": [
@@ -153,6 +176,7 @@
         "width"
       ],
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
+      "metaDesc": "",
       "client": "Mat.se",
       "type": "UX/UI, JAVA, SPRING, iOS",
       "style": [
@@ -174,6 +198,7 @@
       "name": "proFLIGHT",
       "image": "cases/proflight.png",
       "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "metaDesc": "",
       "client": "Avtech, Invencon",
       "type": "iOS, UX/UI",
       "style": [
@@ -191,6 +216,7 @@
       "id": "picular",
       "name": "Picular",
       "desc": "A rocket fast primary color generator using Google's image search.",
+      "metaDesc": "",
       "type": "UX/UI, WEB",
       "image": "cases/picular.jpg",
       "style": [
@@ -213,6 +239,7 @@
       "name": "SleepCure",
       "image": "cases/sleepcure.png",
       "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
+      "metaDesc": "",
       "type": "IOS, HealthKit",
       "style": [
         {
@@ -230,6 +257,7 @@
       "name": "Retts Plus",
       "image": "cases/retts-plus.png",
       "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "metaDesc": "",
       "client": "Predicare",
       "type": "UX/UI, iOS",
       "style": [
@@ -258,6 +286,7 @@
       "name": "AntiStress",
       "image": "cases/antistress.png",
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "metaDesc": "",
       "client": "Västra Götalandsregionen",
       "type": "UX/UI, iOS, Android",
       "style": [
@@ -304,6 +333,7 @@
         "height"
       ],
       "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
+      "metaDesc": "",
       "type": "UX/UI, iOS, watchOS",
       "style": [
         {
@@ -367,6 +397,7 @@
       "name": "Paykartan",
       "image": "cases/paykartan.png",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
+      "metaDesc": "",
       "type": "UX/UI, Web",
       "style": [
         {
