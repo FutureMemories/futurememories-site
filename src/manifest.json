@@ -5,7 +5,6 @@
   "display": "standalone",
   "background_color": "#131824",
   "theme_color": "#131824",
-  "description": "Future Memories is a digital studio where strategic design and technology unite into products of tomorrow.",
   "icons": [
     { "src": "/assets/favicon-48.png", "sizes": "48x48", "type": "image/png" },
     { "src": "/assets/favicon-72.png", "sizes": "72x72", "type": "image/png" },
