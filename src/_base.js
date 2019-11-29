@@ -22,7 +22,7 @@ export default class extends Component {
       document.querySelector('title').innerText = title
 
       const metaDescription = document.querySelector('meta[name="description"]')
-      if (metaDescription) metaDescription.setAttribute('content', routeData.description)
+      if (routeData && metaDescription) metaDescription.setAttribute('content', routeData.description)
     }
   }
 
