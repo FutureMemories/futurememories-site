@@ -31,7 +31,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Bauer University' dark>
+      <Base route='/cases/bauer-university' dark>
         <div class={s.view}>
           <div class={s.inner}>
 

@@ -47,7 +47,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Picular' dark>
+      <Base route='/cases/picular' dark>
         <div class={s.view}>
           <div class={s.inner}>
 

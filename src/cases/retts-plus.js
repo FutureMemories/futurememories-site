@@ -30,7 +30,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Retts Plus'>
+      <Base route='/cases/retts-plus'>
         <div class={s.view}>
           <div class={s.inner}>
 

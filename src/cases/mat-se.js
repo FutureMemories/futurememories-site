@@ -33,7 +33,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Mat.se' dark>
+      <Base route='/cases/mat-se' dark>
         <div class={s.view}>
           <div class={s.inner}>
 
