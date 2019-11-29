@@ -9,42 +9,28 @@ const init = async () => {
   // prerender-url.json
   const caseData = showCases.map(c => ({
     url: '/cases/' + c.id,
-    title: c.name ? 'Future Memories - ' + c.name : 'Future Memories',
+    title: `Future Memories${c.name ? ` - ${c.name}` : ''}`,
     description: c.metaDesc || c.desc
   }))
 
-  const prerenderUrls = [
-    ...routes,
-    ...caseData
-  ]
+  const prerenderUrls = [...routes, ...caseData]
 
   // sitemap.xml
-  let sitemapData = ''
-  routes.forEach(route => {
-    sitemapData += `
-  <url>
-    <loc>https://www.futurememories.se${route.url}</loc>
-    <lastmod>${currentDate}</lastmod>
-    <priority>${route.url === '/' ? '1.00' : '0.80'}</priority>
-  </url>`
+  const siteRoutes = []
+  routes.forEach(r => siteRoutes.push({ url: r.url, prio: r.url === '/' ? '1.00' : '0.80' }))
+  showCases.forEach(r => siteRoutes.push({ url: `/cases/${r.id}`, prio: '0.64' }))
+
+  let siteUrls = ''
+  siteRoutes.forEach(r => {
+    siteUrls += `\n  <url>\n    <loc>https://www.futurememories.se${r.url}</loc>\n    <lastmod>${currentDate}</lastmod>\n    <priority>${r.prio}</priority>\n  </url>`
   })
 
-  showCases.forEach(showcase => {
-    sitemapData += `
-  <url>
-    <loc>https://www.futurememories.se/cases/${showcase.id}</loc>
-    <lastmod>${currentDate}</lastmod>
-    <priority>0.64</priority>
-  </url>`
-  })
-
-  sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">${sitemapData}
-</urlset>`
+  const sitemap = [
+    '<?xml version="1.0" encoding="UTF-8"?>', '<urlset',
+    '  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"', '  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"',
+    '  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"',
+    '>' + siteUrls, '</urlset>'
+  ].join('\n')
 
   // Create prerender-urls.json file
   writeFileSync(resolve(__dirname, 'prerender-urls.json'), JSON.stringify(prerenderUrls))
