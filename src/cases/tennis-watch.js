@@ -43,7 +43,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='Tennis Watch'>
+      <Base route='/cases/tennis-watch'>
         <div class={s.view}>
           <div class={s.inner}>
 

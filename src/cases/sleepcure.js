@@ -30,7 +30,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='SleepCure' dark>
+      <Base route='/cases/sleepcure' dark>
         <div class={s.view}>
           <div class={s.inner}>
 

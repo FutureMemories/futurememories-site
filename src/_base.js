@@ -2,6 +2,7 @@ import { Component } from 'preact'
 import cx from 'classnames'
 import Header from './components/header'
 import Footer from './components/footer'
+import prerenderUrls from '../prerender-urls.json'
 
 const links = [
   { label: 'Home', to: '/' },
@@ -12,10 +13,16 @@ const links = [
 
 export default class extends Component {
   componentWillMount () {
-    const title = (this.props.title ? `Future Memories - ${this.props.title}` : 'Future Memories')
+    let title = 'Future Memories'
+    const routeData = prerenderUrls.find(r => r.url === this.props.route)
+    if (routeData) title = routeData.title
+
     if (typeof document !== 'undefined') {
       document.title = title
       document.querySelector('title').innerText = title
+
+      const metaDescription = document.querySelector('meta[name="description"]')
+      if (routeData && metaDescription) metaDescription.setAttribute('content', routeData.description)
     }
   }
 

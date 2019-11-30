@@ -30,7 +30,7 @@ export default class extends Component {
 
   render () {
     return (
-      <Base title='proFLIGHT'>
+      <Base route='/cases/proflight'>
         <div class={s.view}>
           <div class={s.inner}>
 
