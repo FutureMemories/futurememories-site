@@ -78,17 +78,17 @@
     {
       "url": "/",
       "title": "Future Memories - Digital Design and Development in Gothenburg",
-      "description": "A digital studio with experts in Service Design, UX Design, UI Design, Mobile Development, Web Development, Backend Development and Game Development."
+      "description": "A digital studio with experts in Service Design, UX Design, UI Design, App Development, Web Development, Backend Development and Game Development."
     },
     {
       "url": "/work",
-      "title": "Future Memories - Our work: design, mobile, web, backend, games",
+      "title": "Future Memories - Our work: design, apps, web, backend, games",
       "description": "Future Memories' most noticeable productions, always delivered with a rock-solid UX and stunning UI design: native and cross-platform mobile apps for iOS and Android, state-of-the-art web applications built in React or mobile games in Unity, always backed by powerful and scalable cloud services written in Java, Scala, Kotlin, Python or Go, preferrably deployed on AWS or Google Cloud."
     },
     {
       "url": "/team",
       "title": "Future Memories - The team: designers, developers and visionaries",
-      "description": "Future Memories, a well-knit team of passionate and experienced UX designers, UI designers, mobile developers, frontend developers and backend developers. All with the same ambition to build outstanding digital products for a better tomorrow."
+      "description": "Future Memories, a well-knit team of passionate and experienced UX designers, UI designers, app developers, frontend developers and backend engineers. All with the same ambition to build outstanding digital products for a better tomorrow."
     },
     {
       "url": "/careers",
