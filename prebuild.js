@@ -8,7 +8,7 @@ const init = async () => {
 
   // prerender-url.json
   const caseData = showCases.map(c => {
-    const caseTitle = c.name && c.name + (c.desc ? `, ${c.desc.toLowerCase()}` : '')
+    const caseTitle = c.name && c.name + (c.desc ? `, ${c.desc.charAt(0).toLowerCase() + c.desc.slice(1)}` : '')
     return ({
       url: '/cases/' + c.id,
       title: c.title || `Future Memories${caseTitle ? `: ${caseTitle}` : ''}`,
