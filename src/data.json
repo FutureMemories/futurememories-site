@@ -10,67 +10,89 @@
     "partners": [
       {
         "name": "Mat.se",
-        "logo": "partners/mat-se.svg"
+        "logo": "partners/mat-se.svg",
+        "link": "/cases/mat-se",
+        "alt": "We've built an app for Mat.se to improve the logistics for delivery staff."
       },
       {
         "name": "AVTECH",
-        "logo": "partners/avtech.svg"
+        "logo": "partners/avtech.svg",
+        "link": "/cases/proflight",
+        "alt": "We made an app to visualise wind conditions and weather alerts to assist pilots in flying safer and more fuel efficient"
       },
       {
         "name": "STENDAHLS",
-        "logo": "partners/stendahls.svg"
+        "logo": "partners/stendahls.svg",
+        "alt": ""
       },
       {
         "name": "Axfood",
-        "logo": "partners/axfood.svg"
+        "logo": "partners/axfood.svg",
+        "alt": ""
       },
       {
         "name": "SKF",
-        "logo": "partners/skf.svg"
+        "logo": "partners/skf.svg",
+        "alt": ""
       },
       {
         "name": "Predicare",
-        "logo": "partners/predicare.svg"
+        "logo": "partners/predicare.svg",
+        "link": "/cases/retts-plus",
+        "alt": ""
       },
       {
-        "name": "Creuna",
-        "logo": "partners/creuna.svg"
+        "name": "Picadeli",
+        "logo": "partners/picadeli.svg",
+        "alt": "By building a better UX journey and improving user interface for staff, we made it easer to keep track on in-stock and to place new orders"
       },
       {
         "name": "Nelly.com",
-        "logo": "partners/nelly-com.svg"
+        "logo": "partners/nelly-com.svg",
+        "alt": ""
       },
       {
         "name": "STC",
-        "logo": "partners/stc.svg"
+        "logo": "partners/stc.svg",
+        "link": "",
+        "alt": "New site, new iOS & Android app"
       },
       {
         "name": "collector Bank",
-        "logo": "partners/collector-bank.svg"
+        "logo": "partners/collector-bank.svg",
+        "alt": ""
       },
       {
         "name": "Stena Line",
-        "logo": "partners/stena-line.svg"
+        "logo": "partners/stena-line.svg",
+        "alt": ""
       },
       {
         "name": "bond",
-        "logo": "partners/bond.svg"
+        "logo": "partners/bond.svg",
+        "alt": ""
       },
       {
         "name": "BAUER",
-        "logo": "partners/bauer.svg"
+        "logo": "partners/bauer.svg",
+        "link": "/cases/bauer-university",
+        "alt": "We created an e-learning tool for Bauer sales reps worldwide to improve quality of sales performance"
       },
       {
-        "name": "nouw",
-        "logo": "partners/nouw.svg"
+        "name": "Nordish",
+        "logo": "partners/nordish.svg",
+        "alt": ""
       },
       {
         "name": "Sleep Cycle",
-        "logo": "partners/sleep-cycle.svg"
+        "logo": "partners/sleep-cycle.svg",
+        "alt": ""
       },
       {
         "name": "Västra Götalandsregionen",
-        "logo": "partners/vgregion.svg"
+        "logo": "partners/vgregion.svg",
+        "link": "/cases/antistress",
+        "alt": "We built an app to lower stress levels through conscious breathing and tracking daily stress levels in a diary"
       }
     ]
   },

@@ -80,11 +80,14 @@ export default class extends Component {
                 <p>Say hi to some of our friends</p>
               </div>
               <div class={s.content}>
-                {company.partners.map(partner => (
-                  <div key={'partner_' + partner.name} class={s.partner}>
-                    <img alt={`${partner.name} logo`} src={require(`../images/${partner.logo}`)} />
-                  </div>
-                ))}
+                {company.partners.map(partner => {
+                  const ElementTag = partner.link ? 'a' : 'div'
+                  return (
+                    <ElementTag href={partner.link} key={'partner_' + partner.name} class={s.partner}>
+                      <img alt={(partner.alt || `${partner.name} logo`)} src={require(`../images/${partner.logo}`)} />
+                    </ElementTag>
+                  )
+                })}
               </div>
             </div>
 
