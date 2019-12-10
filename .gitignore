@@ -4,3 +4,7 @@ dist
 node_modules
 build/
 oldsite/
+
+# Generated files from prebuild:
+/prerender-urls.json
+/src/assets-root/sitemap.xml
