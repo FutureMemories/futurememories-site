@@ -146,6 +146,7 @@
       "id": "bauer-university",
       "name": "Bauer University",
       "image": "cases/bauer-university.png",
+      "title": "",
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
       "metaDesc": "Bauer University, a gamification-based online training platform written in React and Python leveraging Django and GraphQL.",
       "client": "Bauer, Bond Communications",
@@ -175,6 +176,7 @@
         "cases/mat-se-bg.jpg",
         "width"
       ],
+      "title": "",
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
       "client": "Mat.se",
@@ -197,6 +199,7 @@
       "id": "proflight",
       "name": "proFLIGHT",
       "image": "cases/proflight.png",
+      "title": "",
       "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "client": "Avtech, Invencon",
@@ -215,6 +218,7 @@
     {
       "id": "picular",
       "name": "Picular",
+      "title": "",
       "desc": "A rocket fast primary color generator using Google's image search.",
       "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
       "type": "UX/UI, React",
@@ -238,6 +242,7 @@
       "id": "sleepcure",
       "name": "SleepCure",
       "image": "cases/sleepcure.png",
+      "title": "Future Memories: SleepCure, a digital analysis and treatment method for people who want to sleep better.",
       "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
       "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
       "type": "iOS, HealthKit",
@@ -256,6 +261,7 @@
       "id": "retts-plus",
       "name": "Retts Plus",
       "image": "cases/retts-plus.png",
+      "title": "",
       "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
       "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
       "client": "Predicare",
@@ -285,6 +291,7 @@
       "id": "antistress",
       "name": "AntiStress",
       "image": "cases/antistress.png",
+      "title": "",
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "metaDesc": "AntiStress, a pocket diary for iOS and Android to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client": "Västra Götalandsregionen",
@@ -307,6 +314,7 @@
       "id": "nordish-market",
       "name": "Nordish Market",
       "image": "cases/nordish-market.png",
+      "title": "",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion throughout a working day. Perfect for breakfast meetings, team lunches or big events.",
       "type": "React, Python, Django",
       "style": [
@@ -332,6 +340,7 @@
         "cases/tennis-watch-bg.jpg",
         "height"
       ],
+      "title": "",
       "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
       "metaDesc": "Tennis Watch, the first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
       "type": "UX/UI, iOS, watchOS",
@@ -356,6 +365,7 @@
         "cases/sleep-cycle-dashboard-bg.jpg",
         "width"
       ],
+      "title": "",
       "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
       "client": "Sleep Cycle",
       "type": "Scala, Reactive Streams",
@@ -374,6 +384,7 @@
       "id": "paperquiz",
       "name": "PaperQuiz",
       "image": "cases/paperquiz.png",
+      "title": "",
       "desc": "A quiz about relativity. Each question is about sorting according to a parameter. Whoever comes closest to the right order wins.",
       "type": "iOS, Android, Web",
       "style": [
@@ -396,6 +407,7 @@
       "id": "paykartan",
       "name": "Paykartan",
       "image": "cases/paykartan.png",
+      "title": "",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
       "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
       "type": "UX/UI, Web",
@@ -417,6 +429,7 @@
         "cases/forces-of-freedom-bg.jpg",
         "height"
       ],
+      "title": "",
       "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
       "client": "Koyoki Ltd",
       "type": "UX/UI",
@@ -434,6 +447,7 @@
       "id": "travelmate",
       "name": "Travelmate",
       "image": "cases/travelmate.png",
+      "title": "",
       "desc": "Mobile travel companion app which keeps all your trip details in one place when travelling within Stena Line’s ferry network.",
       "type": "iOS, Android",
       "style": [
@@ -453,6 +467,7 @@
     {
       "id": "spira",
       "name": "Spira",
+      "title": "",
       "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
       "client": "Collector Bank, Varvet",
       "type": "Android",
@@ -468,6 +483,7 @@
       "id": "wya-network",
       "name": "WYA Network",
       "image": "cases/wya-network.png",
+      "title": "",
       "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
       "client": "WHOYOUARE LLC",
       "type": "iOS, UX/UI",

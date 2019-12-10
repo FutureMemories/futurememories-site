@@ -7,11 +7,14 @@ const init = async () => {
   const currentDate = new Date().toISOString()
 
   // prerender-url.json
-  const caseData = showCases.map(c => ({
-    url: '/cases/' + c.id,
-    title: `Future Memories${c.name ? ` - ${c.name}` : ''}`,
-    description: c.metaDesc || c.desc
-  }))
+  const caseData = showCases.map(c => {
+    const caseTitle = c.name && c.name + (c.desc ? `, ${c.desc.toLowerCase()}` : '')
+    return ({
+      url: '/cases/' + c.id,
+      title: c.title || `Future Memories${caseTitle ? `: ${caseTitle}` : ''}`,
+      description: c.metaDesc || c.desc
+    })
+  })
 
   const prerenderUrls = [...routes, ...caseData]
 
