@@ -3,8 +3,8 @@ import Icon from './icon'
 import { company } from '../data.json'
 import s from './footer.sass'
 
-export default ({ dark, links }) => (
-  <footer class={cx(s.footer, dark && s.dark)}>
+export default ({ dark, background, links }) => (
+  <footer class={cx(s.footer, dark && s.dark)} style={{ background }}>
     <div class={s.inner}>
 
       <div class={s.first}>

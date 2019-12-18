@@ -218,21 +218,23 @@
       "showcase": true
     },
     {
-      "id": "proflight",
-      "name": "proFLIGHT",
-      "image": "cases/proflight.png",
+      "id": "bandbond",
+      "name": "Bandbond",
+      "imageBg": [
+        "cases/bandbond-bg.jpg",
+        "height"
+      ],
       "title": "",
-      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "client": "Avtech, Invencon",
-      "type": "iOS, UX/UI",
+      "desc": "A community app bringing hard rock and metal fans closer together with they favorite bands.",
+      "type": "iOS, Android, Java",
       "style": [
         {
-          "background": "#3E4C65",
+          "background": "#131313",
           "color": "#fff"
         },
         {
-          "min-width": "19.5rem"
+          "max-width": "21rem",
+          "min-width": "15rem"
         }
       ],
       "showcase": true
@@ -256,6 +258,26 @@
         },
         {
           "margin-left": "-80px"
+        }
+      ],
+      "showcase": true
+    },
+    {
+      "id": "proflight",
+      "name": "proFLIGHT",
+      "image": "cases/proflight.png",
+      "title": "",
+      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UX/UI",
+      "style": [
+        {
+          "background": "#3E4C65",
+          "color": "#fff"
+        },
+        {
+          "min-width": "19.5rem"
         }
       ],
       "showcase": true

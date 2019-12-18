@@ -8,6 +8,7 @@ import Careers from './routes/careers'
 import NotFound from './routes/404'
 
 import Picular from './cases/picular'
+import Bandbond from './cases/bandbond'
 import TennisWatch from './cases/tennis-watch'
 import MatSe from './cases/mat-se'
 import Paykartan from './cases/paykartan'
@@ -54,6 +55,7 @@ export default class extends Component {
           <Careers path='/careers' />
 
           <Picular path='/cases/picular' />
+          <Bandbond path='/cases/bandbond' />
           <TennisWatch path='/cases/tennis-watch' />
           <MatSe path='/cases/mat-se' />
           <Paykartan path='/cases/paykartan' />

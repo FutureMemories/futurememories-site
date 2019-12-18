@@ -16,12 +16,18 @@
       font-weight: 500
       white-space: pre-line
 
-    > p
-      margin: 2rem 0
-      font-size: 2rem
-      max-width: 56rem
-      line-height: 2.8rem
-      opacity: 0.8
+    > .content
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+
+      > p
+        margin: 2rem 0
+        font-size: 2rem
+        max-width: 56rem
+        line-height: 2.8rem
+        opacity: 0.8
 
     > a
       margin-top: -0.7rem
@@ -51,3 +57,7 @@
 
       &.shadow
         box-shadow: 0 0 30px 0 rgba(84,98,109,0.1)
+
+    @media screen and (max-width: 1190px)
+      > .content.fullWidth > p
+        max-width: none

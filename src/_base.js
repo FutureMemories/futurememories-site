@@ -30,7 +30,7 @@ export default class extends Component {
     this.setState({ locked: !this.state.locked })
   }
 
-  render ({ children, dark, removeFooter, fadeInHeader, firstView, route }) {
+  render ({ children, dark, background, removeFooter, fadeInHeader, firstView, route }) {
     return (
       <div class={cx('app', this.state.locked && 'locked')}>
         <Header
@@ -43,7 +43,11 @@ export default class extends Component {
         />
         {children}
         {!removeFooter && (
-          <Footer dark={dark} links={links} />
+          <Footer
+            dark={dark}
+            background={background}
+            links={links}
+          />
         )}
       </div>
     )
