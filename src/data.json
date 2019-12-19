@@ -425,6 +425,46 @@
       "link": "https://www.sleepcycle.com/"
     },
     {
+      "id": "picadeli",
+      "name": "Picadeli",
+      "imageBg": [
+        "cases/picadeli-bg.jpg",
+        "height"
+      ],
+      "title": "",
+      "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning.",
+      "type": "UX/UI, iOS",
+      "style": [
+        {
+          "background": "#6FBC84",
+          "color": "#fff"
+        },
+        {
+          "max-width": "21rem",
+          "min-width": "15rem"
+        }
+      ]
+    },
+    {
+      "id": "paykartan",
+      "name": "Paykartan",
+      "image": "cases/paykartan.png",
+      "title": "",
+      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
+      "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
+      "type": "UX/UI, Web",
+      "style": [
+        {
+          "background": "#FFD2D2",
+          "color": "#070B13"
+        },
+        {
+          "min-width": "21.2rem"
+        }
+      ],
+      "showcase": true
+    },
+    {
       "id": "paperquiz",
       "name": "PaperQuiz",
       "image": "cases/paperquiz.png",
@@ -446,25 +486,6 @@
         }
       ],
       "appLink": "https://itunes.apple.com/se/app/paper-quiz-klurig-fr%C3%A5gesport/id1447129683"
-    },
-    {
-      "id": "paykartan",
-      "name": "Paykartan",
-      "image": "cases/paykartan.png",
-      "title": "",
-      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
-      "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
-      "type": "UX/UI, Web",
-      "style": [
-        {
-          "background": "#FFD2D2",
-          "color": "#070B13"
-        },
-        {
-          "min-width": "21.2rem"
-        }
-      ],
-      "showcase": true
     },
     {
       "id": "forces-of-freedom",
@@ -507,6 +528,27 @@
         }
       ],
       "appLink": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
+    },
+    {
+      "id": "folklore-company",
+      "name": "The Folklore Company",
+      "imageBg": [
+        "cases/folklore-company-bg.jpg",
+        "height"
+      ],
+      "title": "",
+      "desc": "Order your personal stitch kit or ready-made embroidery wall hanging. When tech meets tradition.",
+      "type": "React, Node, Scala",
+      "style": [
+        {
+          "background": "#E2E3E5",
+          "color": "#070B13"
+        },
+        {
+          "max-width": "21rem",
+          "min-width": "15rem"
+        }
+      ]
     },
     {
       "id": "spira",
