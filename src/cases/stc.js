@@ -105,7 +105,7 @@ export default class extends Component {
               <DeviceBlock
                 customClass={s.deviceBlock}
                 ios='https://apps.apple.com/us/app/stc-training-club/id575468749'
-                andriod='dfsdfdsf'
+                // andriod='https://....'
               />
               <img class={s.devices} src={require('../images/cases/stc-6.jpg')} />
             </CenterBlock>
