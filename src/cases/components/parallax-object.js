@@ -21,11 +21,11 @@ export default class extends Component {
 
     if (this.scrollPoint > this.greatGrandParent.offsetTop && window.pageYOffset < (this.greatGrandParent.offsetTop + this.greatGrandParent.offsetHeight)) {
       const positon = (this.scrollPoint - this.greatGrandParent.offsetTop) / this.speed
-      this.parallax.style.transform = `translateY(${positon.toFixed(1)}px)`
+      this.parallax.style.transform = `translate${this.props.horizontal ? 'X' : 'Y'}(${positon.toFixed(1)}px)`
     }
   }
 
-  render ({ image, alt = 'image', speed, startPos, diagonal, width, ...props }) {
+  render ({ image, alt = 'image', speed, startPos, diagonal, horizontal, width, ...props }) {
     return (
       <div
         class={cx(s.parallaxObject)}
@@ -37,8 +37,8 @@ export default class extends Component {
         {...props}
       >
         <img
-          class={cx(s.parallaxBackground, diagonal && s.diagonal)}
-          style={{ top: `${startPos}%`, maxWidth: width }}
+          class={cx(s.parallaxBackground, diagonal && s.diagonal, horizontal && s.horizontal)}
+          style={{ [horizontal ? 'left' : 'top']: `${startPos}%`, maxWidth: width }}
           src={require(`../../images/${image}`)}
           alt={alt}
         />

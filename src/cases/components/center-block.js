@@ -1,9 +1,9 @@
 import cx from 'classnames'
 import s from './center-block.sass'
 
-export default ({ title, text, component, src, alt = 'image', background, color, children, modifer, inView }) => (
+export default ({ title, text, component, src, alt = 'image', background, color, children, modifer, className, inView }) => (
   <div
-    class={cx(s.centerBlock, modifer && s[modifer])}
+    class={cx(s.centerBlock, modifer && s[modifer], className)}
     style={{ background, color }}
   >
     <div class={cx(s.inner, !src && s.block, src && src.align && s[src.align])}>

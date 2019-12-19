@@ -4,11 +4,16 @@
 
   > .device
     color: $color-red
-    display: inline-block
+    display: block
     position: relative
 
     &:nth-child(2)
-      margin-left: 5rem
+      margin-top: 2rem
+
+    @media screen and (min-width: 443px)
+      display: inline-block
+      &:nth-child(2)
+        margin-left: 5rem
 
     > svg
       position: relative

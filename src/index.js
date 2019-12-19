@@ -17,6 +17,7 @@ import ProFlight from './cases/proflight'
 import AntiStress from './cases/antistress'
 import BauerUniversity from './cases/bauer-university'
 import SleepCure from './cases/sleepcure'
+import Stc from './cases/stc'
 import CaseComponents from './cases/components'
 
 import './index.sass'
@@ -64,6 +65,7 @@ export default class extends Component {
           <AntiStress path='/cases/antistress' />
           <BauerUniversity path='/cases/bauer-university' />
           <SleepCure path='/cases/sleepcure' />
+          <Stc path='/cases/stc' />
           <CaseComponents path='/cases/__components' />
 
           <NotFound type='404' default />

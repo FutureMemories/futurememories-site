@@ -1,0 +1,241 @@
+@import '../settings.sass'
+
+.view
+  position: relative
+  padding-top: 14rem
+  width: 100%
+  background: #FFF
+  color: #161D2B
+
+  > .inner
+    position: relative
+
+    h1
+      color: #161D2B
+
+    p
+      line-height: 2.8rem !important
+      font-size: 2rem
+      opacity: .8
+
+    > .websiteSection > div
+      padding-bottom: 0
+
+      > img
+        margin-right: -53rem
+        max-height: 63.5rem
+        width: auto
+        height: 45vw
+
+      @media screen and (max-width: 720px)
+        padding-bottom: 4rem
+        padding-top: 0
+
+        > div
+          padding-top: 0
+          text-align: center
+
+        > img
+          display: none
+
+      > div > p
+        max-width: none
+
+    > .horizontalParallax
+      padding: 2rem 0
+      height: auto
+      background: white
+
+      > div > div
+        //width: 72rem
+        display: block
+        margin: 0
+
+        > div
+
+          &:nth-child(2)
+            margin-top: 4rem
+
+          > img
+            max-width: none
+            max-height: 29rem
+            width: auto
+            height: 21vw
+            min-height: 14rem
+
+    > .appSection > div > div
+      max-width: 51rem
+
+    > .getAppSection
+      > div > div
+        padding: 9.6rem 3rem 0
+        max-width: 60rem
+
+        .deviceBlock
+          margin-top: 6rem
+
+        .devices
+          margin: 2rem 0 -10rem
+          max-width: 54.5rem
+          width: 100%
+          height: auto
+
+    > .iconsBlock
+      > div > div:nth-child(2)
+        margin: auto
+        padding-right: 0
+        max-width: 42rem
+
+      .icons
+        margin-right: 2rem
+        max-width: 48rem
+        max-height: 49.7rem
+        width: 38vw
+        height: 40vw
+        background-size: 100%
+        background-repeat: no-repeat
+
+        @media screen and (max-width: 720px)
+          max-width: 30rem
+          max-height: 32rem
+          width: 60vw
+          height: 64vw
+
+        &:global(.inView)
+          background-image: url('../images/cases/stc-icons.svg')
+
+    > .lampSection > div
+      padding-top: 0
+
+      > div:not(.lamp)
+        margin-top: 12rem
+        max-width: 38rem
+
+      > img
+        position: relative
+        margin-top: 13.5rem
+        max-width: 53.8rem
+        width: 100%
+        height: auto
+
+      > .lamp
+        position: absolute
+        top: -1rem
+        left: 53%
+        z-index: 1
+        transform: translateX(-50%)
+
+        > img
+          width: 29rem
+          height: auto
+          opacity: 0
+          transform-origin: top center
+
+        &:global(.inView)
+          > img
+            animation: lamp-entry 3s forwards ease-in-out, lamp-hanging 5s 3s infinite linear
+
+        &:after
+          position: absolute
+          right: 22rem
+          bottom: 7rem
+          max-width: 10rem
+          max-height: 10rem
+          width: 12vw
+          height: 12vw
+          border-radius: 50%
+          background: #F6EE4E
+          content: ''
+
+      @media screen and (max-width: 1140px)
+        flex-direction: column
+
+        > div:not(.lamp)
+          margin-top: 15%
+          max-width: 52rem
+          text-align: center
+
+          > p
+            margin-right: auto
+            margin-left: auto
+
+        > .lamp
+          left: 42%
+
+          &:after
+            right: 85%
+            bottom: 20%
+
+          > img
+            max-width: 53rem
+            width: 50%
+
+        > img
+          top: 10vw
+          left: 10%
+          margin-top: 0
+          width: 60vw
+
+    > .workoutSection > div
+      > div
+        margin-left: 2rem
+        max-width: 38rem
+
+      > img
+        position: relative
+        margin-top: 5%
+        margin-left: -2rem
+        width: 60%
+        height: auto
+
+      @media screen and (max-width: 1000px)
+        padding-top: 0
+
+        > div
+          text-align: center
+          max-width: none
+
+        > img
+          width: 100%
+
+  @keyframes lamp-entry
+    0%
+      opacity: 0
+      transform: rotate(-10deg)
+
+    15%
+      opacity: 1
+      transform: rotate(9deg)
+
+    30%
+      transform: rotate(-7deg)
+
+    45%
+      transform: rotate(5deg)
+
+    60%
+      transform: rotate(-3deg)
+
+    70%
+      transform: rotate(2deg)
+
+    80%
+      transform: rotate(-1deg)
+
+    90%
+      transform: rotate(.5deg)
+
+    100%
+      opacity: 1
+      transform: rotate(0deg)
+
+  @keyframes lamp-hanging
+    0%, 100%
+      opacity: 1
+      transform: rotate(0deg)
+
+    33%
+      transform: rotate(.2deg)
+
+    66%
+      transform: rotate(-.2deg)
