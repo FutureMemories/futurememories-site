@@ -8,20 +8,19 @@ import LargeImage from './components/large-image'
 import BookmarkBlock from './components/bookmark-block'
 import TextBlock from './components/text-block'
 import ProjectsBlock from './components/projects-block'
+import CenterBlock from './components/center-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child`,
   `${s.inner} > div:nth-child(4) > div:first-child > div`,
-  `${s.inner} > div:nth-child(5) > div:first-child > div`
+  `${s.inner} > div:nth-child(5) > div:first-child > div`,
+  `${s.inner} > div:nth-child(6) > div:first-child > div`
 ].join(',.')
 
 export default class extends Component {
   componentDidMount () {
     inView.offset(200)
     inView(`.${inViewClasses}`).on('enter', el => {
-      console.log(
-        'ff'
-      )
       el.classList.add('inView')
     })
   }
@@ -42,6 +41,7 @@ export default class extends Component {
             />
 
             <LargeImage
+              id='bandbond'
               src='cases/bandbond-video.jpg'
               video='bandbond.mp4'
               background='#131313'
@@ -85,10 +85,18 @@ export default class extends Component {
               modifier='bandbondPhoneBg'
             />
 
+            <CenterBlock
+              className={s.aboutSection}
+              inView='inViewBottom'
+              background='#171717'
+              color='#858585'
+              component={<p>{'Future Memories are behind the development and maintenance of Bandbond\'s native apps for both iOS and Android. Designing and developing this app is an ongoing collaboration with our friends at '}<a href='https://www.madinsweden.com/' target='_blank' rel='noopener noreferrer'>Mad in Sweden</a> and <a href='https://bandbond.com/' target='_blank' rel='noopener noreferrer'>bandbond</a>. Together we rock! </p>}
+            />
+
             <ProjectsBlock
               current='bandbond'
               similar={['proflight', 'tennis-watch', 'bauer-university']}
-              background='#171717'
+              background='#131313'
             />
 
           </div>
