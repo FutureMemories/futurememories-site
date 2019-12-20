@@ -69,6 +69,7 @@ export default class extends Component {
               background='white'
               color='#737780'
               align='left'
+              link={['Visit the site', 'https://stc.se/']}
             />
 
             <ParallaxObjectBlock

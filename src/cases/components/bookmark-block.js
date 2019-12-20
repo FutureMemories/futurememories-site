@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import s from './bookmark-block.sass'
 
-export default ({ title, text, items, image, alt = 'image', background, color, align, modifier, children, className, inView }) => (
+export default ({ title, text, items, image, alt = 'image', background, color, align, modifier, children, className, inView, link }) => (
   <div
     class={cx(s.bookmarkBlock, modifier && s[modifier], className)}
     style={{ background, color }}
@@ -18,6 +18,9 @@ export default ({ title, text, items, image, alt = 'image', background, color, a
             <span>{item.name}</span>
           </p>
         ))}
+        {link && (
+          <a href={link[1]} target='_blank' rel='noopener noreferrer'>{link[0]}</a>
+        )}
       </div>
     </div>
   </div>

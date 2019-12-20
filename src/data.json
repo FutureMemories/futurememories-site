@@ -167,21 +167,21 @@
     {
       "id": "stc",
       "name": "STC",
-      "imageBg": [
-        "cases/bandbond-bg.jpg",
-        "height"
-      ],
+      "image": "cases/stc.png",
       "title": "",
-      "desc": "Gymkedjan STC",
+      "desc": "A total overhaul on all digital touch points. Built from the ground up.",
       "type": "React, iOS, Android, AWS",
       "style": [
         {
-          "background": "#131313",
-          "color": "#fff"
+          "background": "#FF5200",
+          "color": "white"
         },
         {
-          "max-width": "21rem",
-          "min-width": "15rem"
+          "min-width": "23rem"
+        },
+        {
+          "top": ".8rem",
+          "right": "3rem"
         }
       ],
       "showcase": true
@@ -593,7 +593,7 @@
       ],
       "appLink": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
     },
-    
+
     {
       "id": "spira",
       "name": "Spira",

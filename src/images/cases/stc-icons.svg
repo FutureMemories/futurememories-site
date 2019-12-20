@@ -1,6 +1,6 @@
 <svg width="480" height="497" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style type="text/css">
-        path {stroke-dasharray: 1800;stroke-dashoffset: 18;animation: dash 30s linear forwards;}
+        path {stroke-dasharray: 1800;stroke-dashoffset: 18;animation: dash 20s linear forwards;}
         @keyframes dash {
           0% { stroke-dashoffset: 1850; opacity: 1 }
           10% { opacity: 1 }
