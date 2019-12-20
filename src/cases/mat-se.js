@@ -98,7 +98,7 @@ export default class extends Component {
 
             <ProjectsBlock
               current='mat-se'
-              similar={['nordish-market', 'sleep-cycle-dashboard', 'bauer-university']}
+              similar={['stc', 'bauer-university', 'sleepcure']}
             />
 
           </div>

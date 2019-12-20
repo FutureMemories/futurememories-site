@@ -75,7 +75,7 @@ export default class extends Component {
 
             <ProjectsBlock
               current='bauer-university'
-              similar={['mat-se', 'nordish-market', 'sleep-cycle-dashboard']}
+              similar={['stc', 'mat-se', 'retts-plus']}
               background='#ffffff'
             />
 

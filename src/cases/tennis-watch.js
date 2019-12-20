@@ -111,7 +111,7 @@ export default class extends Component {
             <ProjectsBlock
               background='#0C0F16'
               current='tennis-watch'
-              similar={['picular', 'paykartan', 'proflight']}
+              similar={['stc', 'proflight', 'picular']}
             />
 
           </div>

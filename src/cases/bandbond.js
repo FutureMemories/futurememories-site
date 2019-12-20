@@ -87,7 +87,7 @@ export default class extends Component {
 
             <ProjectsBlock
               current='bandbond'
-              similar={['sleepcure', 'picular', 'bauer-university']}
+              similar={['proflight', 'tennis-watch', 'bauer-university']}
               background='#171717'
             />
 
