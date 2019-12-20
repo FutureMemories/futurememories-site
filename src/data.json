@@ -333,7 +333,7 @@
       "name": "Nordish Market",
       "image": "cases/nordish-market.png",
       "title": "",
-      "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion throughout a working day. Perfect for breakfast meetings, team lunches or big events.",
+      "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day.",
       "type": "React, Python, Django",
       "style": [
         {
@@ -355,7 +355,7 @@
       "name": "Retts Plus",
       "image": "cases/retts-plus.png",
       "title": "",
-      "desc": "Saving lives by supporting emergency personnel in critical decision-making during medical emergency situations.",
+      "desc": "Saving lives by supporting personnel in critical decision-making during medical emergency situations.",
       "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
       "client": "Predicare",
       "type": "UX/UI, iOS",
