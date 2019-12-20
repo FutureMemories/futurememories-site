@@ -153,9 +153,9 @@
   "frontCases": [
     "stc",
     "bauer-university",
-    "mat-se",
     "bandbond",
-    "picular"
+    "picular",
+    "mat-se"
   ],
   "defaultOtherCases": [
     "picular",
