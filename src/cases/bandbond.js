@@ -90,7 +90,7 @@ export default class extends Component {
               inView='inViewBottom'
               background='#171717'
               color='#858585'
-              component={<p>{'Future Memories are behind the development and maintenance of Bandbond\'s native apps for both iOS and Android. Designing and developing this app is an ongoing collaboration with our friends at '}<a href='https://www.madinsweden.com/' target='_blank' rel='noopener noreferrer'>Mad in Sweden</a> and <a href='https://bandbond.com/' target='_blank' rel='noopener noreferrer'>bandbond</a>. Together we rock! </p>}
+              component={<p>{'Future Memories are behind the development and maintenance of Bandbond\'s native apps for both iOS and Android. Designing and developing this app is an ongoing collaboration with our friends at '}<a href='https://www.madinsweden.com/' target='_blank' rel='noopener noreferrer'>Mad in Sweden</a> and <a href='https://bandbond.com/' target='_blank' rel='noopener noreferrer'>Bandbond</a>. Together we rock! 🤘</p>}
             />
 
             <ProjectsBlock
