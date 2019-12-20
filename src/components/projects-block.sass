@@ -118,12 +118,10 @@
 
   @media screen and (max-width: 1000px)
     > .project
-      &:nth-child(4),
-      &:nth-child(5), &:nth-child(6), &:nth-child(7),
-      &:nth-child(10), &:nth-child(11), &:nth-child(12),
-      &:nth-child(15), &:nth-child(16), &:nth-child(17),
+      &:nth-child(n+2)
         grid-column: span 3
         height: 34rem
+
     &.homeProjects
       .project:nth-child(4)
         grid-column: span 3
