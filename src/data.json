@@ -151,11 +151,11 @@
     }
   ],
   "frontCases": [
+    "stc",
     "bauer-university",
     "mat-se",
-    "proflight",
-    "picular",
-    "sleep-cycle-dashboard"
+    "bandbond",
+    "picular"
   ],
   "defaultOtherCases": [
     "picular",
