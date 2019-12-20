@@ -329,31 +329,26 @@
       "showcase": true
     },
     {
-      "id": "mat-se",
-      "name": "Mat.se",
-      "image": "cases/mat-se.png",
-      "imageBg": [
-        "cases/mat-se-bg.jpg",
-        "width"
-      ],
+      "id": "nordish-market",
+      "name": "Nordish Market",
+      "image": "cases/nordish-market.png",
       "title": "",
-      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
-      "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
-      "client": "Mat.se",
-      "type": "UX/UI, Java, Spring, iOS",
+      "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion throughout a working day. Perfect for breakfast meetings, team lunches or big events.",
+      "type": "React, Python, Django",
       "style": [
         {
-          "background": "#993600",
-          "color": "#FFFFFF"
+          "background": "#FDC853",
+          "color": "#070B13"
         },
         {
-          "min-width": "20rem"
+          "min-width": "22rem"
+        },
+        {
+          "height": "calc(100% + 40px)",
+          "margin-top": "-40px"
         }
       ],
-      "imageStyle": {
-        "left": "0"
-      },
-      "showcase": true
+      "link": "https://www.nordishmarket.com/"
     },
     {
       "id": "retts-plus",
@@ -397,28 +392,32 @@
       ],
       "showcase": true
     },
-
     {
-      "id": "nordish-market",
-      "name": "Nordish Market",
-      "image": "cases/nordish-market.png",
+      "id": "mat-se",
+      "name": "Mat.se",
+      "image": "cases/mat-se.png",
+      "imageBg": [
+        "cases/mat-se-bg.jpg",
+        "width"
+      ],
       "title": "",
-      "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion throughout a working day. Perfect for breakfast meetings, team lunches or big events.",
-      "type": "React, Python, Django",
+      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
+      "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
+      "client": "Mat.se",
+      "type": "UX/UI, Java, Spring, iOS",
       "style": [
         {
-          "background": "#FDC853",
-          "color": "#070B13"
+          "background": "#993600",
+          "color": "#FFFFFF"
         },
         {
-          "min-width": "22rem"
-        },
-        {
-          "height": "calc(100% + 40px)",
-          "margin-top": "-40px"
+          "min-width": "20rem"
         }
       ],
-      "link": "https://www.nordishmarket.com/"
+      "imageStyle": {
+        "left": "0"
+      },
+      "showcase": true
     },
     {
       "id": "sleep-cycle-dashboard",
