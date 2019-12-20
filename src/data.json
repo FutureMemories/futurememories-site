@@ -165,6 +165,28 @@
   ],
   "allCases": [
     {
+      "id": "stc",
+      "name": "STC",
+      "imageBg": [
+        "cases/bandbond-bg.jpg",
+        "height"
+      ],
+      "title": "",
+      "desc": "Gymkedjan STC",
+      "type": "React, iOS, Android, AWS",
+      "style": [
+        {
+          "background": "#131313",
+          "color": "#fff"
+        },
+        {
+          "max-width": "21rem",
+          "min-width": "15rem"
+        }
+      ],
+      "showcase": true
+    },
+    {
       "id": "bauer-university",
       "name": "Bauer University",
       "image": "cases/bauer-university.png",
@@ -186,6 +208,122 @@
         {
           "type": "link",
           "url": "https://www.baueruniversity.com/"
+        }
+      ],
+      "showcase": true
+    },
+    {
+      "id": "bandbond",
+      "name": "Bandbond",
+      "imageBg": [
+        "cases/bandbond-bg.jpg",
+        "height"
+      ],
+      "title": "",
+      "desc": "A community app bringing hard rock and metal fans closer together with their favorite bands.",
+      "type": "iOS, Android, Java",
+      "style": [
+        {
+          "background": "#131313",
+          "color": "#fff"
+        },
+        {
+          "max-width": "21rem",
+          "min-width": "15rem"
+        }
+      ],
+      "showcase": true
+    },
+    {
+      "id": "picadeli",
+      "name": "Picadeli",
+      "imageBg": [
+        "cases/picadeli-bg.jpg",
+        "height"
+      ],
+      "title": "",
+      "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning.",
+      "type": "UX/UI, iOS",
+      "style": [
+        {
+          "background": "#6FBC84",
+          "color": "#fff"
+        },
+        {
+          "max-width": "21rem",
+          "min-width": "15rem"
+        }
+      ]
+    },
+    {
+      "id": "proflight",
+      "name": "proFLIGHT",
+      "image": "cases/proflight.png",
+      "title": "",
+      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "client": "Avtech, Invencon",
+      "type": "iOS, UX/UI",
+      "style": [
+        {
+          "background": "#3E4C65",
+          "color": "#fff"
+        },
+        {
+          "min-width": "19.5rem"
+        }
+      ],
+      "showcase": true
+    },
+    {
+      "id": "job-apply",
+      "button": true,
+      "type": "mailto",
+      "label": "Create something awesome with us!",
+      "to": "hello@futurememories.se"
+    },
+    {
+      "id": "picular",
+      "name": "Picular",
+      "title": "",
+      "desc": "A rocket fast primary color generator using Google's image search.",
+      "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
+      "type": "UX/UI, React",
+      "image": "cases/picular.jpg",
+      "style": [
+        {
+          "background": "#F2F5F6",
+          "color": "#070B13"
+        },
+        {
+          "min-width": "21rem",
+          "max-width": "25rem"
+        },
+        {
+          "margin-left": "-80px"
+        }
+      ],
+      "showcase": true
+    },
+    {
+      "id": "antistress",
+      "name": "AntiStress",
+      "image": "cases/antistress.png",
+      "title": "",
+      "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "metaDesc": "AntiStress, a pocket diary for iOS and Android to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "client": "Västra Götalandsregionen",
+      "type": "UX/UI, iOS, Android",
+      "style": [
+        {
+          "background": "linear-gradient(-241deg, #90C8DD 14%, #95B2C7 90%)",
+          "color": "#fff"
+        },
+        {
+          "min-width": "24.4rem"
+        },
+        {
+          "right": "14rem"
         }
       ],
       "showcase": true
@@ -218,90 +356,6 @@
       "showcase": true
     },
     {
-      "id": "bandbond",
-      "name": "Bandbond",
-      "imageBg": [
-        "cases/bandbond-bg.jpg",
-        "height"
-      ],
-      "title": "",
-      "desc": "A community app bringing hard rock and metal fans closer together with they favorite bands.",
-      "type": "iOS, Android, Java",
-      "style": [
-        {
-          "background": "#131313",
-          "color": "#fff"
-        },
-        {
-          "max-width": "21rem",
-          "min-width": "15rem"
-        }
-      ],
-      "showcase": true
-    },
-    {
-      "id": "picular",
-      "name": "Picular",
-      "title": "",
-      "desc": "A rocket fast primary color generator using Google's image search.",
-      "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
-      "type": "UX/UI, React",
-      "image": "cases/picular.jpg",
-      "style": [
-        {
-          "background": "#F2F5F6",
-          "color": "#070B13"
-        },
-        {
-          "min-width": "21rem",
-          "max-width": "25rem"
-        },
-        {
-          "margin-left": "-80px"
-        }
-      ],
-      "showcase": true
-    },
-    {
-      "id": "proflight",
-      "name": "proFLIGHT",
-      "image": "cases/proflight.png",
-      "title": "",
-      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
-      "client": "Avtech, Invencon",
-      "type": "iOS, UX/UI",
-      "style": [
-        {
-          "background": "#3E4C65",
-          "color": "#fff"
-        },
-        {
-          "min-width": "19.5rem"
-        }
-      ],
-      "showcase": true
-    },
-    {
-      "id": "sleepcure",
-      "name": "SleepCure",
-      "image": "cases/sleepcure.png",
-      "title": "Future Memories: SleepCure, a digital analysis and treatment method for people who want to sleep better.",
-      "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
-      "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
-      "type": "iOS, HealthKit",
-      "style": [
-        {
-          "background": "#F6D7D3",
-          "color": "#F35C49"
-        },
-        {
-          "min-width": "21.2rem"
-        }
-      ],
-      "showcase": true
-    },
-    {
       "id": "retts-plus",
       "name": "Retts Plus",
       "image": "cases/retts-plus.png",
@@ -325,35 +379,25 @@
       "showcase": true
     },
     {
-      "id": "job-apply",
-      "button": true,
-      "type": "mailto",
-      "label": "Create something awesome with us!",
-      "to": "hello@futurememories.se"
-    },
-    {
-      "id": "antistress",
-      "name": "AntiStress",
-      "image": "cases/antistress.png",
-      "title": "",
-      "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
-      "metaDesc": "AntiStress, a pocket diary for iOS and Android to track stress levels and listen to meditative soundtracks in order to reduce stress.",
-      "client": "Västra Götalandsregionen",
-      "type": "UX/UI, iOS, Android",
+      "id": "sleepcure",
+      "name": "SleepCure",
+      "image": "cases/sleepcure.png",
+      "title": "Future Memories: SleepCure, a digital analysis and treatment method for people who want to sleep better.",
+      "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
+      "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
+      "type": "iOS, HealthKit",
       "style": [
         {
-          "background": "linear-gradient(-241deg, #90C8DD 14%, #95B2C7 90%)",
-          "color": "#fff"
+          "background": "#F6D7D3",
+          "color": "#F35C49"
         },
         {
-          "min-width": "24.4rem"
-        },
-        {
-          "right": "14rem"
+          "min-width": "21.2rem"
         }
       ],
       "showcase": true
     },
+
     {
       "id": "nordish-market",
       "name": "Nordish Market",
@@ -375,6 +419,93 @@
         }
       ],
       "link": "https://www.nordishmarket.com/"
+    },
+    {
+      "id": "sleep-cycle-dashboard",
+      "name": "Sleep Cycle Dashboard",
+      "imageBg": [
+        "cases/sleep-cycle-dashboard-bg.jpg",
+        "width"
+      ],
+      "title": "",
+      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "client": "Sleep Cycle",
+      "type": "Scala, Reactive Streams",
+      "style": [
+        {
+          "background": "#192452",
+          "color": "#fff"
+        },
+        {
+          "max-width": "20rem"
+        }
+      ],
+      "link": "https://www.sleepcycle.com/"
+    },
+    {
+      "id": "folklore-company",
+      "name": "The Folklore Company",
+      "imageBg": [
+        "cases/folklore-company-bg.jpg",
+        "height"
+      ],
+      "title": "",
+      "desc": "Order your personal stitch kit or ready-made embroidery wall hanging. When tech meets tradition.",
+      "type": "React, Node, Scala",
+      "style": [
+        {
+          "background": "#E2E3E5",
+          "color": "#070B13"
+        },
+        {
+          "max-width": "21rem",
+          "min-width": "15rem"
+        }
+      ]
+    },
+    {
+      "id": "wya-network",
+      "name": "WYA Network",
+      "image": "cases/wya-network.png",
+      "title": "",
+      "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
+      "client": "WHOYOUARE LLC",
+      "type": "iOS, UX/UI",
+      "style": [
+        {
+          "background": "#000000",
+          "color": "#fff"
+        },
+        {},
+        {
+          "height": "50%",
+          "margin-top": "auto",
+          "margin-left": "calc(100% - 43rem)"
+        }
+      ]
+    },
+    {
+      "id": "paperquiz",
+      "name": "PaperQuiz",
+      "image": "cases/paperquiz.png",
+      "title": "",
+      "desc": "A quiz about relativity. Each question is about sorting according to a parameter. Whoever comes closest to the right order wins.",
+      "type": "iOS, Android, Web",
+      "style": [
+        {
+          "background": "#E9E7DB",
+          "color": "#070B13"
+        },
+        {
+          "min-width": "28.7rem"
+        },
+        {
+          "height": "50%",
+          "margin-top": "auto",
+          "margin-left": "calc(100% - 43rem)"
+        }
+      ],
+      "appLink": "https://itunes.apple.com/se/app/paper-quiz-klurig-fr%C3%A5gesport/id1447129683"
     },
     {
       "id": "tennis-watch",
@@ -403,49 +534,6 @@
       "showcase": true
     },
     {
-      "id": "sleep-cycle-dashboard",
-      "name": "Sleep Cycle Dashboard",
-      "imageBg": [
-        "cases/sleep-cycle-dashboard-bg.jpg",
-        "width"
-      ],
-      "title": "",
-      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
-      "client": "Sleep Cycle",
-      "type": "Scala, Reactive Streams",
-      "style": [
-        {
-          "background": "#192452",
-          "color": "#fff"
-        },
-        {
-          "max-width": "20rem"
-        }
-      ],
-      "link": "https://www.sleepcycle.com/"
-    },
-    {
-      "id": "picadeli",
-      "name": "Picadeli",
-      "imageBg": [
-        "cases/picadeli-bg.jpg",
-        "height"
-      ],
-      "title": "",
-      "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning.",
-      "type": "UX/UI, iOS",
-      "style": [
-        {
-          "background": "#6FBC84",
-          "color": "#fff"
-        },
-        {
-          "max-width": "21rem",
-          "min-width": "15rem"
-        }
-      ]
-    },
-    {
       "id": "paykartan",
       "name": "Paykartan",
       "image": "cases/paykartan.png",
@@ -463,29 +551,6 @@
         }
       ],
       "showcase": true
-    },
-    {
-      "id": "paperquiz",
-      "name": "PaperQuiz",
-      "image": "cases/paperquiz.png",
-      "title": "",
-      "desc": "A quiz about relativity. Each question is about sorting according to a parameter. Whoever comes closest to the right order wins.",
-      "type": "iOS, Android, Web",
-      "style": [
-        {
-          "background": "#E9E7DB",
-          "color": "#070B13"
-        },
-        {
-          "min-width": "28.7rem"
-        },
-        {
-          "height": "50%",
-          "margin-top": "auto",
-          "margin-left": "calc(100% - 43rem)"
-        }
-      ],
-      "appLink": "https://itunes.apple.com/se/app/paper-quiz-klurig-fr%C3%A5gesport/id1447129683"
     },
     {
       "id": "forces-of-freedom",
@@ -529,27 +594,7 @@
       ],
       "appLink": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
     },
-    {
-      "id": "folklore-company",
-      "name": "The Folklore Company",
-      "imageBg": [
-        "cases/folklore-company-bg.jpg",
-        "height"
-      ],
-      "title": "",
-      "desc": "Order your personal stitch kit or ready-made embroidery wall hanging. When tech meets tradition.",
-      "type": "React, Node, Scala",
-      "style": [
-        {
-          "background": "#E2E3E5",
-          "color": "#070B13"
-        },
-        {
-          "max-width": "21rem",
-          "min-width": "15rem"
-        }
-      ]
-    },
+    
     {
       "id": "spira",
       "name": "Spira",
@@ -564,27 +609,6 @@
         }
       ],
       "appLink": "https://play.google.com/store/apps/details?id=se.collector.spira&hl=en"
-    },
-    {
-      "id": "wya-network",
-      "name": "WYA Network",
-      "image": "cases/wya-network.png",
-      "title": "",
-      "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
-      "client": "WHOYOUARE LLC",
-      "type": "iOS, UX/UI",
-      "style": [
-        {
-          "background": "#000000",
-          "color": "#fff"
-        },
-        {},
-        {
-          "height": "50%",
-          "margin-top": "auto",
-          "margin-left": "calc(100% - 43rem)"
-        }
-      ]
     }
   ],
   "notUsedCases": [
