@@ -123,7 +123,7 @@ export default class extends Component {
               ]}
               inView='inViewRight'
               align='left'
-              background='#FAFAFA'
+              background='white'
               color='#737780'
             >
               <div class={s.lamp}>
