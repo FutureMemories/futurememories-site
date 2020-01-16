@@ -74,11 +74,11 @@ export default class extends Component {
               </div>
               <div class={s.content}>
                 {careersPositions.map(row => (
-                  <div key={'position_' + row.id} id={row.id} class={s.position}>
+                  <div key={'position_' + row.id} class={s.position}>
                     <div class={s.image}>
                       <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
                     </div>
-                    <div class={s.desc}>
+                    <div id={row.id} class={s.desc}>
                       <div class={s.title}>
                         <h3>{row.label}</h3>
                       </div>
