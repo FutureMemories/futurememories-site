@@ -78,8 +78,8 @@ export default class extends Component {
                     <div class={s.image}>
                       <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
                     </div>
-                    <div id={row.id} class={s.desc}>
-                      <div class={s.title}>
+                    <div class={s.desc}>
+                      <div id={row.id} class={s.title}>
                         <h3>{row.label}</h3>
                       </div>
                       <p>{row.text}</p>
