@@ -13,8 +13,8 @@ export default ({ title, text, image, link, background, color, modifier, inView 
         <h1>{title}</h1>
         <div class={cx(s.content, textIsAnArray && s.fullWidth)}>
           {textIsAnArray ? (
-            text.map(paragraf => (
-              <p>{paragraf}</p>
+            text.map((paragraf, i) => (
+              <p key={'text_bock_p_' + i}>{paragraf}</p>
             ))
           ) : (
             <p>{text}</p>

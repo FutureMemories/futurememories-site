@@ -67,31 +67,34 @@ export default class extends Component {
               </div>
             </div>
 
-            <div class={s.positions} ref={e => { this.positions = e }}>
-              <div class={s.text}>
-                <h1>Available positions</h1>
-                <p>Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business.</p>
-              </div>
-              <div class={s.content}>
-                {careersPositions.map(row => (
-                  <div key={'position_' + row.id} class={s.position}>
-                    <div class={s.image}>
-                      <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
-                    </div>
-                    <div class={s.desc}>
-                      <div id={row.id} class={s.title}>
-                        <h3>{row.label}</h3>
+            {careersPositions.length > 0 && (
+              <div class={s.positions} ref={e => { this.positions = e }}>
+                <div class={s.text}>
+                  <h1>Available positions</h1>
+                  <p>Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business.</p>
+                </div>
+                <div class={s.content}>
+                  {careersPositions.map(row => (
+                    <div key={'position_' + row.id} class={s.position}>
+                      <div class={s.image}>
+                        <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
                       </div>
-                      <p>{row.text}</p>
-                      <p class={s.tasks}>{row.tasks}</p>
-                      <Button to={`mailto:${company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
+                      <div class={s.desc}>
+                        <div id={row.id} class={s.title}>
+                          <h3>{row.label}</h3>
+                        </div>
+                        <p>{row.text}</p>
+                        <p class={s.tasks}>{row.tasks}</p>
+                        <Button to={`mailto:${company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             <TeamPictures
+              class={s.team}
               title='Behind the scenes'
               text='May we introduce ourselves? A well-attuned group of professionals enjoying working together.'
             />

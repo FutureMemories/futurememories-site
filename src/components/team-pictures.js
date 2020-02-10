@@ -1,10 +1,10 @@
+import { frontTeamPictures } from '../data.json'
 import Button from '../components/button'
 import cx from 'classnames'
-import { frontTeamPictures } from '../data.json'
 import s from './team-pictures.sass'
 
-export default ({ title, text }) => (
-  <div class={s.team}>
+export default ({ title, text, class: className }) => (
+  <div class={cx(s.team, className)}>
     <div class={s.text}>
       <h1>{title}</h1>
       <p>{text}</p>

@@ -64,8 +64,8 @@ export default class extends Component {
               className={s.websiteSection}
               title='A stronger user journey'
               text={[
-                  "For the new stc.se we have provided an entire re-design and a new content management system to strengthen the user experience. We have simplified the checkout flow to make it easier to purchase the right membership. By building a filtering functionality we created a more user friendly experience where we only show tailored membership suggestions suitable for each and every individuals’ need.",
-                  'The result became an entirely new website using only state of the art technology to gear up for a bright future.']}
+                'For the new stc.se we have provided an entire re-design and a new content management system to strengthen the user experience. We have simplified the checkout flow to make it easier to purchase the right membership. By building a filtering functionality we created a more user friendly experience where we only show tailored membership suggestions suitable for each and every individuals’ need.',
+                'The result became an entirely new website using only state of the art technology to gear up for a bright future.']}
               inView='inViewLeft'
               image='cases/stc-2.jpg'
               background='white'
@@ -93,8 +93,10 @@ export default class extends Component {
             />
 
             <CenterBlock
-              src={{ path: 'cases/stc-5.jpg',
-                style: { maxHeight: '812px' } }}
+              src={{
+                path: 'cases/stc-5.jpg',
+                style: { maxHeight: '812px' }
+              }}
               color='#ffffff'
             />
 
@@ -118,8 +120,8 @@ export default class extends Component {
               image='cases/stc-7.jpg'
               title='Toning up the brand experience'
               text={[
-                  'We’ve enhanced the customer journey by connecting the digital experience with the physical environment in the gyms.',
-                  'Our work began by looking at STCs new interior design concept to link their new digital environment with their training centres.'
+                'We’ve enhanced the customer journey by connecting the digital experience with the physical environment in the gyms.',
+                'Our work began by looking at STCs new interior design concept to link their new digital environment with their training centres.'
               ]}
               inView='inViewRight'
               align='left'
@@ -135,25 +137,25 @@ export default class extends Component {
               className={s.workoutSection}
               image='cases/stc-9.jpg'
               text={[
-                  'The colour palette we created comes from larger and smaller details from actual interior, for example, the lamps in the entrance in a local gym gave colour to Dance & Choreography and the colour of the walls gave colour to the Core classes.'
+                'The colour palette we created comes from larger and smaller details from actual interior, for example, the lamps in the entrance in a local gym gave colour to Dance & Choreography and the colour of the walls gave colour to the Core classes.'
               ]}
               inView='inViewLeft'
               background='white'
               color='#737780'
             />
 
-              <BookmarkBlock
-                className={s.iconsBlock}
-                title='New icons'
-                text={[
-                    'To create a more coherent overview of STCs broad range of membership offers, we designed a various number of icons to pinpoint their product range both physically and digitally. These icons can now be found throughout the entire customer journey which strengthens brand recognition all the way from the web to the treadmill. '
-                        ]}
-                inView='inViewLeft'
-                background='#FAFAFA'
-                color='#737780'
-              >
-                <div class={s.icons} />
-              </BookmarkBlock>
+            <BookmarkBlock
+              className={s.iconsBlock}
+              title='New icons'
+              text={[
+                'To create a more coherent overview of STCs broad range of membership offers, we designed a various number of icons to pinpoint their product range both physically and digitally. These icons can now be found throughout the entire customer journey which strengthens brand recognition all the way from the web to the treadmill. '
+              ]}
+              inView='inViewLeft'
+              background='#FAFAFA'
+              color='#737780'
+            >
+              <div class={s.icons} />
+            </BookmarkBlock>
 
             <LargeImage
               src='cases/stc-1.jpg'
