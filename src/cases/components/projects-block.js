@@ -16,6 +16,7 @@ export default ({ current, similar, background, color }) => {
 
   return (
     <div
+      id='projects-block'
       class={cx(s.projectsBlock, s.projects)}
       style={{ background, color }}
     >
