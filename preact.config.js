@@ -1,6 +1,6 @@
 import CopyWebpackPlugin from 'copy-webpack-plugin'
-const { generateSw } = require('preact-cli-workbox-plugin')
-const path = require('path')
+import RemoveServiceWorkerPlugin from 'webpack-remove-serviceworker-plugin'
+import path from 'path'
 
 /**
  * Function that mutates original webpack config.
@@ -13,6 +13,7 @@ const path = require('path')
 export default function (config, env, helpers) {
   config.plugins.push(new CopyWebpackPlugin([{ context: `${__dirname}/src/assets`, from: '*' }]))
   config.plugins.push(new CopyWebpackPlugin([{ context: `${__dirname}/src/assets-root`, from: '*' }]))
+  config.plugins.push(new RemoveServiceWorkerPlugin({ filename: 'sw.js' }))
 
   config.module.loaders[4].include = [
     path.resolve(__dirname, '', 'src/components'),
@@ -28,9 +29,4 @@ export default function (config, env, helpers) {
 
   // Always use file-loader instead of url-loader
   config.module.loaders[8].loader = 'file-loader'
-
-  generateSw(config, helpers, {
-    skipWaiting: true,
-    clientsClaim: true
-  })
 }
