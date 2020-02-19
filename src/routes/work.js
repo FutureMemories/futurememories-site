@@ -2,13 +2,14 @@ import { Component } from 'preact'
 import Base from '../_base'
 import ProjectsBlock from '../components/projects-block'
 import Moon from '../components/moon'
+import MarkupCustomElement from '../components/markup-custom-element'
 import s from './work.sass'
 import getLanguageLink from '../utils/getLanguageLink'
 
 export default class extends Component {
   componentDidMount () {
     window.addEventListener('scroll', this.onScroll)
-    this.heroText.style = undefined
+    this.heroText.base.style = undefined
     this.workPlanetM.base.style = undefined
     this.workPlanetXS.base.style = undefined
   }
@@ -16,8 +17,8 @@ export default class extends Component {
   onScroll = () => {
     this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.4)
 
-    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
-      this.heroText.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
+    if (window.pageYOffset < (this.heroText.base.offsetTop + this.heroText.base.offsetHeight)) {
+      this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
     }
 
     // Parallax effect on 'Partners' block
@@ -35,7 +36,7 @@ export default class extends Component {
 
   render ({ data }) {
     return (
-      <Base title='Our work' route='/work' data={data}>
+      <Base title={data.content.work.title} route='/work' data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -46,17 +47,20 @@ export default class extends Component {
                 background='red'
                 customClass={s.moon}
               />
-              <h1 ref={(el) => { this.heroText = el }}>
-                We team up to create exceptional digital <span>products and services</span> of tomorrow.
-              </h1>
+              <MarkupCustomElement
+                ref={el => { this.heroText = el }}
+                element='h1'
+                markup={data.content.work.hero}
+                trim={false}
+              />
             </div>
 
             <div class={s.work}>
               <div class={s.text}>
-                <h1>What we’ve been up to</h1>
-                <p>Some of the most noticeable digital productions we have accomplished together so far.</p>
+                <h1>{data.content.work.upToHeader}</h1>
+                <p>{data.content.work.upToSubheader}</p>
               </div>
-              <ProjectsBlock allProjects={data.allCases} allCases={data.allCases} />
+              <ProjectsBlock {...data.projectsBlock} allProjects={data.allCases} allCases={data.allCases} />
             </div>
 
             <div class={s.partners} ref={(el) => { this.workPartnersBlock = el }}>
@@ -76,8 +80,8 @@ export default class extends Component {
                 ref={(el) => { this.workPlanetM = el }}
               />
               <div class={s.text}>
-                <h1>Howdy, partner!</h1>
-                <p>Say hi to some of our friends</p>
+                <h1>{data.content.work.partnersHeader}</h1>
+                <p>{data.content.work.partnersSubheader}</p>
               </div>
               <div class={s.content}>
                 {data.company.partners.map(partner => {

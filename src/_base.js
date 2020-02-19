@@ -4,13 +4,6 @@ import Header from './components/header'
 import Footer from './components/footer'
 import prerenderUrls from '../prerender-urls.json'
 
-const links = [
-  { label: 'Home', to: '/' },
-  { label: 'Our work', to: '/work' },
-  { label: 'The team', to: '/team' },
-  { label: 'Careers', to: '/careers' }
-]
-
 export default class extends Component {
   componentWillMount () {
     let title = 'Future Memories'
@@ -36,7 +29,7 @@ export default class extends Component {
         <Header
           fadeIn={firstView}
           dark={dark}
-          links={links}
+          links={data.links}
           route={route}
           handleLocked={() => this.handleLocked()}
           fadeInHeader={fadeInHeader}
@@ -47,7 +40,8 @@ export default class extends Component {
             company={data.company}
             dark={dark}
             background={background}
-            links={links}
+            links={data.links}
+            content={data.content.footer}
           />
         )}
       </div>

@@ -3,7 +3,7 @@ import Button from '../../components/button'
 import s from './projects-block.sass'
 import ProjectsBlock from '../../components/projects-block'
 
-export default ({ current, similar, background, color, allCases, defaultOtherCases }) => {
+export default ({ current, similar, background, color, allCases, defaultOtherCases, ...props }) => {
   const projects = similar || []
   if (projects.length < 3) {
     defaultOtherCases.forEach(projectId => {
@@ -27,7 +27,7 @@ export default ({ current, similar, background, color, allCases, defaultOtherCas
         </div>
 
         <div class={s.block}>
-          <ProjectsBlock allCases={allCases} projects={projects} currentBrowseCase={current} limit={3} />
+          <ProjectsBlock allCases={allCases} projects={projects} currentBrowseCase={current} limit={3} {...props} />
         </div>
 
       </div>

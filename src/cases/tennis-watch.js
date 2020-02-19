@@ -109,6 +109,7 @@ export default class extends Component {
             />
 
             <ProjectsBlock
+              {...data.projectsBlock}
               allCases={data.allCases}
               defaultOtherCases={data.defaultOtherCases}
               background='#0C0F16'

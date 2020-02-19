@@ -5,13 +5,14 @@ import ProjectsBlock from '../components/projects-block'
 import Button from '../components/button'
 import Moon from '../components/moon'
 import TeamPictures from '../components/team-pictures'
+import MarkupCustomElement from '../components/markup-custom-element'
 import s from './home.sass'
 
 export default class extends Component {
   state = { preActivePillar: '', activePillar: 'develop' }
 
   componentDidMount () {
-    this.heroText.style = undefined
+    this.heroText.base.style = undefined
     this.homePlanetM.base.style = undefined
     this.homePlanetS.base.style = undefined
     this.homePlanetWorkS.base.style = undefined
@@ -47,8 +48,8 @@ export default class extends Component {
   onScroll = () => {
     this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.4)
 
-    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
-      this.heroText.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
+    if (window.pageYOffset < (this.heroText.base.offsetTop + this.heroText.base.offsetHeight)) {
+      this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
     }
 
     // Parallax effect on 'What We Do' block
@@ -86,14 +87,18 @@ export default class extends Component {
                 customClass={cx(s.moon, firstView && s.firstView)}
                 style={{ left: lightLeft, top: lightTop }}
               />
-              <h1 class={firstView && s.firstView} ref={(el) => { this.heroText = el }}>
-                <span>Future Memories</span> {data.content.homeHeroEnding}
-              </h1>
+              <MarkupCustomElement
+                class={firstView && s.firstView}
+                ref={el => { this.heroText = el }}
+                element='h1'
+                markup={data.content.home.hero}
+                trim={false}
+              />
             </div>
 
             <div class={cx(s.information, this.state.inViewInformationBlock && s.inView)} ref={(el) => { this.informationBlock = el }}>
               <div class={s.foundationPillar}>
-                <h1>What we do</h1>
+                <h1>{data.content.home.whatWeDo}</h1>
                 <p>
                   <span
                     class={cx(
@@ -101,9 +106,9 @@ export default class extends Component {
                       activePillar === 'strategy' && activePillar,
                       preActivePillar === 'strategy' && preActivePillar
                     )}
-                    data-text='Str4t3gy'
+                    data-text={data.content.home.str4t3gy}
                   >
-                    Strategy
+                    {data.content.home.strategy}
                   </span>
                   {', '}
                   <span
@@ -112,9 +117,9 @@ export default class extends Component {
                       activePillar === 'design' && activePillar,
                       preActivePillar === 'design' && preActivePillar
                     )}
-                    data-text='Des1gn'
+                    data-text={data.content.home.des1gn}
                   >
-                    Design
+                    {data.content.home.design}
                   </span>
                   {' & '}
                   <span
@@ -123,9 +128,9 @@ export default class extends Component {
                       activePillar === 'develop' && activePillar,
                       preActivePillar === 'develop' && preActivePillar
                     )}
-                    data-text='Devel0pm3nt'
+                    data-text={data.content.home.devel0pm3nt}
                   >
-                    Development
+                    {data.content.home.development}
                   </span>
                 </p>
               </div>
@@ -154,17 +159,14 @@ export default class extends Component {
                 ref={(el) => { this.homePlanetWorkS = el }}
               />
               <div class={s.text}>
-                <h1>Some of our work</h1>
-                <p>Forward-thinking digital products that makes life easier and brings value to clients and consumers.</p>
+                <h1>{data.content.home.ourWorkHeader}</h1>
+                <p>{data.content.home.ourWorkSubheader}</p>
               </div>
-              <ProjectsBlock projects={data.frontCases} page='front' allCases={data.allCases} />
-              <Button customClass={s.button} to='/work' label='See more projects' arrow transition='slide' />
+              <ProjectsBlock {...data.projectsBlock} projects={data.frontCases} page='front' allCases={data.allCases} />
+              <Button customClass={s.button} to='/work' label={data.content.home.seeMoreProjects} arrow transition='slide' />
             </div>
 
-            <TeamPictures
-              title='Behind the scenes'
-              text='May we introduce ourselves? A well-attuned group of professionals enjoying working together.'
-            />
+            <TeamPictures {...data.teamPictures} />
 
           </div>
         </div>

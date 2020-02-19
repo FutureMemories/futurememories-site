@@ -86,6 +86,7 @@ export default class extends Component {
             />
 
             <ProjectsBlock
+              {...data.projectsBlock}
               allCases={data.allCases}
               defaultOtherCases={data.defaultOtherCases}
               current='paykartan'

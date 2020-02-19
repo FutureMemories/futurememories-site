@@ -4,7 +4,7 @@ import Card from './card'
 import cx from 'classnames'
 import s from './projects-block.sass'
 
-export default ({ allCases, allProjects, projects, page, customClass, limit, currentBrowseCase }) => {
+export default ({ allCases, allProjects, projects, page, customClass, limit, currentBrowseCase, ...props }) => {
   const projectsArray = []
 
   if (!allProjects) {
@@ -78,21 +78,21 @@ export default ({ allCases, allProjects, projects, page, customClass, limit, cur
                   {project.showcase && !project.link && (
                     <div class='slideArrow'>
                       <Icon id='arrow' class={cx(s.arrow, s.first)} />
-                      <span>View Case</span>
+                      <span>{props.viewCase}</span>
                       <Icon id='arrow' class={cx(s.arrow, s.second)} />
                     </div>
                   )}
                   {!project.showcase && project.link && (
                     <div class='slideArrow'>
                       <Icon id='arrow' class={cx(s.arrow, s.first)} />
-                      <span>Visit Site</span>
+                      <span>{props.visitSite}</span>
                       <Icon id='arrow' class={cx(s.arrow, s.second)} />
                     </div>
                   )}
                   {!project.showcase && project.appLink && (
                     <div class='slideArrow'>
                       <Icon id='arrow' class={cx(s.arrow, s.first)} />
-                      <span>Get App</span>
+                      <span>{props.getApp}</span>
                       <Icon id='arrow' class={cx(s.arrow, s.second)} />
                     </div>
                   )}
