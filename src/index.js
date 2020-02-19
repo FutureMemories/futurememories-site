@@ -1,32 +1,21 @@
 import { Component } from 'preact'
-import { Router } from 'preact-router'
-
-import Home from './routes/home'
-import Work from './routes/work'
-import Team from './routes/team'
-import Careers from './routes/careers'
-import NotFound from './routes/404'
-
-import Picular from './cases/picular'
-import Bandbond from './cases/bandbond'
-import TennisWatch from './cases/tennis-watch'
-import MatSe from './cases/mat-se'
-import Paykartan from './cases/paykartan'
-import RettsPlus from './cases/retts-plus'
-import ProFlight from './cases/proflight'
-import AntiStress from './cases/antistress'
-import BauerUniversity from './cases/bauer-university'
-import SleepCure from './cases/sleepcure'
-import Stc from './cases/stc'
-import CaseComponents from './cases/components'
-
+import { Router, route } from 'preact-router'
+import LanguageRoute from './language-route'
 import './index.sass'
 
-export default class extends Component {
-  state = {
-    firstView: true
-  }
+const getLanguageUrlPrefix = () => {
+  const code = (navigator.language || navigator.userLanguage || '').substr(0, 2)
+  return code === 'sv' ? '/sv' : '/en'
+}
 
+class RedirectToLanguage extends Component {
+  componentDidMount () {
+    const prefix = getLanguageUrlPrefix()
+    route(prefix + this.props.url, true)
+  }
+}
+
+export default class extends Component {
   componentDidMount () {
     const futureMemories = `Futur${Math.random() >= 0.5 ? 'e' : '3'} Mem${Math.random() >= 0.5 ? 'o' : '0'}r${Math.random() >= 0.5 ? 'i' : '1'}es`
     console.log(
@@ -35,40 +24,13 @@ export default class extends Component {
     )
   }
 
-  handleRoute = () => {
-    if (this.notOnFirstView) {
-      this.setState({ firstView: false })
-    }
-    this.notOnFirstView = true
-
-    if (typeof window !== 'undefined') {
-      window.scrollTo(0, 0)
-    }
-  }
-
   render () {
     return (
       <div id='app'>
         <Router onChange={this.handleRoute}>
-          <Home path='/' firstView={this.state.firstView} />
-          <Work path='/work' />
-          <Team path='/team' />
-          <Careers path='/careers' />
-
-          <Picular path='/cases/picular' />
-          <Bandbond path='/cases/bandbond' />
-          <TennisWatch path='/cases/tennis-watch' />
-          <MatSe path='/cases/mat-se' />
-          <Paykartan path='/cases/paykartan' />
-          <RettsPlus path='/cases/retts-plus' />
-          <ProFlight path='/cases/proflight' />
-          <AntiStress path='/cases/antistress' />
-          <BauerUniversity path='/cases/bauer-university' />
-          <SleepCure path='/cases/sleepcure' />
-          <Stc path='/cases/stc' />
-          <CaseComponents path='/cases/__components' />
-
-          <NotFound type='404' default />
+          <LanguageRoute path='/sv/:endpoint?' root='/sv' language='swedish' />
+          <LanguageRoute path='/en/:endpoint?' root='/en' language='english' />
+          <RedirectToLanguage default />
         </Router>
       </div>
     )

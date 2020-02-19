@@ -18,13 +18,14 @@
     "build/*"
   ],
   "devDependencies": {
-    "fs-extra": "^8.1.0",
     "babel-eslint": "^10.0.3",
     "classnames": "^2.2.6",
     "copy-webpack-plugin": "^4.6.0",
     "eslint": "^6.5.1",
     "eslint-config-synacor": "^3.0.5",
+    "fs-extra": "^8.1.0",
     "if-env": "^1.0.4",
+    "merge": "^1.2.1",
     "node-sass": "^4.12.0",
     "preact-cli": "^2.2.1",
     "sass-loader": "^7.3.1",

@@ -5,7 +5,6 @@ import ProjectsBlock from '../components/projects-block'
 import Button from '../components/button'
 import Moon from '../components/moon'
 import TeamPictures from '../components/team-pictures'
-import { frontCases } from '../data.json'
 import s from './home.sass'
 
 export default class extends Component {
@@ -73,7 +72,7 @@ export default class extends Component {
     window.clearInterval(this._randomizer)
   }
 
-  render ({ firstView }, { lightLeft, lightTop, activePillar, preActivePillar }) {
+  render ({ data, firstView }, { lightLeft, lightTop, activePillar, preActivePillar }) {
     return (
       <Base firstView={firstView} route='/'>
         <div class={s.view}>
@@ -88,7 +87,7 @@ export default class extends Component {
                 style={{ left: lightLeft, top: lightTop }}
               />
               <h1 class={firstView && s.firstView} ref={(el) => { this.heroText = el }}>
-                <span>Future Memories</span> is a digital studio where strategic design and technology unite into products of tomorrow.
+                <span>Future Memories</span> {data.content.homeHeroEnding}
               </h1>
             </div>
 
@@ -158,7 +157,7 @@ export default class extends Component {
                 <h1>Some of our work</h1>
                 <p>Forward-thinking digital products that makes life easier and brings value to clients and consumers.</p>
               </div>
-              <ProjectsBlock projects={frontCases} page='front' />
+              <ProjectsBlock projects={data.frontCases} page='front' />
               <Button customClass={s.button} to='/work' label='See more projects' arrow transition='slide' />
             </div>
 

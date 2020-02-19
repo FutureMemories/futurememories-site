@@ -2,6 +2,7 @@ import cx from 'classnames'
 import Icon from './icon'
 import { company } from '../data.json'
 import s from './footer.sass'
+import getLanguageLink from '../utils/getLanguageLink'
 
 export default ({ dark, background, links }) => (
   <footer class={cx(s.footer, dark && s.dark)} style={{ background }}>
@@ -17,7 +18,7 @@ export default ({ dark, background, links }) => (
 
         <div class={s.menu}>
           {links.map(link => (
-            <a key={'footer_' + link.to} href={link.to}>{link.label}</a>
+            <a key={'footer_' + link.to} href={getLanguageLink(link.to)}>{link.label}</a>
           ))}
           <a href='https://goo.gl/maps/rWZkuD1fT8J2' target='_blank' rel='noopener noreferrer'>Find us</a>
         </div>
@@ -35,7 +36,7 @@ export default ({ dark, background, links }) => (
       <hr />
 
       <div class={s.second}>
-        <a href='/' title='Home'><Icon id='logo' class={s.logo} /></a>
+        <a href={getLanguageLink('/')} title='Home'><Icon id='logo' class={s.logo} /></a>
         <div class={s.social}>
           <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/futurememoriesab/' aria-label='Futurememories on Facebook'>
             <Icon id='facebook' />

@@ -4,7 +4,7 @@
     "street": "Vallgatan 25",
     "zip": "411 16",
     "city": "Gothenburg",
-    "phone": "+46 (0) 760 33 88 22‬",
+    "phone": "+46 (0) 760 33 88 22",
     "email": "hello@futurememories.se",
     "jobs": "jobs@futurememories.se",
     "partners": [
@@ -733,8 +733,11 @@
       "image": "team/linda-daldborg-leech.jpg",
       "title": "Digital Project Manager",
       "desc": "Digital Project Manager with 10+ years experience in digital product development. Keeping it on time and on budget.",
-      "phone": "+46 (0)723 413151‬",
+      "phone": "+46 (0)723 413151",
       "email": "linda@futurememories.se"
     }
-  ]
+  ],
+  "content": {
+    "homeHeroEnding": "is a digital studio where strategic design and technology unite into products of tomorrow."
+  }
 }

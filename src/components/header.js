@@ -1,6 +1,7 @@
 import { Component } from 'preact'
 import cx from 'classnames'
 import Icon from './icon'
+import getLanguageLink from '../utils/getLanguageLink'
 import s from './header.sass'
 
 export default class extends Component {
@@ -26,7 +27,7 @@ export default class extends Component {
       <header class={cx(s.header, dark && s.dark, fadeIn && s.fadeIn)}>
         <div class={s.inner}>
 
-          <a href='/' title='Home'>
+          <a href={getLanguageLink('/')} title='Home'>
             <Icon id='logo' />
           </a>
 
@@ -44,7 +45,7 @@ export default class extends Component {
                   <a
                     class={route === link.to && s.active}
                     onClick={() => this.closeMenu()}
-                    href={link.to}
+                    href={getLanguageLink(link.to)}
                   >
                     {link.label}
                   </a>

@@ -1,6 +1,7 @@
 import Icon from './icon'
 import cx from 'classnames'
 import s from './button.sass'
+import getLanguageLink from '../utils/getLanguageLink'
 
 export default ({
   type = 'button',
@@ -37,7 +38,7 @@ export default ({
       )}
       style={width && `width: ${width}px;`}
       disabled={loading || disabled}
-      href={to}
+      href={getLanguageLink(to)}
       onClick={onClick}
       {...props}
     >

@@ -1,6 +1,7 @@
 import { Component } from 'preact'
 import cx from 'classnames'
 import s from './card.sass'
+import getLanguageLink from '../utils/getLanguageLink'
 
 const ease = (target, current) => {
   return current + ((target - current) * 0.1)
@@ -60,7 +61,7 @@ export default class extends Component {
       <CurrentTag
         id={id}
         class={cx(s.card, customClass, state.ease && s.ease, transition && s[transition])}
-        href={to}
+        href={getLanguageLink(to)}
         rel={to && 'noopener noreferrer'}
         target={newTab && '_blank'}
         style={

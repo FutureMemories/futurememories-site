@@ -11,7 +11,7 @@ const init = async () => {
     const caseTitle = c.name && c.name + (c.desc ? `, ${c.desc.charAt(0).toLowerCase() + c.desc.slice(1)}` : '')
     return ({
       url: '/cases/' + c.id,
-      title: c.title || `Future Memories${caseTitle ? `: ${caseTitle}` : ''}`,
+      title: c.title || `Future Memories${caseTitle ? ': ' + caseTitle : ''}`,
       description: c.metaDesc || c.desc
     })
   })

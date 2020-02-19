@@ -4,6 +4,7 @@ import ProjectsBlock from '../components/projects-block'
 import Moon from '../components/moon'
 import { allCases, company } from '../data.json'
 import s from './work.sass'
+import getLanguageLink from '../utils/getLanguageLink'
 
 export default class extends Component {
   componentDidMount () {
@@ -83,7 +84,7 @@ export default class extends Component {
                 {company.partners.map(partner => {
                   const ElementTag = partner.link ? 'a' : 'div'
                   return (
-                    <ElementTag href={partner.link} key={'partner_' + partner.name} class={s.partner}>
+                    <ElementTag href={getLanguageLink(partner.link)} key={'partner_' + partner.name} class={s.partner}>
                       <img alt={(partner.alt || `${partner.name} logo`)} src={require(`../images/${partner.logo}`)} />
                     </ElementTag>
                   )
