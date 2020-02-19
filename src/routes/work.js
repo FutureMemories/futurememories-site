@@ -2,7 +2,6 @@ import { Component } from 'preact'
 import Base from '../_base'
 import ProjectsBlock from '../components/projects-block'
 import Moon from '../components/moon'
-import { allCases, company } from '../data.json'
 import s from './work.sass'
 import getLanguageLink from '../utils/getLanguageLink'
 
@@ -34,9 +33,9 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render () {
+  render ({ data }) {
     return (
-      <Base title='Our work' route='/work'>
+      <Base title='Our work' route='/work' data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -57,7 +56,7 @@ export default class extends Component {
                 <h1>What we’ve been up to</h1>
                 <p>Some of the most noticeable digital productions we have accomplished together so far.</p>
               </div>
-              <ProjectsBlock allProjects={allCases} />
+              <ProjectsBlock allProjects={data.allCases} allCases={data.allCases} />
             </div>
 
             <div class={s.partners} ref={(el) => { this.workPartnersBlock = el }}>
@@ -81,7 +80,7 @@ export default class extends Component {
                 <p>Say hi to some of our friends</p>
               </div>
               <div class={s.content}>
-                {company.partners.map(partner => {
+                {data.company.partners.map(partner => {
                   const ElementTag = partner.link ? 'a' : 'div'
                   return (
                     <ElementTag href={getLanguageLink(partner.link)} key={'partner_' + partner.name} class={s.partner}>

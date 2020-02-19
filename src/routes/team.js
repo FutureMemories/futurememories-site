@@ -2,7 +2,6 @@ import { Component } from 'preact'
 import Base from '../_base'
 import TeamBlock from '../components/team-block'
 import Moon from '../components/moon'
-import { astronauts } from '../data.json'
 import s from './team.sass'
 
 export default class extends Component {
@@ -23,9 +22,9 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render () {
+  render ({ data }) {
     return (
-      <Base title='The team' route='/team'>
+      <Base title='The team' route='/team' data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -53,7 +52,7 @@ export default class extends Component {
                 <h1>The team</h1>
                 <p>The whole squad.</p>
               </div>
-              <TeamBlock astronauts={astronauts} />
+              <TeamBlock astronauts={data.astronauts} />
             </div>
 
           </div>

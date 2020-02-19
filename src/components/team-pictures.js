@@ -1,4 +1,4 @@
-import { frontTeamPictures } from '../data.json'
+import { frontTeamPictures } from '../english.json'
 import Button from '../components/button'
 import cx from 'classnames'
 import s from './team-pictures.sass'

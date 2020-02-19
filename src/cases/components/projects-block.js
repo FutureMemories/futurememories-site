@@ -2,9 +2,8 @@ import cx from 'classnames'
 import Button from '../../components/button'
 import s from './projects-block.sass'
 import ProjectsBlock from '../../components/projects-block'
-import { defaultOtherCases } from '../../data.json'
 
-export default ({ current, similar, background, color }) => {
+export default ({ current, similar, background, color, allCases, defaultOtherCases }) => {
   const projects = similar || []
   if (projects.length < 3) {
     defaultOtherCases.forEach(projectId => {
@@ -28,7 +27,7 @@ export default ({ current, similar, background, color }) => {
         </div>
 
         <div class={s.block}>
-          <ProjectsBlock projects={projects} currentBrowseCase={current} limit={3} />
+          <ProjectsBlock allCases={allCases} projects={projects} currentBrowseCase={current} limit={3} />
         </div>
 
       </div>

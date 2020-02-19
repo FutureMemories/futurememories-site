@@ -3,7 +3,7 @@ const { resolve } = require('path')
 const merge = require('merge')
 
 const data = {
-  english: require('./src/data.json'),
+  english: require('./src/english.json'),
   swedish: require('./src/swedish.json')
 }
 

@@ -2,10 +2,9 @@ import Icon from './icon'
 import Button from './button'
 import Card from './card'
 import cx from 'classnames'
-import { allCases } from '../data.json'
 import s from './projects-block.sass'
 
-export default ({ allProjects, projects, page, customClass, limit, currentBrowseCase }) => {
+export default ({ allCases, allProjects, projects, page, customClass, limit, currentBrowseCase }) => {
   const projectsArray = []
 
   if (!allProjects) {

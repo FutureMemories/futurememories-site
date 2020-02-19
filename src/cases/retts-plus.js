@@ -28,9 +28,9 @@ export default class extends Component {
     inView(`.${inViewClasses}`).off('enter')
   }
 
-  render () {
+  render ({ data }) {
     return (
-      <Base route='/cases/retts-plus'>
+      <Base route='/cases/retts-plus' data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -88,6 +88,8 @@ export default class extends Component {
             />
 
             <ProjectsBlock
+              allCases={data.allCases}
+              defaultOtherCases={data.defaultOtherCases}
               current='retts-plus'
               similar={['proflight', 'antistress', 'sleepcure']}
               background='#070B13'

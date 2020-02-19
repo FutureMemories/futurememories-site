@@ -9,9 +9,9 @@ export default class extends Component {
     console.log('%cGET https://futurememories.se/images/404_page_not_found.jpg 404 (Not Found)', 'color: red')
   }
 
-  render () {
+  render ({ data }) {
     return (
-      <Base removeFooter>
+      <Base removeFooter data={data}>
         <div class={s.view}>
           <div class={s.notFound}>
             <img src={require('../images/broken-document.svg')} />

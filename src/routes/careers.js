@@ -3,7 +3,6 @@ import Base from '../_base'
 import Moon from '../components/moon'
 import Button from '../components/button'
 import TeamPictures from '../components/team-pictures'
-import { company, careersWorkplaces, careersPositions } from '../data.json'
 import s from './careers.sass'
 
 export default class extends Component {
@@ -29,9 +28,9 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render () {
+  render ({ data }) {
     return (
-      <Base title='Careers' route='/careers'>
+      <Base title='Careers' route='/careers' data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -53,7 +52,7 @@ export default class extends Component {
                 <p>Our studio in downtown Gothenburg is the center of Future Memories. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team.</p>
               </div>
               <div class={s.content}>
-                {careersWorkplaces.map((row, i) => (
+                {data.careersWorkplaces.map((row, i) => (
                   <div key={'workplace_' + i} class={s.workplace}>
                     <div class={s.image}>
                       <img alt={`workplace: ${row.label}`} src={require(`../images/${row.image}`)} />
@@ -67,14 +66,14 @@ export default class extends Component {
               </div>
             </div>
 
-            {careersPositions.length > 0 && (
+            {data.careersPositions.length > 0 && (
               <div class={s.positions} ref={e => { this.positions = e }}>
                 <div class={s.text}>
                   <h1>Available positions</h1>
                   <p>Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business.</p>
                 </div>
                 <div class={s.content}>
-                  {careersPositions.map(row => (
+                  {data.careersPositions.map(row => (
                     <div key={'position_' + row.id} class={s.position}>
                       <div class={s.image}>
                         <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
@@ -85,7 +84,7 @@ export default class extends Component {
                         </div>
                         <p>{row.text}</p>
                         <p class={s.tasks}>{row.tasks}</p>
-                        <Button to={`mailto:${company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
+                        <Button to={`mailto:${data.company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
                       </div>
                     </div>
                   ))}

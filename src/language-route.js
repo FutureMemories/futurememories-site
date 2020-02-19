@@ -22,7 +22,7 @@ import Stc from './cases/stc'
 import CaseComponents from './cases/components'
 
 const data = {
-  english: require('./data.json'),
+  english: require('./english.json'),
   swedish: require('./swedish.json')
 }
 

@@ -1,10 +1,9 @@
 import cx from 'classnames'
 import Icon from './icon'
-import { company } from '../data.json'
 import s from './footer.sass'
 import getLanguageLink from '../utils/getLanguageLink'
 
-export default ({ dark, background, links }) => (
+export default ({ company, dark, background, links }) => (
   <footer class={cx(s.footer, dark && s.dark)} style={{ background }}>
     <div class={s.inner}>
 

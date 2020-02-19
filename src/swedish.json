@@ -1,4 +1,7 @@
 {
+  "company": {
+    "city": "Göteborg"
+  },
   "routes": [
     {
       "url": "/",

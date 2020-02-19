@@ -74,7 +74,7 @@ export default class extends Component {
 
   render ({ data, firstView }, { lightLeft, lightTop, activePillar, preActivePillar }) {
     return (
-      <Base firstView={firstView} route='/'>
+      <Base firstView={firstView} route='/' data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -157,7 +157,7 @@ export default class extends Component {
                 <h1>Some of our work</h1>
                 <p>Forward-thinking digital products that makes life easier and brings value to clients and consumers.</p>
               </div>
-              <ProjectsBlock projects={data.frontCases} page='front' />
+              <ProjectsBlock projects={data.frontCases} page='front' allCases={data.allCases} />
               <Button customClass={s.button} to='/work' label='See more projects' arrow transition='slide' />
             </div>
 
