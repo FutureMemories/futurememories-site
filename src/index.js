@@ -1,19 +1,7 @@
 import { Component } from 'preact'
-import { Router, route } from 'preact-router'
 import LanguageRoute from './language-route'
+import Router from './components/language-router'
 import './index.sass'
-
-const getLanguageUrlPrefix = () => {
-  const code = (navigator.language || navigator.userLanguage || '').substr(0, 2)
-  return code === 'sv' ? '/sv' : '/en'
-}
-
-class RedirectToLanguage extends Component {
-  componentDidMount () {
-    const prefix = getLanguageUrlPrefix()
-    route(prefix + this.props.url, true)
-  }
-}
 
 export default class extends Component {
   componentDidMount () {
@@ -28,9 +16,8 @@ export default class extends Component {
     return (
       <div id='app'>
         <Router>
-          <LanguageRoute path='/sv/:endpoint?' root='/sv' language='swedish' />
-          <LanguageRoute path='/en/:endpoint?' root='/en' language='english' />
-          <RedirectToLanguage default />
+          <LanguageRoute root='/sv' language='swedish' />
+          <LanguageRoute root='/en' language='english' />
         </Router>
       </div>
     )
