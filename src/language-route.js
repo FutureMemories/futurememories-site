@@ -29,7 +29,7 @@ const data = {
 export default class extends Component {
   state = {
     firstView: true,
-    languageData: {}
+    languageData: this.getLanguageData()
   }
 
   handleRoute = () => {
@@ -43,9 +43,8 @@ export default class extends Component {
     }
   }
 
-  componentDidMount () {
-    const languageData = merge.recursive(true, data.english, data[this.props.language] || {})
-    this.setState({ languageData })
+  getLanguageData () {
+    return merge.recursive(true, data.english, data[this.props.language] || {})
   }
 
   render ({ root }, { languageData }) {
