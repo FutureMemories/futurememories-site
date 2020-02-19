@@ -1,6 +1,7 @@
 import { Component } from 'preact'
 import { Router } from 'preact-router'
 import merge from 'merge'
+import memoize from 'memoize-one'
 
 import Home from './routes/home'
 import Work from './routes/work'
@@ -26,10 +27,13 @@ const data = {
   swedish: require('./swedish.json')
 }
 
+const getLanguageData = memoize((language) => (
+  merge.recursive(true, data.english, data[language] || {})
+))
+
 export default class extends Component {
   state = {
-    firstView: true,
-    languageData: this.getLanguageData()
+    firstView: true
   }
 
   handleRoute = () => {
@@ -43,11 +47,9 @@ export default class extends Component {
     }
   }
 
-  getLanguageData () {
-    return merge.recursive(true, data.english, data[this.props.language] || {})
-  }
+  render ({ root, language }) {
+    const languageData = getLanguageData(language)
 
-  render ({ root }, { languageData }) {
     return (
       <div id='app'>
         <Router onChange={this.handleRoute}>

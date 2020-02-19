@@ -27,7 +27,7 @@ export default class extends Component {
   render () {
     return (
       <div id='app'>
-        <Router onChange={this.handleRoute}>
+        <Router>
           <LanguageRoute path='/sv/:endpoint?' root='/sv' language='swedish' />
           <LanguageRoute path='/en/:endpoint?' root='/en' language='english' />
           <RedirectToLanguage default />
