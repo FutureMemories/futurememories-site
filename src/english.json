@@ -162,6 +162,7 @@
       "name": "STC",
       "image": "cases/stc.png",
       "title": "",
+      "subtitle": "Making training easy!",
       "desc": "A total overhaul on all digital touch points. Built from the ground up.",
       "type": "React, iOS, Android, AWS",
       "style": [
@@ -177,13 +178,37 @@
           "right": "3rem"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "stcTitle": "STC",
+      "stcText": "STC is one of the leading fitness companies in Sweden with +80 gyms and fitness centres covering the entire country. The company employs approximately 1000 people and has been on  steady growth since it was founded in 1998.",
+      "strongerJourneyTitle": "A stronger user journey",
+      "strongerJourneyText": [
+        "For the new stc.se we have provided an entire re-design and a new content management system to strengthen the user experience. We have simplified the checkout flow to make it easier to purchase the right membership. By building a filtering functionality we created a more user friendly experience where we only show tailored membership suggestions suitable for each and every individuals’ need.",
+        "The result became an entirely new website using only state of the art technology to gear up for a bright future."
+      ],
+      "newAppTitle": "New app, new design",
+      "newAppText": "We have re-designed and re-built the app from the ground up. It is now more reliable with faster loading times, better filtering and made it more brand consistent.",
+      "nowAvailableTitle": "Now available",
+      "nowAvailableText": "The app makes it simple to book classes, get a full overview of your training schedule and manage your account details on the go.",
+      "toningUpTitle": "Toning up the brand experience",
+      "toningUpText": [
+        "We’ve enhanced the customer journey by connecting the digital experience with the physical environment in the gyms.",
+        "Our work began by looking at STC's new interior design concept to link their new digital environment with their training centres."
+      ],
+      "colourPaletteText": [
+        "The colour palette we created comes from larger and smaller details from actual interior, for example, the lamps in the entrance in a local gym gave colour to Dance & Choreography and the colour of the walls gave colour to the Core classes."
+      ],
+      "newIconsTitle": "New icons",
+      "newIconsText": [
+        "To create a more coherent overview of STCs broad range of membership offers, we designed a various number of icons to pinpoint their product range both physically and digitally. These icons can now be found throughout the entire customer journey which strengthens brand recognition all the way from the web to the treadmill."
+      ]
     },
     {
       "id": "bauer-university",
       "name": "Bauer University",
       "image": "cases/bauer-university.png",
       "title": "",
+      "subtitle": "Better knowledge, better sales",
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
       "metaDesc": "Bauer University, a gamification-based online training platform written in React and Python leveraging Django and GraphQL.",
       "client": "Bauer, Bond Communications",
@@ -203,7 +228,23 @@
           "url": "https://www.baueruniversity.com/"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "tabletMockup": "Bauer tablet mockup",
+      "knowYourProductsTitle": "Know your products",
+      "knowYourProductsText": "Bauer University is a global e-learning platform for Bauer retailers. The service educates sales personnel in Bauer’s product range and provides the best experience in guiding customers to buy the right hockey gear for their specific needs. The result became a gamification-based online training platform turning retailers into Bauer hockey gear sales experts, worldwide.",
+      "fromRookieTitle": "From Rookie to Pro: bringing sales to the top level",
+      "fromRookieText": "Bauer University helps retailers to become more knowledgeable through product trainings for Bauer equipment and real-world sales scenarios. Motivation is kept up by well thought-out gamification concepts. Contestants can pass five skill levels; from Rookie to Pro. To maintain their current level, contestants have to stay current on latest products and sales strategies, enabling continuous learning.  Achievements result in both physical and digital rewards. All wrapped up in an extremely polished web-based experience.",
+      "uxTitle": "UX design, game design and development made the dream team",
+      "uxText": "Bringing our UX experts, and developers together to form this product turned into a great success. We developed a game-like achievement system with experience points and ranks and built everything from the ground up. The game engine is developed in Python, using well-established Open Source frameworks. The user interface is a React-based web application, making Bauer University accessible to almost any device. Communication between frontend and game engine happens through our own GraphQL interface.",
+      "elearningTitle": "A global e-learning initiative bringing return on investment",
+      "elearningText": ["Bauer University was made available for Bauer personnel in 32 markets. All content, including video material and quiz questions, are today offered in seven languages."],
+      "engagementTitle": "Extraordinary engagement",
+      "engagementText": [
+        "Bauer University got an enourmous reception amongst sales personnel globally.",
+        "Within the first 6-month period from product launch, more than 4000 users signed up. The platform was adopted immediately and salespeople advanced rapidly from Rookie to Pro spending hours with training material we created. The platform's average session duration is astonishing with more than 16 minutes.",
+        "Gamification concepts are playing well. Users are eager to maintain their achievements and eagerly follow up with new training material released twice a year. This results in more than 70% of users advancing in level being on Pro-level, the highest level within Bauer University. This corresponds in answering 650+ product-related questions correctly and to watch over 3 hours of video tutorials."
+      ],
+      "futurememories": "Bauer University is the result of combining forces with our\ncreative friends over at <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. 🖤"
     },
     {
       "id": "bandbond",
@@ -213,6 +254,7 @@
         "height"
       ],
       "title": "",
+      "subtitle": "Everything you love about hard rock and metal in one place.",
       "desc": "A community app bringing hard rock and metal fans closer together with their favorite bands.",
       "type": "iOS, Android, Java",
       "style": [
@@ -225,7 +267,23 @@
           "min-width": "15rem"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "heavyTitle": "Heavy metal, light app.",
+      "heavyText": [
+        "Bandbond is a community app bringing you closer to your favorite bands and band members. Using Bandbond, you get full access to all official social media content published by your favourite bands. In the app, you also get access to exclusively produced material for Bandbond users.",
+        "Deep dive into the world of hard rock and metal, explore new bands and, of course, check your calendar for upcoming concerts and live events. Download the app and start crowd surfing metal world, tap by tap."
+      ],
+      "reenterTitle": "Re-entering the mosh pit",
+      "reenterText": [
+        "The app fills one core purpose; to bring bands closer to their fans again. During their 30 years in the music industry, Swedish death metal band Dark Tranquillity explored the idea after experiencing a growing detachment to their fans by using conventional social media channels. Over the years they have used different platforms to reach their fanbase, starting with forums in the 90s, MySpace in the 00s then moving on to Facebook, Instagram and Twitter.",
+        "Todays' social media algorithms make it harder to reach out to the entire audience. Bands posting content on social platforms like Facebook and Instagram can no longer fully rely on that they actually appear in their fans social feed. Bandbond to is a joint effort to bridge this gap by bringing bands closer to their fanbase again."
+      ],
+      "trebleTitle": "No treble. Just good.",
+      "trebleText": [
+        "Since Bandbond is created by and for the metal community, the project got a lot of traction already from the start. A great number of metal bands instantly jumped on the bandwagon. By the first release of Bandbond in 2019, over 150 of the biggest metal and hard rock bands in the world had already signed up their accounts.",
+        "The majority of users are fans who want to consume content of their favorite bands. Simultaneously, band members are using the same app to maintain their feed and to post content to their audience."
+      ],
+      "futurememories": "Future Memories are behind the development and maintenance of Bandbond's native apps for both iOS and Android. Designing and developing this app is an ongoing collaboration with our friends at <a href='https://www.madinsweden.com/' target='_blank' rel='noopener noreferrer'>Mad in Sweden</a> and <a href='https://bandbond.com/' target='_blank' rel='noopener noreferrer'>Bandbond</a>. Together we rock! 🤘"
     },
     {
       "id": "picadeli",
@@ -253,6 +311,7 @@
       "name": "proFLIGHT",
       "image": "cases/proflight.png",
       "title": "",
+      "subtitle": "Pilot Decision support",
       "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "client": "Avtech, Invencon",
@@ -266,7 +325,13 @@
           "min-width": "19.5rem"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "flightmodeTitle": "Flightmode on",
+      "flightmodeText": "Presents in real time all required weather related information to the pilot in a nice and clear interface. The pilot can access everything from significant weather charts, SIGMETS and station information to tailored high resolution weather such as turbulence and winds along the flight plan route.",
+      "skyLimitTitle": "The sky’s the limit.",
+      "skyLimitText": "Developed in close cooperation with professional airline pilots to achieve a user friendly interface and a clear view of the weather and warnings/hazards along the planned flight route. The combination of the synchronized horizontal- and vertical view improves the pilot ́s situational awareness.",
+      "oneFlightAheadTitle": "One flight ahead",
+      "oneFlightAheadText": "Combining the real time access to high resolution weather and flight path optimization, assists the pilot in making better pre- and in-flight decisions leading to a safer and more efficient flight."
     },
     {
       "id": "job-apply",
@@ -279,6 +344,7 @@
       "id": "picular",
       "name": "Picular",
       "title": "",
+      "subtitle": "Google, but for colors",
       "desc": "A rocket fast primary color generator using Google's image search.",
       "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
       "type": "UX/UI, React",
@@ -296,13 +362,23 @@
           "margin-left": "-80px"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "searchEngineTitle": "Search engine for colors",
+      "searchEngineText": "Picular is a rocket fast primary color generator using Google's image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.",
+      "bookmarksTitle": "One for the bookmarks.",
+      "bookmarksText": "The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.",
+      "correctColorTones": "Correct color tones",
+      "grabHex": "Grab the HEX color code",
+      "seeRefImg": "See the reference image",
+      "colorToWordsTitle": "Putting colors to words",
+      "colorToWordsText": "Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in."
     },
     {
       "id": "antistress",
       "name": "AntiStress",
       "image": "cases/antistress.png",
       "title": "",
+      "subtitle": "Take a deep breath",
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "metaDesc": "AntiStress, a pocket diary for iOS and Android to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client": "Västra Götalandsregionen",
@@ -319,7 +395,17 @@
           "right": "14rem"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "imageAlt": "AntiStress phone mockup",
+      "speakYourMindTitle": "Speak your mind",
+      "speakYourMindText": "Together with VGR, we have developed an app for iOS and Android whose purpose is to act as a diary to see their progress or stress level and also listen to meditation soundtracks to reduce stress",
+      "stressTitle": "Putting your stress to the test",
+      "stressText": [
+        "Every fifth woman in the Västra Götaland region has contacted primary care due to stress-related mental illness and the number is increasing. 21.1 percent of women sought help in 2016, which can be compared with 20 percent in 2015.",
+        "In order to meet the large group affected by stress-related mental illness, development of new innovative methods is needed. The app's interface is designed with calm colors in mind and a color spectra that illustrate the balance between feelings while moving in a harmonious movement when you start the app."
+      ],
+      "exerciseTitle": "Exercising conscious breathing makes you better equipped when stress strikes, and potentially preventing it.",
+      "exerciseAlt": "AntiStress gradient background"
     },
     {
       "id": "nordish-market",
@@ -348,6 +434,7 @@
       "name": "Retts Plus",
       "image": "cases/retts-plus.png",
       "title": "",
+      "subtitle": "Safe medical decisions",
       "desc": "Saving lives by supporting personnel in critical decision-making during medical emergency situations.",
       "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
       "client": "Predicare",
@@ -364,13 +451,25 @@
           "margin-left": "-10px"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "efficiencyTitle": "Efficiency for patients",
+      "efficiencyText": "Predicare provides 95% of emergency departments in Sweden, and many in Norway, with a system that algorithmically classifies a patient according to the severity of their symptoms, and suggests the next course of action.",
+      "efficiencyContent": [
+        "RETTS, Rapid Emergency Triage and Treatment System, works by measuring and assessing a number of vital parameters at the first examination, as well as by gathering a structured and standardised medical history regarding the reason for the visit and the patient’s current symptoms.",
+        "Based on a thorough user research phase we created a digital user interface that took advantage of the entire RETTS capability. We also developed a timeline that logged all interactions with each patient to provide a clearer overview of the patient’s entire care stay.",
+        "This project was nominated in the Design S, Sweden’s biggest and most comprehensive design award, backed by the entire design industry. The award is aimed at professional designers, architects, individual specialists, producers and companies that work with design in a broad sense."
+      ],
+      "clearOverviewTitle": "A clear overview",
+      "clearOverviewText": "Giving a doctor or nurse an overview of the patient's visit is a key feature for making the right decision and giving proper care. At the right time.",
+      "everyStepTitle": "Every step on the way",
+      "everyStepText": "We developed a timeline that shows the entire patient’s journey from first contact until it was time to go home. This improved the ability to track  events during a patient’s visit better, and enabled nurses and doctors to take make the correct decision at any point."
     },
     {
       "id": "sleepcure",
       "name": "SleepCure",
       "image": "cases/sleepcure.png",
       "title": "Future Memories: SleepCure, a digital analysis and treatment method for people who want to sleep better.",
+      "subtitle": "Better Sleep, Better Life",
       "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
       "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
       "type": "iOS, HealthKit",
@@ -383,7 +482,15 @@
           "min-width": "21.2rem"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "sleepCoachTitle": "Your digital sleep coach",
+      "sleepCoachText": "SleepCure is a digital analysis and treatment method for people who want to sleep better. The assistant helps you to establish healthy sleep habits by assessing your daily routines. SleepCure gives advice in how they affect your sleep and how to adjust them.",
+      "researchBasedTitle": "Research-based treatment",
+      "researchBasedText": "SleepCure is a CE-marked medical device for non-pharmacological treatment of sleeping disorders. It takes latest results in behaviour therapy and sleep research into account when giving advice on how to improve your sleep patterns.",
+      "mobileAssistantTitle": "Your mobile assistant",
+      "mobileAssistantText": "SleepCure is available as an iPhone app and only requires a few minutes attention every day to reflect on your day. In return, the app provides you with advice on how to adjust your lifestyle for a better sleep and quality of life, little by little.",
+      "byTheWayTitle": "Oh, by the way",
+      "byTheWayText": "Future Memories was responsible for building the iOS app together with SleepCure. Our Lead Mobile Developer led and coached the SleepCure development team, all the way from first commit to App Store release."
     },
     {
       "id": "mat-se",
@@ -394,6 +501,7 @@
         "width"
       ],
       "title": "",
+      "subtitle": "Fresh food delivered to your door",
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
       "client": "Mat.se",
@@ -410,7 +518,25 @@
       "imageStyle": {
         "left": "0"
       },
-      "showcase": true
+      "showcase": true,
+      "shopOnlineTitle": "Shop online,\ndinner at home",
+      "shopOnlineText": "Mat.se is a Gothenburg-based startup and online grocery shopping service operating in Stockholm, Gothenburg and Malmö. Consumers can shop on the web or in Mat.se's apps for iOS and Android and groceries get delivered to your home or workplace.",
+      "fastMovingTitle": "Fast-Moving Consumer Goods",
+      "fastMovingText": [
+        "Mat.se has developed its own logistics and supply chain platform which perfectly adapts to their operations and covers all aspects of their supply chain. The platform supports and tracks everything from purchasing to warehousing to distribution.",
+        "We at Future Memories teamed up with Mat.se to improve and extend their technical platform. The Mat.se backbone is based on Java technologies and leverages message-driven processing for high throughput."
+      ],
+      "fillingTitle": "Filling your grocery bags",
+      "fillingText": "Operations at Mat.se warehouses are highly digitalized. For all their daily routines, warehouse personnel use an iPad app with jacks into the logistics platform.",
+      "fillingItems": ["Goods arrival", "Incoming deliveries", "Inventory control", "Order picking", "Shipping preparation"],
+      "deliveredTitle": "Delivered to your doorstep",
+      "deliveredText": [
+        "Route planning and distribution is part of the logistics platform as well. We redefined the delivery process by developing a new iOS app for truck drivers.",
+        "The app provides drivers with order information and point-to-point navigation between stops.",
+        "Real-time vehicle information is fed back into the logistics platform where supervisors can control all ongoing delivery routes and interact with the drivers. Integrated barcode and QR code scanning in the app or through 3rd party scanners makes the delivery process even faster and more reliable."
+      ],
+      "biggerPictureTitle": "Seeing the bigger picture.",
+      "biggerPictureText": "Beside day to day logistics, the platform is even used by managers for strategic purposes. We have developed features on top of the platform to give managers insights in purchasing, sales and delivery performance and other reports which help decision-making executives."
     },
     {
       "id": "sleep-cycle-dashboard",
@@ -508,6 +634,7 @@
         "height"
       ],
       "title": "",
+      "subtitle": "Grand slam",
       "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
       "metaDesc": "Tennis Watch, the first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
       "type": "UX/UI, iOS, watchOS",
@@ -523,13 +650,21 @@
           "bottom": "2rem"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "firstInGameTitle": "First in the game",
+      "firstInGameText": "Tennis Watch was the first tennis app designed for Apple Watch. It turns your Apple Watch into a simple and easy-to-use score tracking device. All matches are stored on your iPhone and sophisticated statistics give you insights on how to improve your game.",
+      "matchTrendsTitle": "Match trends and\nperformance statistics",
+      "matchTrendsText": "Keep track of your progress with statistics and match trend trackning to improve your game. It’s all about winning right?",
+      "tennisScoreTitle": "Tennis score tracker and\nstatistics for Apple Watch",
+      "tennisScoreText": "Keeping track of your matches and opponents. Designed for any scoring method.",
+      "matchPoint": "Match point."
     },
     {
       "id": "paykartan",
       "name": "Paykartan",
       "image": "cases/paykartan.png",
       "title": "",
+      "subtitle": "Who needs a wallet anyway?",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
       "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
       "type": "UX/UI, Web",
@@ -542,7 +677,18 @@
           "min-width": "21.2rem"
         }
       ],
-      "showcase": true
+      "showcase": true,
+      "lunchtimeTitle": "Lunch time and… #!?@%!!\nYou forgot your wallet…",
+      "lunchtimeText": "Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone. The app includes Swish, Apple Pay and Beam.",
+      "noWorriesTitle": "No worries",
+      "noWorriesText": "The perfect solution when you forget your wallet or if you simply left it on purpose. The app is super easy to use, just fire it up and follow these steps:",
+      "findTheSpot": "Find the spot",
+      "eat": "Eat",
+      "pay": "Pay",
+      "holdingAPhone": "Holding a phone with a Paykartan open",
+      "oneStepAheadTitle": "One step ahead",
+      "oneStepAheadText": "Paykartan is just a nice buffet of choices. Get that nice overview of your city and all the yummy places nearby.",
+      "oneStepAheadAlt": "Paykartan Screenshoot - gothenburg"
     },
     {
       "id": "forces-of-freedom",
@@ -750,6 +896,8 @@
     "alt": "Team picture"
   },
   "projectsBlock": {
+    "otherProjects": "Other projects",
+    "browseMoreProjects": "Browse more projects",
     "viewCase": "View Case",
     "visitSite": "Visit Site",
     "getApp": "Get App"
@@ -798,6 +946,7 @@
       "modernSubheader": "Our studio in downtown Gothenburg is the center of Future Memories. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team.",
       "availableHeader": "Available positions",
       "availableSubheader": "Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business."
-    }
+    },
+    "visitTheSite": "Visit the site"
   }
 }

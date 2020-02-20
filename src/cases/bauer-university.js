@@ -9,6 +9,7 @@ import ProjectsBlock from './components/projects-block'
 import TextGridBlock from './components/text-grid-block'
 import ThreeBlock from './components/three-block'
 import CenterBlock from './components/center-block'
+import MarkupCustomElement from '../components/markup-custom-element'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -41,29 +42,32 @@ export default class extends Component {
   }
 
   render ({ data }) {
+    const content = data.allCases.find(c => c.id === 'bauer-university')
+
     return (
       <Base route='/cases/bauer-university' dark data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='BAUER UNIVERSITY'
-              subtitle='Better knowledge, better sales'
+              title={content.name.toUpperCase()}
+              subtitle={content.subtitle}
             />
 
-            <LargeImage src='cases/bauer-university-1.jpg' alt='Bauer tablet mockup' />
+            <LargeImage src='cases/bauer-university-1.jpg' alt={content.tabletMockup} />
 
             <CenterBlock
               inView='inViewBottom'
-              title='Know your products'
-              text='Bauer University is a global e-learning platform for Bauer retailers. The service educates sales personnel in Bauer’s product range and provides the best experience in guiding customers to buy the right hockey gear for their specific needs. The result became a gamification-based online training platform turning retailers into Bauer hockey gear sales experts, worldwide.'
+              title={content.knowYourProductsTitle}
+              text={content.knowYourProductsText}
             />
 
             <TextGridBlock
               blocks={[
                 { inView: 'inViewLeft', image: 'cases/bauer-university-2.png', alt: 'Bauer University (Sales Training) tablet mockup' },
-                { inView: 'inViewRight', title: 'From Rookie to Pro: bringing sales to the top level', desc: 'Bauer University helps retailers to become more knowledgeable through product trainings for Bauer equipment and real-world sales scenarios. Motivation is kept up by well thought-out gamification concepts. Contestants can pass five skill levels; from Rookie to Pro. To maintain their current level, contestants have to stay current on latest products and sales strategies, enabling continuous learning.  Achievements result in both physical and digital rewards. All wrapped up in an extremely polished web-based experience.' },
-                { inView: 'inViewRight', image: 'cases/bauer-university-3.png', alt: 'Bauer University (Product Category) tablet mockup' }, { inView: 'inViewLeft', image: 'cases/bauer-university-4.png', alt: 'Bauer University (Product Training) tablet mockup' }
+                { inView: 'inViewRight', title: content.fromRookieTitle, desc: content.fromRookieText },
+                { inView: 'inViewRight', image: 'cases/bauer-university-3.png', alt: 'Bauer University (Product Category) tablet mockup' },
+                { inView: 'inViewLeft', image: 'cases/bauer-university-4.png', alt: 'Bauer University (Product Training) tablet mockup' }
               ]}
               background='#151D20'
               color='#ffffff'
@@ -74,16 +78,14 @@ export default class extends Component {
               background='#F9F9FA'
               blocks={[
                 { type: 'image', image: 'cases/bauer-university-5.png', modifier: 'matSeIpad' },
-                { type: 'text', title: 'UX design, game design and development made the dream team', text: 'Bringing our UX experts, and developers together to form this product turned into a great success. We developed a game-like achievement system with experience points and ranks and built everything from the ground up. The game engine is developed in Python, using well-established Open Source frameworks. The user interface is a React-based web application, making Bauer University accessible to almost any device. Communication between frontend and game engine happens through our own GraphQL interface.' }
+                { type: 'text', title: content.uxTitle, text: content.uxText }
               ]}
             />
 
             <BookmarkBlock
               className={s.globalSection}
-              title='A global e-learning initiative bringing return on investment'
-              text={[
-                'Bauer University was made available for Bauer personnel in 32 markets. All content, including video material and quiz questions, are today offered in seven languages.'
-              ]}
+              title={content.elearningTitle}
+              text={content.elearningText}
               inView='inViewLeft'
               background='#EFEFEF'
             >
@@ -105,12 +107,8 @@ export default class extends Component {
 
             <BookmarkBlock
               className={s.statsSection}
-              title='Extraordinary engagement'
-              text={[
-                'Bauer University got an enourmous reception amongst sales personnel globally.',
-                'Within the first 6-month period from product launch, more than 4000 users signed up. The platform was adopted immediately and salespeople advanced rapidly from Rookie to Pro spending hours with training material we created. The platform\'s average session duration is astonishing with more than 16 minutes.',
-                'Gamification concepts are playing well. Users are eager to maintain their achievements and eagerly follow up with new training material released twice a year. This results in more than 70% of users advancing in level being on Pro-level, the highest level within Bauer University. This corresponds in answering 650+ product-related questions correctly and to watch over 3 hours of video tutorials.'
-              ]}
+              title={content.engagementTitle}
+              text={content.engagementText}
               inView='inViewRight'
               background='white'
               align='left'
@@ -126,7 +124,7 @@ export default class extends Component {
             <CenterBlock
               inView='inViewBottom'
               background='#F5F5F5'
-              component={<p>{'Bauer University is the result of combining forces with our\ncreative friends over at '}<a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. {'🖤'}</p>}
+              component={<MarkupCustomElement element='p' markup={content.futurememories} trim={false} />}
             />
 
             <ProjectsBlock

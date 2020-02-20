@@ -29,14 +29,16 @@ export default class extends Component {
   }
 
   render ({ data }) {
+    const content = data.allCases.find(c => c.id === 'sleepcure')
+
     return (
       <Base route='/cases/sleepcure' dark data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='SleepCure'
-              subtitle='Better Sleep, Better Life'
+              title={content.name}
+              subtitle={content.subtitle}
             />
 
             <LargeImage
@@ -50,8 +52,8 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title='Your digital sleep coach'
-              text='SleepCure is a digital analysis and treatment method for people who want to sleep better. The assistant helps you to establish healthy sleep habits by assessing your daily routines. SleepCure gives advice in how they affect your sleep and how to adjust them.'
+              title={content.sleepCoachTitle}
+              text={content.sleepCoachText}
               background='#FFFFFF'
               color='#737780'
               modifer='sleepcure'
@@ -66,8 +68,8 @@ export default class extends Component {
                   type: 'text-array',
                   modifier: 'sleepcure',
                   array: [
-                    { type: 'text', title: 'Research-based treatment', text: 'SleepCure is a CE-marked medical device for non-pharmacological treatment of sleeping disorders. It takes latest results in behaviour therapy and sleep research into account when giving advice on how to improve your sleep patterns.' },
-                    { type: 'text', title: 'Your mobile assistant', text: 'SleepCure is available as an iPhone app and only requires a few minutes attention every day to reflect on your day. In return, the app provides you with advice on how to adjust your lifestyle for a better sleep and quality of life, little by little.' }
+                    { type: 'text', title: content.researchBasedTitle, text: content.researchBasedText },
+                    { type: 'text', title: content.mobileAssistantTitle, text: content.mobileAssistantText }
                   ]
                 }
               ]}
@@ -75,8 +77,8 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title='Oh, by the way'
-              text='Future Memories was responsible for building the iOS app together with SleepCure. Our Lead Mobile Developer led and coached the SleepCure development team, all the way from first commit to App Store release.'
+              title={content.byTheWayTitle}
+              text={content.byTheWayText}
               background='#FFFFFF'
               color='#737780'
               modifer='sleepcureByTheWay'

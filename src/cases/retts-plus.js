@@ -29,14 +29,16 @@ export default class extends Component {
   }
 
   render ({ data }) {
+    const content = data.allCases.find(c => c.id === 'retts-plus')
+
     return (
       <Base route='/cases/retts-plus' data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='RETTS PLUS'
-              subtitle='Safe medical decisions'
+              title={content.name.toUpperCase()}
+              subtitle={content.subtitle}
             />
 
             <LargeImage
@@ -47,21 +49,17 @@ export default class extends Component {
 
             <TextBlockMultiple
               inView='inViewBottom'
-              title='Efficiency for patients'
-              text='Predicare provides 95% of emergency departments in Sweden, and many in Norway, with a system that algorithmically classifies a patient according to the severity of their symptoms, and suggests the next course of action.'
-              content={[
-                'RETTS, Rapid Emergency Triage and Treatment System, works by measuring and assessing a number of vital parameters at the first examination, as well as by gathering a structured and standardised medical history regarding the reason for the visit and the patient’s current symptoms.',
-                'Based on a thorough user research phase we created a digital user interface that took advantage of the entire RETTS capability. We also developed a timeline that logged all interactions with each patient to provide a clearer overview of the patient’s entire care stay.',
-                'This project was nominated in the Design S, Sweden’s biggest and most comprehensive design award, backed by the entire design industry. The award is aimed at professional designers, architects, individual specialists, producers and companies that work with design in a broad sense.'
-              ]}
+              title={content.efficiencyTitle}
+              text={content.efficiencyText}
+              content={content.efficiencyContent}
               background='#070B13'
               color='#ffffff'
             />
 
             <SlideInBlock
               inView='inViewLeft'
-              title='A clear overview'
-              text={'Giving a doctor or nurse an overview of the patient\'s visit is a key feature for making the right decision and giving proper care. At the right time.'}
+              title={content.clearOverviewTitle}
+              text={content.clearOverviewText}
               image='cases/retts-plus-2.png'
               alt='Retts Plus tablet mockup'
               background='#090E18'
@@ -69,8 +67,8 @@ export default class extends Component {
 
             <SlideInBlock
               inView='inViewRight'
-              title='Every step on the way'
-              text='We developed a timeline that shows the entire patient’s journey from first contact until it was time to go home. This improved the ability to track  events during a patient’s visit better, and enabled nurses and doctors to take make the correct decision at any point.'
+              title={content.everyStepTitle}
+              text={content.everyStepText}
               image='cases/retts-plus-3.png'
               alt='Retts Plus tablet mockup'
               background='#090E18'

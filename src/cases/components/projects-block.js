@@ -22,8 +22,8 @@ export default ({ current, similar, background, color, allCases, defaultOtherCas
       <div class={s.inner}>
 
         <div class={s.block}>
-          <h2>Other projects</h2>
-          <Button background='transparent' customClass={s.button} to='/work' label='Browse more projects' arrow transition='slide' />
+          <h2>{props.otherProjects}</h2>
+          <Button background='transparent' customClass={s.button} to='/work' label={props.browseMoreProjects} arrow transition='slide' />
         </div>
 
         <div class={s.block}>

@@ -34,14 +34,16 @@ export default class extends Component {
   }
 
   render ({ data }) {
+    const content = data.allCases.find(c => c.id === 'stc')
+
     return (
       <Base route='/cases/stc' dark data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='STC'
-              subtitle='Making training easy!'
+              title={content.name}
+              subtitle={content.subtitle}
             />
 
             <LargeImage
@@ -54,24 +56,22 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title='STC'
-              text='STC is one of the leading fitness companies in Sweden with +80 gyms and fitness centres covering the entire country. The company employs approximately 1000 people and has been on  steady growth since it was founded in 1998.'
+              title={content.stcTitle}
+              text={content.stcText}
               background='#FFFFFF'
               color='#737780'
             />
 
             <BookmarkBlock
               className={s.websiteSection}
-              title='A stronger user journey'
-              text={[
-                'For the new stc.se we have provided an entire re-design and a new content management system to strengthen the user experience. We have simplified the checkout flow to make it easier to purchase the right membership. By building a filtering functionality we created a more user friendly experience where we only show tailored membership suggestions suitable for each and every individuals’ need.',
-                'The result became an entirely new website using only state of the art technology to gear up for a bright future.']}
+              title={content.strongerJourneyTitle}
+              text={content.strongerJourneyText}
               inView='inViewLeft'
               image='cases/stc-2.jpg'
               background='white'
               color='#737780'
               align='left'
-              link={['Visit the site', 'https://stc.se/']}
+              link={[data.content.visitTheSite, 'https://stc.se/']}
             />
 
             <ParallaxObjectBlock
@@ -86,8 +86,8 @@ export default class extends Component {
             <CenterBlock
               className={s.appSection}
               inView='inViewBottom'
-              title='New app, new design'
-              text='We have re-designed and re-built the app from the ground up. It is now more reliable with faster loading times, better filtering and made it more brand consistent.'
+              title={content.newAppTitle}
+              text={content.newAppText}
               background='#FFFFFF'
               color='#737780'
             />
@@ -104,8 +104,8 @@ export default class extends Component {
               className={s.getAppSection}
               inView='inViewBottom'
               color='#737780'
-              title='Now available'
-              text='The app makes it simple to book classes, get a full overview of your training schedule and manage your account details on the go.'
+              title={content.nowAvailableTitle}
+              text={content.nowAvailableText}
             >
               <DeviceBlock
                 customClass={s.deviceBlock}
@@ -118,11 +118,8 @@ export default class extends Component {
             <BookmarkBlock
               className={s.lampSection}
               image='cases/stc-7.jpg'
-              title='Toning up the brand experience'
-              text={[
-                'We’ve enhanced the customer journey by connecting the digital experience with the physical environment in the gyms.',
-                'Our work began by looking at STCs new interior design concept to link their new digital environment with their training centres.'
-              ]}
+              title={content.toningUpTitle}
+              text={content.toningUpText}
               inView='inViewRight'
               align='left'
               background='white'
@@ -136,9 +133,7 @@ export default class extends Component {
             <BookmarkBlock
               className={s.workoutSection}
               image='cases/stc-9.jpg'
-              text={[
-                'The colour palette we created comes from larger and smaller details from actual interior, for example, the lamps in the entrance in a local gym gave colour to Dance & Choreography and the colour of the walls gave colour to the Core classes.'
-              ]}
+              text={content.colourPaletteText}
               inView='inViewLeft'
               background='white'
               color='#737780'
@@ -146,10 +141,8 @@ export default class extends Component {
 
             <BookmarkBlock
               className={s.iconsBlock}
-              title='New icons'
-              text={[
-                'To create a more coherent overview of STCs broad range of membership offers, we designed a various number of icons to pinpoint their product range both physically and digitally. These icons can now be found throughout the entire customer journey which strengthens brand recognition all the way from the web to the treadmill. '
-              ]}
+              title={content.newIconsTitle}
+              text={content.newIconsText}
               inView='inViewLeft'
               background='#FAFAFA'
               color='#737780'

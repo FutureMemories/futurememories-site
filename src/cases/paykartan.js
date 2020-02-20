@@ -29,14 +29,16 @@ export default class extends Component {
   }
 
   render ({ data }) {
+    const content = data.allCases.find(c => c.id === 'paykartan')
+
     return (
       <Base route='/cases/paykartan' dark data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='PAYKARTAN'
-              subtitle='Who needs a wallet anyway?  '
+              title={content.name.toUpperCase()}
+              subtitle={content.subtitle}
             />
 
             <LargeImage
@@ -49,22 +51,22 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
-              title={'Lunch time and… #!?@%!!\nYou forgot your wallet…'}
-              text='Paykartan.se is a web app that shows all restaurants near you where you can pay with your smartphone. The app includes Swish, Apple Pay and Beam.'
-              link={['Visit the site', 'https://paykartan.se/']}
+              title={content.lunchtimeTitle}
+              text={content.lunchtimeText}
+              link={[data.content.visitTheSite, 'https://paykartan.se/']}
             />
 
             <BookmarkBlock
               inView='inViewLeft'
-              title='No worries'
-              text='The perfect solution when you forget your wallet or if you simply left it on purpose. The app is super easy to use, just fire it up and follow these steps:'
+              title={content.noWorriesTitle}
+              text={content.noWorriesText}
               items={[
-                { name: 'Find the spot', image: 'icons/location.svg', alt: 'location icon' },
-                { name: 'Eat', image: 'icons/hamburger.svg', alt: 'hamburger icon' },
-                { name: 'Pay', image: 'icons/phone.svg', alt: 'phone icon' }
+                { name: content.findTheSpot, image: 'icons/location.svg', alt: 'location icon' },
+                { name: content.eat, image: 'icons/hamburger.svg', alt: 'hamburger icon' },
+                { name: content.pay, image: 'icons/phone.svg', alt: 'phone icon' }
               ]}
               image='cases/paykartan-2.png'
-              alt='Holding a phone with a Paykartan open'
+              alt={content.holdingAPhone}
               background='#FFD2D2'
               align='left'
               modifier='paykartan'
@@ -72,9 +74,9 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
-              title='One step ahead'
-              text='Paykartan is just a nice buffet of choices. Get that nice overview of your city and all the yummy places nearby.'
-              image={['Paykartan Screenshoot - gothenburg', 'cases/paykartan-3.jpg']}
+              title={content.oneStepAheadTitle}
+              text={content.oneStepAheadText}
+              image={[content.oneStepAheadAlt, 'cases/paykartan-3.jpg']}
             />
 
             <ParallaxObjectBlock

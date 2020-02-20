@@ -30,23 +30,25 @@ export default class extends Component {
   }
 
   render ({ data }) {
+    const content = data.allCases.find(c => c.id === 'antistress')
+
     return (
       <Base route='/cases/antistress' dark data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='AntiStress'
-              subtitle='Take a deep breath'
+              title={content.name}
+              subtitle={content.subtitle}
             />
 
-            <LargeImage src='cases/antistress-1.jpg' alt='AntiStress phone mockups' />
+            <LargeImage src='cases/antistress-1.jpg' alt={content.imageAlt} />
 
             <CenterBlock
               inView='inViewBottom'
               modifer='antistress'
-              title='Speak your mind'
-              text='Together with VGR, we have developed an app for iOS and Android whose purpose is to act as a diary to see their progress or stress level and also listen to meditation soundtracks to reduce stress'
+              title={content.speakYourMindTitle}
+              text={content.speakYourMindText}
             >
               <DeviceBlock
                 customClass={s.deviceBlock}
@@ -73,24 +75,21 @@ export default class extends Component {
 
             <ParallaxBumpBlock
               inView='inViewRight'
-              title='Putting your stress to the test'
-              text={[
-                'Every fifth woman in the Västra Götaland region has contacted primary care due to stress-related mental illness and the number is increasing. 21.1 percent of women sought help in 2016, which can be compared with 20 percent in 2015.',
-                'In order to meet the large group affected by stress-related mental illness, development of new innovative methods is needed. The app\'s interface is designed with calm colors in mind and a color spectra that illustrate the balance between feelings while moving in a harmonious movement when you start the app.'
-              ]}
+              title={content.stressTitle}
+              text={content.stressText}
               items={[
-                { image: 'cases/antistress-phone-3.png', alt: 'AntiStress phone mockup', speed: -15, startPos: 53, width: '412px', align: 'right' },
-                { image: 'cases/antistress-phone-2.png', alt: 'AntiStress phone mockup', speed: -28, startPos: -30, width: '522px', align: 'right' },
-                { image: 'cases/antistress-phone-1.png', alt: 'AntiStress phone mockup', speed: 0, startPos: -115, width: '568px', align: 'right' }
+                { image: 'cases/antistress-phone-3.png', alt: content.imageAlt, speed: -15, startPos: 53, width: '412px', align: 'right' },
+                { image: 'cases/antistress-phone-2.png', alt: content.imageAlt, speed: -28, startPos: -30, width: '522px', align: 'right' },
+                { image: 'cases/antistress-phone-1.png', alt: content.imageAlt, speed: 0, startPos: -115, width: '568px', align: 'right' }
               ]}
               background='#FAFAFA'
             />
 
             <CenterBlock
               inView='inViewBottom'
-              title='Exercising conscious breathing makes you better equipped when stress strikes, and potentially preventing it.'
+              title={content.exerciseTitle}
               src={{ path: 'cases/antistress-2.jpg', style: { maxHeight: '715px' } }}
-              alt='AntiStress gradient background'
+              alt={content.exerciseAlt}
               color='#ffffff'
             />
 

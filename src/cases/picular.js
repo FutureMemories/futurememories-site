@@ -46,14 +46,16 @@ export default class extends Component {
   }
 
   render ({ data }) {
+    const content = data.allCases.find(c => c.id === 'picular')
+
     return (
       <Base route='/cases/picular' dark data={data}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='PICULAR'
-              subtitle='Google, but for colors'
+              title={content.name.toUpperCase()}
+              subtitle={content.subtitle}
             />
 
             <LargeImage
@@ -79,19 +81,19 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
-              title='Search engine for colors'
-              text={'Picular is a rocket fast primary color generator using Google\'s image search. If you ever needed the perfect yellow hex code from a banana, this is the tool for you.'}
-              link={['Visit the site', 'https://picular.co/']}
+              title={content.searchEngineTitle}
+              text={content.searchEngineText}
+              link={[data.content.visitTheSite, 'https://picular.co/']}
             />
 
             <BookmarkBlock
               inView='inViewLeft'
-              title='One for the bookmarks.'
-              text='The most practical color tool for creating an accurate palette inspired by a certain mood, object or place.'
+              title={content.bookmarksTitle}
+              text={content.bookmarksText}
               items={[
-                { name: 'Correct color tones', image: 'icons/droplet.svg', alt: 'droplet icon' },
-                { name: 'Grab the HEX color code', image: 'icons/hash.svg', alt: 'hash icon' },
-                { name: 'See the reference image', image: 'icons/image.svg', alt: 'image icon' }
+                { name: content.correctColorTones, image: 'icons/droplet.svg', alt: 'droplet icon' },
+                { name: content.grabHex, image: 'icons/hash.svg', alt: 'hash icon' },
+                { name: content.seeRefImg, image: 'icons/image.svg', alt: 'image icon' }
               ]}
               modifier='picular'
             >
@@ -100,8 +102,8 @@ export default class extends Component {
 
             <SlideInBlock
               inView='inViewRight'
-              title='Putting colors to words'
-              text='Picular helps designers to easily extract the most relevant colors for a specific context or domain. It helps to understand perception, psychology and aesthetics of a color or tone you’re interested in.'
+              title={content.colorToWordsTitle}
+              text={content.colorToWordsText}
               image='cases/picular-2.png'
               alt='Picular grid of colors'
               background='#fff'
