@@ -56,7 +56,7 @@ export default class extends Component {
                 <p>{data.content.careers.modernSubheader}</p>
               </div>
               <div class={s.content}>
-                {data.careersWorkplaces.map((row, i) => (
+                {Object.values(data.careersWorkplaces).map((row, i) => (
                   <div key={'workplace_' + i} class={s.workplace}>
                     <div class={s.image}>
                       <img alt={`workplace: ${row.label}`} src={require(`../images/${row.image}`)} />
@@ -70,7 +70,7 @@ export default class extends Component {
               </div>
             </div>
 
-            {data.careersPositions.length > 0 && (
+            {Object.values(data.careersPositions).length > 0 && (
               <div class={s.positions} ref={e => { this.positions = e }}>
                 <div class={s.text}>
                   <h1>{data.content.careers.availableHeader}</h1>

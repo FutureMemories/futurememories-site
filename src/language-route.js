@@ -27,9 +27,15 @@ const data = {
   swedish: require('./swedish.json')
 }
 
-const getLanguageData = memoize((language) => (
-  merge.recursive(true, data.english, data[language] || {})
-))
+const getLanguageData = memoize((language) => {
+  const d = merge.recursive(true, data.english, data[language] || {})
+
+  // Map cases with id
+  d.allCases = Object.entries(d.allCases)
+    .map(([id, value]) => ({ id, ...value }))
+
+  return d
+})
 
 export default class extends Component {
   state = {

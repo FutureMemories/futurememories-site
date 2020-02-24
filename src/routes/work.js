@@ -84,7 +84,7 @@ export default class extends Component {
                 <p>{data.content.work.partnersSubheader}</p>
               </div>
               <div class={s.content}>
-                {data.company.partners.map(partner => {
+                {Object.values(data.company.partners).map(partner => {
                   const ElementTag = partner.link ? 'a' : 'div'
                   return (
                     <ElementTag href={getLanguageLink(partner.link)} key={'partner_' + partner.name} class={s.partner}>

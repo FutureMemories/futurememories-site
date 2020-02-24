@@ -8,7 +8,7 @@ export default class extends Component {
   render ({ astronauts }) {
     return (
       <div class={s.astronauts}>
-        {astronauts.map((astronaut, i) => (
+        {Object.values(astronauts).map((astronaut, i) => (
           astronaut.button ? (
             <div class={cx(s.astronaut, s.button)}>
               <Button

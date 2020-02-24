@@ -9,12 +9,14 @@ const data = {
 
 const getLanguageContent = (language) => {
   const languageData = merge.recursive(true, data.english, data[language] || {})
-  const showCases = languageData.allCases.filter(c => c.showcase === true)
+  const showcaseCases = Object.entries(languageData.allCases)
+    .map(([id, value]) => ({ id, ...value }))
+    .filter(c => c.showcase === true)
   const prefix = language === 'swedish' ? '/sv' : '/en'
 
-  const routes = languageData.routes.map(r => ({ ...r, url: prefix + r.url }))
+  const routes = Object.values(languageData.routes).map(r => ({ ...r, url: prefix + r.url }))
 
-  const caseData = showCases.map(c => {
+  const caseData = showcaseCases.map(c => {
     const caseTitle = c.name && c.name + (c.desc ? `, ${c.desc.charAt(0).toLowerCase() + c.desc.slice(1)}` : '')
     return ({
       url: prefix + '/cases/' + c.id,
@@ -39,10 +41,12 @@ const addLanguageAlternatives = (result, { url, prio }) => {
 
 const generateSitemap = () => {
   const currentDate = new Date().toISOString()
-  const showCases = data.english.allCases.filter(c => c.showcase === true)
+  const showcaseCases = Object.entries(data.english.allCases)
+    .map(([id, value]) => ({ id, ...value }))
+    .filter(c => c.showcase === true)
   const siteRoutes = [].concat(
-    data.english.routes.map(r => ({ url: r.url, prio: r.url === '/' ? '1.00' : '0.80' })),
-    showCases.map(r => ({ url: `/cases/${r.id}`, prio: '0.64' }))
+    Object.values(data.english.routes).map(r => ({ url: r.url, prio: r.url === '/' ? '1.00' : '0.80' })),
+    showcaseCases.map(r => ({ url: `/cases/${r.id}`, prio: '0.64' }))
   ).reduce(addLanguageAlternatives, [])
 
   const siteUrls = siteRoutes.reduce((result, r) => {
