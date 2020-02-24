@@ -73,9 +73,9 @@ export default class extends Component {
     window.clearInterval(this._randomizer)
   }
 
-  render ({ data, firstView }, { lightLeft, lightTop, activePillar, preActivePillar }) {
+  render ({ data, firstView, root }, { lightLeft, lightTop, activePillar, preActivePillar }) {
     return (
-      <Base firstView={firstView} route='/' data={data}>
+      <Base firstView={firstView} route='/' data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 

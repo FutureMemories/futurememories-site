@@ -34,9 +34,9 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render ({ data }) {
+  render ({ data, root }) {
     return (
-      <Base title={data.content.work.title} route='/work' data={data}>
+      <Base title={data.content.work.title} route='/work' data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 

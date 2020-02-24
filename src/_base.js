@@ -23,10 +23,11 @@ export default class extends Component {
     this.setState({ locked: !this.state.locked })
   }
 
-  render ({ data, children, dark, background, removeFooter, fadeInHeader, firstView, route }) {
+  render ({ root, data, children, dark, background, removeFooter, fadeInHeader, firstView, route }) {
     return (
       <div class={cx('app', this.state.locked && 'locked')}>
         <Header
+          root={root}
           fadeIn={firstView}
           dark={dark}
           links={data.links}

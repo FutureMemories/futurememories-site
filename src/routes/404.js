@@ -3,8 +3,8 @@ import Button from '../components/button'
 import Moon from '../components/moon'
 import s from './404.sass'
 
-export default ({ data }) => (
-  <Base removeFooter data={data}>
+export default ({ data, root }) => (
+  <Base removeFooter data={data} root={root}>
     <div class={s.view}>
       <div class={s.notFound}>
         <img src={require('../images/broken-document.svg')} />

@@ -29,11 +29,11 @@ export default class extends Component {
     inView(`.${inViewClasses}`).off('enter')
   }
 
-  render ({ data }) {
+  render ({ data, root }) {
     const content = data.allCases.find(c => c.id === 'antistress')
 
     return (
-      <Base route='/cases/antistress' dark data={data}>
+      <Base route='/cases/antistress' dark data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
