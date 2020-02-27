@@ -159,9 +159,9 @@
       "name": "STC",
       "image": "cases/stc.png",
       "title": "",
-      "subtitle": "Making training easy!",
+      "subtitle": "Making training easy!"
       "desc": "A total overhaul on all digital touch points. Built from the ground up.",
-      "type": "React, iOS, Android, AWS",
+      "type": "Service Design, UX, UI, React, iOS, Android, AWS, Health Tech",
       "style": [
         {
           "background": "#FF5200",
@@ -208,7 +208,7 @@
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
       "metaDesc": "Bauer University, a gamification-based online training platform written in React and Python leveraging Django and GraphQL.",
       "client": "Bauer, Bond Communications",
-      "type": "React, Python, GraphQL, UX",
+      "type": "React, Python, Django, GraphQL, UX, Retail Tech",
       "style": [
         {
           "background": "linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
@@ -288,7 +288,7 @@
       ],
       "title": "",
       "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning.",
-      "type": "UX/UI, iOS",
+      "type": "Service Design, UX, UI, iOS, Food Tech",
       "style": [
         {
           "background": "#6FBC84",
@@ -308,7 +308,7 @@
       "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "metaDesc": "proFLIGHT, an iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
       "client": "Avtech, Invencon",
-      "type": "iOS, UX/UI",
+      "type": "UX, UI, iOS",
       "style": [
         {
           "background": "#3E4C65",
@@ -338,7 +338,7 @@
       "subtitle": "Google, but for colors",
       "desc": "A rocket fast primary color generator using Google's image search.",
       "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
-      "type": "UX/UI, React",
+      "type": "UX, UI, React, Node.js",
       "image": "cases/picular.jpg",
       "style": [
         {
@@ -372,7 +372,7 @@
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "metaDesc": "AntiStress, a pocket diary for iOS and Android to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client": "Västra Götalandsregionen",
-      "type": "UX/UI, iOS, Android",
+      "type": "UX, UI, iOS, Android, Java, Med Tech",
       "style": [
         {
           "background": "linear-gradient(-241deg, #90C8DD 14%, #95B2C7 90%)",
@@ -402,7 +402,7 @@
       "image": "cases/nordish-market.png",
       "title": "",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day.",
-      "type": "React, Python, Django",
+      "type": "Service Design, UX, UI, React, Python, Django, Food Tech",
       "style": [
         {
           "background": "#FDC853",
@@ -426,7 +426,7 @@
       "desc": "Saving lives by supporting personnel in critical decision-making during medical emergency situations.",
       "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
       "client": "Predicare",
-      "type": "UX/UI, iOS",
+      "type": "Service Design, UX, UI, Med Tech",
       "style": [
         {
           "background": "linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
@@ -459,7 +459,7 @@
       "subtitle": "Better Sleep, Better Life",
       "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
       "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
-      "type": "iOS, HealthKit",
+      "type": "iOS, HealthKit, Med Tech",
       "style": [
         {
           "background": "#F6D7D3",
@@ -491,7 +491,7 @@
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
       "client": "Mat.se",
-      "type": "UX/UI, Java, Spring, iOS",
+      "type": "UX, UI, Java, Spring, iOS, AWS, Food Tech",
       "style": [
         {
           "background": "#993600",
@@ -533,7 +533,7 @@
       "title": "",
       "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
       "client": "Sleep Cycle",
-      "type": "Scala, Reactive Streams",
+      "type": "UX, UI, Scala, Reactive Streams, Google Cloud",
       "style": [
         {
           "background": "#192452",
@@ -553,7 +553,7 @@
       ],
       "title": "",
       "desc": "Order your personal stitch kit or ready-made embroidery wall hanging. When tech meets tradition.",
-      "type": "React, Node, Scala",
+      "type": "React, Node.js, Scala",
       "style": [
         {
           "background": "#E2E3E5",
@@ -571,7 +571,7 @@
       "title": "",
       "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
       "client": "WHOYOUARE LLC",
-      "type": "iOS, UX/UI",
+      "type": "UX, UI, iOS, Java, AWS, Fashion Tech",
       "style": [
         {
           "background": "#000000",
@@ -590,7 +590,7 @@
       "image": "cases/paperquiz.png",
       "title": "",
       "desc": "A quiz about relativity. Each question is about sorting according to a parameter. Whoever comes closest to the right order wins.",
-      "type": "iOS, Android, Web",
+      "type": "UI, iOS, Android, Unity",
       "style": [
         {
           "background": "#E9E7DB",
@@ -618,7 +618,7 @@
       "subtitle": "Grand slam",
       "desc": "The first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
       "metaDesc": "Tennis Watch, the first tennis app designed for Apple Watch. It turns your watch into a simple score tracking device.",
-      "type": "UX/UI, iOS, watchOS",
+      "type": "UX, UI, iOS, watchOS, Scala",
       "style": [
         {
           "background": "#2D2D2D",
@@ -647,7 +647,7 @@
       "subtitle": "Who needs a wallet anyway?",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
       "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
-      "type": "UX/UI, Web",
+      "type": "UX, UI, React",
       "style": [
         {
           "background": "#FFD2D2",
@@ -679,7 +679,7 @@
       "title": "",
       "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
       "client": "Koyoki Ltd",
-      "type": "UX/UI",
+      "type": "UX, UI",
       "style": [
         {
           "background": "#5A4645",
