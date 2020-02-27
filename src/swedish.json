@@ -19,7 +19,18 @@
     },
     "contactBlock": {
       "title": "Gillar du vad du ser och behöver något?",
-      "bookAMeeting": "Boka ett möte"
+      "bookAMeeting": "Boka ett möte",
+      "bookAMeetingHeader": "Boka ett möte med oss 🤘",
+      "fields": {
+        "name": "Ditt namn",
+        "email": "Din email",
+        "telephone": "Ditt telefonnummer",
+        "suggestTime": "Föreslå en tid och dag",
+        "message": "Skriv ditt meddelande här...",
+        "send": "Skicka"
+      },
+      "sending": "Skickar...",
+      "sent": "Skickat!"
     }
   }
 }

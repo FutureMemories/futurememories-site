@@ -159,7 +159,7 @@
       "name": "STC",
       "image": "cases/stc.png",
       "title": "",
-      "subtitle": "Making training easy!"
+      "subtitle": "Making training easy!",
       "desc": "A total overhaul on all digital touch points. Built from the ground up.",
       "type": "Service Design, UX, UI, React, iOS, Android, AWS, Health Tech",
       "style": [
@@ -928,7 +928,18 @@
       "bookAMeeting": "Book a meeting",
       "addressLabel": "Vallgatan 25, Gothenburg",
       "phoneNumber": "+46 760 757 971",
-      "phoneHours": "(09:00 - 17:00 CET)"
+      "phoneHours": "(09:00 - 17:00 CET)",
+      "bookAMeetingHeader": "Book a meeting with us 🤘",
+      "fields": {
+        "name": "Your name",
+        "email": "Your email",
+        "telephone": "Your telephone number",
+        "suggestTime": "Suggest a time & day",
+        "message": "Write your message here...",
+        "send": "Send"
+      },
+      "sending": "Sending...",
+      "sent": "Sent!"
     }
   }
 }
