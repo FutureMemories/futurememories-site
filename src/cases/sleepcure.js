@@ -9,6 +9,7 @@ import CenterBlock from './components/center-block'
 import ProjectsBlock from './components/projects-block'
 import ThreeBlock from './components/three-block'
 import DeviceBlock from './components/device-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -87,6 +88,10 @@ export default class extends Component {
             <DeviceBlock
               customClass={s.deviceBlock}
               ios='https://apps.apple.com/se/app/sleepcure/id1457209729?l=en'
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
             />
 
             <ProjectsBlock

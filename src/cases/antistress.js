@@ -10,6 +10,7 @@ import CenterBlock from './components/center-block'
 import DeviceBlock from './components/device-block'
 import WaveObject from './components/wave-object'
 import ParallaxBumpBlock from './components/parallax-bump-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -91,6 +92,10 @@ export default class extends Component {
               src={{ path: 'cases/antistress-2.jpg', style: { maxHeight: '715px' } }}
               alt={content.exerciseAlt}
               color='#ffffff'
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
             />
 
             <ProjectsBlock

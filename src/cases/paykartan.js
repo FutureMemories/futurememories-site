@@ -9,6 +9,7 @@ import TextBlock from './components/text-block'
 import ProjectsBlock from './components/projects-block'
 import BookmarkBlock from './components/bookmark-block'
 import ParallaxObjectBlock from './components/parallax-object-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child`,
@@ -85,6 +86,10 @@ export default class extends Component {
                 { image: 'cases/paykartan-phone-2.png', alt: 'Paykartan mockup: map view', speed: 11, startPos: -39 }
               ]}
               background='#FFD2D2'
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
             />
 
             <ProjectsBlock

@@ -10,6 +10,7 @@ import ProjectsBlock from './components/projects-block'
 import CenterBlock from './components/center-block'
 import BookmarkBlock from './components/bookmark-block'
 import ThreeBlock from './components/three-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -90,6 +91,10 @@ export default class extends Component {
             />
 
             <LargeImage src='cases/mat-se-4.jpg' alt='Mat.se phone mockups' />
+
+            <ContactBlock
+              content={data.content.contactBlock}
+            />
 
             <ProjectsBlock
               {...data.projectsBlock}

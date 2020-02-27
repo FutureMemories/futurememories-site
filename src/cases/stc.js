@@ -10,6 +10,7 @@ import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import ParallaxObjectBlock from './components/parallax-object-block'
 import ProjectsBlock from './components/projects-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -156,6 +157,10 @@ export default class extends Component {
               width='1246'
               height='615'
               background='#FE5302'
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
             />
 
             <ProjectsBlock

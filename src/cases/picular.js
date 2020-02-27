@@ -11,6 +11,7 @@ import ParallaxScroll from './components/parallax-scroll'
 import SlideInBlock from './components/slide-in-block'
 import ProjectsBlock from './components/projects-block'
 import BrandBlock from './components/brand-block'
+import ContactBlock from '../components/contact-block'
 
 const badges = [{
   img: 'picular-badge-1.svg',
@@ -115,6 +116,10 @@ export default class extends Component {
               inView='inViewBottom'
               showcase='picular'
               background='#F2F5F6'
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
             />
 
             <ProjectsBlock

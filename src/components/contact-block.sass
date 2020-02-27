@@ -1,0 +1,85 @@
+@import '../settings'
+
+.block
+  background: #f9f9f9
+  padding: 6rem 3rem
+  text-align: center
+
+  &.dark
+    background: #0c0f15
+
+  h3
+    font-size: 3rem
+    line-height: 1.2
+    font-weight: 600
+    margin-bottom: 6rem
+
+.button
+  max-width: 26.3rem
+  flex: 1
+  margin: 0 auto
+
+  &:first-child
+    margin-bottom: 3rem
+
+  > a
+    border-radius: 6rem
+    color: white
+    font-weight: bold
+    font-size: 1.8rem
+    line-height: 2.2rem
+    padding: 1.8rem 1rem 2rem
+    display: flex
+    cursor: pointer
+    align-items: center
+    justify-content: center
+
+    > svg
+      margin-right: 1rem
+
+  > p
+    color: rgba($color-darker-blue, 0.5)
+    font-size: 1.6rem !important
+    line-height: 1.9rem !important
+    margin-top: 1rem
+
+    .dark &
+      color: rgba(white, 0.5)
+
+  &.meeting > a
+    background: $color-red
+
+  &.phone > a
+    background: $color-darker-blue
+
+    .dark &
+      background: white
+      color: $color-darker-blue
+
+@media screen and (min-width: 600px)
+  .block
+    padding: 10rem 3rem
+
+    h3
+      font-size: 4rem
+      font-weight: 500
+
+  .buttons
+    display: flex
+    align-items: flex-start
+    justify-content: center
+
+  .button
+    margin: 0
+
+    &:first-child
+      margin-right: 2rem
+      margin-bottom: 0
+
+    &.meeting > a
+      border-top-right-radius: 1rem
+      border-bottom-right-radius: 1rem
+
+    &.phone > a
+      border-top-left-radius: 1rem
+      border-bottom-left-radius: 1rem

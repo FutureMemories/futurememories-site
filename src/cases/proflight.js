@@ -9,6 +9,7 @@ import ProjectsBlock from './components/projects-block'
 import TextGridBlock from './components/text-grid-block'
 import TextBlock from './components/text-block'
 import CenterBlock from './components/center-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -66,6 +67,11 @@ export default class extends Component {
               text={content.oneFlightAheadText}
               image={['Proflight Screenshoot', 'cases/proflight-5.png', 882]}
               background='#1A2132'
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
+              dark
             />
 
             <ProjectsBlock

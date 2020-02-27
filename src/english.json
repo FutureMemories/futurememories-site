@@ -922,6 +922,13 @@
       "availableHeader": "Available positions",
       "availableSubheader": "Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business."
     },
-    "visitTheSite": "Visit the site"
+    "visitTheSite": "Visit the site",
+    "contactBlock": {
+      "title": "Like what you see and need something?",
+      "bookAMeeting": "Book a meeting",
+      "addressLabel": "Vallgatan 25, Gothenburg",
+      "phoneNumber": "+46 760 757 971",
+      "phoneHours": "(09:00 - 17:00 CET)"
+    }
   }
 }

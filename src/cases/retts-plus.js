@@ -9,6 +9,7 @@ import SlideInBlock from './components/slide-in-block'
 import ProjectsBlock from './components/projects-block'
 import TextBlockMultiple from './components/text-block-multiple'
 import ParallaxObjectBlock from './components/parallax-object-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child`,
@@ -83,6 +84,11 @@ export default class extends Component {
               ]}
               background='#0C0F16'
               diagonal
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
+              dark
             />
 
             <ProjectsBlock

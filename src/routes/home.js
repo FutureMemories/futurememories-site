@@ -6,6 +6,7 @@ import Button from '../components/button'
 import Moon from '../components/moon'
 import TeamPictures from '../components/team-pictures'
 import MarkupCustomElement from '../components/markup-custom-element'
+import ContactBlock from '../components/contact-block'
 import s from './home.sass'
 
 export default class extends Component {
@@ -167,8 +168,9 @@ export default class extends Component {
             </div>
 
             <TeamPictures {...data.teamPictures} />
-
           </div>
+
+          <ContactBlock content={data.content.contactBlock} dark />
         </div>
       </Base>
     )

@@ -8,6 +8,7 @@ import LargeImage from './components/large-image'
 import SlideInBlock from './components/slide-in-block'
 import ProjectsBlock from './components/projects-block'
 import CenterBlock from './components/center-block'
+import ContactBlock from '../components/contact-block'
 
 const badges = [{
   img: 'tennis-watch-badge-best-new-app.svg',
@@ -108,6 +109,11 @@ export default class extends Component {
               src='cases/tennis-watch-3.jpg'
               alt='tennis match game'
               color='#fff'
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
+              dark
             />
 
             <ProjectsBlock

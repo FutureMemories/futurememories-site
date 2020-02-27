@@ -10,6 +10,7 @@ import TextBlock from './components/text-block'
 import ProjectsBlock from './components/projects-block'
 import CenterBlock from './components/center-block'
 import MarkupCustomElement from '../components/markup-custom-element'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child`,
@@ -85,6 +86,11 @@ export default class extends Component {
               background='#171717'
               color='#858585'
               component={<MarkupCustomElement element='p' markup={content.futurememories} trim={false} />}
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
+              dark
             />
 
             <ProjectsBlock

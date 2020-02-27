@@ -16,6 +16,10 @@
   "content": {
     "home": {
       "hero": "<span>Future Memories</span> är en digital studio där strategisk design och den senaste digitala tekniken formar framtidens digitala produkter."
+    },
+    "contactBlock": {
+      "title": "Gillar du vad du ser och behöver något?",
+      "bookAMeeting": "Boka ett möte"
     }
   }
 }
