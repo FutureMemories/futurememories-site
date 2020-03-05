@@ -36,16 +36,20 @@ exports.handler = async (event, context) => {
     }
   }
 
-  await new Promise((resolve, reject) => {
-    const req = https.request(options, (res) => {
-      const ok = (res.statusCode + '').charAt(0) === '2'
-      resolve(ok)
+  let statusCode
+  try {
+    statusCode = await new Promise((resolve, reject) => {
+      const req = https.request(options, (res) => {
+        resolve(res.statusCode)
+      })
+
+      req.on('error', reject)
+      req.write(postData)
+      req.end()
     })
+  } catch (_) {
+    statusCode = 500
+  }
 
-    req.on('error', reject)
-    req.write(postData)
-    req.end()
-  })
-
-  return { statusCode: 200, body: '' }
+  return { statusCode, body: '' }
 }
