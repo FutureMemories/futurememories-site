@@ -106,7 +106,14 @@ export default class extends Component {
                   name: data.caseCategories[key].name
                 }))}
               />
-              <ProjectsBlock {...data.projectsBlock} projects={data.caseCategories[caseCategory || 'featured'].cases} page='front' allCases={data.allCases} />
+              <ProjectsBlock
+                {...data.projectsBlock}
+                baseKey={caseCategory}
+                animateInBlocks
+                projects={data.caseCategories[caseCategory || 'featured'].cases}
+                page='front'
+                allCases={data.allCases}
+              />
               <Button customClass={s.button} to='/work' label={data.content.home.seeMoreProjects} arrow transition='slide' />
             </div>
 

@@ -4,7 +4,8 @@ import Card from './card'
 import cx from 'classnames'
 import s from './projects-block.sass'
 
-export default ({ allCases, allProjects, projects, page, customClass, limit, currentBrowseCase, ...props }) => {
+// baseKey is used for reanimating on rerender
+export default ({ allCases, allProjects, projects, page, customClass, limit, currentBrowseCase, baseKey = '', animateInBlocks, ...props }) => {
   const projectsArray = []
 
   if (!allProjects) {
@@ -62,7 +63,15 @@ export default ({ allCases, allProjects, projects, page, customClass, limit, cur
                 />
               </div>
             ) : (
-              <Card key={project.id} id={project.id} transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={(project.link || project.appLink) && true}>
+              <Card
+                key={baseKey + project.id}
+                id={project.id}
+                transition='viewCase'
+                customClass={cx(s.project, animateInBlocks && s.animateIn)}
+                customStyle={style}
+                to={linkTo}
+                newTab={(project.link || project.appLink) && true}
+              >
                 <div
                   class={cx(
                     s.slideArrow,

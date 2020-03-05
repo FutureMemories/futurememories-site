@@ -11,9 +11,6 @@ export default class extends Component {
     const routeData = prerenderUrls.find(r => r.url === route)
     if (routeData) title = routeData.title
 
-    console.log(this.props)
-    console.log(title, route)
-
     if (typeof document !== 'undefined') {
       document.title = title
       document.querySelector('title').innerText = title

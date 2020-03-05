@@ -16,6 +16,14 @@
     grid-column: span 3
     width: 100%
 
+    &.animateIn
+      animation: animateIn .5s ease forwards
+      opacity: 0
+
+      @for $i from 1 through 10
+        &:nth-child(#{$i})
+          animation-delay: #{($i - 1) * 0.1s}
+
     &.button
       padding: 0
 
@@ -144,3 +152,11 @@
       > div:nth-child(2)
         min-width: 100% !important
         padding-right: 0
+
+@keyframes animateIn
+  from
+    opacity: 0
+    transform: translateY(-1rem)
+  to
+    opacity: 1
+    transform: none
