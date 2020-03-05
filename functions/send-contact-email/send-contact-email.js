@@ -1,7 +1,7 @@
 const https = require('https')
 const HOOK_HOST = 'hooks.slack.com'
-// const HOOK_PATH = '/services/T0L2B0UDU/BUJD3TJKC/vb1rqlydnG6oAjM5RkgoeCiD' // #site-feedback
-const HOOK_PATH = '/services/T0L2B0UDU/BUJD685U2/fzTFKvbe334F3gNxBFyQVUKA' // #site-feedback-test
+const HOOK_PATH = '/services/T0L2B0UDU/BUJD3TJKC/vb1rqlydnG6oAjM5RkgoeCiD' // #site-feedback
+// const HOOK_PATH = '/services/T0L2B0UDU/BUJD685U2/fzTFKvbe334F3gNxBFyQVUKA' // #site-feedback-test
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'POST') {
