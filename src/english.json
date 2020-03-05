@@ -3,43 +3,80 @@
     "featured": {
       "title": "Future Memories: Featured",
       "name": "Featured",
-      "cases": ["stc", "bauer-university", "bandbond", "proflight", "picular"]
+      "cases": [
+        "stc",
+        "bauer-university",
+        "bandbond",
+        "proflight",
+        "picular"
+      ]
     },
     "branding": {
       "title": "Future Memories: Branding",
       "name": "Branding",
-      "cases": ["stc", "picular", "retts-plus"]
+      "cases": [
+        "stc",
+        "picular",
+        "retts-plus"
+      ]
     },
     "design": {
       "title": "Future Memories: Design",
       "name": "Design",
-      "cases": ["stc", "proflight", "picular","antistress"]
+      "cases": [
+        "stc",
+        "proflight",
+        "picular",
+        "antistress"
+      ]
     },
     "web": {
       "title": "Future Memories: Web",
       "name": "Web",
-      "cases": ["stc", "bauer-university", "picular"]
+      "cases": [
+        "stc",
+        "bauer-university",
+        "picular"
+      ]
     },
     "app": {
       "title": "Future Memories: App",
       "name": "App",
       "description": "A digital studio with experts in App Development.",
-      "cases": ["stc", "bandbond", "proflight", "antistress"]
+      "cases": [
+        "stc",
+        "bandbond",
+        "proflight",
+        "antistress"
+      ]
     },
     "backend": {
       "title": "Future Memories: Backend",
       "name": "Backend",
-      "cases": ["stc", "bauer-university", "mat-se"]
+      "cases": [
+        "stc",
+        "bauer-university",
+        "mat-se"
+      ]
     },
     "cloud": {
       "title": "Future Memories: Cloud",
       "name": "Cloud",
-      "cases": ["stc", "mat-se", "sleep-cycle-dashboard", "wya-network"]
+      "cases": [
+        "stc",
+        "mat-se",
+        "sleep-cycle-dashboard",
+        "wya-network"
+      ]
     },
     "homegrown": {
       "title": "Future Memories: Homegrown",
       "name": "Homegrown",
-      "cases": ["picular", "tennis-watch", "paykartan" ]
+      "cases": [
+        "picular",
+        "tennis-watch",
+        "paykartan"
+      ]
     }
   },
   "company": {
@@ -269,7 +306,9 @@
       "uxTitle": "UX design, game design and development made the dream team",
       "uxText": "Bringing our UX experts, and developers together to form this product turned into a great success. We developed a game-like achievement system with experience points and ranks and built everything from the ground up. The game engine is developed in Python, using well-established Open Source frameworks. The user interface is a React-based web application, making Bauer University accessible to almost any device. Communication between frontend and game engine happens through our own GraphQL interface.",
       "elearningTitle": "A global e-learning initiative bringing return on investment",
-      "elearningText": ["Bauer University was made available for Bauer personnel in 32 markets. All content, including video material and quiz questions, are today offered in seven languages."],
+      "elearningText": [
+        "Bauer University was made available for Bauer personnel in 32 markets. All content, including video material and quiz questions, are today offered in seven languages."
+      ],
       "engagementTitle": "Extraordinary engagement",
       "engagementText": [
         "Bauer University got an enourmous reception amongst sales personnel globally.",
@@ -550,7 +589,13 @@
       ],
       "fillingTitle": "Filling your grocery bags",
       "fillingText": "Operations at Mat.se warehouses are highly digitalized. For all their daily routines, warehouse personnel use an iPad app with jacks into the logistics platform.",
-      "fillingItems": ["Goods arrival", "Incoming deliveries", "Inventory control", "Order picking", "Shipping preparation"],
+      "fillingItems": [
+        "Goods arrival",
+        "Incoming deliveries",
+        "Inventory control",
+        "Order picking",
+        "Shipping preparation"
+      ],
       "deliveredTitle": "Delivered to your doorstep",
       "deliveredText": [
         "Route planning and distribution is part of the logistics platform as well. We redefined the delivery process by developing a new iOS app for truck drivers.",
@@ -843,12 +888,12 @@
       "phoneOld": "+46 (0)763 490500",
       "email": "martin@futurememories.se"
     },
-    "victoria": {
-      "name": "Victoria Wånsander",
-      "image": "team/victoria-wansander.jpg",
-      "title": "UX and Service designer",
-      "desc": "Service Designer with background in UX Design and Cognitive Sciences. Shaping digital services of tomorrow, one at a time.",
-      "email": "victoria@futurememories.se"
+    "rachael": {
+      "name": "Rachael Lidskog",
+      "image": "team/rachael-lidskog.jpg",
+      "title": "Studio Manager",
+      "desc": "Our Studio Manager with a background in media communications, content and digital marketing.",
+      "email": "rachael@futurememories.se"
     },
     "anders": {
       "name": "Anders Olausson",
