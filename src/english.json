@@ -1,4 +1,47 @@
 {
+  "caseCategories": {
+    "featured": {
+      "title": "Future Memories: Featured",
+      "name": "Featured",
+      "cases": ["stc", "bauer-university", "bandbond", "proflight", "picular"]
+    },
+    "branding": {
+      "title": "Future Memories: Branding",
+      "name": "Branding",
+      "cases": ["stc", "picular", "retts-plus"]
+    },
+    "design": {
+      "title": "Future Memories: Design",
+      "name": "Design",
+      "cases": ["stc", "proflight", "picular","antistress"]
+    },
+    "web": {
+      "title": "Future Memories: Web",
+      "name": "Web",
+      "cases": ["stc", "bauer-university", "picular"]
+    },
+    "app": {
+      "title": "Future Memories: App",
+      "name": "App",
+      "description": "A digital studio with experts in App Development.",
+      "cases": ["stc", "bandbond", "proflight", "antistress"]
+    },
+    "backend": {
+      "title": "Future Memories: Backend",
+      "name": "Backend",
+      "cases": ["stc", "bauer-university", "mat-se"]
+    },
+    "cloud": {
+      "title": "Future Memories: Cloud",
+      "name": "Cloud",
+      "cases": ["stc", "mat-se", "sleep-cycle-dashboard", "wya-network"]
+    },
+    "homegrown": {
+      "title": "Future Memories: Homegrown",
+      "name": "Homegrown",
+      "cases": ["picular", "tennis-watch", "paykartan" ]
+    }
+  },
   "company": {
     "name": "Future Memories AB",
     "street": "Vallgatan 25",
@@ -141,13 +184,6 @@
     }
   },
   "careersPositions": {},
-  "frontCases": [
-    "stc",
-    "bauer-university",
-    "bandbond",
-    "picular",
-    "mat-se"
-  ],
   "defaultOtherCases": [
     "picular",
     "paykartan",

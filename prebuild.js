@@ -14,7 +14,19 @@ const getLanguageContent = (language) => {
     .filter(c => c.showcase === true)
   const prefix = language === 'swedish' ? '/sv' : '/en'
 
-  const routes = Object.values(languageData.routes).map(r => ({ ...r, url: prefix + r.url }))
+  const routes = Object.values(languageData.routes)
+
+  for (const key of Object.keys(languageData.caseCategories)) {
+    if (key === 'featured') continue // same as homepage
+
+    routes.push({
+      url: '/' + key,
+      title: languageData.caseCategories[key].title,
+      description: languageData.caseCategories[key].description
+    })
+  }
+
+  const translatedRoutes = routes.map(r => ({ ...r, url: prefix + r.url }))
 
   const caseData = showcaseCases.map(c => {
     const caseTitle = c.name && c.name + (c.desc ? `, ${c.desc.charAt(0).toLowerCase() + c.desc.slice(1)}` : '')
@@ -25,7 +37,7 @@ const getLanguageContent = (language) => {
     })
   })
 
-  return [...routes, ...caseData]
+  return [...translatedRoutes, ...caseData]
 }
 
 const addLanguageAlternatives = (result, { url, prio }) => {

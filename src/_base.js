@@ -7,8 +7,12 @@ import prerenderUrls from '../prerender-urls.json'
 export default class extends Component {
   componentWillMount () {
     let title = 'Future Memories'
-    const routeData = prerenderUrls.find(r => r.url === this.props.route)
+    const route = this.props.root + this.props.route
+    const routeData = prerenderUrls.find(r => r.url === route)
     if (routeData) title = routeData.title
+
+    console.log(this.props)
+    console.log(title, route)
 
     if (typeof document !== 'undefined') {
       document.title = title

@@ -37,19 +37,37 @@ const getLanguageData = memoize((language) => {
   return d
 })
 
+const travelledInHomeRoutes = (url, prev) => {
+  if (!url || !prev) return false
+
+  const homeRoutes = [''].concat(Object.keys(data.english.caseCategories))
+  // extract path from /en/:PATH:/subpath
+  const extractRegex = /\/\w\w\/([^/]+)/
+
+  url = (url.match(extractRegex) || ['', ''])[1]
+  prev = (prev.match(extractRegex) || ['', ''])[1]
+
+  return (
+    homeRoutes.includes(url) &&
+    homeRoutes.includes(prev)
+  )
+}
+
 export default class extends Component {
   state = {
     firstView: true
   }
 
-  handleRoute = () => {
+  handleRoute = (ev) => {
     if (this.notOnFirstView) {
       this.setState({ firstView: false })
     }
     this.notOnFirstView = true
 
     if (typeof window !== 'undefined') {
-      window.scrollTo(0, 0)
+      if (!travelledInHomeRoutes(ev.url, ev.previous)) {
+        window.scrollTo(0, 0)
+      }
     }
   }
 
@@ -60,6 +78,11 @@ export default class extends Component {
       <div id='app'>
         <Router onChange={this.handleRoute}>
           <Home path={root + '/'} firstView={this.state.firstView} data={languageData} root={root} />
+
+          {Object.keys(data.english.caseCategories).map(key => (
+            <Home path={`${root}/${key}/:subpath?`} firstView={this.state.firstView} data={languageData} root={root} caseCategory={key} key={key} />
+          ))}
+
           <Work path={root + '/work'} data={languageData} root={root} />
           <Team path={root + '/team'} data={languageData} root={root} />
           <Careers path={root + '/careers'} data={languageData} root={root} />

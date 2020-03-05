@@ -62,7 +62,7 @@ export default ({ allCases, allProjects, projects, page, customClass, limit, cur
                 />
               </div>
             ) : (
-              <Card id={project.id} transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={(project.link || project.appLink) && true}>
+              <Card key={project.id} id={project.id} transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={(project.link || project.appLink) && true}>
                 <div
                   class={cx(
                     s.slideArrow,

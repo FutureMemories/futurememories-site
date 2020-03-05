@@ -7,6 +7,8 @@ import Moon from '../components/moon'
 import TeamPictures from '../components/team-pictures'
 import MarkupCustomElement from '../components/markup-custom-element'
 import ContactBlock from '../components/contact-block'
+import FilterBlock from '../components/filter-block'
+import getLanguageLink from '../utils/getLanguageLink'
 import s from './home.sass'
 
 export default class extends Component {
@@ -14,8 +16,6 @@ export default class extends Component {
 
   componentDidMount () {
     this.heroText.base.style = undefined
-    this.homePlanetM.base.style = undefined
-    this.homePlanetS.base.style = undefined
     this.homePlanetWorkS.base.style = undefined
 
     // Move planet light if firstView is true
@@ -53,14 +53,6 @@ export default class extends Component {
       this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
     }
 
-    // Parallax effect on 'What We Do' block
-    const planetWWDScroll = this.scrollPoint - this.informationBlock.offsetTop
-    if (planetWWDScroll > 0 && window.pageYOffset < (this.informationBlock.offsetTop + this.informationBlock.offsetHeight)) {
-      this.homePlanetSPosition = (planetWWDScroll / 11).toFixed(1)
-      this.homePlanetM.base.style.transform = `scale(1.56) translateY(${(planetWWDScroll / 7).toFixed(1)}px`
-      this.homePlanetS.base.style.transform = `translateY(${this.homePlanetSPosition < 0 ? '' : '-'}${Math.abs(this.homePlanetSPosition)}px`
-    }
-
     // Parallax effect on 'Our work' block
     const planetWorkScroll = (this.scrollPoint - (this.homeWorkBlock.offsetTop * 1.3))
     if (planetWorkScroll > 0 && window.pageYOffset < (this.homeWorkBlock.offsetTop + this.homeWorkBlock.offsetHeight)) {
@@ -74,9 +66,12 @@ export default class extends Component {
     window.clearInterval(this._randomizer)
   }
 
-  render ({ data, firstView, root }, { lightLeft, lightTop, activePillar, preActivePillar }) {
+  render (
+    { data, firstView, root, caseCategory },
+    { lightLeft, lightTop, activePillar, preActivePillar }
+  ) {
     return (
-      <Base firstView={firstView} route='/' data={data} root={root}>
+      <Base firstView={firstView} route={'/' + (caseCategory || '')} data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -97,60 +92,6 @@ export default class extends Component {
               />
             </div>
 
-            <div class={cx(s.information, this.state.inViewInformationBlock && s.inView)} ref={(el) => { this.informationBlock = el }}>
-              <div class={s.foundationPillar}>
-                <h1>{data.content.home.whatWeDo}</h1>
-                <p>
-                  <span
-                    class={cx(
-                      (activePillar === 'strategy' || preActivePillar === 'strategy') && s.glitch,
-                      activePillar === 'strategy' && activePillar,
-                      preActivePillar === 'strategy' && preActivePillar
-                    )}
-                    data-text={data.content.home.str4t3gy}
-                  >
-                    {data.content.home.strategy}
-                  </span>
-                  {', '}
-                  <span
-                    class={cx(
-                      (activePillar === 'design' || preActivePillar === 'design') && s.glitch,
-                      activePillar === 'design' && activePillar,
-                      preActivePillar === 'design' && preActivePillar
-                    )}
-                    data-text={data.content.home.des1gn}
-                  >
-                    {data.content.home.design}
-                  </span>
-                  {' & '}
-                  <span
-                    class={cx(
-                      (activePillar === 'develop' || preActivePillar === 'develop') && s.glitch,
-                      activePillar === 'develop' && activePillar,
-                      preActivePillar === 'develop' && preActivePillar
-                    )}
-                    data-text={data.content.home.devel0pm3nt}
-                  >
-                    {data.content.home.development}
-                  </span>
-                </p>
-              </div>
-              <Moon
-                size='medium'
-                position='bottomLeft'
-                background='red'
-                customClass={s.moon}
-                ref={(el) => { this.homePlanetM = el }}
-              />
-              <Moon
-                size='normal'
-                position='topMiddle'
-                background='blue'
-                customClass={s.moonSmall}
-                ref={(el) => { this.homePlanetS = el }}
-              />
-            </div>
-
             <div class={s.work} ref={(el) => { this.homeWorkBlock = el }}>
               <Moon
                 size='small'
@@ -159,11 +100,13 @@ export default class extends Component {
                 customClass={s.moon}
                 ref={(el) => { this.homePlanetWorkS = el }}
               />
-              <div class={s.text}>
-                <h1>{data.content.home.ourWorkHeader}</h1>
-                <p>{data.content.home.ourWorkSubheader}</p>
-              </div>
-              <ProjectsBlock {...data.projectsBlock} projects={data.frontCases} page='front' allCases={data.allCases} />
+              <FilterBlock
+                items={Object.keys(data.caseCategories).map(key => ({
+                  href: key === 'featured' ? getLanguageLink('/') : getLanguageLink('/' + key),
+                  name: data.caseCategories[key].name
+                }))}
+              />
+              <ProjectsBlock {...data.projectsBlock} projects={data.caseCategories[caseCategory || 'featured'].cases} page='front' allCases={data.allCases} />
               <Button customClass={s.button} to='/work' label={data.content.home.seeMoreProjects} arrow transition='slide' />
             </div>
 

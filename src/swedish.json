@@ -2,6 +2,12 @@
   "company": {
     "city": "Göteborg"
   },
+  "routes": {
+    "home": {
+      "title": "Future Memories - Digital Design och Utveckling i Göteborg",
+      "description": "En digital studio med experter inom Service Design, UX Design, UI Design, Apputveckling, Webbutveckling, Backendutveckling och Spelutveckling."
+    }
+  },
   "allCases": {
     "stc": {
       "desc": "En totalrenovering av STCs digitala närvaro i alla led. Byggt för att hålla långt in i framtiden."
