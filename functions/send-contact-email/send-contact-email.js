@@ -9,6 +9,7 @@ exports.handler = async (event, context) => {
   }
 
   const body = JSON.parse(event.body)
+  console.log(body)
 
   // Check required fields
   if (!body.name || !body.email || !body.message) {
@@ -35,6 +36,8 @@ exports.handler = async (event, context) => {
       'Content-Length': postData.length
     }
   }
+
+  console.log(postData)
 
   let statusCode
   try {
