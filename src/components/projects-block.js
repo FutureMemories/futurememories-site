@@ -20,11 +20,13 @@ export default ({ allCases, allProjects, projects, page, customClass, limit, cur
   const projectsData = allProjects || projectsArray
 
   return (
-    <div class={cx(s.projects, page === 'front' && s.homeProjects, customClass && customClass, currentBrowseCase && s.browseCase)}>
-
-      {page === 'front' && (
-        <div class={cx(s.project, s.hide)} />
-      )}
+    <div class={cx(
+      s.projects,
+      page === 'front' && s.homeProjects,
+      s['amount' + projectsData.length],
+      customClass && customClass,
+      currentBrowseCase && s.browseCase
+    )}>
       {
         projectsData.map((project, i) => {
           let style = ''

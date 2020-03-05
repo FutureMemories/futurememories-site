@@ -104,9 +104,6 @@
       grid-column: span 6
       height: 40rem
 
-      &.hide
-        display: none
-
     &:nth-child(4), &:nth-child(5), &:nth-child(6),
     &:nth-child(9), &:nth-child(10), &:nth-child(11),
     &:nth-child(14), &:nth-child(15), &:nth-child(16),
@@ -114,9 +111,21 @@
       grid-column: span 2
 
   &.homeProjects
-    .project:nth-child(4)
-      grid-column: span 2
-      height: 34rem
+    &.amount1
+      .project:nth-child(1)
+        grid-column: span 6
+
+    &.amount2, &.amount5
+      .project:nth-child(1), .project:nth-child(2)
+        grid-column: span 3
+
+    &.amount4
+      .project:nth-child(2), .project:nth-child(3), .project:nth-child(4)
+        grid-column: span 2
+
+    &.amount5
+      .project:nth-child(3), .project:nth-child(4), .project:nth-child(5)
+        grid-column: span 2
 
   &.browseCase
     > .project
