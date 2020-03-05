@@ -939,7 +939,8 @@
         "send": "Send"
       },
       "sending": "Sending...",
-      "sent": "Sent!"
+      "sent": "Sent! You can now close this window.",
+      "errorSending": "Oops, something went wrong. Please try again later."
     }
   }
 }

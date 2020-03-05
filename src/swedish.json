@@ -30,7 +30,8 @@
         "send": "Skicka"
       },
       "sending": "Skickar...",
-      "sent": "Skickat!"
+      "sent": "Skickat! Du kan nu stänga det här fönstret.",
+      "errorSending": "Oj, något gick fel. Var god försök senare."
     }
   }
 }

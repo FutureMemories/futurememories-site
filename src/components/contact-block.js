@@ -1,3 +1,4 @@
+/* global FormData fetch */
 import s from './contact-block.sass'
 import { Component } from 'preact'
 import cx from 'classnames'
@@ -6,12 +7,28 @@ export default class extends Component {
   onSendMail = (ev) => {
     ev.preventDefault()
 
-    // TODO: Actually send mail
-    this.setState({ sending: true, sent: false })
+    const formData = new FormData(this.panelRef)
+    const body = {}
+    const headers = { 'Content-Type': 'application/json' }
 
-    setTimeout(() => {
-      this.setState({ sending: false, sent: true })
-    }, 2000)
+    for (const [key, value] of formData.entries()) {
+      body[key] = value
+    }
+
+    this.setState({ sending: true, sent: false, errorSending: false })
+
+    fetch('/.netlify/functions/send-contact-email', {
+      method: 'POST',
+      body: JSON.stringify(body),
+      headers
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error('Not ok!')
+        this.setState({ sending: false, sent: true })
+      })
+      .catch(() => {
+        this.setState({ sending: false, sent: false, errorSending: true })
+      })
   }
 
   onClickOverlay = (ev) => {
@@ -30,7 +47,7 @@ export default class extends Component {
     }
   }
 
-  render ({ content, dark }, { showOverlay, sending, sent }) {
+  render ({ content, dark }, { showOverlay, sending, sent, errorSending }) {
     return (
       <section class={cx(s.block, dark && s.dark)}>
         <h3>{content.title}</h3>
@@ -66,11 +83,11 @@ export default class extends Component {
             {sent && <p class={s.message}>{content.sent}</p>}
             {(!sending && !sent) && (
               <div class={s.fields}>
-                <input type='text' placeholder={content.fields.name} required />
-                <input type='email' placeholder={content.fields.email} required />
-                <input type='tel' placeholder={content.fields.telephone} />
-                <input type='text' placeholder={content.fields.suggestTime} />
-                <textarea placeholder={content.fields.message} rows={5} required />
+                <input name='name' type='text' placeholder={content.fields.name} required />
+                <input name='email' type='email' placeholder={content.fields.email} required />
+                <input name='telephone' type='tel' placeholder={content.fields.telephone} />
+                <input name='time' type='text' placeholder={content.fields.suggestTime} />
+                <textarea name='message' placeholder={content.fields.message} rows={5} required />
               </div>
             )}
             {(!sending && !sent) && (
@@ -81,6 +98,7 @@ export default class extends Component {
                 </svg>
               </button>
             )}
+            {errorSending && <p class={s.error}>{content.errorSending}</p>}
           </form>
         </div>
       </section>
