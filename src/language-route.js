@@ -75,34 +75,32 @@ export default class extends Component {
     const languageData = getLanguageData(language)
 
     return (
-      <div id='app'>
-        <Router onChange={this.handleRoute}>
-          <Home path={root + '/'} firstView={this.state.firstView} data={languageData} root={root} />
+      <Router onChange={this.handleRoute}>
+        <Home path={root + '/'} firstView={this.state.firstView} data={languageData} root={root} />
 
-          {Object.keys(data.english.caseCategories).map(key => (
-            <Home path={`${root}/${key}/:subpath?`} firstView={this.state.firstView} data={languageData} root={root} caseCategory={key} key={key} />
-          ))}
+        {Object.keys(data.english.caseCategories).map(key => (
+          <Home path={`${root}/${key}/:subpath?`} firstView={this.state.firstView} data={languageData} root={root} caseCategory={key} key={key} />
+        ))}
 
-          <Work path={root + '/work'} data={languageData} root={root} />
-          <Team path={root + '/team'} data={languageData} root={root} />
-          <Careers path={root + '/careers'} data={languageData} root={root} />
+        <Work path={root + '/work'} data={languageData} root={root} />
+        <Team path={root + '/team'} data={languageData} root={root} />
+        <Careers path={root + '/careers'} data={languageData} root={root} />
 
-          <Picular path={root + '/cases/picular'} data={languageData} root={root} />
-          <Bandbond path={root + '/cases/bandbond'} data={languageData} root={root} />
-          <TennisWatch path={root + '/cases/tennis-watch'} data={languageData} root={root} />
-          <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
-          <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />
-          <RettsPlus path={root + '/cases/retts-plus'} data={languageData} root={root} />
-          <ProFlight path={root + '/cases/proflight'} data={languageData} root={root} />
-          <AntiStress path={root + '/cases/antistress'} data={languageData} root={root} />
-          <BauerUniversity path={root + '/cases/bauer-university'} data={languageData} root={root} />
-          <SleepCure path={root + '/cases/sleepcure'} data={languageData} root={root} />
-          <Stc path={root + '/cases/stc'} data={languageData} root={root} />
-          <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
+        <Picular path={root + '/cases/picular'} data={languageData} root={root} />
+        <Bandbond path={root + '/cases/bandbond'} data={languageData} root={root} />
+        <TennisWatch path={root + '/cases/tennis-watch'} data={languageData} root={root} />
+        <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
+        <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />
+        <RettsPlus path={root + '/cases/retts-plus'} data={languageData} root={root} />
+        <ProFlight path={root + '/cases/proflight'} data={languageData} root={root} />
+        <AntiStress path={root + '/cases/antistress'} data={languageData} root={root} />
+        <BauerUniversity path={root + '/cases/bauer-university'} data={languageData} root={root} />
+        <SleepCure path={root + '/cases/sleepcure'} data={languageData} root={root} />
+        <Stc path={root + '/cases/stc'} data={languageData} root={root} />
+        <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
 
-          <NotFound type='404' default data={languageData} root={root} />
-        </Router>
-      </div>
+        <NotFound type='404' default data={languageData} root={root} />
+      </Router>
     )
   }
 }
