@@ -416,21 +416,21 @@
     }
   },
   "links": [
-    { "label": "Home", "to": "/" },
-    { "label": "Our work", "to": "/work" },
-    { "label": "The team", "to": "/team" },
-    { "label": "Careers", "to": "/careers" }
+    { "label": "Start", "to": "/" },
+    { "label": "Våra case", "to": "/work" },
+    { "label": "Teamet", "to": "/team" },
+    { "label": "Jobba hos oss", "to": "/careers" }
   ],
   "teamPictures": {
     "title": "Bakom kulisserna",
     "text": "Detta är Future Memories - en välslipad grupp med bred kompetens som tycker om att jobba tillsammans. På riktigt.",
-    "label": "See the whole team",
+    "label": "Möt teamet",
     "alt": "Team picture"
   },
   "projectsBlock": {
     "otherProjects": "Other projects",
     "browseMoreProjects": "Browse more projects",
-    "viewCase": "View Case",
+    "viewCase": "Till caset",
     "visitSite": "Visit Site",
     "getApp": "Get App"
   },
@@ -469,9 +469,9 @@
     "work": {
       "title": "Our work",
       "hero": "We team up to create exceptional digital <span>products and services</span> of tomorrow.",
-      "upToHeader": "What we’ve been up to",
-      "upToSubheader": "Some of the most noticeable digital productions we have accomplished together so far.",
-      "partnersHeader": "Howdy, partner!",
+      "upToHeader": "Våra case",
+      "upToSubheader": "Ingen utmaning är för stor för oss. Detta är ett urval av vad vi har åstadkommit hittills.",
+      "partnersHeader": "Våra samarbeten",
       "partnersSubheader": "Säg hej till våra vänner!"
     },
     "team": {
