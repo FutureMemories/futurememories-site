@@ -1,7 +1,7 @@
 /* global location */
 
 export default (href) => {
-  if (!href) {
+  if (href == null) {
     return href
   }
 

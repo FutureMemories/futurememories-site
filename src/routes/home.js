@@ -102,7 +102,7 @@ export default class extends Component {
               />
               <FilterBlock
                 items={Object.keys(data.caseCategories).map(key => ({
-                  href: key === 'featured' ? getLanguageLink('/') : getLanguageLink('/' + key),
+                  href: key === 'featured' ? getLanguageLink('') : getLanguageLink('/' + key),
                   name: data.caseCategories[key].name
                 }))}
               />
