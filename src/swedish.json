@@ -132,18 +132,18 @@
       "elearningText": [
         "Bauer University was made available for Bauer personnel in 32 markets. All content, including video material and quiz questions, are today offered in seven languages."
       ],
-      "engagementTitle": "Extraordinary engagement",
+      "engagementTitle": "Ett enormt engagemang",
       "engagementText": [
         "Bauer University got an enourmous reception amongst sales personnel globally.",
-        "Within the first 6-month period from product launch, more than 4000 users signed up. The platform was adopted immediately and salespeople advanced rapidly from Rookie to Pro spending hours with training material we created. The platform's average session duration is astonishing with more than 16 minutes.",
-        "Gamification concepts are playing well. Users are eager to maintain their achievements and eagerly follow up with new training material released twice a year. This results in more than 70% of users advancing in level being on Pro-level, the highest level within Bauer University. This corresponds in answering 650+ product-related questions correctly and to watch over 3 hours of video tutorials."
+        "Bauer University fick ett enormt genomslag redan vid lansering. Det första halvåret som plattformen var uppe hade över 4 000 användare signat upp sig. Deltagarnas resultat steg snabbt upp till proffsnivå och användandet bara ökar.",
+        "Bauer University är ett praktexempel på att gamingbaserade koncept funkar. Att spela sig fram till ett resultat visar att motivationen hålls uppe under hela processen. Över 70% av användarna har idag kommit upp till proffsnivå, vilket är den högsta nivån. Detta innebär att en majoritet av användarna svarat rätt på över 650 produktbaserade frågor och tittat på över 3h produktrelaterat videomaterial."
       ],
-      "futurememories": "Bauer University is the result of combining forces with our\ncreative friends over at <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. 🖤"
+      "futurememories": "Bauer University är resultatet av ett fantastiskt samarbete mellan våra kreativa partners på The Bond och självklart våra vänner på Bauer. <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. 🖤"
     },
     "bandbond": {
       "title": "",
       "subtitle": "Allt du älskar med hårdrock och metal - på ett ställe.",
-      "desc": "A community app bringing hard rock and metal fans closer together with their favorite bands.",
+      "desc": "Allt du älskar med hårdrock och metal - på ett ställe.",
       "heavyTitle": "Tung metal, lätt app.",
       "heavyText": [
         "Bandbond är en community-app som tar dig närmre dina favoritband och bandmedlemmar. Med Bandbond får du full tillgång till allt officiellt innehåll från sociala medier som publiceras av dina favoritband. I appen får du också tillgång till special-producerat material för exklusivt för Bandbond-användare.",
@@ -224,12 +224,12 @@
       "desc": "En tjänst som räddar liv genom att stödja vårdpersonal i triage-processen och ett ovärderligt verktyg vid medicinsk akut bedömning.",
       "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
       "client": "Predicare",
-      "efficiencyTitle": "Efficiency for patients",
+      "efficiencyTitle": "En mer effektiv vårdprocess",
       "efficiencyText": "Predicare tillhandahåller digitala system till 95% av akutvården i Sverige vid namn RETTS, ett system som algoritmiskt klassificerar en patients tillstånd beroende på svårighetsgraden av symtom, och föreslår nästa handlingssätt.",
       "efficiencyContent": [
         "RETTS (Rapid Emergency Triage and Treatment System), fungerar genom att mäta och utvärdera ett antal viktiga parametrar vid den första undersökningen, samt genom att samla in en strukturerad och standardiserad medicinsk bakgrund beträffande orsaken till besöket och patientens aktuella symtom.",
         "Baserat på en grundlig användarforskningsfas skapade vi ett digitalt användargränssnitt som utnyttjade hela RETTS-kapaciteten. Vi utvecklade också en tidslinje som loggar alla interaktioner med varje patient för att ge en tydligare överblick över patientens hela vårdvistelse.",
-        "This project was nominated in the Design S, Sweden’s biggest and most comprehensive design award, backed by the entire design industry. The award is aimed at professional designers, architects, individual specialists, producers and companies that work with design in a broad sense."
+        "RETTSplus nominerades till Design S, Sveriges största och mest omfattande designpris, med stöd från designindustrin. Priset riktar sig till professionella designers, arkitekter, enskilda specialister, producenter och företag som arbetar med design i vid bemärkelse. Vi är väldigt stolta över slutprodukten."
       ],
       "clearOverviewTitle": "En livsviktig översikt",
       "clearOverviewText": "Att ge en läkare eller sjuksköterska en översikt över patientens besök är en viktig funktion för att fatta rätt beslut och ge korrekt vård. Vid rätt tillfälle.",
@@ -356,12 +356,12 @@
       "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech-lead med över 12 års erfarenhet från IT branchen."
     },
     "mikael": {
-      "title": "Partner and CTO",
+      "title": "Partner och CTO",
       "desc": "Partner och CTO. 20 års erfarenhet av att skapa digital upplevelser. Idag specialiserad på iOS."
     },
     "viktor": {
-      "title": "Partner and Lead Web/Unity developer",
-      "desc": "Partner och Lead Web/Unity utvecklare. Erfaren frontend utvecklare med konstnärlig känsla in i fingerspetsarna."
+      "title": "Partner och Lead Web/Unity utvecklare.",
+      "desc": " Erfaren frontend utvecklare med konstnärlig känsla in i fingerspetsarna."
     },
     "pontus": {
       "title": "Digital Designer",
@@ -479,11 +479,11 @@
       "upToHeader": "What we’ve been up to",
       "upToSubheader": "Some of the most noticeable digital productions we have accomplished together so far.",
       "partnersHeader": "Howdy, partner!",
-      "partnersSubheader": "Say hi to some of our friends"
+      "partnersSubheader": "Säg hej till våra vänner!"
     },
     "team": {
       "title": "The team",
-      "hero": "<span>We are</span> designers, developers, creators and inventors with different backgrounds and expertise merged into a company called Future Memories.",
+      "hero": "<span>Tillsammans är vi</span> en  grupp designers, utvecklare och innovatörer med olika bakgrunder som skapar en perfekt symbios i framtagandet av framtidens digitala produkter.",
       "teamHeader": "The team",
       "teamSubheader": "The whole squad."
     },
@@ -498,6 +498,3 @@
     "visitTheSite": "Visit the site"
   }
 }
-
-
-
