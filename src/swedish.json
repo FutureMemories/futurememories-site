@@ -422,8 +422,8 @@
     { "label": "Careers", "to": "/careers" }
   ],
   "teamPictures": {
-    "title": "Behind the scenes",
-    "text": "May we introduce ourselves? A well-attuned group of professionals enjoying working together.",
+    "title": "Bakom kulisserna",
+    "text": "Detta är Future Memories - en välslipad grupp med bred kompetens som tycker om att jobba tillsammans. På riktigt.",
     "label": "See the whole team",
     "alt": "Team picture"
   },
@@ -446,15 +446,8 @@
     },
     "home": {
       "hero": "<span>Future Memories</span> är en digital studio där strategisk design och den senaste digitala tekniken formar framtidens digitala produkter.",
-      "whatWeDo": "What we do",
-      "strategy": "Strategy",
-      "str4t3gy": "Str4t3gy",
-      "design": "Design",
-      "des1gn": "Des1gn",
-      "development": "Development",
-      "devel0pm3nt": "Devel0pm3nt",
-      "ourWorkHeader": "Some of our work",
-      "ourWorkSubheader": "Forward-thinking digital products that makes life easier and brings value to clients and consumers.",
+      "ourWorkHeader": "Vad vi gjort",
+      "ourWorkSubheader": "Vi bygger framtidens digitala produkter som gör livet enklare och skapar mervärde till slutanvändare.",
       "seeMoreProjects": "See more projects"
     },
     "contactBlock": {
