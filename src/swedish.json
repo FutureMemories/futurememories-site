@@ -90,7 +90,7 @@
     "stc": {
       "title": "",
       "subtitle": "Det skall vara enkelt att träna.",
-      "desc": "A total overhaul on all digital touch points. Built from the ground up.",
+      "desc": "En totalrenovering av STCs digitala närvaro i alla led. Byggt för att hålla långt in i framtiden.",
       "stcTitle": "STC",
       "stcText": "STC är ett av Sveriges ledande fitnessföretag med över 80 gym och fitnesscenter som täcker hela landet. Företaget sysselsätter cirka 1000 anställda och har haft en stadig tillväxt sedan starten 1998.",
       "strongerJourneyTitle": "En starkare användarupplevelse",
@@ -118,7 +118,7 @@
     "bauer-university": {
       "title": "",
       "subtitle": "Produktkännedom ger starkare försäljning",
-      "desc": "Syftet med Bauer University var att ge säljpersonal världen över bättre produktkänndedom för att erbjuda Bauers kunder bättre service och öka kundnöjdheten. Resultatet blev  en global e-learningplattform som utbildar säljpersonal med hjälp av ett gamificationbaserat quiz spel.",
+      "desc": "Gamingbaserad onlinekurs som utbildar Bauer säljare globalt till att bli produktexperter genom att ha riktigt kul på vägen.",
       "metaDesc": "Bauer University, a gamification-based online training platform written in React and Python leveraging Django and GraphQL.",
       "client": "Bauer, Bond Communications",
       "tabletMockup": "Bauer tablet mockup",
@@ -143,7 +143,7 @@
     "bandbond": {
       "title": "",
       "subtitle": "Allt du älskar med hårdrock och metal - på ett ställe.",
-      "desc": "Allt du älskar med hårdrock och metal - på ett ställe.",
+      "desc": "En community app som förenar rock- och metalvärlden. Här kommer fansen närmre sina favoritband utan onödigt brus.",
       "heavyTitle": "Tung metal, lätt app.",
       "heavyText": [
         "Bandbond är en community-app som tar dig närmre dina favoritband och bandmedlemmar. Med Bandbond får du full tillgång till allt officiellt innehåll från sociala medier som publiceras av dina favoritband. I appen får du också tillgång till special-producerat material för exklusivt för Bandbond-användare.",
@@ -163,7 +163,7 @@
     },
     "picadeli": {
       "title": "",
-      "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning."
+      "desc": "En digital mise en place där sortimentet aldrig tar slut tack vare vårt automatiserade och användarvänliga lagerhållningssystem."
     },
     "proflight": {
       "title": "",
@@ -184,7 +184,7 @@
     "picular": {
       "title": "",
       "subtitle": "Som Google, fast för färger",
-      "desc": "A rocket fast primary color generator using Google's image search.",
+      "desc": "En raketsnabb färggenerator baserad på Googles bildsök",
       "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
       "searchEngineTitle": "En färgglad sökmotor",
       "searchEngineText": "Picular är en raketsnabb färggenerator som ger dig primärfäger baserad på Googles bildsök. Om du någonsin skulle behöva den perfekta gula hexkoden från en banan är detta verktyget för dig.",
@@ -239,7 +239,7 @@
     "sleepcure": {
       "title": "Future Memories: SleepCure, a digital analysis and treatment method for people who want to sleep better.",
       "subtitle": "Bättre sömn - ett bättre liv",
-      "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
+      "desc": "SleepCure är en app som ger garanterat bättre sömn, framtagen för att bygga en skräddarsydd strategi för att mota individens rådande sömnproblem.",
       "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
       "sleepCoachTitle": "Din digitala sömncoach",
       "sleepCoachText": "Sömnproblem kan vara komplext. Vad som funkar för en person funkar kanske inte för den andra. SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivår. Appen hjälper dig att skapa sunda sömnvanor genom att utvärdera dina dagliga rutiner, klargör dina ohälsosamma vanor som påverkar din sömn och hjälper dig att steg för steg ta dig ur dem.",
@@ -253,7 +253,7 @@
     "mat-se": {
       "title": "",
       "subtitle": "Färsk matlevererans till dörren",
-      "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
+      "desc": "En modern plattform som samordnar logistik och den essentiella leveranskedjan för mat.se.",
       "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
       "client": "Mat.se",
       "shopOnlineTitle": "Shop online,\ndinner at home",
@@ -283,15 +283,15 @@
     },
     "sleep-cycle-dashboard": {
       "title": "",
-      "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
+      "desc": "Här sammanställer vi hur världens befolknings sömnmönster ser ut år Sleep Cycle. Baserad på Big Data sammanställs resultat av alla som använder appen i realtid.",
       "client": "Sleep Cycle"
     },
     "folklore-company": {
-      "desc": "Order your personal stitch kit or ready-made embroidery wall hanging. When tech meets tradition."
+      "desc": "Beställ ditt egna sykit eller ett personligt broderi. Siten där tech möter tradition."
     },
     "wya-network": {
       "title": "",
-      "desc": "A Hollywood-based fashion community, led by Bea Åkerlund to stimulate and simplify collaboration for fashion professionals.",
+      "desc": "Här möts Hollywoods fashion community, där Bea Åkerlund tagit täten i framtagandet av en app som stimulerar och underlättar samarbeten inom modebranchen.",
       "client": "WHOYOUARE LLC"
     },
     "paperquiz": {
@@ -302,7 +302,7 @@
     "tennis-watch": {
       "title": "",
       "subtitle": "Grand slam",
-      "desc": "Tennis Watch var den första tennis-appen designad för Apple Watch. Det förvandlar din Apple Watch till en enkel och lättanvänd poängspårningsenhet. Alla matchningar lagras på din iPhone och ger sofistikerad statistik och insikt om hur du kan förbättra ditt spel.",
+      "desc": "Den första Tennis appen som någonsin skapats för Apple Watch. Appen gör din klocka till en poängsamlare i realtid under matchens gång.",
       "metaDesc": "Tennis Watch var den första tennis-appen designad för Apple Watch. Det förvandlar din Apple Watch till en enkel och lättanvänd poängspårningsenhet. Alla matchningar lagras på din iPhone och ger sofistikerad statistik och insikt om hur du kan förbättra ditt spel.",
       "firstInGameTitle": "First in the game",
       "firstInGameText": "Tennis Watch var den första tennis-appen designad för Apple Watch. Det förvandlar din Apple Watch till en enkel och lättanvänd poängspårningsenhet. Alla matchningar lagras på din iPhone och ger sofistikerad statistik och insikt om hur du kan förbättra ditt spel.",
@@ -315,7 +315,7 @@
     "paykartan": {
       "title": "",
       "subtitle": "Vem behöver en plånbok?",
-      "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
+      "desc": "Nu kan du äntligen lämna plånboken hemma. Paykartan hjälper dig att hitta alla matställen som tar emot betalningar via mobilen.",
       "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
       "lunchtimeTitle": "Lunchtid och ... #!? @% !! Jag har ju glömt …",
       "lunchtimeText": "Paykartan.se är en webbapp som visar alla restauranger i närheten där du kan betala med din smartphone. Appen inkluderar Swish, Apple Pay och Beam.",
@@ -331,17 +331,17 @@
     },
     "forces-of-freedom": {
       "title": "",
-      "desc": "Game user interface for Forces of Freedom, a 5 vs 5 real-time tactical combat game for mobile and tablet devices.",
+      "desc": "Användargränssnitt för spelet Forces of Freedom. En 5 vs 5 realtids taktiskt combat spel för mobil och platta.",
       "client": "Koyoki Ltd"
     },
     "travelmate": {
       "title": "",
-      "desc": "Mobile travel companion app which keeps all your trip details in one place when travelling within Stena Line’s ferry network."
+      "desc": "Ett resesällskap i din telefon som håller koll på alla dina resedetaljer när du reser med Stena Line."
     },
     "spira": {
       "name": "Spira",
       "title": "",
-      "desc": "A collaboration between Collector Bank and AktieInvest making it easy to invest in stocks without any hassle.",
+      "desc": "Ett samarbete mellan Collector Bank och Aktieinvest. Spira gör det enkelt att att investera i aktier utan krusiduller.",
       "client": "Collector Bank, Varvet"
     }
   },
@@ -353,7 +353,7 @@
   "astronauts": {
     "andreas": {
       "title": "Co-founder and COO",
-      "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech-lead med över 12 års erfarenhet från IT branchen."
+      "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech-lead med över 12 års erfarenhet från IT branschen."
     },
     "mikael": {
       "title": "Partner och CTO",
