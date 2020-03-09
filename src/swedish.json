@@ -21,7 +21,7 @@
         "alt": ""
       },
       "picadeli": {
-        "alt": "By building a better UX journey and improving user interface for staff, we made it easer to keep track on in-stock and to place new orders"
+        "alt": "En digital mise en place där sortimentet aldrig tar slut tack vare vårt automatiserade och användarvänliga lagerhållningssystem."
       },
       "nelly": {
         "alt": ""
@@ -48,7 +48,7 @@
         "alt": ""
       },
       "vgr": {
-        "alt": "We built an app to lower stress levels through conscious breathing and tracking daily stress levels in a diary"
+        "alt": "En dagbok i fickformat där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom i förebyggande syfte."
       }
     }
   },
@@ -67,22 +67,22 @@
     },
     "careers": {
       "url": "/careers",
-      "title": "Future Memories - Join our crew and be part of the journey",
-      "description": "We gather the entire Future Memories team in our studio in downtown Gothenburg. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team. Have a look at our current job openings and do not hesitate to apply for a new job today."
+      "title": "Här lägger gamla tankespår åt sidan",
+      "description": "Vår studio ligger i mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor."
     }
   },
   "careersWorkplaces": {
     "thrill": {
-      "label": "For the thrill of it. 🕵️‍",
-      "text": "We never compromise on quality and always deliver the best imaginable product. It goes without saying that our employees get the best equipment in order to do the job in the best possible way.\n\nTeams are entitled to pick whatever toolset they want to make their work more efficient and enjoyable. Creatives and developers have the freedom to test new ways of working, exploring promising tools, languages, frameworks and platforms."
+      "label": "För dig som söker spänningen 🕵️‍",
+      "text": "Vi kompromissar aldrig med kvalitet. Endast det bästa är gott nog. Som anställd får du tillgång till de bästa verktygen för att kunna leverera vad vi som företag vill står bakom.\n\n Vi tröttnar aldrig på att utforska nya verktyg för att kunna ligga i framkant. Vi vet att nyfikenhet föder kreativitet som resulterar i bra leveranser. Vi slutar aldrig att utforska nya saker. Därför provar vi nya plattformar, ramverk, kod och verktyg hela tiden och vi förväntar oss att du som anställd gör detsamma."
     },
     "home": {
-      "label": "Home, swede, home. 🏠",
-      "text": "No overtime, no weekend work, no crunch because successful products are only made of healthy teams. We offer flextime so that your professional life harmonizes perfectly with your personal life.\n\nWe start off every week with an extensive Monday breakfast to get everybody energized and informed. On Friday afternoon, we round up the week with our weekly table football competition, a few beers and a big bowl of ‘fredagsgodis’ before signing out.\n\nRegular team lunches help us to stay current about all ongoing projects and once a year, we organize a company retreat leaving our Gothenburg offices to work from another remote and sunny place for a few days."
+      "label": "Att leva för att jobba eller jobba för att leva? 🏠",
+      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och håller alla informerade. På fredag ​​eftermiddag avrundar vi veckan med fussballtunering, och en rejäl fredagsmys innan vi loggar ut. \n\n Regelbundna teamluncher håller oss ájour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
     },
     "tailored": {
-      "label": "Tailored for you, by you. ✂️",
-      "text": "We expect professionalism, commitment and respect to each other and offer flat hierarchies, freedom, responsibility and room for personal development in return. There is enough time to find and define your role inside the company and we decide together with you on which projects you will be working on.\n\nWe grow, develop and release own products, both within Future Memories and in collaboration with other entrepreneurs. This gives you plenty of new possibilities to boost your career in unexpected ways."
+      "label": "Skräddarsydd för dig, av dig. ✂️",
+      "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling.. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företagare. Detta ger dig många nya möjligheter att ge din karriären rejäl boost på oväntade sätt."
     }
   },
   "careersPositions": {},
@@ -168,7 +168,7 @@
     "proflight": {
       "title": "",
       "subtitle": "Stöd för piloter i motvind",
-      "desc": "An iPad app for commercial aircraft pilots. Delivers wind conditions and weather alerts right into the flight deck.",
+      "desc": "En iPad applikation för passagerarflygets piloter. proFLIGHT levererar rådande väderförhållanden och varningar rakt in i cockpit.",
       "metaDesc": "proFLIGHT är en app framtagen för piloter som presenterar all nödvändig väderrelaterad information direkt in till cockpit i realtid. I ett rent och tydligt användargränssnitt får piloten tillgång till allt från betydande väderdiagram, SIGMETS och information om stationen till skräddarsytt högupplösta väderförhållanden som turbulens och vindar längs vägen.",
       "client": "Avtech, Invencon",
       "flightmodeTitle": "Flightmode on",
@@ -199,7 +199,7 @@
     "antistress": {
       "title": "",
       "subtitle": "Ta ett djupt andetag",
-      "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
+      "desc": "En dagbok i fickformat där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom i förebyggande syfte",
       "metaDesc": "AntiStress, a pocket diary for iOS and Android to track stress levels and listen to meditative soundtracks in order to reduce stress.",
       "client": "Västra Götalandsregionen",
       "imageAlt": "AntiStress phone mockup",
@@ -215,13 +215,13 @@
     },
     "nordish-market": {
       "title": "",
-      "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day."
+      "desc": "En digital food court som levererar hållbar mat med närodlade råvaror för företag och privatpersoner."
     },
     "retts-plus": {
       "name": "Retts Plus",
       "title": "",
       "subtitle": "Säkra medicinska beslut",
-      "desc": "Saving lives by supporting personnel in critical decision-making during medical emergency situations.",
+      "desc": "En tjänst som räddar liv genom att stödja vårdpersonal i triage-processen och ett ovärderligt verktyg vid medicinsk akut bedömning.",
       "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
       "client": "Predicare",
       "efficiencyTitle": "Efficiency for patients",
@@ -506,3 +506,6 @@
     "visitTheSite": "Visit the site"
   }
 }
+
+
+
