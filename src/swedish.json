@@ -67,8 +67,8 @@
     },
     "careers": {
       "url": "/careers",
-      "title": "Här lägger gamla tankespår åt sidan",
-      "description": "Vår studio ligger i mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor."
+      "title": "Future Memories - Join our crew and be part of the journey",
+      "description": "We gather the entire Future Memories team in our studio in downtown Gothenburg. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team. Have a look at our current job openings and do not hesitate to apply for a new job today."
     }
   },
   "careersWorkplaces": {
@@ -117,24 +117,23 @@
     },
     "bauer-university": {
       "title": "",
-      "subtitle": "Produktkännedom ger starkare försäljning",
+      "subtitle": "Kunskap ger ökad försäljning",
       "desc": "Gamingbaserad onlinekurs som utbildar Bauer säljare globalt till att bli produktexperter genom att ha riktigt kul på vägen.",
       "metaDesc": "Bauer University, a gamification-based online training platform written in React and Python leveraging Django and GraphQL.",
       "client": "Bauer, Bond Communications",
       "tabletMockup": "Bauer tablet mockup",
       "knowYourProductsTitle": "Produktkännedom ger starkare försäljning",
-      "knowYourProductsText": "Syftet med Bauer University var att ge säljpersonal världen över bättre produktkänndedom för att erbjuda Bauers kunder bättre service och öka kundnöjdheten. Resultatet blev  en global e-learningplattform som utbildar säljpersonal med hjälp av ett gamificationbaserat quiz spel.",
-      "fromRookieTitle": "From Rookie to Pro: bringing sales to the top level",
-      "fromRookieText": "Bauer University helps retailers to become more knowledgeable through product trainings for Bauer equipment and real-world sales scenarios. Motivation is kept up by well thought-out gamification concepts. Contestants can pass five skill levels; from Rookie to Pro. To maintain their current level, contestants have to stay current on latest products and sales strategies, enabling continuous learning.  Achievements result in both physical and digital rewards. All wrapped up in an extremely polished web-based experience.",
-      "uxTitle": "UX design, game design and development made the dream team",
-      "uxText": "Bringing our UX experts, and developers together to form this product turned into a great success. We developed a game-like achievement system with experience points and ranks and built everything from the ground up. The game engine is developed in Python, using well-established Open Source frameworks. The user interface is a React-based web application, making Bauer University accessible to almost any device. Communication between frontend and game engine happens through our own GraphQL interface.",
-      "elearningTitle": "A global e-learning initiative bringing return on investment",
+      "knowYourProductsText": "Syftet med Bauer University är att utbilda säljpersonal i Bauers produkter för att kunna erbjuda bättre service och öka kundnöjdheten. Resultatet blev en gamingbaserad utbildningsplattform som ger säljpersonal världen över en förstklassig produktkännedom av Bauers hockeyprodukter - genom att ha riktigt kul på vägen.",
+      "fromRookieTitle": "Från nybörjare till proffs på några klick",
+      "fromRookieText": "Bauer University guidar säljpersonal världen över att bli riktiga säljproffs. E-learningplattformen guidar dig genom produkter och verklighetsbaserade säljscenarios där användaren får tips om hur en optimal försäljning skall gå till i Bauers anda. Spelare kan nå upp till olika nivåer; från nybörjare till proffs. För att behålla sin nivå och kunskap om produktnyheter och säljsstrategier uppmanas man att genomföra spelet flera gånger om året. Användare som uppnått nya nivåer belönas med belöningar och bra erbjudanden..",
+      "uxTitle": "Vårt Dream Team",
+      "uxText": "Våra UX designers, speldesigners och webbutvecklare skapade ett riktigt vinnarlag i framtagandet av produkten. Plattformen är byggd i Python med Open Source ramverk. Användargränssnittet är byggt i React, vilket gör att Bauer University kan accessas av vilken enhet som helst med förstklassig användarupplevelse. Kommunikationen mellan backend och frontend sker med vår egna GraphQL gränssnitt. Dessa komponenter tillsammans med vår gemensamma kunskap skapade en rolig och utbildande spelbaserad plattform för Bauers säljpersonal världen över.",
+      "elearningTitle": "En globalt genomslag",
       "elearningText": [
-        "Bauer University was made available for Bauer personnel in 32 markets. All content, including video material and quiz questions, are today offered in seven languages."
+        "Bauer University finns tillgängligt för säljpersonal i 32 länder. Allt innehåll, inklusive videomaterial och quizfrågor finns tillgängliga på 7 olika språk."
       ],
       "engagementTitle": "Ett enormt engagemang",
       "engagementText": [
-        "Bauer University got an enourmous reception amongst sales personnel globally.",
         "Bauer University fick ett enormt genomslag redan vid lansering. Det första halvåret som plattformen var uppe hade över 4 000 användare signat upp sig. Deltagarnas resultat steg snabbt upp till proffsnivå och användandet bara ökar.",
         "Bauer University är ett praktexempel på att gamingbaserade koncept funkar. Att spela sig fram till ett resultat visar att motivationen hålls uppe under hela processen. Över 70% av användarna har idag kommit upp till proffsnivå, vilket är den högsta nivån. Detta innebär att en majoritet av användarna svarat rätt på över 650 produktbaserade frågor och tittat på över 3h produktrelaterat videomaterial."
       ],
