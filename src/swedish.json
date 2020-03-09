@@ -170,15 +170,15 @@
       "desc": "En iPad applikation för passagerarflygets piloter. proFLIGHT levererar rådande väderförhållanden och varningar rakt in i cockpit.",
       "metaDesc": "proFLIGHT är en app framtagen för piloter som presenterar all nödvändig väderrelaterad information direkt in till cockpit i realtid. I ett rent och tydligt användargränssnitt får piloten tillgång till allt från betydande väderdiagram, SIGMETS och information om stationen till skräddarsytt högupplösta väderförhållanden som turbulens och vindar längs vägen.",
       "client": "Avtech, Invencon",
-      "flightmodeTitle": "Flightmode on",
-      "flightmodeText": "Presents in real time all required weather related information to the pilot in a nice and clear interface. The pilot can access everything from significant weather charts, SIGMETS and station information to tailored high resolution weather such as turbulence and winds along the flight plan route.",
+      "flightmodeTitle": "Airplane mode aktiverad",
+      "flightmodeText": "proFLIGHT är en app framtagen för piloter som presenterar all nödvändig väderrelaterad information direkt in till cockpit i realtid. I ett rent och tydligt användargränssnitt får piloten tillgång till allt från betydande väderdiagram, SIGMETS och information om stationen till skräddarsytt högupplösta väderförhållanden som turbulens och vindar längs vägen.",
       "skyLimitTitle": "Nå nya höjder",
       "skyLimitText": "proFlight är utvecklad i nära samarbete med professionella flygpiloter för att uppnå ett användarvänligt gränssnitt. Appen ger en klar bild av rådande väderförhållanden och skickar varningar / faror under flygrutten. Kombinationen av synkroniserad horisontell och vertikal vy ökar pilotens medvetenhet om rådande väderförhållanden som underlättar att ta de rätta besluten vid rätt tidpunkt under inflight. Appen är en win-win både ur säkerhet, miljöhänsyn och bekvämlighet för passagerare.",
       "oneFlightAheadTitle": "En flygning framåt",
       "oneFlightAheadText": "Genom att kombinera realtidsdata till högupplösta väder- och flygvägsoptimering hjälper appen piloten att fatta beslut om rutter, både innan och under flygning som leder till en säkrare och effektivare flygning"
     },
     "job-apply": {
-      "label": "Create something awesome with us!"
+      "label": "Skapa magi med oss!"
     },
     "picular": {
       "title": "",
@@ -187,12 +187,12 @@
       "metaDesc": "Picular, a rocket fast primary color generator using Google's image search built in React",
       "searchEngineTitle": "En färgglad sökmotor",
       "searchEngineText": "Picular är en raketsnabb färggenerator som ger dig primärfäger baserad på Googles bildsök. Om du någonsin skulle behöva den perfekta gula hexkoden från en banan är detta verktyget för dig.",
-      "bookmarksTitle": "One for the bookmarks.",
+      "bookmarksTitle": "Moodboards i all ära...",
       "bookmarksText": "Picular är ett extremt praktiskt färgverktyg som skapar den exakta paletten inspirerad av en viss sinnesstämning, objekt eller plats. Här lämnas allt till kreativiteten.",
       "correctColorTones": "Correct color tones",
       "grabHex": "Grab the HEX color code",
       "seeRefImg": "See the reference image",
-      "colorToWordsTitle": "Putting colors to words",
+      "colorToWordsTitle": "Sätt färg på orden",
       "colorToWordsText": "Picular hjälper designers att enkelt extrahera de mest relevanta färgerna för ett specifikt sammanhang. Tjänsten hjälper till att förstå uppfattningen, psykologin och estetiken för en färgton som kan vara av intresse."
     },
     "antistress": {
@@ -255,7 +255,7 @@
       "desc": "En modern plattform som samordnar logistik och den essentiella leveranskedjan för mat.se.",
       "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
       "client": "Mat.se",
-      "shopOnlineTitle": "Shop online,\ndinner at home",
+      "shopOnlineTitle": "Färsk matlevererans till dörren",
       "shopOnlineText": "Mat.se är en Göteborgsbaserad start- och onlinehandelsservice som verkar i Stockholm, Göteborg och Malmö. Konsumenter kan handla på mat.se eller i appen för iOS och Android där livsmedel levereras till ditt hem eller arbetsplats.",
       "fastMovingTitle": "Snabba leveranser av färskvaror",
       "fastMovingText": [
