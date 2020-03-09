@@ -416,18 +416,10 @@
     }
   },
   "links": [
-    {
-      "label": "Home"
-    },
-    {
-      "label": "Our work"
-    },
-    {
-      "label": "The team"
-    },
-    {
-      "label": "Careers"
-    }
+    { "label": "Home", "to": "/" },
+    { "label": "Our work", "to": "/work" },
+    { "label": "The team", "to": "/team" },
+    { "label": "Careers", "to": "/careers" }
   ],
   "teamPictures": {
     "title": "Behind the scenes",
