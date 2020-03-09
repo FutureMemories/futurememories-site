@@ -422,7 +422,7 @@
   ],
   "teamPictures": {
     "title": "Bakom kulisserna",
-    "text": "Detta är Future Memories - en välslipad grupp med bred kompetens som tycker om att jobba tillsammans. På riktigt.",
+    "text": "Vi är en finslipat team med stor bredd av spetskompetenser inom design, UX, webbutveckling, full stack och mobilutveckling. Vi är alla strategiskt lagda och nöjer oss endast med det bästa.",
     "label": "Möt teamet",
     "alt": "Team picture"
   },
@@ -443,7 +443,7 @@
       "hero": "<span>Future Memories</span> är en digital studio där strategisk design och den senaste digitala tekniken formar framtidens digitala produkter.",
       "ourWorkHeader": "Vad vi gjort",
       "ourWorkSubheader": "Vi bygger framtidens digitala produkter som gör livet enklare och skapar mervärde till slutanvändare.",
-      "seeMoreProjects": "See more projects"
+      "seeMoreProjects": "Fler projekt"
     },
     "contactBlock": {
       "title": "Gillar du vad du ser och behöver något?",
@@ -462,7 +462,7 @@
       "errorSending": "Oj, något gick fel. Var god försök senare."
     },
     "work": {
-      "title": "Our work",
+      "title": "Våra case",
       "hero": "We team up to create exceptional digital <span>products and services</span> of tomorrow.",
       "upToHeader": "Våra case",
       "upToSubheader": "Ingen utmaning är för stor för oss. Detta är ett urval av vad vi har åstadkommit hittills.",
@@ -470,18 +470,18 @@
       "partnersSubheader": "Säg hej till våra vänner!"
     },
     "team": {
-      "title": "The team",
+      "title": "Teamet",
       "hero": "<span>Tillsammans är vi</span> en  grupp designers, utvecklare och innovatörer med olika bakgrunder som skapar en perfekt symbios i framtagandet av framtidens digitala produkter.",
       "teamHeader": "The team",
       "teamSubheader": "The whole squad."
     },
     "careers": {
-      "title": "Careers",
+      "title": "Jobba hos oss",
       "hero": "Kommer du ihåg vad du gjorde imorgon? Bli en av oss",
       "modernHeader": "Här lägger gamla tankespår åt sidan",
       "modernSubheader": "Vår studio ligger i mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor. ",
-      "availableHeader": "Available positions",
-      "availableSubheader": "Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business."
+      "availableHeader": "Lediga tjänster",
+      "availableSubheader": "Vill du arbeta i ett snyggt kontor med fina kollegor som verkligen trivs ihop? Gillar du inte att arbeta under arrogans? Vi anställer inga idioter. Vill du äta pannkakor i sängen? Det är upp till dig."
     },
     "visitTheSite": "Visit the site"
   }
