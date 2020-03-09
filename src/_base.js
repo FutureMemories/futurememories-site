@@ -40,7 +40,7 @@ export default class extends Component {
         {!removeFooter && (
           <Footer
             company={data.company}
-            dark={dark}
+            light={dark}
             background={background}
             links={data.links}
             content={data.content.footer}
