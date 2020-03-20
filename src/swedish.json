@@ -221,7 +221,7 @@
       "title": "",
       "subtitle": "Säkra medicinska beslut",
       "desc": "En tjänst som räddar liv genom att stödja vårdpersonal i triage-processen och ett ovärderligt verktyg vid medicinsk akut bedömning.",
-      "metaDesc": "Retts Plus, UX and UI design for an iOS app supporting emergency personnel in critical decision-making during medical emergency situations",
+      "metaDesc": "Retts Plus, UX och UI-design för en iOS-app som stöder akutpersonal vid kritiska beslut under medicinska nödsituationer",
       "client": "Predicare",
       "efficiencyTitle": "En mer effektiv vårdprocess",
       "efficiencyText": "Predicare tillhandahåller digitala system till 95% av akutvården i Sverige vid namn RETTS, ett system som algoritmiskt klassificerar en patients tillstånd beroende på svårighetsgraden av symtom, och föreslår nästa handlingssätt.",
@@ -233,15 +233,15 @@
       "clearOverviewTitle": "En livsviktig översikt",
       "clearOverviewText": "Att ge en läkare eller sjuksköterska en översikt över patientens besök är en viktig funktion för att fatta rätt beslut och ge korrekt vård. Vid rätt tillfälle.",
       "everyStepTitle": "Med i varje steg på vägen",
-      "everyStepText": "Vi utvecklade en tidslinje som visualiserar patientens vårdprocess, från första kontakten fram till utskrivning. Detta förbättrar förmågan att spåra händelser under patientens besök och gör det möjligt för sjuksköterskor och läkare att fatta rätt beslut under hela sjukhusvistelsen. RETTSplus nominerades till Design S, Sveriges största och mest omfattande designpris, med stöd från designindustrin. Priset riktar sig till professionella designers, arkitekter, enskilda specialister, producenter och företag som arbetar med design i vid bemärkelse. Vi är väldigt stolta över slutprodukten."
+      "everyStepText": "Vi utvecklade en tidslinje som visualiserar patientens vårdprocess, från första kontakten fram till utskrivning. Detta förbättrar förmågan att spåra händelser under patientens besök och gör det möjligt för sjuksköterskor och läkare att fatta rätt beslut under hela sjukhusvistelsen. RETTS Plus nominerades till Design S, Sveriges största och mest omfattande designpris, med stöd från designindustrin. Priset riktar sig till professionella designers, arkitekter, enskilda specialister, producenter och företag som arbetar med design i vid bemärkelse. Vi är väldigt stolta över slutprodukten."
     },
     "sleepcure": {
-      "title": "Future Memories: SleepCure, a digital analysis and treatment method for people who want to sleep better.",
+      "title": "Future Memories: SleepCure, en digital analys- och behandlingsmetod för människor som vill få en bättre sömn.",
       "subtitle": "Bättre sömn - ett bättre liv",
-      "desc": "SleepCure är en app som ger garanterat bättre sömn, framtagen för att bygga en skräddarsydd strategi för att mota individens rådande sömnproblem.",
-      "metaDesc": "SleepCure, a digital analysis and treatment app for people who want to sleep better, written iOS with HealthKit integration.",
+      "desc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå",
+      "metaDesc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn, integrerad med iOS HealthKit.",
       "sleepCoachTitle": "Din digitala sömncoach",
-      "sleepCoachText": "Sömnproblem kan vara komplext. Vad som funkar för en person funkar kanske inte för den andra. SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivår. Appen hjälper dig att skapa sunda sömnvanor genom att utvärdera dina dagliga rutiner, klargör dina ohälsosamma vanor som påverkar din sömn och hjälper dig att steg för steg ta dig ur dem.",
+      "sleepCoachText": "Sömnproblem kan vara komplext. Vad som funkar för en person funkar kanske inte för den andra. SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå. Appen hjälper dig att skapa sunda sömnvanor genom att utvärdera dina dagliga rutiner, klargör dina ohälsosamma vanor som påverkar din sömn och hjälper dig att steg för steg ta dig ur dem.",
       "researchBasedTitle": "Behandling baserad på forskning",
       "researchBasedText": "SleepCure är en CE-märkt medicinsk utrustning för icke-farmakologisk behandling av sömnstörningar. Här samlas resultat inom beteendeterapi och sömnforskning när man ger råd om hur du kan förbättra dina sömnmönster.",
       "mobileAssistantTitle": "Din sömnassistent",
@@ -253,7 +253,7 @@
       "title": "",
       "subtitle": "Färsk matlevererans till dörren",
       "desc": "En modern plattform som samordnar logistik och den essentiella leveranskedjan för mat.se.",
-      "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
+      "metaDesc": "Mat.se, en livsmedelslogistik- och leveranskedjeplattform skriven i Java och Spring med specialiserade native iOS-appar för leverans och lager.",
       "client": "Mat.se",
       "shopOnlineTitle": "Färsk matlevererans till dörren",
       "shopOnlineText": "Mat.se är en Göteborgsbaserad start- och onlinehandelsservice som verkar i Stockholm, Göteborg och Malmö. Konsumenter kan handla på mat.se eller i appen för iOS och Android där livsmedel levereras till ditt hem eller arbetsplats.",
@@ -265,11 +265,11 @@
       "fillingTitle": "Så går det till",
       "fillingText": "Verksamheten på Mat.se’s lager är helt digitaliserad. För alla dagliga rutiner använder lagerpersonalen en iPad-app med direktuttag till logistikplattformen.",
       "fillingItems": [
-        "Goods arrival",
-        "Incoming deliveries",
-        "Inventory control",
-        "Order picking",
-        "Shipping preparation"
+        "Varuankomster",
+        "Inkommande leveranser",
+        "Lagersaldo",
+        "Orderplockning",
+        "Leveransförberedelse"
       ],
       "deliveredTitle": "Mat hem till dörren",
       "deliveredText": [
@@ -296,7 +296,7 @@
     "paperquiz": {
       "image": "cases/paperquiz.png",
       "title": "",
-      "desc": "A quiz about relativity. Each question is about sorting according to a parameter. Whoever comes closest to the right order wins."
+      "desc": "En frågesport om relativitet. Varje fråga handlar om sortering enligt en parameter. Den som kommer närmast rätt ordning vinner."
     },
     "tennis-watch": {
       "title": "",
@@ -346,7 +346,7 @@
   },
   "notUsedCases": {
     "nelly-app": {
-      "desc": "A digital shopping experience for iOS with community features to share and discuss latest fashion trends."
+      "desc": "En digital shoppingupplevelse för iOS med communityfunktioner för att dela och diskutera senaste modetrender."
     }
   },
   "astronauts": {
@@ -463,7 +463,7 @@
     },
     "work": {
       "title": "Våra case",
-      "hero": "We team up to create exceptional digital <span>products and services</span> of tomorrow.",
+      "hero": "Vi samarbetar för att skapa exceptionella digitala <span> produkter och tjänster </span> för framtiden",
       "upToHeader": "Våra case",
       "upToSubheader": "Ingen utmaning är för stor för oss. Detta är ett urval av vad vi har åstadkommit hittills.",
       "partnersHeader": "Våra samarbeten",
@@ -481,7 +481,7 @@
       "modernHeader": "Här lägger vi gamla tankespår åt sidan",
       "modernSubheader": "Vår studio ligger i mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor. ",
       "availableHeader": "Lediga tjänster",
-      "availableSubheader": "Vill du arbeta i ett snyggt kontor med fina kollegor som verkligen trivs ihop? Gillar du inte att arbeta bland arrogans? Vi anställer bara trevliga människor. Vill du äta pannkakor i sängen? Det är upp till dig."
+      "availableSubheader": "Vill du arbeta i ett snyggt kontor med härliga kollegor som verkligen trivs ihop? Gillar du inte att arbeta bland arrogans? Vi anställer bara trevliga människor. Vill du äta pannkakor i sängen? Det är upp till dig."
     },
     "visitTheSite": "Till sidan"
   }
