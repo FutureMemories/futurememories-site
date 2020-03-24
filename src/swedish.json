@@ -74,15 +74,15 @@
   "careersWorkplaces": {
     "thrill": {
       "label": "För dig som söker spänningen 🕵️‍",
-      "text": "Vi kompromissar aldrig med kvalitet. Endast det bästa är gott nog. Som anställd får du tillgång till de bästa verktygen för att kunna leverera vad vi som företag vill står bakom.\n\n Vi tröttnar aldrig på att utforska nya verktyg för att kunna ligga i framkant. Vi vet att nyfikenhet föder kreativitet som resulterar i bra leveranser. Vi slutar aldrig att utforska nya saker. Därför provar vi nya plattformar, ramverk, kod och verktyg hela tiden och vi förväntar oss att du som anställd gör detsamma."
+      "text": "Vi kompromissar aldrig med kvalitet. Endast det bästa är gott nog. Som anställd får du tillgång till de bästa verktygen för att kunna leverera vad vi som företag vill stå bakom.\n\n Vi tröttnar aldrig på att utforska nya verktyg för att kunna ligga i framkant. Vi vet att nyfikenhet föder kreativitet som resulterar i bra leveranser. Vi slutar aldrig att utforska nya saker. Därför provar vi nya plattformar, ramverk, kod och verktyg hela tiden och vi förväntar oss att du som anställd gör detsamma."
     },
     "home": {
       "label": "Att leva för att jobba eller jobba för att leva? 🏠",
-      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och håller alla informerade. På fredag ​​eftermiddag avrundar vi veckan med fussballtunering, och en rejäl fredagsmys innan vi loggar ut. \n\n Regelbundna teamluncher håller oss ájour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
+      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och håller alla informerade. På fredag ​​eftermiddag avrundar vi veckan tillsammans i köket, med lite fredagshäng innan vi loggar ut. \n\n Regelbundna teamluncher håller oss ájour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
     },
     "tailored": {
       "label": "Skräddarsydd för dig, av dig. ✂️",
-      "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling.. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företagare. Detta ger dig många nya möjligheter att ge din karriären rejäl boost på oväntade sätt."
+      "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företag eller partners. Detta ger dig många nya möjligheter att ge din karriär en rejäl boost på oväntade sätt."
     }
   },
   "careersPositions": {},
@@ -422,7 +422,7 @@
   ],
   "teamPictures": {
     "title": "Bakom kulisserna",
-    "text": "Vi är en finslipat team med stor bredd av spetskompetenser inom design, UX, webbutveckling, full stack och mobilutveckling. Vi är alla strategiskt lagda och nöjer oss endast med det bästa.",
+    "text": "Vi är ett finslipat team med stor bredd av spetskompetenser inom design, UX, webbutveckling, full stack och mobilutveckling. Vi är alla strategiskt lagda och nöjer oss endast med det bästa.",
     "label": "Möt teamet",
     "alt": "Future Memories är ett team med erfarna UX & UI designers, apputvecklare och webbutveckare"
   },
