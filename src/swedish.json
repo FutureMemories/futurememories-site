@@ -55,7 +55,7 @@
   "routes": {
     "home": {
       "title": "Future Memories - Digital Design och utveckling i Göteborg",
-      "description": "En digital studio med experter inom Service Design, UX Design, UI Design, Apputveckling, Webbutveckling, Backendutveckling och Spelutveckling."
+      "description": "En utevecklingsstudio med experter inom Service Design, UX Design, UI Design, Apputveckling, Webbutveckling, Backendutveckling och Spelutveckling."
     },
     "work": {
       "title": "Future Memories - Våra tjänster: design, appar, webb, backend, spel",
@@ -68,7 +68,7 @@
     "careers": {
       "url": "/careers",
       "title": "Future Memories - Gå med i vår besättning och var en del av resan",
-      "description": "Vi samlar hela Future Memories-teamet i vår studio i centrala Göteborg. En modern och stimulerande kontorsmiljö där vi skapar morgondagens digitala produkter tillsammans som ett team. Titta på våra nuvarande jobböppningar och tveka inte att ansöka om ett nytt jobb idag."
+      "description": "Vi samlar hela Future Memories-teamet i vår studio i centrala Göteborg. En modern och stimulerande kontorsmiljö där vi skapar morgondagens digitala tjänster tillsammans som ett team. Titta på våra nuvarande jobböppningar och tveka inte att ansöka om ett nytt jobb idag."
     }
   },
   "careersWorkplaces": {
@@ -440,7 +440,7 @@
       "onLinkedIn": "Future Memories på LinkedIn"
     },
     "home": {
-      "hero": "<span>Future Memories</span> är en digital studio där strategisk design och den senaste digitala tekniken formar framtidens digitala produkter.",
+      "hero": "<span>Future Memories</span> är en utvecklingsstudio där strategisk design och teknik formar morgondagens digitala tjänster",
       "ourWorkHeader": "Vad vi gjort",
       "ourWorkSubheader": "Vi bygger framtidens digitala produkter som gör livet enklare och skapar mervärde till slutanvändare.",
       "seeMoreProjects": "Fler projekt"
