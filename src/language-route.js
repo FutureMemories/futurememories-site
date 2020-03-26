@@ -41,8 +41,15 @@ const travelledInHomeRoutes = (url, prev) => {
   if (!url || !prev) return false
 
   const homeRoutes = [''].concat(Object.keys(data.english.caseCategories))
-  // extract path from /en/:PATH:/subpath
-  const extractRegex = /\/\w\w\/([^/]+)/
+  let extractRegex
+
+  if (url.substring(3, 8) === '/work' && prev.substring(3, 8) === '/work') {
+    // extract path from /en/work/:PATH:/subpath
+    extractRegex = /\/\w\/\w\w\/([^/]+)/
+  } else {
+    // extract path from /en/:PATH:/subpath
+    extractRegex = /\/\w\w\/([^/]+)/
+  }
 
   url = (url.match(extractRegex) || ['', ''])[1]
   prev = (prev.match(extractRegex) || ['', ''])[1]
@@ -83,6 +90,11 @@ export default class extends Component {
         ))}
 
         <Work path={root + '/work'} data={languageData} root={root} />
+
+        {Object.keys(data.english.caseCategories).map(key => (
+          <Work path={`${root}/work/${key}`} data={languageData} root={root} caseCategory={key} key={key} />
+        ))}
+
         <Team path={root + '/team'} data={languageData} root={root} />
         <Careers path={root + '/careers'} data={languageData} root={root} />
 

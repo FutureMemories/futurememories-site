@@ -77,6 +77,25 @@
         "tennis-watch",
         "paykartan"
       ]
+    },
+    "all-projects": {
+      "title": "Future Memories",
+      "name": "All projects",
+      "cases": [
+        "mat-se",
+        "nordish-market",
+        "bandbond",
+        "picular",
+        "bauer-university",
+        "antistress",
+        "stc",
+        "retts-plus",
+        "sleepcure",
+        "picadeli",
+        "paykartan",
+        "tennis-watch",
+        "folklore-company"
+      ]
     }
   },
   "company": {
@@ -230,22 +249,20 @@
   "allCases": {
     "stc": {
       "name": "STC",
-      "image": "cases/stc.png",
+      "imageBg": [
+        "cases/stc-bg.png"
+      ],
       "title": "",
       "subtitle": "Making training easy!",
       "desc": "A total overhaul on all digital touch points. Built from the ground up.",
       "type": "Service Design, UX, UI, React, iOS, Android, AWS, Health Tech",
       "style": [
         {
-          "background": "#FF5200",
-          "color": "white"
+          "color": "#ffffff",
+          "background": "linear-gradient(301.04deg, #FF7727 0%, #385768 100%)"
         },
         {
-          "min-width": "23rem"
-        },
-        {
-          "top": ".8rem",
-          "right": "3rem"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
       "showcase": true,
@@ -275,7 +292,9 @@
     },
     "bauer-university": {
       "name": "Bauer University",
-      "image": "cases/bauer-university.png",
+      "imageBg": [
+        "cases/bauer-university-7.png"
+      ],
       "title": "",
       "subtitle": "Better knowledge, better sales",
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
@@ -284,11 +303,11 @@
       "type": "React, Python, Django, GraphQL, UX, Retail Tech",
       "style": [
         {
-          "background": "linear-gradient(-180deg, #151D20 0%, #151D20 63%, #131A1C 100%)",
-          "color": "#fff"
+          "color": "#ffffff",
+          "background": "linear-gradient(132.56deg, #50A2DE 0%, #2E6389 100%)"
         },
         {
-          "min-width": "24.5rem"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
       "actions": [
@@ -320,7 +339,7 @@
     "bandbond": {
       "name": "Bandbond",
       "imageBg": [
-        "cases/bandbond-bg.jpg",
+        "cases/bandbond-bg-2.jpg",
         "height"
       ],
       "title": "",
@@ -329,12 +348,11 @@
       "type": "iOS, Android, Java",
       "style": [
         {
-          "background": "#131313",
-          "color": "#fff"
+          "color": "#ffffff",
+          "background": "linear-gradient(132.56deg, #171717 0%, #636363 100%)"
         },
         {
-          "max-width": "21rem",
-          "min-width": "15rem"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
       "showcase": true,
@@ -358,7 +376,7 @@
     "picadeli": {
       "name": "Picadeli",
       "imageBg": [
-        "cases/picadeli-bg.jpg",
+        "cases/picadeli-bg-2.jpg",
         "height"
       ],
       "title": "",
@@ -366,12 +384,11 @@
       "type": "Service Design, UX, UI, iOS, Food Tech",
       "style": [
         {
-          "background": "#6FBC84",
-          "color": "#fff"
+          "color": "#ffffff",
+          "background": "linear-gradient(111.52deg, #81B989 0%, #506A4F 100%)"
         },
         {
-          "max-width": "21rem",
-          "min-width": "15rem"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ]
     },
@@ -386,11 +403,15 @@
       "type": "UX, UI, iOS",
       "style": [
         {
-          "background": "#3E4C65",
-          "color": "#fff"
+          "color": "#ffffff",
+          "background": "#3E4C65"
         },
         {
-          "min-width": "19.5rem"
+          "background": "#3E4C6504"
+        },
+        {
+          "position": "absolute",
+          "left": "50%"
         }
       ],
       "showcase": true,
@@ -400,12 +421,6 @@
       "skyLimitText": "Developed in close cooperation with professional airline pilots to achieve a user friendly interface and a clear view of the weather and warnings/hazards along the planned flight route. The combination of the synchronized horizontal- and vertical view improves the pilot ́s situational awareness.",
       "oneFlightAheadTitle": "One flight ahead",
       "oneFlightAheadText": "Combining the real time access to high resolution weather and flight path optimization, assists the pilot in making better pre- and in-flight decisions leading to a safer and more efficient flight."
-    },
-    "job-apply": {
-      "button": true,
-      "type": "mailto",
-      "label": "Create something awesome with us!",
-      "to": "hello@futurememories.se"
     },
     "picular": {
       "name": "Picular",
@@ -417,15 +432,15 @@
       "image": "cases/picular.jpg",
       "style": [
         {
-          "background": "#F2F5F6",
-          "color": "#070B13"
+          "color": "#070B13",
+          "background": "linear-gradient(97.71deg, #FFFFFF 0%, #E8F9FF 100%)"
         },
         {
-          "min-width": "21rem",
-          "max-width": "25rem"
+          "background": "linear-gradient(90deg, rgba(181, 187, 199, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%)"
         },
         {
-          "margin-left": "-80px"
+          "position": "absolute",
+          "left": "0"
         }
       ],
       "showcase": true,
@@ -441,7 +456,10 @@
     },
     "antistress": {
       "name": "AntiStress",
-      "image": "cases/antistress.png",
+      "imageBg": [
+        "cases/antistress-bg-2.png",
+        "height"
+      ],
       "title": "",
       "subtitle": "Take a deep breath",
       "desc": "A pocket diary to track stress levels and listen to meditative soundtracks in order to reduce stress.",
@@ -450,14 +468,11 @@
       "type": "UX, UI, iOS, Android, Java, Med Tech",
       "style": [
         {
-          "background": "linear-gradient(-241deg, #90C8DD 14%, #95B2C7 90%)",
-          "color": "#fff"
+          "color": "#070B13",
+          "background": "linear-gradient(121.04deg, #E3F5ED 0%, #A3C7B7 100%)"
         },
         {
-          "min-width": "24.4rem"
-        },
-        {
-          "right": "14rem"
+          "background": "linear-gradient(90deg, rgba(181, 187, 199, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%)"
         }
       ],
       "showcase": true,
@@ -474,28 +489,30 @@
     },
     "nordish-market": {
       "name": "Nordish Market",
-      "image": "cases/nordish-market.png",
+      "imageBg": [
+        "cases/nordish-market-2.png",
+        "width"
+      ],
       "title": "",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day.",
       "type": "Service Design, UX, UI, React, Python, Django, Food Tech",
       "style": [
         {
-          "background": "#FDC853",
-          "color": "#070B13"
+          "color": "#FFFFFF",
+          "background": "linear-gradient(121.04deg, #1B6665 0%, #AAA75C 100%)"
         },
         {
-          "min-width": "22rem"
-        },
-        {
-          "height": "calc(100% + 40px)",
-          "margin-top": "-40px"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
       "link": "https://www.nordishmarket.com/"
     },
     "retts-plus": {
       "name": "Retts Plus",
-      "image": "cases/retts-plus.png",
+      "imageBg": [
+        "cases/retts-plus-bg.png",
+        "width"
+      ],
       "title": "",
       "subtitle": "Safe medical decisions",
       "desc": "Saving lives by supporting personnel in critical decision-making during medical emergency situations.",
@@ -504,14 +521,11 @@
       "type": "Service Design, UX, UI, Med Tech",
       "style": [
         {
-          "background": "linear-gradient(-135deg, #151D26 0%, #090E18 100%)",
-          "color": "#fff"
+          "color": "#FFFFFF",
+          "background": "linear-gradient(137.44deg, #22303E 0%, #090E18 100%)"
         },
         {
-          "min-width": "23rem"
-        },
-        {
-          "margin-left": "-10px"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
       "showcase": true,
@@ -529,7 +543,7 @@
     },
     "sleepcure": {
       "name": "SleepCure",
-      "image": "cases/sleepcure.png",
+      "image": "cases/sleepcure-1.png",
       "title": "Future Memories: SleepCure, a digital analysis and treatment method for people who want to sleep better.",
       "subtitle": "Better Sleep, Better Life",
       "desc": "SleepCure is a digital analysis and treatment method for people who want to sleep better.",
@@ -537,11 +551,18 @@
       "type": "iOS, HealthKit, Med Tech",
       "style": [
         {
-          "background": "#F6D7D3",
-          "color": "#F35C49"
+          "color": "#070B13",
+          "background": "linear-gradient(132.56deg, #E26652 0%, #F1D8D4 100%)"
         },
         {
-          "min-width": "21.2rem"
+          "background": "linear-gradient(90deg, rgba(181, 187, 199, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%)"
+        },
+        {
+          "position": "absolute",
+          "left": "15%",
+          "bottom": "0",
+          "transform": "scale(0.6)",
+          "transform-origin": "bottom left"
         }
       ],
       "showcase": true,
@@ -556,10 +577,9 @@
     },
     "mat-se": {
       "name": "Mat.se",
-      "image": "cases/mat-se.png",
-      "imageBg": [
-        "cases/mat-se-bg.jpg",
-        "width"
+       "imageBg": [
+        "cases/mat-se-7.png",
+        "height"
       ],
       "title": "",
       "subtitle": "Fresh food delivered to your door",
@@ -569,11 +589,15 @@
       "type": "UX, UI, Java, Spring, iOS, AWS, Food Tech",
       "style": [
         {
-          "background": "#993600",
-          "color": "#FFFFFF"
+          "color": "#FFFFFF",
+          "background": "linear-gradient(121.04deg, #FF6002 0%, #FFBB93 100%)"
         },
         {
-          "min-width": "20rem"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+        },
+        {
+          "top": "0",
+          "left": "0"
         }
       ],
       "imageStyle": {
@@ -617,11 +641,11 @@
       "type": "UX, UI, Scala, Reactive Streams, Google Cloud",
       "style": [
         {
-          "background": "#192452",
-          "color": "#fff"
+          "color": "#FFFFFF",
+          "background": "#192452"
         },
         {
-          "max-width": "20rem"
+          "background": "#19245204"
         }
       ],
       "link": "https://www.sleepcycle.com/"
@@ -637,12 +661,11 @@
       "type": "React, Node.js, Scala",
       "style": [
         {
-          "background": "#E2E3E5",
-          "color": "#070B13"
+          "color": "#070B13",
+          "background": "linear-gradient(97.71deg, #C8CDD0 0%, #C8AE96 100%)"
         },
         {
-          "max-width": "21rem",
-          "min-width": "15rem"
+          "background": "linear-gradient(90deg, rgba(181, 187, 199, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%)"
         }
       ]
     },
@@ -655,10 +678,12 @@
       "type": "UX, UI, iOS, Java, AWS, Fashion Tech",
       "style": [
         {
-          "background": "#000000",
-          "color": "#fff"
+          "color": "#FFFFFF",
+          "background": "#000000"
         },
-        {},
+        {
+          "background": "#00000004"
+        },
         {
           "height": "50%",
           "margin-top": "auto",
@@ -674,11 +699,11 @@
       "type": "UI, iOS, Android, Unity",
       "style": [
         {
-          "background": "#E9E7DB",
-          "color": "#070B13"
+          "color": "#070B13",
+          "background": "#E9E7DB"
         },
         {
-          "min-width": "28.7rem"
+          "background": "#E9E7DB04"
         },
         {
           "height": "50%",
@@ -690,9 +715,8 @@
     },
     "tennis-watch": {
       "name": "Tennis Watch",
-      "image": "cases/tennis-watch.png",
       "imageBg": [
-        "cases/tennis-watch-bg.jpg",
+        "cases/tennis-watch-bg-2.jpg",
         "height"
       ],
       "title": "",
@@ -702,14 +726,11 @@
       "type": "UX, UI, iOS, watchOS, Scala",
       "style": [
         {
-          "background": "#2D2D2D",
-          "color": "#fff"
+          "color": "#FFFFFF",
+          "background": "linear-gradient(121.04deg, #2D2D2D 0%, #5C3868 100%)"
         },
         {
-          "min-width": "22.4rem"
-        },
-        {
-          "bottom": "2rem"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
       "showcase": true,
@@ -723,7 +744,10 @@
     },
     "paykartan": {
       "name": "Paykartan",
-      "image": "cases/paykartan.png",
+      "imageBg": [
+        "cases/paykartan-bg.png",
+        "height"
+      ],
       "title": "",
       "subtitle": "Who needs a wallet anyway?",
       "desc": "Leave your wallet at home. A digital service highlighting all places in town that accept mobile payments.",
@@ -731,11 +755,11 @@
       "type": "UX, UI, React",
       "style": [
         {
-          "background": "#FFD2D2",
-          "color": "#070B13"
+          "color": "#070B13",
+          "background": "linear-gradient(121.04deg, #FFD2D2 0%, #C7BBA3 100%)"
         },
         {
-          "min-width": "21.2rem"
+          "background": "linear-gradient(90deg, rgba(181, 187, 199, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%)"
         }
       ],
       "showcase": true,
@@ -763,11 +787,11 @@
       "type": "UX, UI",
       "style": [
         {
-          "background": "#5A4645",
-          "color": "#fff"
+          "color": "#FFFFFF",
+          "background": "#5A4645"
         },
         {
-          "min-width": "4rem"
+          "background": "#5A464504"
         }
       ]
     },
@@ -779,10 +803,12 @@
       "type": "iOS, Android",
       "style": [
         {
-          "background": "#2765CB",
-          "color": "#FFFFFF"
+          "color": "#FFFFFF",
+          "background": "#2765CB"
         },
-        {},
+        {
+          "background": "#2765CB04"
+        },
         {
           "height": "50%",
           "margin-top": "auto",
@@ -799,8 +825,11 @@
       "type": "Android",
       "style": [
         {
-          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)",
-          "color": "#fff"
+          "color": "#FFFFFF",
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)"
+        },
+        {
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 40%)"
         }
       ],
       "appLink": "https://play.google.com/store/apps/details?id=se.collector.spira&hl=en"
@@ -813,8 +842,11 @@
       "type": "iOS",
       "style": [
         {
-          "background": "#FFD0DA",
-          "color": "#070B13"
+          "color": "#070B13",
+          "background": "#FFFFFF"
+        },
+        {
+          "background": "#FFD0DA"
         }
       ]
     }

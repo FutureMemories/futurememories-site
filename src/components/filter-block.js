@@ -5,19 +5,15 @@ import { Match } from 'preact-router/match'
 
 const Link = ({ href, children }) => (
   <Match path={href}>
-    {({ path, matches }) => (
+    {({ path }) => (
       <a
         href={href}
         class={cx(
-          (
-            // Special test for /en and /en/
-            // To not match /en/ with /en/cloud
-            /\/\w\w\/?$/.test(href)
-              ? /\/\w\w\/?$/.test(path)
-              : path.indexOf(href) === 0
-          ) && s.active
+          (path === href || path === (href + '/')) && s.active
         )}
-      >{children}</a>
+      >
+        {children}
+      </a>
     )}
   </Match>
 )
@@ -25,9 +21,9 @@ const Link = ({ href, children }) => (
 export default class extends Component {
   toggle = () => this.setState({ open: !this.state.open })
 
-  render ({ items }, { open }) {
+  render ({ items, className }, { open }) {
     return (
-      <div class={cx(s.block, open && s.open)} onClick={this.toggle}>
+      <div class={cx(s.block, className, open && s.open)} onClick={this.toggle}>
         <span class={s.filter}>Filter by:</span>
         {items.map(item => <Link href={item.href}>{item.name}</Link>)}
         <svg width='24' height='24' viewBox='0 0 24 24' fill='#8d939e' xmlns='http://www.w3.org/2000/svg' class={s.chevron}>

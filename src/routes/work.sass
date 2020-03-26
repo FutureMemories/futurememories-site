@@ -17,14 +17,14 @@
     > .welcome
       align-items: center
       display: flex
-      height: 100vh
+      height: #{'max(75vh, 100vh - 20rem)'}
+      min-height: 50rem
       margin-top: -19rem
-      min-height: 70rem
       position: relative
 
       > h1
         font-weight: bold
-        margin-left: 10rem
+        margin-left: 5rem
         max-width: 84rem
         position: relative
         z-index: 1
@@ -39,11 +39,21 @@
         margin-top: -20rem
         position: absolute
 
-    > .work
+    > .projectsHeader
       position: relative
+      display: flex
+      flex-direction: column
 
-      > .text
-        margin-left: 10rem
+      @media screen and (min-width: 1001px)
+        flex-direction: row
+        align-items: flex-end
+
+      .text
+        margin: 0 0 5rem 0
+        width: 38rem
+
+        @media screen and (min-width: 1001px)
+          margin: 0 0 0 5rem
 
         > h1
           color: $color-red
@@ -55,17 +65,21 @@
           margin-top: 2rem
           max-width: 37.7rem
 
-      > button
-        left: calc(100% - 10rem)
-        position: relative
-        top: 2rem
-        transform: translateX(-100%)
+      .filterBlock
+        @media screen and (min-width: 1001px)
+          margin: 0 0 0 5rem
 
-      > .projects
+    > .projects
         display: grid
         grid-gap: 2rem
         grid-template-columns: auto
         margin-top: 5rem
+
+        .button
+          left: calc(100% - 5rem)
+          position: relative
+          top: 2rem
+          transform: translateX(-100%)
 
         > .project
           background: #eee
@@ -92,7 +106,7 @@
         z-index: -1
 
       > .text
-        margin-left: 10rem
+        margin-left: 5rem
 
         > h1
           color: $color-red
@@ -135,11 +149,12 @@
         width: 16.5rem
 
     @media screen and (max-width: 800px)
-      > .welcome > h1, > .work > .text, > .partners > .text
-        font-size: 3rem
-        margin-left: 0
+      > .projectsHeader > .text, > .partners > .text
+          font-size: 3rem
+          margin-left: 0
+          width: 100%
 
-      > .work > button
+      > .projectsHeader > .button
         left: 100%
 
       > .partners

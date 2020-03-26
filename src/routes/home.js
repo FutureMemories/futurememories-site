@@ -105,6 +105,8 @@ export default class extends Component {
                   href: key === 'featured' ? getLanguageLink('') : getLanguageLink('/' + key),
                   name: data.caseCategories[key].name
                 }))}
+                className={s.filterBlock}
+                page='home'
               />
               <ProjectsBlock
                 {...data.projectsBlock}

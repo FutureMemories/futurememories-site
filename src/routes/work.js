@@ -2,6 +2,7 @@ import { Component } from 'preact'
 import Base from '../_base'
 import ProjectsBlock from '../components/projects-block'
 import Moon from '../components/moon'
+import FilterBlock from '../components/filter-block'
 import MarkupCustomElement from '../components/markup-custom-element'
 import s from './work.sass'
 import getLanguageLink from '../utils/getLanguageLink'
@@ -34,9 +35,9 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render ({ data, root }) {
+  render ({ data, root, caseCategory }) {
     return (
-      <Base title={data.content.work.title} route='/work' data={data} root={root}>
+      <Base title={data.content.work.title} route={'/work/' + (caseCategory || '')} data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -55,13 +56,28 @@ export default class extends Component {
               />
             </div>
 
-            <div class={s.work}>
+            <div class={s.projectsHeader}>
               <div class={s.text}>
                 <h1>{data.content.work.upToHeader}</h1>
                 <p>{data.content.work.upToSubheader}</p>
               </div>
-              <ProjectsBlock {...data.projectsBlock} allProjects={data.allCases} allCases={data.allCases} />
+              <FilterBlock
+                items={Object.keys(data.caseCategories).map(key => ({
+                  href: key === 'all-projects' ? getLanguageLink('/work') : getLanguageLink('/work/' + key),
+                  name: data.caseCategories[key].name
+                }))}
+                className={s.filterBlock}
+                page='work'
+              />
             </div>
+
+            <ProjectsBlock
+              {...data.projectsBlock}
+              baseKey={caseCategory}
+              animateInBlocks
+              projects={data.caseCategories[caseCategory || 'all-projects'].cases}
+              allCases={data.allCases}
+            />
 
             <div class={s.partners} ref={(el) => { this.workPartnersBlock = el }}>
               <Moon
