@@ -691,7 +691,7 @@
           "background": "#000000"
         },
         {
-          "background": "#00000004"
+          "background": "rgba(0, 0, 0, 0.4)"
         },
         {
           "height": "50%",
@@ -816,12 +816,13 @@
           "background": "#2765CB"
         },
         {
-          "background": "#2765CB04"
+          "background": "rgba(39, 101, 203, 0.5)"
         },
         {
-          "height": "50%",
-          "margin-top": "auto",
-          "margin-left": "calc(100% - 43rem)"
+          "position": "absolute",
+          "height": "70%",
+          "left": "10%",
+          "bottom": "0"
         }
       ],
       "appLink": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"
