@@ -5,10 +5,12 @@
       "name": "Featured",
       "cases": [
         "stc",
-        "bauer-university",
+        "nordish-market",
         "bandbond",
         "proflight",
-        "picular"
+        "picular",
+        "bauer-university",
+        "mat-se"
       ]
     },
     "branding": {
@@ -82,19 +84,26 @@
       "title": "Future Memories",
       "name": "All projects",
       "cases": [
-        "mat-se",
-        "nordish-market",
-        "bandbond",
-        "picular",
-        "bauer-university",
-        "antistress",
         "stc",
+        "nordish-market",
+        "picadeli",
+        "bandbond",
+        "proflight",
+        "bauer-university",
+        "mat-se",
+        "sleep-cycle-dashboard",
         "retts-plus",
         "sleepcure",
-        "picadeli",
-        "paykartan",
+        "picular",
+        "antistress",
+        "folklore-company",
+        "wya-network",
+        "paperquiz",
         "tennis-watch",
-        "folklore-company"
+        "paykartan",
+        "forces-of-freedom",
+        "travelmate",
+        "spira"
       ]
     }
   },
