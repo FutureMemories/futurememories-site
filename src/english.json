@@ -570,8 +570,7 @@
           "position": "absolute",
           "left": "15%",
           "bottom": "0",
-          "transform": "scale(0.6)",
-          "transform-origin": "bottom left"
+          "height": "65%"
         }
       ],
       "showcase": true,
