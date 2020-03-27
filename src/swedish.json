@@ -142,7 +142,7 @@
     "bandbond": {
       "title": "",
       "subtitle": "Allt du älskar med hårdrock och metal - på ett ställe.",
-      "desc": "En community app som förenar rock- och metalvärlden. Här kommer fansen närmre sina favoritband utan onödigt brus.",
+      "desc": "En community app för rock- och metalvärlden. Här kommer fansen närmre sina favoritband utan onödigt brus.",
       "heavyTitle": "Tung metal, lätt app.",
       "heavyText": [
         "Bandbond är en community-app som tar dig närmre dina favoritband och bandmedlemmar. Med Bandbond får du full tillgång till allt officiellt innehåll från sociala medier som publiceras av dina favoritband. I appen får du också tillgång till special-producerat material för exklusivt för Bandbond-användare.",
@@ -198,7 +198,7 @@
     "antistress": {
       "title": "",
       "subtitle": "Ta ett djupt andetag",
-      "desc": "En dagbok i fickformat där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom i förebyggande syfte",
+      "desc": "En digital dagbok där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom.",
       "metaDesc": "AntiStress, en fickdagbok för iOS och Android för att logga stressnivåer och lyssna på meditativa ljudspår för att minska stress.",
       "client": "Västra Götalandsregionen",
       "imageAlt": "AntiStress app",
@@ -220,7 +220,7 @@
       "name": "Retts Plus",
       "title": "",
       "subtitle": "Säkra medicinska beslut",
-      "desc": "En tjänst som räddar liv genom att stödja vårdpersonal i triage-processen och ett ovärderligt verktyg vid medicinsk akut bedömning.",
+      "desc": "En tjänst som räddar liv genom att stödja personal i triage-processen. Ett ovärderligt verktyg vid medicinsk akut bedömning.",
       "metaDesc": "Retts Plus, UX och UI-design för en iOS-app som stöder akutpersonal vid kritiska beslut under medicinska nödsituationer",
       "client": "Predicare",
       "efficiencyTitle": "En mer effektiv vårdprocess",
@@ -282,7 +282,7 @@
     },
     "sleep-cycle-dashboard": {
       "title": "",
-      "desc": "Här sammanställer vi hur världens befolknings sömnmönster ser ut år Sleep Cycle. Baserad på Big Data sammanställs resultat av alla som använder appen i realtid.",
+      "desc": "Visualisering av världens befolknings sömnmönster. Sammanställs baserad på Big Data av alla som använder appen i realtid.",
       "client": "Sleep Cycle"
     },
     "folklore-company": {
@@ -290,7 +290,7 @@
     },
     "wya-network": {
       "title": "",
-      "desc": "Här möts Hollywoods fashion community, där Bea Åkerlund tagit täten i framtagandet av en app som stimulerar och underlättar samarbeten inom modebranchen.",
+      "desc": "Här möts Hollywoods fashion community, med Bea Åkerlund i täten. En app som stimulerar och underlättar samarbeten inom modebranchen.",
       "client": "WHOYOUARE LLC"
     },
     "paperquiz": {
