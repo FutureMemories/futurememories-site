@@ -264,7 +264,7 @@
       "title": "",
       "subtitle": "Making training easy!",
       "desc": "A total overhaul on all digital touch points. Built from the ground up.",
-      "type": "Service Design, UX, UI, React, iOS, Android, AWS, Health Tech",
+      "type": "UX, UI, React, iOS, Android, AWS, Health Tech",
       "style": [
         {
           "color": "#ffffff",
@@ -309,7 +309,7 @@
       "desc": "Gamification-based online training platform. Turns worldwide retailers into Bauer hockey gear experts.",
       "metaDesc": "Bauer University, a gamification-based online training platform written in React and Python leveraging Django and GraphQL.",
       "client": "Bauer, Bond Communications",
-      "type": "React, Python, Django, GraphQL, UX, Retail Tech",
+      "type": "React, Python, Django, UX, Retail Tech",
       "style": [
         {
           "color": "#ffffff",
@@ -504,7 +504,7 @@
       ],
       "title": "",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day.",
-      "type": "Service Design, UX, UI, React, Python, Django, Food Tech",
+      "type": "UX, UI, React, Python, Django, Food Tech",
       "style": [
         {
           "color": "#FFFFFF",
@@ -647,7 +647,7 @@
       "title": "",
       "desc": "Get insights about sleep habits on a global scale. Based on Big Data and delivered in real-time in an event-driven manner.",
       "client": "Sleep Cycle",
-      "type": "UX, UI, Scala, Reactive Streams, Google Cloud",
+      "type": "UX, UI, Scala, Google Cloud",
       "style": [
         {
           "color": "#FFFFFF",
