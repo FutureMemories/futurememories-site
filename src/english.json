@@ -711,12 +711,13 @@
           "background": "#E9E7DB"
         },
         {
-          "background": "#E9E7DB04"
+          "background": "rgba(233, 231, 219, 0.4)"
         },
         {
-          "height": "50%",
-          "margin-top": "auto",
-          "margin-left": "calc(100% - 43rem)"
+          "height": "65%",
+          "position": "absolute",
+          "bottom": "0",
+          "left": "10%"
         }
       ],
       "appLink": "https://itunes.apple.com/se/app/paper-quiz-klurig-fr%C3%A5gesport/id1447129683"
