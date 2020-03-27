@@ -570,8 +570,7 @@
           "position": "absolute",
           "left": "15%",
           "bottom": "0",
-          "transform": "scale(0.6)",
-          "transform-origin": "bottom left"
+          "height": "65%"
         }
       ],
       "showcase": true,
@@ -691,7 +690,7 @@
           "background": "#000000"
         },
         {
-          "background": "#00000004"
+          "background": "rgba(0, 0, 0, 0.4)"
         },
         {
           "height": "50%",
@@ -712,12 +711,13 @@
           "background": "#E9E7DB"
         },
         {
-          "background": "#E9E7DB04"
+          "background": "rgba(233, 231, 219, 0.4)"
         },
         {
-          "height": "50%",
-          "margin-top": "auto",
-          "margin-left": "calc(100% - 43rem)"
+          "height": "65%",
+          "position": "absolute",
+          "bottom": "0",
+          "left": "10%"
         }
       ],
       "appLink": "https://itunes.apple.com/se/app/paper-quiz-klurig-fr%C3%A5gesport/id1447129683"
@@ -816,12 +816,13 @@
           "background": "#2765CB"
         },
         {
-          "background": "#2765CB04"
+          "background": "rgba(39, 101, 203, 0.5)"
         },
         {
-          "height": "50%",
-          "margin-top": "auto",
-          "margin-left": "calc(100% - 43rem)"
+          "position": "absolute",
+          "height": "70%",
+          "left": "10%",
+          "bottom": "0"
         }
       ],
       "appLink": "https://itunes.apple.com/se/app/travelmate/id503869301?mt=8"

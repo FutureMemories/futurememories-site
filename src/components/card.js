@@ -4,7 +4,6 @@ import s from './card.sass'
 import getLanguageLink from '../utils/getLanguageLink'
 
 export default class extends Component {
-
   render ({ id, customClass, customStyle, children, to, transition, newTab }, state) {
     const CurrentTag = to ? 'a' : 'div'
 
