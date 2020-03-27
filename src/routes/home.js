@@ -49,9 +49,9 @@ export default class extends Component {
   onScroll = () => {
     this.scrollPoint = window.pageYOffset + (window.innerHeight / 1.4)
 
-    if (window.pageYOffset < (this.heroText.base.offsetTop + this.heroText.base.offsetHeight)) {
-      this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
-    }
+    // if (window.pageYOffset < (this.heroText.base.offsetTop + this.heroText.base.offsetHeight)) {
+    //   this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
+    // }
 
     // Parallax effect on 'Our work' block
     const planetWorkScroll = (this.scrollPoint - (this.homeWorkBlock.offsetTop * 1.3))

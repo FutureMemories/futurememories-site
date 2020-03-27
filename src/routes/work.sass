@@ -17,19 +17,20 @@
     > .welcome
       align-items: center
       display: flex
-      height: #{'max(60vh, 100vh - 30rem)'}
-      min-height: 50rem
+      height: #{'max(50vh, 100vh - 40rem)'}
+      min-height: 45rem
       margin-top: -19rem
       position: relative
 
       > h1
         font-weight: bold
         margin-left: 5rem
+        margin-top: 10rem
         max-width: 84rem
         position: relative
         z-index: 1
-        opacity: 0
-        animation: slideInLeft 0.3s, fadeIn 0.3s forwards
+        // opacity: 0
+        // animation: slideInLeft 0.3s, fadeIn 0.3s forwards
 
         > span
           color: $color-red
@@ -44,16 +45,19 @@
       display: flex
       flex-direction: column
 
-      @media screen and (min-width: 1001px)
+      @media screen and (min-width: 1024px)
         flex-direction: row
         align-items: flex-end
 
       .text
         margin: 0 0 5rem 0
-        width: 38rem
+        width: 30rem
 
-        @media screen and (min-width: 1001px)
+        @media screen and (min-width: 1024px)
           margin: 0 0 0 5rem
+
+        @media screen and (min-width: 1025px)
+           width: 38rem
 
         > h1
           color: $color-red
@@ -66,7 +70,7 @@
           max-width: 37.7rem
 
       .filterBlock
-        @media screen and (min-width: 1001px)
+        @media screen and (min-width: 1024px)
           margin: 0 0 0 5rem
 
     > .projects
