@@ -158,7 +158,7 @@
       > .button
         left: calc(100% - 5rem)
         position: relative
-        top: 2rem
+        top: 4rem
         transform: translateX(-100%)
         background: #A1112A
 
@@ -228,8 +228,9 @@
           bottom: -20rem
           transform: scale(0.6) rotate(-40deg)
 
-      > .work > .button
-        left: 100%
+      > .work .button
+        left: 50%
+        transform: translateX(-50%)
 
     @media screen and (max-width: 1000px)
       > .welcome > h1
@@ -252,9 +253,6 @@
           > p
             font-size: 4.5rem
             line-height: 6rem
-
-      > .work > .button
-        left: 100%
 
   $steps: 20
   @keyframes glitch
