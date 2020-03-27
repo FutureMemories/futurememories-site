@@ -9,11 +9,15 @@ export default ({ id, ...props }) => {
 
     case 'arrow':
       return (
-        <svg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 17' {...props}>
-          <g stroke='currentColor' fill='none' fill-rule='evenodd'>
-            <path d='M28.778 16.767l7.778-7.779-7.778-7.778' />
-            <path d='M35.5 9H1' stroke-linecap='square' />
-          </g>
+        <svg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 67 17' {...props}>
+          <path d='M.532 7.163v2h62l-5.5 5.5 1.42 1.42 7.92-7.92-7.92-7.92-1.42 1.42 5.5 5.5h-62z' fill='currentColor' />
+        </svg>
+      )
+
+    case 'smallArrow':
+      return (
+        <svg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 37 17' {...props}>
+          <path d='M.532 7.163v2h32l-5.5 5.5 1.42 1.42 7.92-7.92-7.92-7.92-1.42 1.42 5.5 5.5h-32z' fill='currentColor' />
         </svg>
       )
 

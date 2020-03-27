@@ -1,54 +1,39 @@
 import cx from 'classnames'
 import Icon from './icon'
-import { company } from '../data.json'
 import s from './footer.sass'
+import getLanguageLink from '../utils/getLanguageLink'
 
-export default ({ dark, background, links }) => (
-  <footer class={cx(s.footer, dark && s.dark)} style={{ background }}>
+export default ({ company, light, background, links, content }) => (
+  <footer class={cx(s.footer, light && s.light)} style={{ background }}>
     <div class={s.inner}>
-
-      <div class={s.first}>
-        <div class={s.talkToUs}>
-          <h2>Got something on your mind?</h2>
-          <a href={`mailto:${company.email}`}>Get in touch with us!</a>
-        </div>
-
-        <div />
+      <div class={s.row}>
+        <a href={getLanguageLink('/')} title='Home' class={s.logo}>
+          <Icon id='logo' />
+        </a>
 
         <div class={s.menu}>
           {links.map(link => (
-            <a key={'footer_' + link.to} href={link.to}>{link.label}</a>
+            <a key={'footer_' + link.to} href={getLanguageLink(link.to)}>{link.label}</a>
           ))}
-          <a href='https://goo.gl/maps/rWZkuD1fT8J2' target='_blank' rel='noopener noreferrer'>Find us</a>
         </div>
 
-        <div class={s.contact}>
-          <p>{company.name}</p>
-          <p>{company.street}</p>
-          <p>{company.zip}, {company.city}</p>
-
-          <p>Business enquiries</p>
-          <a href={`mailto:${company.email}`}>{company.email}</a>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class={s.second}>
-        <a href='/' title='Home'><Icon id='logo' class={s.logo} /></a>
         <div class={s.social}>
-          <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/futurememoriesab/' aria-label='Futurememories on Facebook'>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/futurememoriesab/' aria-label={content.onFacebook}>
             <Icon id='facebook' />
           </a>
-          <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/futurememoriesab/' aria-label='Futurememories on Instagram'>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/futurememoriesab/' aria-label={content.onInstagram}>
             <Icon id='instagram' />
           </a>
-          <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/company/5100963/' aria-label='Futurememories on Linkedin'>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/company/5100963/' aria-label={content.onLinkedIn}>
             <Icon id='linkedin' />
           </a>
         </div>
       </div>
 
+      <p class={s.contact}>
+        <span class={s.name}>{company.name}.</span>{' '}
+        {company.street} - {company.zip}, {company.city}
+      </p>
     </div>
   </footer>
 )

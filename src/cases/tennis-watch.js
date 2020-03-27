@@ -8,6 +8,7 @@ import LargeImage from './components/large-image'
 import SlideInBlock from './components/slide-in-block'
 import ProjectsBlock from './components/projects-block'
 import CenterBlock from './components/center-block'
+import ContactBlock from '../components/contact-block'
 
 const badges = [{
   img: 'tennis-watch-badge-best-new-app.svg',
@@ -41,15 +42,17 @@ export default class extends Component {
     inView(`.${inViewClasses}`).off('enter')
   }
 
-  render () {
+  render ({ data, root }) {
+    const content = data.allCases.find(c => c.id === 'tennis-watch')
+
     return (
-      <Base route='/cases/tennis-watch'>
+      <Base route='/cases/tennis-watch' data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='TENNIS WATCH'
-              subtitle='Grand slam'
+              title={content.name.toUpperCase()}
+              subtitle={content.subtitle}
             />
 
             <LargeImage
@@ -72,16 +75,16 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title='First in the game'
-              text='Tennis Watch was the first tennis app designed for Apple Watch. It turns your Apple Watch into a simple and easy-to-use score tracking device. All matches are stored on your iPhone and sophisticated statistics give you insights on how to improve your game.'
+              title={content.firstInGameTitle}
+              text={content.firstInGameText}
               background='#161D2B'
               color='#fff'
             />
 
             <SlideInBlock
               inView='inViewLeft'
-              title={'Match trends and\nperformance statistics'}
-              text='Keep track of your progress with statistics and match trend trackning to improve your game. It’s all about winning right?'
+              title={content.matchTrendsTitle}
+              text={content.matchTrendsText}
               image={{ path: 'cases/tennis-watch-1.png', width: 427, height: 703, positon: 'inside' }}
               alt='Tennis Watch (phone and watch mockup)'
               background='#0C0F16'
@@ -91,8 +94,8 @@ export default class extends Component {
 
             <SlideInBlock
               inView='inViewRight'
-              title={'Tennis score tracker and\nstatistics for Apple Watch'}
-              text='Keeping track of your matches and opponents. Designed for any scoring method.'
+              title={content.tennisScoreTitle}
+              text={content.tennisScoreText}
               image={{ path: 'cases/tennis-watch-2.png', width: 243, height: 438, positon: 'inside' }}
               alt='Tennis Watch (watch mockup)'
               background='#0C0F16'
@@ -102,13 +105,21 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title='Match point.'
+              title={content.matchPoint}
               src='cases/tennis-watch-3.jpg'
               alt='tennis match game'
               color='#fff'
             />
 
+            <ContactBlock
+              content={data.content.contactBlock}
+              dark
+            />
+
             <ProjectsBlock
+              {...data.projectsBlock}
+              allCases={data.allCases}
+              defaultOtherCases={data.defaultOtherCases}
               background='#0C0F16'
               current='tennis-watch'
               similar={['stc', 'proflight', 'picular']}

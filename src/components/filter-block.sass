@@ -1,0 +1,62 @@
+@import '../settings'
+
+.block
+  font-size: 1.8rem
+  line-height: 2.5rem
+  max-width: 75rem
+  display: grid
+  grid-gap: 2.5rem
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr))
+
+
+  @media screen and (min-width: 1024px)
+    grid-template-columns: repeat(4, 1fr)
+
+  @media screen and (min-width: 1100px)
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr))
+
+  a
+    color: white
+
+    &.active
+      color: $color-red
+      text-decoration: underline
+
+  .filter, .chevron
+    display: none
+
+  @media screen and (max-width: 470px)
+    display: flex
+    cursor: pointer
+
+    &.open
+      flex-direction: column
+
+      a:not(:last-child)
+        margin-bottom: 1rem
+
+      .filter
+        margin-bottom: 3rem
+
+    &:not(.open)
+      .chevron
+        display: inline-block
+
+      a
+        pointer-events: none
+
+      a:not(.active)
+        display: none
+
+    .filter
+      display: block
+      appearance: none
+      background: transparent
+      border: 0
+      font: inherit
+      color: #8d939e
+      text-align: left
+      margin-right: 1.5rem
+
+    .chevron
+      margin-left: 0.5rem

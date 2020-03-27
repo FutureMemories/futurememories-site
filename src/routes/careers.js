@@ -3,13 +3,13 @@ import Base from '../_base'
 import Moon from '../components/moon'
 import Button from '../components/button'
 import TeamPictures from '../components/team-pictures'
-import { company, careersWorkplaces, careersPositions } from '../data.json'
+import MarkupCustomElement from '../components/markup-custom-element'
 import s from './careers.sass'
 
 export default class extends Component {
   componentDidMount () {
     window.addEventListener('scroll', this.onScroll)
-    this.heroText.style = undefined
+    this.heroText.base.style = undefined
 
     const hash = window.location.hash.substr(1)
     const element = document.getElementById(hash)
@@ -20,8 +20,8 @@ export default class extends Component {
   }
 
   onScroll = () => {
-    if (window.pageYOffset < (this.heroText.offsetTop + this.heroText.offsetHeight)) {
-      this.heroText.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
+    if (window.pageYOffset < (this.heroText.base.offsetTop + this.heroText.base.offsetHeight)) {
+      this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
     }
   }
 
@@ -29,9 +29,9 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render () {
+  render ({ data, root }) {
     return (
-      <Base title='Careers' route='/careers'>
+      <Base title={data.content.careers.title} route='/careers' data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -42,18 +42,21 @@ export default class extends Component {
                 background='blue'
                 customClass={s.moon}
               />
-              <h1 ref={(el) => { this.heroText = el }}>
-                Remember what you did tomorrow?{'\n'}<span>Join</span> our space now
-              </h1>
+              <MarkupCustomElement
+                ref={el => { this.heroText = el }}
+                element='h1'
+                markup={data.content.careers.hero}
+                trim={false}
+              />
             </div>
 
             <div class={s.workplaces}>
               <div class={s.text}>
-                <h1>The modern workspace</h1>
-                <p>Our studio in downtown Gothenburg is the center of Future Memories. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team.</p>
+                <h1>{data.content.careers.modernHeader}</h1>
+                <p>{data.content.careers.modernSubheader}</p>
               </div>
               <div class={s.content}>
-                {careersWorkplaces.map((row, i) => (
+                {Object.values(data.careersWorkplaces).map((row, i) => (
                   <div key={'workplace_' + i} class={s.workplace}>
                     <div class={s.image}>
                       <img alt={`workplace: ${row.label}`} src={require(`../images/${row.image}`)} />
@@ -67,14 +70,14 @@ export default class extends Component {
               </div>
             </div>
 
-            {careersPositions.length > 0 && (
+            {Object.values(data.careersPositions).length > 0 && (
               <div class={s.positions} ref={e => { this.positions = e }}>
                 <div class={s.text}>
-                  <h1>Available positions</h1>
-                  <p>Want to work in a beautiful office? Check. In a great city? Bingo. Don’t like working with assholes? We don’t hire them. Want to eat pancakes in bed? That’s your own business.</p>
+                  <h1>{data.content.careers.availableHeader}</h1>
+                  <p>{data.content.careers.availableSubheader}</p>
                 </div>
                 <div class={s.content}>
-                  {careersPositions.map(row => (
+                  {data.careersPositions.map(row => (
                     <div key={'position_' + row.id} class={s.position}>
                       <div class={s.image}>
                         <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
@@ -85,7 +88,7 @@ export default class extends Component {
                         </div>
                         <p>{row.text}</p>
                         <p class={s.tasks}>{row.tasks}</p>
-                        <Button to={`mailto:${company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
+                        <Button to={`mailto:${data.company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
                       </div>
                     </div>
                   ))}
@@ -93,11 +96,7 @@ export default class extends Component {
               </div>
             )}
 
-            <TeamPictures
-              class={s.team}
-              title='Behind the scenes'
-              text='May we introduce ourselves? A well-attuned group of professionals enjoying working together.'
-            />
+            <TeamPictures class={s.team} {...data.teamPictures} />
 
           </div>
         </div>

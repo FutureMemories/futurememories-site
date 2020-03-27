@@ -4,17 +4,11 @@ import Header from './components/header'
 import Footer from './components/footer'
 import prerenderUrls from '../prerender-urls.json'
 
-const links = [
-  { label: 'Home', to: '/' },
-  { label: 'Our work', to: '/work' },
-  { label: 'The team', to: '/team' },
-  { label: 'Careers', to: '/careers' }
-]
-
 export default class extends Component {
   componentWillMount () {
     let title = 'Future Memories'
-    const routeData = prerenderUrls.find(r => r.url === this.props.route)
+    const route = this.props.root + this.props.route
+    const routeData = prerenderUrls.find(r => r.url === route)
     if (routeData) title = routeData.title
 
     if (typeof document !== 'undefined') {
@@ -30,13 +24,14 @@ export default class extends Component {
     this.setState({ locked: !this.state.locked })
   }
 
-  render ({ children, dark, background, removeFooter, fadeInHeader, firstView, route }) {
+  render ({ root, data, children, dark, background, removeFooter, fadeInHeader, firstView, route }) {
     return (
       <div class={cx('app', this.state.locked && 'locked')}>
         <Header
+          root={root}
           fadeIn={firstView}
           dark={dark}
-          links={links}
+          links={data.links}
           route={route}
           handleLocked={() => this.handleLocked()}
           fadeInHeader={fadeInHeader}
@@ -44,9 +39,11 @@ export default class extends Component {
         {children}
         {!removeFooter && (
           <Footer
-            dark={dark}
+            company={data.company}
+            light={dark}
             background={background}
-            links={links}
+            links={data.links}
+            content={data.content.footer}
           />
         )}
       </div>

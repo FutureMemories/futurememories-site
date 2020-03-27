@@ -5,16 +5,19 @@
   border: 0
   color: #fff
   cursor: pointer
-  font-size: 1.6rem
+  font-size: 1.8rem
   font-weight: bold
-  padding: 3rem 5rem
+  padding: 2.2rem 5rem
   position: relative
   display: inline-flex
   transition: box-shadow 0.2s ease
   overflow: hidden
   justify-content: center
   align-items: center
-  min-height: 8rem
+  min-height: 6rem
+
+  &:not(.fullsize)
+    border-radius: 5.4rem
 
   &.fullsize
     display: flex
@@ -26,6 +29,7 @@
     padding: 4rem
     text-align: left
     width: 100%
+
     @media screen and (max-width: 800px)
       height: auto
 
@@ -33,7 +37,7 @@
       margin-top: 2rem
 
   &.small
-    padding: 1.5rem 2.5rem
+    padding: 1.5rem 3rem
     height: 5rem
     min-height: 5rem
 
@@ -51,14 +55,28 @@
   > span
     margin-right: 2rem
     display: inline-block
+    line-height: 1
 
   > .arrow
-    left: 0
-    position: relative
-    top: 0.2rem
-    min-width: 3.6rem
-    width: 3.6rem
-    transition: margin 0.2s ease
+    &.buttonArrow
+      position: relative
+      top: .1rem
+      width: 3.6rem
+      height: 1.6rem
+      margin-right: -2rem
+      overflow: hidden
+
+      svg
+        position: absolute
+        height: 100%
+        left: 0
+
+        @media screen and (min-width: 1025px)
+          transform: translateX(-2rem)
+          transition: transform .3s ease
+
+    &.fullsize
+      width: 6.7rem
 
   &.loading
     > span
@@ -91,23 +109,24 @@
     &:hover
       box-shadow: none
 
+  &.reverse
+    flex-direction: row-reverse
+
+    > .label
+      transform: translateX(20px)
+      margin-left: 1rem
+
+    > .arrow
+      transform: rotate(180deg)
+      margin-left: -2rem
+
   // Transitions
-  &.move
-    > span, > .arrow
-      position: relative
-      transition: transform 0.2s ease-in-out
-
-    &:hover
-
-      > span, > .arrow
-        transform: translateX(20px)
-
   &.slideArrow
     > .arrow
       &.first
         opacity: 0
         position: absolute
-        top: calc(100% - 7.4rem)
+        top: calc(100% - 7.7rem)
         left: 4rem
         transform: translateX(-40px)
         transition: transform 0.15s ease-in-out, opacity 0.25s ease
@@ -130,70 +149,10 @@
           transition-delay: 0s
 
   &.slide
-    &.small:hover
-      > .arrow.first
-        transform: translateX(25px)
-
-    > span
-      transition: transform 0.15s ease-in-out
-      transition-delay: 0s
-
-    > .arrow
-
-      &.first
-        opacity: 0
-        top: calc(50% - 0.7rem)
-        left: 0
-        transform: translateX(-35px)
-        position: absolute
-        transition: transform 0.15s ease-in-out, opacity 0.25s ease
-        transition-delay: 0s
-
-      &.second
-        transition: transform 0.15s ease-in-out, opacity 0.25s ease
-
     &:hover
-      > .label
-        transition-delay: 0.15s
-        transform: translateX(55px)
-
-      > .arrow.first
-        transition-delay: 0.15s
-        transform: translateX(50px)
-        opacity: 1
-
-      > .arrow.second
-        opacity: 0
-        transform: translateX(40px)
-
-  &.reverse
-    flex-direction: row-reverse
-
-    > .label
-      transform: translateX(20px)
-
-    > .arrow
-
-      &.first
-        transform: scale(-1) translateX(-35px)
-        left: auto
-        right: 0
-
-      &.second
-        transform: scale(-1)
-
-    &:hover
-
-      > .label
-        transform: translateX(-40px)
-
-      > .arrow
-
-        &.first
-          transform: scale(-1) translateX(25px) !important
-
-        &.second
-          transform: scale(-1) translateX(25px) !important
+      .arrow
+        svg
+          transform: translateX(0)
 
 @keyframes loader
   from

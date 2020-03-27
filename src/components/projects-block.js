@@ -2,10 +2,10 @@ import Icon from './icon'
 import Button from './button'
 import Card from './card'
 import cx from 'classnames'
-import { allCases } from '../data.json'
 import s from './projects-block.sass'
 
-export default ({ allProjects, projects, page, customClass, limit, currentBrowseCase }) => {
+// baseKey is used for reanimating on rerender
+export default ({ allCases, allProjects, projects, page, firstView, customClass, limit, currentBrowseCase, baseKey = '', animateInBlocks, ...props }) => {
   const projectsArray = []
 
   if (!allProjects) {
@@ -20,15 +20,19 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
   const projectsData = allProjects || projectsArray
 
   return (
-    <div class={cx(s.projects, page === 'front' && s.homeProjects, customClass && customClass, currentBrowseCase && s.browseCase)}>
-
-      {page === 'front' && (
-        <div class={cx(s.project, s.hide)} />
-      )}
+    <div class={cx(
+      s.projects,
+      page === 'front' && s.homeProjects,
+      s['amount' + projectsData.length],
+      customClass && customClass,
+      currentBrowseCase && s.browseCase,
+      firstView && s.firstView
+    )}
+    >
       {
         projectsData.map((project, i) => {
           let style = ''
-          let detailsStyle = ''
+          let overlayStyle = ''
           let imageStyle = ''
 
           if (project.style) {
@@ -40,7 +44,7 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
 
             for (const p in project.style[1]) {
               if ({}.hasOwnProperty.call(project.style[1], p) && project.style[1][p] !== undefined) {
-                detailsStyle += ` ${p}: ${project.style[1][p]};`
+                overlayStyle += ` ${p}: ${project.style[1][p]};`
               }
             }
 
@@ -63,50 +67,55 @@ export default ({ allProjects, projects, page, customClass, limit, currentBrowse
                 />
               </div>
             ) : (
-              <Card id={project.id} transition='viewCase' customClass={s.project} customStyle={style} to={linkTo} newTab={(project.link || project.appLink) && true}>
+              <Card
+                key={baseKey + project.id}
+                id={project.id}
+                transition='viewCase'
+                customClass={cx(s.project, animateInBlocks && s.animateIn)}
+                customStyle={style}
+                to={linkTo}
+                newTab={(project.link || project.appLink) && true}
+              >
+                <div class={s.overlay} style={overlayStyle} />
                 <div
                   class={cx(
                     s.slideArrow,
                     s.details,
-                    (project.image || project.layout === 'two') && s.leftAngled,
-                    project.desc.length > 150 && s.small
+                    (project.image || project.layout === 'two') && s.leftAngled
                   )}
-                  style={detailsStyle}
                 >
+                  <p class={s.type}>{project.type.length > 40 ? project.type.slice(0, project.type.substring(0, 40).lastIndexOf(',')) : project.type}</p>
                   <h3>{project.name}</h3>
                   <p class={s.desc}>{project.desc}</p>
-                  <p class={s.type}>{project.type}</p>
                   {project.showcase && !project.link && (
                     <div class='slideArrow'>
-                      <Icon id='arrow' class={cx(s.arrow, s.first)} />
-                      <span>View Case</span>
-                      <Icon id='arrow' class={cx(s.arrow, s.second)} />
+                      <span>{props.viewCase}</span>
+                      <Icon id='arrow' class={s.arrow} />
                     </div>
                   )}
                   {!project.showcase && project.link && (
                     <div class='slideArrow'>
-                      <Icon id='arrow' class={cx(s.arrow, s.first)} />
-                      <span>Visit Site</span>
-                      <Icon id='arrow' class={cx(s.arrow, s.second)} />
+                      <span>{props.visitSite}</span>
+                      <Icon id='arrow' class={s.arrow} />
                     </div>
                   )}
                   {!project.showcase && project.appLink && (
                     <div class='slideArrow'>
-                      <Icon id='arrow' class={cx(s.arrow, s.first)} />
-                      <span>Get App</span>
-                      <Icon id='arrow' class={cx(s.arrow, s.second)} />
+                      <span>{props.getApp}</span>
+                      <Icon id='arrow' class={s.arrow} />
                     </div>
                   )}
                 </div>
                 {project.image && (
                   <img
+                    class={s.img}
                     alt={project.name} style={imageStyle}
                     src={require(`../images/${project.image}`)}
                   />
                 )}
                 {project.imageBg && (
                   <img
-                    alt={project.name} class={cx(s.background, s[project.imageBg[1]])} style={imageStyle}
+                    alt={project.name} class={cx(s.img, s.background, s[project.imageBg[1]])} style={imageStyle}
                     src={require(`../images/${project.imageBg[0]}`)}
                   />
                 )}

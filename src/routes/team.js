@@ -2,19 +2,19 @@ import { Component } from 'preact'
 import Base from '../_base'
 import TeamBlock from '../components/team-block'
 import Moon from '../components/moon'
-import { astronauts } from '../data.json'
+import MarkupCustomElement from '../components/markup-custom-element'
 import s from './team.sass'
 
 export default class extends Component {
   componentDidMount () {
     window.addEventListener('scroll', this.onScroll)
-    this.heroText.style = undefined
+    this.heroText.base.style = undefined
     this.teamPlanetXL.base.style = undefined
   }
 
   onScroll = () => {
-    if (window.pageYOffset < (this.heroText.offsetTop + (this.heroText.offsetHeight + 500))) {
-      this.heroText.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
+    if (window.pageYOffset < (this.heroText.base.offsetTop + (this.heroText.base.offsetHeight + 500))) {
+      this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
       this.teamPlanetXL.base.style.transform = `scale(2.7) translateY(${(window.pageYOffset / 25).toFixed(1)}px`
     }
   }
@@ -23,9 +23,9 @@ export default class extends Component {
     window.removeEventListener('scroll', this.onScroll)
   }
 
-  render () {
+  render ({ data, root }) {
     return (
-      <Base title='The team' route='/team'>
+      <Base title={data.content.team.title} route='/team' data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -43,17 +43,20 @@ export default class extends Component {
                 background='blue'
                 customClass={s.moonMobile}
               />
-              <h1 ref={(el) => { this.heroText = el }}>
-                <span>We are</span> designers, developers, creators and inventors with different backgrounds and expertise merged into a company called Future Memories.
-              </h1>
+              <MarkupCustomElement
+                ref={el => { this.heroText = el }}
+                element='h1'
+                markup={data.content.team.hero}
+                trim={false}
+              />
             </div>
 
             <div class={s.astronauts}>
               <div class={s.text}>
-                <h1>The team</h1>
-                <p>The whole squad.</p>
+                <h1>{data.content.team.teamHeader}</h1>
+                <p>{data.content.team.teamSubheader}</p>
               </div>
-              <TeamBlock astronauts={astronauts} />
+              <TeamBlock astronauts={data.astronauts} />
             </div>
 
           </div>

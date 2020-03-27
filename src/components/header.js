@@ -1,6 +1,8 @@
 import { Component } from 'preact'
 import cx from 'classnames'
 import Icon from './icon'
+import getLanguageLink from '../utils/getLanguageLink'
+import getCurrentUrlForLanguage from '../utils/getCurrentUrlForLanguage'
 import s from './header.sass'
 
 export default class extends Component {
@@ -21,14 +23,20 @@ export default class extends Component {
     this.navCheck.checked = false
   }
 
-  render ({ dark, links, fadeIn, route }, { disableClick }) {
+  render ({ root, dark, links, fadeIn, route }, { disableClick }) {
     return (
       <header class={cx(s.header, dark && s.dark, fadeIn && s.fadeIn)}>
         <div class={s.inner}>
 
-          <a href='/' title='Home'>
+          <a href={getLanguageLink('/')} title='Home'>
             <Icon id='logo' />
           </a>
+
+          {
+            root === '/sv'
+              ? <a href={getCurrentUrlForLanguage('en')} title='Switch to english' class={s.languageToggle}>En</a>
+              : <a href={getCurrentUrlForLanguage('sv')} title='Byt till svenska' class={s.languageToggle}>Sv</a>
+          }
 
           <input class={s.navCheck} id='nav-check' type='checkbox' ref={(el) => { this.navCheck = el }} />
           <label onClick={this.props.handleLocked} aria-label='Navigation Menu' for='nav-check' class={s.navMenu} />
@@ -44,7 +52,7 @@ export default class extends Component {
                   <a
                     class={route === link.to && s.active}
                     onClick={() => this.closeMenu()}
-                    href={link.to}
+                    href={getLanguageLink(link.to)}
                   >
                     {link.label}
                   </a>

@@ -9,7 +9,8 @@
     "prebuild": "node prebuild.js",
     "serve": "preact build --prerender --template src/template.html && preact serve",
     "dev": "preact watch",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -18,15 +19,19 @@
     "build/*"
   ],
   "devDependencies": {
-    "fs-extra": "^8.1.0",
     "babel-eslint": "^10.0.3",
     "classnames": "^2.2.6",
     "copy-webpack-plugin": "^4.6.0",
     "eslint": "^6.5.1",
     "eslint-config-synacor": "^3.0.5",
+    "fs-extra": "^8.1.0",
     "if-env": "^1.0.4",
+    "jest": "^21.2.1",
+    "memoize-one": "^5.1.1",
+    "merge": "^1.2.1",
     "node-sass": "^4.12.0",
     "preact-cli": "^2.2.1",
+    "preact-markup": "^1.6.0",
     "sass-loader": "^7.3.1",
     "sine-waves": "^0.3.0"
   },

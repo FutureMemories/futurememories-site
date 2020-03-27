@@ -1,6 +1,7 @@
 import Icon from './icon'
 import cx from 'classnames'
 import s from './button.sass'
+import getLanguageLink from '../utils/getLanguageLink'
 
 export default ({
   type = 'button',
@@ -37,14 +38,14 @@ export default ({
       )}
       style={width && `width: ${width}px;`}
       disabled={loading || disabled}
-      href={to}
+      href={getLanguageLink(to)}
       onClick={onClick}
       {...props}
     >
-      {arrow && transition === 'slide' && (<Icon class={cx(s.arrow, s.first)} id='arrow' />)}
+      {/* {arrow && transition === 'slide' && (<Icon class={cx(s.arrow, s.first)} id='arrow' />)} */}
       {label && (<span class={s.label}>{label}</span>)}
-      {arrow && transition === 'slideArrow' && (<Icon class={cx(s.arrow, s.first)} id='arrow' />)}
-      {arrow && (<Icon class={cx(s.arrow, s.second)} id='arrow' />)}
+      {arrow && transition === 'slideArrow' && (<Icon class={cx(s.arrow, s.fullsize, s.first)} id='arrow' />)}
+      {arrow && fullsize ? (<Icon class={cx(s.arrow, s.fullsize, s.second)} id='arrow' />) : arrow && (<div class={cx(s.arrow, s.buttonArrow)}><Icon id='smallArrow' /></div>)}
     </CurrentTag>
   )
 }

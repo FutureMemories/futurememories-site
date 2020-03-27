@@ -10,6 +10,7 @@ import ProjectsBlock from './components/projects-block'
 import CenterBlock from './components/center-block'
 import BookmarkBlock from './components/bookmark-block'
 import ThreeBlock from './components/three-block'
+import ContactBlock from '../components/contact-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -31,34 +32,33 @@ export default class extends Component {
     inView(`.${inViewClasses}`).off('enter')
   }
 
-  render () {
+  render ({ data, root }) {
+    const content = data.allCases.find(c => c.id === 'mat-se')
+
     return (
-      <Base route='/cases/mat-se' dark>
+      <Base route='/cases/mat-se' dark data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
             <HeroHeader
-              title='MAT.SE'
-              subtitle='Fresh food delivered to your door'
+              title={content.name.toUpperCase()}
+              subtitle={content.subtitle}
             />
 
             <LargeImage src='cases/mat-se-1.jpg' alt='Mat.se mockup' />
 
             <CenterBlock
               inView='inViewBottom'
-              title={'Shop online,\ndinner at home'}
-              text={'Mat.se is a Gothenburg-based startup and online grocery shopping service operating in Stockholm, Gothenburg and Malmö. Consumers can shop on the web or in Mat.se\'s apps for iOS and Android and groceries get delivered to your home or workplace.'}
+              title={content.shopOnlineTitle}
+              text={content.shopOnlineText}
               src={{ path: 'cases/mat-se-2.png', align: 'left' }}
               alt='Mat.se truck'
             />
 
             <SlideInBlock
               inView='inViewRight'
-              title='Fast-Moving Consumer Goods'
-              text={[
-                'Mat.se has developed its own logistics and supply chain platform which perfectly adapts to their operations and covers all aspects of their supply chain. The platform supports and tracks everything from purchasing to warehousing to distribution.',
-                'We at Future Memories teamed up with Mat.se to improve and extend their technical platform. The Mat.se backbone is based on Java technologies and leverages message-driven processing for high throughput.'
-              ]}
+              title={content.fastMovingTitle}
+              text={content.fastMovingText}
               image={{ path: 'cases/mat-se-5.svg', width: 824, height: 262, positon: 'inside' }}
               alt='Mat.se storage illustration'
               align='right'
@@ -69,18 +69,14 @@ export default class extends Component {
               inView='inViewBottom'
               blocks={[
                 { type: 'image', image: 'cases/mat-se-6.png', modifier: 'matSeIpad' },
-                { type: 'text', title: 'Filling your grocery bags', text: 'Operations at Mat.se warehouses are highly digitalized. For all their daily routines, warehouse personnel use an iPad app with jacks into the logistics platform.', items: ['Goods arrival', 'Incoming deliveries', 'Inventory control', 'Order picking', 'Shipping preparation'] }
+                { type: 'text', title: content.fillingTitle, text: content.fillingText, items: content.fillingItems }
               ]}
             />
 
             <BookmarkBlock
               inView='inViewLeft'
-              title='Delivered to your doorstep'
-              text={[
-                'Route planning and distribution is part of the logistics platform as well. We redefined the delivery process by developing a new iOS app for truck drivers.',
-                'The app provides drivers with order information and point-to-point navigation between stops.',
-                'Real-time vehicle information is fed back into the logistics platform where supervisors can control all ongoing delivery routes and interact with the drivers. Integrated barcode and QR code scanning in the app or through 3rd party scanners makes the delivery process even faster and more reliable.'
-              ]}
+              title={content.deliveredTitle}
+              text={content.deliveredText}
               image='cases/mat-se-3.png'
               background='#FF6002'
               color='#fff'
@@ -90,13 +86,20 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              title='Seeing the bigger picture.'
-              text='Beside day to day logistics, the platform is even used by managers for strategic purposes. We have developed features on top of the platform to give managers insights in purchasing, sales and delivery performance and other reports which help decision-making executives.'
+              title={content.biggerPictureTitle}
+              text={content.biggerPictureText}
             />
 
             <LargeImage src='cases/mat-se-4.jpg' alt='Mat.se phone mockups' />
 
+            <ContactBlock
+              content={data.content.contactBlock}
+            />
+
             <ProjectsBlock
+              {...data.projectsBlock}
+              allCases={data.allCases}
+              defaultOtherCases={data.defaultOtherCases}
               current='mat-se'
               similar={['stc', 'bauer-university', 'sleepcure']}
             />

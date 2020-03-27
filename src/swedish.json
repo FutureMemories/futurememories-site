@@ -1,0 +1,488 @@
+{
+  "company": {
+    "city": "Göteborg",
+    "partners": {
+      "matse": {
+        "alt": "En modern plattform som samordnar logistik och den essentiella leveranskejdan för mat.se."
+      },
+      "avtech": {
+        "alt": "proFLIGHT är en app för surfplattor som levererar rådande väderförhållanden och vädervarningar rakt in i cockpit för en säkrare, mer hållbar och bekvämare flygning."
+      },
+      "stendahls": {
+        "alt": ""
+      },
+      "axfood": {
+        "alt": ""
+      },
+      "skf": {
+        "alt": ""
+      },
+      "predicare": {
+        "alt": ""
+      },
+      "picadeli": {
+        "alt": "En digital mise en place där sortimentet aldrig tar slut tack vare vårt automatiserade och användarvänliga lagerhållningssystem."
+      },
+      "nelly": {
+        "alt": ""
+      },
+      "stc": {
+        "alt": "Ny webbplats, stc.se, ny app för iOS & Android"
+      },
+      "collector": {
+        "alt": ""
+      },
+      "stenaline": {
+        "alt": ""
+      },
+      "bond": {
+        "alt": ""
+      },
+      "bauer": {
+        "alt": "Vi har skapat ett e-learning verktyg åt Bauer’s säljare världen över för att ge dem mer djupgående förståelse av produkterna samt öka säljkvalitén."
+      },
+      "nordish": {
+        "alt": ""
+      },
+      "sleepcycle": {
+        "alt": ""
+      },
+      "vgr": {
+        "alt": "En dagbok i fickformat där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom i förebyggande syfte."
+      }
+    }
+  },
+  "routes": {
+    "home": {
+      "title": "Future Memories - Digital Design och utveckling i Göteborg",
+      "description": "En utevecklingsstudio med experter inom Service Design, UX Design, UI Design, Apputveckling, Webbutveckling, Backendutveckling och Spelutveckling."
+    },
+    "work": {
+      "title": "Future Memories - Våra tjänster: design, appar, webb, backend, spel",
+      "description": "Future Memories mest märkbara produktioner, alltid levererade med en solid UX och fantastisk UI-design: native och cross-platform mobilappar för iOS och Android, avancerade webbapplikationer byggda i React eller mobilspel i Unity, alltid med stöd från kraftfulla och skalbara molntjänster skrivna i Java, Scala, Kotlin, Python eller Go, företrädesvis distribuerade på AWS eller Google Cloud"
+    },
+    "team": {
+      "title": "Future Memories - Teamet: designers, utvecklare och visionärer",
+      "description": "Future Memories, ett sammansvetsat team av passionerade och erfarna UX-designers, UI-designers, app-utvecklare, frontend-utvecklare och backend-ingenjörer. Alla med samma ambition att bygga enastående digitala produkter för en bättre morgondag."
+    },
+    "careers": {
+      "url": "/careers",
+      "title": "Future Memories - Gå med i vår besättning och var en del av resan",
+      "description": "Vi samlar hela Future Memories-teamet i vår studio i centrala Göteborg. En modern och stimulerande kontorsmiljö där vi skapar morgondagens digitala tjänster tillsammans som ett team. Titta på våra nuvarande jobböppningar och tveka inte att ansöka om ett nytt jobb idag."
+    }
+  },
+  "careersWorkplaces": {
+    "thrill": {
+      "label": "För dig som söker spänningen 🕵️‍",
+      "text": "Vi kompromissar aldrig med kvalitet. Endast det bästa är gott nog. Som anställd får du tillgång till de bästa verktygen för att kunna leverera vad vi som företag vill stå bakom.\n\n Vi tröttnar aldrig på att utforska nya verktyg för att kunna ligga i framkant. Vi vet att nyfikenhet föder kreativitet som resulterar i bra leveranser. Vi slutar aldrig att utforska nya saker. Därför provar vi nya plattformar, ramverk, kod och verktyg hela tiden och vi förväntar oss att du som anställd gör detsamma."
+    },
+    "home": {
+      "label": "Att leva för att jobba eller jobba för att leva? 🏠",
+      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och håller alla informerade. På fredag ​​eftermiddag avrundar vi veckan tillsammans i köket, med lite fredagshäng innan vi loggar ut. \n\n Regelbundna teamluncher håller oss ájour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
+    },
+    "tailored": {
+      "label": "Skräddarsydd för dig, av dig. ✂️",
+      "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företag eller partners. Detta ger dig många nya möjligheter att ge din karriär en rejäl boost på oväntade sätt."
+    }
+  },
+  "careersPositions": {},
+  "allCases": {
+    "stc": {
+      "title": "",
+      "subtitle": "Det skall vara enkelt att träna.",
+      "desc": "En totalrenovering av STCs digitala närvaro i alla led. Byggt för att hålla långt in i framtiden.",
+      "stcTitle": "STC",
+      "stcText": "STC är ett av Sveriges ledande fitnessföretag med över 80 gym och fitnesscenter som täcker hela landet. Företaget sysselsätter cirka 1000 anställda och har haft en stadig tillväxt sedan starten 1998.",
+      "strongerJourneyTitle": "En starkare användarupplevelse",
+      "strongerJourneyText": [
+        "För nya stc.se har vi tagit fram en helt ny design och ett nytt innehållshanteringssystem för att stärka användarupplevelsen på webben. Vi har förenklat check-out stegen för att göra det lättare att köpa rätt medlemskap. Genom att bygga en filtreringsfunktionalitet skapade vi en mer användarvänlig upplevelse genom att bara visa skräddarsydda valmöjligheter som passar användaren på individnivå.",
+        "Resultatet blev en helt ny webbplats som bara använder den senaste tekniken för att skapa en kundupplevelse säkrad för framtiden."
+      ],
+      "newAppTitle": "Ny app, ny design",
+      "newAppText": "Vi har designat och byggt om appen från grunden. Det är nu mer pålitligt med snabbare laddningstider, bättre filtrering med en design som lirar STC:s varumärke.",
+      "nowAvailableTitle": "Ladda ner appen",
+      "nowAvailableText": "Appen gör det enkelt att boka klasser, att få en fullständig översikt över ditt träningsschema och hantera dina kontouppgifter när du är på språng.",
+      "toningUpTitle": "En miljö som ger energi",
+      "toningUpText": [
+        "Vi har förbättrat kundresan genom att ansluta den digitala upplevelsen till den fysiska miljön i gymmen.",
+        "Vårt arbete började med att titta på STCs nya inredningskoncept för att länka den nya digitala miljön med med de fysiska anläggningarna."
+      ],
+      "colourPaletteText": [
+        "Färgpaletten som vi skapade kommer från större och mindre detaljer från STCs verkliga interiör, ett exempel på detta är lamporna vid ingången till ett lokalt gym fick ge färg till Dance & Choreography och färgerna på väggarna gav färg till Core-klasserna."
+      ],
+      "newIconsTitle": "Nya ikoner",
+      "newIconsText": [
+        "För att skapa en mer sammanhängande överblick över STC:s breda utbud av medlemskap erbjuder vi ett antal olika ikoner för att fastställa deras produktsortiment både fysiskt och digitalt. Dessa ikoner kan nu återfinnas genom hela kundresan som stärker varumärkeskännedomen hela vägen från mobilen till löpbandet."
+      ]
+    },
+    "bauer-university": {
+      "title": "",
+      "subtitle": "Kunskap ger ökad försäljning",
+      "desc": "Gamingbaserad onlinekurs som utbildar Bauer säljare globalt till att bli produktexperter genom att ha riktigt kul på vägen.",
+      "metaDesc": "Gamingficationbaserad plattform framtagen i React och Python med Django & GraphQL",
+      "client": "Bauer, Bond Communications",
+      "tabletMockup": "Bauer University app",
+      "knowYourProductsTitle": "Produktkännedom ger starkare försäljning",
+      "knowYourProductsText": "Syftet med Bauer University är att utbilda säljpersonal i Bauers produkter för att kunna erbjuda bättre service och öka kundnöjdheten. Resultatet blev en gamingbaserad utbildningsplattform som ger säljpersonal världen över en förstklassig produktkännedom av Bauers hockeyprodukter - genom att ha riktigt kul på vägen.",
+      "fromRookieTitle": "Från nybörjare till proffs på några klick",
+      "fromRookieText": "Bauer University guidar säljpersonal världen över att bli riktiga säljproffs. E-learningplattformen guidar dig genom produkter och verklighetsbaserade säljscenarios där användaren får tips om hur en optimal försäljning skall gå till i Bauers anda. Spelare kan nå upp till olika nivåer; från nybörjare till proffs. För att behålla sin nivå och kunskap om produktnyheter och säljsstrategier uppmanas man att genomföra spelet flera gånger om året. Användare som uppnått nya nivåer belönas med belöningar och bra erbjudanden..",
+      "uxTitle": "Vårt Dream Team",
+      "uxText": "Våra UX designers, speldesigners och webbutvecklare skapade ett riktigt vinnarlag i framtagandet av produkten. Plattformen är byggd i Python med Open Source ramverk. Användargränssnittet är byggt i React, vilket gör att Bauer University kan accessas av vilken enhet som helst med förstklassig användarupplevelse. Kommunikationen mellan backend och frontend sker med vår egna GraphQL gränssnitt. Dessa komponenter tillsammans med vår gemensamma kunskap skapade en rolig och utbildande spelbaserad plattform för Bauers säljpersonal världen över.",
+      "elearningTitle": "En globalt genomslag",
+      "elearningText": [
+        "Bauer University finns tillgängligt för säljpersonal i 32 länder. Allt innehåll, inklusive videomaterial och quizfrågor finns tillgängliga på 7 olika språk."
+      ],
+      "engagementTitle": "Ett enormt engagemang",
+      "engagementText": [
+        "Bauer University fick ett enormt genomslag redan vid lansering. Det första halvåret som plattformen var uppe hade över 4 000 användare signat upp sig. Deltagarnas resultat steg snabbt upp till proffsnivå och användandet bara ökar.",
+        "Bauer University är ett praktexempel på att gamingbaserade koncept funkar. Att spela sig fram till ett resultat visar att motivationen hålls uppe under hela processen. Över 70% av användarna har idag kommit upp till proffsnivå, vilket är den högsta nivån. Detta innebär att en majoritet av användarna svarat rätt på över 650 produktbaserade frågor och tittat på över 3h produktrelaterat videomaterial."
+      ],
+      "futurememories": "Bauer University är resultatet av ett fantastiskt samarbete mellan våra kreativa partners på The Bond och självklart våra vänner på Bauer. <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. 🖤"
+    },
+    "bandbond": {
+      "title": "",
+      "subtitle": "Allt du älskar med hårdrock och metal - på ett ställe.",
+      "desc": "En community app för rock- och metalvärlden. Här kommer fansen närmre sina favoritband utan onödigt brus.",
+      "heavyTitle": "Tung metal, lätt app.",
+      "heavyText": [
+        "Bandbond är en community-app som tar dig närmre dina favoritband och bandmedlemmar. Med Bandbond får du full tillgång till allt officiellt innehåll från sociala medier som publiceras av dina favoritband. I appen får du också tillgång till special-producerat material för exklusivt för Bandbond-användare.",
+        "I denna appen kan du stagediva in i metalvärlden, utforska nya band och boka din kalender för med kommande konserter och liveevenemang. Ladda ner appen och påbörja din oaändliga  crowd-surf genom musik, fanmaterial och skapa nya kontakter."
+      ],
+      "reenterTitle": "Tillbaka in i ‘the mosh pit’",
+      "reenterText": [
+        "Appen fyller ett enda huvudsyfte; att föra band närmare sina fans igen. Under deras 30 år i musikbranschen utforskade det svenska death metalbandet Dark Tranquility idén om att skapa en egen app för metalvärden.  Efter att ha upplevt ett växande problem med förlorad kontakt med sina fans på grund av dagens sociala kanaler som gör det svårare att nå ut till hela fanbasen. Till skillnad från 90-talets MySpace är nu Facebook, Instagram och Twitter de största och mest utmanande kanalerna att nå ut till hela målgruppen.",
+        "Band som publicerar innehåll på sociala plattformar som Facebook och Instagram kan inte längre helt lita på att de faktiskt visas i deras fans sociala flöde. Bandbond är en gemensam ansträngning för att minska klyftan som uppstått genom att föra band närmare deras fanbase igen."
+      ],
+      "trebleTitle": "Ingen rundgång. Rakt på sak.",
+      "trebleText": [
+        "Eftersom Bandbond skapas av- och för metalvärlden fick projektet en enorm dragkraft redan från starten. Ett stort antal metalband hoppade direkt på rocktåget. Vid den första releasen  av Bandbond i december 2019 hade över 150 av världens största metal- och hårdrockband redan signat upp sina konton.",
+        "Majoriteten av användarna är givetvis fans som vill konsumera innehåll postat av sina favoritband, men huvudsyftet är att att bandmedlemmar skall ha en renodlad kanal, utan onödiga störningsmoment där de kan publicera innehåll direkt till sina äkta målgrupper."
+      ],
+      "futurememories": "Future Memories ligger bakom utvecklingen och underhållet av Bandbonds egna appar för iOS och Android. Att designa och utveckla appen är ett pågående samarbete med våra vänner på <a href='https://www.madinsweden.com/' target='_blank' rel='noopener noreferrer'>Mad in Sweden</a> and <a href='https://bandbond.com/' target='_blank' rel='noopener noreferrer'>Bandbond</a>. Vi rockar helt enkelt."
+    },
+    "picadeli": {
+      "title": "",
+      "desc": "En digital mise en place där sortimentet aldrig tar slut tack vare vårt automatiserade och användarvänliga lagerhållningssystem."
+    },
+    "proflight": {
+      "title": "",
+      "subtitle": "Stöd för piloter i motvind",
+      "desc": "En iPad applikation för passagerarflygets piloter. proFLIGHT levererar rådande väderförhållanden och varningar rakt in i cockpit.",
+      "metaDesc": "proFLIGHT är en app framtagen för piloter som presenterar all nödvändig väderrelaterad information direkt in till cockpit i realtid. I ett rent och tydligt användargränssnitt får piloten tillgång till allt från betydande väderdiagram, SIGMETS och information om stationen till skräddarsytt högupplösta väderförhållanden som turbulens och vindar längs vägen.",
+      "client": "Avtech, Invencon",
+      "flightmodeTitle": "Airplane mode aktiverad",
+      "flightmodeText": "proFLIGHT är en app framtagen för piloter som presenterar all nödvändig väderrelaterad information direkt in till cockpit i realtid. I ett rent och tydligt användargränssnitt får piloten tillgång till allt från betydande väderdiagram, SIGMETS och information om stationen till skräddarsytt högupplösta väderförhållanden som turbulens och vindar längs vägen.",
+      "skyLimitTitle": "Nå nya höjder",
+      "skyLimitText": "proFlight är utvecklad i nära samarbete med professionella flygpiloter för att uppnå ett användarvänligt gränssnitt. Appen ger en klar bild av rådande väderförhållanden och skickar varningar / faror under flygrutten. Kombinationen av synkroniserad horisontell och vertikal vy ökar pilotens medvetenhet om rådande väderförhållanden som underlättar att ta de rätta besluten vid rätt tidpunkt under inflight. Appen är en win-win både ur säkerhet, miljöhänsyn och bekvämlighet för passagerare.",
+      "oneFlightAheadTitle": "En flygning framåt",
+      "oneFlightAheadText": "Genom att kombinera realtidsdata till högupplösta väder- och flygvägsoptimering hjälper appen piloten att fatta beslut om rutter, både innan och under flygning som leder till en säkrare och effektivare flygning"
+    },
+    "job-apply": {
+      "label": "Skapa magi med oss!"
+    },
+    "picular": {
+      "title": "",
+      "subtitle": "Som Google, fast för färger",
+      "desc": "En raketsnabb färggenerator baserad på Googles bildsök",
+      "metaDesc": "Picular, En raketsnabb färggenerator baserad på Googles bildsök, byggd i React",
+      "searchEngineTitle": "En färgglad sökmotor",
+      "searchEngineText": "Picular är en raketsnabb färggenerator som ger dig primärfäger baserad på Googles bildsök. Om du någonsin skulle behöva den perfekta gula hexkoden från en banan är detta verktyget för dig.",
+      "bookmarksTitle": "Moodboards i all ära...",
+      "bookmarksText": "Picular är ett extremt praktiskt färgverktyg som skapar den exakta paletten inspirerad av en viss sinnesstämning, objekt eller plats. Här lämnas allt till kreativiteten.",
+      "correctColorTones": "Korrekta färgtoner",
+      "grabHex": "Kopiera HEX färgkoden",
+      "seeRefImg": "Se referensbilden",
+      "colorToWordsTitle": "Sätt färg på orden",
+      "colorToWordsText": "Picular hjälper designers att enkelt extrahera de mest relevanta färgerna för ett specifikt sammanhang. Tjänsten hjälper till att förstå uppfattningen, psykologin och estetiken för en färgton som kan vara av intresse."
+    },
+    "antistress": {
+      "title": "",
+      "subtitle": "Ta ett djupt andetag",
+      "desc": "En digital dagbok där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom.",
+      "metaDesc": "AntiStress, en fickdagbok för iOS och Android för att logga stressnivåer och lyssna på meditativa ljudspår för att minska stress.",
+      "client": "Västra Götalandsregionen",
+      "imageAlt": "AntiStress app",
+      "speakYourMindTitle": "Tala till ditt inre",
+      "speakYourMindText": "Tillsammans med Västra Götalandsregionen har vi utvecklat en app för iOS och Android vars syfte är att ta ner din stress till en hanterbar nivå. I appen gör du övningar som motverkar stress med hjälp av medveten andning, muskelavslappning och lugnande ljud. I AntiStress kan du föra dagbok för att se hur du mår över tid samt om din stress har lindrats med hjälp av övningarna.",
+      "stressTitle": "Äg stressen, innan den äger dig.",
+      "stressText": [
+        "Var femte kvinna i Västra Götalandsregionen har kontaktat primärvården på grund av stressrelaterad psykisk sjukdom och antalet ökar stadigt. 21,1 procent av kvinnorna sökte hjälp 2016, vilket kan jämföras med 20 procent 2015.",
+        "För att möta den stora gruppen som drabbas av stressrelaterad psykisk sjukdom behövs utveckling av nya innovativa metoder. Appens gränssnitt är designad med lugnande färger i åtanke och ett färgspektra som illustrerar balansen mellan känslor. Självklart tar du dig igenom övningarna i din egen takt."
+      ],
+      "exerciseTitle": "Att öva på avslappning och medveten andning gör dig bättre utrustad när stressen tar över och hjälper dig att förebygga att det händer igen.",
+      "exerciseAlt": "AntiStress gradient background"
+    },
+    "nordish-market": {
+      "title": "",
+      "desc": "En digital food court som levererar hållbar mat med närodlade råvaror för företag och privatpersoner."
+    },
+    "retts-plus": {
+      "name": "Retts Plus",
+      "title": "",
+      "subtitle": "Säkra medicinska beslut",
+      "desc": "En tjänst som räddar liv genom att stödja personal i triage-processen. Ett ovärderligt verktyg vid medicinsk akut bedömning.",
+      "metaDesc": "Retts Plus, UX och UI-design för en iOS-app som stöder akutpersonal vid kritiska beslut under medicinska nödsituationer",
+      "client": "Predicare",
+      "efficiencyTitle": "En mer effektiv vårdprocess",
+      "efficiencyText": "Predicare tillhandahåller digitala system till 95% av akutvården i Sverige vid namn RETTS, ett system som algoritmiskt klassificerar en patients tillstånd beroende på svårighetsgraden av symtom, och föreslår nästa handlingssätt.",
+      "efficiencyContent": [
+        "RETTS (Rapid Emergency Triage and Treatment System), fungerar genom att mäta och utvärdera ett antal viktiga parametrar vid den första undersökningen, samt genom att samla in en strukturerad och standardiserad medicinsk bakgrund beträffande orsaken till besöket och patientens aktuella symtom.",
+        "Baserat på en grundlig användarforskningsfas skapade vi ett digitalt användargränssnitt som utnyttjade hela RETTS-kapaciteten. Vi utvecklade också en tidslinje som loggar alla interaktioner med varje patient för att ge en tydligare överblick över patientens hela vårdvistelse.",
+        "RETTSplus nominerades till Design S, Sveriges största och mest omfattande designpris, med stöd från designindustrin. Priset riktar sig till professionella designers, arkitekter, enskilda specialister, producenter och företag som arbetar med design i vid bemärkelse. Vi är väldigt stolta över slutprodukten."
+      ],
+      "clearOverviewTitle": "En livsviktig översikt",
+      "clearOverviewText": "Att ge en läkare eller sjuksköterska en översikt över patientens besök är en viktig funktion för att fatta rätt beslut och ge korrekt vård. Vid rätt tillfälle.",
+      "everyStepTitle": "Med i varje steg på vägen",
+      "everyStepText": "Vi utvecklade en tidslinje som visualiserar patientens vårdprocess, från första kontakten fram till utskrivning. Detta förbättrar förmågan att spåra händelser under patientens besök och gör det möjligt för sjuksköterskor och läkare att fatta rätt beslut under hela sjukhusvistelsen. RETTS Plus nominerades till Design S, Sveriges största och mest omfattande designpris, med stöd från designindustrin. Priset riktar sig till professionella designers, arkitekter, enskilda specialister, producenter och företag som arbetar med design i vid bemärkelse. Vi är väldigt stolta över slutprodukten."
+    },
+    "sleepcure": {
+      "title": "Future Memories: SleepCure, en digital analys- och behandlingsmetod för människor som vill få en bättre sömn.",
+      "subtitle": "Bättre sömn - ett bättre liv",
+      "desc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå",
+      "metaDesc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn, integrerad med iOS HealthKit.",
+      "sleepCoachTitle": "Din digitala sömncoach",
+      "sleepCoachText": "Sömnproblem kan vara komplext. Vad som funkar för en person funkar kanske inte för den andra. SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå. Appen hjälper dig att skapa sunda sömnvanor genom att utvärdera dina dagliga rutiner, klargör dina ohälsosamma vanor som påverkar din sömn och hjälper dig att steg för steg ta dig ur dem.",
+      "researchBasedTitle": "Behandling baserad på forskning",
+      "researchBasedText": "SleepCure är en CE-märkt medicinsk utrustning för icke-farmakologisk behandling av sömnstörningar. Här samlas resultat inom beteendeterapi och sömnforskning när man ger råd om hur du kan förbättra dina sömnmönster.",
+      "mobileAssistantTitle": "Din sömnassistent",
+      "mobileAssistantText": "SleepCure finns som en iPhone-app och kräver bara några minuters uppmärksamhet där du reflekterar över din dag. I gengäld ger appen dig råd om hur du kan anpassa din livsstil för en bättre sömn och livskvalitet, steg för steg.",
+      "byTheWayTitle": "Detta var inget sömnpiller",
+      "byTheWayText": "Future Memories ansvarade för att bygga iOS-appen tillsammans med SleepCure. Vår Lead Mobile-utvecklare ledde och coachade SleepCure-utvecklingsgruppen, hela vägen från första åtagandet till att appen släpptes i App Store. Ett otroligt givande projekt."
+    },
+    "mat-se": {
+      "title": "",
+      "subtitle": "Färsk matlevererans till dörren",
+      "desc": "En modern plattform som samordnar logistik och den essentiella leveranskedjan för mat.se.",
+      "metaDesc": "Mat.se, en livsmedelslogistik- och leveranskedjeplattform skriven i Java och Spring med specialiserade native iOS-appar för leverans och lager.",
+      "client": "Mat.se",
+      "shopOnlineTitle": "Färsk matlevererans till dörren",
+      "shopOnlineText": "Mat.se är en Göteborgsbaserad start- och onlinehandelsservice som verkar i Stockholm, Göteborg och Malmö. Konsumenter kan handla på mat.se eller i appen för iOS och Android där livsmedel levereras till ditt hem eller arbetsplats.",
+      "fastMovingTitle": "Snabba leveranser av färskvaror",
+      "fastMovingText": [
+        "Mat.se har utvecklat en egen logistik- och leveranskedjeplattform som anpassar sig till deras verksamhet och täcker alla aspekter av deras leveranskedja. Plattformen stödjer och spårar allt från köp till lager till distribution.",
+        "Vi på Future Memories samarbetade med Mat.se för att förbättra och utöka deras tekniska plattform. Ryggraden är baserad på Java-teknik och utnyttjar meddelandedriven behandling för en högre leveranskapacitet."
+      ],
+      "fillingTitle": "Så går det till",
+      "fillingText": "Verksamheten på Mat.se’s lager är helt digitaliserad. För alla dagliga rutiner använder lagerpersonalen en iPad-app med direktuttag till logistikplattformen.",
+      "fillingItems": [
+        "Varuankomster",
+        "Inkommande leveranser",
+        "Lagersaldo",
+        "Orderplockning",
+        "Leveransförberedelse"
+      ],
+      "deliveredTitle": "Mat hem till dörren",
+      "deliveredText": [
+        "Ruttplanering och distribution är också en stor del av processen. Vi omdefinierade leveransprocessen genom att utveckla en ny iOS-app för lastbilsförare.",
+        "Appen ger förare beställningsinformation och punkt-till-punkt-navigering mellan leveransstoppen, vilket effektiviserar både leveranstid och bränsleförbrukning.",
+        "Information om fordon i realtid matas tillbaka till logistikplattformen där handledare kan kontrollera alla pågående leveransvägar och interagera med förarna. Integrerad streckkods- och QR-kodscanning i appen eller genom tredje parts aktörer gör leveransprocessen ännu snabbare och mer pålitlig."
+      ],
+      "biggerPictureTitle": "En helhetsbild även för verksamheten",
+      "biggerPictureText": "Förutom den dagliga logistiken används plattformen till och med av chefer för strategiska ändamål. Vi har utvecklat funktioner ovanpå plattformen för att ge chefer insikter i inköp, försäljning och leveransprestanda och andra rapporter som hjälper beslutsfattare i det dagliga arbetet."
+    },
+    "sleep-cycle-dashboard": {
+      "title": "",
+      "desc": "Visualisering av världens befolknings sömnmönster. Sammanställs baserad på Big Data av alla som använder appen i realtid.",
+      "client": "Sleep Cycle"
+    },
+    "folklore-company": {
+      "desc": "Beställ ditt egna sykit eller ett personligt broderi. Siten där tech möter tradition."
+    },
+    "wya-network": {
+      "title": "",
+      "desc": "Här möts Hollywoods fashion community, med Bea Åkerlund i täten. En app som stimulerar och underlättar samarbeten inom modebranchen.",
+      "client": "WHOYOUARE LLC"
+    },
+    "paperquiz": {
+      "image": "cases/paperquiz.png",
+      "title": "",
+      "desc": "En frågesport om relativitet. Varje fråga handlar om sortering enligt en parameter. Den som kommer närmast rätt ordning vinner."
+    },
+    "tennis-watch": {
+      "title": "",
+      "subtitle": "Grand slam",
+      "desc": "Den första Tennis appen som någonsin skapats för Apple Watch. Appen gör din klocka till en poängsamlare i realtid under matchens gång.",
+      "metaDesc": "Tennis Watch var den första tennis-appen designad för Apple Watch. Det förvandlar din Apple Watch till en enkel och lättanvänd poängspårningsenhet. Alla matchningar lagras på din iPhone och ger sofistikerad statistik och insikt om hur du kan förbättra ditt spel.",
+      "firstInGameTitle": "Kom in i matchen!",
+      "firstInGameText": "Tennis Watch var den första tennis-appen designad för Apple Watch. Det förvandlar din Apple Watch till en enkel och lättanvänd poängspårningsenhet. Alla matchningar lagras på din iPhone och ger sofistikerad statistik och insikt i hur du kan förbättra ditt spel.",
+      "matchTrendsTitle": "Match trender och prestationsstatistik",
+      "matchTrendsText": "Håll koll på dina framsteg med statistik och matcha trendspårning för att förbättra ditt spel. Allt handlar ju om att vinna, eller hur?",
+      "tennisScoreTitle": "Statistik för Apple Watch",
+      "tennisScoreText": "Håll reda på dina matcher och motståndare. Utformad för alla poängmetoder.",
+      "matchPoint": "Matchboll."
+    },
+    "paykartan": {
+      "title": "",
+      "subtitle": "Vem behöver en plånbok?",
+      "desc": "Nu kan du äntligen lämna plånboken hemma. Paykartan hjälper dig att hitta alla matställen som tar emot betalningar via mobilen.",
+      "metaDesc": "Paykartan, a digital service highlighting all places in town that accept mobile payments.",
+      "lunchtimeTitle": "Lunchtid och ... #!? @% !! Jag har ju glömt …",
+      "lunchtimeText": "Paykartan.se är en webbapp som visar alla restauranger i närheten där du kan betala med din smartphone. Appen inkluderar Swish, Apple Pay och Beam.",
+      "noWorriesTitle": "No worries",
+      "noWorriesText": "Paykartan är  en perfekta lösningen när du glömmer din plånbok eller om du helt enkelt lämnat den hemma med avsikt. Appen är superlätt att använda, bara släng fram telefonen och följ stegen:",
+      "findTheSpot": "Hitta matställe",
+      "eat": "Ät",
+      "pay": "Betala",
+      "holdingAPhone": "Holding a phone with a Paykartan open",
+      "oneStepAheadTitle": "Ligg steget före",
+      "oneStepAheadText": "Paykartan ger dig en härlig digital buffé av goda och smarta val. Få en översikt över din stad och smaskiga alternativ i närheten av dig.",
+      "oneStepAheadAlt": "Paykartan Screenshoot - gothenburg"
+    },
+    "forces-of-freedom": {
+      "title": "",
+      "desc": "Användargränssnitt för spelet Forces of Freedom. En 5 vs 5 realtids taktiskt combat spel för mobil och platta.",
+      "client": "Koyoki Ltd"
+    },
+    "travelmate": {
+      "title": "",
+      "desc": "Ett resesällskap i din telefon som håller koll på alla dina resedetaljer när du reser med Stena Line."
+    },
+    "spira": {
+      "name": "Spira",
+      "title": "",
+      "desc": "Ett samarbete mellan Collector Bank och Aktieinvest. Spira gör det enkelt att att investera i aktier utan krusiduller.",
+      "client": "Collector Bank, Varvet"
+    }
+  },
+  "notUsedCases": {
+    "nelly-app": {
+      "desc": "En digital shoppingupplevelse för iOS med communityfunktioner för att dela och diskutera senaste modetrender."
+    }
+  },
+  "astronauts": {
+    "andreas": {
+      "title": "Grundare & COO",
+      "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech-lead med över 12 års erfarenhet från IT branschen."
+    },
+    "mikael": {
+      "title": "Partner och CTO",
+      "desc": "Partner och CTO. 20 års erfarenhet av att skapa digital upplevelser. Idag specialiserad på iOS."
+    },
+    "viktor": {
+      "title": "Partner och Lead Web/Unity utvecklare.",
+      "desc": " Erfaren frontend utvecklare med konstnärlig känsla in i fingerspetsarna."
+    },
+    "pontus": {
+      "title": "Digital Designer",
+      "desc": "Digital Designer som skapar framtidens användarupplevelser med användaren i fokus."
+    },
+    "careers": {
+      "label": "Jobba hos oss"
+    },
+    "hannah": {
+      "title": "UX & Service Designer",
+      "desc": "Interaktionsdesigner med bakgrund inom informationssystem. Hannah skapar fantastiska digitala upplevelser som kretsar runt användarens behov."
+    },
+    "erica": {
+      "title": "Webbutvecklare",
+      "desc": "Webbutvecklare med över 5 års erfarenhet. Kan React som ett rinnande vatten."
+    },
+    "pa": {
+      "title": "Grundare och VD.",
+      "desc": "Ledare och UX designer för digitala produkter sedan 1996."
+    },
+    "martin": {
+      "title": "Senior utvecklare",
+      "desc": "Senior utvecklare som har byggt moln-baserade tjänster och plattformar i över åtta år."
+    },
+    "rachael": {
+      "title": "Studio Manager",
+      "desc": "Vår Studio Manager med gedigen bakgrund inom media & kommunikation, content och digital marknadsföring."
+    },
+    "anders": {
+      "title": "Design Director och Partner.",
+      "desc": " Prisbelönad designer med många års erfarenhet av digitala produkter med användbarhet i fokus."
+    },
+    "erik": {
+      "title": "Partner och UX Director.",
+      "desc": " Erik har 10 års erfarenhet av att skräddarsy produkter utifrån idéer  som gör både användare och verksamheter nöjda."
+    },
+    "mattias": {
+      "title": "Webbutvecklare",
+      "desc": "Webbutvecklare och expert på JavaScript. Mattias har Google Web Developer Scholarship i bakfickan."
+    },
+    "donovan": {
+      "title": "Senior Mobilutvecklare",
+      "desc": "Senior Mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
+    },
+    "pontusb": {
+      "title": "Lead Developer",
+      "desc": "Lead Dev. Project Lead med en djup kunskap och bred erfarenhet inom mjukvaruutveckling."
+    },
+    "linda": {
+      "title": "Digital projektledare",
+      "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
+    }
+  },
+  "links": [
+    { "label": "Start", "to": "/" },
+    { "label": "Våra case", "to": "/work" },
+    { "label": "Teamet", "to": "/team" },
+    { "label": "Jobba hos oss", "to": "/careers" }
+  ],
+  "teamPictures": {
+    "title": "Bakom kulisserna",
+    "text": "Vi är ett finslipat team med stor bredd av spetskompetenser inom design, UX, webbutveckling, full stack och mobilutveckling. Vi är alla strategiskt lagda och nöjer oss endast med det bästa.",
+    "label": "Möt teamet",
+    "alt": "Future Memories är ett team med erfarna UX & UI designers, apputvecklare och webbutveckare"
+  },
+  "projectsBlock": {
+    "otherProjects": "Fler projekt",
+    "browseMoreProjects": "Se fler projekt",
+    "viewCase": "Till caset",
+    "visitSite": "Till siten",
+    "getApp": "Ladda ner appen"
+  },
+  "content": {
+    "footer": {
+      "onFacebook": "Future Memories på Facebook",
+      "onInstagram": "Future Memories på Instagram",
+      "onLinkedIn": "Future Memories på LinkedIn"
+    },
+    "home": {
+      "hero": "<span>Future Memories</span> är en digital studio där strategisk design och teknik formar morgondagens digitala tjänster",
+      "ourWorkHeader": "Vad vi gjort",
+      "ourWorkSubheader": "Vi bygger framtidens digitala tjänster som gör livet enklare och skapar mervärde till slutanvändare.",
+      "seeMoreProjects": "Fler projekt"
+    },
+    "contactBlock": {
+      "title": "Gillar du vad du ser och behöver något?",
+      "bookAMeeting": "Boka ett möte",
+      "bookAMeetingHeader": "Boka ett möte med oss 🤘",
+      "fields": {
+        "name": "Ditt namn",
+        "email": "Din email",
+        "telephone": "Ditt telefonnummer",
+        "suggestTime": "Föreslå en tid och dag",
+        "message": "Skriv ditt meddelande här...",
+        "send": "Skicka"
+      },
+      "sending": "Skickar...",
+      "sent": "Skickat! Du kan nu stänga det här fönstret.",
+      "errorSending": "Oj, något gick fel. Var god försök senare."
+    },
+    "work": {
+      "title": "Våra case",
+      "hero": "Vi samarbetar för att skapa exceptionella digitala <span> produkter och tjänster </span> för framtiden",
+      "upToHeader": "Våra case",
+      "upToSubheader": "Ingen utmaning är för stor för oss. Detta är ett urval av vad vi har åstadkommit hittills.",
+      "partnersHeader": "Våra samarbeten",
+      "partnersSubheader": "Säg hej till våra vänner!"
+    },
+    "team": {
+      "title": "Teamet",
+      "hero": "<span>Tillsammans är vi</span> en  grupp designers, utvecklare och innovatörer med olika bakgrunder som skapar en perfekt symbios i framtagandet av framtidens digitala produkter.",
+      "teamHeader": "Detta är Future Memories",
+      "teamSubheader": "Möt teamet"
+    },
+    "careers": {
+      "title": "Jobba hos oss",
+      "hero": "Kommer du ihåg vad du gjorde imorgon? Bli en av oss",
+      "modernHeader": "Här lägger vi gamla tankespår åt sidan",
+      "modernSubheader": "Vår studio ligger i mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor. ",
+      "availableHeader": "Lediga tjänster",
+      "availableSubheader": "Vill du arbeta i ett snyggt kontor med härliga kollegor som verkligen trivs ihop? Gillar du inte att arbeta bland arrogans? Vi anställer bara trevliga människor. Vill du äta pannkakor i sängen? Det är upp till dig."
+    },
+    "visitTheSite": "Till sidan"
+  }
+}
