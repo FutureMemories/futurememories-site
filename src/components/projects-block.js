@@ -84,7 +84,7 @@ export default ({ allCases, allProjects, projects, page, firstView, customClass,
                     (project.image || project.layout === 'two') && s.leftAngled
                   )}
                 >
-                  <p class={s.type}>{project.type}</p>
+                  <p class={s.type}>{project.type.length > 40 ? project.type.slice(0, project.type.substring(0, 40).lastIndexOf(',')) : project.type}</p>
                   <h3>{project.name}</h3>
                   <p class={s.desc}>{project.desc}</p>
                   {project.showcase && !project.link && (
