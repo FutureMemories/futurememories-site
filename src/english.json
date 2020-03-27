@@ -639,7 +639,7 @@
       "biggerPictureText": "Beside day to day logistics, the platform is even used by managers for strategic purposes. We have developed features on top of the platform to give managers insights in purchasing, sales and delivery performance and other reports which help decision-making executives."
     },
     "sleep-cycle-dashboard": {
-      "name": "Sleep Cycle Dashboard",
+      "name": "Sleep Cycle",
       "imageBg": [
         "cases/sleep-cycle-dashboard-bg.jpg",
         "width"
