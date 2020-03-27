@@ -17,7 +17,7 @@
     > .welcome
       align-items: center
       display: flex
-      height: #{'max(75vh, 100vh - 20rem)'}
+      height: #{'max(60vh, 100vh - 30rem)'}
       margin-top: -19rem
       min-height: 50rem
       position: relative
@@ -124,6 +124,19 @@
     > .work
       margin-bottom: 27rem
       position: relative
+
+      &.firstView
+        opacity: 0
+        transform: translateY(-8rem)
+        animation: slideInTop 0.6s ease 2.2s forwards, fadeIn 1s ease 1.7s forwards
+
+        @media screen and (min-width: 801px)
+          transform: translateY(-15rem)
+
+        > .filterBlock
+          opacity: 0
+          transform: translateY(-.8rem)
+          animation: fadeInTop .8s ease 2.6s forwards
 
       > .text
         margin-left: 5rem

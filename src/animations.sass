@@ -16,10 +16,31 @@
   100%
     transform: none
 
+@keyframes slideInTop
+  0%
+    transform: translateY(-8rem)
+  100%
+    transform: none
+
+@media screen and (min-width: 801px)
+  @keyframes slideInTop
+    0%
+      transform: translateY(-15rem)
+    100%
+      transform: none
+
+@keyframes fadeInTop
+  0%
+    transform: translateY(-.8rem)
+    opacity: 0
+  100%
+    transform: none
+    opacity: 1
+
 @keyframes fadeIn
   0%
     opacity: 0
-
   100%
     opacity: 1
+
 

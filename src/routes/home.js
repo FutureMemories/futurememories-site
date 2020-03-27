@@ -29,19 +29,19 @@ export default class extends Component {
     }
 
     // randomize glitch effect, add extra empty block for pauses
-    const foundationPillars = ['strategy', 'design', 'develop']
-    this.randomizer = setInterval(() => {
-      const randomPillar = foundationPillars[Math.floor(Math.random() * foundationPillars.length)]
-      this.setState({
-        // preActivePillar: this.state.activePillar,
-        activePillar: randomPillar
-      })
+    // const foundationPillars = ['strategy', 'design', 'develop']
+    // this.randomizer = setInterval(() => {
+    //   const randomPillar = foundationPillars[Math.floor(Math.random() * foundationPillars.length)]
+    //   this.setState({
+    //     // preActivePillar: this.state.activePillar,
+    //     activePillar: randomPillar
+    //   })
 
-      // Remove old pillar after x milliseconds
-      // setTimeout(() => {
-      //   this.setState({ preActivePillar: [] })
-      // }, Math.floor(Math.random() * 1000))
-    }, Math.floor(Math.random() * 1000) + 1000)
+    //   // Remove old pillar after x milliseconds
+    //   // setTimeout(() => {
+    //   //   this.setState({ preActivePillar: [] })
+    //   // }, Math.floor(Math.random() * 1000))
+    // }, Math.floor(Math.random() * 1000) + 1000)
 
     window.addEventListener('scroll', this.onScroll)
   }
@@ -92,7 +92,7 @@ export default class extends Component {
               />
             </div>
 
-            <div class={s.work} ref={(el) => { this.homeWorkBlock = el }}>
+            <div class={cx(s.work, firstView && s.firstView)} ref={(el) => { this.homeWorkBlock = el }}>
               <Moon
                 size='small'
                 position='bottomLeft'
@@ -107,6 +107,7 @@ export default class extends Component {
                 }))}
                 className={s.filterBlock}
                 page='home'
+
               />
               <ProjectsBlock
                 {...data.projectsBlock}
@@ -115,6 +116,7 @@ export default class extends Component {
                 projects={data.caseCategories[caseCategory || 'featured'].cases}
                 page='front'
                 allCases={data.allCases}
+                firstView={firstView}
               />
               <Button customClass={s.button} to='/work' label={data.content.home.seeMoreProjects} arrow transition='slide' />
             </div>

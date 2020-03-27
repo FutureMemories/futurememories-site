@@ -5,7 +5,7 @@ import cx from 'classnames'
 import s from './projects-block.sass'
 
 // baseKey is used for reanimating on rerender
-export default ({ allCases, allProjects, projects, page, customClass, limit, currentBrowseCase, baseKey = '', animateInBlocks, ...props }) => {
+export default ({ allCases, allProjects, projects, page, firstView, customClass, limit, currentBrowseCase, baseKey = '', animateInBlocks, ...props }) => {
   const projectsArray = []
 
   if (!allProjects) {
@@ -25,8 +25,10 @@ export default ({ allCases, allProjects, projects, page, customClass, limit, cur
       page === 'front' && s.homeProjects,
       s['amount' + projectsData.length],
       customClass && customClass,
-      currentBrowseCase && s.browseCase
-    )}>
+      currentBrowseCase && s.browseCase,
+      firstView && s.firstView
+    )}
+    >
       {
         projectsData.map((project, i) => {
           let style = ''

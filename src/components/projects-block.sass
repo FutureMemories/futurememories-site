@@ -1,4 +1,5 @@
 @import '../settings.sass'
+@import '../animations.sass'
 
 .projects
   display: grid
@@ -17,11 +18,16 @@
     padding: 4rem 4rem 0
     overflow: hidden
 
+    &:hover, &:active
+      .overlay
+        opacity: 1
+
+      .img
+        opacity: 1
+        transition: opacity 0.3s ease 0s
+
     @media screen and (min-width: 801px)
       &:hover
-        .overlay
-          opacity: 1
-
         .details h3
           transform: translateY(-2rem)
 
@@ -29,8 +35,8 @@
           opacity: 0
 
         .img
-          opacity: 1
-          transition: opacity 0.6s ease 0.1s
+          transform: scale3d(1.03, 1.03, 1)
+          transition: opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s
 
     &.animateIn
       animation: animateIn .5s ease forwards
@@ -60,6 +66,8 @@
       max-width: 32rem
       overflow: hidden
       z-index: 2
+      opacity: 0
+      animation: fadeIn 1s forwards
 
       .type
         margin-bottom: 3rem
@@ -87,7 +95,9 @@
       position: relative
       height: 100%
       opacity: 0
+      transform: scale3d(1, 1, 1)
       transition: opacity 0.3s ease 0s
+      transition: opacity 0.3s ease 0s, transform 0.3s ease 0s
 
       &.background
         position: absolute
@@ -113,6 +123,13 @@
       @else
         &:nth-child(#{$i})
           grid-column: span 2
+
+  &.firstView
+    .project
+      @for $i from 1 through 10
+        &:nth-child(#{$i})
+          .details
+            animation-delay: #{($i - 1) * 0.2s + 3.2}
 
   &.browseCase
     > .project
