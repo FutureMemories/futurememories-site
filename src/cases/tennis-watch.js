@@ -53,6 +53,8 @@ export default class extends Component {
             <HeroHeader
               title={content.name.toUpperCase()}
               subtitle={content.subtitle}
+              type={content.type}
+              dark
             />
 
             <LargeImage

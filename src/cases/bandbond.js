@@ -42,6 +42,8 @@ export default class extends Component {
             <HeroHeader
               title={content.name}
               subtitle={content.subtitle}
+              type={content.type}
+              dark
             />
 
             <LargeImage
