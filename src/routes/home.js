@@ -67,11 +67,11 @@ export default class extends Component {
   }
 
   render (
-    { data, firstView, root, caseCategory },
+    { data, firstView, categoryChange, root, caseCategory },
     { lightLeft, lightTop, activePillar, preActivePillar }
   ) {
     return (
-      <Base firstView={firstView} route={'/' + (caseCategory || '')} data={data} root={root}>
+      <Base firstView={firstView} categoryChange={categoryChange} route={'/' + (caseCategory || '')} data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -84,7 +84,7 @@ export default class extends Component {
                 style={{ left: lightLeft, top: lightTop }}
               />
               <MarkupCustomElement
-                class={firstView && s.firstView}
+                class={cx(firstView && s.firstView, categoryChange && s.categoryChange)}
                 ref={el => { this.heroText = el }}
                 element='h1'
                 markup={data.content.home.hero}
