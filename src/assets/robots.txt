@@ -1,1 +1,2 @@
 # Welcome to Future Memories!
+Sitemap: https://www.futurememories.se/sitemap.xml

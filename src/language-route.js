@@ -62,18 +62,23 @@ const travelledInHomeRoutes = (url, prev) => {
 
 export default class extends Component {
   state = {
-    firstView: true
+    firstView: true,
+    categoryChange: false
   }
 
   handleRoute = (ev) => {
     if (this.notOnFirstView) {
       this.setState({ firstView: false })
     }
+
     this.notOnFirstView = true
 
     if (typeof window !== 'undefined') {
       if (!travelledInHomeRoutes(ev.url, ev.previous)) {
+        this.setState({ categoryChange: false })
         window.scrollTo(0, 0)
+      } else {
+        this.setState({ categoryChange: true })
       }
     }
   }
@@ -83,16 +88,16 @@ export default class extends Component {
 
     return (
       <Router onChange={this.handleRoute}>
-        <Home path={root + '/'} firstView={this.state.firstView} data={languageData} root={root} />
+        <Home path={root + '/'} firstView={this.state.firstView} categoryChange={this.state.categoryChange} data={languageData} root={root} />
 
         {Object.keys(data.english.caseCategories).map(key => (
-          <Home path={`${root}/${key}/:subpath?`} firstView={this.state.firstView} data={languageData} root={root} caseCategory={key} key={key} />
+          <Home path={`${root}/${key}/:subpath?`} firstView={this.state.firstView} categoryChange={this.state.categoryChange} data={languageData} root={root} caseCategory={key} key={key} />
         ))}
 
-        <Work path={root + '/work'} data={languageData} root={root} />
+        <Work path={root + '/work'} firstView={this.state.firstView} categoryChange={this.state.categoryChange} data={languageData} root={root} />
 
         {Object.keys(data.english.caseCategories).map(key => (
-          <Work path={`${root}/work/${key}`} data={languageData} root={root} caseCategory={key} key={key} />
+          <Work path={`${root}/work/${key}`} firstView={this.state.firstView} categoryChange={this.state.categoryChange} data={languageData} root={root} caseCategory={key} key={key} />
         ))}
 
         <Team path={root + '/team'} data={languageData} root={root} />
