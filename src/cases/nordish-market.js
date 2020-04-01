@@ -9,6 +9,8 @@ import CenterBlock from './components/center-block'
 import ParallaxBumpBlock from './components/parallax-bump-block'
 import ThreeBlock from './components/three-block'
 import TextBlock from './components/text-block'
+import ContactBlock from '../components/contact-block'
+import ProjectsBlock from './components/projects-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(2) > :first-child`,
@@ -16,7 +18,8 @@ const inViewClasses = [
   `${s.inner} > div:nth-child(4) > div:first-child`,
   `${s.inner} > div:nth-child(5) > div:first-child`,
   `${s.inner} > div:nth-child(6) > div:first-child`,
-  `${s.inner} > div:nth-child(7) > div:first-child`
+  `${s.inner} > div:nth-child(7) > div:first-child`,
+  `${s.inner} > div:nth-child(8) > div:first-child`
 ].join(',.')
 
 export default class extends Component {
@@ -80,7 +83,7 @@ export default class extends Component {
               modifier='nordish-branding'
               blocks={[
                 { type: 'image', image: 'cases/nordish-market-ui-elements.png', modifier: 'nordishImg' },
-                { type: 'text', title: content.brandingTitle, text: content.brandingText, modifier: 'nordishBrandindText' }
+                { type: 'text', title: content.brandingTitle, text: content.brandingText }
               ]}
             />
 
@@ -89,7 +92,7 @@ export default class extends Component {
               background='#F4F8F8'
               modifier='nordish-tech'
               blocks={[
-                { type: 'text', title: content.techTitle, text: content.techText, modifier: 'nordishBrandindText' },
+                { type: 'text', title: content.techTitle, text: content.techText },
                 { type: 'image', image: 'cases/nordish-market-3.png', modifier: 'nordishImg' }
               ]}
             />
@@ -100,6 +103,28 @@ export default class extends Component {
               text={content.outpostText}
               modifier='nordish'
               titleIcon='cases/nordish-title-icon.png'
+            />
+
+            <ThreeBlock
+              inView='inViewBottom'
+              background='#F4F8F8'
+              modifier='nordish-tech'
+              blocks={[
+                { type: 'text', title: content.kitchenTitle, text: content.kitchenText },
+                { type: 'image', image: content.kitchenImage, modifier: 'nordishImg' }
+              ]}
+            />
+
+            <ContactBlock
+              content={data.content.contactBlock}
+            />
+
+            <ProjectsBlock
+              {...data.projectsBlock}
+              allCases={data.allCases}
+              defaultOtherCases={data.defaultOtherCases}
+              current='nordish-market'
+              similar={['mat-se', 'paykartan', 'stc']}
             />
 
           </div>
