@@ -73,5 +73,20 @@
     @media screen and (max-width: 1200px)
       > img
         left: 20%
+
   &.sleepcure
     padding-bottom: 0
+
+  &.nordish
+    background: #F4F8F8
+    padding: 2rem 0
+
+    @media screen and (min-width: $breakpoint-desktop)
+      background: linear-gradient(to top, #F4F8F8, #F4F8F8) no-repeat 0 -25rem
+      padding: 5rem 0
+
+    > img
+      object-position: left
+
+      @media screen and (min-width: $breakpoint-desktop)
+        max-width: $max-width

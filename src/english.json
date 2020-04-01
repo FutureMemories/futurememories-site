@@ -503,8 +503,10 @@
         "width"
       ],
       "title": "",
+      "subtitle": "Food for thought.",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day.",
       "type": "UX, UI, React, Python, Django, Food Tech",
+      "imageAlt": "Nordish Market device mockup",
       "style": [
         {
           "color": "#FFFFFF",
@@ -514,7 +516,15 @@
           "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
-      "link": "https://www.nordishmarket.com/"
+      "link": "https://www.nordishmarket.com/",
+      "healthyFoodTitle": "Hälsosam mat för alla tillfällen",
+      "healthyFoodText": "Nordish Market är en digital food court som erbjuder hållbar och hälsosam mat för leverans. På nordishmarket.com kan företag och privatpersoner lätt beställa frukost, lunch, middag eller en gófika från noga utvalda restauranger som delar samma värderingar: att mat skall vara hållbar och hälsosam. Nordish Markets digitala plattform sköter beställning- och betalningsprocessen och koordinerar utkörning och leverans.",
+      "visitTheSite": "Visit website",
+      "serviceDesignTitle": "Utsökt Service Design. Hållbar kundresa.",
+      "serviceDesignText": [
+        "Restaurangerna i Nordishfamiljen har helt separata erbjudanden med olika processer kring hur och när de tillagar sin mat. På Nordish Market har varje restaurang full kontroll över presentationen av sina maträtter och bestämmer själva hur de komponeras ihop till olika menyer. Restaurangerna styr därmed maträtternas tillgänglighet helt själva, baserat på deras egna förutsättningar.",
+        "Utmaningen för våra Service- och UX Designers var att skapa en sammanhängande användarupplevelse för slutkunden där det enkelt gick att lägga en beställning av maträtter från olika aktörer. Siten presenterar utbudet i form av en enhetlig meny till besökaren. Parametrar som leveransadress, leveransdag och -tid och kökets ledtider styr vilka maträtter som presenteras där och då."
+      ]
     },
     "retts-plus": {
       "name": "Retts Plus",
