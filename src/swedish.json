@@ -73,12 +73,12 @@
   },
   "careersWorkplaces": {
     "thrill": {
-      "label": "För dig som söker spänningen 🕵️‍",
-      "text": "Vi kompromissar aldrig med kvalitet. Endast det bästa är gott nog. Som anställd får du tillgång till de bästa verktygen för att kunna leverera vad vi som företag vill stå bakom.\n\n Vi tröttnar aldrig på att utforska nya verktyg för att kunna ligga i framkant. Vi vet att nyfikenhet föder kreativitet som resulterar i bra leveranser. Vi slutar aldrig att utforska nya saker. Därför provar vi nya plattformar, ramverk, kod och verktyg hela tiden och vi förväntar oss att du som anställd gör detsamma."
+      "label": "För dig som söker spänning 🕵️‍",
+      "text": "Vi kompromissar aldrig med kvalitet. Endast det bästa är gott nog. Som anställd får du tillgång till de bästa verktygen för att kunna leverera vad vi som företag vill stå bakom.\n\n Vi tröttnar aldrig på att utforska nya verktyg för att kunna ligga i framkant. Vi vet att nyfikenhet föder kreativitet som resulterar i bra leveranser. Vi slutar aldrig att utforska nya saker. Därför provar vi hela tiden nya plattformar, ramverk, kod och verktyg och vi förväntar oss att du som anställd gör detsamma."
     },
     "home": {
       "label": "Att leva för att jobba eller jobba för att leva? 🏠",
-      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och håller alla informerade. På fredag ​​eftermiddag avrundar vi veckan tillsammans i köket, med lite fredagshäng innan vi loggar ut. \n\n Regelbundna teamluncher håller oss ájour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
+      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och hålla alla informerade. På fredag ​​eftermiddag avrundar vi veckan tillsammans i köket, med lite fredagshäng innan vi loggar ut. \n\n Regelbundna teamluncher håller oss ájour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
     },
     "tailored": {
       "label": "Skräddarsydd för dig, av dig. ✂️",
@@ -90,7 +90,7 @@
     "stc": {
       "title": "",
       "subtitle": "Det skall vara enkelt att träna.",
-      "desc": "En totalrenovering av STCs digitala närvaro i alla led. Byggt för att hålla långt in i framtiden.",
+      "desc": "En totalrenovering av STC:s digitala närvaro i alla led. Byggt för att hålla långt in i framtiden.",
       "stcTitle": "STC",
       "stcText": "STC är ett av Sveriges ledande fitnessföretag med över 80 gym och fitnesscenter som täcker hela landet. Företaget sysselsätter cirka 1000 anställda och har haft en stadig tillväxt sedan starten 1998.",
       "strongerJourneyTitle": "En starkare användarupplevelse",
@@ -105,10 +105,10 @@
       "toningUpTitle": "En miljö som ger energi",
       "toningUpText": [
         "Vi har förbättrat kundresan genom att ansluta den digitala upplevelsen till den fysiska miljön i gymmen.",
-        "Vårt arbete började med att titta på STCs nya inredningskoncept för att länka den nya digitala miljön med med de fysiska anläggningarna."
+        "Vårt arbete började med att titta på STC:s nya inredningskoncept för att länka den nya digitala miljön med med de fysiska anläggningarna."
       ],
       "colourPaletteText": [
-        "Färgpaletten som vi skapade kommer från större och mindre detaljer från STCs verkliga interiör, ett exempel på detta är lamporna vid ingången till ett lokalt gym fick ge färg till Dance & Choreography och färgerna på väggarna gav färg till Core-klasserna."
+        "Färgpaletten som vi skapade kommer från större och mindre detaljer från STC:s verkliga interiör, ett exempel på detta är lamporna vid ingången till ett lokalt gym fick ge färg till Dance & Choreography och färgerna på väggarna gav färg till Core-klasserna."
       ],
       "newIconsTitle": "Nya ikoner",
       "newIconsText": [
@@ -352,15 +352,15 @@
   "astronauts": {
     "andreas": {
       "title": "Grundare & COO",
-      "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech-lead med över 12 års erfarenhet från IT branschen."
+      "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech lead med över 12 års erfarenhet från IT branschen."
     },
     "mikael": {
       "title": "Partner och CTO",
-      "desc": "Partner och CTO. 20 års erfarenhet av att skapa digital upplevelser. Idag specialiserad på iOS."
+      "desc": "Partner och CTO. 20 års erfarenhet av att skapa digitala upplevelser. Idag specialiserad på iOS."
     },
     "viktor": {
       "title": "Partner och Lead Web/Unity utvecklare.",
-      "desc": " Erfaren frontend utvecklare med konstnärlig känsla in i fingerspetsarna."
+      "desc": " Erfaren front-end utvecklare med konstnärlig känsla ända ut i fingerspetsarna."
     },
     "pontus": {
       "title": "Digital Designer",
@@ -383,7 +383,7 @@
     },
     "martin": {
       "title": "Senior utvecklare",
-      "desc": "Senior utvecklare som har byggt moln-baserade tjänster och plattformar i över åtta år."
+      "desc": "Senior utvecklare som har byggt molnbaserade tjänster och plattformar i över åtta år."
     },
     "rachael": {
       "title": "Studio Manager",
@@ -395,15 +395,15 @@
     },
     "erik": {
       "title": "Partner och UX Director.",
-      "desc": " Erik har 10 års erfarenhet av att skräddarsy produkter utifrån idéer  som gör både användare och verksamheter nöjda."
+      "desc": " Erik har 10 års erfarenhet av att skräddarsy produkter utifrån idéer som gör både användare och verksamheter nöjda."
     },
     "mattias": {
       "title": "Webbutvecklare",
-      "desc": "Webbutvecklare och expert på JavaScript. Mattias har Google Web Developer Scholarship i bakfickan."
+      "desc": "Webbutvecklare och expert på JavaScript. Mattias har ett Google Web Developer Scholarship i bakfickan."
     },
     "donovan": {
       "title": "Senior Mobilutvecklare",
-      "desc": "Senior Mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
+      "desc": "Senior mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
     },
     "pontusb": {
       "title": "Lead Developer",
@@ -479,7 +479,7 @@
       "title": "Jobba hos oss",
       "hero": "Kommer du ihåg vad du gjorde imorgon? Bli en av oss",
       "modernHeader": "Här lägger vi gamla tankespår åt sidan",
-      "modernSubheader": "Vår studio ligger i mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor. ",
+      "modernSubheader": "Vår studio ligger mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor. ",
       "availableHeader": "Lediga tjänster",
       "availableSubheader": "Vill du arbeta i ett snyggt kontor med härliga kollegor som verkligen trivs ihop? Gillar du inte att arbeta bland arrogans? Vi anställer bara trevliga människor. Vill du äta pannkakor i sängen? Det är upp till dig."
     },
