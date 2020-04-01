@@ -124,6 +124,7 @@
             width: 100%
 
 
+
   &.nordish-branding
     > .inner  > .blocks >
       .block:nth-child(1)::after
@@ -151,7 +152,7 @@
           margin: 0
           justify-content: center
 
-  &.nordish-tech
+  &.nordish-tech, &.nordish-kitchen
     > .inner  > .blocks >
       .block:nth-child(1), .block:nth-child(2)
         margin-top: 4rem
@@ -177,3 +178,29 @@
       .block:nth-child(2)
         @media screen and (min-width: $small-grid + 51px)
           padding-left: 0
+
+
+  .stackedImages
+    position: relative
+    width: 100%
+    height: 100%
+
+    img
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      max-width: 100%
+      opacity: 0
+
+      &:nth-of-type(1)
+        position: relative
+        transition: opacity .8s ease .6s
+
+      &:nth-of-type(2)
+        position: absolute
+        transition: opacity .8s ease 1s
+
+
+  \:global(.inView)
+    .stackedImages img
+      opacity: 1

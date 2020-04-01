@@ -15,7 +15,6 @@ import ProjectsBlock from './components/projects-block'
 const inViewClasses = [
   `${s.inner} > div:nth-child(2) > :first-child`,
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
-  `${s.inner} > div:nth-child(4) > div:first-child`,
   `${s.inner} > div:nth-child(5) > div:first-child`,
   `${s.inner} > div:nth-child(6) > div:first-child`,
   `${s.inner} > div:nth-child(7) > div:first-child`,
@@ -66,7 +65,6 @@ export default class extends Component {
             />
 
             <ParallaxBumpBlock
-              inView='inViewRight'
               title={content.serviceDesignTitle}
               text={content.serviceDesignText}
               items={[
@@ -78,7 +76,7 @@ export default class extends Component {
             />
 
             <ThreeBlock
-              inView='inViewBottom'
+              inView='inViewLeft'
               background='#FFFFFF'
               modifier='nordish-branding'
               blocks={[
@@ -98,7 +96,6 @@ export default class extends Component {
             />
 
             <TextBlock
-              inView='inViewBottom'
               title={content.outpostTitle}
               text={content.outpostText}
               modifier='nordish'
@@ -106,9 +103,9 @@ export default class extends Component {
             />
 
             <ThreeBlock
-              inView='inViewBottom'
+              inView='inViewRight'
               background='#F4F8F8'
-              modifier='nordish-tech'
+              modifier='nordish-kitchen'
               blocks={[
                 { type: 'text', title: content.kitchenTitle, text: content.kitchenText },
                 { type: 'image', image: content.kitchenImage, modifier: 'nordishImg' }
