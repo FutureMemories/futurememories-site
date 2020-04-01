@@ -1,3 +1,5 @@
+@import '../../settings.sass'
+
 .parallaxObject
   position: relative
   transition: transform 200ms ease
@@ -14,3 +16,16 @@
 
     &.diagonal
       max-width: 46rem
+
+  &.nordish
+    margin: 0
+
+    &:nth-child(2)
+      position: absolute
+
+    @media screen and (min-width: $small-grid + 101px)
+      position: absolute
+
+      > img
+        max-width: none
+

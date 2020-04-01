@@ -55,6 +55,7 @@
           @media screen and (max-width: $small-grid + 50px)
             margin-left: 0
             width: 80%
+
         > .sleepcureImg
           max-width: 100%
 
@@ -74,6 +75,9 @@
               font-size: 2rem
               margin-top: 3rem
               color: #161D2B
+
+        > .nordishImg
+          max-width: 100%
 
       @media screen and (max-width: $medium-grid)
 
@@ -118,3 +122,58 @@
             margin-top: 3rem
             text-align: center
             width: 100%
+
+
+  &.nordish-branding
+    > .inner  > .blocks >
+      .block:nth-child(1)::after
+        @media screen and (min-width: $small-grid + 51px)
+          content: ""
+          position: absolute
+          top: 0
+          right: 0
+          width: 25%
+          height: 100%
+          background: linear-gradient(to left, white, transparent)
+
+      .block:nth-child(2)
+        margin-top: 4rem
+
+        @media screen and (min-width: $small-grid + 51px)
+          padding-left: 6rem
+
+        @media screen and (min-width: $medium-grid)
+          padding-left: 9rem
+          margin: 0
+          display: flex
+          flex-direction: column
+          height: 100%
+          margin: 0
+          justify-content: center
+
+  &.nordish-tech
+    > .inner  > .blocks >
+      .block:nth-child(1), .block:nth-child(2)
+        margin-top: 4rem
+        white-space: pre-wrap
+        position: unset
+        top: unset
+
+        @media screen and (min-width: $small-grid + 51px)
+          margin: 0
+          display: flex
+          flex-direction: column
+          height: 100%
+          margin: 0
+          justify-content: center
+
+      .block:nth-child(1)
+        @media screen and (min-width: $small-grid + 51px)
+          padding-right: 6rem
+
+        @media screen and (min-width: $medium-grid)
+          padding-right: 9rem
+
+      .block:nth-child(2)
+        @media screen and (min-width: $small-grid + 51px)
+          padding-left: 0

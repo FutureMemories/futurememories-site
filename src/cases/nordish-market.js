@@ -5,15 +5,18 @@ import Base from '../_base'
 
 import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
-import ProjectsBlock from './components/projects-block'
 import CenterBlock from './components/center-block'
 import ParallaxBumpBlock from './components/parallax-bump-block'
-import ContactBlock from '../components/contact-block'
+import ThreeBlock from './components/three-block'
+import TextBlock from './components/text-block'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(2) > :first-child`,
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
-  `${s.inner} > div:nth-child(4) > div:first-child`
+  `${s.inner} > div:nth-child(4) > div:first-child`,
+  `${s.inner} > div:nth-child(5) > div:first-child`,
+  `${s.inner} > div:nth-child(6) > div:first-child`,
+  `${s.inner} > div:nth-child(7) > div:first-child`
 ].join(',.')
 
 export default class extends Component {
@@ -59,7 +62,7 @@ export default class extends Component {
               color='#161D2B'
             />
 
-            {/* <ParallaxBumpBlock
+            <ParallaxBumpBlock
               inView='inViewRight'
               title={content.serviceDesignTitle}
               text={content.serviceDesignText}
@@ -69,27 +72,35 @@ export default class extends Component {
               ]}
               background='#F4F8F8'
               modifier='nordish'
-            /> */}
+            />
 
-            {/* <CenterBlock
+            <ThreeBlock
               inView='inViewBottom'
-              title={content.exerciseTitle}
-              src={{ path: 'cases/antistress-2.jpg', style: { maxHeight: '715px' } }}
-              alt={content.exerciseAlt}
-              color='#ffffff'
+              background='#FFFFFF'
+              modifier='nordish-branding'
+              blocks={[
+                { type: 'image', image: 'cases/nordish-market-ui-elements.png', modifier: 'nordishImg' },
+                { type: 'text', title: content.brandingTitle, text: content.brandingText, modifier: 'nordishBrandindText' }
+              ]}
             />
 
-            <ContactBlock
-              content={data.content.contactBlock}
+            <ThreeBlock
+              inView='inViewBottom'
+              background='#F4F8F8'
+              modifier='nordish-tech'
+              blocks={[
+                { type: 'text', title: content.techTitle, text: content.techText, modifier: 'nordishBrandindText' },
+                { type: 'image', image: 'cases/nordish-market-3.png', modifier: 'nordishImg' }
+              ]}
             />
 
-            <ProjectsBlock
-              {...data.projectsBlock}
-              allCases={data.allCases}
-              defaultOtherCases={data.defaultOtherCases}
-              current='antistress'
-              similar={['sleepcure', 'retts-plus', 'stc']}
-            /> */}
+            <TextBlock
+              inView='inViewBottom'
+              title={content.outpostTitle}
+              text={content.outpostText}
+              modifier='nordish'
+              titleIcon='cases/nordish-title-icon.png'
+            />
 
           </div>
         </div>
