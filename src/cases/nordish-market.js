@@ -91,7 +91,7 @@ export default class extends Component {
               modifier='nordish-tech'
               blocks={[
                 { type: 'text', title: content.techTitle, text: content.techText },
-                { type: 'image', image: 'cases/nordish-market-3.png', modifier: 'nordishImg' }
+                { type: 'image', image: 'cases/nordish-market-4.png', modifier: 'nordishImg' }
               ]}
             />
 
