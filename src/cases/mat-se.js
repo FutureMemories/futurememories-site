@@ -43,6 +43,7 @@ export default class extends Component {
             <HeroHeader
               title={content.name.toUpperCase()}
               subtitle={content.subtitle}
+              type={content.type}
             />
 
             <LargeImage src='cases/mat-se-1.jpg' alt='Mat.se mockup' />

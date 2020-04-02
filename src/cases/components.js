@@ -20,7 +20,7 @@ export default class extends Component {
   render () {
     return (
       <div class={s.view}>
-        {c('HeroHeader', <HeroHeader title='TITLE HERE' subtitle='Subtitle goes here' />)}
+        {c('HeroHeader', <HeroHeader title='TITLE HERE' subtitle='Subtitle goes here' type='Tags goes here' dark />)}
         {c('LargeImage', <LargeImage src='cases/antistress-1.jpg' alt='' />)}
         {c('LargeImage with video', <LargeImage src='cases/retts-plus-video.jpg' video='retts-plus.mp4' background='#000301' />)}
         {c('TextBlock with link', <TextBlock title='Awesome title' text='And with an awesome title comes f-ing good text!' link={['Visit Google', 'https://google.com/']} background='white' color='black' />)}

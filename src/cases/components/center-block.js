@@ -1,7 +1,8 @@
 import cx from 'classnames'
 import s from './center-block.sass'
+import Button from '../../components/button'
 
-export default ({ title, text, component, src, alt = 'image', background, color, children, modifer, className, inView }) => (
+export default ({ title, text, link, component, src, alt = 'image', background, color, children, modifer, className, inView }) => (
   <div
     class={cx(s.centerBlock, modifer && s[modifer], className)}
     style={{ background, color }}
@@ -12,6 +13,9 @@ export default ({ title, text, component, src, alt = 'image', background, color,
         <div class={cx(s.block, text && s.center)}>
           {title && (<h1 class={cx(!text && s.removePadding)}>{title}</h1>)}
           {text && (<p>{text}</p>)}
+          {link && (
+            <Button to={link[1]} target='_blank' rel='noopener noreferrer' arrow transition='slide' customClass={s.link} label={link[0]} />
+          )}
           {component && (component)}
           {children}
         </div>

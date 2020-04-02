@@ -46,9 +46,7 @@ const addLanguageAlternatives = (result, { url, prio }) => {
     { url: '/en' + url, lang: 'en' }
   ]
 
-  return result.concat(
-    variations.map(v => ({ url: v.url, prio, variations }))
-  )
+  return result.concat({ url, prio, variations })
 }
 
 const generateSitemap = () => {

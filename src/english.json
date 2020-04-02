@@ -37,6 +37,7 @@
       "name": "Web",
       "cases": [
         "stc",
+        "nordish-market",
         "bauer-university",
         "picular"
       ]
@@ -502,9 +503,11 @@
         "cases/nordish-market-2.png",
         "width"
       ],
-      "title": "",
+      "title": "Nordish Market",
+      "subtitle": "Food for thought.",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day.",
       "type": "UX, UI, React, Python, Django, Food Tech",
+      "imageAlt": "Nordish Market device mockup",
       "style": [
         {
           "color": "#FFFFFF",
@@ -514,7 +517,27 @@
           "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
-      "link": "https://www.nordishmarket.com/"
+      "showcase": true,
+      "healthyFoodTitle": "Healthy food for all occasions",
+      "healthyFoodText": "Nordish Market is a digital food court that offers sustainable and healthy food for delivery. At nordishmarket.com, businesses and individuals can easily order breakfast, lunch, dinner or a coffee and chocolate ball pick-me-up from carefully selected restaurants that share the same values: that food should be sustainable and healthy. Nordish Market’s digital platform manages the ordering and payment process and coordinates delivery from their door to yours.",
+      "visitTheSite": "Visit website",
+      "serviceDesignTitle": "Exquisite Service Design. Sustainable User Journey.",
+      "serviceDesignText": [
+        "The restaurants in the Nordish family have completely separate offers with different processes of how and when they cook their food. At Nordish Market, each restaurant has full control over the presentation of its dishes and decides how they are composed of different menus. The restaurants thus control the accessibility of the dishes themselves, based on their own conditions.",
+        "The challenge for our Service and UX Designers was to create a coherent user experience for customers so it’s easy to place an order with dishes from different restaurants. The site presents the selection in the form of a uniform menu to the visitor. Parameters such as where and when deliveries are made and the kitchen's lead times for each item, dictate which dishes are presented to each visitor then and there."
+      ],
+      "brandingTitle": "A sustainable brand for a brighter future.",
+      "brandingText": "We at Future Memories have been involved in developing the branding materials as well as the unified design system that spans all communication channels. Nordish Market does the rest so you can sit back and enjoy your meal. Yummy!",
+      "techTitle": "Cutting Edge on the Frontend",
+      "techText": "nordishmarket.com follows a responsive design that makes the experience as good on desktop as it is on mobile devices. We have also integrated Klarna Checkout to give Nordish Market’s customers the ability to make payments as smooth as possible.\n\nNordish Market is a web application built entirely in React. The application is integrated with a business system where information regarding restaurants, products, and menus takes care of user management and order flow. Content pages and blog posts are retrieved from an external CMS.",
+      "outpostTitle": "Outposts",
+      "outpostText": [
+        "The concept of Outpost was founded in the United States where restaurants realized that they could supply a larger amount of food to more hungry customers in a smooth, punctual and more efficient way. Imagine you’re sitting in your office and could order lunch without having to queue for the usual old lunch place or pay an extra fee for a delivery that may or may not get to you on time. An Outpost is a place where the food you ordered is waiting for you, rather than the other way around.",
+        "The idea of ​​Outpost is to simplify the process of serving by regularly delivering good food to a specific place where it’s guaranteed to arrive on time. This service is now available for both workplaces and public spaces, and Nordish Market is among the first in Sweden to offer this service at nordishmarket.com."
+      ],
+      "kitchenTitle": "Everything happens in the kitchen.",
+      "kitchenText": "If a restaurant were a website then the kitchen would be our backend. In the background, there is a proprietary business system that manages the administration of restaurants, products, menus, user management, order management even the logistics regarding delivery. The backend is developed with the Open Source framework, Django, that uses Python as its programming language.\n\nThe business system is a multi-tenant solution that provides a back-office web application for restaurant staff. The restaurants can manage their digital menus and have access to all incoming food orders requested for delivery. The personnel at Nordish Market can then use this system to plan and execute logistics in the form of packing, route planning, and order execution.",
+      "kitchenImage": "cases/nordish-kitchen-en.png"
     },
     "retts-plus": {
       "name": "Retts Plus",
