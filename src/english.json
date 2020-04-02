@@ -536,7 +536,7 @@
       ],
       "kitchenTitle": "Everything happens in the kitchen.",
       "kitchenText": "If a restaurant were a website then the kitchen would be our backend. In the background, there is a proprietary business system that manages the administration of restaurants, products, menus, user management, order management even the logistics regarding delivery. The backend is developed with the Open Source framework, Django, that uses Python as its programming language.\n\nThe business system is a multi-tenant solution that provides a back-office web application for restaurant staff. The restaurants can manage their digital menus and have access to all incoming food orders requested for delivery. The personnel at Nordish Market can then use this system to plan and execute logistics in the form of packing, route planning, and order execution.",
-      "kitchenImage": "cases/nordish-kitchen-se.png"
+      "kitchenImage": "cases/nordish-kitchen-en.png"
     },
     "retts-plus": {
       "name": "Retts Plus",
