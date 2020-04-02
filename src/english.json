@@ -37,6 +37,7 @@
       "name": "Web",
       "cases": [
         "stc",
+        "nordish-market",
         "bauer-university",
         "picular"
       ]
@@ -516,7 +517,7 @@
           "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
-      "link": "https://www.nordishmarket.com/",
+      "showcase": true,
       "healthyFoodTitle": "Healthy food for all occasions",
       "healthyFoodText": "Nordish Market is a digital food court that offers sustainable and healthy food for delivery. At nordishmarket.com, businesses and individuals can easily order breakfast, lunch, dinner or a coffee and chocolate ball pick-me-up from carefully selected restaurants that share the same values: that food should be sustainable and healthy. Nordish Market’s digital platform manages the ordering and payment process and coordinates delivery from their door to yours.",
       "visitTheSite": "Visit website",

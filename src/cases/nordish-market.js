@@ -121,7 +121,7 @@ export default class extends Component {
               allCases={data.allCases}
               defaultOtherCases={data.defaultOtherCases}
               current='nordish-market'
-              similar={['mat-se', 'paykartan', 'stc']}
+              similar={['mat-se', 'bauer-university', 'stc']}
             />
 
           </div>
