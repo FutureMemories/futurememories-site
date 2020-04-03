@@ -1,0 +1,81 @@
+@import '../settings.sass'
+
+.view
+  background: #FFFDE1
+  color: #070B13
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  > .inner
+    background: none
+
+    .alarminglyEffective
+
+      h1
+        color: #161D2B
+
+      .notificationImage
+        max-width: 52rem
+        order: -1
+
+    .eyeSvg
+      display: block
+      width: 40rem
+      margin: 0 auto 3rem auto
+      max-width: 90%
+
+      .pupil
+        animation: moveFromSideToSide 3s step-end infinite
+
+      .eyelid
+        animation: blink 5s step-end infinite
+        transform-origin: center
+
+
+  @keyframes moveFromSideToSide
+    0%
+      transform: translate3d(0px, 0, 0)
+
+    15%
+      transform: translate3d(2px, 0, 0)
+
+    30%
+      transform: translate3d(1px, 0, 0)
+
+    60%
+      transform: translate3d(-1px, -.5px, 0)
+
+    80%
+      transform: translate3d(-2px, 0, 0)
+
+    95%
+      transform: translate3d(-1px, -.5px, 0)
+
+    100%
+      transform: translate3d(0px, 0, 0)
+
+  @keyframes blink
+    0%
+      transform: rotate(0deg)
+
+    13%
+      transform: rotate(-2deg)
+
+    20%
+      transform: rotate(-3deg)
+
+    45%
+      transform: rotate(0deg)
+
+    60%
+      transform: rotate(2deg)
+
+    70%
+      transform: rotate(3deg)
+
+    88%
+      transform: rotate(1deg)
+
+    100%
+      transform: rotate(0deg)
