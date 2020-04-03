@@ -48,7 +48,7 @@ export default class extends Component {
 
             <CenterBlock
               inView='inViewBottom'
-              modifer='antistress'
+              modifier='antistress'
               title={content.speakYourMindTitle}
               text={content.speakYourMindText}
             >

@@ -866,6 +866,17 @@
         }
       ],
       "appLink": "https://play.google.com/store/apps/details?id=se.collector.spira&hl=en"
+    },
+    "wake-up-problem": {
+      "name": "Wake Up Problem",
+      "title": "Wake Up Problem",
+      "subtitle": "Rise and shine.",
+      "desc": "",
+      "metaDesc": "",
+      "client": "",
+      "type": "UX/UI",
+      "alarminglyEffectiveTitle": "Alarmingly effective",
+      "alarminglyEffectiveText": "To help students wake up better, we created the Wake Up Problem app. The app works like a regular alarm clock, but with a small difference: you have to answer a knowledge question to turn off the alarm.\nBy answering the question, you wake up the brain and get a much-needed boost. You can also see where you end up in the leaderboard. Whoever answers right the fastest wins!"
     }
   },
   "notUsedCases": {
