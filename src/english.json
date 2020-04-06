@@ -880,7 +880,42 @@
       "alarminglyEffectiveTitle": "Alarmingly effective",
       "alarminglyEffectiveText": "To help students wake up better, we created the Wake Up Problem app. The app works like a regular alarm clock, but with a small difference: you have to answer a knowledge question to turn off the alarm.\n\nBy answering the question, you wake up the brain and get a much-needed boost. You can also see where you end up in the leaderboard. Whoever answers right the fastest wins!",
       "upForAChallengeTitle": "Up for a challenge?",
-      "upForAChallengeText": "Testing the students' knowledge is only part of it, but what about you? Are you awake enough for some questions?"
+      "upForAChallengeText": "Testing the students' knowledge is only part of it, but what about you? Are you awake enough for some questions?",
+      "challengeHeadline": "Good morning!",
+      "challengeCorrectAnswer": "Yes, correct answer.",
+      "challengeCorrectAnswer2": "You are obviously a thoughtful person.",
+      "challengeIncorrectAnswer": "Oooops, wrong answer.",
+      "challengeIncorrectAnswer2": "But congratulations, at least you're awake.",
+      "challengeSubmitLabel": "Answer",
+      "questionsAndAnswers": [
+        {
+          "question": "Who was president during the American Civil War?",
+          "answers": [
+            "Thomas Jefferson",
+            "George Washington",
+            "Abraham Lincoln"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "What is 39 x 3 – 2 + 21?",
+          "answers": [
+            "143",
+            "128",
+            "136"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Which is the largest city in Asia?",
+          "answers": [
+            "Tokyo",
+            "New Delhi",
+            "Shanghai"
+          ],
+          "correctAnswer": 0
+        }
+      ]
     }
   },
   "notUsedCases": {

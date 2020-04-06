@@ -390,7 +390,42 @@
       "alarminglyEffectiveTitle": "Alarmingly effective",
       "alarminglyEffectiveText": "För att hjälpa studenter på traven att vakna bättre skapade vi appen Wake Up Problem. Appen fungerar som en vanlig väckarklocka, men med en liten skillnad, man måste svara på en kunskapsfråga för att stänga av larmet.\n\nGenom att svara på frågan väcker man hjärnan och får en välbehövd boost, Du kan även se vart du hamnar i topplistan. Den som svarar rätt snabbast vinner!",
       "upForAChallengeTitle": "Up for a challenge?",
-      "upForAChallengeText": "Att vi testar studenternas kunskap är en del, men hur är det med dig själv egentligen, är du tillräckligt vaken för några frågor?"
+      "upForAChallengeText": "Att vi testar studenternas kunskap är en del, men hur är det med dig själv egentligen, är du tillräckligt vaken för några frågor?",
+      "challengeHeadline": "God morgon!",
+      "challengeCorrectAnswer": "Yes, rätt svar.",
+      "challengeCorrectAnswer2": "Du är uppenbarligen en vaken person.",
+      "challengeIncorrectAnswer": "Oooops, fel svar.",
+      "challengeIncorrectAnswer2": "Men grattis, du är i varje fall vaken.",
+      "challengeSubmitLabel": "Svara",
+      "questionsAndAnswers": [
+        {
+          "question": "Vem var president under det amerikanska inbördeskriget?",
+          "answers": [
+            "Thomas Jefferson",
+            "George Washington",
+            "Abraham Lincoln"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Vad blir 39 x 3 – 2 + 21?",
+          "answers": [
+            "143",
+            "128",
+            "136"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Vilken är Asiens största stad?",
+          "answers": [
+            "Tokyo",
+            "New Delhi",
+            "Shanghai"
+          ],
+          "correctAnswer": 0
+        }
+      ]
     }
   },
   "notUsedCases": {

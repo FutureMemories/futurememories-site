@@ -21,6 +21,13 @@ const inViewClasses = [
 ].join(',.')
 
 export default class extends Component {
+  state = {
+    selectedAnswer: null,
+    currentQuestion: 0,
+    currentAnswerCorrect: null,
+    showResultView: false
+  }
+
   componentDidMount () {
     inView.offset(200)
     inView(`.${inViewClasses}`).on('enter', el => {
@@ -32,10 +39,34 @@ export default class extends Component {
     inView(`.${inViewClasses}`).off('enter')
   }
 
+  handleSelect = (e) => {
+    this.setState({ selectedAnswer: (parseInt(e.target.id)) })
+  }
+
+  handleAnswer = () => {
+    let currentAnswer
+
+    if (this.questionsAndAnswers[this.state.currentQuestion].correctAnswer == this.state.selectedAnswer) {
+      currentAnswer = true
+    } else {
+      currentAnswer = false
+    }
+
+    this.setState(prevState => ({
+      showResultView: true,
+      currentAnswerCorrect: currentAnswer
+    }), () => {
+      if (this.questionsAndAnswers.length > this.state.currentQuestion + 1) {
+        setTimeout(() => {
+          this.setState(prevState => ({ currentQuestion: prevState.currentQuestion + 1, selectedAnswer: null, showResultView: false, currentAnswerCorrect: null }))
+        }, 1400)
+      }
+    })
+  }
+
   render ({ data, root }) {
     const content = data.allCases.find(c => c.id === 'wake-up-problem')
-
-    // console.log(content)
+    this.questionsAndAnswers = content.questionsAndAnswers
 
     return (
       <Base route='/cases/wake-up-problem' dark data={data} root={root}>
@@ -77,16 +108,72 @@ export default class extends Component {
             />
 
             <BookmarkBlock
+              className={s.challengeSection}
               title={content.upForAChallengeTitle}
               text={content.upForAChallengeText}
               inView='inViewRight'
-              image='cases/wake-up-problem-test.png'
               background='#FFFDE1'
               color='#737780'
               align='left'
-              modifier='wakeUpProblemTest'
+              modifier='wakeUpProblemChallenge'
             >
-              {/* <div class={s.challenge}><p>TEST</p></div> */}
+              <div class={cx(s.challenge, 'challenge')}>
+                <div class={s.challengeHeader}>
+                  <img class={s.logoIcon} src={require('../images/cases/wake-up-problem-icon.svg')} alt='Wake up problem app logo' />
+                  <h2>
+                    {this.state.currentAnswerCorrect
+                      ? <span class={s.correct}>{content.challengeCorrectAnswer}</span>
+                      : this.state.currentAnswerCorrect !== null
+                        ? <span class={s.incorrect}>{content.challengeIncorrectAnswer}</span>
+                        : content.challengeHeadline}
+                  </h2>
+                </div>
+
+                {this.state.showResultView
+                  ? <div class={s.challengeResultView}>
+                    {this.state.currentAnswerCorrect ? (
+                      <div>
+                        <p class={s.resultHeader}>{content.challengeCorrectAnswer2}</p>
+                        <img src={require('../images/cases/wake-up-problem-winner.svg')} alt='Wake up problem app winner icon' />
+                      </div>
+                    ) : (
+                      <div>
+                        <p class={s.resultHeader}>{content.challengeIncorrectAnswer2}</p>
+                        <p class={s.resultText} >Rätt svar skulle vara</p>
+                        <div class={s.correctAnswer}>
+                          <p>{this.questionsAndAnswers[this.state.currentQuestion].answers[this.questionsAndAnswers[this.state.currentQuestion].correctAnswer]}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  : <div>
+                    {this.questionsAndAnswers.map((item, i) => (
+                      <div
+                        key={'challenge_' + i}
+                        class={cx(s.challengeView, this.state.currentQuestion == i && s.show)}
+                        data-correct-answer={item.correctAnswer}
+                      >
+                        <div class={s.challengeQuestion}>
+                          <p>{item.question}</p>
+                        </div>
+
+                        {item.answers.map((answer, j) => (
+                          <div
+                            key={'answer_' + i + '_' + j}
+                            class={s.challengeAnswer}
+                            onChange={e => { this.handleSelect(e) }}
+                          >
+                            <input id={j} class={s.input} name={'answer_' + i + '_' + j} type='radio' checked={this.state.selectedAnswer == j} />
+                            <label for={j} class={s.label}>{answer}</label>
+                          </div>
+                        ))}
+
+                      </div>
+                    ))}
+                    <button class={s.challengeSubmit} onClick={e => { this.handleAnswer() }}>{content.challengeSubmitLabel}</button>
+                  </div>
+                }
+              </div>
             </BookmarkBlock>
 
             <div class={s.eyeSection}>

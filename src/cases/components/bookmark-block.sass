@@ -227,3 +227,14 @@
       @media screen and (max-width: 1100px)
         margin-left: 0
         margin-bottom: -12rem
+
+  &.wakeUpProblemChallenge > .inner
+
+    @media screen and (max-width: 940px)
+      flex-direction: column-reverse
+
+      > .content > p
+        max-width: unset
+
+      \:global(.challenge)
+        margin-top: 6rem

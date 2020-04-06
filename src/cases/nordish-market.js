@@ -35,7 +35,6 @@ export default class extends Component {
 
   render ({ data, root }) {
     const content = data.allCases.find(c => c.id === 'nordish-market')
-    console.log(content)
 
     return (
       <Base route='/cases/nordish-market' dark data={data} root={root}>
