@@ -380,6 +380,17 @@
       "title": "",
       "desc": "Ett samarbete mellan Collector Bank och Aktieinvest. Spira gör det enkelt att att investera i aktier utan krusiduller.",
       "client": "Collector Bank, Varvet"
+    },
+    "wake-up-problem": {
+      "name": "Wake Up Problem",
+      "title": "Wake Up Problem",
+      "subtitle": "Rise and shine.",
+      "snoozeLoseTitle": "If you snooze, you lose.",
+      "snoozeLoseText": "Att vakna rätt är viktigt för att känna sig pigg, må bra och kunna prestera i skolan på dagarna. Men en hel del studenter har däremot som vana att snooza på morgonen, och det kanske inte är ett speciellt bra sätt att vakna på. Faktiskt är det så att forskning visar att det bästa sättet att vakna är att snabbt väcka och aktivera hjärnan för att snabbare piggna till och komma upp på morgonen.",
+      "alarminglyEffectiveTitle": "Alarmingly effective",
+      "alarminglyEffectiveText": "För att hjälpa studenter på traven att vakna bättre skapade vi appen Wake Up Problem. Appen fungerar som en vanlig väckarklocka, men med en liten skillnad, man måste svara på en kunskapsfråga för att stänga av larmet.\n\nGenom att svara på frågan väcker man hjärnan och får en välbehövd boost, Du kan även se vart du hamnar i topplistan. Den som svarar rätt snabbast vinner!",
+      "upForAChallengeTitle": "Up for a challenge?",
+      "upForAChallengeText": "Att vi testar studenternas kunskap är en del, men hur är det med dig själv egentligen, är du tillräckligt vaken för några frågor?"
     }
   },
   "notUsedCases": {

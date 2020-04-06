@@ -188,3 +188,42 @@
           width: 80%
           margin: 0 auto
           margin-bottom: -40%
+
+  &.wakeUpProblemPhone,
+  &.wakeUpProblemTest
+    > .inner
+
+      h1
+        color: #161D2B
+
+      > img
+        width: 57%
+        height: 57%
+        position: relative
+
+        @media screen and (max-width: 1100px)
+          width: 42%
+          height: 42%
+
+      @media screen and (max-width: 940px)
+        flex-direction: column-reverse
+
+        > .content > p
+          max-width: unset
+
+        > img
+          width: 60%
+
+      @media screen and (max-width: 740px)
+
+        > img
+          width: 100%
+
+  &.wakeUpProblemPhone > .inner
+    > img
+      margin-left: -10rem
+      margin-bottom: -10rem
+
+      @media screen and (max-width: 1100px)
+        margin-left: 0
+        margin-bottom: -12rem

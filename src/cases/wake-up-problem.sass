@@ -10,72 +10,106 @@
   > .inner
     background: none
 
-    .alarminglyEffective
-
+    .snoozeLose
       h1
         color: #161D2B
 
       .notificationImage
-        max-width: 52rem
+        max-width: 45rem
+        width: 100%
+        margin: -4rem 0 2rem
         order: -1
 
-    .eyeSvg
-      display: block
-      width: 40rem
-      margin: 0 auto 3rem auto
-      max-width: 90%
+    .alarminglyEffective
+      overflow: hidden
 
-      .pupil
-        animation: moveFromSideToSide 3s step-end infinite
+      \:global(.inView)
+        img
+          animation: shake .5s linear .6s
 
-      .eyelid
-        animation: blink 5s step-end infinite
-        transform-origin: center
+    .eyeSection
+      padding: $global-padding
+      background: #FFEB00
 
+      .eyeSvg
+        display: block
+        width: 30rem
+        margin: 0 auto
+        max-width: 90%
+
+        .pupil
+          animation: moveFromSideToSide 7s linear infinite alternate
+
+        .eyelid
+          animation: blink 3s linear infinite alternate
+          transform-origin: center
+
+
+  @keyframes shake
+    0% { transform: translate(2px, 1px) rotate(0deg) }
+    10% { transform: translate(-1px, -2px) rotate(-1deg) }
+    20% { transform: translate(-3px, 0px) rotate(1deg) }
+    30% { transform: translate(0px, 2px) rotate(0deg) }
+    40% { transform: translate(1px, -1px) rotate(1deg) }
+    50% { transform: translate(-1px, 2px) rotate(-1deg) }
+    60% { transform: translate(-3px, 1px) rotate(0deg) }
+    70% { transform: translate(2px, 1px) rotate(-1deg) }
+    80% { transform: translate(-1px, -1px) rotate(1deg) }
+    90% { transform: translate(2px, 2px) rotate(0deg) }
+    100% { transform: translate(1px, -2px) rotate(-1deg) }
 
   @keyframes moveFromSideToSide
     0%
       transform: translate3d(0px, 0, 0)
 
     15%
-      transform: translate3d(2px, 0, 0)
-
-    30%
       transform: translate3d(1px, 0, 0)
 
+    20%
+      transform: translate3d(1.4px, 0, 0)
+
+    30%
+      transform: translate3d(1px, -.2px, 0)
+
     60%
-      transform: translate3d(-1px, -.5px, 0)
+      transform: translate3d(-1.2px, 0, 0)
 
     80%
-      transform: translate3d(-2px, 0, 0)
+      transform: translate3d(-.3px, .2px, 0)
 
     95%
-      transform: translate3d(-1px, -.5px, 0)
+      transform: translate3d(-.2px, 0, 0)
 
     100%
       transform: translate3d(0px, 0, 0)
 
   @keyframes blink
     0%
-      transform: rotate(0deg)
+      transform: rotate(0deg) translateY(0)
 
     13%
-      transform: rotate(-2deg)
+      transform: rotate(-2deg) translateY(-.3px)
 
     20%
-      transform: rotate(-3deg)
+      transform: rotate(-3deg) translateY(-.8px)
+
+    30%
+      transform: rotate(-1deg) translateY(-.3px)
 
     45%
-      transform: rotate(0deg)
+      transform: rotate(0deg) translateY(0px)
 
-    60%
-      transform: rotate(2deg)
+    55%
+      transform: rotate(1deg) translateY(.3px)
 
     70%
-      transform: rotate(3deg)
+      transform: rotate(2.4deg) translateY(1px)
+
+    74%
+      transform: rotate(2deg) translateY(1.1px)
 
     88%
-      transform: rotate(1deg)
+      transform: rotate(2deg) translateY(.3px)
 
     100%
-      transform: rotate(0deg)
+      transform: rotate(0deg) translateY(0)

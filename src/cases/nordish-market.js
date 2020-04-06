@@ -88,7 +88,7 @@ export default class extends Component {
             <ThreeBlock
               inView='inViewBottom'
               background='#F4F8F8'
-              modifier='nordish-tech'
+              modifier='vertical-center-content'
               blocks={[
                 { type: 'text', title: content.techTitle, text: content.techText },
                 { type: 'image', image: 'cases/nordish-market-4.png', modifier: 'nordishImg' }
