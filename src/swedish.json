@@ -396,6 +396,7 @@
       "challengeCorrectAnswer2": "Du är uppenbarligen en vaken person.",
       "challengeIncorrectAnswer": "Oooops, fel svar.",
       "challengeIncorrectAnswer2": "Men grattis, du är i varje fall vaken.",
+      "challengeIncorrectAnswer3": "Rätt svar skulle vara",
       "challengeSubmitLabel": "Svara",
       "questionsAndAnswers": [
         {

@@ -886,6 +886,7 @@
       "challengeCorrectAnswer2": "You are obviously a thoughtful person.",
       "challengeIncorrectAnswer": "Oooops, wrong answer.",
       "challengeIncorrectAnswer2": "But congratulations, at least you're awake.",
+      "challengeIncorrectAnswer3": "The correct answer would be:",
       "challengeSubmitLabel": "Answer",
       "questionsAndAnswers": [
         {

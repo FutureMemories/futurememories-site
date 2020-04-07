@@ -139,7 +139,7 @@ export default class extends Component {
                     ) : (
                       <div>
                         <p class={s.resultHeader}>{content.challengeIncorrectAnswer2}</p>
-                        <p class={s.resultText} >Rätt svar skulle vara</p>
+                        <p class={s.resultText} >{content.challengeIncorrectAnswer3}</p>
                         <div class={s.correctAnswer}>
                           <p>{this.questionsAndAnswers[this.state.currentQuestion].answers[this.questionsAndAnswers[this.state.currentQuestion].correctAnswer]}</p>
                         </div>
