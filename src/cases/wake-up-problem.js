@@ -80,7 +80,7 @@ export default class extends Component {
             />
 
             <LargeImage
-              src=''
+              src='cases/wake-up-problem-video-poster.png'
               video='wake-up-problem.mp4'
               background='#FFFDE1'
             />
