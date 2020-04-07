@@ -2,16 +2,16 @@ import Icon from '../../components/icon'
 import cx from 'classnames'
 import s from './device-block.sass'
 
-export default ({ ios, andriod, customClass }) => (
-  <div class={cx(s.deviceBlock, customClass && customClass)}>
+export default ({ ios, android, blackButtons, customClass }) => (
+  <div class={cx(s.deviceBlock, blackButtons && s.black, customClass && customClass)}>
     {ios && (
       <a class={s.device} href={ios} target='_blank' rel='noopener noreferrer'>
-        <Icon class={s.logo} id='apple-logo' /> <span>App store</span> <Icon class={s.arrow} id='arrow' />
+        <Icon class={s.logo} id='apple-logo' /> <span>App store</span>
       </a>
     )}
-    {andriod && (
-      <a class={s.device} href={andriod} target='_blank' rel='noopener noreferrer'>
-        <Icon class={s.logo} id='andriod-logo' /> <span>Google play</span> <Icon class={s.arrow} id='arrow' />
+    {android && (
+      <a class={s.device} href={android} target='_blank' rel='noopener noreferrer'>
+        <Icon class={s.logo} id='android-logo' /> <span>Google play</span>
       </a>
     )}
   </div>

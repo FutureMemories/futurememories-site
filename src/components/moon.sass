@@ -1,3 +1,5 @@
+@import '../settings.sass'
+
 $eclipseTransition: margin 1.8s ease-out
 
 .space
@@ -34,7 +36,7 @@ $eclipseTransition: margin 1.8s ease-out
     content: ''
     height: 100%
     width: 100%
-    background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)
+    background-image: linear-gradient(-180deg, #03060C 0%, $color-darker-blue 73%)
     position: absolute
     display: block
     top: 50%
@@ -98,7 +100,7 @@ $eclipseTransition: margin 1.8s ease-out
   // Light position
   &.middleRight
     > .planet
-      background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)
+      background-image: linear-gradient(-180deg, #03060C 0%, $color-darker-blue 73%)
 
       > .shine
         bottom: 20%
@@ -118,7 +120,7 @@ $eclipseTransition: margin 1.8s ease-out
 
   &.bottomRight
     > .planet
-      background-image: linear-gradient(-180deg, #03060C 0%, #070B13 73%)
+      background-image: linear-gradient(-180deg, #03060C 0%, $color-darker-blue 73%)
 
       > .shine
         bottom: auto
@@ -138,7 +140,7 @@ $eclipseTransition: margin 1.8s ease-out
 
   &.bottomLeft
     > .planet
-      background-image: linear-gradient(-180deg, #070B13 0%, #03060C 73%)
+      background-image: linear-gradient(-180deg, $color-darker-blue 0%, #03060C 73%)
 
       > .shine
         bottom: auto
