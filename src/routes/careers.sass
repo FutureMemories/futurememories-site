@@ -18,9 +18,12 @@
       position: relative
       display: flex
       align-items: center
-      height: #{'max(50vh, 100vh - 38rem)'}
+      height: calc(100vh - 38rem)
       min-height: 45rem
       margin-top: -19rem
+
+      @media screen and (min-width: 1100px)
+        height: calc(100vh - 37rem)
 
       > h1
         font-weight: bold
@@ -221,7 +224,7 @@
 
     @media screen and (max-width: 800px)
       > .heroText
-        min-height: 60rem
+        min-height: 50rem
 
       > .heroText > h1, > .workplaces > .text, > .positions > .text
         font-size: 3rem
