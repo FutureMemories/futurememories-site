@@ -398,6 +398,7 @@
       "challengeIncorrectAnswer2": "Men grattis, du är i varje fall vaken.",
       "challengeIncorrectAnswer3": "Rätt svar skulle vara",
       "challengeSubmitLabel": "Svara",
+      "challengeNextLabel": "Nästa fråga",
       "questionsAndAnswers": [
         {
           "question": "Vem var president under det amerikanska inbördeskriget?",

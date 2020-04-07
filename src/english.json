@@ -888,6 +888,7 @@
       "challengeIncorrectAnswer2": "But congratulations, at least you're awake.",
       "challengeIncorrectAnswer3": "The correct answer would be:",
       "challengeSubmitLabel": "Answer",
+      "challengeNextLabel": "Next question",
       "questionsAndAnswers": [
         {
           "question": "Who was president during the American Civil War?",

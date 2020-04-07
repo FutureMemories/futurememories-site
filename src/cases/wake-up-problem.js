@@ -55,13 +55,7 @@ export default class extends Component {
     this.setState(prevState => ({
       showResultView: true,
       currentAnswerCorrect: currentAnswer
-    }), () => {
-      if (this.questionsAndAnswers.length > this.state.currentQuestion + 1) {
-        setTimeout(() => {
-          this.setState(prevState => ({ currentQuestion: prevState.currentQuestion + 1, selectedAnswer: null, showResultView: false, currentAnswerCorrect: null }))
-        }, 1400)
-      }
-    })
+    }))
   }
 
   render ({ data, root }) {
@@ -167,12 +161,25 @@ export default class extends Component {
                             <label for={j} class={s.label}>{answer}</label>
                           </div>
                         ))}
-
                       </div>
                     ))}
-                    <button class={s.challengeSubmit} onClick={e => { this.handleAnswer() }}>{content.challengeSubmitLabel}</button>
                   </div>
                 }
+
+                <button
+                  class={cx(s.challengeSubmit, this.state.showResultView && this.questionsAndAnswers.length <= this.state.currentQuestion + 1 && s.hide)}
+                  onClick={e => {
+                    if (this.state.showResultView) {
+                      if (this.questionsAndAnswers.length > this.state.currentQuestion + 1) {
+                        this.setState(prevState => ({ currentQuestion: prevState.currentQuestion + 1, selectedAnswer: null, showResultView: false, currentAnswerCorrect: null }))
+                      }
+                    } else {
+                      this.handleAnswer()
+                    }
+                  }}>
+                  {this.state.showResultView ? content.challengeNextLabel : content.challengeSubmitLabel}
+                </button>
+
               </div>
             </BookmarkBlock>
 
