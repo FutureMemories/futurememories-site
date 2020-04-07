@@ -50,7 +50,8 @@
         "stc",
         "bandbond",
         "proflight",
-        "antistress"
+        "antistress",
+        "wake-up-problem"
       ]
     },
     "backend": {
