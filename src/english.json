@@ -98,13 +98,14 @@
         "picular",
         "antistress",
         "folklore-company",
-        "wya-network",
+        "wake-up-problem",
         "paperquiz",
         "tennis-watch",
         "paykartan",
         "forces-of-freedom",
         "travelmate",
-        "spira"
+        "spira",
+        "wya-network"
       ]
     }
   },
@@ -716,9 +717,10 @@
           "background": "rgba(0, 0, 0, 0.4)"
         },
         {
-          "height": "50%",
-          "margin-top": "auto",
-          "margin-left": "calc(100% - 43rem)"
+          "height": "60%",
+          "position": "absolute",
+          "right": "0",
+          "bottom": "0"
         }
       ]
     },
@@ -869,12 +871,29 @@
     },
     "wake-up-problem": {
       "name": "Wake Up Problem",
+      "image": "cases/wake-up-problem-phone.png",
       "title": "Wake Up Problem",
       "subtitle": "Rise and shine.",
       "desc": "",
       "metaDesc": "",
       "client": "",
       "type": "UX, React Native, iOS, Android",
+      "style": [
+        {
+          "color": "#070B13",
+          "background": "linear-gradient(97.71deg, #FFEB00 0%, #FFFDE1 100%)"
+        },
+        {
+          "background": "linear-gradient(90deg, rgba(181, 187, 199, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%)"
+        },
+        {
+          "position": "absolute",
+          "left": "12%",
+          "bottom": "-18%",
+          "height": "92%"
+        }
+      ],
+      "showcase": true,
       "snoozeLoseTitle": "If you snooze, you lose.",
       "snoozeLoseText": "Waking up on the right side of the bed is important in order to be able to perform for the school day. For many students, on the other hand, hitting ‘snooze’ in the morning is a habit that may not be a particularly good way to wake up. In fact, research shows that the best way to wake up is a quick wake-up by activating the brain to get-up and get-going.",
       "alarminglyEffectiveTitle": "Alarmingly effective",
