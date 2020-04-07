@@ -877,8 +877,8 @@
       "image": "cases/wake-up-problem-phone.png",
       "title": "Wake Up Problem",
       "subtitle": "Rise and shine.",
-      "desc": "",
-      "metaDesc": "",
+      "desc": "An alarm clock with a twist, to stop the alarm you need to answer some questions, so that you don’t snooze all day.",
+      "metaDesc": "Wake Up Problem - an alarm clock with a twist. To stop the alarm you need to answer some questions, so that you don’t snooze all day.",
       "client": "",
       "type": "UX, React Native, iOS, Android",
       "style": [

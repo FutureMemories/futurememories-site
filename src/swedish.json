@@ -385,6 +385,7 @@
       "name": "Wake Up Problem",
       "title": "Wake Up Problem",
       "subtitle": "Rise and shine.",
+      "desc": "En vanlig väckarklocka, men med en liten skillnad, man måste svara på en kunskapsfråga för att stänga av larmet.",
       "snoozeLoseTitle": "If you snooze, you lose.",
       "snoozeLoseText": "Att vakna rätt är viktigt för att känna sig pigg, må bra och kunna prestera i skolan på dagarna. Men en hel del studenter har däremot som vana att snooza på morgonen, och det kanske inte är ett speciellt bra sätt att vakna på. Faktiskt är det så att forskning visar att det bästa sättet att vakna är att snabbt väcka och aktivera hjärnan för att snabbare piggna till och komma upp på morgonen.",
       "alarminglyEffectiveTitle": "Alarmingly effective",
