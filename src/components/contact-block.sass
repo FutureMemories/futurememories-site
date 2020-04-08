@@ -22,7 +22,17 @@
   &:first-child
     margin-bottom: 3rem
 
-  > a
+  &.meeting > .buttonLink
+    background: $color-red
+
+  &.phone > .buttonLink
+    background: $color-darker-blue
+
+    .dark &
+      background: white
+      color: $color-darker-blue
+
+  .buttonLink
     border-radius: 6rem
     color: white
     font-weight: bold
@@ -37,24 +47,20 @@
     > svg
       margin-right: 1rem
 
-  > p
+  p, .mapsLink a
+    margin-top: 1rem
     color: rgba($color-darker-blue, 0.5)
     font-size: 1.6rem !important
     line-height: 1.9rem !important
-    margin-top: 1rem
 
     .dark &
       color: rgba(white, 0.5)
 
-  &.meeting > a
-    background: $color-red
+      a
+        color: rgba(white, 0.5)
 
-  &.phone > a
-    background: $color-darker-blue
-
-    .dark &
-      background: white
-      color: $color-darker-blue
+  .mapsLink a
+    text-decoration: underline
 
 @media screen and (min-width: 600px)
   .block
@@ -76,10 +82,10 @@
       margin-right: 2rem
       margin-bottom: 0
 
-    &.meeting > a
+    &.meeting > .buttonLink
       border-top-right-radius: 1rem
       border-bottom-right-radius: 1rem
 
-    &.phone > a
+    &.phone > .buttonLink
       border-top-left-radius: 1rem
       border-bottom-left-radius: 1rem
