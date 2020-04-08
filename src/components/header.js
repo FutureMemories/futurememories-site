@@ -4,6 +4,7 @@ import Icon from './icon'
 import getLanguageLink from '../utils/getLanguageLink'
 import getCurrentUrlForLanguage from '../utils/getCurrentUrlForLanguage'
 import s from './header.sass'
+import ContactOverlay from './contact-overlay'
 
 export default class extends Component {
   componentDidMount () {
@@ -21,6 +22,10 @@ export default class extends Component {
   closeMenu = () => {
     this.props.handleLocked()
     this.navCheck.checked = false
+  }
+
+  toggleOverlay = () => {
+    this.setState({ showOverlay: !this.state.showOverlay })
   }
 
   render ({ root, dark, links, fadeIn, route, content }, { disableClick }) {
@@ -60,7 +65,7 @@ export default class extends Component {
 
           <a
             class={s.contactUs}
-            onClick={() => console.log("kontakta oss")}
+            onClick={() => this.setState({ showOverlay: true })}
           >
             {content.contactUs}
           </a>
@@ -84,8 +89,12 @@ export default class extends Component {
               ))}
             </ul>
           </div>
-
         </div>
+        <ContactOverlay
+          showOverlay={this.state.showOverlay}
+          toggleOverlay={this.toggleOverlay}
+          content={content}
+        />
       </header>
     )
   }

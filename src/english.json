@@ -1099,7 +1099,21 @@
   },
   "content": {
     "header": {
-      "contactUs": "Contact us"
+      "contactUs": "Contact us",
+      "contactFormHeader": "Get in touch 🤘",
+      "phoneNumber": "+46 (0) 31 102 151",
+      "phoneHours": "(09:00 - 17:00 CET)",
+      "fields": {
+        "name": "Your name",
+        "email": "Your email",
+        "telephone": "Your telephone number",
+        "suggestTime": "Suggest a time & day",
+        "message": "Write your message here...",
+        "send": "Send"
+      },
+      "sending": "Sending...",
+      "sent": "Sent! You can now close this window.",
+      "errorSending": "Oops, something went wrong. Please try again later."
     },
     "footer": {
       "onFacebook": "Future Memories on Facebook",
@@ -1141,7 +1155,7 @@
       "addressLabel": "Vallgatan 25, Gothenburg",
       "phoneNumber": "+46 (0) 31 102 151",
       "phoneHours": "(09:00 - 17:00 CET)",
-      "bookAMeetingHeader": "Book a meeting with us 🤘",
+      "contactFormHeader": "Book a meeting with us 🤘",
       "fields": {
         "name": "Your name",
         "email": "Your email",

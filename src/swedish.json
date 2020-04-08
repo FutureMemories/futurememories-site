@@ -521,7 +521,20 @@
   },
   "content": {
     "header": {
-      "contactUs": "Kontakta oss"
+      "contactUs": "Kontakta oss",
+      "contactFormHeader": "Kontakta oss 🤘",
+      "phoneNumber": "031 - 10 21 51",
+      "fields": {
+        "name": "Ditt namn",
+        "email": "Din email",
+        "telephone": "Ditt telefonnummer",
+        "suggestTime": "Föreslå en tid och dag",
+        "message": "Skriv ditt meddelande här...",
+        "send": "Skicka"
+      },
+      "sending": "Skickar...",
+      "sent": "Skickat! Du kan nu stänga det här fönstret.",
+      "errorSending": "Oj, något gick fel. Var god försök senare."
     },
     "footer": {
       "onFacebook": "Future Memories på Facebook",
@@ -537,7 +550,7 @@
     "contactBlock": {
       "title": "Gillar du vad du ser och behöver något?",
       "bookAMeeting": "Boka ett möte",
-      "bookAMeetingHeader": "Boka ett möte med oss 🤘",
+      "contactFormHeader": "Book a meeting with us 🤘",
       "phoneNumber": "031 - 10 21 51",
       "fields": {
         "name": "Ditt namn",
