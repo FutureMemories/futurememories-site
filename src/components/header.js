@@ -23,7 +23,7 @@ export default class extends Component {
     this.navCheck.checked = false
   }
 
-  render ({ root, dark, links, fadeIn, route }, { disableClick }) {
+  render ({ root, dark, links, fadeIn, route, content }, { disableClick }) {
     return (
       <header class={cx(s.header, dark && s.dark, fadeIn && s.fadeIn)}>
         <div class={s.inner}>
@@ -31,6 +31,23 @@ export default class extends Component {
           <a href={getLanguageLink('/')} title='Home'>
             <Icon id='logo' />
           </a>
+
+          <ul class={s.desktopNav}>
+            {links.map((link, i) => {
+              if (i > 0) {
+                return (
+                  <li key={'header_desktopnav_' + link.to}>
+                    <a
+                      class={route.replace(/\/$/, '') === link.to && s.active}
+                      href={getLanguageLink(link.to)}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                )
+              }
+            })}
+          </ul>
 
           {
             root === '/sv'
@@ -40,6 +57,13 @@ export default class extends Component {
 
           <input class={s.navCheck} id='nav-check' type='checkbox' ref={(el) => { this.navCheck = el }} />
           <label onClick={this.props.handleLocked} aria-label='Navigation Menu' for='nav-check' class={s.navMenu} />
+
+          <a
+            class={s.contactUs}
+            onClick={() => console.log("kontakta oss")}
+          >
+            {content.contactUs}
+          </a>
 
           <div onClick={!disableClick && this.closeMenu} class={s.menuBlock}>
             <ul

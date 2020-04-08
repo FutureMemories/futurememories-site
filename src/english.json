@@ -1098,6 +1098,9 @@
     "getApp": "Get App"
   },
   "content": {
+    "header": {
+      "contactUs": "Contact us"
+    },
     "footer": {
       "onFacebook": "Future Memories on Facebook",
       "onInstagram": "Future Memories on Instagram",

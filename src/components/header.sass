@@ -23,6 +23,7 @@
     max-width: $max-width
     padding: 5rem 3rem
     width: 100%
+
     @media screen and (min-width: 1400px)
       padding: 5rem 13rem
       max-width: none
@@ -43,8 +44,42 @@
 
       &.languageToggle
         margin-left: auto
-        position: relative
-        top: -.2rem
+        color: #8D939E
+        font-weight: bold
+        text-transform: uppercase
+
+    > .desktopNav
+      display: none
+      margin-left: 6rem
+      list-style: none
+
+      @media screen and (min-width: 1024px)
+        display: flex
+
+      li:not(:last-of-type)
+        margin-right: 4rem
+
+      a
+        color: inherit
+
+        &.active
+          text-decoration: underline
+          color: $color-red
+
+    > .contactUs
+      display: none
+      margin-left: 4rem
+      text-decoration: none
+      color: $color-red
+      font-weight: bold
+      cursor: pointer
+
+      &:hover
+        color: $color-red
+        opacity: 0.7
+
+      @media screen and (min-width: 1024px)
+        display: flex
 
     > .navMenu
       background: none
@@ -56,7 +91,11 @@
       margin-left: 2rem
       position: relative
       width: 2.5rem
+      top: .2rem
       z-index: 11
+
+      @media screen and (min-width: 1024px)
+        display: none
 
       &:hover
         opacity: 0.8

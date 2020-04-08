@@ -35,6 +35,7 @@ export default class extends Component {
           route={route}
           handleLocked={() => this.handleLocked()}
           fadeInHeader={fadeInHeader}
+          content={data.content.header}
         />
         {children}
         {!removeFooter && (

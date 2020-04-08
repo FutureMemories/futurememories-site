@@ -520,6 +520,9 @@
     "getApp": "Ladda ner appen"
   },
   "content": {
+    "header": {
+      "contactUs": "Kontakta oss"
+    },
     "footer": {
       "onFacebook": "Future Memories på Facebook",
       "onInstagram": "Future Memories på Instagram",
