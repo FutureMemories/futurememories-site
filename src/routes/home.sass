@@ -26,7 +26,7 @@
       position: relative
 
       @media screen and (min-width: 1100px)
-        height: #{'max(70vh, 100vh - 100rem)'}
+        height: calc(100vh - 28rem)
 
       > h1
         font-weight: bold
@@ -200,6 +200,10 @@
         bottom: -8rem
         position: absolute
         right: -10rem
+
+    @media screen and (max-width: 1000px)
+      > .welcome > h1
+        margin: auto
 
     @media screen and (max-width: 800px)
       > .welcome > h1, > .work > .text, > .information > .foundationPillar > h1

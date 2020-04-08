@@ -26,7 +26,7 @@
       position: relative
 
       @media screen and (min-width: 1100px)
-        height: #{'max(50vh, 100vh - 35rem)'}
+        height: calc(100vh - 39.5rem)
 
       > h1
         font-weight: bold
@@ -86,7 +86,7 @@
            width: 38rem
 
         > h1
-          color: $color-red
+          font-weight: bold
 
         > p
           font-size: 1.8rem
@@ -94,6 +94,7 @@
           line-height: 2.5rem
           margin-top: 2rem
           max-width: 37.7rem
+          color: #8D939E
 
       .filterBlock
         @media screen and (min-width: 1024px)
@@ -138,9 +139,6 @@
       > .text
         margin-left: 5rem
 
-        > h1
-          color: $color-red
-
         > p
           font-size: 1.8rem
           letter-spacing: 0.045rem
@@ -179,7 +177,7 @@
         width: 16.5rem
 
     @media screen and (max-width: 800px)
-      > .projectsHeader > .text, > .partners > .text
+      > .projectsHeader > .text, > .projectsHeader > .text > h1, > .partners > .text
           font-size: 3rem
           margin-left: 0
           width: 100%
