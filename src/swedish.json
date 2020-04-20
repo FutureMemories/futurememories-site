@@ -118,7 +118,7 @@
     "bauer-university": {
       "title": "",
       "subtitle": "Kunskap ger ökad försäljning",
-      "desc": "Gamingbaserad onlinekurs som utbildar Bauer säljare globalt till att bli produktexperter genom att ha riktigt kul på vägen.",
+      "desc": "Gamingficationbaserad onlinekurs som gör Bauer säljare till produkt-experter genom att ha riktigt kul på vägen.",
       "metaDesc": "Gamingficationbaserad plattform framtagen i React och Python med Django & GraphQL",
       "client": "Bauer, Bond Communications",
       "tabletMockup": "Bauer University app",
@@ -167,7 +167,7 @@
     "proflight": {
       "title": "",
       "subtitle": "Stöd för piloter i motvind",
-      "desc": "En iPad applikation för passagerarflygets piloter. proFLIGHT levererar rådande väderförhållanden och varningar rakt in i cockpit.",
+      "desc": "En iPad applikation för passagerarflygets piloter som levererar rådande väderförhållanden och varningar rakt in i cockpit.",
       "metaDesc": "proFLIGHT är en app framtagen för piloter som presenterar all nödvändig väderrelaterad information direkt in till cockpit i realtid. I ett rent och tydligt användargränssnitt får piloten tillgång till allt från betydande väderdiagram, SIGMETS och information om stationen till skräddarsytt högupplösta väderförhållanden som turbulens och vindar längs vägen.",
       "client": "Avtech, Invencon",
       "flightmodeTitle": "Airplane mode aktiverad",
@@ -198,7 +198,7 @@
     "antistress": {
       "title": "",
       "subtitle": "Ta ett djupt andetag",
-      "desc": "En digital dagbok där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom.",
+      "desc": "En digital dagbok som ökar ditt välbefinnande och reducerar stressymptom genom avslappnande övningar.",
       "metaDesc": "AntiStress, en fickdagbok för iOS och Android för att logga stressnivåer och lyssna på meditativa ljudspår för att minska stress.",
       "client": "Västra Götalandsregionen",
       "imageAlt": "AntiStress app",
@@ -220,7 +220,7 @@
       "name": "Retts Plus",
       "title": "",
       "subtitle": "Säkra medicinska beslut",
-      "desc": "En tjänst som räddar liv genom att stödja personal i triage-processen. Ett ovärderligt verktyg vid medicinsk akut bedömning.",
+      "desc": "Räddar liv genom att stödja personal i triage-processen. Ett ovärderligt verktyg vid medicinsk akut bedömning.",
       "metaDesc": "Retts Plus, UX och UI-design för en iOS-app som stöder akutpersonal vid kritiska beslut under medicinska nödsituationer",
       "client": "Predicare",
       "efficiencyTitle": "En mer effektiv vårdprocess",
@@ -238,7 +238,7 @@
     "sleepcure": {
       "title": "Future Memories: SleepCure, en digital analys- och behandlingsmetod för människor som vill få en bättre sömn.",
       "subtitle": "Bättre sömn - ett bättre liv",
-      "desc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå",
+      "desc": "En app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå.",
       "metaDesc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn, integrerad med iOS HealthKit.",
       "sleepCoachTitle": "Din digitala sömncoach",
       "sleepCoachText": "Sömnproblem kan vara komplext. Vad som funkar för en person funkar kanske inte för den andra. SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå. Appen hjälper dig att skapa sunda sömnvanor genom att utvärdera dina dagliga rutiner, klargör dina ohälsosamma vanor som påverkar din sömn och hjälper dig att steg för steg ta dig ur dem.",
