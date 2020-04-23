@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import s from './large-image.sass'
 
-export default ({ src, alt = 'image', video, width, height, background, modifier, inView, children }) => (
+export default ({ src, alt = 'image', video, width, height, background = '', modifier, inView, children }) => (
   <div
     class={cx(s.largeImage, background && !video && s.smallImage, modifier && s[modifier])}
     style={{ background }}

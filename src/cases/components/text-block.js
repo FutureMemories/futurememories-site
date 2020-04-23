@@ -2,7 +2,7 @@ import cx from 'classnames'
 import s from './text-block.sass'
 import Button from '../../components/button'
 
-export default ({ title, text, image, link, background, color, titleIcon, modifier, inView }) => {
+export default ({ title, text, image, link, background = '', color = '', titleIcon, modifier, inView }) => {
   const textIsAnArray = Array.isArray(text)
 
   return (

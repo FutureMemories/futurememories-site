@@ -384,12 +384,13 @@
     "wake-up-problem": {
       "name": "Wake Up Problem",
       "title": "Wake Up Problem",
-      "subtitle": "Rise and shine.",
-      "snoozeLoseTitle": "If you snooze, you lose.",
+      "subtitle": "Upp och hoppa!",
+      "desc": "En vanlig väckarklocka, men med en liten skillnad, man måste svara på en kunskapsfråga för att stänga av larmet.",
+      "snoozeLoseTitle": "En snoozer är en loser",
       "snoozeLoseText": "Att vakna rätt är viktigt för att känna sig pigg, må bra och kunna prestera i skolan på dagarna. Men en hel del studenter har däremot som vana att snooza på morgonen, och det kanske inte är ett speciellt bra sätt att vakna på. Faktiskt är det så att forskning visar att det bästa sättet att vakna är att snabbt väcka och aktivera hjärnan för att snabbare piggna till och komma upp på morgonen.",
-      "alarminglyEffectiveTitle": "Alarmingly effective",
+      "alarminglyEffectiveTitle": "Alarmerande effektivt",
       "alarminglyEffectiveText": "För att hjälpa studenter på traven att vakna bättre skapade vi appen Wake Up Problem. Appen fungerar som en vanlig väckarklocka, men med en liten skillnad, man måste svara på en kunskapsfråga för att stänga av larmet.\n\nGenom att svara på frågan väcker man hjärnan och får en välbehövd boost, Du kan även se vart du hamnar i topplistan. Den som svarar rätt snabbast vinner!",
-      "upForAChallengeTitle": "Up for a challenge?",
+      "upForAChallengeTitle": "Anta utmaningen du med",
       "upForAChallengeText": "Att vi testar studenternas kunskap är en del, men hur är det med dig själv egentligen, är du tillräckligt vaken för några frågor?",
       "challengeHeadline": "God morgon!",
       "challengeCorrectAnswer": "Yes, rätt svar.",
@@ -548,10 +549,12 @@
       "seeMoreProjects": "Fler projekt"
     },
     "contactBlock": {
-      "title": "Gillar du vad du ser och behöver något?",
+      "title": "Gillar du vad du ser?",
       "bookAMeeting": "Boka ett möte",
       "contactFormHeader": "Book a meeting with us 🤘",
       "phoneNumber": "031 - 10 21 51",
+      "phoneHours": "Kl 9:00 - 17:00",
+      "addressLabel": "Vallgatan 25, Göteborg",
       "fields": {
         "name": "Ditt namn",
         "email": "Din email",

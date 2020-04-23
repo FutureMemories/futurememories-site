@@ -2,7 +2,7 @@ import cx from 'classnames'
 import s from './parallax-bump-block.sass'
 import ParallaxObject from './parallax-object'
 
-export default ({ title, text, items, align, background, color, modifier, inView }) => (
+export default ({ title, text, items, align, background = '', color = '', modifier, inView }) => (
   <div
     class={cx(s.parallaxBumpBlock, modifier && s[modifier])}
     style={{ background, color }}

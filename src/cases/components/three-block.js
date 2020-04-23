@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import s from './three-block.sass'
 
-export default ({ blocks, background, color, modifier, inView }) => (
+export default ({ blocks, background = '', color = '', modifier, inView }) => (
   <div
     class={cx(s.threeBlock, modifier && s[modifier])}
     style={{ background, color }}
