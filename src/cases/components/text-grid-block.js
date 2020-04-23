@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import s from './text-grid-block.sass'
 
-export default ({ blocks, background, color }) => (
+export default ({ blocks, background = '', color = '' }) => (
   <div
     class={s.textGridBlock}
     style={{ background, color }}

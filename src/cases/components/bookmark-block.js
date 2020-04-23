@@ -2,7 +2,7 @@ import cx from 'classnames'
 import s from './bookmark-block.sass'
 import Button from '../../components/button'
 
-export default ({ title, text, items, image, alt = 'image', background, color, align, modifier, children, className, inView, link }) => (
+export default ({ title, text, items, image, alt = 'image', background = '', color = '', align, modifier, children, className, inView, link }) => (
   <div
     class={cx(s.bookmarkBlock, modifier && s[modifier], className)}
     style={{ background, color }}
