@@ -21,7 +21,7 @@
 
       > h1
         font-weight: normal
-        margin: 10rem 0 2rem
+        margin: 6rem 0 2rem
         white-space: pre-line
 
       > p
@@ -35,22 +35,8 @@
       display: flex
       flex-wrap: wrap
       justify-content: flex-end
-      margin: -7rem 0 -35% auto
       position: relative
       width: 60%
-
-      *
-        &:nth-child(1)
-          right: -2rem
-          z-index: 4
-
-        &:nth-child(2)
-          right: 4rem
-          z-index: 3
-
-        &:nth-child(3)
-          right: 2rem
-          z-index: 2
 
     @media screen and (max-width: $medium-grid)
       > .content
@@ -75,3 +61,72 @@
 
       > .parallaxes
         width: 55%
+
+  &:not(.nordish)
+    > .inner
+      > .parallaxes
+        margin: -7rem 0 -35% auto
+
+        *
+          &:nth-child(1)
+            right: -2rem
+            z-index: 4
+
+          &:nth-child(2)
+            right: 4rem
+            z-index: 3
+
+          &:nth-child(3)
+            right: 2rem
+            z-index: 2
+
+  &.nordish
+    overflow: visible
+
+    @media screen and (min-width: $small-grid + 101px)
+      margin-bottom: 12rem
+
+    > .inner
+      > .content
+
+        @media screen and (min-width: $small-grid + 101px)
+          margin: 3rem 0
+
+        > h1
+          margin-top: 0
+
+      > .parallaxes
+        margin: -2rem auto -10%
+
+        > div:nth-child(1)
+          left: 20%
+          z-index: 4
+
+        > div:nth-child(2)
+          left: -15%
+          z-index: 3
+
+        @media screen and (min-width: $small-grid + 101px)
+          > div:nth-child(1)
+            left: -40%
+
+          > div:nth-child(2)
+            left: -20%
+
+        @media screen and (min-width: $breakpoint-desktop)
+          > div:nth-child(1)
+            left: -30%
+
+          > div:nth-child(2)
+            left: 30%
+
+        @media screen and (min-width: 1200px)
+          > div:nth-child(1)
+            left: -27%
+
+          > div:nth-child(2)
+            left: 40%
+
+        @media screen and (min-width: 1500px)
+          > div:nth-child(2)
+            left: 50%

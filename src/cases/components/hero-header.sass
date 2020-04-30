@@ -6,17 +6,31 @@
   padding: 5rem 3rem 10rem
   margin: auto
 
+  &.dark
+    > .type
+      color: white
+
+  > .type
+    font-size: 2rem
+    letter-spacing: .1rem
+    text-transform: uppercase
+    color: #161D2B
+    opacity: 0.5
+    margin-bottom: 3.5rem
+
   > h1
-    color: $color-red
     font-size: 5rem
     font-weight: bold
     margin-bottom: 1rem
 
   > h2
     font-size: 4rem
-    font-weight: 500
+    font-weight: 400
 
   @media screen and (max-width: $small-grid)
+
+    > .type
+      font-size: 1.8rem
 
     > h1
       font-size: 4rem

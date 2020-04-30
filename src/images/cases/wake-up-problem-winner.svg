@@ -1,0 +1,19 @@
+<svg width="123" height="149" viewBox="0 0 123 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62.0341 65.3816C41.5879 65.3816 24.953 82.0165 24.953 102.463C24.953 122.909 41.5879 139.542 62.0341 139.542C82.4804 139.542 99.1138 122.909 99.1138 102.463C99.1138 82.0165 82.4804 65.3816 62.0341 65.3816ZM62.0341 148.542C36.6259 148.542 15.9531 127.871 15.9531 102.463C15.9531 77.053 36.6259 56.3817 62.0341 56.3817C87.4424 56.3817 108.114 77.053 108.114 102.463C108.114 127.871 87.4424 148.542 62.0341 148.542Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.2507H40.2341L77.5237 54.2482H38.7611L0 1.2507Z" fill="black"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="64" y="0" width="28" height="34">
+<path d="M64.541 0.500412H91.9337V33.6001H64.541V0.500412Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M91.9337 0.499924H85.2963L64.541 28.8451L68.048 33.6001L91.9337 0.499924Z" fill="black"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M100.864 0.682362L95.1283 0.680862L69.6211 35.9695L72.3811 39.7735L100.864 0.682362Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M109.992 0.570312H104.196L74.1211 41.9219L77.1196 45.8383L109.992 0.570312Z" fill="black"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="78" y="0" width="45" height="54">
+<path d="M78.7441 0.680862H122.332V53.5748H78.7441V0.680862Z" fill="white"/>
+</mask>
+<g mask="url(#mask1)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M122.332 0.680862H113.484L78.7441 48.0954L82.8496 53.5748L122.332 0.680862Z" fill="black"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M58.7237 92.3214H51.5238C50.7738 92.3214 50.1738 91.6464 50.1738 90.8964V86.1699C50.1738 85.8714 50.3988 85.2714 50.6238 85.0449L61.5737 76.495H68.4751C69.2251 76.495 69.8236 77.17 69.8236 77.92V126.073C69.8236 126.822 69.2251 127.498 68.4751 127.498H60.1487C59.3237 127.498 58.7237 126.822 58.7237 126.073V92.3214Z" fill="black"/>
+</svg>

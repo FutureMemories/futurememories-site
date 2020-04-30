@@ -3,29 +3,33 @@
 .deviceBlock
 
   > .device
-    color: $color-red
-    display: block
     position: relative
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    min-height: 6rem
+    padding: 1.5rem 4rem
+    background: $color-red
+    border-radius: 5.4rem
+    overflow: hidden
+    color: white
+    margin-left: 1rem
+    margin-right: 1rem
 
     &:nth-child(2)
       margin-top: 2rem
-
-    @media screen and (min-width: 443px)
-      display: inline-block
-      &:nth-child(2)
-        margin-left: 5rem
 
     > svg
       position: relative
 
     > .logo
-      width: 2.1rem
-      top: 0.5rem
-
-    > .arrow
-      width: 3.6rem
-      top: 0.3rem
+      width: 1.6rem
+      margin-right: 1rem
 
     > span
       font-size: 1.8rem
       margin: 0 0.5rem
+
+  &.black
+    > .device
+      background: $color-darker-blue

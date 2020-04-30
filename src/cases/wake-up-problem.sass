@@ -1,0 +1,262 @@
+@import '../settings.sass'
+
+.view
+  background: #FFFDE1
+  color: $color-darker-blue
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  > .inner
+    background: none
+
+    .snoozeLose
+      h1
+        color: #161D2B
+
+      .notificationImage
+        max-width: 45rem
+        width: 100%
+        margin: -4rem 0 2rem
+        order: -1
+
+    .alarminglyEffective
+      overflow: hidden
+      text-align: center
+
+      @media screen and (min-width: 941px)
+        text-align: unset
+
+      \:global(.inView)
+        img
+          animation: shake .5s linear .9s
+
+    .challengeSection
+      text-align: center
+
+      @media screen and (min-width: 941px)
+        text-align: unset
+
+      h1
+        color: #161D2B
+
+      .challenge
+        position: relative
+        display: flex
+        flex-direction: column
+        width: 100%
+        max-width: 40rem
+        background: #FFFFFF
+        box-shadow: 0px 4.27479px 100px rgba(0, 0, 0, 0.1)
+        border-radius: 2rem
+        font-family: 'Arial', sans-serif
+        color: #000000
+        height: 48rem
+
+        @media screen and (min-width: 350px)
+          height: 54rem
+
+        .challengeHeader
+          text-align: center
+          margin-top: -2rem
+          padding-bottom: 2rem
+          border-bottom: .1rem solid #F5F5F5
+
+          h2
+            font-size: 2.2rem
+            font-weight: 600
+
+            @media screen and (min-width: 350px)
+              font-size: 2.4rem
+
+            .correct
+              color: #1CCE8E
+
+            .incorrect
+              color: #FF5A5A
+
+          .logoIcon
+            height: 4.6rem
+            width: 4.6rem
+
+        .challengeView
+          position: absolute
+          display: none
+          top: 8.5rem
+          left: 0
+          width: 100%
+          height: calc(100% - 14.8rem)
+          background: #FFFFFF
+          flex-direction: column
+
+          @media screen and (min-width: 350px)
+            height: calc(100% - 15.8rem)
+
+          &.show
+            display: flex
+
+        .challengeQuestion
+          padding: 2rem 3rem 3rem
+          font-size: 1.7rem
+          line-height: 2.1rem
+          font-weight: 600
+
+        .challengeAnswer
+          display: flex
+          flex-grow: 1
+          border-top: .1rem solid #F5F5F5
+          font-size: 1.4rem
+          font-weight: 400
+
+          .input
+            visibility: hidden
+            width: 0
+            height: 0
+
+          .label
+            display: flex
+            width: 100%
+            align-items: center
+            padding: 0 3rem
+            cursor: pointer
+
+            &::before
+              content: ""
+              border: .1rem solid #D8D8D8
+              margin-right: 2rem
+              height: 2.7rem
+              width: 2.7rem
+              border-radius: 50%
+
+          .input:checked
+            + label::before
+              background: radial-gradient(circle, #008093 0%, #008093 45%, white 45%)
+
+        .challengeSubmit
+          position: absolute
+          bottom: 0
+          left: 0
+          height: 6.5rem
+          width: 100%
+          background: #008093
+          border-radius: 0 0 2rem 2rem
+          cursor: pointer
+          color: #FFFFFF
+          font-size: 2.2rem
+          font-weight: 600
+
+          &.hide
+            display: none
+
+          @media screen and (min-width: 350px)
+            height: 7.5rem
+            font-size: 2.4rem
+
+        .challengeResultView
+          padding: 7rem 0
+          text-align: center
+
+          .resultHeader
+            font-size: 3.2rem
+            font-weight: 600
+            margin-bottom: 5rem
+            padding: 0 3rem
+
+          .resultText
+            font-size: 1.6rem
+            font-weight: 600
+
+          .correctAnswer
+            font-size: 1.4rem
+            border-top: .1rem solid #F5F5F5
+            border-bottom: .1rem solid #F5F5F5
+            padding: 3rem
+            margin-top: 3rem
+
+
+    .eyeSection
+      padding: $global-padding
+      background: #FFEB00
+
+      .eyeSvg
+        display: block
+        width: 30rem
+        margin: 0 auto
+        max-width: 75%
+
+        .pupil
+          animation: moveFromSideToSide 7s linear infinite alternate
+
+        .eyelid
+          animation: blink 3s linear infinite alternate
+          transform-origin: center
+
+
+  @keyframes shake
+    0% { transform: translate(2px, 1px) rotate(0deg) }
+    10% { transform: translate(-1px, -2px) rotate(-1deg) }
+    20% { transform: translate(-3px, 0px) rotate(1deg) }
+    30% { transform: translate(0px, 2px) rotate(0deg) }
+    40% { transform: translate(1px, -1px) rotate(1deg) }
+    50% { transform: translate(-1px, 2px) rotate(-1deg) }
+    60% { transform: translate(-3px, 1px) rotate(0deg) }
+    70% { transform: translate(2px, 1px) rotate(-1deg) }
+    80% { transform: translate(-1px, -1px) rotate(1deg) }
+    90% { transform: translate(2px, 2px) rotate(0deg) }
+    100% { transform: translate(1px, -2px) rotate(-1deg) }
+
+  @keyframes moveFromSideToSide
+    0%
+      transform: translate3d(0px, 0, 0)
+
+    15%
+      transform: translate3d(1px, 0, 0)
+
+    20%
+      transform: translate3d(1.4px, 0, 0)
+
+    30%
+      transform: translate3d(1px, -.2px, 0)
+
+    60%
+      transform: translate3d(-1.2px, 0, 0)
+
+    80%
+      transform: translate3d(-.3px, .2px, 0)
+
+    95%
+      transform: translate3d(-.2px, 0, 0)
+
+    100%
+      transform: translate3d(0px, 0, 0)
+
+  @keyframes blink
+    0%
+      transform: rotate(0deg) translateY(0)
+
+    13%
+      transform: rotate(-2deg) translateY(-.3px)
+
+    20%
+      transform: rotate(-3deg) translateY(-.8px)
+
+    30%
+      transform: rotate(-1deg) translateY(-.3px)
+
+    45%
+      transform: rotate(0deg) translateY(0px)
+
+    55%
+      transform: rotate(1deg) translateY(.3px)
+
+    70%
+      transform: rotate(2.4deg) translateY(1px)
+
+    74%
+      transform: rotate(2deg) translateY(1.1px)
+
+    88%
+      transform: rotate(2deg) translateY(.3px)
+
+    100%
+      transform: rotate(0deg) translateY(0)

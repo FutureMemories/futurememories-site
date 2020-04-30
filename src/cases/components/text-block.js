@@ -1,7 +1,8 @@
 import cx from 'classnames'
 import s from './text-block.sass'
+import Button from '../../components/button'
 
-export default ({ title, text, image, link, background, color, modifier, inView }) => {
+export default ({ title, text, image, link, background = '', color = '', titleIcon, modifier, inView }) => {
   const textIsAnArray = Array.isArray(text)
 
   return (
@@ -10,7 +11,10 @@ export default ({ title, text, image, link, background, color, modifier, inView 
       style={{ background, color }}
     >
       <div class={cx(s.inner, modifier && modifier, inView)}>
-        <h1>{title}</h1>
+        {titleIcon
+          ? <span class={s.titleIcon}><img src={require(`../../images/${titleIcon}`)} /> <h1>{title}</h1></span>
+          : <h1>{title}</h1>}
+
         <div class={cx(s.content, textIsAnArray && s.fullWidth)}>
           {textIsAnArray ? (
             text.map((paragraf, i) => (
@@ -31,7 +35,7 @@ export default ({ title, text, image, link, background, color, modifier, inView 
         )}
 
         {link && (
-          <a href={link[1]} target='_blank' rel='noopener noreferrer'>{link[0]}</a>
+          <Button to={link[1]} target='_blank' rel='noopener noreferrer' arrow transition='slide' customClass={s.link} label={link[0]} />
         )}
 
       </div>

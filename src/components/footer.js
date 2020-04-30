@@ -31,8 +31,8 @@ export default ({ company, light, background, links, content }) => (
       </div>
 
       <p class={s.contact}>
-        <span class={s.name}>{company.name}.</span>{' '}
-        {company.street} - {company.zip}, {company.city} {'//'} <a href={'mailto:' + company.email}>{company.email}</a>
+        <span class={s.name}>{company.name} -</span>{' '}
+        {company.street} - {company.zip} {company.city} {'//'} <a href={'mailto:' + company.email}>{company.email}</a>
       </p>
     </div>
   </footer>

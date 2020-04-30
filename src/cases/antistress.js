@@ -41,13 +41,14 @@ export default class extends Component {
             <HeroHeader
               title={content.name}
               subtitle={content.subtitle}
+              type={content.type}
             />
 
             <LargeImage src='cases/antistress-1.jpg' alt={content.imageAlt} />
 
             <CenterBlock
               inView='inViewBottom'
-              modifer='antistress'
+              modifier='antistress'
               title={content.speakYourMindTitle}
               text={content.speakYourMindText}
             >

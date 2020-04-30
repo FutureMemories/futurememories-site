@@ -213,8 +213,46 @@
       "exerciseAlt": "AntiStress gradient background"
     },
     "nordish-market": {
-      "title": "",
-      "desc": "En digital food court som levererar hållbar mat med närodlade råvaror för företag och privatpersoner."
+      "name": "Nordish Market",
+      "imageBg": [
+        "cases/nordish-market-2.png",
+        "width"
+      ],
+      "title": "Nordish Market",
+      "subtitle": "Hållbart hela vägen.",
+      "desc": "En digital food court som levererar hållbar mat med närodlade råvaror för företag och privatpersoner.",
+      "type": "UX, UI, React, Python, Django, Food Tech",
+      "imageAlt": "Nordish Market device mockup",
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "linear-gradient(121.04deg, #1B6665 0%, #AAA75C 100%)"
+        },
+        {
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+        }
+      ],
+      "showcase": true,
+      "healthyFoodTitle": "Hälsosam mat för alla tillfällen",
+      "healthyFoodText": "Nordish Market är en digital food court som erbjuder hållbar och hälsosam mat för leverans. På nordishmarket.com kan företag och privatpersoner lätt beställa frukost, lunch, middag eller en gófika från noga utvalda restauranger som delar samma värderingar: att mat skall vara hållbar och hälsosam. Nordish Markets digitala plattform sköter beställning- och betalningsprocessen och koordinerar utkörning och leverans.",
+      "visitTheSite": "Till siten",
+      "serviceDesignTitle": "Utsökt Service Design. Hållbar kundresa.",
+      "serviceDesignText": [
+        "Restaurangerna i Nordishfamiljen har helt separata erbjudanden med olika processer kring hur och när de tillagar sin mat. På Nordish Market har varje restaurang full kontroll över presentationen av sina maträtter och bestämmer själva hur de komponeras ihop till olika menyer. Restaurangerna styr därmed maträtternas tillgänglighet helt själva, baserat på deras egna förutsättningar.",
+        "Utmaningen för våra Service- och UX Designers var att skapa en sammanhängande användarupplevelse för slutkunden där det enkelt gick att lägga en beställning av maträtter från olika aktörer. Siten presenterar utbudet i form av en enhetlig meny till besökaren. Parametrar som leveransadress, leveransdag och -tid och kökets ledtider styr vilka maträtter som presenteras där och då."
+      ],
+      "brandingTitle": "Ett hållbart varumärke för en ljusare framtid.",
+      "brandingText": "Vi på Future Memories har varit delaktiga genom att ta fram branding material och ett enhetligt designsystem som spänner sig över samtliga kommunikationskanaler. Nordish Market sköter nu resten. Smaskens!",
+      "techTitle": "Mat i framkant",
+      "techText": "nordishmarket.com följer en responsiv design som gör att upplevelsen blir lika bra på desktop som på mobila enheter. Vi har dessutom integrerat Klarna Checkout för att ge Nordish Markets kunder möjlighet att genomföra en riktigt smooth betalning.\n\nNordish Market är en webbapplikation som är byggd helt och hållet i React. Applikationen är integrerad med ett affärssystem där information om restauranger, produkter och menyer sköter användarhantering samt beställarflöde. Innehållssidor och blogginlägg hämtas från ett externt CMS.",
+      "outpostTitle": "Outposts",
+      "outpostText": [
+        "Konceptet Outpost grundades i USA där restauranger insåg att man kan leverera en större mängd mat till fler hungriga kunder på ett smidigt, punktligt och mer effektivt sätt. Tänk dig att du sitter på ditt kontor och vill beställa en lunch utan att behöva stå i kö till den vanliga gamla lunchrestaurangen eller för den delen behöva beställa utkörning till dig själv, vilket ofta innebär osäkra leveranstider och en högre kostnad. En Outpost är en plats där maten du beställt väntar på dig, snarare än tvärtom.",
+        "Idén med Outpost är att förenkla processen med utkörningen genom att regelbundet leverera god mat till en angiven plats där du kan garantera kunden att maten kommer i tid. Nu finns den servicen både för arbetsplatser och allmänna platser och Nordish Market är bland de första som erbjuder denna service i Sverige på nordishmarket.com."
+      ],
+      "kitchenTitle": "Det är i köket allting händer",
+      "kitchenText": "Om en restaurang vore en webbsida så är köket vår backend. I bakgrunden finns ett egenutvecklat affärssystem som sköter administration av restauranger, produkter och menyer, användarhantering och orderhantering samt logistik kring utkörning och leverans. Backend är utvecklat med OpenSourceramverket Django som använder sig av Python som programmeringsspråk.\n\nAffärssystemet är en multi-tenant lösning som tillhandahåller en back office webbapplikation åt  restaurangpersonalen. Restaurangerna administrerar sina maträtter och får tillgång till alla inkomna matbeställningar som står inför leverans. Personalen på Nordish Market använder sedan systemet för att planera och genomföra logistiken i form av packning, ruttplanering och utkörning av beställningar.",
+      "kitchenImage": "cases/nordish-kitchen-se.png"
     },
     "retts-plus": {
       "name": "Retts Plus",
@@ -342,6 +380,55 @@
       "title": "",
       "desc": "Ett samarbete mellan Collector Bank och Aktieinvest. Spira gör det enkelt att att investera i aktier utan krusiduller.",
       "client": "Collector Bank, Varvet"
+    },
+    "wake-up-problem": {
+      "name": "Wake Up Problem",
+      "title": "Wake Up Problem",
+      "subtitle": "Upp och hoppa!",
+      "desc": "En vanlig väckarklocka, men med en liten skillnad, man måste svara på en kunskapsfråga för att stänga av larmet.",
+      "snoozeLoseTitle": "En snoozer är en loser",
+      "snoozeLoseText": "Att vakna rätt är viktigt för att känna sig pigg, må bra och kunna prestera i skolan på dagarna. Men en hel del studenter har däremot som vana att snooza på morgonen, och det kanske inte är ett speciellt bra sätt att vakna på. Faktiskt är det så att forskning visar att det bästa sättet att vakna är att snabbt väcka och aktivera hjärnan för att snabbare piggna till och komma upp på morgonen.",
+      "alarminglyEffectiveTitle": "Alarmerande effektivt",
+      "alarminglyEffectiveText": "För att hjälpa studenter på traven att vakna bättre skapade vi appen Wake Up Problem. Appen fungerar som en vanlig väckarklocka, men med en liten skillnad, man måste svara på en kunskapsfråga för att stänga av larmet.\n\nGenom att svara på frågan väcker man hjärnan och får en välbehövd boost, Du kan även se vart du hamnar i topplistan. Den som svarar rätt snabbast vinner!",
+      "upForAChallengeTitle": "Anta utmaningen du med",
+      "upForAChallengeText": "Att vi testar studenternas kunskap är en del, men hur är det med dig själv egentligen, är du tillräckligt vaken för några frågor?",
+      "challengeHeadline": "God morgon!",
+      "challengeCorrectAnswer": "Yes, rätt svar.",
+      "challengeCorrectAnswer2": "Du är uppenbarligen en vaken person.",
+      "challengeIncorrectAnswer": "Oooops, fel svar.",
+      "challengeIncorrectAnswer2": "Men grattis, du är i varje fall vaken.",
+      "challengeIncorrectAnswer3": "Rätt svar skulle vara",
+      "challengeSubmitLabel": "Svara",
+      "challengeNextLabel": "Nästa fråga",
+      "questionsAndAnswers": [
+        {
+          "question": "Vem var president under det amerikanska inbördeskriget?",
+          "answers": [
+            "Thomas Jefferson",
+            "George Washington",
+            "Abraham Lincoln"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Vad blir 39 x 3 – 2 + 21?",
+          "answers": [
+            "143",
+            "128",
+            "136"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Vilken är Asiens största stad?",
+          "answers": [
+            "Tokyo",
+            "New Delhi",
+            "Shanghai"
+          ],
+          "correctAnswer": 0
+        }
+      ]
     }
   },
   "notUsedCases": {
@@ -446,9 +533,12 @@
       "seeMoreProjects": "Fler projekt"
     },
     "contactBlock": {
-      "title": "Gillar du vad du ser och behöver något?",
+      "title": "Gillar du vad du ser?",
       "bookAMeeting": "Boka ett möte",
       "bookAMeetingHeader": "Boka ett möte med oss 🤘",
+      "phoneNumber": "031 - 10 21 51",
+      "phoneHours": "Kl 9:00 - 17:00",
+      "addressLabel": "Vallgatan 25, Göteborg",
       "fields": {
         "name": "Ditt namn",
         "email": "Din email",

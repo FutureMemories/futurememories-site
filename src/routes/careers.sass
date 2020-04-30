@@ -15,16 +15,19 @@
     width: 100%
 
     > .heroText
-      align-items: center
-      display: flex
-      height: 100vh
-      margin-top: -19rem
-      min-height: 70rem
       position: relative
+      display: flex
+      align-items: center
+      height: calc(100vh - 38rem)
+      min-height: 45rem
+      margin-top: -19rem
+
+      @media screen and (min-width: 1100px)
+        height: calc(100vh - 37rem)
 
       > h1
         font-weight: bold
-        margin-left: 10rem
+        margin-left: 5rem
         max-width: 84rem
         position: relative
         white-space: pre-line
@@ -45,7 +48,7 @@
       padding: 0 1rem
 
       > .text
-        margin: 0 0 10rem 10rem
+        margin: 0 0 7rem 5rem
 
         > h1
           color: $color-red
@@ -63,6 +66,8 @@
         position: relative
         right: 1rem
         width: calc(100% + 2rem)
+        animation: animateIn .5s ease forwards
+        opacity: 0
 
         > .workplace
           display: flex
@@ -125,7 +130,7 @@
       padding: 0 1rem
 
       > .text
-        margin-left: 10rem
+        margin-left: 5rem
 
         > h1
           color: $color-red
@@ -219,7 +224,7 @@
 
     @media screen and (max-width: 800px)
       > .heroText
-        min-height: 60rem
+        min-height: 50rem
 
       > .heroText > h1, > .workplaces > .text, > .positions > .text
         font-size: 3rem

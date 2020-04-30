@@ -68,11 +68,21 @@
         > a:not(:last-child)
           margin-right: 2rem
 
+        .link
+          margin-top: 6rem
+
         &.center
           text-align: center
 
           > p
             margin: auto
+
+        &.enableOrderChange
+          display: flex
+          flex-direction: column
+
+          &.center
+            align-items: center
 
     &.block
       > .content
@@ -110,6 +120,7 @@
           text-align: center
 
           > h1
+            padding: 0 0 2rem 0
             margin-bottom: 1rem
 
           > a > img

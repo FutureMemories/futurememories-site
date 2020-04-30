@@ -1,16 +1,21 @@
 import cx from 'classnames'
 import s from './three-block.sass'
 
-export default ({ blocks, background, color, inView }) => (
+export default ({ blocks, background = '', color = '', modifier, inView }) => (
   <div
-    class={s.threeBlock}
+    class={cx(s.threeBlock, modifier && s[modifier])}
     style={{ background, color }}
   >
     <div class={cx(s.inner, inView)}>
       <div class={s.blocks}>
         {blocks.map((block, i) => (
           <div key={'three_block_' + i} class={s.block}>
-            {block.type === 'image' && (
+            {block.type === 'image' && modifier === 'nordish-kitchen' ? (
+              <div class={cx(s.stackedImages, inView && s.inView)}>
+                <img class={s[block.modifier]} src={require(`../../images/${block.image}`)} />
+                <img class={s[block.modifier]} src={require('../../images/cases/nordish-kitchen-arrows.png')} />
+              </div>
+            ) : block.type === 'image' && (
               <img class={s[block.modifier]} src={require(`../../images/${block.image}`)} />
             )}
             {block.type === 'text' && ([

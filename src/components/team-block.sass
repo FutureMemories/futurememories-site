@@ -1,3 +1,5 @@
+@import '../animations.sass'
+
 .astronauts
   display: grid
   grid-template-columns: repeat(3, 1fr)
@@ -11,6 +13,12 @@
     z-index: 1
     display: flex
     align-items: flex-end
+    animation: animateIn .5s ease forwards
+    opacity: 0
+
+    @for $i from 1 through 20
+      &:nth-child(#{$i})
+        animation-delay: #{($i - 1) * 0.1s}
 
     &.button
       height: auto

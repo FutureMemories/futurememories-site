@@ -40,6 +40,7 @@ export default class extends Component {
             <HeroHeader
               title={content.name}
               subtitle={content.subtitle}
+              type={content.type}
             />
 
             <LargeImage
@@ -57,7 +58,7 @@ export default class extends Component {
               text={content.sleepCoachText}
               background='#FFFFFF'
               color='#737780'
-              modifer='sleepcure'
+              modifier='sleepcure'
             />
 
             <ThreeBlock
@@ -82,7 +83,7 @@ export default class extends Component {
               text={content.byTheWayText}
               background='#FFFFFF'
               color='#737780'
-              modifer='sleepcureByTheWay'
+              modifier='sleepcureByTheWay'
             />
 
             <DeviceBlock

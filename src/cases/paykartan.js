@@ -40,6 +40,7 @@ export default class extends Component {
             <HeroHeader
               title={content.name.toUpperCase()}
               subtitle={content.subtitle}
+              type={content.type}
             />
 
             <LargeImage
@@ -52,6 +53,7 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
+              background='#FFF5F5'
               title={content.lunchtimeTitle}
               text={content.lunchtimeText}
               link={[data.content.visitTheSite, 'https://paykartan.se/']}
@@ -75,6 +77,7 @@ export default class extends Component {
 
             <TextBlock
               inView='inViewBottom'
+              background='#FFF5F5'
               title={content.oneStepAheadTitle}
               text={content.oneStepAheadText}
               image={[content.oneStepAheadAlt, 'cases/paykartan-3.jpg']}

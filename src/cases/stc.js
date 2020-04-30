@@ -45,6 +45,7 @@ export default class extends Component {
             <HeroHeader
               title={content.name}
               subtitle={content.subtitle}
+              type={content.type}
             />
 
             <LargeImage
@@ -111,7 +112,8 @@ export default class extends Component {
               <DeviceBlock
                 customClass={s.deviceBlock}
                 ios='https://apps.apple.com/us/app/stc-training-club/id575468749'
-                andriod='https://play.google.com/store/apps/details?id=se.stc.trainingclub'
+                android='https://play.google.com/store/apps/details?id=se.stc.trainingclub'
+                blackButtons
               />
               <img class={s.devices} src={require('../images/cases/stc-6.jpg')} />
             </CenterBlock>

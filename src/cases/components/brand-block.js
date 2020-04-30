@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import s from './brand-block.sass'
 
-export default ({ showcase, background, inView }) => (
+export default ({ showcase, background = '', inView }) => (
   <div
     class={s.brandBlock}
     style={{ background }}

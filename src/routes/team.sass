@@ -15,16 +15,19 @@
     width: 100%
 
     > .text
-      align-items: center
-      display: flex
-      height: 100vh
-      margin-top: -19rem
-      min-height: 70rem
       position: relative
+      display: flex
+      align-items: center
+      height: calc(100vh - 27rem)
+      min-height: 45rem
+      margin-top: -19rem
+
+      @media screen and (min-width: 1100px)
+        height: calc(100vh - 30rem)
 
       > h1
         font-weight: bold
-        margin-left: 10rem
+        margin-left: 5rem
         max-width: 84rem
         position: relative
         z-index: 1
@@ -50,7 +53,7 @@
       position: relative
 
       > .text
-        margin: 0 0 6rem 10rem
+        margin: 0 0 5rem 5rem
 
         > h1
           color: $color-red

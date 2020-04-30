@@ -1,7 +1,7 @@
 import cx from 'classnames'
 import s from './text-block-multiple.sass'
 
-export default ({ title, text, content, background, color, inView }) => (
+export default ({ title, text, content, background = '', color = '', inView }) => (
   <div
     class={s.textBlockMultiple}
     style={{ background, color }}
