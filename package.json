@@ -9,7 +9,7 @@
     "prebuild": "node prebuild.js",
     "serve": "preact build --prerender --template src/template.html && preact serve",
     "dev": "preact watch",
-    "lint": "eslint src",
+    "lint": "standard",
     "test": "jest"
   },
   "eslintConfig": {
@@ -29,11 +29,12 @@
     "jest": "^21.2.1",
     "memoize-one": "^5.1.1",
     "merge": "^1.2.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "preact-cli": "^2.2.1",
     "preact-markup": "^1.6.0",
     "sass-loader": "^7.3.1",
-    "sine-waves": "^0.3.0"
+    "sine-waves": "^0.3.0",
+    "standard": "^14.3.4"
   },
   "dependencies": {
     "in-view": "git+https://github.com/losthumans/in-view.git",
