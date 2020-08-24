@@ -289,11 +289,11 @@
     },
     "mat-se": {
       "title": "",
-      "subtitle": "Färsk matlevererans till dörren",
+      "subtitle": "Färsk matleverans till dörren",
       "desc": "En modern plattform som samordnar logistik och den essentiella leveranskedjan för mat.se.",
       "metaDesc": "Mat.se, en livsmedelslogistik- och leveranskedjeplattform skriven i Java och Spring med specialiserade native iOS-appar för leverans och lager.",
       "client": "Mat.se",
-      "shopOnlineTitle": "Färsk matlevererans till dörren",
+      "shopOnlineTitle": "Färsk matleverans till dörren",
       "shopOnlineText": "Mat.se är en Göteborgsbaserad start- och onlinehandelsservice som verkar i Stockholm, Göteborg och Malmö. Konsumenter kan handla på mat.se eller i appen för iOS och Android där livsmedel levereras till ditt hem eller arbetsplats.",
       "fastMovingTitle": "Snabba leveranser av färskvaror",
       "fastMovingText": [
