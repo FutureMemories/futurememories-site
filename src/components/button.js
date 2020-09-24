@@ -38,7 +38,7 @@ export default ({
       )}
       style={width && `width: ${width}px;`}
       disabled={loading || disabled}
-      href={getLanguageLink(to)}
+      href={to.match(/^(tel|mailto):/) ? to : getLanguageLink(to)}
       onClick={onClick}
       {...props}
     >
