@@ -3,7 +3,7 @@
   "name": "futurememories",
   "version": "1.0.0",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "start": "npm run prebuild -s && if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build --prerender --template src/template.html --no-service-worker",
     "postbuild": "node postbuild.js",
     "prebuild": "node prebuild.js",
