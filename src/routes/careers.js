@@ -4,6 +4,7 @@ import Moon from '../components/moon'
 import Button from '../components/button'
 import TeamPictures from '../components/team-pictures'
 import MarkupCustomElement from '../components/markup-custom-element'
+import marked from 'marked'
 import s from './careers.sass'
 
 export default class extends Component {
@@ -86,7 +87,7 @@ export default class extends Component {
                         <div id={row.id} class={s.title}>
                           <h3>{row.label}</h3>
                         </div>
-                        <p>{row.text}</p>
+                        <MarkupCustomElement element='p' markup={marked(row.text)} trim={false} />
                         <p class={s.tasks}>{row.tasks}</p>
                         <Button to={`mailto:${data.company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
                       </div>

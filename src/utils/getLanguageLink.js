@@ -1,7 +1,7 @@
 /* global location */
 
 export default (href) => {
-  if (href == null) {
+  if (href == null || href.match(/^(tel|mailto):/)) {
     return href
   }
 

@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "in-view": "git+https://github.com/losthumans/in-view.git",
+    "marked": "^1.1.1",
     "preact": "^8.5.2",
     "preact-compat": "^3.19.0",
     "webpack-remove-serviceworker-plugin": "^1.0.0"
