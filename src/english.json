@@ -253,7 +253,15 @@
       "image": "workspace-4.jpg"
     }
   },
-  "careersPositions": {},
+  "careersPositions": [
+    {
+      "id": "senior-backend-developer",
+      "label": "🖥  Senior Backend Developer",
+      "text": "Future Memories consists of 14 passionate developers and designers. We love creating digital services as much as we love working together. We are a busy bunch with booming business and we have exciting internal projects launching soon. We need more people like you to join our team.\n\nIf you’d like to play a key role in fast paced agile projects from the initial idea all the way to product launch, you’ve come to the right place. Yes indeed. Progress is fast, we are transcendent and we achieve stunning results together. Are you into Go, Python or Kotlin? Do you prefer using Docker? If you, on top of that, have experience in AWS and Google Cloud and possess some DevOps genes, you should get in touch with us.\n\nWe promise you will enjoy working with us. We are all of senior calibre, all projects are inspiring, different and we’ll provide you space to grow within your profession. We always choose the right tech for the right purposes and love exploring new stuff. Vallgatan 25 in Gothenburg City Centre is where the magic happens. As you can tell, we are quite digital, so working remotely via Slack or G Suite, if you prefer, is perfectly fine too.\n\nIf this sounds like something you as a Senior Developer would fancy, contact us at jobs@futurememories.se and join our journey through the future.",
+      "image": "position-1.jpg",
+      "subject" : "Senior Backend Developer"
+    }
+  ],
   "defaultOtherCases": [
     "picular",
     "paykartan",

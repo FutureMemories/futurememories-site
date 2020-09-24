@@ -85,7 +85,15 @@
       "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företag eller partners. Detta ger dig många nya möjligheter att ge din karriär en rejäl boost på oväntade sätt."
     }
   },
-  "careersPositions": {},
+  "careersPositions": [
+    {
+      "id": "senior-backend-developer",
+      "label": "🖥  Senior Backend Utvecklare",
+      "text": "På Future Memories är vi 14 utvecklare och designers som älskar att bygga digitala tjänster tillsammans. För att hinna med alla våra kunduppdrag och interna satsningar behöver vi dig.\n\nVill du vara med och skapa digitala tjänster, hela vägen från idé till produktlansering? Jobbar du agilt och älskar att se snabba resultat? Föredrar du språk som Go, Python eller Kotlin? Brukar du använda Docker i dina projekt? Har du även koll på AWS och Google Cloud och har  du några DevOps gener i dig?\n\nDå har du kommit rätt och vi lovar att du kommer stormtrivas hos oss! Alla våra utvecklare har hög senioritet och inget projekt är sig likt. Vi väljer alltid rätt teknologier och ramverk för problemställningen och gillar att utforska nytt. Magin sker på vårt kontor på Vallgatan 25 i centrala Göteborg eller i Google Meet och Slack för de som föredrar att jobba hemifrån.\n\nKontakta oss på jobs@futurememories.se om du är en erfaren systemutvecklare som vill vara med på vår resa genom framtiden.",
+      "image": "position-1.jpg",
+      "subject" : "Senior Backend Utvecklare"
+    }
+  ],
   "allCases": {
     "stc": {
       "title": "",
