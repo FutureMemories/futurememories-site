@@ -1,0 +1,161 @@
+@import '../settings.sass'
+
+$annotellDarkBlue: #0A0F19
+
+.view
+  background: white
+  color: $color-darker-blue
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  > .inner
+    background: none
+
+  .backgroundImage
+    @media screen and (max-width: 650px)
+      img
+        min-height: 20rem
+
+  .carSensorSection
+    position: relative
+    display: flex
+    justify-content: center
+    height: 33rem
+
+    @media screen and (min-width: 450px)
+      height: 40rem
+
+    @media screen and (min-width: 800px)
+      height: 60rem
+
+    @media screen and (min-width: 1100px)
+      height: 75rem
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      background: $annotellDarkBlue
+      height: 11rem
+      width: 100%
+
+      @media screen and (min-width: 450px)
+        height: 13rem
+
+      @media screen and (min-width: 800px)
+        height: 20rem
+
+      @media screen and (min-width: 1100px)
+        height: 25rem
+
+    img
+      position: relative
+      width: 100%
+      height: 100%
+      object-fit: contain
+      z-index: 1
+
+  .digitalFirstSection
+    position: relative
+    background: $annotellDarkBlue
+    height: 74rem
+    overflow: hidden
+
+    @media screen and (min-width: 440px)
+      height: 68rem
+
+    @media screen and (min-width: 540px)
+      height: 77rem
+
+    @media screen and (min-width: 680px)
+      height: 68rem
+
+    @media screen and (min-width: 1024px)
+      height: 77rem
+
+    .textContent
+      width: 100%
+      max-width: 120rem
+      padding: 1rem 3rem 10rem
+      margin: auto
+      text-align: center
+
+      @media screen and (min-width: 850px)
+        padding: 5rem 3rem 10rem
+        text-align: left
+
+      @media screen and (min-width: 2000px)
+        text-align: center
+
+      h1
+        max-width: 72rem
+        color: white
+
+        @media screen and (min-width: 2000px)
+          margin: 0 auto
+
+      p
+        max-width: 58rem
+        margin-top: 3rem
+        font-size: 2rem
+        line-height: 2.8rem
+        color: #737780
+
+        @media screen and (min-width: 1400px)
+          max-width: 72rem
+
+        @media screen and (min-width: 2000px)
+          margin: 3rem auto 0 auto
+
+    .desktopImages
+      display: none
+
+      @media screen and (min-width: 1024px)
+        display: block
+
+    .mobileImages
+      @media screen and (min-width: 1024px)
+        display: none
+
+    .image
+      position: absolute
+
+      &:nth-of-type(1)
+        left: 0
+        bottom: 0
+        z-index: 1
+
+        @media screen and (min-width: 1024px)
+          left: 2%
+
+      &:nth-of-type(2)
+        right: 0
+        bottom: 0
+
+    .desktopImages .image
+      &:nth-of-type(1)
+        max-width: 116rem
+
+        @media screen and (min-width: 1200px)
+          max-width: 145rem
+
+      &:nth-of-type(2)
+        max-width: 69rem
+
+        @media screen and (min-width: 1200px)
+          max-width: 85.5rem
+
+    .mobileImages .image
+      &:nth-of-type(1)
+        max-width: 37rem
+
+        @media screen and (min-width: 540px)
+          max-width: 50rem
+
+      &:nth-of-type(2)
+        max-width: 34rem
+
+        @media screen and (min-width: 540px)
+          max-width: 47rem

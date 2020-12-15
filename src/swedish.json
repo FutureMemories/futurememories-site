@@ -437,6 +437,17 @@
           "correctAnswer": 0
         }
       ]
+    },
+    "annotell": {
+      "name": "Annotell",
+      "title": "Annotell",
+      "subtitle": "Autonomous vehicle perception systems",
+      "desc": "A desc",
+      "aboutTitle": "För en självkörande framtid",
+      "aboutText": "Annotell är göteborgsföretaget som tagit fram en världsledande plattform som effektiviserar processen att framställa och validera stora mängder träningsdata som är av både hög kvalitet och konsekvent för fordonsindustrin. Träningsdatan används för att träna självkörande bilar med hjälp av machine learning.",
+      "visitTheSite": "Till siten",
+      "digitalFirstTitle": "Digital first",
+      "digitalFirstText": "Annotell är helt digitala i sitt arbetssätt och sin plattform, vi utgick därför från ett kompromisslöst digitalt förhållningssätt i framtagandet av nya annotell.com. För Annotell är “digital first” det enda alternativet. Att ligga i framkant digitalt samt fungera globalt och skalbart är lika naturligt för dem som det är för oss."
     }
   },
   "notUsedCases": {

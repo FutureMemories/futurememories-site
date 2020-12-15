@@ -948,6 +948,24 @@
           "correctAnswer": 0
         }
       ]
+    },
+    "annotell": {
+      "name": "Annotell",
+      "title": "Annotell",
+      "subtitle": "Autonomous vehicle perception systems",
+      "desc": "",
+      "client": "Annotell",
+      "type": "Netlify CMS, React, Web GL, 3D, UI, UX, Jamstack",
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)"
+        },
+        {
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 40%)"
+        }
+      ],
+      "visitTheSite": "Visit website"
     }
   },
   "notUsedCases": {
