@@ -107,7 +107,6 @@ export default class extends Component {
                 }))}
                 className={s.filterBlock}
                 page='home'
-
               />
               <ProjectsBlock
                 {...data.projectsBlock}

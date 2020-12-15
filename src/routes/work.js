@@ -59,7 +59,7 @@ export default class extends Component {
             </div>
             <div class={cx(s.work, firstView && s.firstView)}>
 
-              <div class={s.projectsHeader} >
+              <div class={s.projectsHeader}>
                 <div class={s.text}>
                   <h1>{data.content.work.upToHeader}</h1>
                   <p>{data.content.work.upToSubheader}</p>

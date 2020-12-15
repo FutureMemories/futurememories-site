@@ -55,7 +55,7 @@
   "routes": {
     "home": {
       "title": "Future Memories - Digital Design och utveckling i Göteborg",
-      "description": "En utevecklingsstudio med experter inom Service Design, UX Design, UI Design, Apputveckling, Webbutveckling, Backendutveckling och Spelutveckling."
+      "description": "En utvecklingsstudio med experter inom Service Design, UX Design, UI Design, Apputveckling, Webbutveckling, Backendutveckling och Spelutveckling."
     },
     "work": {
       "title": "Future Memories - Våra tjänster: design, appar, webb, backend, spel",
@@ -85,7 +85,15 @@
       "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företag eller partners. Detta ger dig många nya möjligheter att ge din karriär en rejäl boost på oväntade sätt."
     }
   },
-  "careersPositions": {},
+  "careersPositions": [
+    {
+      "id": "senior-backend-developer",
+      "label": "🖥  Senior Backend Utvecklare",
+      "text": "På Future Memories är vi 14 utvecklare och designers som älskar att bygga digitala tjänster tillsammans. För att hinna med alla våra kunduppdrag och interna satsningar behöver vi dig.\n\nVill du vara med och skapa digitala tjänster, hela vägen från idé till produktlansering? Jobbar du agilt och älskar att se snabba resultat? Föredrar du språk som **Go**, **Python** eller **Kotlin**? Brukar du använda **Docker** i dina projekt? Har du även koll på **AWS** och **Google Cloud** och har du några **DevOps** gener i dig?\n\nDå har du kommit rätt och vi lovar att du kommer stormtrivas hos oss! Alla våra utvecklare har hög senioritet och inget projekt är sig likt. Vi väljer alltid rätt teknologier och ramverk för problemställningen och gillar att utforska nytt. Magin sker på vårt kontor på Vallgatan 25 i centrala Göteborg eller i Google Meet och Slack för de som föredrar att jobba hemifrån.",
+      "image": "position-1.jpg",
+      "subject" : "Senior Backend Utvecklare"
+    }
+  ],
   "allCases": {
     "stc": {
       "title": "",
@@ -118,7 +126,7 @@
     "bauer-university": {
       "title": "",
       "subtitle": "Kunskap ger ökad försäljning",
-      "desc": "Gamingbaserad onlinekurs som utbildar Bauer säljare globalt till att bli produktexperter genom att ha riktigt kul på vägen.",
+      "desc": "Gamingficationbaserad onlinekurs som gör Bauer säljare till produkt-experter genom att ha riktigt kul på vägen.",
       "metaDesc": "Gamingficationbaserad plattform framtagen i React och Python med Django & GraphQL",
       "client": "Bauer, Bond Communications",
       "tabletMockup": "Bauer University app",
@@ -167,7 +175,7 @@
     "proflight": {
       "title": "",
       "subtitle": "Stöd för piloter i motvind",
-      "desc": "En iPad applikation för passagerarflygets piloter. proFLIGHT levererar rådande väderförhållanden och varningar rakt in i cockpit.",
+      "desc": "En iPad applikation för passagerarflygets piloter som levererar rådande väderförhållanden och varningar rakt in i cockpit.",
       "metaDesc": "proFLIGHT är en app framtagen för piloter som presenterar all nödvändig väderrelaterad information direkt in till cockpit i realtid. I ett rent och tydligt användargränssnitt får piloten tillgång till allt från betydande väderdiagram, SIGMETS och information om stationen till skräddarsytt högupplösta väderförhållanden som turbulens och vindar längs vägen.",
       "client": "Avtech, Invencon",
       "flightmodeTitle": "Airplane mode aktiverad",
@@ -198,7 +206,7 @@
     "antistress": {
       "title": "",
       "subtitle": "Ta ett djupt andetag",
-      "desc": "En digital dagbok där du håller dina stressnivåer nere med hjälp av avslappnande övningar. Appen ökar ditt välbefinnande och reducerar stressymptom.",
+      "desc": "En digital dagbok som ökar ditt välbefinnande och reducerar stressymptom genom avslappnande övningar.",
       "metaDesc": "AntiStress, en fickdagbok för iOS och Android för att logga stressnivåer och lyssna på meditativa ljudspår för att minska stress.",
       "client": "Västra Götalandsregionen",
       "imageAlt": "AntiStress app",
@@ -258,7 +266,7 @@
       "name": "Retts Plus",
       "title": "",
       "subtitle": "Säkra medicinska beslut",
-      "desc": "En tjänst som räddar liv genom att stödja personal i triage-processen. Ett ovärderligt verktyg vid medicinsk akut bedömning.",
+      "desc": "Räddar liv genom att stödja personal i triage-processen. Ett ovärderligt verktyg vid medicinsk akut bedömning.",
       "metaDesc": "Retts Plus, UX och UI-design för en iOS-app som stöder akutpersonal vid kritiska beslut under medicinska nödsituationer",
       "client": "Predicare",
       "efficiencyTitle": "En mer effektiv vårdprocess",
@@ -276,7 +284,7 @@
     "sleepcure": {
       "title": "Future Memories: SleepCure, en digital analys- och behandlingsmetod för människor som vill få en bättre sömn.",
       "subtitle": "Bättre sömn - ett bättre liv",
-      "desc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå",
+      "desc": "En app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå.",
       "metaDesc": "SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn, integrerad med iOS HealthKit.",
       "sleepCoachTitle": "Din digitala sömncoach",
       "sleepCoachText": "Sömnproblem kan vara komplext. Vad som funkar för en person funkar kanske inte för den andra. SleepCure är en app som ger en gedigen digital analys- och behandlingsmetod för människor som vill förbättra sin sömn på individnivå. Appen hjälper dig att skapa sunda sömnvanor genom att utvärdera dina dagliga rutiner, klargör dina ohälsosamma vanor som påverkar din sömn och hjälper dig att steg för steg ta dig ur dem.",
@@ -289,12 +297,12 @@
     },
     "mat-se": {
       "title": "",
-      "subtitle": "Färsk matlevererans till dörren",
+      "subtitle": "Färsk matleverans till dörren",
       "desc": "En modern plattform som samordnar logistik och den essentiella leveranskedjan för mat.se.",
       "metaDesc": "Mat.se, en livsmedelslogistik- och leveranskedjeplattform skriven i Java och Spring med specialiserade native iOS-appar för leverans och lager.",
       "client": "Mat.se",
-      "shopOnlineTitle": "Färsk matlevererans till dörren",
-      "shopOnlineText": "Mat.se är en Göteborgsbaserad start- och onlinehandelsservice som verkar i Stockholm, Göteborg och Malmö. Konsumenter kan handla på mat.se eller i appen för iOS och Android där livsmedel levereras till ditt hem eller arbetsplats.",
+      "shopOnlineTitle": "Färsk matleverans till dörren",
+      "shopOnlineText": "Mat.se är en Göteborgsbaserad start-up och onlinehandelsservice som verkar i Stockholm, Göteborg och Malmö. Konsumenter kan handla på mat.se eller i appen för iOS och Android där livsmedel levereras till ditt hem eller arbetsplats.",
       "fastMovingTitle": "Snabba leveranser av färskvaror",
       "fastMovingText": [
         "Mat.se har utvecklat en egen logistik- och leveranskedjeplattform som anpassar sig till deras verksamhet och täcker alla aspekter av deras leveranskedja. Plattformen stödjer och spårar allt från köp till lager till distribution.",

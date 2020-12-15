@@ -44,13 +44,8 @@ export default class extends Component {
   }
 
   handleAnswer = () => {
-    let currentAnswer
-
-    if (this.questionsAndAnswers[this.state.currentQuestion].correctAnswer == this.state.selectedAnswer) {
-      currentAnswer = true
-    } else {
-      currentAnswer = false
-    }
+    const { currentQuestion, selectedAnswer } = this.state
+    const currentAnswer = this.questionsAndAnswers[currentQuestion].correctAnswer === selectedAnswer
 
     this.setState(prevState => ({
       showResultView: true,
@@ -58,7 +53,7 @@ export default class extends Component {
     }))
   }
 
-  render ({ data, root }) {
+  render ({ data, root }, { currentQuestion, currentAnswerCorrect, selectedAnswer, showResultView }) {
     const content = data.allCases.find(c => c.id === 'wake-up-problem')
     this.questionsAndAnswers = content.questionsAndAnswers
 
@@ -115,17 +110,17 @@ export default class extends Component {
                 <div class={s.challengeHeader}>
                   <img class={s.logoIcon} src={require('../images/cases/wake-up-problem-icon.svg')} alt='Wake up problem app logo' />
                   <h2>
-                    {this.state.currentAnswerCorrect
+                    {currentAnswerCorrect
                       ? <span class={s.correct}>{content.challengeCorrectAnswer}</span>
-                      : this.state.currentAnswerCorrect !== null
+                      : currentAnswerCorrect !== null
                         ? <span class={s.incorrect}>{content.challengeIncorrectAnswer}</span>
                         : content.challengeHeadline}
                   </h2>
                 </div>
 
-                {this.state.showResultView
-                  ? <div class={s.challengeResultView}>
-                    {this.state.currentAnswerCorrect ? (
+                {showResultView ? (
+                  <div class={s.challengeResultView}>
+                    {currentAnswerCorrect ? (
                       <div>
                         <p class={s.resultHeader}>{content.challengeCorrectAnswer2}</p>
                         <img src={require('../images/cases/wake-up-problem-winner.svg')} alt='Wake up problem app winner icon' />
@@ -133,18 +128,19 @@ export default class extends Component {
                     ) : (
                       <div>
                         <p class={s.resultHeader}>{content.challengeIncorrectAnswer2}</p>
-                        <p class={s.resultText} >{content.challengeIncorrectAnswer3}</p>
+                        <p class={s.resultText}>{content.challengeIncorrectAnswer3}</p>
                         <div class={s.correctAnswer}>
-                          <p>{this.questionsAndAnswers[this.state.currentQuestion].answers[this.questionsAndAnswers[this.state.currentQuestion].correctAnswer]}</p>
+                          <p>{this.questionsAndAnswers[currentQuestion].answers[this.questionsAndAnswers[currentQuestion].correctAnswer]}</p>
                         </div>
                       </div>
                     )}
                   </div>
-                  : <div>
+                ) : (
+                  <div>
                     {this.questionsAndAnswers.map((item, i) => (
                       <div
                         key={'challenge_' + i}
-                        class={cx(s.challengeView, this.state.currentQuestion == i && s.show)}
+                        class={cx(s.challengeView, currentQuestion === i && s.show)}
                         data-correct-answer={item.correctAnswer}
                       >
                         <div class={s.challengeQuestion}>
@@ -157,27 +153,28 @@ export default class extends Component {
                             class={s.challengeAnswer}
                             onChange={e => { this.handleSelect(e) }}
                           >
-                            <input id={j} class={s.input} name={'answer_' + i + '_' + j} type='radio' checked={this.state.selectedAnswer == j} />
+                            <input id={j} class={s.input} name={'answer_' + i + '_' + j} type='radio' checked={selectedAnswer === j} />
                             <label for={j} class={s.label}>{answer}</label>
                           </div>
                         ))}
                       </div>
                     ))}
                   </div>
-                }
+                )}
 
                 <button
-                  class={cx(s.challengeSubmit, this.state.showResultView && this.questionsAndAnswers.length <= this.state.currentQuestion + 1 && s.hide)}
+                  class={cx(s.challengeSubmit, showResultView && this.questionsAndAnswers.length <= currentQuestion + 1 && s.hide)}
                   onClick={e => {
-                    if (this.state.showResultView) {
-                      if (this.questionsAndAnswers.length > this.state.currentQuestion + 1) {
+                    if (showResultView) {
+                      if (this.questionsAndAnswers.length > currentQuestion + 1) {
                         this.setState(prevState => ({ currentQuestion: prevState.currentQuestion + 1, selectedAnswer: null, showResultView: false, currentAnswerCorrect: null }))
                       }
                     } else {
                       this.handleAnswer()
                     }
-                  }}>
-                  {this.state.showResultView ? content.challengeNextLabel : content.challengeSubmitLabel}
+                  }}
+                >
+                  {showResultView ? content.challengeNextLabel : content.challengeSubmitLabel}
                 </button>
 
               </div>
@@ -185,13 +182,13 @@ export default class extends Component {
 
             <div class={s.eyeSection}>
               <svg class={s.eyeSvg} fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 47 48'>
-                <path fill-rule='evenodd' clip-rule='evenodd' d='M16.86 3.118A9.775 9.775 0 009.792.103C4.384.103.001 4.467.001 9.85c0 2.372.853 4.545 2.267 6.234C4.296 9.457 9.91 4.39 16.86 3.118zM44.283 15.748a9.665 9.665 0 002.009-5.898c0-5.383-4.384-9.746-9.79-9.746a9.776 9.776 0 00-7.018 2.958c6.977 1.155 12.654 6.125 14.8 12.686z' fill='#000'/>
-                <path fill-rule='evenodd' clip-rule='evenodd' d='M4.893 28.433c1.92 8.275 9.364 14.446 18.26 14.446s16.339-6.171 18.26-14.446H4.893z' fill='#fff'/>
-                <path class={s.pupil} fill-rule='evenodd' clip-rule='evenodd' d='M23.146 35.19c-3.562 0-6.449-2.875-6.449-6.421 0-3.546 2.887-1.362 6.449-1.362 3.561 0 6.45-2.184 6.45 1.362 0 3.546-2.889 6.42-6.45 6.42z' fill='#000'/>
-                <path fill-rule='evenodd' clip-rule='evenodd' d='M41.32 28.831c.373-1.467.573-3.003.573-4.586 0-10.307-8.393-18.662-18.747-18.662S4.4 13.938 4.4 24.245c0 1.583.2 3.119.572 4.586H41.32z' fill='#FEEA01'/>
-                <path class={s.eyelid} d='M4 29h38' stroke='#000' stroke-width='3.72'/>
-                <path d='M8.081 45.532s3.518-5.413 3.705-5.304M36.994 46.336s-3.394-5.491-3.216-5.612' stroke='#000' stroke-width='3.097' stroke-linecap='round' stroke-linejoin='round'/>
-                <ellipse cx='23.145' cy='24.23' rx='18.745' ry='18.65' stroke='#000' stroke-width='3.72'/>
+                <path fill-rule='evenodd' clip-rule='evenodd' d='M16.86 3.118A9.775 9.775 0 009.792.103C4.384.103.001 4.467.001 9.85c0 2.372.853 4.545 2.267 6.234C4.296 9.457 9.91 4.39 16.86 3.118zM44.283 15.748a9.665 9.665 0 002.009-5.898c0-5.383-4.384-9.746-9.79-9.746a9.776 9.776 0 00-7.018 2.958c6.977 1.155 12.654 6.125 14.8 12.686z' fill='#000' />
+                <path fill-rule='evenodd' clip-rule='evenodd' d='M4.893 28.433c1.92 8.275 9.364 14.446 18.26 14.446s16.339-6.171 18.26-14.446H4.893z' fill='#fff' />
+                <path class={s.pupil} fill-rule='evenodd' clip-rule='evenodd' d='M23.146 35.19c-3.562 0-6.449-2.875-6.449-6.421 0-3.546 2.887-1.362 6.449-1.362 3.561 0 6.45-2.184 6.45 1.362 0 3.546-2.889 6.42-6.45 6.42z' fill='#000' />
+                <path fill-rule='evenodd' clip-rule='evenodd' d='M41.32 28.831c.373-1.467.573-3.003.573-4.586 0-10.307-8.393-18.662-18.747-18.662S4.4 13.938 4.4 24.245c0 1.583.2 3.119.572 4.586H41.32z' fill='#FEEA01' />
+                <path class={s.eyelid} d='M4 29h38' stroke='#000' stroke-width='3.72' />
+                <path d='M8.081 45.532s3.518-5.413 3.705-5.304M36.994 46.336s-3.394-5.491-3.216-5.612' stroke='#000' stroke-width='3.097' stroke-linecap='round' stroke-linejoin='round' />
+                <ellipse cx='23.145' cy='24.23' rx='18.745' ry='18.65' stroke='#000' stroke-width='3.72' />
               </svg>
             </div>
 
