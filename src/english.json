@@ -4,19 +4,20 @@
       "title": "Future Memories: Featured",
       "name": "Featured",
       "cases": [
+        "annotell",
         "stc",
+        "mat-se",
         "nordish-market",
-        "bandbond",
         "proflight",
-        "picular",
         "bauer-university",
-        "mat-se"
+        "picular"
       ]
     },
     "branding": {
       "title": "Future Memories: Branding",
       "name": "Branding",
       "cases": [
+        "annotell",
         "stc",
         "picular",
         "retts-plus"
@@ -26,6 +27,7 @@
       "title": "Future Memories: Design",
       "name": "Design",
       "cases": [
+        "annotell",
         "stc",
         "proflight",
         "picular",
@@ -37,6 +39,7 @@
       "title": "Future Memories: Web",
       "name": "Web",
       "cases": [
+        "annotell",
         "stc",
         "nordish-market",
         "bauer-university",
@@ -50,10 +53,10 @@
       "description": "A digital studio with experts in App Development.",
       "cases": [
         "stc",
-        "bandbond",
         "proflight",
+        "bandbond",
         "antistress",
-        "wake-up-problem"
+        "mat-se"
       ]
     },
     "backend": {
@@ -89,13 +92,14 @@
       "title": "Future Memories",
       "name": "All projects",
       "cases": [
+        "annotell",
         "stc",
-        "nordish-market",
         "picadeli",
-        "bandbond",
-        "proflight",
         "bauer-university",
+        "proflight",
         "mat-se",
+        "nordish-market",
+        "bandbond",
         "sleep-cycle-dashboard",
         "retts-plus",
         "sleepcure",
@@ -279,7 +283,7 @@
       "title": "",
       "subtitle": "Making training easy!",
       "desc": "A total overhaul on all digital touch points. Built from the ground up.",
-      "type": "UX, UI, React, iOS, Android, AWS, Health Tech",
+      "type": "UX, UI, React, iOS, Android, Go, AWS, Health Tech",
       "style": [
         {
           "color": "#ffffff",
@@ -631,7 +635,7 @@
       "desc": "A modern logistics and supply chain platform to get fresh food delivered to your door.",
       "metaDesc": "Mat.se, a grocery logistics and supply chain platform written Java and Spring with specialized native iOS apps for delivery and warehousing.",
       "client": "Mat.se",
-      "type": "UX, UI, Java, Spring, iOS, AWS, Food Tech",
+      "type": "Go, Java, Spring, AWS, iOS, UX, UI, Food Tech",
       "style": [
         {
           "color": "#FFFFFF",
@@ -961,7 +965,7 @@
       "subtitle": "Autonomous vehicle perception systems",
       "desc": "The analytics and annotation platform used to ensure the performance of perception systems part of autonomous vehicles.",
       "client": "Annotell",
-      "type": "Netlify CMS, React, Web GL, 3D, UI, UX, Jamstack",
+      "type": "React, UI, UX, Netlify CMS, WebGL, 3D, Machine Learning",
       "showcase": true,
       "style": [
         {
