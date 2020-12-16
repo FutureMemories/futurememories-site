@@ -7,7 +7,7 @@ import Base from '../_base'
 import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import CenterBlock from './components/center-block'
-import TextGridBlock from './components/text-grid-block'
+
 import BookmarkBlock from './components/bookmark-block'
 
 import ContactBlock from '../components/contact-block'
@@ -81,6 +81,31 @@ export default class extends Component {
               <div class={cx(s.images, s.mobileImages)}>
                 <img class={s.image} src={require('../images/cases/annotell-laptop-left-mobile.png')} alt="" />
                 <img class={s.image} src={require('../images/cases/annotell-laptop-right-mobile.png')} alt="" />
+              </div>
+            </div>
+
+            <div class={s.intuitiveDesignSection}>
+              <div class={s.textContent}>
+                <h1>{content.innovativeDesignTitle}</h1>
+              </div>
+              <div class={cx(s.images, s.desktopImages)}>
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-left.png')} alt="" />
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-right.png')} alt="" />
+              </div>
+              <div class={cx(s.images, s.mobileImages)}>
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-left-mobile.png')} alt="" />
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-right-mobile.png')} alt="" />
+              </div>
+            </div>
+
+            <div class={s.twoTextCols}>
+              <div class={s.column}>
+                <h2 class={s.title}>{content.designTitle}</h2>
+                <p class={s.text}>{content.designText}</p>
+              </div>
+              <div class={s.column}>
+                <h2 class={s.title}>{content.techTitle}</h2>
+                <p class={s.text}>{content.techText}</p>
               </div>
             </div>
 

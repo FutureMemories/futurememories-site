@@ -442,12 +442,21 @@
       "name": "Annotell",
       "title": "Annotell",
       "subtitle": "Autonomous vehicle perception systems",
-      "desc": "A desc",
+      "desc": "Annotell är göteborgsföretaget som tagit fram en världsledande plattform som effektiviserar processen att framställa och validera stora mängder träningsdata som är av både hög kvalitet och konsekvent för fordonsindustrin. Träningsdatan används för att träna självkörande bilar med hjälp av machine learning.",
       "aboutTitle": "För en självkörande framtid",
       "aboutText": "Annotell är göteborgsföretaget som tagit fram en världsledande plattform som effektiviserar processen att framställa och validera stora mängder träningsdata som är av både hög kvalitet och konsekvent för fordonsindustrin. Träningsdatan används för att träna självkörande bilar med hjälp av machine learning.",
       "visitTheSite": "Till siten",
       "digitalFirstTitle": "Digital first",
-      "digitalFirstText": "Annotell är helt digitala i sitt arbetssätt och sin plattform, vi utgick därför från ett kompromisslöst digitalt förhållningssätt i framtagandet av nya annotell.com. För Annotell är “digital first” det enda alternativet. Att ligga i framkant digitalt samt fungera globalt och skalbart är lika naturligt för dem som det är för oss."
+      "digitalFirstText": "Annotell är helt digitala i sitt arbetssätt och sin plattform, vi utgick därför från ett kompromisslöst digitalt förhållningssätt i framtagandet av nya annotell.com. För Annotell är “digital first” det enda alternativet. Annotell bryter mark och ökar konkurrensen bland Silicon Valley bolag och att ligga i framkant digitalt samt att fungera globalt och skalbart är lika naturligt för dem som det var för oss i vårt samarbete.",
+      "innovativeDesignTitle": "Intuitiv design till ett innovativt bolag",
+      "designTitle": "Design",
+      "designText": "Tillsammans med Annotell tog vi fram en stilren och modern design, med utgångspunkt i kundernas behov och kunskapsnivåer. Målet var att förenkla Annotells tekniska domän och att  skapa en webbplats där tillverkare av autonoma fordon får en tydlig överblick och konkret information om Annotells plattform.",
+      "techTitle": "Senaste tekniken",
+      "techText": "Annotell.com är byggd med modern Jamstack-arkitektur där vi använt oss av Netlify kopplat till Netlify CMS, ett headless CMS som gör det möjligt för redaktören att själv styra över innehållet. I frontend använde oss av React, ett komponentbaserat och etablerat webbramverk som håller för framtiden.",
+      "integrationTitle": "Continuous Integration",
+      "integrationText": "Annotell arbetar agilt i alla led. I vår utvecklingsprocess har vi därför kontinuerligt släppt små inkrement av uppdateringar och förbättringar. Vi har haft ett tätt samarbete med kunden och arbetat i ett sammansvetsat team för att ta fram all design, funktionalitet samt innehåll. Ett riktigt drömsamarbete.",
+      "identityTitle": "Digital identitet",
+      "identityText": "För Annotell tog vi fram en ny digital identitet som rimmar med företagets innovationsanda. Visualisering av data är en del av kärnverksamheten, i designfasen utgick vi därför ifrån deras egna produkt för att hämta inspiration till färgpaletten. Annotell visualiserar data med hjälp av punktmoln där vi tog inspiration från LiDAR tekniken och applicerade detta övergripande för att skapa ett unikt mönster med interaktivitet."
     }
   },
   "notUsedCases": {
