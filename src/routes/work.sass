@@ -83,7 +83,7 @@
           margin: 0 0 0 5rem
 
         @media screen and (min-width: 1025px)
-           width: 38rem
+          width: 38rem
 
         > h1
           color: $color-red
@@ -161,13 +161,14 @@
           display: flex
           justify-content: center
           margin: 5.1rem
+          width: 19.3rem
 
           > img
             max-height: 10rem
-            width: 19.3rem
+            max-width: 100%
 
     @media screen and (max-width: 1200px)
-      > .partners > .content > .partner > img
+      > .partners > .content > .partner
         width: 15rem
 
     @media screen and (max-width: 1000px)
@@ -175,14 +176,14 @@
         margin: auto
 
     @media screen and (max-width: 950px)
-      > .partners > .content > .partner > img
+      > .partners > .content > .partner
         width: 16.5rem
 
     @media screen and (max-width: 800px)
       > .projectsHeader > .text, > .partners > .text
-          font-size: 3rem
-          margin-left: 0
-          width: 100%
+        font-size: 3rem
+        margin-left: 0
+        width: 100%
 
       > .projectsHeader > .button
         left: 100%
@@ -197,11 +198,13 @@
           margin: 2rem
 
       @media screen and (max-width: 670px)
-        > .partners > .content > .partner > img
-          height: auto
-          max-height: 6rem
+        > .partners > .content > .partner
           width: 12.5rem
 
-          @media screen and (max-width: 350px)
-            margin-top: 5rem
-            width: 90%
+          img
+            height: auto
+            max-height: 6rem
+
+            @media screen and (max-width: 350px)
+              margin-top: 5rem
+              width: 90%
