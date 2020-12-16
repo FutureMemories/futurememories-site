@@ -8,7 +8,7 @@
       "avtech": {
         "alt": "proFLIGHT är en app för surfplattor som levererar rådande väderförhållanden och vädervarningar rakt in i cockpit för en säkrare, mer hållbar och bekvämare flygning."
       },
-      "stendahls": {
+      "annotell": {
         "alt": ""
       },
       "axfood": {
@@ -91,7 +91,7 @@
       "label": "🖥  Senior Backend Utvecklare",
       "text": "På Future Memories är vi 14 utvecklare och designers som älskar att bygga digitala tjänster tillsammans. För att hinna med alla våra kunduppdrag och interna satsningar behöver vi dig.\n\nVill du vara med och skapa digitala tjänster, hela vägen från idé till produktlansering? Jobbar du agilt och älskar att se snabba resultat? Föredrar du språk som **Go**, **Python** eller **Kotlin**? Brukar du använda **Docker** i dina projekt? Har du även koll på **AWS** och **Google Cloud** och har du några **DevOps** gener i dig?\n\nDå har du kommit rätt och vi lovar att du kommer stormtrivas hos oss! Alla våra utvecklare har hög senioritet och inget projekt är sig likt. Vi väljer alltid rätt teknologier och ramverk för problemställningen och gillar att utforska nytt. Magin sker på vårt kontor på Vallgatan 25 i centrala Göteborg eller i Google Meet och Slack för de som föredrar att jobba hemifrån.",
       "image": "position-1.jpg",
-      "subject" : "Senior Backend Utvecklare"
+      "subject": "Senior Backend Utvecklare"
     }
   ],
   "allCases": {
@@ -437,6 +437,26 @@
           "correctAnswer": 0
         }
       ]
+    },
+    "annotell": {
+      "name": "Annotell",
+      "title": "Annotell",
+      "subtitle": "Autonomous vehicle perception systems",
+      "desc": "Annotell är göteborgsföretaget som tagit fram en världsledande plattform som effektiviserar processen att framställa och validera stora mängder träningsdata som är av både hög kvalitet och konsekvent för fordonsindustrin. Träningsdatan används för att träna självkörande bilar med hjälp av machine learning.",
+      "aboutTitle": "För en självkörande framtid",
+      "aboutText": "Annotell är göteborgsföretaget som tagit fram en världsledande plattform som effektiviserar processen att framställa och validera stora mängder träningsdata som är av både hög kvalitet och konsekvent för fordonsindustrin. Träningsdatan används för att träna självkörande bilar med hjälp av machine learning.",
+      "visitTheSite": "Till siten",
+      "digitalFirstTitle": "Digital first",
+      "digitalFirstText": "Annotell är helt digitala i sitt arbetssätt och sin plattform, vi utgick därför från ett kompromisslöst digitalt förhållningssätt i framtagandet av nya annotell.com. För Annotell är “digital first” det enda alternativet. Annotell bryter mark och ökar konkurrensen bland Silicon Valley bolag och att ligga i framkant digitalt samt att fungera globalt och skalbart är lika naturligt för dem som det var för oss i vårt samarbete.",
+      "innovativeDesignTitle": "Intuitiv design till ett innovativt bolag",
+      "designTitle": "Design",
+      "designText": "Tillsammans med Annotell tog vi fram en stilren och modern design, med utgångspunkt i kundernas behov och kunskapsnivåer. Målet var att förenkla Annotells tekniska domän och att  skapa en webbplats där tillverkare av autonoma fordon får en tydlig överblick och konkret information om Annotells plattform.",
+      "techTitle": "Senaste tekniken",
+      "techText": "Annotell.com är byggd med modern Jamstack-arkitektur där vi använt oss av Netlify kopplat till Netlify CMS, ett headless CMS som gör det möjligt för redaktören att själv styra över innehållet. I frontend använde oss av React, ett komponentbaserat och etablerat webbramverk som håller för framtiden.",
+      "identityTitle": "Digital identitet",
+      "identityText": "För Annotell tog vi fram en ny digital identitet som rimmar med företagets innovationsanda. Visualisering av data är en del av kärnverksamheten, i designfasen utgick vi därför ifrån deras egna produkt för att hämta inspiration till färgpaletten. Annotell visualiserar data med hjälp av punktmoln där vi tog inspiration från LiDAR tekniken och applicerade detta övergripande för att skapa ett unikt mönster med interaktivitet.",
+      "integrationTitle": "Continuous Integration",
+      "integrationText": "Annotell arbetar agilt i alla led. I vår utvecklingsprocess har vi därför kontinuerligt släppt små inkrement av uppdateringar och förbättringar. Vi har haft ett tätt samarbete med kunden och arbetat i ett sammansvetsat team för att ta fram all design, funktionalitet samt innehåll. Ett riktigt drömsamarbete."
     }
   },
   "notUsedCases": {
@@ -480,10 +500,6 @@
       "title": "Senior utvecklare",
       "desc": "Senior utvecklare som har byggt molnbaserade tjänster och plattformar i över åtta år."
     },
-    "rachael": {
-      "title": "Studio Manager",
-      "desc": "Vår Studio Manager med gedigen bakgrund inom media & kommunikation, content och digital marknadsföring."
-    },
     "anders": {
       "title": "Design Director och Partner.",
       "desc": " Prisbelönad designer med många års erfarenhet av digitala produkter med användbarhet i fokus."
@@ -510,10 +526,22 @@
     }
   },
   "links": [
-    { "label": "Start", "to": "/" },
-    { "label": "Våra case", "to": "/work" },
-    { "label": "Teamet", "to": "/team" },
-    { "label": "Jobba hos oss", "to": "/careers" }
+    {
+      "label": "Start",
+      "to": "/"
+    },
+    {
+      "label": "Våra case",
+      "to": "/work"
+    },
+    {
+      "label": "Teamet",
+      "to": "/team"
+    },
+    {
+      "label": "Jobba hos oss",
+      "to": "/careers"
+    }
   ],
   "teamPictures": {
     "title": "Bakom kulisserna",

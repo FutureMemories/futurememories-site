@@ -1,0 +1,579 @@
+@import '../settings.sass'
+
+$annotellDarkBlue: #0A0F19
+$titleColor: #070B13
+$textColor: #737780
+
+.view
+  background: white
+  color: $titleColor
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  > .inner
+    background: none
+
+  .backgroundImage
+    @media screen and (max-width: 650px)
+      img
+        min-height: 20rem
+
+  .carSensorSection
+    position: relative
+    display: flex
+    justify-content: center
+    height: 33rem
+
+    @media screen and (min-width: 450px)
+      height: 40rem
+
+    @media screen and (min-width: 800px)
+      height: 55rem
+
+    @media screen and (min-width: 1100px)
+      height: 70rem
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      background: $annotellDarkBlue
+      height: 11rem
+      width: 100%
+
+      @media screen and (min-width: 450px)
+        height: 13rem
+
+      @media screen and (min-width: 800px)
+        height: 25rem
+
+      @media screen and (min-width: 1100px)
+        height: 30rem
+
+    img
+      position: relative
+      width: 100%
+      height: 100%
+      object-fit: contain
+      z-index: 1
+
+      @media screen and (min-width: 800px)
+        margin-top: -5rem
+
+  .digitalFirstSection
+    position: relative
+    background: $annotellDarkBlue
+    height: 74rem
+    overflow: hidden
+
+    @media screen and (min-width: 440px)
+      height: 68rem
+
+    @media screen and (min-width: 540px)
+      height: 77rem
+
+    @media screen and (min-width: 680px)
+      height: 68rem
+
+    @media screen and (min-width: 1024px)
+      height: 77rem
+
+    .textContent
+      width: 100%
+      max-width: 120rem
+      padding: 1rem 3rem 10rem
+      margin: auto
+      text-align: center
+
+      @media screen and (min-width: 850px)
+        padding: 5rem 3rem 10rem
+        text-align: left
+
+      @media screen and (min-width: 2000px)
+        text-align: center
+
+      h1
+        max-width: 72rem
+        margin-left: auto
+        margin-right: auto
+        color: white
+
+        @media screen and (min-width: 850px)
+          margin: 0
+
+        @media screen and (min-width: 2000px)
+          margin: 0 auto
+
+      p
+        max-width: 58rem
+        margin-top: 3rem
+        margin-left: auto
+        margin-right: auto
+        font-size: 2rem
+        line-height: 2.8rem
+        color: #737780
+
+        @media screen and (min-width: 850px)
+          margin-left: 0
+          margin-right: 0
+
+        @media screen and (min-width: 1400px)
+          max-width: 72rem
+
+        @media screen and (min-width: 2000px)
+          margin: 3rem auto 0 auto
+
+    .desktopImages
+      display: none
+      transition-delay: .5s
+
+      @media screen and (min-width: 1024px)
+        display: block
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+
+    .mobileImages
+      @media screen and (min-width: 1024px)
+        display: none
+
+    .image
+      position: absolute
+
+      &:nth-of-type(1)
+        left: 0
+        bottom: 0
+        z-index: 1
+
+        @media screen and (min-width: 1024px)
+          left: 2%
+
+      &:nth-of-type(2)
+        right: 0
+        bottom: 0
+
+    .desktopImages .image
+      &:nth-of-type(1)
+        max-width: 116rem
+
+        @media screen and (min-width: 1200px)
+          max-width: 145rem
+
+      &:nth-of-type(2)
+        max-width: 69rem
+
+        @media screen and (min-width: 1200px)
+          max-width: 85.5rem
+
+    .mobileImages .image
+      &:nth-of-type(1)
+        max-width: 37rem
+
+        @media screen and (min-width: 540px)
+          max-width: 50rem
+
+      &:nth-of-type(2)
+        max-width: 34rem
+
+        @media screen and (min-width: 540px)
+          max-width: 47rem
+
+  .intuitiveDesignSection
+    position: relative
+    height: 80rem
+    padding:
+    overflow: hidden
+
+    @media screen and (min-width: 570px)
+      height: 102rem
+
+    @media screen and (min-width: 1024px)
+      height: 128rem
+
+    @media screen and (min-width: 1150px)
+      height: 154rem
+
+    @media screen and (min-width: 1400px)
+      height: 186rem
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      background: linear-gradient(to top, white 0%, rgba(255,255,255,0) 100%)
+      height: 23rem
+      width: 100%
+
+      @media screen and (min-width: 450px)
+        height: 42rem
+
+    .textContent
+      width: 100%
+      max-width: 120rem
+      padding: 6rem 3rem 10rem
+      margin: auto
+      text-align: center
+
+      @media screen and (min-width: 450px)
+        padding: 8rem 3rem 10rem
+
+      @media screen and (min-width: 850px)
+        padding: 12rem 3rem 10rem
+        text-align: left
+
+      @media screen and (min-width: 1150px)
+        padding: 20rem 3rem 10rem
+
+      @media screen and (min-width: 2000px)
+        text-align: center
+
+      h1
+        max-width: 58rem
+        color: $titleColor
+        font-size: 4rem
+        font-weight: 600
+        margin: 0 auto
+
+        @media screen and (min-width: 850px)
+          font-size: 5.5rem
+          max-width: 64rem
+          margin: 0
+
+        @media screen and (min-width: 1150px)
+          font-size: 7.2rem
+          line-height: 8.8rem
+          max-width: 70rem
+
+        @media screen and (min-width: 2000px)
+          margin: 0 auto
+
+    .desktopImages
+      display: none
+
+      @media screen and (min-width: 850px)
+        display: block
+
+    .mobileImages
+      @media screen and (min-width: 850px)
+        display: none
+
+    .image
+      position: absolute
+
+      &:nth-of-type(1)
+        left: 0
+        bottom: 0
+
+      &:nth-of-type(2)
+        right: 0
+        bottom: 0
+
+    .desktopImages .image
+      &:nth-of-type(1)
+        max-width: 59rem
+
+        @media screen and (min-width: 1024px)
+          max-width: 75rem
+
+        @media screen and (min-width: 1150px)
+          max-width: 86rem
+
+        @media screen and (min-width: 1400px)
+          max-width: 107rem
+
+        @media screen and (min-width: 2000px)
+          max-width: 153rem
+          bottom: -60rem
+
+      &:nth-of-type(2)
+        max-width: 39rem
+
+        @media screen and (min-width: 1024px)
+          max-width: 49rem
+
+        @media screen and (min-width: 1150px)
+          max-width: 56rem
+
+        @media screen and (min-width: 1400px)
+          max-width: 70rem
+
+        @media screen and (min-width: 2000px)
+          max-width: 100rem
+          bottom: -60rem
+
+    .mobileImages .image
+      &:nth-of-type(1)
+        max-width: 26rem
+
+        @media screen and (min-width: 570px)
+          max-width: 39rem
+
+      &:nth-of-type(2)
+        max-width: 23rem
+
+        @media screen and (min-width: 570px)
+          max-width: 34rem
+
+  .twoTextCols
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 120rem
+    padding: 5rem 3rem 10rem
+    margin: auto
+    text-align: center
+
+    @media screen and (min-width: 850px)
+      flex-direction: row
+      justify-content: space-between
+      padding: 10rem 3rem 12rem
+      text-align: left
+
+    @media screen and (min-width: 1100px)
+      padding: 12rem 3rem 16rem
+
+    .column
+      width: 100%
+      max-width: 54rem
+      margin: 0 auto
+
+      @media screen and (min-width: 850px)
+        width: calc(50% - 2rem)
+        margin: 0
+
+      @media screen and (min-width: 1024px)
+        width: calc(50% - 4rem)
+
+      &:nth-of-type(2)
+        transition-delay: .25s
+
+      &:not(:first-of-type)
+        margin-top: 5rem
+
+        @media screen and (min-width: 850px)
+          margin: 0
+
+    .title
+      margin-bottom: 2rem
+      font-size: 3rem
+      line-height: 3.6rem
+      color: $titleColor
+
+      @media screen and (min-width: 850px)
+        font-size: 4rem
+        line-height: 4.7rem
+        font-weight: 500
+
+    .text
+      font-size: 1.6rem
+      line-height: 2.2rem
+      color: $textColor
+
+      @media screen and (min-width: 850px)
+        font-size: 2rem
+        line-height: 2.8rem
+
+  .digitalIdentity
+
+    img
+      height: 57rem
+
+      @media screen and (min-width: 850px)
+        height: auto
+
+    \:global(.content)
+      padding: 3rem
+
+    h1
+      font-size: 3rem
+      line-height: 3.6rem
+
+      @media screen and (min-width: 850px)
+        padding-bottom: 4rem !important
+        font-size: 9.6rem
+        line-height: 11.5rem
+
+    p
+      opacity: 1 !important
+      font-size: 1.6rem !important
+      line-height: 2.2rem !important
+
+      @media screen and (min-width: 850px)
+        font-size: 2rem !important
+        line-height: 2.8rem !important
+
+  .brandBlocks
+    display: flex
+    flex-direction: column
+    background: $annotellDarkBlue
+
+    @media screen and (min-width: 850px)
+      flex-direction: row
+
+    .brandBlock
+      position: relative
+      display: flex
+      width: 100%
+
+      @media screen and (min-width: 850px)
+        width: 50%
+        flex-direction: column
+
+    .logoBlock
+      position: relative
+      width: 50%
+      height: 0
+      padding-bottom: 50%
+
+      @media screen and (min-width: 850px)
+        width: 100%
+        padding-bottom: 100%
+
+      @media screen and (min-width: 2200px)
+        padding-bottom: 60%
+
+      &:nth-of-type(1)
+        background: url('../images/cases/annotell-pointcloud-bg-1.png') no-repeat
+        background-size: cover
+
+      &:nth-of-type(2)
+        background: url('../images/cases/annotell-pointcloud-bg-2.png') no-repeat
+        background-size: cover
+
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        max-width: 13rem
+
+        @media screen and (min-width: 850px)
+          max-width: none
+
+    .typographyBlock
+      flex-direction: column
+      padding: 6rem 3rem 8rem
+      text-align: center
+      align-items: center
+
+      @media screen and (min-width: 850px)
+        text-align: left
+        justify-content: center
+
+    .typographyContent
+      width: 100%
+      max-width: 40rem
+
+      &:not(:first-of-type)
+        margin-top: 5rem
+
+      .label
+        margin-bottom: 3rem
+        font-size: 1.4rem
+        color: $textColor
+
+      .brandImage
+        max-width: 100%
+
+        &.colors
+          padding: 0 3rem
+
+          @media screen and (min-width: 850px)
+            padding: 0
+            max-width: 26rem
+
+        &.iconsDesktop
+          display: none
+
+          @media screen and (min-width: 850px)
+            display: block
+            max-width: 31rem
+
+        &.iconsMobile
+          padding: 0 3rem
+
+          @media screen and (min-width: 850px)
+            display: none
+            padding: 0
+
+  .centeredLaptops
+    background: $annotellDarkBlue
+    overflow: hidden
+
+    .imgWrapper
+      width: 100%
+      max-width: 120rem
+      padding: 6rem 3rem
+      margin: auto
+
+      display: flex
+      flex-direction: row
+      justify-content: center
+      width: 100%
+
+      @media screen and (min-width: 850px)
+        padding: 10rem 3rem
+
+      @media screen and (min-width: 1100px)
+        padding: 16rem 3rem
+
+      .laptop
+        position: relative
+        flex: 1
+        z-index: 0
+        max-width: 61.5rem
+        transition: opacity .4s ease, transform 1s ease
+        opacity: 0
+        max-width: 100%
+        align-self: center
+        max-width: 18rem
+
+        @media screen and (min-width: 700px)
+          max-width: 40rem
+
+        @media screen and (min-width: 850px)
+          max-width: 45rem
+
+        @media screen and (min-width: 1150px)
+          max-width: 54rem
+
+        &:nth-child(1)
+          transform: translateX(55%)
+
+        &:nth-child(2)
+          z-index: 1
+          max-width: 25rem
+          transform: scale(1)
+
+          @media screen and (min-width: 700px)
+            max-width: 54rem
+
+          @media screen and (min-width: 850px)
+            max-width: 60rem
+
+          @media screen and (min-width: 1150px)
+            max-width: 78rem
+
+        &:nth-child(3)
+          transform: translateX(-55%)
+
+      &:global(.inView)
+        .laptop
+          opacity: 1
+
+          &:nth-child(1)
+            transform: translateX(60%)
+            transition-delay: .4s
+
+          &:nth-child(3)
+            transform: translateX(-60%)
+            transition-delay: .4s
+
+          &:nth-child(2)
+            transform: scale(1.2)
+            transition-delay: 0.2s

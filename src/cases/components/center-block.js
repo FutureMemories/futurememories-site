@@ -9,7 +9,7 @@ export default ({ title, text, link, component, src, alt = 'image', background =
   >
     <div class={cx(s.inner, !src && s.block, src && src.align && s[src.align])}>
       {src && (<img alt={alt} src={require(`../../images/${src.path || src}`)} style={src.style} />)}
-      <div class={cx(s.content, inView)}>
+      <div class={cx(s.content, inView, 'content')}>
         <div class={cx(s.block, text && s.center, enableOrderChange && s.enableOrderChange)}>
           {title && (<h1 class={cx(!text && s.removePadding)}>{title}</h1>)}
           {text && (<p>{text}</p>)}

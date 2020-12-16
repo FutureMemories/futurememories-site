@@ -22,6 +22,7 @@ import SleepCure from './cases/sleepcure'
 import Stc from './cases/stc'
 import NordishMarket from './cases/nordish-market'
 import WakeUpProblem from './cases/wake-up-problem'
+import Annotell from './cases/annotell'
 import CaseComponents from './cases/components'
 
 const data = {
@@ -118,6 +119,7 @@ export default class extends Component {
         <Stc path={root + '/cases/stc'} data={languageData} root={root} />
         <NordishMarket path={root + '/cases/nordish-market'} data={languageData} root={root} />
         <WakeUpProblem path={root + '/cases/wake-up-problem'} data={languageData} root={root} />
+        <Annotell path={root + '/cases/annotell'} data={languageData} root={root} />
         <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
 
         <NotFound type='404' default data={languageData} root={root} />

@@ -133,9 +133,9 @@
         "link": "/cases/proflight",
         "alt": "We made an app to visualise wind conditions and weather alerts to assist pilots in flying safer and more fuel efficient"
       },
-      "stendahls": {
-        "name": "STENDAHLS",
-        "logo": "partners/stendahls.svg",
+      "annotell": {
+        "name": "Annotell",
+        "logo": "partners/annotell.svg",
         "alt": ""
       },
       "axfood": {
@@ -259,7 +259,7 @@
       "label": "🖥  Senior Backend Developer",
       "text": "Future Memories consists of 14 passionate developers and designers. We love creating digital services as much as we love working together. We are a busy bunch with booming business and we have exciting internal projects launching soon. We need more people like you to join our team.\n\nIf you’d like to play a key role in fast paced agile projects from the initial idea all the way to product launch, you’ve come to the right place. Yes indeed. Progress is fast, we are transcendent and we achieve stunning results together. Are you into **Go**, **Python** or **Kotlin**? Do you prefer using **Docker**? If you, on top of that, have experience in **AWS** and **Google Cloud** and possess some **DevOps** genes, you should get in touch with us.\n\nWe promise you will enjoy working with us. We are all of senior calibre, all projects are inspiring, different and we’ll provide you space to grow within your profession. We always choose the right tech for the right purposes and love exploring new stuff. Vallgatan 25 in Gothenburg City Centre is where the magic happens. As you can tell, we are quite digital, so working remotely via Slack or G Suite, if you prefer, is perfectly fine too.",
       "image": "position-1.jpg",
-      "subject" : "Senior Backend Developer"
+      "subject": "Senior Backend Developer"
     }
   ],
   "defaultOtherCases": [
@@ -620,7 +620,7 @@
     },
     "mat-se": {
       "name": "Mat.se",
-       "imageBg": [
+      "imageBg": [
         "cases/mat-se-7.png",
         "height"
       ],
@@ -948,6 +948,37 @@
           "correctAnswer": 0
         }
       ]
+    },
+    "annotell": {
+      "name": "Annotell",
+      "title": "Annotell",
+      "subtitle": "Autonomous vehicle perception systems",
+      "desc": "Annotell is the company behind a world-leading platform providing efficient solutions and processes for annotation of big data for machine learning in autonomous vehicles. Annotell provides an analytics and annotation platform that ensures the performance of autonomous vehicle perception systems.",
+      "client": "Annotell",
+      "type": "Netlify CMS, React, Web GL, 3D, UI, UX, Jamstack",
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)"
+        },
+        {
+          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 40%)"
+        }
+      ],
+      "aboutTitle": "The Future is Autonomous",
+      "aboutText": "Annotell is the company behind a world-leading platform providing efficient solutions and processes for annotation of big data for machine learning in autonomous vehicles. Annotell provides an analytics and annotation platform that ensures the performance of autonomous vehicle perception systems",
+      "visitTheSite": "Visit website",
+      "digitalFirstTitle": "Digital first",
+      "digitalFirstText": "For a digital company like Annotell it is vital to choose the right tech - digital first is the only option. Scalable systems require scalable platforms, including the new annotell.com. Being at the forefront digitally, gaining ground amongst Silicon Valley tech startups, and functioning globally were all paramount for Annotell when we set up their new site.",
+      "innovativeDesignTitle": "Intuitive design for an innovative company",
+      "designTitle": "Design",
+      "designText": "Together with Annotell, we created an intuitive, stylish and modern design. The ultimate goal was to simplify their website and improve user-friendliness. The visitor gets a clear overview and coherent information, appropriate to all knowledge levels, about the services and products the company provides for autonomous vehicle producers. We are very happy with the outcome.",
+      "techTitle": "Latest Tech",
+      "techText": "Annotell.com is built with Jamstack architecture using Netlify connected to Netlify CMS, a fully configured headless CMS that enables the editor to have full control of the content. Front-end is developed in React for a faster and component-based development process, set up to sustain for the future.",
+      "identityTitle": "Digital Identity",
+      "identityText": "We brought Annotell a brand new digital identity that incorporates the innovative spirit of the company culture. We used visualisation tools inspired by the point clouds and LiDAR technology used on the platform. We took inspiration from their own annotation platform to create unique patterns and dynamic animations and effects.",
+      "integrationTitle": "Continuous Integration",
+      "integrationText": "Annotell is an agile company, and so are we. Our joint process is driven by continuous development, where we release feature by feature on an iterative basis. For us of course, this is the way it should always be done. We worked in close collaboration with our customer all the way from the design phase development process through to content production. Close collaboration is the natural key to success."
     }
   },
   "notUsedCases": {
@@ -999,18 +1030,18 @@
       "phoneOld": "+46 (0)707 959011",
       "email": "pontus@futurememories.se"
     },
-    "careers": {
-      "button": true,
-      "type": "link",
-      "label": "Come and work with us!",
-      "to": "/careers"
-    },
     "hannah": {
       "name": "Hannah Miklin",
       "image": "team/hannah-miklin.jpg",
       "title": "UX and Service Designer",
       "desc": "Interaction Designer with background in Information Systems. Creating amazing digital experiences with a user centric approach.",
       "email": "hannah@futurememories.se"
+    },
+    "careers": {
+      "button": true,
+      "type": "link",
+      "label": "Come and work with us!",
+      "to": "/careers"
     },
     "erica": {
       "name": "Erica Liljeblad",
@@ -1035,12 +1066,12 @@
       "phoneOld": "+46 (0)763 490500",
       "email": "martin@futurememories.se"
     },
-    "rachael": {
-      "name": "Rachael Lidskog",
-      "image": "team/rachael-lidskog.jpg",
-      "title": "Studio Manager",
-      "desc": "Our Studio Manager with a background in media communications, content and digital marketing.",
-      "email": "rachael@futurememories.se"
+    "mattias": {
+      "name": "Mattias Lönn",
+      "image": "team/mattias-lonn.jpg",
+      "title": "Web Developer",
+      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
+      "email": "mattias@futurememories.se"
     },
     "anders": {
       "name": "Anders Olausson",
@@ -1056,12 +1087,13 @@
       "desc": "Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
       "email": "erik@futurememories.se"
     },
-    "mattias": {
-      "name": "Mattias Lönn",
-      "image": "team/mattias-lonn.jpg",
-      "title": "Web Developer",
-      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
-      "email": "mattias@futurememories.se"
+    "linda": {
+      "name": "Linda Däldborg Leech",
+      "image": "team/linda-daldborg-leech.jpg",
+      "title": "Digital Project Manager",
+      "desc": "Digital Project Manager with 10+ years experience in digital product development. Keeping it on time and on budget.",
+      "phone": "+46 (0)723 413151",
+      "email": "linda@futurememories.se"
     },
     "donovan": {
       "name": "Donovan Söderlund",
@@ -1076,21 +1108,25 @@
       "title": "Lead Developer",
       "desc": "Lead Developer, Project Lead and a real jack-of-all-trades when it comes to software development.",
       "email": "pontus.backlund@futurememories.se"
-    },
-    "linda": {
-      "name": "Linda Däldborg Leech",
-      "image": "team/linda-daldborg-leech.jpg",
-      "title": "Digital Project Manager",
-      "desc": "Digital Project Manager with 10+ years experience in digital product development. Keeping it on time and on budget.",
-      "phone": "+46 (0)723 413151",
-      "email": "linda@futurememories.se"
     }
   },
   "links": [
-    { "label": "Home", "to": "/" },
-    { "label": "Our work", "to": "/work" },
-    { "label": "The team", "to": "/team" },
-    { "label": "Careers", "to": "/careers" }
+    {
+      "label": "Home",
+      "to": "/"
+    },
+    {
+      "label": "Our work",
+      "to": "/work"
+    },
+    {
+      "label": "The team",
+      "to": "/team"
+    },
+    {
+      "label": "Careers",
+      "to": "/careers"
+    }
   ],
   "teamPictures": {
     "title": "Behind the scenes",
