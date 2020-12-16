@@ -18,7 +18,11 @@ const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
   // `${s.inner} > div:nth-child(4) > div:first-child`,
   // `${s.inner} > div:nth-child(4) > div:first-child > div`,
-  `${s.inner} > div:nth-child(5) > div:last-child > div`
+  `${s.inner} > div:nth-child(5) > div:first-child`,
+  `${s.inner} > div:nth-child(5) > div:nth-child(2)`,
+  `${s.inner} > div:nth-child(7) > div:nth-child(2)`, //two text cols
+  `${s.inner} > div:nth-child(8) > div:first-child > div`,
+  `${s.inner} > div:nth-child(10) > div:first-child > div`
 ].join(',.')
 
 export default class extends Component {
@@ -62,7 +66,6 @@ export default class extends Component {
               text={content.aboutText}
               link={[content.visitTheSite, 'https://www.annotell.com/']}
               background='#FFFFFF'
-              color='#161D2B'
             />
 
             <div class={s.carSensorSection}>
@@ -70,11 +73,11 @@ export default class extends Component {
             </div>
 
             <div class={s.digitalFirstSection}>
-              <div class={s.textContent}>
+              <div class={cx(s.textContent, 'inViewLeft')}>
                 <h1>{content.digitalFirstTitle}</h1>
                 <p>{content.digitalFirstText}</p>
               </div>
-              <div class={cx(s.images, s.desktopImages)}>
+              <div class={cx(cx(s.images, s.desktopImages, 'inViewBottom'))}>
                 <img class={s.image} src={require('../images/cases/annotell-laptop-left.png')} alt="" />
                 <img class={s.image} src={require('../images/cases/annotell-laptop-right.png')} alt="" />
               </div>
@@ -108,6 +111,48 @@ export default class extends Component {
                 <p class={s.text}>{content.techText}</p>
               </div>
             </div>
+
+            <CenterBlock
+              className={s.digitalIdentity}
+              inView='inViewBottom'
+              src={{ path: 'cases/annotell-bg-2.png', style: { maxHeight: '999px' } }}
+              color='#FFFFFF'
+              title={content.identityTitle}
+              text={content.identityText}
+            />
+
+            <div class={s.brandBlocks}>
+              <div class={s.brandBlock}>
+                <div class={s.logoBlock}>
+                  <img src={require('../images/cases/annotell-logo-black.svg')} alt="" />
+                </div>
+                <div class={s.logoBlock}>
+                  <img src={require('../images/cases/annotell-logo-white.svg')} alt="" />
+                </div>
+              </div>
+              <div class={cx(s.brandBlock, s.typographyBlock)}>
+                <div class={s.typographyContent}>
+                  <p class={s.label}>Brand colors</p>
+                  <img class={cx(s.brandImage, s.colors)} src={require('../images/cases/annotell-brand-colors.png')} alt='Annotell brand colors' />
+                </div>
+                <div class={s.typographyContent}>
+                  <p class={s.label}>Typography</p>
+                  <img class={cx(s.brandImage)} src={require('../images/cases/annotell-brand-font.png')} alt='Annotell brand font' />
+                </div>
+                <div class={s.typographyContent}>
+                  <p class={s.label}>Icons</p>
+                  <img class={cx(s.brandImage, s.iconsMobile)} src={require('../images/cases/annotell-brand-icons-mobile.png')} alt='Annotell brand icons' />
+                  <img class={cx(s.brandImage, s.iconsDesktop)} src={require('../images/cases/annotell-brand-icons.png')} alt='Annotell brand icons' />
+                </div>
+              </div>
+            </div>
+
+            <CenterBlock
+              inView='inViewBottom'
+              title={content.integrationTitle}
+              text={content.integrationText}
+              background='#FFFFFF'
+            />
 
             {/*
             <CenterBlock
