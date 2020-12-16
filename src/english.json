@@ -40,7 +40,8 @@
         "stc",
         "nordish-market",
         "bauer-university",
-        "picular"
+        "picular",
+        "annotell"
       ]
     },
     "app": {
@@ -108,7 +109,8 @@
         "forces-of-freedom",
         "travelmate",
         "spira",
-        "wya-network"
+        "wya-network",
+        "annotell"
       ]
     }
   },
@@ -952,17 +954,22 @@
     "annotell": {
       "name": "Annotell",
       "title": "Annotell",
+      "imageBg": [
+        "cases/annotell-bg-1-mobile.png",
+        "height"
+      ],
       "subtitle": "Autonomous vehicle perception systems",
-      "desc": "Annotell is the company behind a world-leading platform providing efficient solutions and processes for annotation of big data for machine learning in autonomous vehicles. Annotell provides an analytics and annotation platform that ensures the performance of autonomous vehicle perception systems.",
+      "desc": "The analytics and annotation platform used to ensure the performance of perception systems part of autonomous vehicles.",
       "client": "Annotell",
       "type": "Netlify CMS, React, Web GL, 3D, UI, UX, Jamstack",
+      "showcase": true,
       "style": [
         {
           "color": "#FFFFFF",
-          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 100%)"
+          "background": "linear-gradient(289.91deg, #0C121D 0%, #212F3D 100%)"
         },
         {
-          "background": "linear-gradient(-140deg, #DB4F9D 0%, #B12B18 40%)"
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
       "aboutTitle": "The Future is Autonomous",
