@@ -29,10 +29,10 @@ $textColor: #737780
       height: 40rem
 
     @media screen and (min-width: 800px)
-      height: 60rem
+      height: 55rem
 
     @media screen and (min-width: 1100px)
-      height: 75rem
+      height: 70rem
 
     &::after
       content: ''
@@ -47,10 +47,10 @@ $textColor: #737780
         height: 13rem
 
       @media screen and (min-width: 800px)
-        height: 20rem
+        height: 25rem
 
       @media screen and (min-width: 1100px)
-        height: 25rem
+        height: 30rem
 
     img
       position: relative
@@ -58,6 +58,9 @@ $textColor: #737780
       height: 100%
       object-fit: contain
       z-index: 1
+
+      @media screen and (min-width: 800px)
+        margin-top: -5rem
 
   .digitalFirstSection
     position: relative
@@ -124,6 +127,7 @@ $textColor: #737780
 
     .desktopImages
       display: none
+      transition-delay: .5s
 
       @media screen and (min-width: 1024px)
         display: block
@@ -194,7 +198,7 @@ $textColor: #737780
       height: 154rem
 
     @media screen and (min-width: 1400px)
-      height: 180rem
+      height: 186rem
 
     &::after
       content: ''
@@ -345,6 +349,9 @@ $textColor: #737780
       @media screen and (min-width: 1024px)
         width: calc(50% - 4rem)
 
+      &:nth-of-type(2)
+        transition-delay: .25s
+
       &:not(:first-of-type)
         margin-top: 5rem
 
@@ -427,6 +434,9 @@ $textColor: #737780
         width: 100%
         padding-bottom: 100%
 
+      @media screen and (min-width: 2200px)
+        padding-bottom: 60%
+
       &:nth-of-type(1)
         background: url('../images/cases/annotell-pointcloud-bg-1.png') no-repeat
         background-size: cover
@@ -452,8 +462,8 @@ $textColor: #737780
       align-items: center
 
       @media screen and (min-width: 850px)
-
         text-align: left
+        justify-content: center
 
     .typographyContent
       width: 100%
@@ -490,3 +500,80 @@ $textColor: #737780
           @media screen and (min-width: 850px)
             display: none
             padding: 0
+
+  .centeredLaptops
+    background: $annotellDarkBlue
+    overflow: hidden
+
+    .imgWrapper
+      width: 100%
+      max-width: 120rem
+      padding: 6rem 3rem
+      margin: auto
+
+      display: flex
+      flex-direction: row
+      justify-content: center
+      width: 100%
+
+      @media screen and (min-width: 850px)
+        padding: 10rem 3rem
+
+      @media screen and (min-width: 1100px)
+        padding: 16rem 3rem
+
+      .laptop
+        position: relative
+        flex: 1
+        z-index: 0
+        max-width: 61.5rem
+        transition: opacity .4s ease, transform 1s ease
+        opacity: 0
+        max-width: 100%
+        align-self: center
+        max-width: 18rem
+
+        @media screen and (min-width: 700px)
+          max-width: 40rem
+
+        @media screen and (min-width: 850px)
+          max-width: 45rem
+
+        @media screen and (min-width: 1150px)
+          max-width: 54rem
+
+        &:nth-child(1)
+          transform: translateX(55%)
+
+        &:nth-child(2)
+          z-index: 1
+          max-width: 25rem
+          transform: scale(1)
+
+          @media screen and (min-width: 700px)
+            max-width: 54rem
+
+          @media screen and (min-width: 850px)
+            max-width: 60rem
+
+          @media screen and (min-width: 1150px)
+            max-width: 78rem
+
+        &:nth-child(3)
+          transform: translateX(-55%)
+
+      &:global(.inView)
+        .laptop
+          opacity: 1
+
+          &:nth-child(1)
+            transform: translateX(60%)
+            transition-delay: .4s
+
+          &:nth-child(3)
+            transform: translateX(-60%)
+            transition-delay: .4s
+
+          &:nth-child(2)
+            transform: scale(1.2)
+            transition-delay: 0.2s
