@@ -4,7 +4,6 @@ import cx from 'classnames'
 import ContactOverlay from './contact-overlay'
 
 export default class extends Component {
-
   toggleOverlay = () => {
     this.setState({ showOverlay: !this.state.showOverlay })
   }

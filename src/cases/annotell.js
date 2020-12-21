@@ -1,18 +1,13 @@
 import { Component } from 'preact'
 import cx from 'classnames'
 import inView from 'in-view'
-import s from './annotell.sass'
 import Base from '../_base'
-
 import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import CenterBlock from './components/center-block'
-
-import BookmarkBlock from './components/bookmark-block'
-
 import ContactBlock from '../components/contact-block'
 import ProjectsBlock from './components/projects-block'
-import MarkupCustomElement from '../components/markup-custom-element'
+import s from './annotell.sass'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
@@ -81,12 +76,12 @@ export default class extends Component {
                 <p>{content.digitalFirstText}</p>
               </div>
               <div class={cx(cx(s.images, s.desktopImages, 'inViewBottom'))}>
-                <img class={s.image} src={require('../images/cases/annotell-laptop-left.png')} alt="" />
-                <img class={s.image} src={require('../images/cases/annotell-laptop-right.png')} alt="" />
+                <img class={s.image} src={require('../images/cases/annotell-laptop-left.png')} alt='' />
+                <img class={s.image} src={require('../images/cases/annotell-laptop-right.png')} alt='' />
               </div>
               <div class={cx(s.images, s.mobileImages)}>
-                <img class={s.image} src={require('../images/cases/annotell-laptop-left-mobile.png')} alt="" />
-                <img class={s.image} src={require('../images/cases/annotell-laptop-right-mobile.png')} alt="" />
+                <img class={s.image} src={require('../images/cases/annotell-laptop-left-mobile.png')} alt='' />
+                <img class={s.image} src={require('../images/cases/annotell-laptop-right-mobile.png')} alt='' />
               </div>
             </div>
 
@@ -95,12 +90,12 @@ export default class extends Component {
                 <h1>{content.innovativeDesignTitle}</h1>
               </div>
               <div class={cx(s.images, s.desktopImages)}>
-                <img class={s.image} src={require('../images/cases/annotell-screenshot-left.png')} alt="" />
-                <img class={s.image} src={require('../images/cases/annotell-screenshot-right.png')} alt="" />
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-left.png')} alt='' />
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-right.png')} alt='' />
               </div>
               <div class={cx(s.images, s.mobileImages)}>
-                <img class={s.image} src={require('../images/cases/annotell-screenshot-left-mobile.png')} alt="" />
-                <img class={s.image} src={require('../images/cases/annotell-screenshot-right-mobile.png')} alt="" />
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-left-mobile.png')} alt='' />
+                <img class={s.image} src={require('../images/cases/annotell-screenshot-right-mobile.png')} alt='' />
               </div>
             </div>
 
@@ -127,10 +122,10 @@ export default class extends Component {
             <div class={s.brandBlocks}>
               <div class={s.brandBlock}>
                 <div class={s.logoBlock}>
-                  <img src={require('../images/cases/annotell-logo-black.svg')} alt="" />
+                  <img src={require('../images/cases/annotell-logo-black.svg')} alt='' />
                 </div>
                 <div class={s.logoBlock}>
-                  <img src={require('../images/cases/annotell-logo-white.svg')} alt="" />
+                  <img src={require('../images/cases/annotell-logo-white.svg')} alt='' />
                 </div>
               </div>
               <div class={cx(s.brandBlock, s.typographyBlock)}>
@@ -160,9 +155,9 @@ export default class extends Component {
 
             <div class={s.centeredLaptops}>
               <div class={s.imgWrapper}>
-                <img class={s.laptop} src={require('../images/cases/annotell-front-laptop-left.png')} alt="" />
-                <img class={s.laptop} src={require('../images/cases/annotell-front-laptop-center.png')} alt="" />
-                <img class={s.laptop} src={require('../images/cases/annotell-front-laptop-right.png')} alt="" />
+                <img class={s.laptop} src={require('../images/cases/annotell-front-laptop-left.png')} alt='' />
+                <img class={s.laptop} src={require('../images/cases/annotell-front-laptop-center.png')} alt='' />
+                <img class={s.laptop} src={require('../images/cases/annotell-front-laptop-right.png')} alt='' />
               </div>
             </div>
 
