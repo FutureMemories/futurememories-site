@@ -532,6 +532,9 @@
     "linda": {
       "title": "Digital projektledare",
       "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
+    },
+    "availablepositions": {
+      "label": "Kanske du?\nLäs mer här!"
     }
   },
   "links": [
@@ -630,10 +633,18 @@
       "title": "Jobba hos oss",
       "hero": "Kommer du ihåg vad du gjorde imorgon? Bli en av oss",
       "modernHeader": "Här lägger vi gamla tankespår åt sidan",
-      "modernSubheader": "Vår studio ligger mitt i Göteborgs innerstadspuls. Vi erbjuder en modern, nytänkande och stimulerande miljö att jobba i. Här skapar vi allt tillsammans med hög mysfaktor. ",
+      "modernSubheader": "På Future Memories är vi 14 utvecklare och designers som älskar att bygga digitala tjänster tillsammans. Magin sker på vårt kontor på Vallgatan 25 i centrala Göteborg eller i Google Meet och Slack för de som föredrar att jobba hemifrån.",
       "availableHeader": "Lediga tjänster",
       "availableSubheader": "Vill du arbeta i ett snyggt kontor med härliga kollegor som verkligen trivs ihop? Gillar du inte att arbeta bland arrogans? Vi anställer bara trevliga människor. Vill du äta pannkakor i sängen? Det är upp till dig."
     },
-    "visitTheSite": "Till sidan"
+    "visitTheSite": "Till sidan",
+    "apply": "Ansök nu",
+    "promoteBox": {
+      "enabled": true,
+      "title": "Backend & webbutvecklare",
+      "text": "Nu behöver vi erfarna utvecklare som kan hjälpa oss i flera spännande projekt under 2021. Vill du vara med på resan?",
+      "buttonTo": "/careers#available-positions",
+      "buttonLabel": "Läs mer"
+    }
   }
 }

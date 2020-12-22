@@ -89,7 +89,7 @@ export default class extends Component {
                         </div>
                         <MarkupCustomElement element='p' markup={marked(row.text)} trim={false} />
                         <p class={s.tasks}>{row.tasks}</p>
-                        <Button to={`mailto:${data.company.jobs}?subject=${row.subject}`} label='Apply' arrow transition='slide' small width='215' />
+                        <Button to={`mailto:${data.company.jobs}?subject=${row.subject}`} label={`${data.content.apply}`} arrow transition='slide' small width='215' />
                       </div>
                     </div>
                   ))}

@@ -9,6 +9,7 @@ import MarkupCustomElement from '../components/markup-custom-element'
 import ContactBlock from '../components/contact-block'
 import FilterBlock from '../components/filter-block'
 import getLanguageLink from '../utils/getLanguageLink'
+import Icon from '../components/icon'
 import s from './home.sass'
 
 export default class extends Component {
@@ -52,6 +53,10 @@ export default class extends Component {
     // if (window.pageYOffset < (this.heroText.base.offsetTop + this.heroText.base.offsetHeight)) {
     //   this.heroText.base.style.transform = `translateY(-${(window.pageYOffset / 5).toFixed(1)}px)`
     // }
+
+    if (this.props.data.content.promoteBox.enabled) {
+      this.setState({ showPromote: window.pageYOffset > 500 })
+    }
 
     // Parallax effect on 'Our work' block
     const planetWorkScroll = (this.scrollPoint - (this.homeWorkBlock.offsetTop * 1.3))
@@ -125,6 +130,24 @@ export default class extends Component {
 
           <ContactBlock content={data.content.contactBlock} dark />
         </div>
+        {data.content.promoteBox.enabled && (
+          <div class={cx(s.promoteBox, this.state.showPromote && !this.state.hidePromote && s.show)}>
+            <button class={s.close} onClick={() => this.setState({ hidePromote: true })}>
+              <Icon id='close' />
+            </button>
+            <h2>{data.content.promoteBox.title}</h2>
+            <p class={s.text}>{data.content.promoteBox.text}</p>
+            <Button
+              arrow
+              small
+              customClass={s.button}
+              to={data.content.promoteBox.buttonTo}
+              label={data.content.promoteBox.buttonLabel}
+              transition='slide'
+              width='215'
+            />
+          </div>
+        )}
       </Base>
     )
   }

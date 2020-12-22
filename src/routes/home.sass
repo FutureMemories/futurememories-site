@@ -272,3 +272,62 @@
     @for $i from 0 through $steps
       #{percentage($i*(1/$steps))}
         clip: rect(random(100)+px,9999px,random(200)+px,0)
+
+.promoteBox
+  position: fixed
+  bottom: 4rem
+  right: 4rem
+  display: flex
+  flex-direction: column
+  background: #070B13
+  border: .2rem #171B1F solid
+  padding: 4rem
+  box-shadow: 0 0rem 3rem rgba(24, 42, 77, 0.45)
+  border-radius: 2rem
+  width: 40rem
+  opacity: 0
+  visibility: hidden
+  pointer-events: none
+  transform: translateY(3rem)
+  transition: opacity .3s ease, visibility .3s ease, transform .3s ease-in-out
+  z-index: 1
+
+  &.show
+    opacity: 1
+    visibility: visible
+    pointer-events: auto
+    transform: none
+
+  > .close
+    position: absolute
+    top: 1.5rem
+    right: 1.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    background: transparent
+    padding: .5rem
+    border: 0
+    opacity: .5
+    cursor: pointer
+    transition: opacity .2s ease
+
+    &:hover
+      opacity: .8
+
+    > svg
+      height: 1.8rem
+      width: 1.8rem
+
+  > .title
+    font-size: 2.5rem
+
+  > .text
+    font-size: 1.4rem
+    font-weight: 800
+    line-height: 2.2rem
+    color: #8D939E
+    margin: 2rem 0 5rem
+
+  > .button
+    margin: auto

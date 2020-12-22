@@ -539,6 +539,7 @@
       "healthyFoodTitle": "Healthy food for all occasions",
       "healthyFoodText": "Nordish Market is a digital food court that offers sustainable and healthy food for delivery. At nordishmarket.com, businesses and individuals can easily order breakfast, lunch, dinner or a coffee and chocolate ball pick-me-up from carefully selected restaurants that share the same values: that food should be sustainable and healthy. Nordish Market’s digital platform manages the ordering and payment process and coordinates delivery from their door to yours.",
       "visitTheSite": "Visit website",
+      "apply": "Apply now",
       "serviceDesignTitle": "Exquisite Service Design. Sustainable User Journey.",
       "serviceDesignText": [
         "The restaurants in the Nordish family have completely separate offers with different processes of how and when they cook their food. At Nordish Market, each restaurant has full control over the presentation of its dishes and decides how they are composed of different menus. The restaurants thus control the accessibility of the dishes themselves, based on their own conditions.",
@@ -1119,6 +1120,12 @@
       "title": "Lead Developer",
       "desc": "Lead Developer, Project Lead and a real jack-of-all-trades when it comes to software development.",
       "email": "pontus.backlund@futurememories.se"
+    },
+    "availablepositions": {
+      "button": true,
+      "type": "link",
+      "label": "Maybe you?\nRead more here!",
+      "to": "/careers#available-positions"
     }
   },
   "links": [
@@ -1222,6 +1229,13 @@
       "sending": "Sending...",
       "sent": "Sent! You can now close this window.",
       "errorSending": "Oops, something went wrong. Please try again later."
+    },
+    "promoteBox": {
+      "enabled": true,
+      "title": "Backend & web developer",
+      "text": "Now we need experienced developers who can help us in several exciting projects in 2021. Do you want to be part of this journey?",
+      "buttonTo": "/careers#available-positions",
+      "buttonLabel": "Read more"
     }
   }
 }
