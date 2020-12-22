@@ -41,6 +41,7 @@
     "marked": "^1.1.1",
     "preact": "^8.5.2",
     "preact-compat": "^3.19.0",
+    "react-scrollable-anchor": "^0.6.1",
     "webpack-remove-serviceworker-plugin": "^1.0.0"
   },
   "standard": {

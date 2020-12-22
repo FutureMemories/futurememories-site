@@ -4,6 +4,7 @@ import Moon from '../components/moon'
 import Button from '../components/button'
 import TeamPictures from '../components/team-pictures'
 import MarkupCustomElement from '../components/markup-custom-element'
+import ScrollableAnchor from 'react-scrollable-anchor'
 import marked from 'marked'
 import s from './careers.sass'
 
@@ -73,10 +74,12 @@ export default class extends Component {
 
             {Object.values(data.careersPositions).length > 0 && (
               <div class={s.positions} ref={e => { this.positions = e }}>
-                <div id='available-positions' class={s.text}>
-                  <h1>{data.content.careers.availableHeader}</h1>
-                  <p>{data.content.careers.availableSubheader}</p>
-                </div>
+                <ScrollableAnchor id='available-positions'>
+                  <div class={s.text}>
+                    <h1>{data.content.careers.availableHeader}</h1>
+                    <p>{data.content.careers.availableSubheader}</p>
+                  </div>
+                </ScrollableAnchor>
                 <div class={s.content}>
                   {data.careersPositions.map(row => (
                     <div key={'position_' + row.id} class={s.position}>
@@ -84,9 +87,11 @@ export default class extends Component {
                         <img alt={`position: ${row.label}`} src={require(`../images/${row.image}`)} />
                       </div>
                       <div class={s.desc}>
-                        <div id={row.id} class={s.title}>
-                          <h3>{row.label}</h3>
-                        </div>
+                        <ScrollableAnchor id={row.id}>
+                          <div class={s.title}>
+                            <h3>{row.label}</h3>
+                          </div>
+                        </ScrollableAnchor>
                         <MarkupCustomElement element='p' markup={marked(row.text)} trim={false} />
                         <p class={s.tasks}>{row.tasks}</p>
                         <Button to={`mailto:${data.company.jobs}?subject=${row.subject}`} label={`${data.content.apply}`} arrow transition='slide' small width='215' />
