@@ -10,8 +10,16 @@
     "serve": "preact build --prerender --template src/template.html && preact serve",
     "dev": "preact watch",
     "lint": "standard",
-    "test": "jest"
+    "test": "jest",
+    "pre-commit-start": "echo \"pre-commit: running linter, run 'npm run lint -- --fix' and fix issues if failed. \" && exit 0",
+    "pre-commit-done": "echo \"✅ pre-commit completed\" && exit 0"
   },
+  "precommit.silent": true,
+  "pre-commit": [
+    "pre-commit-start",
+    "lint",
+    "pre-commit-done"
+  ],
   "eslintConfig": {
     "extends": "eslint-config-synacor"
   },
@@ -24,6 +32,7 @@
     "copy-webpack-plugin": "^4.6.0",
     "eslint": "^6.5.1",
     "eslint-config-synacor": "^3.0.5",
+    "pre-commit": "^1.2.2",
     "fs-extra": "^8.1.0",
     "if-env": "^1.0.4",
     "jest": "^21.2.1",
