@@ -73,7 +73,7 @@ export default class extends Component {
 
             {Object.values(data.careersPositions).length > 0 && (
               <div class={s.positions} ref={e => { this.positions = e }}>
-                <div class={s.text}>
+                <div id='availablePositions' class={s.text}>
                   <h1>{data.content.careers.availableHeader}</h1>
                   <p>{data.content.careers.availableSubheader}</p>
                 </div>
