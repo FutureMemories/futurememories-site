@@ -638,6 +638,7 @@
       "availableSubheader": "Vill du arbeta i ett snyggt kontor med härliga kollegor som verkligen trivs ihop? Gillar du inte att arbeta bland arrogans? Vi anställer bara trevliga människor. Vill du äta pannkakor i sängen? Det är upp till dig."
     },
     "visitTheSite": "Till sidan",
+<<<<<<< HEAD
     "apply": "Ansök nu",
     "promoteBox": {
       "enabled": true,
@@ -646,5 +647,8 @@
       "buttonTo": "/careers#available-positions",
       "buttonLabel": "Läs mer"
     }
+=======
+    "apply": "Ansök nu"
+>>>>>>> 7c45a446df40a66f25c5a8eeef39dce7b434b2b4
   }
 }
