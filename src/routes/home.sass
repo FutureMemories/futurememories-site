@@ -292,6 +292,13 @@
   transition: opacity .3s ease, visibility .3s ease, transform .3s ease-in-out
   z-index: 1
 
+  @media screen and (max-width: 485px)
+    right: 0
+    bottom: 0
+    width: 100%
+    border-bottom-right-radius: 0
+    border-bottom-left-radius: 0
+
   &.show
     opacity: 1
     visibility: visible
