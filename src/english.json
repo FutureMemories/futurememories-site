@@ -263,7 +263,7 @@
     {
       "id": "senior-backend-developer",
       "label": "🖥  Senior Backend Developer",
-      "text": "Are you an experienced System Developer who finds joy in working in well-synchronised teams? Would you get a thrill out of taking on great responsibility in becoming CTO of one of our startups, where you would have full mandate over our tech stack?\nWould you like to build a brand new micro service architecture for one of the largest online food chains in the country? Or how about digging deep into a huge batch of big data together with one of Sweden's most data-driven health club chains?\n\nIf you also prefer working in agile constellations and love to see results within no time, then it's time for you get in touch with us.\n\nWe work with **Python**, **Java**, **Kotlin** and **Go**. We prefer **Docker**, say YES! to **AWS** and **Google Cloud**. We also expect everyone to possess some **DevOps** genes before joining our family.\n\nSounds like you? We miss you already! We can assure you that we are a workplace you'll never regret you stepped into.",
+      "text": "Are you an experienced System Developer who finds joy in working in well-synchronised teams? Would you get a thrill out of taking on great responsibility in becoming CTO of one of our startups, where you would have full mandate over our tech stack? Would you like to build a brand new micro service architecture for one of the largest online food chains in the country? Or how about digging deep into a huge batch of big data together with one of Sweden's most data-driven health club chains?\n\nIf you also prefer working in agile constellations and love to see results within no time, then it's time for you get in touch with us. We work with **Python**, **Java**, **Kotlin** and **Go**. We prefer **Docker**, say YES! to **AWS** and **Google Cloud**. We also expect everyone to possess some **DevOps** genes before joining our family.\n\nSounds like you? We miss you already! We can assure you that we are a workplace you'll never regret you stepped into.",
       "image": "position-1.jpg",
       "subject": "Senior Backend Developer",
       "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
@@ -271,7 +271,7 @@
     {
       "id": "senior-web-developer",
       "label": "🖥  Senior Web Developer",
-      "text": "Would you like to be part of creating web-based services, all the way from idea to release? Do you love experimenting with the latest tech to squeeze web browsers' performance to the last drop?\n\nAre you a person who just can't wait to set up the code as soon as a stunning UI design lands in your hands? If in addition to that, you prefer using **React** as in **React Native** to take a design concept and make into reality, it's time to get in touch with us. \n\nDo you feel at home with **Node.js** or other backend technologies? \n\nThen, welcome home! Our team of experienced Full Stack Developers can't wait to welcome you into our family. Let's break new ground together!",
+      "text": "Would you like to be part of creating web-based services, all the way from idea to release? Do you love experimenting with the latest tech to squeeze web browsers' performance to the last drop?\n\nAre you a person who just can't wait to set up the code as soon as a stunning UI design lands in your hands? If in addition to that, you prefer using **React** as in **React Native** to take a design concept and make into reality, it's time to get in touch with us. Do you feel at home with **Node.js** or other backend technologies? \n\nThen, welcome home! Our team of experienced Full Stack Developers can't wait to welcome you into our family. Let's break new ground together!",
       "image": "position-2.jpg",
       "subject": "Senior Web Developer",
       "tasks": "#react #reactnative #nodejs #pwa #webgl #headless"
@@ -1132,7 +1132,7 @@
     "availablepositions": {
       "button": true,
       "type": "link",
-      "label": "Maybe you?\nRead more here!",
+      "label": "Is it you?\nRead more!",
       "to": "/careers#available-positions"
     }
   },
