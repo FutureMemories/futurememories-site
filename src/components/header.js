@@ -43,7 +43,7 @@ export default class extends Component {
                 return (
                   <li key={'header_desktopnav_' + link.to}>
                     <a
-                      class={route.replace(/\/$/, '') === link.to && s.active}
+                      class={route && route.replace(/\/$/, '') === link.to && s.active}
                       href={getLanguageLink(link.to)}
                     >
                       {link.label}
