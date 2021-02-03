@@ -8,6 +8,7 @@ import Work from './routes/work'
 import Team from './routes/team'
 import Careers from './routes/careers'
 import NotFound from './routes/404'
+import Frontend from './routes/frontend'
 
 import Picular from './cases/picular'
 import Bandbond from './cases/bandbond'
@@ -121,6 +122,7 @@ export default class extends Component {
         <WakeUpProblem path={root + '/cases/wake-up-problem'} data={languageData} root={root} />
         <Annotell path={root + '/cases/annotell'} data={languageData} root={root} />
         <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
+        <Frontend path={root + '/frontend'} data={languageData} root={root} />
 
         <NotFound type='404' default data={languageData} root={root} />
       </Router>
