@@ -78,7 +78,7 @@
     },
     "home": {
       "label": "Att leva för att jobba eller jobba för att leva? 🏠",
-      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och hålla alla informerade. På fredag ​​eftermiddag avrundar vi veckan tillsammans i köket, med lite fredagshäng innan vi loggar ut. \n\n Regelbundna teamluncher håller oss ájour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
+      "text": "Svaret är enkelt: på jobbet skall du mer än trivas och känna dig fylld av energi även när du kommer hem. Hos oss finns den balansen. Ingen övertid, inget helgarbete, ingen söndagsångest. Eftersom framgångsrika produkter bara skapas av välmående team erbjuder vi flextid så att ditt yrkesliv harmoniserar perfekt med ditt privatliv. Bra balans ger bra leverans. \n\n Vi inleder varje vecka med en härlig måndagsfrukost för att ladda inför veckan och hålla alla informerade. På fredag ​​eftermiddag avrundar vi veckan tillsammans i köket, med lite fredagshäng innan vi loggar ut. \n\n Regelbundna teamluncher håller oss à jour med alla pågående projekt och en gång per år organiserar vi en företagsresa där vi förvandlar en vanlig jobbvecka till något betydligt trevligare med ny miljö och ordentligt med tid för eftertanke och umgänge. "
     },
     "tailored": {
       "label": "Skräddarsydd för dig, av dig. ✂️",
@@ -96,10 +96,10 @@
     },
     {
       "id": "senior-web-developer",
-      "label": "🖥  Senior Web Utvecklare",
-      "text": "Vill du vara med och skapa webbaserade tjänster, hela vägen från idé till produktlansering? Älskar du att experimentera med senaste tekniken för att klämma ut det sista ur webbläsarna? Vill du bara sätta igång med kodningen så fort du får en läcker design i händerna? Känner du dig lika tryck i **React** som i **React Native**? Behärskar du **Node.js** och kanske även andra backendteknologier?\n\nDå har du hittat hem till vårt erfarna utvecklingsteam där vi alla anser oss vara full stack. Vi längtar att bygga framtidens digitala tjänster ihop med dig!",
+      "label": "🖥  Senior Webbutvecklare",
+      "text": "Vill du vara med och skapa webbaserade tjänster, hela vägen från idé till produktlansering? Älskar du att experimentera med senaste tekniken för att klämma ut det sista ur webbläsarna? Vill du bara sätta igång med kodningen så fort du får en läcker design i händerna? Känner du dig lika trygg i **React** som i **React Native**? Behärskar du **Node.js** och kanske även andra backendteknologier?\n\nDå har du hittat hem till vårt erfarna utvecklingsteam där vi alla anser oss vara fullstack. Vi längtar att bygga framtidens digitala tjänster ihop med dig!",
       "image": "position-2.jpg",
-      "subject": "Senior Web Utvecklare",
+      "subject": "Senior Webbutvecklare",
       "tasks": "#react #reactnative #nodejs #pwa #webgl #headless"
     }
   ],
@@ -557,7 +557,7 @@
   ],
   "teamPictures": {
     "title": "Bakom kulisserna",
-    "text": "Vi är ett finslipat team med stor bredd av spetskompetenser inom design, UX, webbutveckling, full stack och mobilutveckling. Vi är alla strategiskt lagda och nöjer oss endast med det bästa.",
+    "text": "Vi är ett finslipat team med stor bredd av spetskompetenser inom design, UX, webbutveckling, fullstack och mobilutveckling. Vi är alla strategiskt lagda och nöjer oss endast med det bästa.",
     "label": "Möt teamet",
     "alt": "Future Memories är ett team med erfarna UX & UI designers, apputvecklare och webbutveckare"
   },
