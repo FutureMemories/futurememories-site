@@ -109,7 +109,7 @@ export default class extends Component {
             ? (
               <div class={s.second}>
                 <p>Vi har hittat den här textsträngen som innehåller ett hemligt meddelande som vi behöver din hjälp att tyda:</p>
-                <code><span class={s.message}>Csb!kpccbu"!Wj!mfubs!kvtu!ov!fgufs!oæhpo!tpn!ejh/!Cbsb!buu!ev!cmfw!ozgjlfo!qæ!efuub!h÷s!ptt!åoov!nfs!jousfttfsbef!bw!ejh/!Nbjmb!cbsb!#Ifk#!ujmm!mjoebAgvuvsfnfnpsjft/tf!tæ!i÷s!wj!bw!ptt"</span></code>
+                <code><span class={s.message}>Csb!kpccbu"!Wj!mfubs!kvtu!ov!fgufs!oæhpo!tpn!ejh/!Cbsb!buu!ev!cmfw!ozgjlfo!qæ!efuub!h÷s!ptt!åoov!nfs!jousfttfsbef!bw!ejh/!Nbjmb!cbsb!#Ifk#!ujmm!mjoebAgvuvsfnfnpsjft/tf!tæ!i÷s!wj!bw!ptt"!)Q/T/!jolmvefsb!håsob!ejo!m÷tojoh!j!nbjmfu*</span></code>
                 <p>Vi kan se att varje teckens <strong>char code</strong> är precis 1 kodvärde för högt. Vi har påbörjat en funktion och skrivit några enhetstester men vi behöver din hjälp att slutföra funktionen för att få ut meddelandet.</p>
                 <code class={s.codeInput}>
                   {'function decipher(input) {\n'}
