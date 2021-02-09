@@ -44,15 +44,16 @@ export default class extends Component {
 
       const metaDescription = document.querySelector('meta[name="description"]')
       if (metaDescription) metaDescription.setAttribute('content', 'Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?')
+
+      window.addEventListener('keyup', this.onKeyboard)
+      this.updateTests('return ""')
     }
-
-    window.addEventListener('keyup', this.onKeyboard)
-
-    this.updateTests('return ""')
   }
 
   componentWillUnmount () {
-    window.removeEventListener('keyup', this.onKeyboard)
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('keyup', this.onKeyboard)
+    }
   }
 
   onKeyboard = (ev) => {

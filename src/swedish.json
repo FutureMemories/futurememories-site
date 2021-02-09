@@ -69,6 +69,12 @@
       "url": "/careers",
       "title": "Future Memories - Gå med i vår besättning och var en del av resan",
       "description": "Vi samlar hela Future Memories-teamet i vår studio i centrala Göteborg. En modern och stimulerande kontorsmiljö där vi skapar morgondagens digitala tjänster tillsammans som ett team. Titta på våra nuvarande jobböppningar och tveka inte att ansöka om ett nytt jobb idag."
+    },
+    "frontend-challenge": {
+      "url": "/frontend-challenge",
+      "title": "Minns du vad du gjorde imorgon?",
+      "description": "Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?",
+      "ogimage": "https://www.futurememories.se/ogimage-frontend-challenge.jpg"
     }
   },
   "careersWorkplaces": {
