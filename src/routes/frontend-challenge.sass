@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap')
+
+.view
+  font-size: 1.8rem
+  font-family: 'Space Mono', monospace
+  line-height: 1.5
+  color: #8d939e
+  position: relative
+
+  h1
+    font-size: 3rem
+    margin-bottom: 3rem
+    color: #d4d8e5
+
+  p, code
+    display: block
+    margin-bottom: 2rem
+
+  h2
+    font: inherit
+    margin-bottom: 0.5rem
+
+  code
+    background: rgba(#1a1d26, 0.8)
+    border-radius: 2rem
+    font: inherit
+    line-height: inherit
+    padding: 2rem
+    display: block
+    margin: 0 -2rem 2rem
+    word-break: break-all
+    white-space: pre-wrap
+
+    .wrongComment
+      opacity: 0.5
+
+    .correctComment
+      color: #6aa573
+
+  strong
+    color: #c2c8d4
+
+.background
+  opacity: 0.3
+  pointer-events: none
+
+  > p
+    position: absolute
+    margin: 0
+
+  .topLeft
+    top: 5rem
+    left: 5rem
+    text-align: left
+
+  .bottomRight
+    bottom: 5rem
+    right: 5rem
+    text-align: right
+
+.enterParagraph
+  margin-top: 8rem
+  color: inherit
+  display: block
+  cursor: pointer
+
+.first
+  align-items: center
+
+  p
+    max-width: 49rem
+
+.first, .second
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  text-align: center
+  padding: 15rem 2rem
+
+  > *:first-child
+    margin-top: auto
+
+  > *:last-child
+    margin-bottom: auto
+
+.second
+  text-align: left
+  padding: 15rem 10rem
+  align-items: stretch
+
+.codeInput
+  color: rgba(#8d939e, 0.5)
+
+.editor
+  margin: -4.7rem -2rem
+  // margin-bottom: -50px
+
+  \:global(.CodeMirror)
+    background: transparent
+    color: #8d939e
+    font: inherit
+    line-height: inherit
+    height: auto
+
+  \:global(.CodeMirror-lines)
+    padding: 4.7rem 0
+
+  \:global(.CodeMirror-cursor)
+    border-color: white
+
+  \:global(.CodeMirror-line)
+    padding: 0 2rem !important
+
+  \:global(.CodeMirror-line-like)
+    padding: 0 2rem !important
+
+  \:global(.cm-s-default .cm-def)
+    color: white
+
+  \:global(.cm-s-default .cm-variable)
+    color: inherit
+
+  \:global(.cm-s-default .cm-string)
+    color: #ec193e
+
+  \:global(.cm-s-default .cm-number)
+    color: #6aa573
+
+  \:global(.cm-s-default .cm-keyword)
+    color: #f6cafc
+
+  \:global(.cm-s-default .cm-comment)
+    color: rgba(#8d939e, 0.5)
+
+  // \:global(.CodeMirror-scroll)
+  //   overflow: visible !important
+  //   height: auto
+
+.enter, code .message
+  color: #ec193e
+
+  @supports (-webkit-background-clip: text)
+    background: linear-gradient(135deg, #ec193e, #bb5e6e)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent

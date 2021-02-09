@@ -46,11 +46,14 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
+    "codemirror": "^5.59.2",
     "in-view": "git+https://github.com/losthumans/in-view.git",
     "marked": "^1.1.1",
     "preact": "^8.5.2",
     "preact-compat": "^3.19.0",
     "react-scrollable-anchor": "^0.6.1",
+    "safe-eval": "^0.4.1",
+    "throttle-debounce": "^3.0.1",
     "webpack-remove-serviceworker-plugin": "^1.0.0"
   },
   "standard": {

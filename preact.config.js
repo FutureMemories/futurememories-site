@@ -11,6 +11,12 @@ import path from 'path'
  * @param {WebpackConfigHelpers} helpers - object with useful helpers when working with config.
  **/
 export default function (config, env, helpers) {
+  if (env.ssr) {
+    config.resolve.alias.codemirror$ = require.resolve('./__mocks__/codemirror.js')
+    config.resolve.alias['codemirror/lib/codemirror.css$'] = require.resolve('./__mocks__/codemirror.js')
+    config.resolve.alias['codemirror/mode/javascript/javascript.js$'] = require.resolve('./__mocks__/codemirror.js')
+  }
+
   config.plugins.push(new CopyWebpackPlugin([{ context: `${__dirname}/src/assets`, from: '*' }]))
   config.plugins.push(new CopyWebpackPlugin([{ context: `${__dirname}/src/assets-root`, from: '*' }]))
   config.plugins.push(new RemoveServiceWorkerPlugin({ filename: 'sw.js' }))
