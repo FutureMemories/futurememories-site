@@ -136,7 +136,7 @@ export default class extends Component {
             : (
               <div class={s.first}>
                 <h1>Minns du vad du gjorde imorgon?</h1>
-                <p>Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?</p>
+                <p>Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du vad som krävs?</p>
                 <a class={s.enterParagraph} onClick={() => this.setState({ step: 2 })}>Tryck <span class={s.enter}>{'{ enter }'}</span> för att anta utmaningen.</a>
               </div>
             )
