@@ -18,7 +18,7 @@ class Editor extends Component {
   setupCodeMirror = () => {
     const editor = CodeMirror(this.base, {
       mode: { name: 'javascript' },
-      value: 'return ""',
+      value: 'return input',
       lineWrapping: true
     })
 
@@ -32,8 +32,10 @@ class Editor extends Component {
   }
 }
 
+const secretMessage = 'Csb!kpccbu"!Wj!mfubs!kvtu!ov!fgufs!oæhpo!tpn!ejh/!Cbsb!buu!ev!cmfw!ozgjlfo!qæ!efuub!h÷s!ptt!åoov!nfs!jousfttfsbef!bw!ejh/!Nbjmb!cbsb!#Ifk#!ujmm!mjoebAgvuvsfnfnpsjft/tf!tæ!i÷s!wj!bw!ptt"!)Q/T/!jolmvefsb!håsob!ejo!m÷tojoh!j!nbjmfu*'
+
 export default class extends Component {
-  state = { tests: [] }
+  state = { tests: [], result: '' }
 
   componentWillMount () {
     const title = 'Minns du vad du gjorde imorgon?'
@@ -46,7 +48,7 @@ export default class extends Component {
       if (metaDescription) metaDescription.setAttribute('content', 'Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?')
 
       window.addEventListener('keyup', this.onKeyboard)
-      this.updateTests('return ""')
+      this.updateTests('return input')
     }
   }
 
@@ -64,7 +66,7 @@ export default class extends Component {
 
   runCode = (code, input) => {
     try {
-      return safeEval(`(function(input){${code}})("${input}")`)
+      return safeEval(`(function(input){${code}})('${input}')`)
     } catch (err) {
       console.log(err.message)
     }
@@ -76,22 +78,23 @@ export default class extends Component {
         { text: "expect(decipher('Bcd')).toBe('Abc')", value: this.runCode(input, 'Bcd'), expected: 'Abc' },
         { text: "expect(decipher('234')).toBe('123')", value: this.runCode(input, '234'), expected: '123' },
         { text: "expect(decipher('Ibmmæ!eås')).toBe('Hallå där')", value: this.runCode(input, 'Ibmmæ!eås'), expected: 'Hallå där' }
-      ]
+      ],
+      result: this.runCode(input, secretMessage)
     })
   }
 
   handleUpdate = throttle(1000, this.updateTests)
 
   renderValue = (value) => {
+    if (typeof value === 'function') return '[function]'
     const v = JSON.stringify(value)
     if (value === null) return 'null'
     if (value === undefined) return 'undefined'
-    return v
+    return v || 'undefined'
   }
 
-  render ({ data, root }, { step, tests }) {
-    const allTestsPassed = tests.reduce((res, t) => res && t.value === t.expected, true)
-
+  render ({ data, root }, { step, tests, result }) {
+    // const allTestsPassed = tests.reduce((res, t) => res && t.value === t.expected, true)
     return (
       <div class={s.view}>
         <div class={s.background}>
@@ -109,7 +112,7 @@ export default class extends Component {
             ? (
               <div class={s.second}>
                 <p>Vi har hittat den här textsträngen som innehåller ett hemligt meddelande som vi behöver din hjälp att tyda:</p>
-                <code><span class={s.message}>Csb!kpccbu"!Wj!mfubs!kvtu!ov!fgufs!oæhpo!tpn!ejh/!Cbsb!buu!ev!cmfw!ozgjlfo!qæ!efuub!h÷s!ptt!åoov!nfs!jousfttfsbef!bw!ejh/!Nbjmb!cbsb!#Ifk#!ujmm!mjoebAgvuvsfnfnpsjft/tf!tæ!i÷s!wj!bw!ptt"!)Q/T/!jolmvefsb!håsob!ejo!m÷tojoh!j!nbjmfu*</span></code>
+                <code><span class={s.message}>{secretMessage}</span></code>
                 <p>Vi kan se att varje teckens <strong>char code</strong> är precis 1 kodvärde för högt. Vi har påbörjat en funktion och skrivit några enhetstester men vi behöver din hjälp att slutföra funktionen för att få ut meddelandet.</p>
                 <code class={s.codeInput}>
                   {'function decipher(input) {\n'}
@@ -130,7 +133,9 @@ export default class extends Component {
                       </span>
                     ))}
                 </code>
-                {allTestsPassed && <p>Utmärkt! Alla tester går igenom, nu är det fritt fram att testa funktionen med det hemliga meddelandet för att få fram en översättning.</p>}
+                <h2>Resultat:</h2>
+                <code>{this.renderValue(result)}</code>
+                {/* allTestsPassed && <p>Utmärkt! Alla tester går igenom, nu är det fritt fram att testa funktionen med det hemliga meddelandet för att få fram en översättning.</p> */}
               </div>
             )
             : (
