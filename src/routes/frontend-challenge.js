@@ -59,7 +59,7 @@ export default class extends Component {
   }
 
   onKeyboard = (ev) => {
-    if (ev.code && this.state.step !== 2) {
+    if (ev.code === 'Enter' && this.state.step !== 2) {
       this.setState({ step: 2 })
     }
   }
