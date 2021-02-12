@@ -85,8 +85,9 @@ export default class extends Component {
 
   handleUpdate = throttle(1000, this.updateTests)
 
-  renderValue = (value) => {
+  renderValue = (value, handleStringsRaw) => {
     if (typeof value === 'function') return '[function]'
+    if (handleStringsRaw && typeof value === 'string') return value
     const v = JSON.stringify(value)
     if (value === null) return 'null'
     if (value === undefined) return 'undefined'
@@ -94,7 +95,8 @@ export default class extends Component {
   }
 
   render ({ data, root }, { step, tests, result }) {
-    // const allTestsPassed = tests.reduce((res, t) => res && t.value === t.expected, true)
+    const allTestsPassed = tests.reduce((res, t) => res && t.value === t.expected, true)
+
     return (
       <div class={s.view}>
         <div class={s.background}>
@@ -134,7 +136,7 @@ export default class extends Component {
                     ))}
                 </code>
                 <h2>Resultat:</h2>
-                <code>{this.renderValue(result)}</code>
+                <code class={allTestsPassed && s.allTestsPassed}>{this.renderValue(result, true)}</code>
                 {/* allTestsPassed && <p>Utmärkt! Alla tester går igenom, nu är det fritt fram att testa funktionen med det hemliga meddelandet för att få fram en översättning.</p> */}
               </div>
             )
