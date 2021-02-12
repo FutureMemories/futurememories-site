@@ -32,7 +32,7 @@ class Editor extends Component {
   }
 }
 
-const secretMessage = 'Csb!kpccbu"!Wj!mfubs!kvtu!ov!fgufs!oæhpo!tpn!ejh/!Cbsb!buu!ev!cmfw!ozgjlfo!qæ!efuub!h÷s!ptt!åoov!nfs!jousfttfsbef!bw!ejh/!Nbjmb!cbsb!#Ifk#!ujmm!mjoebAgvuvsfnfnpsjft/tf!tæ!i÷s!wj!bw!ptt"!)Q/T/!jolmvefsb!håsob!ejo!m÷tojoh!j!nbjmfu*'
+const secretMessage = 'Csb!kpccbu"!Wj!mfubs!kvtu!ov!fgufs!oæhpo!tpn!ejh/!Cbsb!buu!ev!cmfw!ozgjlfo!qæ!efuub!h÷s!ptt!åoov!nfs!jousfttfsbef!bw!ejh/!Nbjmb!cbsb!#Ifk#!ujmm!ljlbfmAgvuvsfnfnpsjft/tf!tæ!i÷s!wj!bw!ptt"!)Q/T/!jolmvefsb!håsob!ejo!m÷tojoh!j!nbjmfu*'
 
 export default class extends Component {
   state = { tests: [], result: '' }
