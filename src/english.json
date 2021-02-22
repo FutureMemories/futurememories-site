@@ -998,6 +998,39 @@
       "identityText": "We brought Annotell a brand new digital identity that incorporates the innovative spirit of the company culture. We used visualisation tools inspired by the point clouds and LiDAR technology used on the platform. We took inspiration from their own annotation platform to create unique patterns and dynamic animations and effects.",
       "integrationTitle": "Continuous Integration",
       "integrationText": "Annotell is an agile company, and so are we. Our joint process is driven by continuous development, where we release feature by feature on an iterative basis. For us of course, this is the way it should always be done. We worked in close collaboration with our customer all the way from the design phase development process through to content production. Close collaboration is the natural key to success."
+    },
+    "wearevoice": {
+      "name": "We Are Voice",
+      "title": "We Are Voice",
+      "imageBg": [
+        "cases/annotell-bg-1-mobile.png",
+        "height"
+      ],
+      "subtitle": "Kör bara kör",
+      "desc": "We Are Voice är musikappen för dig som vill träna sång och stämsång med din kör, oavsett om ni övar tillsammans eller på distans.",
+      "client": "Annotell",
+      "type": "Service design, UX, UI. Design System, React Native, React",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "linear-gradient(289.91deg, #0C121D 0%, #212F3D 100%)"
+        },
+        {
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+        }
+      ],
+      "aboutTitle": "Tjänsten för sång och stämsång",
+      "aboutText": "Grundarna bakom We Are Voice är erfarna körledare, arrangörer och musiker. De är även utvecklare med en gedigen erfarenhet inom digitala tjänster och har en god kunskap och erfarenhet inom musikbranschen.\n\nVi har designat och byggt deras nya version av app & site samt integrerat dessa mot befintlig plattform. Tjänsten tillsammans med användarna gör nu musiken ännu mer tillgänglig för alla musikälskare.",
+      "visitTheSite": "Se hemsidan",
+      "aboutAppTitle": "Gör din röst hörd.",
+      "aboutAppText": "We Are Voice är musikappen för dig som vill träna sång och stämsång med din kör, oavsett om ni övar tillsammans eller på distans. I appen kan du träna din stämma där text och noter synkas med ljudspår. Ta del av hundratals inspelade arrangemang och speciellt framtagna repertoarer som passar just för dig och din kör.\n\nI appen kan du skapa spellistor med låtar som du själv laddar upp, eller som du väljer från ett musikbibliotek där ny musik fylls på hela tiden. Du kan också ladda upp egen musik i form av noter, text och ljudfiler.",
+      "aboutAppTitle2": "Pedagogiskt & givande musiklärande.",
+      "aboutAppText2": "I appen kan du skapa, dela och kommunicera med din kör, hitta musik i biblioteket med fullständiga rättigheter. We Are Voice är abonnemangs-baserat på individnivå och finns som gruppaket och premiumnivå. Skapa och publicera pedagogisk musik eller gå med i communityn för att dela dina kunskaper med andra.\n\nMed appen ökar tillgången till arrangemang som tidigare varit i en gråzon rättighetsmässigt. Detta innebär att du följer konstens alla regler när du har ett abonnemang. Bra för musikbranchen, kanon för dig själv!",
+      "aboutDesignTitle": "",
+      "aboutDesignText": "",
+      "communityTitle": "",
+      "communityText": ""
     }
   },
   "notUsedCases": {

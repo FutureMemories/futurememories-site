@@ -8,9 +8,9 @@ export default class extends Component {
     this.setState({ showOverlay: !this.state.showOverlay })
   }
 
-  render ({ content, dark }) {
+  render ({ content, dark, darkText }) {
     return (
-      <section class={cx(s.block, dark && s.dark)}>
+      <section class={cx(s.block, dark && s.dark, darkText && s.darkText)}>
         <h3>{content.title}</h3>
         <div class={s.buttons}>
           <div class={cx(s.button, s.meeting)}>
@@ -37,36 +37,6 @@ export default class extends Component {
           toggleOverlay={this.toggleOverlay}
           content={content}
         />
-        {/* <div class={cx(s.overlay, !showOverlay && s.hidden)} onClick={ev => this.onClickOverlay(ev)}>
-          <form class={s.panel} onSubmit={ev => this.onSendMail(ev)} ref={el => { this.panelRef = el }}>
-            <button type='button' class={s.close} onClick={() => this.setState({ showOverlay: false })}>
-              <svg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <path d='M23.75 8.0125L21.9875 6.25L15 13.2375L8.0125 6.25L6.25 8.0125L13.2375 15L6.25 21.9875L8.0125 23.75L15 16.7625L21.9875 23.75L23.75 21.9875L16.7625 15L23.75 8.0125Z' fill='black' />
-              </svg>
-            </button>
-            <h3>{content.bookAMeetingHeader}</h3>
-            {sending && <p class={s.message}>{content.sending}</p>}
-            {sent && <p class={s.message}>{content.sent}</p>}
-            {(!sending && !sent) && (
-              <div class={s.fields}>
-                <input name='name' type='text' placeholder={content.fields.name} required />
-                <input name='email' type='email' placeholder={content.fields.email} required />
-                <input name='telephone' type='tel' placeholder={content.fields.telephone} />
-                <input name='time' type='text' placeholder={content.fields.suggestTime} />
-                <textarea name='message' placeholder={content.fields.message} rows={5} required />
-              </div>
-            )}
-            {(!sending && !sent) && (
-              <button type='submit' class={s.submit}>
-                {content.fields.send}
-                <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                  <path d='M2 21L23 12L2 3V10L17 12L2 14V21Z' fill='white' />
-                </svg>
-              </button>
-            )}
-            {errorSending && <p class={s.error}>{content.errorSending}</p>}
-          </form>
-        </div> */}
       </section>
     )
   }

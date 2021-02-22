@@ -19,10 +19,19 @@
       max-width: 50rem
       overflow: hidden
 
-      > h1
+      > h1, h2
         font-weight: normal
         margin: 6rem 0 2rem
         white-space: pre-line
+
+      h2
+        font-size: 2.5rem
+
+        @media screen and (min-width: 701px)
+          font-size: 3rem
+
+        @media screen and (min-width: 1001px)
+          font-size: 4rem
 
       > p
         font-size: 2rem
@@ -37,10 +46,11 @@
       justify-content: flex-end
       position: relative
       width: 60%
+      pointer-events: none
 
     @media screen and (max-width: $medium-grid)
       > .content
-        > h1
+        > h1, h2
           margin-top: 0
 
       > .parallaxes
@@ -56,13 +66,13 @@
         margin: auto
         padding: 0 3rem
 
-        > h1
+        > h1, h2
           margin-top: 0rem
 
       > .parallaxes
         width: 55%
 
-  &:not(.nordish)
+  &:not(.nordish):not(.wearevoice)
     > .inner
       > .parallaxes
         margin: -7rem 0 -35% auto
@@ -92,7 +102,7 @@
         @media screen and (min-width: $small-grid + 101px)
           margin: 3rem 0
 
-        > h1
+        > h1, h2
           margin-top: 0
 
       > .parallaxes
@@ -130,3 +140,65 @@
         @media screen and (min-width: 1500px)
           > div:nth-child(2)
             left: 50%
+
+  &.wearevoice
+    overflow: visible
+
+    > .inner
+      align-items: center
+
+      > .content
+        @media screen and (min-width: $small-grid + 101px)
+          max-width: 35rem
+        @media screen and (min-width: 900px)
+          max-width: 50rem
+
+        > h1, h2
+          margin-top: 0
+
+      > .parallaxes
+        height: 70rem
+        margin: -2rem auto -30%
+
+        @media screen and (min-width: 400px)
+          margin: 0 auto -10%
+
+        @media screen and (min-width: 450px)
+          margin: 0 auto
+
+        @media screen and (min-width: 500px)
+          margin: 3rem auto 10rem
+
+        @media screen and (min-width: 550px)
+          margin: 3rem auto 20rem
+
+        @media screen and (min-width: $small-grid + 101px)
+          height: 50rem
+
+        @media screen and (min-width: $breakpoint-desktop)
+          height: 70rem
+          margin: 0
+
+        > div:nth-child(1)
+          left: 35%
+          z-index: 4
+          margin: 0
+
+          @media screen and (min-width: $small-grid + 101px)
+            left: 22%
+
+          @media screen and (min-width: $breakpoint-desktop)
+            left: 20%
+
+          @media screen and (min-width: $breakpoint-desktop-large)
+            left: 35%
+
+        > div:nth-child(2)
+          left: -25%
+          z-index: 3
+
+          @media screen and (min-width: $small-grid + 101px)
+            left: -8%
+
+          @media screen and (min-width: $breakpoint-desktop)
+            left: -25%

@@ -2,7 +2,7 @@ import cx from 'classnames'
 import s from './parallax-bump-block.sass'
 import ParallaxObject from './parallax-object'
 
-export default ({ title, text, items, align, background = '', color = '', modifier, inView }) => (
+export default ({ title, text, items, align, background = '', color = '', modifier, inView, notMainHeader }) => (
   <div
     class={cx(s.parallaxBumpBlock, modifier && s[modifier])}
     style={{ background, color }}
@@ -10,7 +10,7 @@ export default ({ title, text, items, align, background = '', color = '', modifi
     <div class={cx(s.inner, inView)}>
 
       <div class={s.content}>
-        <h1>{title}</h1>
+        {notMainHeader ? <h2>{title}</h2> : <h1>{title}</h1>}
         <p>{Array.isArray(text) ? text.join('\n\n') : text}</p>
       </div>
 

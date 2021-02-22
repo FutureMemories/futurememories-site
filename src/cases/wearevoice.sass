@@ -1,0 +1,180 @@
+@import '../settings.sass'
+
+$weAreVoiceBlue: #1A1E31
+$titleColor: #EADFD8
+$textColor: rgba(#EADFD8, .6)
+
+.view
+  background: $weAreVoiceBlue
+  color: $titleColor
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  .inner
+    background: none
+    overflow: hidden
+
+  .imageAndTextSection
+    width: 100%
+    overflow: hidden
+
+    .content
+      position: relative
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 120rem
+      margin: 0 auto
+      padding: 8rem 3rem
+      text-align: center
+
+      @media screen and (min-width: 1024px)
+        flex-direction: row
+        justify-content: space-between
+        padding: 16rem 3rem
+        text-align: left
+
+      .column
+        position: relative
+        width: 100%
+        flex-shrink: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        @media screen and (min-width: 1024px)
+          width: calc(50% - 2rem)
+
+        &:nth-of-type(2)
+          @media screen and (min-width: 1024px)
+            align-items: flex-end
+
+        &.mobileFadeBottom
+          &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 8rem
+            width: 100%
+            background: linear-gradient(to top, #1A1E31 40%, rgba(0,0,0,0))
+
+            @media screen and (min-width: 700px)
+              height: 12rem
+
+            @media screen and (min-width: 1024px)
+              display: none
+
+      .image
+        width: #{'min(81rem, 95%)'}
+
+        @media screen and (min-width: 700px)
+          width: #{'min(81rem, 70%)'}
+
+        @media screen and (min-width: 1024px)
+          position: absolute
+          width: #{'min(81rem, 150%)'}
+          object-fit: contain
+          bottom: #{'min(-17rem, -50%)'}
+          right: 0
+
+      .title
+        width: 100%
+        max-width: 44rem
+        color: $titleColor
+        font-size: 4rem
+
+      .title
+        margin-bottom: 2rem
+        font-size: 2.5rem
+        line-height: 3.6rem
+        font-weight: normal
+
+        @media screen and (min-width: 701px)
+          font-size: 3rem
+
+        @media screen and (min-width: 850px)
+          margin-bottom: 2rem
+          line-height: 4.7rem
+
+        @media screen and (min-width: 1001px)
+          font-size: 4rem
+        // line-height: 4.7rem
+
+      .text
+        width: 100%
+        max-width: 44rem
+        font-size: 2rem
+        line-height: 2.8rem
+        white-space: pre-line
+        color: $textColor
+
+  .designSection
+    width: 100%
+    background: #1E2337
+
+    .content
+      width: 100%
+      max-width: 120rem
+      margin: 0 auto
+      padding: 8rem 3rem
+      text-align: center
+
+      @media screen and (min-width: 1024px)
+        padding: 16rem 3rem
+
+    .textBlock
+      max-width: 70rem
+      margin: 0 auto
+
+      .title
+        margin-bottom: 2rem
+        font-size: 2.5rem
+        line-height: 3.6rem
+        font-weight: normal
+        color: $titleColor
+
+        @media screen and (min-width: 701px)
+          font-size: 3rem
+
+        @media screen and (min-width: 850px)
+          line-height: 4.7rem
+
+        @media screen and (min-width: 1001px)
+          font-size: 4rem
+
+      .text
+        font-size: 2rem
+        line-height: 2.8rem
+        white-space: pre-line
+        color: $textColor
+
+        @media screen and (min-width: 850px)
+          font-size: 2rem
+          line-height: 2.8rem
+
+    .imageBlock
+      display: flex
+      width: 100%
+      margin-top: 2rem
+
+      @media screen and (min-width: 850px)
+        margin-top: 5rem
+
+      &:nth-of-type(2)
+        margin-top: 10rem
+
+      .image
+        max-width: 100%
+        display: flex
+        min-width: calc(50% - 1rem)
+
+        @media screen and (min-width: 850px)
+          min-width: calc(50% - 2.5rem)
+
+        &:nth-of-type(2)
+          margin-left: 2rem
+
+          @media screen and (min-width: 850px)
+            margin-left: 5rem
