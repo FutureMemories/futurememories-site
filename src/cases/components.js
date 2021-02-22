@@ -13,6 +13,8 @@ import ParallaxObjectBlock from './components/parallax-object-block'
 import SlideInBlock from './components/slide-in-block'
 import TextBlockMultiple from './components/text-block-multiple'
 import TextGridBlock from './components/text-grid-block'
+import TextTwoCol from './components/text-two-col'
+import BackgroundImageWithTextBlock from './components/backgroundimage-with-text-block'
 
 const c = (name, comp, extraClass) => <div class={cx(s.component, extraClass)}><div class={s.name}>{name}</div>{comp}</div>
 
@@ -37,6 +39,8 @@ export default class extends Component {
         {c('SlideInBlock right align', <SlideInBlock title='Hea...dline' text='Biltong meatball chuck pastrami, tenderloin frankfurter shank turducken pig. Chicken short ribs ball tip tail ribeye. Burgdoggen ham hock sausage ball tip kielbasa, tongue doner capicola strip steak flank kevin venison.' image='cases/retts-plus-3.png' background='white' color='black' align='right' />)}
         {c('TextBlockMultiple', <TextBlockMultiple title='Another headline' text='Filet mignon tail andouille tri-tip ball tip spare ribs frankfurter. Rump tri-tip leberkas shankle prosciutto jerky pork boudin capicola venison.' content={['Pork belly swine alcatra flank cow. Tri-tip bacon tail jowl, filet mignon alcatra swine ribeye pancetta sirloin flank. Ball tip shoulder leberkas spare ribs doner. Prosciutto cow capicola pork burgdoggen.', 'Swine cow flank burgdoggen pastrami. Pastrami rump short ribs kevin shank. Leberkas filet mignon tail picanha jowl hamburger, short ribs venison burgdoggen short loin brisket pig. Meatloaf landjaeger fatback buffalo. Filet mignon meatloaf pork belly shank, boudin fatback swine ham hock picanha venison ribeye. Meatloaf salami kielbasa, jowl cupim frankfurter porchetta.']} background='white' color='black' />)}
         {c('TextGridBlock', <TextGridBlock blocks={[{ image: 'cases/bauer-university-2.png' }, { title: 'And... again this is a headline', desc: 'spare ribs pancetta meatball fatback swine shank brisket t-bone. Jowl meatloaf strip steak leberkas hamburger beef ribs.' }, { image: 'cases/bauer-university-3.png' }, { inView: 'inViewLeft', image: 'cases/bauer-university-4.png' }]} background='white' color='black' />)}
+        {c('TextTwoCol with button', <TextTwoCol title='Lorem ipsum dolor sit amet' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' link={{ url: 'https://wearevoice.se', label: 'Visit wearevoice.se', targetBlank: true }} />)}
+        {c('BackgroundImageWithTextBlock', <BackgroundImageWithTextBlock title='Lorem ipsum dolor sit amet' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' src={{ path: 'cases/wearevoice-bg-1.jpg', style: { maxHeight: '999px' } }} color='#EADFD8' />)}
       </div>
     )
   }
