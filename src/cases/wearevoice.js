@@ -16,7 +16,7 @@ const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child`,
   `${s.inner} > div:nth-child(4) > div:first-child`,
   `${s.inner} > div:nth-child(5) > div > div`,
-  `${s.inner} > div:nth-child(6) > div > div:first-child`,
+  `${s.inner} > div:nth-child(6) > div > div`,
   `${s.inner} > div:nth-child(7) > div > div`
 ].join(',.')
 
@@ -51,7 +51,11 @@ export default class extends Component {
             />
 
             <LargeImage
-              src='cases/wearevoice-1.png' alt='Annotell.com mockup' className={s.backgroundImage} modifier='wearevoice' background='#1E2337'
+              src='cases/wearevoice-1.png'
+              alt='Annotell.com mockup'
+              className={s.backgroundImage}
+              modifier='wearevoice'
+              background='#1E2337'
             />
 
             <TextTwoCol
@@ -94,15 +98,14 @@ export default class extends Component {
                   <h2 class={s.title}>{content.aboutAppTitle2}</h2>
                   <p class={s.text}>{content.aboutAppText2}</p>
                 </div>
-                <div class={s.imageBlock}>
+                <div class={cx(s.imageBlock, 'inViewRight')}>
                   <img class={s.image} src={require('../images/cases/wearevoice-design-1.png')} alt='' />
                 </div>
-                <div class={s.imageBlock}>
+                <div class={cx(s.imageBlock, 'inViewBottom')}>
                   <img class={s.image} src={require('../images/cases/wearevoice-design-2.png')} alt='' />
                   <img class={s.image} src={require('../images/cases/wearevoice-design-3.png')} alt='' />
-
                 </div>
-                <div class={s.imageBlock}>
+                <div class={cx(s.imageBlock, 'inViewLeft')}>
                   <img class={s.image} src={require('../images/cases/wearevoice-design-4.png')} alt='' />
                 </div>
               </div>
