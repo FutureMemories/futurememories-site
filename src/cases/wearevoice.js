@@ -35,7 +35,7 @@ export default class extends Component {
   }
 
   render ({ data, root }) {
-    const content = data.allCases.find(c => c.id === 'wearevoice')
+    const content = data.allCases.find(c => c.id === 'we-are-voice')
     this.questionsAndAnswers = content.questionsAndAnswers
 
     return (
@@ -86,8 +86,8 @@ export default class extends Component {
                   <img class={s.image} src={require('../images/cases/wearevoice-device3.png')} alt='' />
                 </div>
                 <div class={cx(s.column, 'inViewRight')}>
-                  <h2 class={s.title}>{content.aboutAppTitle2}</h2>
-                  <p class={s.text}>{content.aboutAppText2}</p>
+                  <h2 class={s.title}>{content.processTitle}</h2>
+                  <p class={s.text}>{content.processText}</p>
                 </div>
               </div>
             </div>
@@ -95,8 +95,8 @@ export default class extends Component {
             <div class={s.designSection}>
               <div class={s.content}>
                 <div class={cx(s.textBlock, 'inViewBottom')}>
-                  <h2 class={s.title}>{content.aboutAppTitle2}</h2>
-                  <p class={s.text}>{content.aboutAppText2}</p>
+                  <h2 class={s.title}>{content.aboutDesignTitle}</h2>
+                  <p class={s.text}>{content.aboutDesignText}</p>
                 </div>
                 <div class={cx(s.imageBlock, 'inViewRight')}>
                   <img class={s.image} src={require('../images/cases/wearevoice-design-1.png')} alt='' />
@@ -113,10 +113,10 @@ export default class extends Component {
 
             <BackgroundImageWithTextBlock
               inView='inViewBottom'
-              src={{ path: 'cases/wearevoice-bg-1.jpg', style: { maxHeight: '999px' } }}
+              src={{ path: 'cases/wearevoice-bg-1.jpg' }}
               color='#EADFD8'
-              title={content.aboutAppTitle2}
-              text={content.aboutAppText2}
+              title={content.resultTitle}
+              text={content.resultText}
               link={[content.visitTheSite, 'https://www.wearevoice.se']}
             />
 

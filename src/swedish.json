@@ -472,6 +472,21 @@
       "identityText": "För Annotell tog vi fram en ny digital identitet som rimmar med företagets innovationsanda. Visualisering av data är en del av kärnverksamheten, i designfasen utgick vi därför ifrån deras egna produkt för att hämta inspiration till färgpaletten. Annotell visualiserar data med hjälp av punktmoln där vi tog inspiration från LiDAR tekniken och applicerade detta övergripande för att skapa ett unikt mönster med interaktivitet.",
       "integrationTitle": "Continuous Integration",
       "integrationText": "Annotell arbetar agilt i alla led. I vår utvecklingsprocess har vi därför kontinuerligt släppt små inkrement av uppdateringar och förbättringar. Vi har haft ett tätt samarbete med kunden och arbetat i ett sammansvetsat team för att ta fram all design, funktionalitet samt innehåll. Ett riktigt drömsamarbete."
+    },
+    "we-are-voice": {
+      "subtitle": "Kör bara kör",
+      "desc": "We Are Voice är musikappen för dig som tränar sång och stämsång med din kör, oavsett om ni övar tillsammans eller på distans.",
+      "aboutTitle": "Gör din röst hörd",
+      "aboutText": "We Are Voice är musikappen för dig som tränar sång och stämsång med din kör, oavsett om ni övar tillsammans eller på distans. I appen tränar du din stämma med hjälp av text och noter synkade med musik och stämspår. Appen erbjuder tusentals arrangemang och speciellt framtagna repertoarer som passar alla sångare och körer.\n\nWe Are Voice's musikbibliotek växer ständigt och allt material är rättighetssäkrat. Appen ökar tillgången till arrangemang som tidigare varit i en gråzon rättighetsmässigt. We Are Voice följer alla regler när du tecknat ett abonnemang. Bra för musikbranchen, kanon för din kör! Du kan sjävklart ladda upp och dela med dig av dina egna arrangemang direkt i appen.",
+      "visitTheSite": "Se hemsidan",
+      "aboutAppTitle": "Flerstämmig harmoni",
+      "aboutAppText": "Grundarna Martin Rolinski, Fredrik Berglund, Malin Torkelsdotter Poole och Kalle Ljung är erfarna körledare, arrangörer och musiker. Teamet består även av utvecklare med en gedigen erfarenhet inom digitala tjänster och har en god kunskap och erfarenhet inom musikbranschen.\n\nVi har designat och byggt den nya appen, lanserat en ny site samt integrerat dessa mot befintligt backendsystem. We Are Voiceteamet har dessutom fått ett nytt partnersystem för hantering av licenser och större kunder med specifika behov, vilket ger teamet en mer lättarbetad miljö som är robust och flexibel för framtida förändringar.\n\nAppen är byggd i React Native och siten är byggd i React.",
+      "processTitle": "Designdriven process",
+      "processText": "I vårt samarbete förfinade vi informationsaktitekturen ur ett UX perspektiv och tog fram ett designsystem, där användavänlighet stod i centrum.\n\nTeamet jobbade agilt med en gemensam backlog anpassad för en växande produkt. Vi tillämpade en designdriven process där design har drivit roadmappen framåt för utvecklingen.",
+      "aboutDesignTitle": "Da Capo på design",
+      "aboutDesignText": "Vi tog fram ett designsystem som We Are Voice kan äga själva och som ger produkten utrymme att växa digitalt i alla led.\n\nDet rörliga brand vi tog fram särskiljer sig ifrån andra aktörer inom samma genre samtidigt som det befäster produkten och varumärkets känsla av kvalitét. Färgerna ger en modern känsla, vilket förstärks med ett kompletterande bildmanér som kan anpassas utefter behov och sammanhang.",
+      "resultTitle": "Som en mäktig Gospel",
+      "resultText": "Vi har dragit nytta av hela teamets samlade kunskaper och tidigare erfarenheter för att prioritera största nyttan i respektive sprint. Under projektets gång släppte vi kontinuerligt nya releaser av appen, webben och bidrog till större marknadsföringinsatser. För oss har continous intergration varit nyckeln till en konstant förnyad produkt och ett utmärkt agilt samarbete.\n\nProjektet har för oss varit en ren skönsång."
     }
   },
   "notUsedCases": {

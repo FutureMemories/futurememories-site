@@ -148,9 +148,13 @@
       align-items: center
 
       > .content
-        @media screen and (min-width: $small-grid + 101px)
+        @media screen and (min-width: $small-grid + 101px) //801
           max-width: 35rem
+
         @media screen and (min-width: 900px)
+          max-width: 45rem
+
+        @media screen and (min-width: 1100px)
           max-width: 50rem
 
         > h1, h2

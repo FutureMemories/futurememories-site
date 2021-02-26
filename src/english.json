@@ -112,6 +112,7 @@
         "paykartan",
         "forces-of-freedom",
         "travelmate",
+        "we-are-voice",
         "spira",
         "wya-network"
       ]
@@ -999,17 +1000,17 @@
       "integrationTitle": "Continuous Integration",
       "integrationText": "Annotell is an agile company, and so are we. Our joint process is driven by continuous development, where we release feature by feature on an iterative basis. For us of course, this is the way it should always be done. We worked in close collaboration with our customer all the way from the design phase development process through to content production. Close collaboration is the natural key to success."
     },
-    "wearevoice": {
+    "we-are-voice": {
       "name": "We Are Voice",
       "title": "We Are Voice",
       "imageBg": [
         "cases/annotell-bg-1-mobile.png",
         "height"
       ],
-      "subtitle": "Kör bara kör",
-      "desc": "We Are Voice är musikappen för dig som vill träna sång och stämsång med din kör, oavsett om ni övar tillsammans eller på distans.",
-      "client": "Annotell",
-      "type": "Service design, UX, UI. Design System, React Native, React",
+      "subtitle": "Voices Unite",
+      "desc": "We Are Voice is the music app for choir members for practicing vocals - whether you are singing with your choir, or by yourself.",
+      "client": "We Are Voice",
+      "type": "Service design, UX, UI, Design System, React Native, React",
       "showcase": true,
       "style": [
         {
@@ -1020,17 +1021,17 @@
           "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
-      "aboutTitle": "Tjänsten för sång och stämsång",
-      "aboutText": "Grundarna bakom We Are Voice är erfarna körledare, arrangörer och musiker. De är även utvecklare med en gedigen erfarenhet inom digitala tjänster och har en god kunskap och erfarenhet inom musikbranschen.\n\nVi har designat och byggt deras nya version av app & site samt integrerat dessa mot befintlig plattform. Tjänsten tillsammans med användarna gör nu musiken ännu mer tillgänglig för alla musikälskare.",
-      "visitTheSite": "Se hemsidan",
-      "aboutAppTitle": "Gör din röst hörd.",
-      "aboutAppText": "We Are Voice är musikappen för dig som vill träna sång och stämsång med din kör, oavsett om ni övar tillsammans eller på distans. I appen kan du träna din stämma där text och noter synkas med ljudspår. Ta del av hundratals inspelade arrangemang och speciellt framtagna repertoarer som passar just för dig och din kör.\n\nI appen kan du skapa spellistor med låtar som du själv laddar upp, eller som du väljer från ett musikbibliotek där ny musik fylls på hela tiden. Du kan också ladda upp egen musik i form av noter, text och ljudfiler.",
-      "aboutAppTitle2": "Pedagogiskt & givande musiklärande.",
-      "aboutAppText2": "I appen kan du skapa, dela och kommunicera med din kör, hitta musik i biblioteket med fullständiga rättigheter. We Are Voice är abonnemangs-baserat på individnivå och finns som gruppaket och premiumnivå. Skapa och publicera pedagogisk musik eller gå med i communityn för att dela dina kunskaper med andra.\n\nMed appen ökar tillgången till arrangemang som tidigare varit i en gråzon rättighetsmässigt. Detta innebär att du följer konstens alla regler när du har ett abonnemang. Bra för musikbranchen, kanon för dig själv!",
-      "aboutDesignTitle": "",
-      "aboutDesignText": "",
-      "communityTitle": "",
-      "communityText": ""
+      "aboutTitle": "Tune in to your choir",
+      "aboutText": "We Are Voice is the music app for choir members for practicing vocals - whether you are singing with your choir, or by yourself. The service provides lyrics and sheet music synchronised with vocal tracks, and thousands of arrangements and custom repertoires suitable for all types of singers and choirs. \n\nThe music library is large, and constantly growing. Rights for all materials are secured and the app offers a wide range of repertoires that previously were difficult to access legally.",
+      "visitTheSite": "Visit website",
+      "aboutAppTitle": "A Polyphonic Collaboration",
+      "aboutAppText": "The founders, Martin Rolinski, Fredrik Berglund, Malin Torkelsdotter Poole and Kalle Ljung are a team of experienced organisers, musicians and developers, with long experience in both the tech- and music industries.\n\nIn our joint team, we delivered a brand new design, developed and released the new app, launched a new website and integrated all of these separate elements with the existing back-end system. In addition, we provided the team behind We Are Voice with an admin system for partners. A time-saving, flexible solution for day-to-day administration.\n\nThe app is built in React Native and the website is built in React, a flexible framework chosen to last for the future.",
+      "processTitle": "Design Driven Development",
+      "processText": "In our collaboration we refined the information architecture from a UX perspective. We set up a brand new design system where user-friendliness was paramount.\n\nWe worked in an agile way with a joint back-log set up for a growing digital product. We applied a creative process where design set the pace for the development roadmap.",
+      "aboutDesignTitle": "Da Capo on Design",
+      "aboutDesignText": "We set up a new design that We Are Voice can own for further development, which gives the product space to grow digitally in all directions.\n\nThe product was re-branded to stand out from other players on the market within the same genre. The new colour palette gives a great modern feeling, and carefully selected imagery complements the design to add that extra sense of quality.",
+      "resultTitle": "Collaboration is our Forte",
+      "resultText": "In our collaboration we've made the most of the whole team's competence and previous experience in order to achieve the best outcome in each sprint. During the project we released new versions of the app continuously, and we used this method for all our activities when launching the website and major marketing campaigns.\n\nTo us, continuous integration has been vital for a constantly growing successful product."
     }
   },
   "notUsedCases": {
