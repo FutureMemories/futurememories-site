@@ -112,9 +112,9 @@
         "paykartan",
         "forces-of-freedom",
         "travelmate",
-        "we-are-voice",
         "spira",
-        "wya-network"
+        "wya-network",
+        "we-are-voice"
       ]
     }
   },
@@ -1004,7 +1004,7 @@
       "name": "We Are Voice",
       "title": "We Are Voice",
       "imageBg": [
-        "cases/annotell-bg-1-mobile.png",
+        "cases/wearevoice-1.png",
         "height"
       ],
       "subtitle": "Voices Unite",
@@ -1015,10 +1015,10 @@
       "style": [
         {
           "color": "#FFFFFF",
-          "background": "linear-gradient(289.91deg, #0C121D 0%, #212F3D 100%)"
+          "background": "linear-gradient(289.91deg, #1A1E31 0%, #2C3249 100%)"
         },
         {
-          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+          "background": "linear-gradient(90deg, rgba(28, 32, 51, 0.7) 0%, rgba(20, 24, 37, 0.5) 100%)"
         }
       ],
       "aboutTitle": "Tune in to your choir",
