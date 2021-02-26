@@ -158,7 +158,8 @@ $textColor: rgba(#EADFD8, .6)
       display: flex
       width: 100%
       margin-top: 2rem
-      max-height: 50rem
+      max-height: 70rem
+      overflow: hidden
 
       @media screen and (min-width: 850px)
         margin-top: 5rem
@@ -176,6 +177,9 @@ $textColor: rgba(#EADFD8, .6)
 
         @media screen and (min-width: 850px)
           min-width: calc(50% - 2.5rem)
+
+        @media screen and (min-width: 1100px)
+          object-fit: contain
 
         &:nth-of-type(2)
           margin-left: 2rem
