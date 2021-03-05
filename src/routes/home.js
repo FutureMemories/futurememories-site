@@ -122,7 +122,7 @@ export default class extends Component {
                 allCases={data.allCases}
                 firstView={firstView}
               />
-              <Button customClass={s.button} to='/work' label={data.content.home.seeMoreProjects} arrow transition='slide' />
+              {caseCategory !== 'all-projects' && <Button customClass={s.button} to='/work' label={data.content.home.seeMoreProjects} arrow transition='slide' />}
             </div>
 
             <TeamPictures {...data.teamPictures} />
