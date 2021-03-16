@@ -9,6 +9,7 @@ import Team from './routes/team'
 import Careers from './routes/careers'
 import NotFound from './routes/404'
 import FrontendChallenge from './routes/frontend-challenge'
+import CountTheEggsChallenge from './routes/count-the-eggs-challenge'
 
 import Picular from './cases/picular'
 import Bandbond from './cases/bandbond'
@@ -125,6 +126,7 @@ export default class extends Component {
         <WeAreVoice path={root + '/cases/we-are-voice'} data={languageData} root={root} />
         <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
         <FrontendChallenge path={root + '/frontend-challenge'} data={languageData} root={root} />
+        <CountTheEggsChallenge path={root + '/count-the-eggs'} data={languageData} root={root} />
 
         <NotFound type='404' default data={languageData} root={root} />
       </Router>
