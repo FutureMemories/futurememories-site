@@ -237,6 +237,18 @@
       "url": "/careers",
       "title": "Future Memories - Join our crew and be part of the journey",
       "description": "We gather the entire Future Memories team in our studio in downtown Gothenburg. A modern and stimulating comfort zone where we craft digital products of tomorrow together as a team. Have a look at our current job openings and do not hesitate to apply for a new job today."
+    },
+    "frontend-challenge": {
+      "url": "/frontend-challenge",
+      "title": "Minns du vad du gjorde imorgon?",
+      "description": "Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?",
+      "ogimage": "https://www.futurememories.se/ogimage-frontend-challenge.jpg"
+    },
+    "count-the-eggs": {
+      "url": "/count-the-eggs",
+      "title": "Minns du vad du gjorde imorgon?",
+      "description": "Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?",
+      "ogimage": "https://www.futurememories.se/ogimage-count-the-eggs.jpg"
     }
   },
   "frontTeamPictures": [

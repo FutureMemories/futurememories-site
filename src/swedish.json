@@ -75,6 +75,12 @@
       "title": "Minns du vad du gjorde imorgon?",
       "description": "Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?",
       "ogimage": "https://www.futurememories.se/ogimage-frontend-challenge.jpg"
+    },
+    "count-the-eggs": {
+      "url": "/count-the-eggs",
+      "title": "Minns du vad du gjorde imorgon?",
+      "description": "Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?",
+      "ogimage": "https://www.futurememories.se/ogimage-count-the-eggs.jpg"
     }
   },
   "careersWorkplaces": {
