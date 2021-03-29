@@ -47,16 +47,17 @@ export default class extends Component {
           step === 2
             ? (
               <div class={s.second}>
-                <p>Påskharen har funnits ända sedan 1600-talet! På ålderns höst har påskharen försökt modernisera och leverera påskägg över en socket-server. Men haren är lite förvirrad över vilken emoji som kidsen använder idag för att representera ägg, så skickar för säkerhets skull ut lite alla möjliga tecken och symboler. Haren behöver nu din hjälp att räkna hur många korrekta äggemojis som skickas ut.</p>
-                <p>Hur många ägg, räknat från första ägget, per 20 sekunder skickas från <strong>wss://count-the-eggs.futurememories.se</strong>?</p>
-                <p>Koppla upp mot socket-servern, räkna äggen, och skicka tillbaka ditt svar så finns det en chans att påskharen svarar med något meddelande.</p>
+                <h1>Påskharen behöver din hjälp!</h1>
+                <p>I år kommer påskharen i ett rymdskepp. På väg in mot Jorden var han nära att kollidera med en meteor och tappade alla sina ägg som nu svävar runt bland en massa rymdskrot! Kan du hjälpa haren att rädda påsken? Hur många ägg har han tappat?</p>
+                <p>Räknat från första ägget, hur många ägg per 20 sekunder skickas från <strong>wss://count-the-eggs.futurememories.se</strong>?</p>
+                <p>Koppla upp mot socket-servern, räkna äggen och skicka tillbaka ditt svar så finns det en chans att påskharen svarar med ett meddelande.</p>
               </div>
             )
             : (
               <div class={s.first}>
                 <h1>Minns du vad du gjorde imorgon?</h1>
-                <p><del>Rymden</del> Påsken är en unik <del>plats</del> tid där oförutsedda <del>problem</del> emojis kan dyka upp precis när som helst. Har du vad som krävs?</p>
-                <a class={s.enterParagraph} onClick={() => this.setState({ step: 2 })}>Tryck <span class={s.enter}>{'{ enter }'}</span> för att anta utmaningen.</a>
+                <p>I år består inte bara Påsken av harar och ägg utan även en utmaning. Som i och för sig består av en hare och några ägg. Har du vad som krävs för att lösa problemet?</p>
+                <a class={s.enterParagraph} onClick={() => this.setState({ step: 2 })}>Tryck <span class={s.enter}>{'{ enter }'}</span> för att anta Påskutmaningen.</a>
               </div>
             )
         }
