@@ -56,7 +56,8 @@ export default class extends Component {
             : (
               <div class={s.first}>
                 <h1>Minns du vad du gjorde imorgon?</h1>
-                <p>I år består inte bara påsken av harar och ägg utan även en utmaning. Som i och för sig består av en hare och oändligt många ägg. Har du vad som krävs för att lösa problemet?</p>
+                <p>I år består inte bara påsken av harar och ägg utan även en utmaning. Som i och för sig består av en hare och oändligt många ägg.</p>
+                <p>Har du vad som krävs för att lösa problemet?</p>
                 <a class={s.enterParagraph} onClick={() => this.setState({ step: 2 })}>Tryck <span class={s.enter}>{'{ enter }'}</span> för att anta Påskutmaningen.</a>
               </div>
             )
