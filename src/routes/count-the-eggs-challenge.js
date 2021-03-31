@@ -48,15 +48,15 @@ export default class extends Component {
             ? (
               <div class={s.second}>
                 <h1>Påskharen behöver din hjälp!</h1>
-                <p>I år kommer påskharen i ett rymdskepp. På väg in mot Jorden var han nära att kollidera med en meteor och tappade alla sina ägg som nu svävar runt bland en massa rymdskrot! Kan du hjälpa haren att rädda påsken? Hur många ägg har han tappat?</p>
-                <p>Räknat från första ägget, hur många ägg per 20 sekunder skickas från <strong>wss://count-the-eggs.futurememories.se</strong>?</p>
-                <p>Koppla upp mot socket-servern, räkna äggen och skicka tillbaka ditt svar så finns det en chans att påskharen svarar med ett meddelande.</p>
+                <p>Påskharen har byggt en äggmaskin. Maskinen producerar oändligt många ägg på löpande band. Det går väldigt fort och effektivt, men det verkar ske en hel del spill. Kan du hjälpa haren att räkna hur många ägg som klarar sig?</p>
+                <p>Räknat från första okrossade ägget, hur många hela ägg per 20 sekunder skickas från <strong>wss://count-the-eggs.futurememories.se</strong>?</p>
+                <p>Koppla upp dig mot ovanstående påskserver, samla in alla ägg och skicka tillbaka summan av de okrossade äggen efter 20 sekunder så finns det en chans att påskharen svarar med ett meddelande.</p>
               </div>
             )
             : (
               <div class={s.first}>
                 <h1>Minns du vad du gjorde imorgon?</h1>
-                <p>I år består inte bara Påsken av harar och ägg utan även en utmaning. Som i och för sig består av en hare och några ägg. Har du vad som krävs för att lösa problemet?</p>
+                <p>I år består inte bara påsken av harar och ägg utan även en utmaning. Som i och för sig består av en hare och oändligt många ägg. Har du vad som krävs för att lösa problemet?</p>
                 <a class={s.enterParagraph} onClick={() => this.setState({ step: 2 })}>Tryck <span class={s.enter}>{'{ enter }'}</span> för att anta Påskutmaningen.</a>
               </div>
             )
