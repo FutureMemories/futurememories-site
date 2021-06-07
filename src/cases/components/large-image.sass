@@ -81,18 +81,24 @@
     max-height: 100rem
 
   &.nordish
-    background: #F4F8F8
+    background: linear-gradient(270.35deg, #F9FDFD 19.81%, #FFFCF7 65.44%)
     padding: 2rem 0
+    overflow: visible
 
     @media screen and (min-width: $breakpoint-desktop)
-      background: linear-gradient(to top, #F4F8F8, #F4F8F8) no-repeat 0 -25rem
-      padding: 5rem 0
+      padding: 8rem 0
+      margin-bottom: 26rem
 
     > img
-      object-position: left
+      min-height: 35rem
+      object-position: 45%
 
       @media screen and (min-width: $breakpoint-desktop)
-        max-width: $max-width
+        min-height: 50rem
+        margin-bottom: -26rem
+        object-position: center
+
+
 
   &.wearevoice
     padding: 0

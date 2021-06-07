@@ -20,12 +20,15 @@
   &.nordish
     margin: 0
 
-    &:nth-child(2)
-      position: absolute
-
     @media screen and (min-width: $small-grid + 101px)
       position: absolute
 
-      > img
+    &:nth-child(2)
+      position: absolute
+
+    > img
+      max-width: 30rem
+
+      @media screen and (min-width: $breakpoint-desktop)
         max-width: none
 

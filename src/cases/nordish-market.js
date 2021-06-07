@@ -8,6 +8,7 @@ import LargeImage from './components/large-image'
 import CenterBlock from './components/center-block'
 import ParallaxBumpBlock from './components/parallax-bump-block'
 import ThreeBlock from './components/three-block'
+import TextAndImage from './components/text-and-image'
 import TextBlock from './components/text-block'
 import ContactBlock from '../components/contact-block'
 import ProjectsBlock from './components/projects-block'
@@ -49,7 +50,7 @@ export default class extends Component {
 
             <LargeImage
               inView='inViewBottom'
-              src='cases/nordish-market-ipad.png'
+              src='cases/nordish-market-tablets.png'
               alt={content.imageAlt}
               modifier='nordish'
             />
@@ -67,31 +68,28 @@ export default class extends Component {
               title={content.serviceDesignTitle}
               text={content.serviceDesignText}
               items={[
-                { image: 'cases/nordish-market-phone-1.png', alt: content.imageAlt, speed: -15, startPos: 15, width: '950px', align: 'left' },
-                { image: 'cases/nordish-market-phone-2.png', alt: content.imageAlt, speed: -30, startPos: -40, width: '950px', align: 'right' }
+                { image: 'cases/nordish-market-phone-1.png', alt: content.imageAlt, speed: -10, startPos: 15, width: '391px', align: 'left' },
+                { image: 'cases/nordish-market-phone-2.png', alt: content.imageAlt, speed: -20, startPos: -15, width: '391px', align: 'right' }
               ]}
-              background='#F4F8F8'
+              background='linear-gradient(90.28deg, #F9FDFD 0.24%, #FFFCF7 99.76%)'
               modifier='nordish'
             />
 
-            <ThreeBlock
+            <TextAndImage
               inView='inViewLeft'
               background='#FFFFFF'
-              modifier='nordish-branding'
-              blocks={[
-                { type: 'image', image: 'cases/nordish-market-ui-elements.png', modifier: 'nordishImg' },
-                { type: 'text', title: content.brandingTitle, text: content.brandingText }
-              ]}
+              image={{ src: 'cases/nordish-colorblocks.png', alt: '' }}
+              textBlock={{ title: content.brandingTitle, text: content.brandingText }}
+              wideImage
             />
 
-            <ThreeBlock
+            <TextAndImage
               inView='inViewBottom'
               background='#F4F8F8'
-              modifier='vertical-center-content'
-              blocks={[
-                { type: 'text', title: content.techTitle, text: content.techText },
-                { type: 'image', image: 'cases/nordish-market-4.png', modifier: 'nordishImg' }
-              ]}
+              image={{ src: 'cases/nordish-market-design.png', alt: '' }}
+              textBlock={{ title: content.techTitle, text: content.techText }}
+              wideImage
+              reverse
             />
 
             <TextBlock

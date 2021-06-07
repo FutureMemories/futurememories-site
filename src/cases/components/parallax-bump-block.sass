@@ -93,53 +93,46 @@
   &.nordish
     overflow: visible
 
-    @media screen and (min-width: $small-grid + 101px)
-      margin-bottom: 12rem
-
     > .inner
       > .content
+        @media screen and (min-width: $small-grid + 101px) //801
+          max-width: 35rem
 
-        @media screen and (min-width: $small-grid + 101px)
-          margin: 3rem 0
+        @media screen and (min-width: 900px)
+          max-width: 45rem
+
+        @media screen and (min-width: 1100px)
+          max-width: 50rem
 
         > h1, h2
           margin-top: 0
 
       > .parallaxes
-        margin: -2rem auto -10%
+        margin: 0 auto
 
         > div:nth-child(1)
-          left: 20%
+          left: -20%
           z-index: 4
 
         > div:nth-child(2)
-          left: -15%
+          left: 55%
           z-index: 3
+
+        @media screen and (min-width: 560px)
+          > div:nth-child(1)
+            left: -53%
 
         @media screen and (min-width: $small-grid + 101px)
           > div:nth-child(1)
-            left: -40%
+            left: 13%
 
           > div:nth-child(2)
-            left: -20%
+            left: unset
+            right: -15%
 
         @media screen and (min-width: $breakpoint-desktop)
-          > div:nth-child(1)
-            left: -30%
-
           > div:nth-child(2)
-            left: 30%
-
-        @media screen and (min-width: 1200px)
-          > div:nth-child(1)
-            left: -27%
-
-          > div:nth-child(2)
-            left: 40%
-
-        @media screen and (min-width: 1500px)
-          > div:nth-child(2)
-            left: 50%
+            right: -35%
 
   &.wearevoice
     overflow: visible
