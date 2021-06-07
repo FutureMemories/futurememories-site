@@ -44,8 +44,7 @@
         "stc",
         "nordish-market",
         "bauer-university",
-        "picular",
-        "annotell"
+        "picular"
       ]
     },
     "app": {
@@ -540,10 +539,7 @@
     },
     "nordish-market": {
       "name": "Nordish Market",
-      "imageBg": [
-        "cases/nordish-market-2.png",
-        "width"
-      ],
+      "image": "cases/nordish-market-preview.png",
       "title": "Nordish Market",
       "subtitle": "Food for thought.",
       "desc": "A digital foodcourt offering organic and locally cultivated food for any occasion during a working day.",
@@ -551,11 +547,18 @@
       "imageAlt": "Nordish Market device mockup",
       "style": [
         {
-          "color": "#FFFFFF",
-          "background": "linear-gradient(121.04deg, #1B6665 0%, #AAA75C 100%)"
+          "color": "#070B13",
+          "background": "linear-gradient(270.35deg, #F9FDFD 19.81%, #FFFCF7 65.44%)"
         },
         {
-          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+          "background": "linear-gradient(270.35deg, #F9FDFD 19.81%, #FFFCF7 65.44%)",
+          "opacity": "0.5"
+        },
+        {
+          "height": "80%",
+          "position": "absolute",
+          "right": "0",
+          "bottom": "0"
         }
       ],
       "showcase": true,

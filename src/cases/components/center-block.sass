@@ -40,13 +40,22 @@
       > .block
         display: block
 
-        > h1
+        > h2
           margin-bottom: 2rem
           white-space: pre-line
           text-align: center
           max-width: 86rem
           padding: 0 3rem 3rem 3rem
           margin: auto
+          font-size: 2.5rem
+          font-weight: 500
+
+          @media screen and (min-width: 701px)
+            font-size: 3rem
+
+          @media screen and (min-width: 1001px)
+            font-size: 4rem
+
 
           &.removePadding
             padding-bottom: 0
@@ -119,7 +128,7 @@
         > .block
           text-align: center
 
-          > h1
+          > h2
             padding: 0 0 2rem 0
             margin-bottom: 1rem
 
@@ -141,14 +150,21 @@
       z-index: -1
 
   &.sleepcureByTheWay
-    h1
+    h2
       color: black
     > .block
       > .content
         padding-bottom: 0rem
 
   &.sleepcure
-    h1
+    h2
       color: black
     .block
       padding: 4rem 0rem
+
+  &.nordish
+    h2
+      color: #161D2B
+    p
+      color: #737780
+      opacity: 1 !important

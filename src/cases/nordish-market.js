@@ -61,7 +61,7 @@ export default class extends Component {
               text={content.healthyFoodText}
               link={[content.visitTheSite, 'https://www.nordishmarket.com/']}
               background='#FFFFFF'
-              color='#161D2B'
+              modifier='nordish'
             />
 
             <ParallaxBumpBlock
@@ -80,6 +80,7 @@ export default class extends Component {
               background='#FFFFFF'
               image={{ src: 'cases/nordish-colorblocks.png', alt: '' }}
               textBlock={{ title: content.brandingTitle, text: content.brandingText }}
+              color='#737780'
               wideImage
             />
 
@@ -88,6 +89,7 @@ export default class extends Component {
               background='#F4F8F8'
               image={{ src: 'cases/nordish-market-design.png', alt: '' }}
               textBlock={{ title: content.techTitle, text: content.techText }}
+              color='#737780'
               wideImage
               reverse
             />

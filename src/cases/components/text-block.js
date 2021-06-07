@@ -12,8 +12,8 @@ export default ({ title, text, image, link, background = '', color = '', titleIc
     >
       <div class={cx(s.inner, modifier && modifier, inView)}>
         {titleIcon
-          ? <span class={s.titleIcon}><img src={require(`../../images/${titleIcon}`)} /> <h1>{title}</h1></span>
-          : <h1>{title}</h1>}
+          ? <span class={s.titleIcon}><img src={require(`../../images/${titleIcon}`)} /> <h2 class={s.title}>{title}</h2></span>
+          : <h2 class={s.title}>{title}</h2>}
 
         <div class={cx(s.content, textIsAnArray && s.fullWidth)}>
           {textIsAnArray ? (
