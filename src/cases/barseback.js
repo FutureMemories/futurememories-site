@@ -1,5 +1,4 @@
 import { Component } from 'preact'
-import cx from 'classnames'
 import inView from 'in-view'
 import Base from '../_base'
 import HeroHeader from './components/hero-header'
@@ -8,6 +7,7 @@ import CenterBlock from './components/center-block'
 import ContactBlock from '../components/contact-block'
 import ProjectsBlock from './components/projects-block'
 import SideBySideBlock from './components/side-by-side-block'
+import cx from 'classnames'
 import s from './barseback.sass'
 
 const inViewClasses = [
@@ -47,9 +47,7 @@ export default class extends Component {
               type={content.type}
             />
 
-            <LargeImage
-              src='cases/annotell-bg-1.png' alt='Annotell.com mockup' className={s.backgroundImage}
-            />
+            <LargeImage src='cases/barseback-1.jpg' alt='' />
 
             <CenterBlock
               inView='inViewBottom'
@@ -71,7 +69,12 @@ export default class extends Component {
               ]}
             />
 
-            <img class={cx(s.image, 'inViewBottom')} src={require('../images/cases/barseback-6.jpg')} />
+            <LargeImage
+              src='cases/barseback-6.jpg' alt='' className={s.image}
+            >
+              <h1 class={s.textAboveImage}>{content.colorPalettText}</h1>
+            </LargeImage>
+
             <img class={cx(s.image, 'inViewBottom')} src={require('../images/cases/barseback-7.jpg')} />
             <img class={cx(s.image, 'inViewBottom')} src={require('../images/cases/barseback-8.jpg')} />
             <img class={cx(s.image, 'inViewBottom')} src={require('../images/cases/barseback-9.jpg')} />
@@ -89,7 +92,7 @@ export default class extends Component {
             {...data.projectsBlock}
             allCases={data.allCases}
             defaultOtherCases={data.defaultOtherCases}
-            current='annotell'
+            current='barseback'
             similar={['mat-se', 'nordish-market', 'bandbond']}
             background='#151B17'
           />

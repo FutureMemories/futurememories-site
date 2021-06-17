@@ -116,7 +116,8 @@
         "travelmate",
         "spira",
         "wya-network",
-        "nordish-market"
+        "nordish-market",
+        "barseback"
       ]
     }
   },
@@ -342,23 +343,21 @@
       ]
     },
     "barseback": {
+      "showcase": true,
       "name": "Barsebäck",
       "imageBg": [
-        "cases/bauer-university-7.png"
+        "cases/barseback-case-card.jpg"
       ],
       "title": "",
       "subtitle": "Four every golfer out there.",
       "desc": "",
       "metaDesc": "",
       "client": "Bauer, Bond Communications",
-      "type": "UX/UI, branding",
+      "type": "UX/UI, branding, Web",
       "style": [
         {
           "color": "#ffffff",
-          "background": "linear-gradient(132.56deg, #50A2DE 0%, #2E6389 100%)"
-        },
-        {
-          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+          "background": "linear-gradient(109.91deg, #333D36 0%, #1F2722 100%)"
         }
       ],
       "actions": [
@@ -368,8 +367,9 @@
         }
       ],
       "aboutTitle": "Fairway to heaven.",
-      "aboutText": "Bandbond is a smartphone app for iOS and Android, bringing metal fans and bands closer together. A community app allowing you to follow your favorite bands and individual band members.",
-      "visitTheSite": "Visit website"
+      "aboutText": "Barsebäck Golf & Country Club is a golf club located in Barsebäck, in the northern part of Metropolitan Malmö in the province of Skåne in southern Sweden, just by the Öresund strait. We designed the entire visual identity ranging from a new logo, new color palette, sign concept, new website and much more.",
+      "visitTheSite": "Visit website",
+      "colorPalettText": "A palette retrieved from the location"
     },
     "bauer-university": {
       "name": "Bauer University",
