@@ -53,7 +53,7 @@ export default class extends Component {
               inView='inViewBottom'
               title={content.aboutTitle}
               text={content.aboutText}
-              link={[content.visitTheSite, 'http://www.barsebackresort.se/', s.ctaButton]}
+              // link={[content.visitTheSite, 'http://www.barsebackresort.se/', s.ctaButton]}
               background='#1A201C'
               color='inherit'
             />
