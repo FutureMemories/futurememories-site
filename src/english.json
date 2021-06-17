@@ -341,6 +341,36 @@
         "To create a more coherent overview of STCs broad range of membership offers, we designed a various number of icons to pinpoint their product range both physically and digitally. These icons can now be found throughout the entire customer journey which strengthens brand recognition all the way from the web to the treadmill."
       ]
     },
+    "barseback": {
+      "name": "Barsebäck",
+      "imageBg": [
+        "cases/bauer-university-7.png"
+      ],
+      "title": "",
+      "subtitle": "Four every golfer out there.",
+      "desc": "",
+      "metaDesc": "",
+      "client": "Bauer, Bond Communications",
+      "type": "UX/UI, branding",
+      "style": [
+        {
+          "color": "#ffffff",
+          "background": "linear-gradient(132.56deg, #50A2DE 0%, #2E6389 100%)"
+        },
+        {
+          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+        }
+      ],
+      "actions": [
+        {
+          "type": "link",
+          "url": "http://www.barsebackresort.se/"
+        }
+      ],
+      "aboutTitle": "Fairway to heaven.",
+      "aboutText": "Bandbond is a smartphone app for iOS and Android, bringing metal fans and bands closer together. A community app allowing you to follow your favorite bands and individual band members.",
+      "visitTheSite": "Visit website"
+    },
     "bauer-university": {
       "name": "Bauer University",
       "imageBg": [

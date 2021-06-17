@@ -11,22 +11,23 @@ import NotFound from './routes/404'
 import FrontendChallenge from './routes/frontend-challenge'
 import CountTheEggsChallenge from './routes/count-the-eggs-challenge'
 
-import Picular from './cases/picular'
-import Bandbond from './cases/bandbond'
-import TennisWatch from './cases/tennis-watch'
-import MatSe from './cases/mat-se'
-import Paykartan from './cases/paykartan'
-import RettsPlus from './cases/retts-plus'
-import ProFlight from './cases/proflight'
+import Annotell from './cases/annotell'
 import AntiStress from './cases/antistress'
+import Bandbond from './cases/bandbond'
+import Barseback from './cases/barseback'
 import BauerUniversity from './cases/bauer-university'
+import CaseComponents from './cases/components'
+import MatSe from './cases/mat-se'
+import NordishMarket from './cases/nordish-market'
+import Paykartan from './cases/paykartan'
+import Picular from './cases/picular'
+import ProFlight from './cases/proflight'
+import RettsPlus from './cases/retts-plus'
 import SleepCure from './cases/sleepcure'
 import Stc from './cases/stc'
-import NordishMarket from './cases/nordish-market'
+import TennisWatch from './cases/tennis-watch'
 import WakeUpProblem from './cases/wake-up-problem'
-import Annotell from './cases/annotell'
 import WeAreVoice from './cases/wearevoice'
-import CaseComponents from './cases/components'
 
 const data = {
   english: require('./english.json'),
@@ -109,24 +110,25 @@ export default class extends Component {
         <Team path={root + '/team'} data={languageData} root={root} />
         <Careers path={root + '/careers'} data={languageData} root={root} />
 
-        <Picular path={root + '/cases/picular'} data={languageData} root={root} />
-        <Bandbond path={root + '/cases/bandbond'} data={languageData} root={root} />
-        <TennisWatch path={root + '/cases/tennis-watch'} data={languageData} root={root} />
-        <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
-        <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />
-        <RettsPlus path={root + '/cases/retts-plus'} data={languageData} root={root} />
-        <ProFlight path={root + '/cases/proflight'} data={languageData} root={root} />
+        <Annotell path={root + '/cases/annotell'} data={languageData} root={root} />
         <AntiStress path={root + '/cases/antistress'} data={languageData} root={root} />
+        <Bandbond path={root + '/cases/bandbond'} data={languageData} root={root} />
+        <Barseback path={root + '/cases/barseback'} data={languageData} root={root} />
         <BauerUniversity path={root + '/cases/bauer-university'} data={languageData} root={root} />
+        <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
+        <CountTheEggsChallenge path={root + '/count-the-eggs'} data={languageData} root={root} />
+        <FrontendChallenge path={root + '/frontend-challenge'} data={languageData} root={root} />
+        <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
+        <NordishMarket path={root + '/cases/nordish-market'} data={languageData} root={root} />
+        <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />
+        <Picular path={root + '/cases/picular'} data={languageData} root={root} />
+        <ProFlight path={root + '/cases/proflight'} data={languageData} root={root} />
+        <RettsPlus path={root + '/cases/retts-plus'} data={languageData} root={root} />
         <SleepCure path={root + '/cases/sleepcure'} data={languageData} root={root} />
         <Stc path={root + '/cases/stc'} data={languageData} root={root} />
-        <NordishMarket path={root + '/cases/nordish-market'} data={languageData} root={root} />
+        <TennisWatch path={root + '/cases/tennis-watch'} data={languageData} root={root} />
         <WakeUpProblem path={root + '/cases/wake-up-problem'} data={languageData} root={root} />
-        <Annotell path={root + '/cases/annotell'} data={languageData} root={root} />
         <WeAreVoice path={root + '/cases/we-are-voice'} data={languageData} root={root} />
-        <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
-        <FrontendChallenge path={root + '/frontend-challenge'} data={languageData} root={root} />
-        <CountTheEggsChallenge path={root + '/count-the-eggs'} data={languageData} root={root} />
 
         <NotFound type='404' default data={languageData} root={root} />
       </Router>
