@@ -1154,8 +1154,8 @@
       "email": "mattias@futurememories.se"
     },
     "anders": {
-      "name": "Anders Olausson",
-      "image": "team/anders-olausson.jpg",
+      "name": "Anders Dewrang",
+      "image": "team/anders-dewrang.jpg",
       "title": "Design Director and Partner",
       "desc": "Design Director and Partner. Award winning designer with years of experience in digital media.",
       "email": "anders@futurememories.se"
@@ -1182,12 +1182,12 @@
       "desc": "Senior Mobile Developer and a true software craftsman. iOS is his platform of choice.",
       "email": "donovan@futurememories.se"
     },
-    "pontusb": {
-      "name": "Pontus Backlund",
-      "image": "team/pontus-backlund.jpg",
-      "title": "Lead Developer",
-      "desc": "Lead Developer, Project Lead and a real jack-of-all-trades when it comes to software development.",
-      "email": "pontus.backlund@futurememories.se"
+    "robert": {
+      "name": "Robert Karlsson",
+      "image": "team/robert-karlsson.jpg",
+      "title": "Senior Frontend Developer",
+      "desc": "Robert is an experienced Frontend Engineer and Tech Lead with background in interactive design.",
+      "email": "robert@futurememories.se"
     },
     "availablepositions": {
       "button": true,
