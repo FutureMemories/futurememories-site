@@ -1189,7 +1189,15 @@
       "desc": "Robert is an experienced Frontend Engineer and Tech Lead with background in interactive design.",
       "email": "robert@futurememories.se"
     },
+    "gustaf": {
+      "name": "Gustaf Hallberg",
+      "image": "team/gustaf-hallberg.jpg",
+      "title": "Senior Developer",
+      "desc": "Systems Engineer, Team Lead and a real jack-of-all-trades when it comes to software development.",
+      "email": "gustaf@futurememories.se"
+    },
     "availablepositions": {
+      "disabled": true,
       "button": true,
       "type": "link",
       "label": "Is it you?\nRead more!",
