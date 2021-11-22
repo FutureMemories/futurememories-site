@@ -1,0 +1,42 @@
+@import '../settings.sass'
+
+.view
+  position: relative
+  padding-top: 14rem
+  background: #212722
+  color: #F7EEE8
+  width: 100%
+
+  .hero > p
+    color: inherit
+
+  > .inner
+    position: relative
+
+    p
+      font-size: 2rem
+      opacity: .8
+
+    .ctaButton
+      background: #1F2722
+      color: inherit
+
+    > *:not(:nth-child(1)):not(:nth-child(2)):not(:last-child)
+      margin-bottom: 2rem
+
+    .image
+      display: block
+      position: relative
+      width: 100%
+      max-width: 135rem
+      margin-left: auto
+      margin-right: auto
+      padding: 0 2rem
+
+    .textAboveImage
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      text-align: center

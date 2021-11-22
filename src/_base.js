@@ -1,8 +1,8 @@
 import { Component } from 'preact'
-import cx from 'classnames'
+import prerenderUrls from '../prerender-urls.json'
 import Header from './components/header'
 import Footer from './components/footer'
-import prerenderUrls from '../prerender-urls.json'
+import cx from 'classnames'
 
 export default class extends Component {
   componentWillMount () {

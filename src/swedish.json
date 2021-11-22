@@ -97,24 +97,7 @@
       "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företag eller partners. Detta ger dig många nya möjligheter att ge din karriär en rejäl boost på oväntade sätt."
     }
   },
-  "careersPositions": [
-    {
-      "id": "senior-backend-developer",
-      "label": "🖥  Senior Backend Utvecklare",
-      "text": "Är du en erfaren sytemutvecklare som vill bli CTO till en av våra startups och bestämma över dess teknikstack? Eller vill du bygga upp en helt ny mikrotjänstarkitektur för Sveriges ledande matbutik på nätet? Kanske vill du gräva ner dig i enorma datamängder ihop med Sveriges mest datadrivna gymkedja?\nJobbar du dessutom agilt och älskar att se snabba resultat? Föredrar du språk som **Python**, **Java**, **Kotlin** eller **Go**? Brukar du köra **Docker** i dina projekt? Har du även koll på **AWS** och **Google Cloud** och har du några **DevOps** gener i dig?\n\nDå har du kommit rätt och vi lovar att du kommer stormtrivas hos oss!",
-      "image": "position-1.jpg",
-      "subject": "Senior Backend Utvecklare",
-      "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
-    },
-    {
-      "id": "senior-web-developer",
-      "label": "🖥  Senior Webbutvecklare",
-      "text": "Vill du vara med och skapa webbaserade tjänster, hela vägen från idé till produktlansering? Älskar du att experimentera med senaste tekniken för att klämma ut det sista ur webbläsarna? Vill du bara sätta igång med kodningen så fort du får en läcker design i händerna? Känner du dig lika trygg i **React** som i **React Native**? Behärskar du **Node.js** och kanske även andra backendteknologier?\n\nDå har du hittat hem till vårt erfarna utvecklingsteam där vi alla anser oss vara fullstack. Vi längtar att bygga framtidens digitala tjänster ihop med dig!",
-      "image": "position-2.jpg",
-      "subject": "Senior Webbutvecklare",
-      "tasks": "#react #reactnative #nodejs #pwa #webgl #headless"
-    }
-  ],
+  "careersPositions": [],
   "allCases": {
     "stc": {
       "title": "",
@@ -143,6 +126,11 @@
       "newIconsText": [
         "För att skapa en mer sammanhängande överblick över STC:s breda utbud av medlemskap erbjuder vi ett antal olika ikoner för att fastställa deras produktsortiment både fysiskt och digitalt. Dessa ikoner kan nu återfinnas genom hela kundresan som stärker varumärkeskännedomen hela vägen från mobilen till löpbandet."
       ]
+    },
+    "barseback": {
+      "aboutTitle": "Fairway till himlen.",
+      "aboutText": "Barsebäck Golf & Country Club är en golfklubb belägen i Barsebäck, i norra delen av Malmö i Skåne i södra Sverige, precis vid Öresundsundet. Vi designade hela den visuella identiteten, allt från en ny logotyp, ny färgpalett, skyltkoncept, ny webbplats och mycket mer.",
+      "colorPalettText": "En palett hämtad från platsen"
     },
     "bauer-university": {
       "title": "",
@@ -517,7 +505,7 @@
     },
     "pa": {
       "title": "Grundare och VD.",
-      "desc": "Ledare och UX designer för digitala produkter sedan 1996."
+      "desc": "VD och grundare. Digital designer och affärsstrateg sedan 1996."
     },
     "martin": {
       "title": "Senior utvecklare",
@@ -539,13 +527,17 @@
       "title": "Senior Mobilutvecklare",
       "desc": "Senior mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
     },
-    "pontusb": {
-      "title": "Lead Developer",
-      "desc": "Lead Dev. Project Lead med en djup kunskap och bred erfarenhet inom mjukvaruutveckling."
+    "robert": {
+      "title": "Senior Frontend Utvecklare",
+      "desc": "Erfaren frontendutvecklare och Tech Lead som även är riktigt vass interaktionsdesign."
     },
     "linda": {
       "title": "Digital projektledare",
       "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
+    },
+    "gustaf": {
+      "title": "Senior utvecklare",
+      "desc": "Systemutvecklare och Team Lead med djup kunskap och bred erfarenhet inom mjukvaruutveckling."
     },
     "availablepositions": {
       "label": "Kanske du?\nLäs mer här!"
@@ -654,7 +646,7 @@
     "visitTheSite": "Till sidan",
     "apply": "Ansök nu",
     "promoteBox": {
-      "enabled": true,
+      "enabled": false,
       "title": "Backend & webbutvecklare",
       "text": "Nu behöver vi erfarna utvecklare som kan hjälpa oss i flera spännande projekt under 2021. Vill du vara med på resan?",
       "buttonTo": "/careers#available-positions",

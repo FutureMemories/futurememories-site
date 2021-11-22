@@ -116,7 +116,8 @@
         "travelmate",
         "spira",
         "wya-network",
-        "nordish-market"
+        "nordish-market",
+        "barseback"
       ]
     }
   },
@@ -273,24 +274,7 @@
       "image": "workspace-4.jpg"
     }
   },
-  "careersPositions": [
-    {
-      "id": "senior-backend-developer",
-      "label": "🖥  Senior Backend Developer",
-      "text": "Are you an experienced System Developer who finds joy in working in well-synchronised teams? Would you get a thrill out of taking on great responsibility in becoming CTO of one of our startups, where you would have full mandate over our tech stack? Would you like to build a brand new micro service architecture for one of the largest online food chains in the country? Or how about digging deep into a huge batch of big data together with one of Sweden's most data-driven health club chains?\n\nIf you also prefer working in agile constellations and love to see results within no time, then it's time for you get in touch with us. We work with **Python**, **Java**, **Kotlin** and **Go**. We prefer **Docker**, say YES! to **AWS** and **Google Cloud**. We also expect everyone to possess some **DevOps** genes before joining our family.\n\nSounds like you? We miss you already! We can assure you that we are a workplace you'll never regret you stepped into.",
-      "image": "position-1.jpg",
-      "subject": "Senior Backend Developer",
-      "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
-    },
-    {
-      "id": "senior-web-developer",
-      "label": "🖥  Senior Web Developer",
-      "text": "Would you like to be part of creating web-based services, all the way from idea to release? Do you love experimenting with the latest tech to squeeze web browsers' performance to the last drop?\n\nAre you a person who just can't wait to set up the code as soon as a stunning UI design lands in your hands? If in addition to that, you prefer using **React** as in **React Native** to take a design concept and make into reality, it's time to get in touch with us. Do you feel at home with **Node.js** or other backend technologies? \n\nThen, welcome home! Our team of experienced Full Stack Developers can't wait to welcome you into our family. Let's break new ground together!",
-      "image": "position-2.jpg",
-      "subject": "Senior Web Developer",
-      "tasks": "#react #reactnative #nodejs #pwa #webgl #headless"
-    }
-  ],
+  "careersPositions": [],
   "defaultOtherCases": [
     "picular",
     "paykartan",
@@ -340,6 +324,35 @@
       "newIconsText": [
         "To create a more coherent overview of STCs broad range of membership offers, we designed a various number of icons to pinpoint their product range both physically and digitally. These icons can now be found throughout the entire customer journey which strengthens brand recognition all the way from the web to the treadmill."
       ]
+    },
+    "barseback": {
+      "showcase": true,
+      "name": "Barsebäck",
+      "imageBg": [
+        "cases/barseback-case-card.jpg"
+      ],
+      "title": "",
+      "subtitle": "Four every golfer out there.",
+      "desc": "",
+      "metaDesc": "",
+      "client": "Bauer, Bond Communications",
+      "type": "UX/UI, branding, Web",
+      "style": [
+        {
+          "color": "#ffffff",
+          "background": "linear-gradient(109.91deg, #333D36 0%, #1F2722 100%)"
+        }
+      ],
+      "actions": [
+        {
+          "type": "link",
+          "url": "http://www.barsebackresort.se/"
+        }
+      ],
+      "aboutTitle": "Fairway to heaven.",
+      "aboutText": "Barsebäck Golf & Country Club is a golf club located in Barsebäck, in the northern part of Metropolitan Malmö in the province of Skåne in southern Sweden, just by the Öresund strait. We designed the entire visual identity ranging from a new logo, new color palette, sign concept, new website and much more.",
+      "visitTheSite": "Visit website",
+      "colorPalettText": "A palette retrieved from the location"
     },
     "bauer-university": {
       "name": "Bauer University",
@@ -1125,7 +1138,7 @@
       "name": "P-A Gustafsson",
       "image": "team/pa-gustafsson.jpg",
       "title": "Co-founder and CEO",
-      "desc": "Co-founder and CEO. Manager and UX designer for digital products since 1996.",
+      "desc": "CEO and co-founder. Digital designer and business developer since 1996.",
       "phone": "+46 (0)760 338822",
       "email": "pa@futurememories.se"
     },
@@ -1145,8 +1158,8 @@
       "email": "mattias@futurememories.se"
     },
     "anders": {
-      "name": "Anders Olausson",
-      "image": "team/anders-olausson.jpg",
+      "name": "Anders Dewrang",
+      "image": "team/anders-dewrang.jpg",
       "title": "Design Director and Partner",
       "desc": "Design Director and Partner. Award winning designer with years of experience in digital media.",
       "email": "anders@futurememories.se"
@@ -1173,14 +1186,22 @@
       "desc": "Senior Mobile Developer and a true software craftsman. iOS is his platform of choice.",
       "email": "donovan@futurememories.se"
     },
-    "pontusb": {
-      "name": "Pontus Backlund",
-      "image": "team/pontus-backlund.jpg",
-      "title": "Lead Developer",
-      "desc": "Lead Developer, Project Lead and a real jack-of-all-trades when it comes to software development.",
-      "email": "pontus.backlund@futurememories.se"
+    "robert": {
+      "name": "Robert Karlsson",
+      "image": "team/robert-karlsson.jpg",
+      "title": "Senior Frontend Developer",
+      "desc": "Robert is an experienced Frontend Engineer and Tech Lead with background in interactive design.",
+      "email": "robert@futurememories.se"
+    },
+    "gustaf": {
+      "name": "Gustaf Hallberg",
+      "image": "team/gustaf-hallberg.jpg",
+      "title": "Senior Developer",
+      "desc": "Systems Engineer, Team Lead and a real jack-of-all-trades when it comes to software development.",
+      "email": "gustaf@futurememories.se"
     },
     "availablepositions": {
+      "disabled": true,
       "button": true,
       "type": "link",
       "label": "Is it you?\nRead more!",
@@ -1291,7 +1312,7 @@
     },
     "apply": "Apply now",
     "promoteBox": {
-      "enabled": true,
+      "enabled": false,
       "title": "Backend & web developer",
       "text": "We need additional software engineers for all of our exciting projects in 2021. Do you want to be part of this journey?",
       "buttonTo": "/careers#available-positions",

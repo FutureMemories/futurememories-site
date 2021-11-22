@@ -8,9 +8,9 @@ export default class extends Component {
     this.setState({ showOverlay: !this.state.showOverlay })
   }
 
-  render ({ content, dark, darkText }) {
+  render ({ content, dark, darkText, background = '' }) {
     return (
-      <section class={cx(s.block, dark && s.dark, darkText && s.darkText)}>
+      <section class={cx(s.block, dark && s.dark, darkText && s.darkText)} style={{ background: background }}>
         <h3>{content.title}</h3>
         <div class={s.buttons}>
           <div class={cx(s.button, s.meeting)}>
