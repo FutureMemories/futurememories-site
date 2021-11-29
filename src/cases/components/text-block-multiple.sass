@@ -10,42 +10,43 @@
     max-width: $max-width
     padding: 10.5rem 3rem
 
-    > .leftBlock
-      display: flex
-      flex-direction: column
-      width: 40%
+    &.centered
+      text-align: center
+
+    > .content
+
+      &:not(:last-child)
+        margin-right: 5rem
 
       > h1
         font-weight: normal
         white-space: pre-line
+        margin-bottom: 2rem
 
       > p
+        white-space: pre-line
         font-size: 2rem
         line-height: 2.8rem
-        margin-top: 1.6rem
         opacity: 0.8
 
-    > .rightBlock
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      padding-left: 5rem
-      width: 60%
+    &.highlightLeftSide
+      > .content
+        &:nth-child(1)
+          width: 40%
 
-      > p
-        font-size: 1.8rem
-        line-height: 2.5rem
-        opacity: 0.8
+        &:nth-child(2)
+          width: 60%
 
-        &:not(:last-child)
-          margin-bottom: 2.5rem
+          > p
+            font-size: 1.8rem
+            line-height: 2.5rem
 
     @media screen and (max-width: $small-grid)
       flex-direction: column
 
-      > .leftBlock, > .rightBlock
-        padding: 0
-        width: 100%
+      > .content
+        width: 100% !important
 
-      > .rightBlock
-        padding-top: 2rem
+        &:not(:last-child)
+          margin-right: 15rem
+          margin-bottom: 2rem

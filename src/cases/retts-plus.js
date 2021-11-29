@@ -52,11 +52,10 @@ export default class extends Component {
 
             <TextBlockMultiple
               inView='inViewBottom'
-              title={content.efficiencyTitle}
-              text={content.efficiencyText}
               content={content.efficiencyContent}
               background='#070B13'
               color='#ffffff'
+              centered
             />
 
             <SlideInBlock
