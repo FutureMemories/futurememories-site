@@ -1,0 +1,96 @@
+@import '../settings.sass'
+
+.view
+  background: white
+  color: #161D2B
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  .inner
+    background: none
+    overflow: hidden
+    color: inherit
+
+    p, h1
+      color: #161D2B
+
+    h1, h2
+      font-weight: 400 !important
+
+      @media screen and (max-width: $small-grid)
+        font-weight: 600 !important
+
+    > .designAndManer
+      > div:nth-child(1)
+        margin: 0
+
+      @media screen and (max-width: $small-grid)
+        text-align: center
+        > div:nth-child(1)
+          margin-top: -18%
+          padding-left: 0
+          padding-right: 0
+
+    > .iconsBlock
+      position: relative
+      background: linear-gradient(to right, #FCECEF 50%, #FCE6EA 50%)
+      padding: 6% 0
+
+      > .inner
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: auto
+        overflow: visible
+
+        > div
+          display: flex
+          position: relative
+          width: 50vw
+
+          &.brandImages
+            transform: scale(1.13)
+            left: 6%
+            height: 31vw
+
+            > img
+              height: 100%
+              width: auto
+
+        .iconsWrapper
+          position: relative
+          padding: 3rem
+
+          > img
+            display: block
+            margin: auto
+            max-width: 48rem
+            width: 100%
+            height: auto
+
+      @media screen and (max-width: $small-grid)
+        background: linear-gradient(to bottom, #FCECEF 50%, #FCE6EA 50%)
+
+        > .inner
+          flex-direction: column
+
+          > div
+            align-items: center
+            width: 100vw
+            min-height: 100vw
+
+            &.brandImages
+              transform: none
+              left: 0
+              width: 100vw
+
+              > img
+                height: fit-content
+                width: 100%
+
+    > .companyGrowth
+
+      .deviceBlock
+        margin-top: 5rem

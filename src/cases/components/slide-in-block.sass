@@ -97,8 +97,11 @@
     > .inner
       padding: 0 3rem 8.6rem
 
-  @media screen and (max-width: $medium-grid)
+  &.hasMobileImage
+    img.mobile
+      display: none
 
+  @media screen and (max-width: $medium-grid)
     > .inner > img
       margin: auto
       max-width: 50%
@@ -109,12 +112,23 @@
     &.tennisWatch
       background-position-y: 40%
 
-    &.right
+    &.right:not(.reverseOnMobile)
       flex-direction: column !important
       padding-top: 4rem
 
       > .inner > .content
         margin-right: 0
+
+    &.reverseOnMobile
+      flex-direction: column-reverse
+      padding-top: 4rem
+
+      > .inner > .content
+        margin-right: 0
+
+      > .slider
+        padding-top: 0
+        padding-bottom: 4rem
 
     > .slider
       margin: 0
@@ -132,3 +146,10 @@
 
       > .content
         margin: 3rem 0 0
+
+    &.hasMobileImage
+      img.desktop
+        display: none
+
+      img.mobile
+        display: block

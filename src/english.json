@@ -117,7 +117,8 @@
         "spira",
         "wya-network",
         "nordish-market",
-        "barseback"
+        "barseback",
+        "weekly-revolt"
       ]
     }
   },
@@ -1060,6 +1061,38 @@
       "aboutDesignText": "We set up a new design that We Are Voice can own for further development, which gives the product space to grow digitally in all directions.\n\nThe product was re-branded to stand out from other players on the market within the same genre. The new colour palette gives a great modern feeling, and carefully selected imagery complements the design to add that extra sense of quality.",
       "resultTitle": "Collaboration is our Forte",
       "resultText": "In our collaboration we've made the most of the whole team's competence and previous experience in order to achieve the best outcome in each sprint. During the project we released new versions of the app continuously, and we used this method for all our activities when launching the website and major marketing campaigns.\n\nTo us, continuous integration has been vital for a constantly growing successful product."
+    },
+    "weekly-revolt": {
+      "name": "Weekly Revolt",
+      "title": "Weekly Revolt",
+      "imageBg": [
+        "cases/weekly-revolt-bg.png",
+        "height"
+      ],
+      "subtitle": "Join the digital movement",
+      "desc": "",
+      "type": "UX, UI, React Native",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#161D2B",
+          "background": "linear-gradient(289.91deg, #FCECEF 0%, #FBE4E8 100%)"
+        },
+        {
+          "background": "linear-gradient(90deg, rgba(252, 236, 239, 0.7) 0%, rgba(255, 255, 255, 0.5) 100%)"
+        }
+      ],
+      "aboutTitle": "A healthier lifestyle in 66 days",
+      "aboutText": "The digital community Weekly Revolt, is a movement for healthier habits. It doesn’t matter if you already are a high performing athlete or begin straight from the couch.\n\nAccording to research, it takes 66 days to break a habit. During this period of time, Weekly Revolt provides you with all the tools you need to change your lifestyle for the better by improving your physical and mental well-being.\n\nWeekly Revolt is tailored for people living a normal life. Combining training with your professional life, taking care of children and daily chores can be exhausting. Instead, they offer a sustainable alternative to the traditional training programme, fitted to your own schedule and your way of life. There’s no need to commute to the gym. In the app, they provide you with first class coaching, tasty recipes and new challenges every week.",
+      "visitTheSite": "Visit website",
+      "designAndManerTitle": "Design & Identity",
+      "designAndManerText": "We took the drama out of the harsh boot camp concept that is ever so often recurring in time- based training programmes. Instead, we gave life to an inviting, friendly and playful design. \n\nWeekly Revolt is for anyone to join. Our main focus was therefore to take the stereotypical harshness out of the equation. We gave shape to an inclusive design by using warm colours and softer shapes to increase a sense of positivity sprung by motivation. And what can be more motivating than a snack? Colours are inspired by the healthy goodies recommended in the recipe section; Banana Snack, Chocolate Shake, Raspberry Smoothie and Spinach Salad are just a few elements that set the colours to the palette. Yum!",
+      "motivatingImprovementsContent": [
+        {"title": "A motivating user journey", "text": "The main purpose of the app is to motivate you to reach your personal set goals. You check off your completed challenges, fill in your training diary and send messages to yourself for the future. The recipe section gives you access to a huge amount of healthy, nurturing and fun recipes to take you through the day.\n\nEvery week you unlock new challenges with professional instructions inside. Weekly Revolt makes it easy for you to follow your progress every week in the diary and gives you a chance to reflect on and enjoy the results of your transformation."},
+        {"title": "Continuous improvements", "text": "The app was designed for high scalability. It is constantly growing along with its number of users.\n\nShortly after the first release, we planned for the next. With the help of Weekly Revolt's members, we continuously collect fantastic user feedback via social media.  We iterate on new versions continuously.\n\nThe service is developed in close collaboration between our UX and UI designers together with Weekly Revolt. Weekly Revolt is growing rapidly, which places high demands on responsiveness and an iterative process to develop and evaluate new concepts and to help members to create and maintain a lifestyle change that lasts a lifetime."}
+      ],
+      "companyGrowthTitle": "A growing movement",
+      "companyGrowthText": "The founders of Weekly Revolt, Jonathan and Louise, knew there was a lacking form of exercise programmes on the market that worked for normal people. Their ideal health programme needed a softer approach without compromising on any results. They wanted to create a sustainable alternative and remove the aggressiveness out of the boot camp.\n\nLess than a year after their initial idea, Weekly Revolt had more than 3000 members.\n\nJoin the movement!"
     }
   },
   "notUsedCases": {

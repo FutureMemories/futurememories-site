@@ -28,6 +28,7 @@ import Stc from './cases/stc'
 import TennisWatch from './cases/tennis-watch'
 import WakeUpProblem from './cases/wake-up-problem'
 import WeAreVoice from './cases/wearevoice'
+import WeeklyRevolt from './cases/weekly-revolt'
 
 const data = {
   english: require('./english.json'),
@@ -129,6 +130,7 @@ export default class extends Component {
         <TennisWatch path={root + '/cases/tennis-watch'} data={languageData} root={root} />
         <WakeUpProblem path={root + '/cases/wake-up-problem'} data={languageData} root={root} />
         <WeAreVoice path={root + '/cases/we-are-voice'} data={languageData} root={root} />
+        <WeeklyRevolt path={root + '/cases/weekly-revolt'} data={languageData} root={root} />
 
         <NotFound type='404' default data={languageData} root={root} />
       </Router>

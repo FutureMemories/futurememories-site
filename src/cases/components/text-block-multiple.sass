@@ -16,7 +16,7 @@
     > .content
 
       &:not(:last-child)
-        margin-right: 5rem
+        margin-right: 15rem
 
       > h1
         font-weight: normal
@@ -29,6 +29,9 @@
         line-height: 2.8rem
         opacity: 0.8
 
+    &:not(.highlightLeftSide) > .content
+      flex: 1
+
     &.highlightLeftSide
       > .content
         &:nth-child(1)
@@ -40,6 +43,9 @@
           > p
             font-size: 1.8rem
             line-height: 2.5rem
+
+        &:not(:last-child)
+          margin-right: 5rem
 
     @media screen and (max-width: $small-grid)
       flex-direction: column

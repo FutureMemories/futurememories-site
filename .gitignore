@@ -8,3 +8,6 @@ oldsite/
 # Generated files from prebuild:
 /prerender-urls.json
 /src/assets-root/sitemap.xml
+
+# Local Netlify folder
+.netlify
