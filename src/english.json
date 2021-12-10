@@ -17,6 +17,7 @@
       "title": "Future Memories: Branding",
       "name": "Branding",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "picular",
@@ -1031,7 +1032,7 @@
       "name": "We Are Voice",
       "title": "We Are Voice",
       "imageBg": [
-        "cases/wearevoice-1.png",
+        "cases/wearevoice-2.png",
         "height"
       ],
       "subtitle": "Voices Unite",
@@ -1059,6 +1060,37 @@
       "aboutDesignText": "We set up a new design that We Are Voice can own for further development, which gives the product space to grow digitally in all directions.\n\nThe product was re-branded to stand out from other players on the market within the same genre. The new colour palette gives a great modern feeling, and carefully selected imagery complements the design to add that extra sense of quality.",
       "resultTitle": "Collaboration is our Forte",
       "resultText": "In our collaboration we've made the most of the whole team's competence and previous experience in order to achieve the best outcome in each sprint. During the project we released new versions of the app continuously, and we used this method for all our activities when launching the website and major marketing campaigns.\n\nTo us, continuous integration has been vital for a constantly growing successful product."
+    },
+    "eyescanner": {
+      "name": "Eyescanner",
+      "title": "Eyescanner",
+      "imageBg": [
+        "cases/eyescanner-thumb.png",
+        "height"
+      ],
+      "subtitle": "AI-based software for drug testing.",
+      "desc": "",
+      "client": "Eyescanner",
+      "type": "UX, UI, Branding, iOS",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#070B13",
+          "background": "center / contain no-repeat url('../../images/cases/eyescanner-thumb-1.png')"
+        },
+        {
+          "background": "linear-gradient(289.91deg, rgba(205, 225, 227, 0.6) 0%, rgba(205, 225, 227, 0.6) 100%)"
+        }
+      ],
+      "largeImageAlt": "Eyescanner background pattern",
+      "logoImageAlt": "Eyescanner logo",
+      "aboutTitle": "Headline should be here.",
+      "aboutText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "visitTheSite": "Visit website",
+      "aboutTitle2": "Another headline should be here.",
+      "aboutText2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "aboutTitle3": "Another headline should honestly be here.",
+      "aboutText3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
     }
   },
   "notUsedCases": {

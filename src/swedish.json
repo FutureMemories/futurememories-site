@@ -481,6 +481,19 @@
       "aboutDesignText": "Vi tog fram ett designsystem som We Are Voice kan äga själva och som ger produkten utrymme att växa digitalt i alla led.\n\nDet rörliga brand vi tog fram särskiljer sig ifrån andra aktörer inom samma genre samtidigt som det befäster produkten och varumärkets känsla av kvalitét. Färgerna ger en modern känsla, vilket förstärks med ett kompletterande bildmanér som kan anpassas utefter behov och sammanhang.",
       "resultTitle": "Som en mäktig gospel",
       "resultText": "Vi har dragit nytta av hela teamets samlade kunskaper och tidigare erfarenheter för att prioritera största nyttan i respektive sprint. Under projektets gång släppte vi kontinuerligt nya releaser av appen, webben och bidrog till större marknadsföringinsatser. För oss har continous intergration varit nyckeln till en konstant förnyad produkt och ett utmärkt agilt samarbete.\n\nProjektet har för oss varit en ren skönsång."
+    },
+    "eyescanner": {
+      "subtitle": "AI-based software for drug testing.",
+      "desc": "",
+      "largeImageAlt": "Eyescanner bakgrundsmönster",
+      "logoImageAlt": "Eyescanner logotyp",
+      "aboutTitle": "Headline should be here.",
+      "aboutText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "visitTheSite": "Se hemsidan",
+      "aboutTitle2": "Another headline should be here.",
+      "aboutText2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "aboutTitle3": "Another headline should honestly be here.",
+      "aboutText3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
     }
   },
   "notUsedCases": {

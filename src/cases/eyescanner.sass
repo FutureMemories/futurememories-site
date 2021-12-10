@@ -1,0 +1,167 @@
+@import '../settings.sass'
+@import '../animations.sass'
+
+.view
+  background: #FFFFFF
+  color: $color-darker-blue
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  > .inner
+    overflow: hidden
+
+  .animatedFontBlock
+    display: flex
+    background: #CDE1E3
+    min-height: 40rem
+    overflow: hidden
+
+    @media screen and (min-width: $breakpoint-desktop)
+      max-height: 72vh
+
+    @media screen and (min-width: $breakpoint-desktop-large)
+      max-height: 50vh
+
+    svg
+      margin: -1rem -35rem 0 0
+
+      @media screen and (min-width: $breakpoint-desktop)
+        margin: 0 auto
+
+      &:global(.inView)
+        g
+          &:nth-child(odd)
+            animation: slideInRight 1s, fadeIn 1s forwards
+
+          &:nth-child(even)
+            animation: slideInLeft 1s, fadeIn 1s forwards
+
+          @for $i from 1 through 4
+            &:nth-of-type(#{$i})
+              animation-delay: #{0.1 + $i * 0.25}s
+
+      g
+        opacity: 0
+
+  .brandGridBlock
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-auto-rows: 1fr
+    gap: 0px 0px
+    grid-auto-flow: row
+    grid-template-areas: "one" "two" "four" "three"
+    background-color: rgba(#EEF7F2, .4)
+
+    @media screen and (min-width: $small-grid)
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr
+      grid-template-areas: "one two" "three four"
+
+    @media screen and (min-width: $breakpoint-desktop)
+      grid-template-columns: 1fr 1fr 1fr
+      grid-template-areas: "one two three" "four four three"
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+    .one
+      grid-area: one
+
+    .two
+      grid-area: two
+
+    .three
+      grid-area: three
+      height: 100vw
+
+      @media screen and (min-width: $small-grid)
+        height: 50vw
+
+      @media screen and (min-width: $breakpoint-desktop)
+        height: 66vw
+
+    .four
+      grid-area: four
+
+    .one, .two, .four
+      height: 100vw
+
+      @media screen and (min-width: $small-grid)
+        height: 50vw
+
+      @media screen and (min-width: $breakpoint-desktop)
+        height: 33vw
+
+
+  .appImagesBlock
+    background-image: url('../images/cases/eyescanner-bg-pattern-small.png')
+    background-color: #EEF7F2
+    background-size: cover
+
+    @media screen and (min-width: 850px)
+      background-image: url('../images/cases/eyescanner-bg-pattern.png')
+      background-size: cover
+
+    .inner
+      padding: 8rem 1rem
+
+      @media screen and (min-width: 850px)
+        padding: 10rem 3rem 12rem
+
+      @media screen and (min-width: 1100px)
+        padding: 16rem 3rem
+
+    .appImages
+      display: flex
+      justify-content: space-between
+      max-width: 120rem
+      margin: auto
+
+      &:global(.inView) .appImage
+        animation: animateInCard 1.4s forwards
+
+    .appImage
+      width: 50%
+      opacity: 0
+
+      @media screen and (min-width: 850px)
+        width: 25%
+
+      &.appImage1
+        --transformStart: -11rem
+        --transformEnd: -7rem
+        animation-delay: .2s !important
+
+      &.appImage2
+        --transformStart: 8rem
+        --transformEnd: 4rem
+        animation-delay: .4s !important
+
+      &.appImage3
+        --transformStart: -5rem
+        --transformEnd: -1rem
+        animation-delay: .6s !important
+
+      &.appImage4
+        --transformStart: 11rem
+        --transformEnd: 7rem
+        animation-delay: .8s !important
+
+      &.hideOnMobile
+        display: none
+
+        @media screen and (min-width: 850px)
+          display: block
+
+@keyframes animateInCard
+  from
+    opacity: 0
+    transform: translateY(var(--transformStart))
+  to
+    opacity: 1
+    transform: translateY(var(--transformEnd))
+

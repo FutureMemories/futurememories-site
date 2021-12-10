@@ -65,6 +65,7 @@ export default class extends Component {
               titleColor='#EADFD8'
               textColor='rgba(234, 223, 216, 0.6)'
               inView='inViewBottom'
+              modifier='wearevoice'
             />
 
             <ParallaxBumpBlock

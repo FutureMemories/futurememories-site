@@ -1,15 +1,21 @@
 import cx from 'classnames'
 import s from './side-by-side-block.sass'
 
-export default ({ blocks, title, text, background = '', color = '', modifier, align, inView }) => (
+export default ({ blocks, title, text, background = '', color = '', backgroundLeft = '', modifier, align, inView }) => (
   <div
-    class={cx(s.sideBySideBlock, s.inView)}
+    class={cx(s.sideBySideBlock, s.inView, modifier && s[modifier])}
     style={{ background, color }}
   >
     {blocks.map((block, i) => (
-      <div class={s.block} key={`side-by-side-block_${i}`}>
+      <div class={s.block} style={{ background: i === 1 && backgroundLeft }} key={`side-by-side-block_${i}`}>
         {block.image && <img src={require(`../../images/${block.image}`)} />}
         {block.title && <h2>{block.title}</h2>}
+        {block.text && (
+          <div class={s.textWrapper}>
+            <h2>{block.text.title}</h2>
+            <p>{block.text.p}</p>
+          </div>
+        )}
       </div>
     ))}
 
