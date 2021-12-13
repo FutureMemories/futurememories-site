@@ -100,8 +100,8 @@ export default class extends Component {
             >
               <DeviceBlock
                 customClass={s.deviceBlock}
-                ios='https://www.weeklyrevolt.com/'
-                android='https://www.weeklyrevolt.com/'
+                ios='https://apps.apple.com/se/app/weekly-revolt/id1540099800'
+                android='https://play.google.com/store/apps/details?id=com.weeklyrevolt&hl=sv&gl=US'
                 blackButtons
               />
             </CenterBlock>
