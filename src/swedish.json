@@ -97,7 +97,16 @@
       "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företag eller partners. Detta ger dig många nya möjligheter att ge din karriär en rejäl boost på oväntade sätt."
     }
   },
-  "careersPositions": [],
+  "careersPositions": [
+    {
+      "id": "senior-backend-developer",
+      "label": "🖥  Senior Backend Utvecklare",
+      "text": "Är du en erfaren sytemutvecklare som vill bli CTO till en av våra startups och bestämma över dess teknikstack? Eller vill du bygga upp en helt ny mikrotjänstarkitektur för Sveriges ledande matbutik på nätet? Kanske vill du gräva ner dig i enorma datamängder ihop med Sveriges mest datadrivna gymkedja?\nJobbar du dessutom agilt och älskar att se snabba resultat? Föredrar du språk som **Python**, **Java**, **Kotlin** eller **Go**? Brukar du köra **Docker** i dina projekt? Har du även koll på **AWS** och **Google Cloud** och har du några **DevOps** gener i dig?\n\nDå har du kommit rätt och vi lovar att du kommer stormtrivas hos oss!",
+      "image": "position-1.jpg",
+      "subject": "Senior Backend Utvecklare",
+      "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
+    }
+  ],
   "allCases": {
     "stc": {
       "title": "",
