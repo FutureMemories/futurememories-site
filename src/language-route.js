@@ -17,6 +17,7 @@ import Bandbond from './cases/bandbond'
 import Barseback from './cases/barseback'
 import BauerUniversity from './cases/bauer-university'
 import CaseComponents from './cases/components'
+import Kludd from './cases/Kludd'
 import MatSe from './cases/mat-se'
 import NordishMarket from './cases/nordish-market'
 import Paykartan from './cases/paykartan'
@@ -118,6 +119,7 @@ export default class extends Component {
         <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
         <CountTheEggsChallenge path={root + '/count-the-eggs'} data={languageData} root={root} />
         <FrontendChallenge path={root + '/frontend-challenge'} data={languageData} root={root} />
+        <Kludd path={root + '/cases/kludd'} data={languageData} root={root} />
         <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
         <NordishMarket path={root + '/cases/nordish-market'} data={languageData} root={root} />
         <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />

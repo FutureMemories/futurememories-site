@@ -1,4 +1,5 @@
 @import '../../settings.sass'
+@import '../../animations.sass'
 
 .largeImage
   position: relative
@@ -96,3 +97,20 @@
 
   &.wearevoice
     padding: 0
+
+  &.kludd
+    padding: 2rem 0
+
+    @media screen and (min-width: $breakpoint-desktop)
+      padding: 5rem 0 0
+
+    > img
+      opacity: 0
+
+      @media screen and (min-width: $breakpoint-desktop)
+        margin-bottom: -10rem
+
+      &:global(.inView)
+        animation: fadeIn .8s forwards .2s
+
+

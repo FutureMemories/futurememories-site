@@ -38,9 +38,8 @@ export default class extends Component {
     inView(`.${inViewClasses}`).off('enter')
   }
 
-  render ({ data, root }, { currentQuestion, currentAnswerCorrect, selectedAnswer, showResultView }) {
+  render ({ data, root }) {
     const content = data.allCases.find(c => c.id === 'annotell')
-    this.questionsAndAnswers = content.questionsAndAnswers
 
     return (
       <Base route='/cases/annotell' dark data={data} root={root}>

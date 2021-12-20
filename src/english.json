@@ -1059,6 +1059,35 @@
       "aboutDesignText": "We set up a new design that We Are Voice can own for further development, which gives the product space to grow digitally in all directions.\n\nThe product was re-branded to stand out from other players on the market within the same genre. The new colour palette gives a great modern feeling, and carefully selected imagery complements the design to add that extra sense of quality.",
       "resultTitle": "Collaboration is our Forte",
       "resultText": "In our collaboration we've made the most of the whole team's competence and previous experience in order to achieve the best outcome in each sprint. During the project we released new versions of the app continuously, and we used this method for all our activities when launching the website and major marketing campaigns.\n\nTo us, continuous integration has been vital for a constantly growing successful product."
+    },
+    "kludd": {
+      "name": "Kludd",
+      "title": "Kludd",
+      "imageBg": [
+        "cases/wearevoice-1.png",
+        "height"
+      ],
+      "subtitle": "Write together.",
+      "desc": "",
+      "client": "Kludd",
+      "type": "UX, UI, Branding, iOS",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "linear-gradient(289.91deg, #1A1E31 0%, #2C3249 100%)"
+        },
+        {
+          "background": "linear-gradient(90deg, rgba(28, 32, 51, 0.7) 0%, rgba(20, 24, 37, 0.5) 100%)"
+        }
+      ],
+      "aboutTitle": "Sharing is caring.",
+      "aboutText": "When we write, we sometimes benefit from a extra pair of eyes or two. An editor, a publisher, a client or a friend. In Kludd, you write, share and create together. Your script, novel, story, essay or poem.",
+      "visitTheSite": "Try Kludd",
+      "whyTitle": "Why we created Kludd",
+      "whyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "brandTitle": "Headline should be here",
+      "brandText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
     }
   },
   "notUsedCases": {
