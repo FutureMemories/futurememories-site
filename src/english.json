@@ -1077,6 +1077,9 @@
     "eyescanner": {
       "name": "Eyescanner",
       "title": "Eyescanner",
+      "imageBgBeforeHover": [
+        "cases/eyescanner-thumb-1.png"
+      ],
       "imageBg": [
         "cases/eyescanner-thumb.png",
         "height"
@@ -1088,8 +1091,7 @@
       "showcase": true,
       "style": [
         {
-          "color": "#070B13",
-          "background": "center / contain no-repeat url('../../images/cases/eyescanner-thumb-1.png')"
+          "color": "#070B13"
         },
         {
           "background": "linear-gradient(289.91deg, rgba(205, 225, 227, 0.6) 0%, rgba(205, 225, 227, 0.6) 100%)"
