@@ -275,7 +275,16 @@
       "image": "workspace-4.jpg"
     }
   },
-  "careersPositions": [],
+  "careersPositions": [
+    {
+      "id": "senior-backend-developer",
+      "label": "🖥  Senior Backend Developer",
+      "text": "Are you an experienced System Developer who finds joy in working in well-synchronised teams? Would you get a thrill out of taking on great responsibility in becoming CTO of one of our startups, where you would have full mandate over our tech stack? Would you like to build a brand new micro service architecture for one of the largest online food chains in the country? Or how about digging deep into a huge batch of big data together with one of Sweden's most data-driven health club chains?\n\nIf you also prefer working in agile constellations and love to see results within no time, then it's time for you get in touch with us. We work with **Python**, **Java**, **Kotlin** and **Go**. We prefer **Docker**, say YES! to **AWS** and **Google Cloud**. We also expect everyone to possess some **DevOps** genes before joining our family.\n\nSounds like you? We miss you already! We can assure you that we are a workplace you'll never regret you stepped into.",
+      "image": "position-1.jpg",
+      "subject": "Senior Backend Developer",
+      "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
+    }
+  ],
   "defaultOtherCases": [
     "picular",
     "paykartan",
@@ -1220,13 +1229,6 @@
       "title": "Senior Frontend Developer",
       "desc": "Robert is an experienced Frontend Engineer and Tech Lead with background in interactive design.",
       "email": "robert@futurememories.se"
-    },
-    "gustaf": {
-      "name": "Gustaf Hallberg",
-      "image": "team/gustaf-hallberg.jpg",
-      "title": "Senior Developer",
-      "desc": "Systems Engineer, Team Lead and a real jack-of-all-trades when it comes to software development.",
-      "email": "gustaf@futurememories.se"
     },
     "availablepositions": {
       "disabled": true,
