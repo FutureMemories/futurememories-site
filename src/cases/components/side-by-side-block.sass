@@ -1,3 +1,6 @@
+@import '../../settings.sass'
+@import '../../animations.sass'
+
 .sideBySideBlock
   background: white
   display: flex
@@ -5,11 +8,75 @@
   overflow: hidden
   padding: 0
 
-  > .block
+  .block
     flex: 1
     padding: 0
     margin: 0
 
-    > img
+    img
       width: 100%
       height: auto
+
+  .textWrapper
+    padding: 9.6rem 3rem
+    text-align: center
+
+    @media screen and (min-width: $breakpoint-desktop)
+      padding: 10rem 13rem
+      text-align: left
+
+    h2
+      max-width: 86rem
+      margin: 0 auto 2rem
+
+      font-size: 2.5rem
+      font-weight: 500
+      white-space: pre-line
+
+      @media screen and (min-width: $breakpoint-desktop)
+        font-size: 4rem
+
+    p
+      position: relative
+      max-width: 74rem
+      opacity: 0.8
+      z-index: 2
+
+      font-size: 2rem
+      line-height: 2.8rem
+      white-space: pre-line
+
+      a
+        color: $color-red
+
+  &.eyescanner
+    flex-direction: column
+
+    @media screen and (min-width: $small-grid)
+      flex-direction: row-reverse
+
+    .block
+      display: flex
+      align-items: center
+      justify-content: center
+      min-height: 100vw
+
+      @media screen and (min-width: $small-grid)
+        min-height: 50vw
+
+      @media screen and (min-width: $breakpoint-desktop-large)
+        min-height: 30vw
+
+      img
+        width: 70%
+        max-width: 33rem
+        opacity: 0
+
+        &:global(.inView)
+          animation: rotateIn .5s forwards .4s
+
+    .textWrapper
+      opacity: 0
+
+      &:global(.inView)
+        animation: fadeIn 1s forwards .2s

@@ -1,4 +1,5 @@
 @import '../../settings.sass'
+@import '../../animations.sass'
 
 .centerBlock
   background: #fff
@@ -168,3 +169,38 @@
     p
       color: #737780
       opacity: 1 !important
+
+  &.eyescanner
+    opacity: 0
+
+    &:global(.inView)
+      animation: fadeIn 1s forwards
+
+      img:global(.eyescannerLogo),
+      img:global(.eyescannerLogoPos)
+        animation: fadeIn 1s forwards .3s
+
+    img:global(.eyescannerLogo),
+    img:global(.eyescannerLogoPos)
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      min-height: 0
+      opacity: 0
+
+    img:global(.eyescannerLogo)
+      max-width: 37.8rem
+      padding: 4rem
+
+      @media screen and (min-width: $small-grid)
+        max-width: 54rem
+
+    img:global(.eyescannerLogoPos)
+      max-width: 77rem
+      width: calc(100% + 12rem)
+
+      @media screen and (min-width: $small-grid)
+        max-width: 110rem
+        width: 100%
