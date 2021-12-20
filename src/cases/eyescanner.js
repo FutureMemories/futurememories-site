@@ -69,7 +69,7 @@ export default class extends Component {
               src={{ path: 'cases/eyescanner-bg-green.png', style: { maxHeight: '715px' } }}
               modifier='eyescanner'
             >
-              <img src={require('../images/cases/eyescanner-logo-pos.png')} alt='' class='eyescannerLogoPos' />
+              <img src={require('../images/cases/eyescanner-logo-pos.png')} alt={content.altImageLogoPos} class='eyescannerLogoPos' />
             </CenterBlock>
 
             <SideBySideBlock
@@ -82,7 +82,8 @@ export default class extends Component {
             />
 
             <div class={s.animatedFontBlock}>
-              <svg viewBox='0 0 1440 756' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg role='img' width='1440' height='756' viewBox='0 0 1440 756' fill='none' xmlns='http://www.w3.org/2000/svg' aria-labelledby='svgTitle'>
+                <title id='svgTitle'>{content.altImageLogoPos}</title>
                 <line opacity='0.1' x1='1440' y1='147.5' x2='0.00012207' y2='147.5' stroke='black' />
                 <line opacity='0.1' x1='1440' y1='704.5' x2='0.00012207' y2='704.5' stroke='black' />
                 <line opacity='0.1' x1='1560' y1='233.5' x2='120' y2='233.5' stroke='black' />
@@ -164,26 +165,26 @@ export default class extends Component {
 
             <div class={s.brandGridBlock}>
               <div class={s.one}>
-                <img src={require('../images/cases/eyescanner-block-app.png')} alt='' />
+                <img src={require('../images/cases/eyescanner-block-app.png')} alt={content.altImageBrand1} />
               </div>
               <div class={s.two}>
-                <img src={require('../images/cases/eyescanner-block-icons.png')} alt='' />
+                <img src={require('../images/cases/eyescanner-block-icons.png')} alt={content.altImageBrand2} />
               </div>
               <div class={s.three}>
-                <img src={require('../images/cases/eyescanner-block-font.png')} alt='' />
+                <img src={require('../images/cases/eyescanner-block-font.png')} alt={content.altImageBrand3} />
               </div>
               <div class={s.four}>
-                <img src={require('../images/cases/eyescanner-block-symbol.png')} alt='' />
+                <img src={require('../images/cases/eyescanner-block-symbol.png')} alt={content.altImageBrand4} />
               </div>
             </div>
 
             <div class={s.appImagesBlock}>
               <div class={s.inner}>
                 <div class={s.appImages}>
-                  <img class={cx(s.appImage, s.appImage1, s.hideOnMobile)} src={require('../images/cases/eyescanner-phone-1.png')} alt='' />
-                  <img class={cx(s.appImage, s.appImage2)} src={require('../images/cases/eyescanner-phone-2.png')} alt='' />
-                  <img class={cx(s.appImage, s.appImage3)} src={require('../images/cases/eyescanner-phone-3.png')} alt='' />
-                  <img class={cx(s.appImage, s.appImage4, s.hideOnMobile)} src={require('../images/cases/eyescanner-phone-4.png')} alt='' />
+                  <img class={cx(s.appImage, s.appImage1, s.hideOnMobile)} src={require('../images/cases/eyescanner-phone-1.png')} alt={content.altImageApp1} />
+                  <img class={cx(s.appImage, s.appImage2)} src={require('../images/cases/eyescanner-phone-2.png')} alt={content.altImageApp2} />
+                  <img class={cx(s.appImage, s.appImage3)} src={require('../images/cases/eyescanner-phone-3.png')} alt={content.altImageApp3} />
+                  <img class={cx(s.appImage, s.appImage4, s.hideOnMobile)} src={require('../images/cases/eyescanner-phone-4.png')} alt={content.altImageApp4} />
                 </div>
               </div>
             </div>
@@ -197,7 +198,7 @@ export default class extends Component {
               allCases={data.allCases}
               defaultOtherCases={data.defaultOtherCases}
               current='nordish-market'
-              similar={['mat-se', 'bauer-university', 'stc']}
+              similar={['proflight', 'retts-plus', 'mat-se']}
             />
 
           </div>

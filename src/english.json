@@ -28,6 +28,7 @@
       "title": "Future Memories: Design",
       "name": "Design",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "proflight",
@@ -41,6 +42,7 @@
       "title": "Future Memories: Web",
       "name": "Web",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "we-are-voice",
@@ -54,6 +56,7 @@
       "name": "App",
       "description": "A digital studio with experts in App Development.",
       "cases": [
+        "eyescanner",
         "stc",
         "proflight",
         "bandbond",
@@ -95,6 +98,7 @@
       "title": "Future Memories",
       "name": "All projects",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "picadeli",
@@ -1077,8 +1081,8 @@
         "cases/eyescanner-thumb.png",
         "height"
       ],
-      "subtitle": "AI-based software for drug testing.",
-      "desc": "",
+      "subtitle": "AI-based app for drug testing",
+      "desc": "Eyescanner is an AI-based software that detects the influence of drugs through image analysis of the eye area.",
       "client": "Eyescanner",
       "type": "UX, UI, Branding, iOS",
       "showcase": true,
@@ -1093,13 +1097,22 @@
       ],
       "largeImageAlt": "Eyescanner background pattern",
       "logoImageAlt": "Eyescanner logo",
-      "aboutTitle": "Headline should be here.",
-      "aboutText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "aboutTitle": "AI-based app for drug testing",
+      "aboutText": "Eyescanner is an AI-based software that detects the influence of drugs through image analysis of the eye area. Eyescanner have invented a new, more effective way of drug testing by simply filming an analysing eye movement. The product offers a much easier way of eliminating potential drug abuse for private companies, the automotive industry and the healthcare segment. We have provided Eyescanner with a new digital identity and a new app for iOS.",
       "visitTheSite": "Visit website",
-      "aboutTitle2": "Another headline should be here.",
-      "aboutText2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
-      "aboutTitle3": "Another headline should honestly be here.",
-      "aboutText3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
+      "altImageLogoPos": "Eyescanner logo with spacing instructions",
+      "aboutTitle2": "A non-intrusive design for the greater good",
+      "aboutText2": "Eyescanner is led by the entrepreneurs Jenny Johansson and Stefanie Najafi. Both have worked within the police force for many years - Jenny as a psychologist, and Stefanie as a police officer. They know that drug testing can be a very intrusive and time consuming process.\n\nEyescanner is designed and developed to be easy to use with a simple process. We gave them a new design with a clinical yet unobjectionable feel to it. We chose to use sober and soft colours to make the experience less intimidating.",
+      "altImageBrand1": "Eyescanner brand, app icon",
+      "altImageBrand2": "Eyescanner brand, icons",
+      "altImageBrand3": "Eyescanner brand, font example",
+      "altImageBrand4": "Eyescanner brand colors",
+      "aboutTitle3": "High-tech algorithms in a slick app",
+      "aboutText3": "Using Eyescanner is a much faster, easier and less intrusive method than other traditional drug testing methods. The software finds and analyzes a number of scientifically proven measurement values in the eye area that are significant for drug influence.\n\nIn this project we provided Eyescanner with a brand new app for iOS where we developed the user interface and integrated the AI based software. We collaborated with an AI software development team and worked together throughout the whole process.\n\nThe development of this product is a collaboration with Eyescanner, Sahlgrenska University Hospital, Qamcom Research & Technology, the research institute RISE and Future Memories.",
+      "altImageApp1": "Screenshot from Eyescanner iOS app: Test form",
+      "altImageApp2": "Screenshot from Eyescanner iOS app: Face recognition",
+      "altImageApp3": "Screenshot from Eyescanner iOS app: Negative result",
+      "altImageApp4": "Screenshot from Eyescanner iOS app: Positive result"
     }
   },
   "notUsedCases": {

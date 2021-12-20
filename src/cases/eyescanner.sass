@@ -18,13 +18,16 @@
     overflow: hidden
 
     @media screen and (min-width: $breakpoint-desktop)
+      min-height: 65vh
       max-height: 72vh
 
     @media screen and (min-width: $breakpoint-desktop-large)
       max-height: 50vh
 
     svg
-      margin: -1rem -35rem 0 0
+      height: auto
+      min-width: 100%
+      margin: -2rem -35rem 0 0
 
       @media screen and (min-width: $breakpoint-desktop)
         margin: 0 auto

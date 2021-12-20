@@ -492,17 +492,26 @@
       "resultText": "Vi har dragit nytta av hela teamets samlade kunskaper och tidigare erfarenheter för att prioritera största nyttan i respektive sprint. Under projektets gång släppte vi kontinuerligt nya releaser av appen, webben och bidrog till större marknadsföringinsatser. För oss har continous intergration varit nyckeln till en konstant förnyad produkt och ett utmärkt agilt samarbete.\n\nProjektet har för oss varit en ren skönsång."
     },
     "eyescanner": {
-      "subtitle": "AI-based software for drug testing.",
-      "desc": "",
+      "subtitle": "AI-baserad app för drogpåverkan",
+      "desc": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen.",
       "largeImageAlt": "Eyescanner bakgrundsmönster",
       "logoImageAlt": "Eyescanner logotyp",
-      "aboutTitle": "Headline should be here.",
-      "aboutText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "aboutTitle": "AI-baserad app för drogpåverkan",
+      "aboutText": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen. Eyescanner fyller behovet för en ny, mer effektiv och mindre integritetskränkande drogtestningprocess för tex. bilindustrin, privata arbetsgivare och vården. För Eyescanner har vi byggt en ny app för iOS och tagit fram en ny digital identitet.",
       "visitTheSite": "Se hemsidan",
-      "aboutTitle2": "Another headline should be here.",
-      "aboutText2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
-      "aboutTitle3": "Another headline should honestly be here.",
-      "aboutText3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis nisl imperdiet. Diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
+      "altImageLogoPos": "Eyescanner logotyp med avståndsinstruktioner",
+      "aboutTitle2": "En snygg design för ett viktigt syfte",
+      "aboutText2": "Jenny Johansson (psykolog) och Stefanie Najafi (polis) är grundarna bakom Eyescanner. De har tidigare jobbat inom polisen med drogförebyggande verksamhet. De vet hur tidskrävande och kränkande ett drogtest kan upplevas, både för utföraren och individen. \n\nMed appen, som vi gett en sober design med mjuka former, utesluter man snarare än misstänker drogpåverkan. Appen har därför designats med ljusa färger för att ge ett mer hänsynsfullt intryck vid användandet.",
+      "altImageBrand1": "Eyescanners varumärke, app-ikon",
+      "altImageBrand2": "Eyescanners varumärke, ikoner",
+      "altImageBrand3": "Eyescanners varumärke, typsnittsexempel",
+      "altImageBrand4": "Eyescanners varumärke, färger",
+      "aboutTitle3": "High-tech algoritmer i en snygg app",
+      "aboutText3": "Eyescanner är både ett snabbare och lättare sätt att testa drogpåverkan än traditionella metoder. Mjukvaran analyserar bildsekvenser som kommer in via kameran i mobilen för att sedan med hjälp av machine learning bedöma om personen borde tas in på droganalys.\n\nAppen är utvecklad för iOS där vi byggde gränssnittet och integrerade den AI baserade mjukvaran tillsammans med ett AI utvecklarteam. Under processen testades machinilärningsarlgorimen i den nya appen för bättre och mer precis inlärning.\n\nEyescanners nya app har tagits fram av Eyescanner, Sahlgrenska Universitetssjukhuset, Quamcom Research & Technology, researchinsitutet RISE och vi på Future Memories.",
+      "altImageApp1": "Skärmdump från Eyescanners iOS-app: Test-formulär",
+      "altImageApp2": "Skärmdump från Eyescanners iOS-app: Face recognition",
+      "altImageApp3": "Skärmdump från Eyescanners iOS-app: Negativt resultat",
+      "altImageApp4": "Skärmdump från Eyescanners iOS-app: Positivt resultat"
     }
   },
   "notUsedCases": {
