@@ -492,11 +492,11 @@
       "resultText": "Vi har dragit nytta av hela teamets samlade kunskaper och tidigare erfarenheter för att prioritera största nyttan i respektive sprint. Under projektets gång släppte vi kontinuerligt nya releaser av appen, webben och bidrog till större marknadsföringinsatser. För oss har continous intergration varit nyckeln till en konstant förnyad produkt och ett utmärkt agilt samarbete.\n\nProjektet har för oss varit en ren skönsång."
     },
     "eyescanner": {
-      "subtitle": "AI-baserad app för drogpåverkan",
+      "subtitle": "AI-baserad app för drogtestning",
       "desc": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen.",
       "largeImageAlt": "Eyescanner bakgrundsmönster",
       "logoImageAlt": "Eyescanner logotyp",
-      "aboutTitle": "AI-baserad app för drogpåverkan",
+      "aboutTitle": "AI-baserad app för drogtestning",
       "aboutText": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen. Eyescanner fyller behovet för en ny, mer effektiv och mindre integritetskränkande drogtestningprocess för tex. bilindustrin, privata arbetsgivare och vården. För Eyescanner har vi byggt en ny app för iOS och tagit fram en ny digital identitet.",
       "visitTheSite": "Se hemsidan",
       "altImageLogoPos": "Eyescanner logotyp med avståndsinstruktioner",
