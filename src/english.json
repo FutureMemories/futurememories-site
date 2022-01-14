@@ -71,18 +71,21 @@
       "cases": [
         "stc",
         "bauer-university",
-        "nordish-market",
-        "mat-se"
+        "sleep-cycle-dashboard",
+        "mat-se",
+        "nordish-market"
       ]
     },
     "cloud": {
       "title": "Future Memories: Cloud",
       "name": "Cloud",
       "cases": [
-        "stc",
         "mat-se",
+        "stc",
         "sleep-cycle-dashboard",
-        "wya-network"
+        "wya-network",
+        "bauer-university",
+        "nordish-market"
       ]
     },
     "homegrown": {
