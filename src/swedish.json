@@ -99,12 +99,12 @@
   },
   "careersPositions": [
     {
-      "id": "senior-backend-developer",
-      "label": "🖥  Senior Backend Utvecklare",
-      "text": "Är du en erfaren sytemutvecklare som vill bli CTO till en av våra startups och bestämma över dess teknikstack? Eller vill du bygga upp en helt ny mikrotjänstarkitektur för Sveriges ledande matbutik på nätet? Kanske vill du gräva ner dig i enorma datamängder ihop med Sveriges mest datadrivna gymkedja?\nJobbar du dessutom agilt och älskar att se snabba resultat? Föredrar du språk som **Python**, **Java**, **Kotlin** eller **Go**? Brukar du köra **Docker** i dina projekt? Har du även koll på **AWS** och **Google Cloud** och har du några **DevOps** gener i dig?\n\nDå har du kommit rätt och vi lovar att du kommer stormtrivas hos oss!",
+      "id": "backend-developer",
+      "label": "🖥  Backend Utvecklare",
+      "text": "Är du systemutvecklare som vill jobba mer med Go, Kotlin, Scala eller Python och gillar att ta ansvar över hela teknikstacken? \n\nDå ska du bli en av oss! Vi är fyra backendutvecklare som sköter allt ifrån systemarkitektur, utveckling, rollout och drift av våra applikationer. Vi föredrar att sätta upp vår infrastruktur på AWS eller Google Cloud med hjälp av Terraform.\n\nVi är en del av Future Memories utvecklingsteam på nio personer och jobbar remote eller från vårt kontor i centrala Göteborg.",
       "image": "position-1.jpg",
-      "subject": "Senior Backend Utvecklare",
-      "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
+      "subject": "Backend Utvecklare",
+      "tasks": "#golang #kotlin #scala #python #aws #gcp #terraform #devops"
     }
   ],
   "allCases": {
