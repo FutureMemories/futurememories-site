@@ -286,7 +286,7 @@
     {
       "id": "backend-developer",
       "label": "🖥  Backend Developer",
-      "text": "Are you a software engineer who wants to work more with languages like Go, Kotlin, Scala or Python? Do you enjoy having full responsibility over your tech stack?\n\nJoin us! We are four backend engineers who run everything from software architecture, development, rollout and maintenance of our own applications. We prever to work in environments on AWS or Google Cloud, preferably set up with Terraform.\n\nWe are part of Future Memories' development team which consists of nine developers who work remotly or from our offices in downtown Gothenburg.",
+      "text": "Are you a software engineer who wants to work more with languages like Go, Kotlin, Scala or Python? Do you enjoy having full responsibility over your tech stack?\n\nJoin us! We are four backend engineers who run everything from software architecture, development, rollout and maintenance of our own applications. We usually have our infrastructure on AWS or Google Cloud, preferably set up with Terraform.\n\nWe are part of Future Memories' development team which consists of nine developers who work either remotely or from our offices in downtown Gothenburg.",
       "image": "position-1.jpg",
       "subject": "Backend Developer",
       "tasks": "#golang #kotlin #scala #python #aws #gcp #terraform #devops"
