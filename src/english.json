@@ -4,11 +4,11 @@
       "title": "Future Memories: Featured",
       "name": "Featured",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
-        "mat-se",
         "we-are-voice",
-        "proflight",
+        "mat-se",
         "bauer-university",
         "picular"
       ]
@@ -17,6 +17,7 @@
       "title": "Future Memories: Branding",
       "name": "Branding",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "picular",
@@ -27,6 +28,7 @@
       "title": "Future Memories: Design",
       "name": "Design",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "proflight",
@@ -40,6 +42,7 @@
       "title": "Future Memories: Web",
       "name": "Web",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "we-are-voice",
@@ -53,6 +56,7 @@
       "name": "App",
       "description": "A digital studio with experts in App Development.",
       "cases": [
+        "eyescanner",
         "stc",
         "proflight",
         "bandbond",
@@ -67,16 +71,19 @@
       "cases": [
         "stc",
         "bauer-university",
-        "nordish-market",
-        "mat-se"
+        "sleep-cycle-dashboard",
+        "mat-se",
+        "nordish-market"
       ]
     },
     "cloud": {
       "title": "Future Memories: Cloud",
       "name": "Cloud",
       "cases": [
-        "stc",
         "mat-se",
+        "bauer-university",
+        "stc",
+        "nordish-market",
         "sleep-cycle-dashboard",
         "wya-network"
       ]
@@ -94,6 +101,7 @@
       "title": "Future Memories",
       "name": "All projects",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
         "picadeli",
@@ -274,7 +282,16 @@
       "image": "workspace-4.jpg"
     }
   },
-  "careersPositions": [],
+  "careersPositions": [
+    {
+      "id": "backend-developer",
+      "label": "🖥  Backend Developer",
+      "text": "Are you a software engineer who wants to work more with languages like Go, Kotlin, Scala or Python? Do you enjoy having full responsibility over your tech stack?\n\nJoin us! We are four backend engineers who run everything from software architecture, development, rollout and maintenance of our own applications. We usually have our infrastructure on AWS or Google Cloud, preferably set up with Terraform.\n\nWe are part of Future Memories' development team which consists of nine developers who work either remotely or from our offices in downtown Gothenburg.",
+      "image": "position-1.jpg",
+      "subject": "Backend Developer",
+      "tasks": "#golang #kotlin #scala #python #aws #gcp #terraform #devops"
+    }
+  ],
   "defaultOtherCases": [
     "picular",
     "paykartan",
@@ -1031,7 +1048,7 @@
       "name": "We Are Voice",
       "title": "We Are Voice",
       "imageBg": [
-        "cases/wearevoice-1.png",
+        "cases/wearevoice-2.png",
         "height"
       ],
       "subtitle": "Voices Unite",
@@ -1088,6 +1105,48 @@
       "whyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
       "brandTitle": "Headline should be here",
       "brandText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
+    },
+    "eyescanner": {
+      "name": "Eyescanner",
+      "title": "Eyescanner",
+      "imageBgBeforeHover": [
+        "cases/eyescanner-thumb-1.png"
+      ],
+      "imageBg": [
+        "cases/eyescanner-thumb.png",
+        "height"
+      ],
+      "subtitle": "AI-based app for drug testing",
+      "desc": "Eyescanner is an AI-based software that detects the influence of drugs through image analysis of the eye area.",
+      "client": "Eyescanner",
+      "type": "UX, UI, Branding, iOS, Web",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#070B13"
+        },
+        {
+          "background": "linear-gradient(289.91deg, rgba(205, 225, 227, 0.6) 0%, rgba(205, 225, 227, 0.6) 100%)"
+        }
+      ],
+      "largeImageAlt": "Eyescanner background pattern",
+      "logoImageAlt": "Eyescanner logo",
+      "aboutTitle": "AI-based app for drug testing",
+      "aboutText": "Eyescanner is an AI-based software that detects the influence of drugs through image analysis of the eye area. Eyescanner have invented a new, more effective way of drug testing by simply filming an analysing eye movement. The product offers a much easier way of eliminating potential drug abuse for private companies, the automotive industry and the healthcare segment. We have provided Eyescanner with a new digital identity and a new app for iOS.",
+      "visitTheSite": "Visit website",
+      "altImageLogoPos": "Eyescanner logo with spacing instructions",
+      "aboutTitle2": "A non-intrusive design for the greater good",
+      "aboutText2": "Eyescanner is led by the entrepreneurs Jenny Johansson and Stefanie Najafi. Both have worked within the police force for many years - Jenny as a psychologist, and Stefanie as a police officer. They know that drug testing can be a very intrusive and time consuming process.\n\nEyescanner is designed and developed to be easy to use with a simple process. We gave them a new design with a clinical yet unobjectionable feel to it. We chose to use sober and soft colours to make the experience less intimidating.",
+      "altImageBrand1": "Eyescanner brand, app icon",
+      "altImageBrand2": "Eyescanner brand, icons",
+      "altImageBrand3": "Eyescanner brand, font example",
+      "altImageBrand4": "Eyescanner brand colors",
+      "aboutTitle3": "High-tech algorithms in a slick app",
+      "aboutText3": "Using Eyescanner is a much faster, easier and less intrusive method than other traditional drug testing methods. The software finds and analyzes a number of scientifically proven measurement values in the eye area that are significant for drug influence.\n\nIn this project we provided Eyescanner with a brand new app for iOS where we developed the user interface and integrated the AI based software. We collaborated with an AI software development team and worked together throughout the whole process.\n\nThe development of this product is a collaboration with Eyescanner, Sahlgrenska University Hospital, Qamcom Research & Technology, the research institute RISE and Future Memories.",
+      "altImageApp1": "Screenshot from Eyescanner iOS app: Test form",
+      "altImageApp2": "Screenshot from Eyescanner iOS app: Face recognition",
+      "altImageApp3": "Screenshot from Eyescanner iOS app: Negative result",
+      "altImageApp4": "Screenshot from Eyescanner iOS app: Positive result"
     }
   },
   "notUsedCases": {

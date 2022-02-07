@@ -97,7 +97,16 @@
       "text": "Vi förväntar oss professionalism, engagemang och respekt för varandra. I gengäld erbjuder vi en platt hierarki, frihet under ansvar och utrymme för personlig utveckling. Det finns gott om tid att hitta och definiera din roll inom företaget och vi bestämmer tillsammans med dig vilka projekt du kommer att arbeta med. \n\n Vi grundar, utvecklar och släpper egna produkter, både inom Future Memories och i samarbete med andra företag eller partners. Detta ger dig många nya möjligheter att ge din karriär en rejäl boost på oväntade sätt."
     }
   },
-  "careersPositions": [],
+  "careersPositions": [
+    {
+      "id": "backend-developer",
+      "label": "🖥  Backend Utvecklare",
+      "text": "Är du systemutvecklare som vill jobba mer med Go, Kotlin, Scala eller Python och gillar att ta ansvar över hela teknikstacken? \n\nDå ska du bli en av oss! Vi är fyra backendutvecklare som sköter allt ifrån systemarkitektur, utveckling, rollout och drift av våra applikationer. Vi föredrar att sätta upp vår infrastruktur på AWS eller Google Cloud med hjälp av Terraform.\n\nVi är en del av Future Memories utvecklingsteam på nio personer och jobbar remote eller från vårt kontor i centrala Göteborg.",
+      "image": "position-1.jpg",
+      "subject": "Backend Utvecklare",
+      "tasks": "#golang #kotlin #scala #python #aws #gcp #terraform #devops"
+    }
+  ],
   "allCases": {
     "stc": {
       "title": "",
@@ -492,6 +501,28 @@
       "whyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
       "brandTitle": "Headline should be here",
       "brandText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
+    },
+    "eyescanner": {
+      "subtitle": "AI-baserad app för drogtestning",
+      "desc": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen.",
+      "largeImageAlt": "Eyescanner bakgrundsmönster",
+      "logoImageAlt": "Eyescanner logotyp",
+      "aboutTitle": "AI-baserad app för drogtestning",
+      "aboutText": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen. Eyescanner fyller behovet för en ny, mer effektiv och mindre integritetskränkande drogtestningprocess för tex. bilindustrin, privata arbetsgivare och vården. För Eyescanner har vi byggt en ny app för iOS och tagit fram en ny digital identitet.",
+      "visitTheSite": "Se hemsidan",
+      "altImageLogoPos": "Eyescanner logotyp med avståndsinstruktioner",
+      "aboutTitle2": "En snygg design för ett viktigt syfte",
+      "aboutText2": "Jenny Johansson (psykolog) och Stefanie Najafi (polis) är grundarna bakom Eyescanner. De har tidigare jobbat inom polisen med drogförebyggande verksamhet. De vet hur tidskrävande och kränkande ett drogtest kan upplevas, både för utföraren och individen. \n\nMed appen, som vi gett en sober design med mjuka former, utesluter man snarare än misstänker drogpåverkan. Appen har därför designats med ljusa färger för att ge ett mer hänsynsfullt intryck vid användandet.",
+      "altImageBrand1": "Eyescanners varumärke, app-ikon",
+      "altImageBrand2": "Eyescanners varumärke, ikoner",
+      "altImageBrand3": "Eyescanners varumärke, typsnittsexempel",
+      "altImageBrand4": "Eyescanners varumärke, färger",
+      "aboutTitle3": "High-tech algoritmer i en snygg app",
+      "aboutText3": "Eyescanner är både ett snabbare och lättare sätt att testa drogpåverkan än traditionella metoder. Mjukvaran analyserar bildsekvenser som kommer in via kameran i mobilen för att sedan med hjälp av machine learning bedöma om personen borde tas in på droganalys.\n\nAppen är utvecklad för iOS där vi byggde gränssnittet och integrerade den AI baserade mjukvaran tillsammans med ett utvecklarteam inom AI. Under processen testades maskininlärningsalgoritmen i den nya appen för bättre och mer precis inlärning.\n\nEyescanners nya app har tagits fram av Eyescanner, Sahlgrenska Universitetssjukhuset, Qamcom Research & Technology, researchinstitutet RISE och vi på Future Memories.",
+      "altImageApp1": "Skärmdump från Eyescanners iOS-app: Test-formulär",
+      "altImageApp2": "Skärmdump från Eyescanners iOS-app: Face recognition",
+      "altImageApp3": "Skärmdump från Eyescanners iOS-app: Negativt resultat",
+      "altImageApp4": "Skärmdump från Eyescanners iOS-app: Positivt resultat"
     }
   },
   "notUsedCases": {

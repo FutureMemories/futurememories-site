@@ -76,6 +76,12 @@ export default ({ allCases, allProjects, projects, page, firstView, customClass,
                 to={linkTo}
                 newTab={(project.link || project.appLink) && true}
               >
+                {project.imageBgBeforeHover && (
+                  <img
+                    alt={project.name} class={s.imageBgBeforeHover}
+                    src={require(`../images/${project.imageBgBeforeHover[0]}`)}
+                  />
+                )}
                 <div class={s.overlay} style={overlayStyle} />
                 <div
                   class={cx(

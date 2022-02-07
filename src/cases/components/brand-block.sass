@@ -40,18 +40,18 @@
           width: 100%
 
           &.name, &.logoWithLines
-            \:global(.logoPrime),
-            \:global(.logoSecond),
-            \:global(.text)
+            :global(.logoPrime),
+            :global(.logoSecond),
+            :global(.text)
               transition: color 0.3s ease-in-out
 
-            \:global(.logoPrime)
+            :global(.logoPrime)
               color: #439CBC
 
-            \:global(.logoSecond)
+            :global(.logoSecond)
               color: #A2CEDE
 
-            \:global(.text)
+            :global(.text)
               color: #778A99
 
           &.name
@@ -62,7 +62,7 @@
           &.logoWithLines
             width: 18rem
 
-          \:global(.brandLines)
+          :global(.brandLines)
             opacity: 0
             transition: opacity 0.3s ease-in-out
 
@@ -70,12 +70,12 @@
         > .block
           > svg
             &.name, &.logoWithLines
-              \:global(.logoPrime),
-              \:global(.logoSecond),
-              \:global(.text)
+              :global(.logoPrime),
+              :global(.logoSecond),
+              :global(.text)
                 color: #CFD4D7
 
-            \:global(.brandLines)
+            :global(.brandLines)
               opacity: 1
 
       @media screen and (max-width: 550px)
