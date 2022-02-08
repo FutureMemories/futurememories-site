@@ -14,7 +14,9 @@ const inViewClasses = [
   `${s.inner} > div:nth-child(2) > img`,
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
   `${s.inner} > div:nth-child(4) > div > div`,
-  `${s.inner} > div:nth-child(6) img`
+  `${s.inner} > div:nth-child(6) > div`,
+  `${s.inner} > div:nth-child(8)`,
+  `${s.inner} > div:nth-child(9) > img`
 ].join(',.')
 
 export default class extends Component {
@@ -88,13 +90,13 @@ export default class extends Component {
 
             <div class={s.desktopAppBlock}>
               <div class={cx(s.appImages)}>
-                <img class={cx(s.appImage, 'inViewLeft')} src={require('../images/cases/kludd-desktop-1.png')} alt='' />
-                <img class={cx(s.appImage, 'inViewLeft')} src={require('../images/cases/kludd-desktop-2.png')} alt='' />
-                <img class={cx(s.appImage, 'inViewLeft')} src={require('../images/cases/kludd-desktop-2.png')} alt='' />
+                <img class={s.appImage} src={require('../images/cases/kludd-desktop-1.png')} alt='' />
+                <img class={s.appImage} src={require('../images/cases/kludd-desktop-2.png')} alt='' />
+                <img class={s.appImage} src={require('../images/cases/kludd-desktop-2.png')} alt='' />
               </div>
               <div class={s.appImages}>
-                <img class={cx(s.appImage, 'inViewRight')} src={require('../images/cases/kludd-desktop-4.png')} alt='' />
-                <img class={cx(s.appImage, 'inViewRight')} src={require('../images/cases/kludd-desktop-5.png')} alt='' />
+                <img class={s.appImage} src={require('../images/cases/kludd-desktop-4.png')} alt='' />
+                <img class={s.appImage} src={require('../images/cases/kludd-desktop-5.png')} alt='' />
               </div>
             </div>
 
@@ -121,21 +123,22 @@ export default class extends Component {
 
             <div class={s.darkModeBlock}>
               <div class={s.block}>
-                <figure><img src={require('../images/cases/kludd-text-crafted.png')} alt='crafted' /></figure>
+                <img src={require('../images/cases/kludd-text-crafted.svg')} alt='crafted' />
               </div>
               <div class={s.block}>
-                <figure><img src={require('../images/cases/kludd-text-for.png')} alt='for' /></figure>
+                <img src={require('../images/cases/kludd-text-for.svg')} alt='for' />
               </div>
               <div class={s.block}>
-                <figure><img src={require('../images/cases/kludd-text-every.png')} alt='every' /></figure>
+                <img src={require('../images/cases/kludd-text-every.svg')} alt='every' />
               </div>
               <div class={s.block}>
-                <figure><img src={require('../images/cases/kludd-text-occasion.png')} alt='occasion' /></figure>
+                <img src={require('../images/cases/kludd-text-occasion.svg')} alt='occasion' />
               </div>
             </div>
 
             <LargeImage
-              src='cases/kludd-large.png'
+              src='cases/kludd-large-dark.png'
+              mobileSrc='cases/kludd-large-dark-mobile.png'
               alt=''
               width='1200'
               background='#22282F'

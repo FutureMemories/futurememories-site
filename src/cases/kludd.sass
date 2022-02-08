@@ -75,12 +75,12 @@
         @media screen and (min-width: 850px)
           --transformStart: -6rem
           --transformEnd: -3rem
-          animation-delay: .4s !important
+          animation-delay: .5s !important
 
       &.appImage2
         --transformStart: 6rem
         --transformEnd: 3rem
-        animation-delay: .6s !important
+        animation-delay: .7s !important
 
     .hideOnMobile
       display: none
@@ -90,6 +90,11 @@
 
   .desktopAppBlock
     overflow: hidden
+    background: #F8F8F9
+    padding: 30px 0
+
+    @media screen and (min-width: 850px)
+      padding: 20px 0
 
     .appImages
       display: flex
@@ -101,8 +106,20 @@
         width: 120vw
         margin-left: -10vw
 
+      &:nth-of-type(1) .appImage
+        transform: translateX(-5rem) translateZ(0)
+
+      &:nth-of-type(2) .appImage
+        transform: translateX(5rem) translateZ(0)
+
+      &:global(.inView) .appImage
+        opacity: 1
+        transform: none
+
     .appImage
       width: 33%
+      opacity: 0
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
 
       @for $i from 1 through 5
         &:nth-of-type(#{$i})
@@ -112,7 +129,7 @@
     .inner
       max-width: $max-width
       margin: 0 auto
-      padding: 8rem 1rem
+      padding: 5rem 4rem
       text-align: center
 
       @media screen and (min-width: 850px)
@@ -151,12 +168,14 @@
 
     .images
       display: grid
-      grid-template-columns: repeat(2, 50%)
-      grid-auto-rows: 70rem
-      gap: 5rem
+      gap: 1.5rem
       width: 100%
 
-      // @media screen and (min-width: 850px)
+      @media screen and (min-width: 850px)
+        grid-template-columns: 50%
+        grid-auto-rows: 70rem
+        gap: 5rem
+
       //   grid-template-columns: repeat(4, 1fr)
 
       .imageWrapper
@@ -165,7 +184,10 @@
         display: flex
         align-items: center
         justify-content: center
-        padding: 8rem 10rem
+        padding: 2rem
+
+        @media screen and (min-width: 850px)
+          padding: 8rem 10rem
 
         &:first-of-type
           grid-area: span 1 / span 2
@@ -185,10 +207,15 @@
     grid-template-columns: repeat(2, 1fr)
     background: #E1DEDE
     grid: .1rem
-    grid-auto-rows: 25vw
+    grid-auto-rows: 50vw
 
     @media screen and (min-width: 850px)
       grid-template-columns: repeat(4, 1fr)
+      grid-auto-rows: 25vw
+
+    &:global(.inView) .block img
+      opacity: 1
+      transform: none
 
     .block
       display: flex
@@ -207,12 +234,15 @@
       &:nth-of-type(4)
         background: #22282F
 
-      figure
-        height: 3rem
+      @for $i from 1 through 4
+        &:nth-of-type(#{$i}) img
+          transition-delay: #{0.1 + $i * 0.25}s
 
       img
         align-self: center
-        width: 50%
+        opacity: 0
+        transform: translateY(-2rem)
+        transition: all .4s ease
 
 @keyframes animateInCard
   from

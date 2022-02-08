@@ -19,7 +19,7 @@
       width: 100%
       margin: auto
 
-  > img
+  .img
     display: block
     position: relative
     max-width: 100%
@@ -27,12 +27,26 @@
     object-fit: cover
     margin: auto
 
+    &.hiddenOnMobile
+      display: none
+
+      @media screen and (min-width: 680px)
+        display: block
+
+    &.mobileImage
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+      @media screen and (min-width: 680px)
+        display: none
+
   &.smallImage
     padding: 5rem 0
     background: red
     text-align: center
 
-    > img
+    .img
       min-height: 20rem
 
   > .badges
@@ -89,7 +103,7 @@
       background: linear-gradient(to top, #F4F8F8, #F4F8F8) no-repeat 0 -25rem
       padding: 5rem 0
 
-    > img
+    .img
       object-position: left
 
       @media screen and (min-width: $breakpoint-desktop)
@@ -104,7 +118,13 @@
     @media screen and (min-width: $breakpoint-desktop)
       padding: 5rem 0 0
 
-    > img
+    &.noPaddingMobile
+      padding: 0
+
+      @media screen and (min-width: $breakpoint-desktop)
+        padding: 5rem 0 0
+
+    .img
       opacity: 0
 
       @media screen and (min-width: $breakpoint-desktop)
