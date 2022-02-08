@@ -81,7 +81,6 @@
       &:global(.inView)
         animation: fadeIn 1s forwards .2s
 
-
   &.nyctea,
   &.nycteaPossible
     flex-direction: column
@@ -117,3 +116,27 @@
 
     @media screen and (min-width: $small-grid)
         flex-direction: row
+
+  &.kludd,
+  &.kludd-reverse
+    .block
+      display: flex
+      align-items: center
+      
+    img
+      display: block
+
+  &.kludd
+    flex-direction: column
+
+    @media screen and (min-width: $small-grid)
+      flex-direction: row
+
+    img
+      display: block
+      
+  &.kludd-reverse
+    flex-direction: column-reverse
+
+    @media screen and (min-width: $small-grid)
+      flex-direction: row

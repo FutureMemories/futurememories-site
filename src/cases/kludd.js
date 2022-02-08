@@ -5,7 +5,7 @@ import Base from '../_base'
 import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import CenterBlock from './components/center-block'
-import TextTwoCol from './components/text-two-col'
+import SideBySideBlock from './components/side-by-side-block'
 import ContactBlock from '../components/contact-block'
 import ProjectsBlock from './components/projects-block'
 import s from './kludd.sass'
@@ -14,9 +14,9 @@ const inViewClasses = [
   `${s.inner} > div:nth-child(2) > img`,
   `${s.inner} > div:nth-child(3) > div:first-child > div`,
   `${s.inner} > div:nth-child(4) > div > div`,
-  `${s.inner} > div:nth-child(6) > div`,
-  `${s.inner} > div:nth-child(8)`,
-  `${s.inner} > div:nth-child(9) > img`
+  `${s.inner} > div:nth-child(8) > div > div`,
+  `${s.inner} > div:nth-child(10)`,
+  `${s.inner} > div:nth-child(11) > img`
 ].join(',.')
 
 export default class extends Component {
@@ -49,7 +49,7 @@ export default class extends Component {
 
             <LargeImage
               src='cases/kludd-large.png'
-              alt=''
+              alt='The kludd editor with a document open.'
               width='1200'
               background='#F8F8F9'
               modifier='kludd'
@@ -59,7 +59,7 @@ export default class extends Component {
               inView='inViewBottom'
               title={content.aboutTitle}
               text={content.aboutText}
-              link={[content.visitTheSite, 'https://www.annotell.com/']}
+              link={[content.visitTheSite, 'https://www.kludd.co/']}
               background='#FFFFFF'
               color='#070B13'
             />
@@ -74,47 +74,57 @@ export default class extends Component {
                   <div />
                 </div>
                 <div class={s.appImages}>
-                  <img class={cx(s.appImage, s.appImage1)} src={require('../images/cases/kludd-phone-1.png')} alt='' />
-                  <img class={cx(s.appImage, s.appImage2, s.hideOnMobile)} src={require('../images/cases/kludd-phone-2.png')} alt='' />
+                  <img class={cx(s.appImage, s.appImage1)} src={require('../images/cases/kludd-phone-1.png')} alt='Kludd editor on a mobile phone with a document open.' />
+                  <img class={cx(s.appImage, s.appImage2, s.hideOnMobile)} src={require('../images/cases/kludd-phone-2.png')} alt='Kludd editor on a mobile phone with settings open.' />
                 </div>
               </div>
             </div>
 
-            <TextTwoCol
-              title={content.whyTitle}
-              text={content.whyText}
-              titleColor='#161D2B'
-              textColor='#161D2B'
-              // inView='inViewBottom'
+            <SideBySideBlock
+              modifier='kludd'
+              blocks={[
+                { text: { title: content.whoTitle, p: content.whoText } },
+                { image: 'cases/kludd-who-2x.png' }
+              ]}
             />
 
-            <div class={s.desktopAppBlock}>
-              <div class={cx(s.appImages)}>
-                <img class={s.appImage} src={require('../images/cases/kludd-desktop-1.png')} alt='' />
-                <img class={s.appImage} src={require('../images/cases/kludd-desktop-2.png')} alt='' />
-                <img class={s.appImage} src={require('../images/cases/kludd-desktop-2.png')} alt='' />
-              </div>
-              <div class={s.appImages}>
-                <img class={s.appImage} src={require('../images/cases/kludd-desktop-4.png')} alt='' />
-                <img class={s.appImage} src={require('../images/cases/kludd-desktop-5.png')} alt='' />
-              </div>
-            </div>
+            <SideBySideBlock
+              modifier='kludd-reverse'
+              blocks={[
+                { image: 'cases/kludd-collaborate-2x.png' },
+                { text: { title: content.collaborateTitle, p: content.collaborateText } }
+              ]}
+            />
+
+            <LargeImage
+              src='cases/kludd-cafe-2x.png'
+              alt='A person using kludd on a laptop in a cafe.'
+            />
+
+            <CenterBlock
+              inView='inViewBottom'
+              title={content.nonDistractionTitle}
+              text={content.nonDistractionText}
+              modifier='kludd-left-align'
+              link={[content.visitTheSite, 'https://www.kludd.co/']}
+              background='#FFFFFF'
+              color='#070B13'
+            />
 
             <div class={s.brandBlock}>
               <div class={s.inner}>
-                <div class={s.textWrapper}>
-                  <h2>{content.brandTitle}</h2>
-                  <p>{content.brandText}</p>
-                </div>
                 <div class={s.images}>
                   <div class={s.imageWrapper}>
-                    <img src={require('../images/cases/kludd-logo-pos.png')} alt='' />
+                    <img src={require('../images/cases/kludd-logo-pos.png')} alt='Kludd logotype.' />
                   </div>
                   <div class={s.imageWrapper}>
-                    <img src={require('../images/cases/kludd-ui.png')} alt='' />
+                    <img src={require('../images/cases/kludd-ui.png')} alt='Kludd design system' />
                   </div>
                   <div class={s.imageWrapper}>
-                    <img src={require('../images/cases/kludd-icons.png')} alt='' />
+                    <img src={require('../images/cases/kludd-icons.png')} alt='Kludd icons.' />
+                  </div>
+                  <div class={s.imageWrapper}>
+                    <img src={require('../images/cases/kludd-notifications-2x.png')} alt='Kludd notifications.' />
                   </div>
                 </div>
 
@@ -137,9 +147,10 @@ export default class extends Component {
             </div>
 
             <LargeImage
+              inView='inViewBottom'
               src='cases/kludd-large-dark.png'
               mobileSrc='cases/kludd-large-dark-mobile.png'
-              alt=''
+              alt='Kludd with darkmode.'
               width='1200'
               background='#22282F'
               modifier='kludd'
@@ -153,7 +164,7 @@ export default class extends Component {
               {...data.projectsBlock}
               allCases={data.allCases}
               defaultOtherCases={data.defaultOtherCases}
-              current='annotell'
+              current='kludd'
               similar={['mat-se', 'nordish-market', 'bandbond']}
             />
           </div>
