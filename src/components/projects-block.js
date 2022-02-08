@@ -80,6 +80,7 @@ export default ({ allCases, allProjects, projects, page, firstView, customClass,
                   <img
                     alt={project.name} class={s.imageBgBeforeHover}
                     src={require(`../images/${project.imageBgBeforeHover[0]}`)}
+                    style={imageStyle}
                   />
                 )}
                 <div class={s.overlay} style={overlayStyle} />

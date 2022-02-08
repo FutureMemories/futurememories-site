@@ -28,6 +28,7 @@
       "title": "Future Memories: Design",
       "name": "Design",
       "cases": [
+        "kludd",
         "eyescanner",
         "annotell",
         "stc",
@@ -42,6 +43,7 @@
       "title": "Future Memories: Web",
       "name": "Web",
       "cases": [
+        "kludd",
         "eyescanner",
         "annotell",
         "stc",
@@ -69,6 +71,7 @@
       "title": "Future Memories: Backend",
       "name": "Backend",
       "cases": [
+        "kludd",
         "stc",
         "bauer-university",
         "sleep-cycle-dashboard",
@@ -92,6 +95,7 @@
       "title": "Future Memories: Homegrown",
       "name": "Homegrown",
       "cases": [
+        "kludd",
         "picular",
         "tennis-watch",
         "paykartan"
@@ -1114,22 +1118,27 @@
     "kludd": {
       "name": "Kludd",
       "title": "Kludd",
+      "imageBgBeforeHover": [
+        "cases/kludd-thumb.png"
+      ],
       "imageBg": [
-        "cases/wearevoice-1.png",
+        "cases/kludd-thumb-2.png",
         "height"
       ],
       "subtitle": "Write together.",
-      "desc": "",
+      "desc": "Some text here",
       "client": "Kludd",
-      "type": "UX, UI, Branding, iOS",
+      "type": "UX, UI, Branding, Web",
       "showcase": true,
       "style": [
         {
-          "color": "#FFFFFF",
-          "background": "linear-gradient(289.91deg, #1A1E31 0%, #2C3249 100%)"
+          "color": "#070B13"
         },
         {
-          "background": "linear-gradient(90deg, rgba(28, 32, 51, 0.7) 0%, rgba(20, 24, 37, 0.5) 100%)"
+          "background": "none"
+        },
+        {
+          "object-position": "left"
         }
       ],
       "aboutTitle": "Sharing is caring.",
