@@ -1,4 +1,5 @@
 @import '../../settings.sass'
+@import '../../animations.sass'
 
 .largeImage
   position: relative
@@ -18,7 +19,7 @@
       width: 100%
       margin: auto
 
-  > img
+  .img
     display: block
     position: relative
     max-width: 100%
@@ -26,11 +27,25 @@
     object-fit: cover
     margin: auto
 
+    &.hiddenOnMobile
+      display: none
+
+      @media screen and (min-width: 680px)
+        display: block
+
+    &.mobileImage
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+      @media screen and (min-width: 680px)
+        display: none
+
   &.smallImage
     padding: 5rem 0
     text-align: center
 
-    > img
+    .img
       min-height: 20rem
 
   > .badges
@@ -88,7 +103,7 @@
       padding: 8rem 0
       margin-bottom: 26rem
 
-    > img
+    .img
       min-height: 35rem
       object-position: 45%
 
@@ -97,7 +112,28 @@
         margin-bottom: -26rem
         object-position: center
 
-
-
   &.wearevoice
     padding: 0
+
+  &.kludd
+    padding: 2rem 0
+
+    @media screen and (min-width: $breakpoint-desktop)
+      padding: 5rem 0 0
+
+    &.noPaddingMobile
+      padding: 0
+
+      @media screen and (min-width: $breakpoint-desktop)
+        padding: 5rem 0 0
+
+    .img
+      opacity: 0
+
+      @media screen and (min-width: $breakpoint-desktop)
+        margin-bottom: -10rem
+
+      &:global(.inView)
+        animation: fadeIn .8s forwards .2s
+
+

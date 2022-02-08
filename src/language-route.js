@@ -18,6 +18,7 @@ import Barseback from './cases/barseback'
 import BauerUniversity from './cases/bauer-university'
 import CaseComponents from './cases/components'
 import Eyescanner from './cases/eyescanner'
+import Kludd from './cases/kludd'
 import MatSe from './cases/mat-se'
 import NordishMarket from './cases/nordish-market'
 import Paykartan from './cases/paykartan'
@@ -121,6 +122,7 @@ export default class extends Component {
         <CountTheEggsChallenge path={root + '/count-the-eggs'} data={languageData} root={root} />
         <Eyescanner path={root + '/cases/eyescanner'} data={languageData} root={root} />
         <FrontendChallenge path={root + '/frontend-challenge'} data={languageData} root={root} />
+        <Kludd path={root + '/cases/kludd'} data={languageData} root={root} />
         <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
         <NordishMarket path={root + '/cases/nordish-market'} data={languageData} root={root} />
         <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />

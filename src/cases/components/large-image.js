@@ -1,9 +1,9 @@
 import cx from 'classnames'
 import s from './large-image.sass'
 
-export default ({ src, alt = 'image', video, width, height, background = '', modifier, className, inView, children }) => (
+export default ({ src, mobileSrc, alt = 'image', video, width, height, background = '', modifier, className, inView, children }) => (
   <div
-    class={cx(s.largeImage, background && !video && s.smallImage, modifier && s[modifier], className)}
+    class={cx(s.largeImage, background && !video && s.smallImage, modifier && s[modifier], className, mobileSrc && s.noPaddingMobile)}
     style={{ background }}
   >
     {video ? (
@@ -13,8 +13,9 @@ export default ({ src, alt = 'image', video, width, height, background = '', mod
         </video>
       </div>
     ) : (
-      <img alt={alt} src={require(`../../images/${src}`)} width={width} class={inView} />
+      <img alt={alt} src={require(`../../images/${src}`)} width={width} class={cx(inView, s.img, mobileSrc && s.hiddenOnMobile)} />
     )}
+    {mobileSrc && <img alt={alt} src={require(`../../images/${mobileSrc}`)} width={width} class={cx(inView, s.img, s.mobileImage)} />}
     {children}
   </div>
 )

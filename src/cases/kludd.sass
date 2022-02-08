@@ -1,0 +1,253 @@
+@import '../settings.sass'
+
+.view
+  position: relative
+  background: white
+  color: #161D2B
+  width: 100%
+  padding-top: 14rem
+
+  > .inner
+    background: none
+
+  .appImagesBlock
+    padding: 10rem 0
+
+    @media screen and (min-width: 850px)
+      padding: 13rem 0
+
+    .inner
+      position: relative
+      border-top: 1px solid #E1DEDE
+      border-bottom: 1px solid #e1dede
+
+    .backgroundGrid
+      position: absolute
+      width: 100%
+      height: 100%
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 0.1rem
+      background-color: #E1DEDE
+
+      @media screen and (min-width: 850px)
+        grid-template-columns: repeat(4, 1fr)
+
+      > div
+        background-color: #F8F8F9
+
+      .big
+        grid-area: span 2 / span 2 / auto / auto
+
+    .appImages
+      display: flex
+      justify-content: center
+      max-width: 120rem
+      margin: -12rem auto
+      padding: 0 1rem
+
+      @media screen and (min-width: 850px)
+        margin: -10rem auto
+        padding: 0 3rem
+
+      @media screen and (min-width: 1100px)
+        padding: 0 3rem
+
+      &:global(.inView) .appImage
+        animation: animateInCard .5s forwards
+
+        @media screen and (min-width: 850px)
+          animation: animateInCard 1s forwards
+
+    .appImage
+      width: 100%
+      opacity: 0
+      max-width: 45rem
+
+      @media screen and (min-width: 850px)
+        width: 50%
+
+      &.appImage1
+        --transformStart: 3rem
+        --transformEnd: 0
+        animation-delay: .7s !important
+
+        @media screen and (min-width: 850px)
+          --transformStart: -6rem
+          --transformEnd: -3rem
+          animation-delay: .5s !important
+
+      &.appImage2
+        --transformStart: 6rem
+        --transformEnd: 3rem
+        animation-delay: .7s !important
+
+    .hideOnMobile
+      display: none
+
+      @media screen and (min-width: 850px)
+        display: block
+
+  .desktopAppBlock
+    overflow: hidden
+    background: #F8F8F9
+    padding: 30px 0
+
+    @media screen and (min-width: 850px)
+      padding: 20px 0
+
+    .appImages
+      display: flex
+      justify-content: center
+      width: 150vw
+      margin-left: -25vw
+
+      @media screen and (min-width: 1700px)
+        width: 120vw
+        margin-left: -10vw
+
+      &:nth-of-type(1) .appImage
+        transform: translateX(-5rem) translateZ(0)
+
+      &:nth-of-type(2) .appImage
+        transform: translateX(5rem) translateZ(0)
+
+      &:global(.inView) .appImage
+        opacity: 1
+        transform: none
+
+    .appImage
+      width: 33%
+      opacity: 0
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out
+
+      @for $i from 1 through 5
+        &:nth-of-type(#{$i})
+          transition-delay: #{0.2 + $i * 0.2}s
+
+  .brandBlock
+    .inner
+      max-width: $max-width
+      margin: 0 auto
+      padding: 5rem 4rem
+      text-align: center
+
+      @media screen and (min-width: 850px)
+        padding: 10rem 3rem 12rem
+
+      @media screen and (min-width: 1100px)
+        padding: 16rem 3rem
+
+    .textWrapper
+      margin: 0 0 10rem
+
+      h2
+        max-width: 86rem
+        margin: 0 auto 2rem
+
+        font-size: 2.5rem
+        font-weight: 500
+        white-space: pre-line
+
+        @media screen and (min-width: $breakpoint-desktop)
+          font-size: 4rem
+
+      p
+        position: relative
+        max-width: 70rem
+        margin: 0 auto
+        opacity: 0.8
+        z-index: 2
+
+        font-size: 2rem
+        line-height: 2.8rem
+        white-space: pre-line
+
+        a
+          color: $color-red
+
+    .images
+      display: grid
+      gap: 1.5rem
+      width: 100%
+
+      @media screen and (min-width: 850px)
+        grid-template-columns: 50%
+        grid-auto-rows: 70rem
+        gap: 5rem
+
+      //   grid-template-columns: repeat(4, 1fr)
+
+      .imageWrapper
+        background: #F8F8F9
+        grid-area: span 1 / span 1
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 2rem
+
+        @media screen and (min-width: 850px)
+          padding: 8rem 10rem
+
+        &:first-of-type
+          grid-area: span 1 / span 2
+
+          img
+            max-width: 70rem
+
+      img
+        align-self: center
+        width: 100%
+        height: 100%
+        max-width: 44rem
+        object-fit: contain
+
+  .darkModeBlock
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    background: #E1DEDE
+    grid: .1rem
+    grid-auto-rows: 50vw
+
+    @media screen and (min-width: 850px)
+      grid-template-columns: repeat(4, 1fr)
+      grid-auto-rows: 25vw
+
+    &:global(.inView) .block img
+      opacity: 1
+      transform: none
+
+    .block
+      display: flex
+      align-items: center
+      justify-content: center
+
+      &:nth-of-type(1)
+        background: #F8F8F9
+
+      &:nth-of-type(2)
+        background: rgb(234, 235, 236)
+
+      &:nth-of-type(3)
+        background: #303840
+
+      &:nth-of-type(4)
+        background: #22282F
+
+      @for $i from 1 through 4
+        &:nth-of-type(#{$i}) img
+          transition-delay: #{0.1 + $i * 0.25}s
+
+      img
+        align-self: center
+        opacity: 0
+        transform: translateY(-2rem)
+        transition: all .4s ease
+
+@keyframes animateInCard
+  from
+    opacity: 0
+    transform: translateY(var(--transformStart))
+  to
+    opacity: 1
+    transform: translateY(var(--transformEnd))

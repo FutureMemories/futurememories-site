@@ -1111,6 +1111,35 @@
       "companyGrowthTitle": "A growing movement",
       "companyGrowthText": "The founders of Weekly Revolt, Jonathan and Louise, knew there was a lacking form of exercise programmes on the market that worked for normal people. Their ideal health programme needed a softer approach without compromising on any results. They wanted to create a sustainable alternative and remove the aggressiveness out of the boot camp.\n\nLess than a year after their initial idea, Weekly Revolt had more than 3000 members.\n\nJoin the movement!"
     },
+    "kludd": {
+      "name": "Kludd",
+      "title": "Kludd",
+      "imageBg": [
+        "cases/wearevoice-1.png",
+        "height"
+      ],
+      "subtitle": "Write together.",
+      "desc": "",
+      "client": "Kludd",
+      "type": "UX, UI, Branding, iOS",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "linear-gradient(289.91deg, #1A1E31 0%, #2C3249 100%)"
+        },
+        {
+          "background": "linear-gradient(90deg, rgba(28, 32, 51, 0.7) 0%, rgba(20, 24, 37, 0.5) 100%)"
+        }
+      ],
+      "aboutTitle": "Sharing is caring.",
+      "aboutText": "When we write, we sometimes benefit from a extra pair of eyes or two. An editor, a publisher, a client or a friend. In Kludd, you write, share and create together. Your script, novel, story, essay or poem.",
+      "visitTheSite": "Try Kludd",
+      "whyTitle": "Why we created Kludd",
+      "whyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
+      "brandTitle": "Headline should be here",
+      "brandText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
+    },
     "eyescanner": {
       "name": "Eyescanner",
       "title": "Eyescanner",
