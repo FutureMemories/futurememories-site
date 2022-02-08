@@ -99,12 +99,12 @@
   },
   "careersPositions": [
     {
-      "id": "senior-backend-developer",
-      "label": "🖥  Senior Backend Utvecklare",
-      "text": "Är du en erfaren sytemutvecklare som vill bli CTO till en av våra startups och bestämma över dess teknikstack? Eller vill du bygga upp en helt ny mikrotjänstarkitektur för Sveriges ledande matbutik på nätet? Kanske vill du gräva ner dig i enorma datamängder ihop med Sveriges mest datadrivna gymkedja?\nJobbar du dessutom agilt och älskar att se snabba resultat? Föredrar du språk som **Python**, **Java**, **Kotlin** eller **Go**? Brukar du köra **Docker** i dina projekt? Har du även koll på **AWS** och **Google Cloud** och har du några **DevOps** gener i dig?\n\nDå har du kommit rätt och vi lovar att du kommer stormtrivas hos oss!",
+      "id": "backend-developer",
+      "label": "🖥  Backend Utvecklare",
+      "text": "Är du systemutvecklare som vill jobba mer med Go, Kotlin, Scala eller Python och gillar att ta ansvar över hela teknikstacken? \n\nDå ska du bli en av oss! Vi är fyra backendutvecklare som sköter allt ifrån systemarkitektur, utveckling, rollout och drift av våra applikationer. Vi föredrar att sätta upp vår infrastruktur på AWS eller Google Cloud med hjälp av Terraform.\n\nVi är en del av Future Memories utvecklingsteam på nio personer och jobbar remote eller från vårt kontor i centrala Göteborg.",
       "image": "position-1.jpg",
-      "subject": "Senior Backend Utvecklare",
-      "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
+      "subject": "Backend Utvecklare",
+      "tasks": "#golang #kotlin #scala #python #aws #gcp #terraform #devops"
     }
   ],
   "allCases": {
@@ -490,11 +490,11 @@
       "companyGrowthText": "Grundarna till Weekly Revolt, Jonathan och Louise,  tyckte det saknades en träningsform som funkar för alla som vill uppnå bättre träningsresultat på hemmaplan, utan att gå över gränsen kring vad som är rimligt. De tycker att många hälsoprogram idag har en för aggressiv approach och ville ta fram ett alternativ som håller i längden. De hade själva svårt att få ihop vardagen med träning, jobb och små barn. Ur deras idé växte Weekly Revolt fram.\n\nMindre än ett år senare har programmet passerat över 3000 deltagare och Weekly Revolt börjar bli en rörelse som verkligen gör skillnad för människor, både fysiskt och psykiskt.\n\nWeekly Revolt växer lavinartat via den digitala communityn. - Detta är ett kvitto på att modellen verkligen fungerar, säger Jonathan.\n\nHäng med på resan!"
     },
     "eyescanner": {
-      "subtitle": "AI-baserad app för drogpåverkan",
+      "subtitle": "AI-baserad app för drogtestning",
       "desc": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen.",
       "largeImageAlt": "Eyescanner bakgrundsmönster",
       "logoImageAlt": "Eyescanner logotyp",
-      "aboutTitle": "AI-baserad app för drogpåverkan",
+      "aboutTitle": "AI-baserad app för drogtestning",
       "aboutText": "Eyescanner är en AI-baserad mjukvara som kan avgöra om en person är drogpåverkad med hjälp av bildanalys av ögonen. Eyescanner fyller behovet för en ny, mer effektiv och mindre integritetskränkande drogtestningprocess för tex. bilindustrin, privata arbetsgivare och vården. För Eyescanner har vi byggt en ny app för iOS och tagit fram en ny digital identitet.",
       "visitTheSite": "Se hemsidan",
       "altImageLogoPos": "Eyescanner logotyp med avståndsinstruktioner",
@@ -505,7 +505,7 @@
       "altImageBrand3": "Eyescanners varumärke, typsnittsexempel",
       "altImageBrand4": "Eyescanners varumärke, färger",
       "aboutTitle3": "High-tech algoritmer i en snygg app",
-      "aboutText3": "Eyescanner är både ett snabbare och lättare sätt att testa drogpåverkan än traditionella metoder. Mjukvaran analyserar bildsekvenser som kommer in via kameran i mobilen för att sedan med hjälp av machine learning bedöma om personen borde tas in på droganalys.\n\nAppen är utvecklad för iOS där vi byggde gränssnittet och integrerade den AI baserade mjukvaran tillsammans med ett AI utvecklarteam. Under processen testades machinilärningsarlgorimen i den nya appen för bättre och mer precis inlärning.\n\nEyescanners nya app har tagits fram av Eyescanner, Sahlgrenska Universitetssjukhuset, Quamcom Research & Technology, researchinsitutet RISE och vi på Future Memories.",
+      "aboutText3": "Eyescanner är både ett snabbare och lättare sätt att testa drogpåverkan än traditionella metoder. Mjukvaran analyserar bildsekvenser som kommer in via kameran i mobilen för att sedan med hjälp av machine learning bedöma om personen borde tas in på droganalys.\n\nAppen är utvecklad för iOS där vi byggde gränssnittet och integrerade den AI baserade mjukvaran tillsammans med ett utvecklarteam inom AI. Under processen testades maskininlärningsalgoritmen i den nya appen för bättre och mer precis inlärning.\n\nEyescanners nya app har tagits fram av Eyescanner, Sahlgrenska Universitetssjukhuset, Qamcom Research & Technology, researchinstitutet RISE och vi på Future Memories.",
       "altImageApp1": "Skärmdump från Eyescanners iOS-app: Test-formulär",
       "altImageApp2": "Skärmdump från Eyescanners iOS-app: Face recognition",
       "altImageApp3": "Skärmdump från Eyescanners iOS-app: Negativt resultat",

@@ -4,11 +4,11 @@
       "title": "Future Memories: Featured",
       "name": "Featured",
       "cases": [
+        "eyescanner",
         "annotell",
         "stc",
-        "mat-se",
         "we-are-voice",
-        "proflight",
+        "mat-se",
         "bauer-university",
         "picular"
       ]
@@ -71,16 +71,19 @@
       "cases": [
         "stc",
         "bauer-university",
-        "nordish-market",
-        "mat-se"
+        "sleep-cycle-dashboard",
+        "mat-se",
+        "nordish-market"
       ]
     },
     "cloud": {
       "title": "Future Memories: Cloud",
       "name": "Cloud",
       "cases": [
-        "stc",
         "mat-se",
+        "bauer-university",
+        "stc",
+        "nordish-market",
         "sleep-cycle-dashboard",
         "wya-network"
       ]
@@ -282,12 +285,12 @@
   },
   "careersPositions": [
     {
-      "id": "senior-backend-developer",
-      "label": "🖥  Senior Backend Developer",
-      "text": "Are you an experienced System Developer who finds joy in working in well-synchronised teams? Would you get a thrill out of taking on great responsibility in becoming CTO of one of our startups, where you would have full mandate over our tech stack? Would you like to build a brand new micro service architecture for one of the largest online food chains in the country? Or how about digging deep into a huge batch of big data together with one of Sweden's most data-driven health club chains?\n\nIf you also prefer working in agile constellations and love to see results within no time, then it's time for you get in touch with us. We work with **Python**, **Java**, **Kotlin** and **Go**. We prefer **Docker**, say YES! to **AWS** and **Google Cloud**. We also expect everyone to possess some **DevOps** genes before joining our family.\n\nSounds like you? We miss you already! We can assure you that we are a workplace you'll never regret you stepped into.",
+      "id": "backend-developer",
+      "label": "🖥  Backend Developer",
+      "text": "Are you a software engineer who wants to work more with languages like Go, Kotlin, Scala or Python? Do you enjoy having full responsibility over your tech stack?\n\nJoin us! We are four backend engineers who run everything from software architecture, development, rollout and maintenance of our own applications. We usually have our infrastructure on AWS or Google Cloud, preferably set up with Terraform.\n\nWe are part of Future Memories' development team which consists of nine developers who work either remotely or from our offices in downtown Gothenburg.",
       "image": "position-1.jpg",
-      "subject": "Senior Backend Developer",
-      "tasks": "#python #java #kotlin #go #docker #aws #gcp #devops"
+      "subject": "Backend Developer",
+      "tasks": "#golang #kotlin #scala #python #aws #gcp #terraform #devops"
     }
   ],
   "defaultOtherCases": [
@@ -1121,7 +1124,7 @@
       "subtitle": "AI-based app for drug testing",
       "desc": "Eyescanner is an AI-based software that detects the influence of drugs through image analysis of the eye area.",
       "client": "Eyescanner",
-      "type": "UX, UI, Branding, iOS",
+      "type": "UX, UI, Branding, iOS, Web",
       "showcase": true,
       "style": [
         {
