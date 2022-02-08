@@ -43,6 +43,7 @@
       "title": "Future Memories: Web",
       "name": "Web",
       "cases": [
+        "kludd",
         "eyescanner",
         "annotell",
         "stc",
@@ -70,6 +71,7 @@
       "title": "Future Memories: Backend",
       "name": "Backend",
       "cases": [
+        "kludd",
         "stc",
         "bauer-university",
         "sleep-cycle-dashboard",
@@ -93,6 +95,7 @@
       "title": "Future Memories: Homegrown",
       "name": "Homegrown",
       "cases": [
+        "kludd",
         "picular",
         "tennis-watch",
         "paykartan"
