@@ -460,9 +460,16 @@
         "cases/picadeli-bg-2.jpg",
         "height"
       ],
-      "title": "",
+      "title": "Picadeli",
+      "subtitle": "Framtidens snabbmat",
       "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning.",
+      "client": "Picadeli",
       "type": "Service Design, UX, UI, iOS, Food Tech",
+      "showcase": true,
+      "imageBg": [
+        "cases/eyescanner-thumb.png",
+        "height"
+      ],
       "style": [
         {
           "color": "#ffffff",
@@ -471,7 +478,24 @@
         {
           "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
-      ]
+      ],
+      "altImageApp1": "Screenshot from the Picadeli app: Todo list",
+      "altImageApp2": "Screenshot from the Picadeli app: Menu",
+      "altImageApp3": "Screenshot from the Picadeli app: Messages list",
+      "altImageApp4": "Screenshot from the Picadeli app: Inventory",
+      "altImageApp5": "Screenshot from the Picadeli app: Message",
+      "aboutTitle": "Sektion om Zebrans användning i butik",
+      "aboutText": "Magna quis at quam nullam quam. In consectetur cursus et, amet neque urna nunc id. Nec in enim non sed eget vitae. Adipiscing egestas nisl pellentesque bibendum ultrices sed libero condimentum nisi. Nibh at libero etiam ultrices sollicitudin hac pellentesque purus. Aliquet congue phasellus vulputate velit posuere velit.",
+      "visitTheSite": "Visit website",
+      "expressOrderTitle": "Sektion om deras express order",
+      "expressOrderText": "Magna quis at quam nullam quam. In consectetur cursus et, amet neque urna nunc id. Nec in enim non sed eget vitae. Adipiscing egestas nisl pellentesque bibendum ultrices sed libero condimentum nisi. Nibh at libero etiam ultrices sollicitudin hac pellentesque purus. Aliquet congue phasellus vulputate velit posuere velit.\nMagna quis at quam nullam quam. In consectetur cursus et, amet neque urna nunc id. Nec in enim non sed eget vitae. Adipiscing egestas nisl pellentesque bibendum ultrices sed libero condimentum nisi. Nibh at libero etiam ultrices sollicitudin hac pellentesque purus. Aliquet congue phasellus vulputate velit posuere velit.",
+      "aboutDesignTitle": "Headline should be displayed here.",
+      "aboutDesignText": "Morbi penatibus id velit auctor id ac netus a libero. Vel scelerisque id curabitur dignissim. Ullamcorper ornare facilisis pretium enim eu. Lectus magnis diam et tempor lacus nullam orci, convallis diam. Enim tempor, justo, et risus et integer tortor.",
+      "altImageBrand1": "Eyescanner brand, app icon",
+      "altImageBrand2": "Eyescanner brand, icons",
+      "altImageBrand3": "Eyescanner brand, font example",
+      "aboutTitle2": "Point of sale info here.",
+      "aboutText2": "Morbi penatibus id velit auctor id ac netus a libero. Vel scelerisque id curabitur dignissim. Ullamcorper ornare facilisis pretium enim eu. Lectus magnis diam et tempor lacus nullam orci, convallis diam. Enim tempor, justo, et risus et integer tortor."
     },
     "proflight": {
       "name": "proFLIGHT",

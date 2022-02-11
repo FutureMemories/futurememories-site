@@ -1,0 +1,160 @@
+@import '../settings.sass'
+
+.view
+  position: relative
+  background: white
+  color: #161D2B
+  width: 100%
+  padding-top: 14rem
+
+  > .inner
+    background: none
+
+  .appImagesBlock
+    background-color: #FCF9F2
+    overflow: hidden
+
+    .inner
+      padding: 4rem 1rem
+
+      @media screen and (min-width: 850px)
+        padding: 10rem 1rem
+      //   padding: 10rem 3rem 12rem
+
+      // @media screen and (min-width: 1100px)
+      //   padding: 16rem 3rem
+
+    .appImages
+      display: flex
+      justify-content: space-between
+      width: 120%
+      max-width: 150rem
+      margin: 0 -10%
+
+      &:global(.inView) .appImage
+        animation: animateInCard 1s forwards
+
+    .appImage
+      width: calc(20% - ((1.1rem * 4) / 5))
+      opacity: 0
+      align-self: center
+      filter: drop-shadow(0px 3.084px 45.4475px rgba(0, 0, 0, 0.05))
+
+      @media screen and (min-width: 850px)
+        width: calc(20% - ((3.5rem * 4) / 5))
+
+      &:nth-of-type(odd)
+        --transformStart: 4.5rem
+        --transformEnd: 1.5rem
+
+        @media screen and (min-width: 850px)
+          --transformStart: 8.5rem
+          --transformEnd: 3.5rem
+
+      &:nth-of-type(even)
+        --transformStart: -4.5rem
+        --transformEnd: -1.5rem
+
+        @media screen and (min-width: 850px)
+          --transformStart: -8.5rem
+          --transformEnd: -3.5rem
+
+      &.appImage1
+        animation-delay: .2s !important
+
+      &.appImage2
+        animation-delay: .4s !important
+
+      &.appImage3
+        animation-delay: .6s !important
+
+      &.appImage4
+        animation-delay: .8s !important
+
+      &.appImage5
+        animation-delay: 1s !important
+
+  .designSection
+    width: 100%
+
+    .content
+      width: 100%
+      max-width: 120rem
+      margin: 0 auto
+      padding: 8rem 3rem
+      text-align: center
+
+      @media screen and (min-width: 1024px)
+        padding: 16rem 3rem
+
+    .textBlock
+      max-width: 70rem
+      margin: 0 auto
+
+      .title
+        margin-bottom: 2rem
+        font-size: 2.5rem
+        line-height: 3.6rem
+        font-weight: normal
+        // color: $titleColor
+
+        @media screen and (min-width: 701px)
+          font-size: 3rem
+
+        @media screen and (min-width: 850px)
+          line-height: 4.7rem
+
+        @media screen and (min-width: 1001px)
+          font-size: 4rem
+
+      .text
+        font-size: 2rem
+        line-height: 2.8rem
+        white-space: pre-line
+        // color: $textColor
+
+        @media screen and (min-width: 850px)
+          font-size: 2rem
+          line-height: 2.8rem
+
+    .imageBlock
+      display: flex
+      width: 100%
+      margin-top: 2rem
+      max-height: 50rem
+      overflow: hidden
+
+      @media screen and (min-width: 850px)
+        margin-top: 5rem
+        max-height: 70rem
+
+      &:nth-of-type(2)
+        margin-top: 10rem
+
+      .image
+        max-width: 100%
+        display: flex
+        min-width: calc(50% - 1rem)
+        align-self: center
+        object-fit: cover
+
+        @media screen and (min-width: 850px)
+          min-width: calc(50% - 2.5rem)
+
+        @media screen and (min-width: 1100px)
+          object-fit: contain
+
+        &:nth-of-type(2)
+          margin-left: 2rem
+
+          @media screen and (min-width: 850px)
+            margin-left: 5rem
+
+
+@keyframes animateInCard
+  from
+    opacity: 0
+    transform: translateY(var(--transformStart))
+  to
+    opacity: 1
+    transform: translateY(var(--transformEnd))
