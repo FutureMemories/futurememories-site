@@ -22,6 +22,7 @@ import Kludd from './cases/kludd'
 import MatSe from './cases/mat-se'
 import NordishMarket from './cases/nordish-market'
 import Paykartan from './cases/paykartan'
+import Picadeli from './cases/picadeli'
 import Picular from './cases/picular'
 import ProFlight from './cases/proflight'
 import RettsPlus from './cases/retts-plus'
@@ -126,6 +127,7 @@ export default class extends Component {
         <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
         <NordishMarket path={root + '/cases/nordish-market'} data={languageData} root={root} />
         <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />
+        <Picadeli path={root + '/cases/picadeli'} data={languageData} root={root} />
         <Picular path={root + '/cases/picular'} data={languageData} root={root} />
         <ProFlight path={root + '/cases/proflight'} data={languageData} root={root} />
         <RettsPlus path={root + '/cases/retts-plus'} data={languageData} root={root} />
