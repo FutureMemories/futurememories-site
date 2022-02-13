@@ -57,7 +57,7 @@ const generateSitemap = () => {
   const caseCategories = Object.keys(data.english.caseCategories)
 
   const siteRoutes = [].concat(
-    Object.values(data.english.routes).map(r => ({ url: r.url, prio: r.url === '/' ? '1.00' : '0.80' })),
+    Object.values(data.english.routes).map(r => ({ url: r.url, prio: r.url === '/' ? '1.00' : (r.sitemapPrio || '0.80') })),
     caseCategories.map(r => ({ url: `/${r}`, prio: '0.7' })),
     caseCategories.map(r => ({ url: `/work/${r}`, prio: '0.72' })),
     showcaseCases.map(r => ({ url: `/cases/${r.id}`, prio: '0.64' })),
