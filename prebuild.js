@@ -40,11 +40,11 @@ const getLanguageContent = (language) => {
   return [...translatedRoutes, ...caseData]
 }
 
-const addLanguageAlternatives = (result, { url, prio }) => {
-  const variations = [
+const addLanguageAlternatives = (result, { url, prio, ignoreVariations }) => {
+  const variations = !ignoreVariations ? [
     { url: '/sv' + url, lang: 'sv' },
     { url: '/en' + url, lang: 'en' }
-  ]
+  ] : []
 
   return result.concat({ url, prio, variations })
 }
@@ -60,25 +60,31 @@ const generateSitemap = () => {
     Object.values(data.english.routes).map(r => ({ url: r.url, prio: r.url === '/' ? '1.00' : '0.80' })),
     caseCategories.map(r => ({ url: `/${r}`, prio: '0.7' })),
     caseCategories.map(r => ({ url: `/work/${r}`, prio: '0.72' })),
-    showcaseCases.map(r => ({ url: `/cases/${r.id}`, prio: '0.64' }))
+    showcaseCases.map(r => ({ url: `/cases/${r.id}`, prio: '0.64' })),
+    [{ url: 'https://jobs.futurememories.se/', prio: '0.8', ignoreVariations: true }]
   ).reduce(addLanguageAlternatives, [])
 
-  const siteUrls = siteRoutes.reduce((result, r) => {
-    const variations = r.variations.reduce((res, v) => res + `
+  // Ignored routes that we don't want to be included in the sitemap.
+  const ignoredRoutes = ['/careers']
+
+  const siteUrls = siteRoutes
+    .filter(route => !ignoredRoutes.includes(route.url))
+    .reduce((result, r) => {
+      const variations = r.variations.reduce((res, v) => res + `
     <xhtml:link
       rel="alternate"
       hreflang="${v.lang}"
       href="https://www.futurememories.se${v.url}"/>`, '')
 
-    return (
-      result + `
+      return (
+        result + `
   <url>
     <loc>https://www.futurememories.se${r.url}</loc>
     <lastmod>${currentDate}</lastmod>
-    <priority>${r.prio}</priority>${variations}
+    <priority>${r.prio}</priority>${variations || ''}
   </url>`
-    )
-  }, '')
+      )
+    }, '')
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset

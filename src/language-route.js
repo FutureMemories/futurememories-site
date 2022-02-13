@@ -6,7 +6,7 @@ import memoize from 'memoize-one'
 import Home from './routes/home'
 import Work from './routes/work'
 import Team from './routes/team'
-import Careers from './routes/careers'
+// import Careers from './routes/careers'
 import NotFound from './routes/404'
 import FrontendChallenge from './routes/frontend-challenge'
 import CountTheEggsChallenge from './routes/count-the-eggs-challenge'
@@ -109,8 +109,7 @@ export default class extends Component {
         ))}
 
         <Team path={root + '/team'} data={languageData} root={root} />
-        <Careers path={root + '/careers'} data={languageData} root={root} />
-
+        {/* <Careers path={root + '/careers'} data={languageData} root={root} /> */}
         <Annotell path={root + '/cases/annotell'} data={languageData} root={root} />
         <AntiStress path={root + '/cases/antistress'} data={languageData} root={root} />
         <Bandbond path={root + '/cases/bandbond'} data={languageData} root={root} />
