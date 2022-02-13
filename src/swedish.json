@@ -543,10 +543,6 @@
       "title": "UX & Service Designer",
       "desc": "Interaktionsdesigner med bakgrund inom informationssystem. Hannah skapar fantastiska digitala upplevelser som kretsar runt användarens behov."
     },
-    "erica": {
-      "title": "Webbutvecklare",
-      "desc": "Webbutvecklare med över 5 års erfarenhet. Kan React som ett rinnande vatten."
-    },
     "pa": {
       "title": "Grundare och VD.",
       "desc": "VD och grundare. Digital designer och affärsstrateg sedan 1996."
@@ -598,7 +594,7 @@
     },
     {
       "label": "Jobba hos oss",
-      "to": "/careers"
+      "to": "https://jobs.futurememories.se"
     }
   ],
   "teamPictures": {

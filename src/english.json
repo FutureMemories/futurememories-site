@@ -1180,14 +1180,7 @@
       "button": true,
       "type": "link",
       "label": "Come and work with us!",
-      "to": "/careers"
-    },
-    "erica": {
-      "name": "Erica Liljeblad",
-      "image": "team/erica-liljeblad.jpg",
-      "title": "Web Developer",
-      "desc": "Web Developer with 5+ years of experience. Fluent in React and other modern web technologies.",
-      "email": "erica@futurememories.se"
+      "to": "https://jobs.futurememories.se"
     },
     "pa": {
       "name": "P-A Gustafsson",
@@ -1271,7 +1264,7 @@
     },
     {
       "label": "Careers",
-      "to": "/careers"
+      "to": "https://jobs.futurememories.se"
     }
   ],
   "teamPictures": {
