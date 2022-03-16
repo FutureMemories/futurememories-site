@@ -48,7 +48,7 @@
   "dependencies": {
     "codemirror": "5.59.2",
     "in-view": "git+https://github.com/futurememories/in-view.git",
-    "marked": "1.1.1",
+    "marked": "4.0.10",
     "preact": "8.5.2",
     "preact-compat": "3.19.0",
     "react-scrollable-anchor": "0.6.1",
