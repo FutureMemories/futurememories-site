@@ -524,52 +524,55 @@
       "title": "Grundare & COO",
       "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech lead med över 12 års erfarenhet från IT branschen."
     },
-    "mikael": {
-      "title": "Partner och CTO",
-      "desc": "Partner och CTO. 20 års erfarenhet av att skapa digitala upplevelser. Idag specialiserad på iOS."
-    },
     "viktor": {
       "title": "Partner och Lead Web/Unity utvecklare.",
       "desc": " Erfaren front-end utvecklare med konstnärlig känsla ända ut i fingerspetsarna."
+    },
+    "mikael": {
+      "title": "Partner och CTO",
+      "desc": "Partner och CTO. 20 års erfarenhet av att skapa digitala upplevelser. Idag specialiserad på iOS."
     },
     "pontus": {
       "title": "Digital Designer",
       "desc": "Digital Designer som skapar framtidens användarupplevelser med användaren i fokus."
     },
-    "careers": {
-      "label": "Jobba hos oss"
-    },
-    "hannah": {
-      "title": "UX & Service Designer",
-      "desc": "Interaktionsdesigner med bakgrund inom informationssystem. Hannah skapar fantastiska digitala upplevelser som kretsar runt användarens behov."
+    "lisa": {
+      "desc": "LISA"
     },
     "pa": {
       "title": "Grundare och VD.",
       "desc": "VD och grundare. Digital designer och affärsstrateg sedan 1996."
     },
-    "anders": {
-      "title": "Design Director och Partner.",
-      "desc": " Prisbelönad designer med många års erfarenhet av digitala produkter med användbarhet i fokus."
+    "hannah": {
+      "title": "UX & Service Designer",
+      "desc": "Interaktionsdesigner med bakgrund inom informationssystem. Hannah skapar fantastiska digitala upplevelser som kretsar runt användarens behov."
     },
     "erik": {
       "title": "Partner och UX Director.",
-      "desc": " Erik har 10 års erfarenhet av att skräddarsy produkter utifrån idéer som gör både användare och verksamheter nöjda."
+      "desc": "Erik har 10 års erfarenhet av att skräddarsy produkter utifrån idéer som gör både användare och verksamheter nöjda."
+    },
+    "careers": {
+      "label": "Jobba hos oss"
+    },
+    "linda": {
+      "title": "Digital projektledare",
+      "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
+    },
+    "anders": {
+      "title": "Design Director och Partner.",
+      "desc": "Prisbelönad designer med många års erfarenhet av digitala produkter med användbarhet i fokus."
     },
     "mattias": {
       "title": "Webbutvecklare",
       "desc": "Webbutvecklare och expert på JavaScript. Mattias har ett Google Web Developer Scholarship i bakfickan."
     },
-    "donovan": {
-      "title": "Senior Mobilutvecklare",
-      "desc": "Senior mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
-    },
     "robert": {
       "title": "Senior Frontend Utvecklare",
       "desc": "Erfaren frontendutvecklare och Tech Lead som även är riktigt vass interaktionsdesign."
     },
-    "linda": {
-      "title": "Digital projektledare",
-      "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
+    "donovan": {
+      "title": "Senior Mobilutvecklare",
+      "desc": "Senior mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
     },
     "availablepositions": {
       "label": "Kanske du?\nLäs mer här!"
