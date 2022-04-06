@@ -163,7 +163,7 @@
         "Bauer University fick ett enormt genomslag redan vid lansering. Det första halvåret som plattformen var uppe hade över 4 000 användare signat upp sig. Deltagarnas resultat steg snabbt upp till proffsnivå och användandet bara ökar.",
         "Bauer University är ett praktexempel på att gamingbaserade koncept funkar. Att spela sig fram till ett resultat visar att motivationen hålls uppe under hela processen. Över 70% av användarna har idag kommit upp till proffsnivå, vilket är den högsta nivån. Detta innebär att en majoritet av användarna svarat rätt på över 650 produktbaserade frågor och tittat på över 3h produktrelaterat videomaterial."
       ],
-      "futurememories": "Bauer University är resultatet av ett fantastiskt samarbete mellan våra kreativa partners på The Bond och självklart våra vänner på Bauer. <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. 🖤"
+      "futurememories": "Bauer University är resultatet av ett fantastiskt samarbete mellan våra kreativa partners på The Bond och självklart våra vänner på Bauer. <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond</a>. 🖤"
     },
     "bandbond": {
       "title": "",
@@ -533,60 +533,55 @@
       "title": "Grundare & COO",
       "desc": "Grundare och operativt ansvarig. Full-stack utvecklare och tech lead med över 12 års erfarenhet från IT branschen."
     },
-    "mikael": {
-      "title": "Partner och CTO",
-      "desc": "Partner och CTO. 20 års erfarenhet av att skapa digitala upplevelser. Idag specialiserad på iOS."
-    },
     "viktor": {
       "title": "Partner och Lead Web/Unity utvecklare.",
       "desc": " Erfaren front-end utvecklare med konstnärlig känsla ända ut i fingerspetsarna."
+    },
+    "mikael": {
+      "title": "Partner och CTO",
+      "desc": "Partner och CTO. 20 års erfarenhet av att skapa digitala upplevelser. Idag specialiserad på iOS."
     },
     "pontus": {
       "title": "Digital Designer",
       "desc": "Digital Designer som skapar framtidens användarupplevelser med användaren i fokus."
     },
-    "careers": {
-      "label": "Jobba hos oss"
-    },
-    "hannah": {
-      "title": "UX & Service Designer",
-      "desc": "Interaktionsdesigner med bakgrund inom informationssystem. Hannah skapar fantastiska digitala upplevelser som kretsar runt användarens behov."
-    },
-    "erica": {
-      "title": "Webbutvecklare",
-      "desc": "Webbutvecklare med över 5 års erfarenhet. Kan React som ett rinnande vatten."
+    "lisa": {
+      "desc": "LISA"
     },
     "pa": {
       "title": "Grundare och VD.",
       "desc": "VD och grundare. Digital designer och affärsstrateg sedan 1996."
     },
-    "martin": {
-      "title": "Senior utvecklare",
-      "desc": "Senior utvecklare som har byggt molnbaserade tjänster och plattformar i över åtta år."
-    },
-    "anders": {
-      "title": "Design Director och Partner.",
-      "desc": " Prisbelönad designer med många års erfarenhet av digitala produkter med användbarhet i fokus."
+    "hannah": {
+      "title": "UX & Service Designer",
+      "desc": "Interaktionsdesigner med bakgrund inom informationssystem. Hannah skapar fantastiska digitala upplevelser som kretsar runt användarens behov."
     },
     "erik": {
       "title": "Partner och UX Director.",
-      "desc": " Erik har 10 års erfarenhet av att skräddarsy produkter utifrån idéer som gör både användare och verksamheter nöjda."
+      "desc": "Erik har 10 års erfarenhet av att skräddarsy produkter utifrån idéer som gör både användare och verksamheter nöjda."
+    },
+    "careers": {
+      "label": "Jobba hos oss"
+    },
+    "linda": {
+      "title": "Digital projektledare",
+      "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
+    },
+    "anders": {
+      "title": "Design Director och Partner.",
+      "desc": "Prisbelönad designer med många års erfarenhet av digitala produkter med användbarhet i fokus."
     },
     "mattias": {
       "title": "Webbutvecklare",
       "desc": "Webbutvecklare och expert på JavaScript. Mattias har ett Google Web Developer Scholarship i bakfickan."
     },
-    "donovan": {
-      "title": "Senior Mobilutvecklare",
-      "desc": "Senior mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
-    },
     "robert": {
       "title": "Senior Frontend Utvecklare",
       "desc": "Erfaren frontendutvecklare och Tech Lead som även är riktigt vass interaktionsdesign."
     },
-    "linda": {
-      "title": "Digital projektledare",
-      "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
+    "donovan": {
+      "title": "Senior Mobilutvecklare",
+      "desc": "Senior mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
     },
     "availablepositions": {
       "label": "Kanske du?\nLäs mer här!"
@@ -607,7 +602,7 @@
     },
     {
       "label": "Jobba hos oss",
-      "to": "/careers"
+      "to": "https://jobs.futurememories.se"
     }
   ],
   "teamPictures": {

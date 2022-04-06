@@ -256,13 +256,15 @@
       "url": "/frontend-challenge",
       "title": "Minns du vad du gjorde imorgon?",
       "description": "Rymden är en unik plats där oförutsedda problem kan dyka upp precis när som helst. Har du var som krävs?",
-      "ogimage": "https://www.futurememories.se/ogimage-frontend-challenge.jpg"
+      "ogimage": "https://www.futurememories.se/ogimage-frontend-challenge.jpg",
+      "sitemapPrio": "0.56"
     },
     "count-the-eggs": {
       "url": "/count-the-eggs",
       "title": "Minns du vad du gjorde imorgon?",
       "description": "I år består inte bara påsken av harar och ägg utan även en utmaning. Som i och för sig består av en hare och oändligt många ägg. Har du vad som krävs för att lösa problemet?",
-      "ogimage": "https://www.futurememories.se/ogimage-count-the-eggs.jpg"
+      "ogimage": "https://www.futurememories.se/ogimage-count-the-eggs.jpg",
+      "sitemapPrio": "0.56"
     }
   },
   "frontTeamPictures": [
@@ -420,7 +422,7 @@
         "Within the first 6-month period from product launch, more than 4000 users signed up. The platform was adopted immediately and salespeople advanced rapidly from Rookie to Pro, spending hours with the training materials. The players' average session duration of 16 minutes is astonishing.",
         "Gamification concepts are playing well. Users are eager to maintain their achievements and eagerly follow up with new training material released twice a year. This results in more than 70% of users advancing in level being on Pro-level, the highest level within Bauer University. This corresponds to answering 650+ product-related questions correctly and watching over 3 hours of video tutorials."
       ],
-      "futurememories": "Bauer University is the result of combining forces with our\ncreative friends over at <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond Communication</a>. 🖤"
+      "futurememories": "Bauer University is the result of combining forces with our\ncreative friends over at <a href='https://thebond.se/' target='_blank' rel='noopener noreferrer'>The Bond</a>. 🖤"
     },
     "bandbond": {
       "name": "Bandbond",
@@ -1241,14 +1243,6 @@
       "phone": "+46 (0)735 201950",
       "email": "andreas@futurememories.se"
     },
-    "mikael": {
-      "name": "Mikael Hellqvist",
-      "image": "team/mikael-hellqvist.jpg",
-      "title": "Partner and CTO",
-      "desc": "Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
-      "phone": "+46 (0)723 411322",
-      "email": "mikael@futurememories.se"
-    },
     "viktor": {
       "name": "Viktor Hesselbom",
       "image": "team/viktor-hesselbom.jpg",
@@ -1256,6 +1250,14 @@
       "desc": "Partner and Lead Web/Unity developer. Experienced frontend developer with the mindset of a technical artist.",
       "phoneOld": "+46 (0)732 628555",
       "email": "viktor@futurememories.se"
+    },
+    "mikael": {
+      "name": "Mikael Hellqvist",
+      "image": "team/mikael-hellqvist.jpg",
+      "title": "Partner and CTO",
+      "desc": "Partner and CTO. 20 years of creating digital experiences, mostly iOS nowadays.",
+      "phone": "+46 (0)723 411322",
+      "email": "mikael@futurememories.se"
     },
     "pontus": {
       "name": "Pontus Börjesson",
@@ -1265,25 +1267,11 @@
       "phoneOld": "+46 (0)707 959011",
       "email": "pontus@futurememories.se"
     },
-    "hannah": {
-      "name": "Hannah Miklin",
-      "image": "team/hannah-miklin.jpg",
-      "title": "UX and Service Designer",
-      "desc": "Interaction Designer with background in Information Systems. Creating amazing digital experiences with a user centric approach.",
-      "email": "hannah@futurememories.se"
-    },
-    "careers": {
-      "button": true,
-      "type": "link",
-      "label": "Come and work with us!",
-      "to": "/careers"
-    },
-    "erica": {
-      "name": "Erica Liljeblad",
-      "image": "team/erica-liljeblad.jpg",
-      "title": "Web Developer",
-      "desc": "Web Developer with 5+ years of experience. Fluent in React and other modern web technologies.",
-      "email": "erica@futurememories.se"
+    "lisa": {
+      "name": "Lisa Höjlund",
+      "image": "team/lisa-hojlund.jpg",
+      "desc": "Senior UX & Service designer with extensive experience in digitization strategies and an energy that is very contagious.",
+      "email": "lisa@futurememories.se"
     },
     "pa": {
       "name": "P-A Gustafsson",
@@ -1293,27 +1281,12 @@
       "phone": "+46 (0)760 338822",
       "email": "pa@futurememories.se"
     },
-    "martin": {
-      "name": "Martin Egri",
-      "image": "team/martin-egri.jpg",
-      "title": "Senior Developer",
-      "desc": "Senior Developer who has been building cloud-based services and platforms for more than eight years.",
-      "phoneOld": "+46 (0)763 490500",
-      "email": "martin@futurememories.se"
-    },
-    "mattias": {
-      "name": "Mattias Lönn",
-      "image": "team/mattias-lonn.jpg",
-      "title": "Web Developer",
-      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
-      "email": "mattias@futurememories.se"
-    },
-    "anders": {
-      "name": "Anders Dewrang",
-      "image": "team/anders-dewrang.jpg",
-      "title": "Design Director and Partner",
-      "desc": "Design Director and Partner. Award winning designer with years of experience in digital media.",
-      "email": "anders@futurememories.se"
+    "hannah": {
+      "name": "Hannah Miklin",
+      "image": "team/hannah-miklin.jpg",
+      "title": "UX and Service Designer",
+      "desc": "Interaction Designer with background in Information Systems. Creating amazing digital experiences with a user centric approach.",
+      "email": "hannah@futurememories.se"
     },
     "erik": {
       "name": "Erik Hallgren",
@@ -1321,6 +1294,12 @@
       "title": "Partner and UX Director",
       "desc": "Partner and UX Director. 10 years of tailoring ideas into products and services that make both users and businesses happy.",
       "email": "erik@futurememories.se"
+    },
+    "careers": {
+      "button": true,
+      "type": "link",
+      "label": "Come and work with us!",
+      "to": "https://jobs.futurememories.se"
     },
     "linda": {
       "name": "Linda Däldborg Leech",
@@ -1330,12 +1309,19 @@
       "phone": "+46 (0)723 413151",
       "email": "linda@futurememories.se"
     },
-    "donovan": {
-      "name": "Donovan Söderlund",
-      "image": "team/donovan-soderlund.jpg",
-      "title": "Senior Mobile Developer",
-      "desc": "Senior Mobile Developer and a true software craftsman. iOS is his platform of choice.",
-      "email": "donovan@futurememories.se"
+    "anders": {
+      "name": "Anders Dewrang",
+      "image": "team/anders-dewrang.jpg",
+      "title": "Design Director and Partner",
+      "desc": "Design Director and Partner. Award winning designer with years of experience in digital media.",
+      "email": "anders@futurememories.se"
+    },
+    "mattias": {
+      "name": "Mattias Lönn",
+      "image": "team/mattias-lonn.jpg",
+      "title": "Web Developer",
+      "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
+      "email": "mattias@futurememories.se"
     },
     "robert": {
       "name": "Robert Karlsson",
@@ -1343,6 +1329,13 @@
       "title": "Senior Frontend Developer",
       "desc": "Robert is an experienced Frontend Engineer and Tech Lead with background in interactive design.",
       "email": "robert@futurememories.se"
+    },
+    "donovan": {
+      "name": "Donovan Söderlund",
+      "image": "team/donovan-soderlund.jpg",
+      "title": "Senior Mobile Developer",
+      "desc": "Senior Mobile Developer and a true software craftsman. iOS is his platform of choice.",
+      "email": "donovan@futurememories.se"
     },
     "availablepositions": {
       "disabled": true,
@@ -1367,7 +1360,7 @@
     },
     {
       "label": "Careers",
-      "to": "/careers"
+      "to": "https://jobs.futurememories.se"
     }
   ],
   "teamPictures": {
