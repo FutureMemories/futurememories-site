@@ -187,8 +187,18 @@
       "futurememories": "Future Memories ligger bakom utvecklingen och underhållet av Bandbonds egna appar för iOS och Android. Att designa och utveckla appen är ett pågående samarbete med våra vänner på <a href='https://www.madinsweden.com/' target='_blank' rel='noopener noreferrer'>Mad in Sweden</a> and <a href='https://bandbond.com/' target='_blank' rel='noopener noreferrer'>Bandbond</a>. Vi rockar helt enkelt."
     },
     "picadeli": {
-      "title": "",
-      "desc": "En digital mise en place där sortimentet aldrig tar slut tack vare vårt automatiserade och användarvänliga lagerhållningssystem."
+      "name": "Picadeli",
+      "title": "Picadeli",
+      "subtitle": "Framtidens snabbmat",
+      "type": "UX/UI, python, branding",
+      "aboutTitle": "Sveriges smartaste mat.",
+      "aboutText": "Picadeli erbjuder salladsbarer på plats i butiker över hela Sverige. En högteknologisk, digitaliserad matbar med stort fokus på matsäkerhet med rätt luftflöden. En smart lösning för både kunder och anställda i butik.",
+      "expressOrderTitle": "Sälj \bmest\b bäst.",
+      "expressOrderText":  "Vi har designat om express-ordersystem som används av alla Picadelis kundansvariga, där syftet är att hjälpa butikerna att möta sina förbrukningsbehov och ge skräddarsydda rekommendationer för varje butik.\n\nUtformat utifrån gamification som motiverar säljarna att öka omsättningen genom order- och samtalstracking. Ett smidigare sätt att hantera kunderna, med tydlig överblick på en och samma skärm. Det handlar inte om att sälja mest, utan att sälja bäst.\n\nOrdersystemet är framtaget som en webbapp som primärt kommer att användas i desktop.",
+      "djungleTitle": "En Zebra i matdjungeln.",
+      "djungleText": "För att hålla råvaror färska, ta hand om matsäkerheten och öka kundnöjdheten krävs precision in i minsta detalj. Picadeli löser detta med matplanerings-enheten Zebra. Syftet med Zebran är att minska matsvinn genom god översikt av lagerförbukning, utgångsdatum och färskvaruhantering. Med hjälp av machine learning så kan butiken beställa precis så mycket som kommer gå åt i närmsta framtiden. Vi har under ett längre samarbete tagit fram ny UX & UI design för användargränssnittet i Zebran för att öka igenkänning, stärka varumärket och förbättra användarresan för Picadelis butiksansvariga. Användartester, observationer och intervjuer med butikspersonal och anställda på Picadeli har bidragit till ny funktionalitet, smidigare inventeringsflöden och mer precis orderläggning.",
+      "pointsOfSaleTitle": "Smakfull självservice.",
+      "pointsOfSaleText": "För Picadelis konceptrestaurang på Hötorget i Stockholm har vi tagit fram en digital självservicekassa där kunden kan väga sin mat, lägga till dryck, fika och annat samt betala själv på ett smidigt sätt.\nVi hjälpte även till att utforma det fysiska flödet i restaurangen."
     },
     "proflight": {
       "title": "",
