@@ -79,6 +79,7 @@ export default class extends Component {
               title={content.djungleTitle}
               text={<span className={s.gray}>{content.djungleText}</span>}
               inView='inViewRight'
+              modifier='picadeli'
             />
 
             <div className={s.uiSection}>
