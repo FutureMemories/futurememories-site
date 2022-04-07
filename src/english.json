@@ -461,7 +461,7 @@
         "height"
       ],
       "title": "Picadeli",
-      "subtitle": "Future of fast food",
+      "subtitle": "The future of fast food",
       "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning.",
       "client": "Picadeli",
       "type": "UX/UI, python, branding",
@@ -475,14 +475,14 @@
           "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
-      "aboutTitle": "Swedens most intelligent food.",
-      "aboutText": "Picadeli offers salladbars on site in shops all over Sweden. A high technology, digitalized foodbar with a focus on food safety with correct air flows. A smart solution for both customers and employees.",
-      "expressOrderTitle": "Sell \bmost\b best.",
-      "expressOrderText":  "Sint anim reprehenderit quis nostrud minim aliquip elit id laboris laborum ipsum id. Dolor do occaecat sint eiusmod fugiat Lorem proident pariatur ea incididunt consequat nostrud laborum aliqua. Reprehenderit eiusmod magna velit sit veniam veniam cillum est anim officia. Veniam incididunt quis sit occaecat ut magna eiusmod proident anim duis. Aliqua quis irure amet cillum anim qui ex aliquip pariatur tempor nisi veniam mollit. Dolor anim commodo magna ex deserunt amet et.",
+      "aboutTitle": "Swedens smartest food.",
+      "aboutText": "Picadeli offers salladbars on site in stores all over Sweden. A high technology, digitized food bar with a focus on food safety with correct air flows. An intelligent solution for both customers and employees.",
+      "expressOrderTitle": "Sell the \bmost\b best.",
+      "expressOrderText":  "We redesigned the express order system that is used by all of Picadelis store managers, where the purpose is to help the stores to meet their demands and needs through recommendations.\n\nDeveloped with gamification in mind that will motivate salespersons to increase revenue through order and dialogue tracking. A more flexible way to manage clients with an overview in the same dashboard. It's not about selling the most, it's about being the best.\n\nThe system is developed as a web application that will primarly be served on desktop devices.",
       "djungleTitle": "A Zebra in the fast food jungle.",
-      "djungleText": "Occaecat laborum ullamco ipsum consectetur laboris ipsum ad do nostrud eiusmod ut. Sit officia amet consequat irure ullamco laborum do eiusmod laborum tempor. Occaecat consequat nostrud ex quis consequat proident nisi laboris ipsum. Sunt irure qui magna aliqua duis dolor dolore. Dolore veniam proident pariatur sit in quis nostrud elit et occaecat adipisicing ut.",
-      "pointsOfSaleTitle": "Tasty self-service.",
-      "pointsOfSaleText": "Ut deserunt et nisi irure irure. Dolor reprehenderit laboris pariatur mollit occaecat eu labore aliquip nulla cupidatat Lorem ad sit do. Labore pariatur esse enim irure nulla ullamco minim irure minim tempor occaecat est."
+      "djungleText": "To keep produce fresh, safe and increase customer happiness demands the utmost precision. Picadeli solves this with the food planning application Zebra. The purpose of the Zebra is to decrease food waste through careful monitoring of inventory consumption, expiration dates and fresh procude handling. With the help of machine learning the stores are able to predict and order the precise amount needed to meet the demand. Through an extensive cooperation we've developed a new user experience and interface for the Zebra to increase recognition, strengthen the brand and improve the user journey for Picadelis store managers. User tests, observations and interviews with store personnel and employees at Picadeli have contributed to new functionality, easier stocktaking and more precise order book.",
+      "pointsOfSaleTitle": "Delightful self service.",
+      "pointsOfSaleText": "At Picadelis concept restaurant at Hötorget, Stockholm we've developed a digital self service checkout. Where the customer can weigh their food, add beverages, condiments and more as well as checkout on their own.\nWe also developed the layout and flow of the physical restaurant."
     },
     "proflight": {
       "name": "proFLIGHT",
