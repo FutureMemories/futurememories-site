@@ -7,7 +7,7 @@ export default ({ blocks, title, text, background = '', color = '', backgroundLe
     style={{ background, color }}
   >
     {blocks.map((block, i) => (
-      <div class={s.block} style={{ background: i === 1 && backgroundLeft }} key={`side-by-side-block_${i}`}>
+      <div class={cx(s.block, inView)} style={{ background: i === 1 && backgroundLeft }} key={`side-by-side-block_${i}`}>
         {block.image && <img src={require(`../../images/${block.image}`)} alt={block.title} />}
         {block.title && <h2>{block.title}</h2>}
         {block.text && (

@@ -17,6 +17,7 @@ import Bandbond from './cases/bandbond'
 import Barseback from './cases/barseback'
 import BauerUniversity from './cases/bauer-university'
 import CaseComponents from './cases/components'
+import CentralPadelNordic from './cases/central-padel-nordic'
 import Eyescanner from './cases/eyescanner'
 import Kludd from './cases/kludd'
 import MatSe from './cases/mat-se'
@@ -120,6 +121,7 @@ export default class extends Component {
         <Barseback path={root + '/cases/barseback'} data={languageData} root={root} />
         <BauerUniversity path={root + '/cases/bauer-university'} data={languageData} root={root} />
         <CaseComponents path={root + '/cases/__components'} data={languageData} root={root} />
+        <CentralPadelNordic path={root + '/cases/central-padel-nordic'} data={languageData} root={root} />
         <CountTheEggsChallenge path={root + '/count-the-eggs'} data={languageData} root={root} />
         <Eyescanner path={root + '/cases/eyescanner'} data={languageData} root={root} />
         <FrontendChallenge path={root + '/frontend-challenge'} data={languageData} root={root} />
