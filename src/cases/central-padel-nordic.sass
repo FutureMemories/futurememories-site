@@ -1,0 +1,33 @@
+@import '../settings.sass'
+@import '../animations.sass'
+
+.view
+  background: #FFFFFF
+  color: $color-darker-blue
+  width: 100%
+  position: relative
+  padding-top: 14rem
+
+  > .inner
+    overflow: hidden
+
+
+  .brandBlock
+    display: grid
+    grid-template-columns: 1fr
+
+    @media screen and (min-width: $breakpoint-desktop)
+      grid-template-columns: 1fr 1fr
+      grid-template-areas: "first second" "first third"
+
+      :nth-child(1)
+        grid-area: first
+
+      :nth-child(2)
+        grid-area: second
+
+      :nth-child(3)
+        grid-area: third
+
+    img
+      width: 100%

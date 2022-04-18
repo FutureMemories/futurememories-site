@@ -22,7 +22,8 @@
         "stc",
         "picular",
         "retts-plus",
-        "nyctea"
+        "nyctea",
+        "central-padel-nordic"
       ]
     },
     "design": {
@@ -51,7 +52,8 @@
         "we-are-voice",
         "nordish-market",
         "bauer-university",
-        "picular"
+        "picular",
+        "central-padel-nordic"
       ]
     },
     "app": {
@@ -132,7 +134,8 @@
         "nordish-market",
         "barseback",
         "weekly-revolt",
-        "nyctea"
+        "nyctea",
+        "central-padel-nordic"
       ]
     }
   },
@@ -1233,6 +1236,31 @@
       "lowerCost": "We lower the cost and complexity of production, analysis & delivery of biomedicine.",
       "possibleTitle": "\bIm\bpossible.",
       "possibleText": "A brand new visual identity for Nyctea Technologies that conveys its mission to bring true and lasting change to the biomedic scene.\n\nThe Nyctea brand has people at its heart, and our design team created an expressive brand symbol combined with colors that embodies this. Attached to the nordic roots, inspired by a snow-owl – it represents health and innovation to the core."
+    },
+    "central-padel-nordic": {
+      "name": "Central Padel Nordic",
+      "title": "Central Padel Nordic",
+      "imageBgBeforeHover": [
+        "cases/cpn-thumb-1.png"
+      ],
+      "imageBg": [
+        "cases/cpn-thumb-2.png",
+        "height"
+      ],
+      "subtitle": "A true padel experience.",
+      "desc": "A unique padel experience where the human interaction is at the center.",
+      "type": "Branding, Web",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "#1C5144"
+        }
+      ],
+      "lifestyleTitle": "A lifestyle for few – a sport for everyone.",
+      "lifestyleText": "A racket sport played on an artificial turf surrounded by glass walls - a mix between tennis and squash says a lot. The fun thing about paddle is that the development curve is steep and you become a good player pretty quickly.\n\nWhat is also positive is that the sport is less tiring for the body, which has made the top players in the world much older than in other racket sports.",
+      "perfectMatchTitle": "The perfect match.",
+      "perfectMatchText": "CPN offers four exclusive courses in absolute world class condition and environment. High quality has been the key word throughout the work of building this new brand."
     }
   },
   "notUsedCases": {

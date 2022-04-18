@@ -540,6 +540,24 @@
       "aboutText": "Nyctea Technologies strävar efter att radikalt sänka kostnaden och komplexiteten på produktion, analys och leverans av biomedicin – genom att introducera en unik produktionsinnovation låser de upp ett stort antal nya behandlingar.",
       "possibleTitle": "\bO\bmöjligt.",
       "possibleText": "En helt ny visuell identitet för Nyctea Technologies som förmedlar sitt uppdrag att leverera sann och bestående förändring till den biomedicinska scenen.\n\nVarumärket Nyctea har människor i fokus, och vårt designteam skapade en uttrycksfull varumärkessymbol i kombination med färger som förkroppsligar detta. Fäst vid de nordiska rötterna, inspirerad av en snöuggla – representerar den hälsa och innovation i grunden."
+    },
+    "central-padel-nordic": {
+      "name": "Central Padel Nordic",
+      "title": "Central Padel Nordic",
+      "subtitle": "En äkta padelupplevelse.",
+      "desc": "En unik padelupplevelse där mänskliga interaktionen är i centrum.",
+      "type": "Branding, Web",
+      "showcase": true,
+      "style": [
+        {
+          "color": "#FFFFFF",
+          "background": "#1C5144"
+        }
+      ],
+      "lifestyleTitle": "En livsstil för några få – en sport för alla.",
+      "lifestyleText": "En racketsport som spelas på konstgjort gräs omgivet av glasväggar - en mix mellan tennis och squash säger en hel del. Det som gör padel så roligt är att inlärningskurvan är brant och att man snabbt kommer in i game:et.\n\nEn annan positiv egenskap är att sporten är mindre slitsam på kroppen och tröttar inte ut dig lika fort. Tittar man på toppspelarna i världen kan man se att genomsnitts åldern är högre än andra racketsporter.",
+      "perfectMatchTitle": "En perfekt matchning.",
+      "perfectMatchText": "CPN erbjuder fyra exklusiva kurser i absolut världsklass. Hög kvalitet har varit nyckelorden genom arbetat av detta brand."
     }
   },
   "notUsedCases": {

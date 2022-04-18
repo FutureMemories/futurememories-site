@@ -88,6 +88,7 @@
 
     @media screen and (min-width: $small-grid)
       flex-direction: row-reverse
+  
 
     .block
       display: flex
@@ -100,3 +101,19 @@
 
     img
       display: block
+      
+  &.central-padel-nordic,
+  &.central-padel-nordic-reverse
+    flex-direction: column
+
+    @media screen and (min-width: $small-grid)
+      flex-direction: row
+
+    img
+      display: block
+
+  &.central-padel-nordic-reverse
+    flex-direction: column-reverse
+
+    @media screen and (min-width: $small-grid)
+        flex-direction: row
