@@ -468,15 +468,11 @@
         "height"
       ],
       "title": "Picadeli",
-      "subtitle": "Framtidens snabbmat",
-      "desc": "Salad bars that never run out of supplies thanks to automated procurement and stock planning.",
+      "subtitle": "Fast food de la future",
+      "desc": "A new look for the Gothenburg based startup and online grocery shopping service.",
       "client": "Picadeli",
-      "type": "Service Design, UX, UI, iOS, Food Tech",
+      "type": "UX/UI, python, branding",
       "showcase": true,
-      "imageBg": [
-        "cases/eyescanner-thumb.png",
-        "height"
-      ],
       "style": [
         {
           "color": "#ffffff",
@@ -486,23 +482,14 @@
           "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
         }
       ],
-      "altImageApp1": "Screenshot from the Picadeli app: Todo list",
-      "altImageApp2": "Screenshot from the Picadeli app: Menu",
-      "altImageApp3": "Screenshot from the Picadeli app: Messages list",
-      "altImageApp4": "Screenshot from the Picadeli app: Inventory",
-      "altImageApp5": "Screenshot from the Picadeli app: Message",
-      "aboutTitle": "Sektion om Zebrans användning i butik",
-      "aboutText": "Magna quis at quam nullam quam. In consectetur cursus et, amet neque urna nunc id. Nec in enim non sed eget vitae. Adipiscing egestas nisl pellentesque bibendum ultrices sed libero condimentum nisi. Nibh at libero etiam ultrices sollicitudin hac pellentesque purus. Aliquet congue phasellus vulputate velit posuere velit.",
-      "visitTheSite": "Visit website",
-      "expressOrderTitle": "Sektion om deras express order",
-      "expressOrderText": "Magna quis at quam nullam quam. In consectetur cursus et, amet neque urna nunc id. Nec in enim non sed eget vitae. Adipiscing egestas nisl pellentesque bibendum ultrices sed libero condimentum nisi. Nibh at libero etiam ultrices sollicitudin hac pellentesque purus. Aliquet congue phasellus vulputate velit posuere velit.\nMagna quis at quam nullam quam. In consectetur cursus et, amet neque urna nunc id. Nec in enim non sed eget vitae. Adipiscing egestas nisl pellentesque bibendum ultrices sed libero condimentum nisi. Nibh at libero etiam ultrices sollicitudin hac pellentesque purus. Aliquet congue phasellus vulputate velit posuere velit.",
-      "aboutDesignTitle": "Headline should be displayed here.",
-      "aboutDesignText": "Morbi penatibus id velit auctor id ac netus a libero. Vel scelerisque id curabitur dignissim. Ullamcorper ornare facilisis pretium enim eu. Lectus magnis diam et tempor lacus nullam orci, convallis diam. Enim tempor, justo, et risus et integer tortor.",
-      "altImageBrand1": "Eyescanner brand, app icon",
-      "altImageBrand2": "Eyescanner brand, icons",
-      "altImageBrand3": "Eyescanner brand, font example",
-      "aboutTitle2": "Point of sale info here.",
-      "aboutText2": "Morbi penatibus id velit auctor id ac netus a libero. Vel scelerisque id curabitur dignissim. Ullamcorper ornare facilisis pretium enim eu. Lectus magnis diam et tempor lacus nullam orci, convallis diam. Enim tempor, justo, et risus et integer tortor."
+      "aboutTitle": "Intelligent food.",
+      "aboutText": "Picadeli offers salladbars on site in stores all over Sweden. A high technology, digitized food bar with a focus on food safety with correct air flows. An intelligent solution for both customers and employees. The success in Sweden is now going global with Finland, France and Germany conquered Picadeli is now starting the journey in US with salad bars in New York and Washington DC.",
+      "expressOrderTitle": "\bMost\b best sales.",
+      "expressOrderText":  "We redesigned the express order system that is used by the whole Picadeli team store managers, where the purpose is to help the stores to meet their demands and needs through recommendations. \n\nDeveloped with gamification in mind that will motivate salespersons to increase revenue through order and dialogue tracking. A more flexible way to manage clients with an overview in the same dashboard. \n\nIt's not about selling the most, it's about being the best. The system is developed as a web application that will primarily be served on desktop devices.",
+      "djungleTitle": "A Zebra in the food jungle.",
+      "djungleText": "In order to keep raw materials fresh, take care of food safety and increase customer satisfaction, we nailed precision down to the smallest detail. Picadeli solves this with the Zebra scanning unit. The purpose of the Zebra is to reduce food waste through a good overview of stock consumption, expiration date and fresh produce handling. With the help of machine learning, the store can order just as much needed in the near future. During an extensive collaboration, we have developed a new UX & UI design for the user interface in the Zebra to increase recognition, strengthen the brand and improve the user journey for Picadeli's store managers. User tests, observations and interviews with store staff and employees at Picadeli have contributed to new functionality, smoother inventory flows and more precise order placement.",
+      "pointsOfSaleTitle": "Tasteful self-service.",
+      "pointsOfSaleText": "For Picadeli's concept restaurant at Hötorget in Stockholm, we have developed a digital self-service cash register where the customer can weigh their food, add drinks, coffee and more to pay for themselves in a smooth way.\nWe also helped design the physical flow in the restaurant."
     },
     "proflight": {
       "name": "proFLIGHT",
