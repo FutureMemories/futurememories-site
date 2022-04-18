@@ -501,15 +501,17 @@
       "companyGrowthText": "Grundarna till Weekly Revolt, Jonathan och Louise,  tyckte det saknades en träningsform som funkar för alla som vill uppnå bättre träningsresultat på hemmaplan, utan att gå över gränsen kring vad som är rimligt. De tycker att många hälsoprogram idag har en för aggressiv approach och ville ta fram ett alternativ som håller i längden. De hade själva svårt att få ihop vardagen med träning, jobb och små barn. Ur deras idé växte Weekly Revolt fram.\n\nMindre än ett år senare har programmet passerat över 3000 deltagare och Weekly Revolt börjar bli en rörelse som verkligen gör skillnad för människor, både fysiskt och psykiskt.\n\nWeekly Revolt växer lavinartat via den digitala communityn. - Detta är ett kvitto på att modellen verkligen fungerar, säger Jonathan.\n\nHäng med på resan!"
     },
     "kludd": {
-      "subtitle": "Write together.",
-      "desc": "",
-      "aboutTitle": "Sharing is caring.",
-      "aboutText": "When we write, we sometimes benefit from a extra pair of eyes or two. An editor, a publisher, a client or a friend. In Kludd, you write, share and create together. Your script, novel, story, essay or poem.",
+      "subtitle": "Skriv tillsammans.",
+      "desc": "Skriv, dela och skapa tillsammans.",
+      "aboutTitle": "Delad lycka = dubbel lycka.",
+      "aboutText": "När vi skriver har vi ibland nytta av ett extra par ögon eller två. \nEn redaktör, en förläggare, en kund eller en vän. I Kludd skriver, delar och skapar ni tillsammans. Ditt manus, roman, berättelse, essä eller dikt.",
       "visitTheSite": "Prova Kludd",
-      "whyTitle": "Why we created Kludd",
-      "whyText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque.",
-      "brandTitle": "Headline should be here",
-      "brandText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper parturient id egestas lacus tortor, pharetra, laoreet sit. Porttitor ullamcorper nascetur elementum augue. Aliquam ut lectus aliquam dignissim mauris quis. Nisl imperdiet diam vitae commodo tempus, vivamus tempor varius adipiscing cras in. Adipiscing malesuada porta sollicitudin cursus. Enim enim purus porta nibh quis felis rhoncus scelerisque."
+      "whoTitle": "Vem är det till för?",
+      "whoText": "Alla som skriver, egentligen. Du behöver inte många verktyg för att göra ett bra jobb. Du behöver bara rätt verktyg. Penna + papper och därefter skrivmaskinen har fungerat bra väldigt länge, med Kludd skapar vi en brygga däremellan så att vi kan engagera fler, när man är redo för det.\nTills dess är skrivandet så lugnt och effektivt i Kludd som det borde vara.",
+      "collaborateTitle": "Samarbeta, överallt.",
+      "collaborateText": "Manusförfattare. Romanförfattare. Journalister. Studenter. Copywriters. Eller någon som bara gillar att skriva. Tillsammans utarbetar, redigerar och skriver du när som helst och var som helst. Eller dra dig tillbaka, arbeta med dina redigeringar ensam och bjud in någon annan att hjälpa till när det är dags.\n\nHoppa rakt in, från vilken enhet, platform och plats som helst. Arbeta med dina egna saker eller recensera och redigera något du redan samarbetar med. Ditt bibliotek är med dig var du än befinner dig.",
+      "nonDistractionTitle": "Distraherings-fri zon.",
+      "nonDistractionText": "Den kreativa riktningen grundades på en solid designbas, där färgerna optimerades för alla miljöer med den bästa mängden kontrast, anpassad ikonografi och en rak tone of voice.\n\nEftersom Kludd skapades från grunden av vårt eget team var vår utgångspunkt att identifiera användarna, arbeta tillsammans med dem för att förstå deras behov och definiera sätt att implementera det i produkten.\n\nKludd är för närvarande i beta men testa gärna själv:"
     },
     "eyescanner": {
       "subtitle": "AI-baserad app för drogtestning",
