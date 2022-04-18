@@ -21,6 +21,7 @@ import Eyescanner from './cases/eyescanner'
 import Kludd from './cases/kludd'
 import MatSe from './cases/mat-se'
 import NordishMarket from './cases/nordish-market'
+import Nyctea from './cases/nyctea'
 import Paykartan from './cases/paykartan'
 import Picadeli from './cases/picadeli'
 import Picular from './cases/picular'
@@ -125,6 +126,7 @@ export default class extends Component {
         <Kludd path={root + '/cases/kludd'} data={languageData} root={root} />
         <MatSe path={root + '/cases/mat-se'} data={languageData} root={root} />
         <NordishMarket path={root + '/cases/nordish-market'} data={languageData} root={root} />
+        <Nyctea path={root + '/cases/nyctea'} data={languageData} root={root} />
         <Paykartan path={root + '/cases/paykartan'} data={languageData} root={root} />
         <Picadeli path={root + '/cases/picadeli'} data={languageData} root={root} />
         <Picular path={root + '/cases/picular'} data={languageData} root={root} />

@@ -1,0 +1,31 @@
+@import '../settings.sass'
+
+.view
+  position: relative
+  background: white
+  color: #070B13
+  width: 100%
+  padding-top: 14rem
+
+  .lowerCost
+    display: grid
+    grid-template-columns: auto
+    grid-gap: 50px
+
+    @media screen and (min-width: $breakpoint-desktop)
+      grid-template-columns: auto 1fr
+      grid-or
+
+      img
+        order: -1
+
+  .strike
+    text-decoration: line-through
+
+@keyframes animateInCard
+  from
+    opacity: 0
+    transform: translateY(var(--transformStart))
+  to
+    opacity: 1
+    transform: translateY(var(--transformEnd))

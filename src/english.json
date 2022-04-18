@@ -21,7 +21,8 @@
         "annotell",
         "stc",
         "picular",
-        "retts-plus"
+        "retts-plus",
+        "nyctea"
       ]
     },
     "design": {
@@ -130,7 +131,8 @@
         "wya-network",
         "nordish-market",
         "barseback",
-        "weekly-revolt"
+        "weekly-revolt",
+        "nyctea"
       ]
     }
   },
@@ -1203,6 +1205,34 @@
       "altImageApp2": "Screenshot from Eyescanner iOS app: Face recognition",
       "altImageApp3": "Screenshot from Eyescanner iOS app: Negative result",
       "altImageApp4": "Screenshot from Eyescanner iOS app: Positive result"
+    },
+    "nyctea": {
+      "name": "Nyctea Technologies",
+      "title": "Nyctea Technologies",
+      "subtitle": "Affordable medecine",
+      "desc": "A new technology platform for improved production of biopharmaceuticals.",
+      "type": "Branding",
+      "showcase": true,
+      "imageBgBeforeHover": [
+        "cases/nyctea-thumb.png"
+      ],
+      "imageBg": [
+        "cases/nyctea-thumb-2.png",
+        "height"
+      ],
+      "style": [
+        {
+          "color": "#070B13"
+        },
+        {
+          "background": "linear-gradient(289.91deg, rgba(205, 225, 227, 0.6) 0%, rgba(205, 225, 227, 0.6) 100%)"
+        }
+      ],
+      "aboutTitle": "A world with affordable medicine.",
+      "aboutText": "Nyctea Technologies aims to radically lower the cost and complexity of production, analysis and delivery of biomedicine – by introducing a unique production innovation they unlock a huge number of new treatments.",
+      "lowerCost": "We lower the cost and complexity of production, analysis & delivery of biomedicine.",
+      "possibleTitle": "\bIm\bpossible.",
+      "possibleText": "A brand new visual identity for Nyctea Technologies that conveys its mission to bring true and lasting change to the biomedic scene.\n\nThe Nyctea brand has people at its heart, and our design team created an expressive brand symbol combined with colors that embodies this. Attached to the nordic roots, inspired by a snow-owl – it represents health and innovation to the core."
     }
   },
   "notUsedCases": {
