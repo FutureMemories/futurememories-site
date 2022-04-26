@@ -1123,16 +1123,16 @@
         }
       ],
       "aboutTitle": "A healthier lifestyle in 66 days",
-      "aboutText": "The digital community Weekly Revolt, is a movement for healthier habits. It doesn’t matter if you already are a high performing athlete or begin straight from the couch.\n\nAccording to research, it takes 66 days to break a habit. During this period of time, Weekly Revolt provides you with all the tools you need to change your lifestyle for the better by improving your physical and mental well-being.\n\nWeekly Revolt is tailored for people living a normal life. Combining training with your professional life, taking care of children and daily chores can be exhausting. Instead, they offer a sustainable alternative to the traditional training programme, fitted to your own schedule and your way of life. There’s no need to commute to the gym. In the app, they provide you with first class coaching, tasty recipes and new challenges every week.",
+      "aboutText": "Weekly Revolt is a movement for healthier habits. It doesn’t matter if you already are an athlete or begin straight from the couch.\n\nAccording to research, it takes 66 days to break a habit. During this period of time, Weekly Revolt provides you with all the tools you need to change your lifestyle for the better by improving your physical and mental well-being.\n\nWeekly Revolt is tailored for normal people. Combining training with your professional life, family and daily chores can be exhausting. Weekly Revolt offers a sustainable alternative to the traditional training programme, fitted to your schedule. There’s no need to commute to the gym. In the app, they provide you with first class coaching, tasty recipes and new challenges every week.",
       "visitTheSite": "Visit website",
       "designAndManerTitle": "Design & Identity",
-      "designAndManerText": "We took the drama out of the harsh boot camp concept that is ever so often recurring in time- based training programmes. Instead, we gave life to an inviting, friendly and playful design. \n\nWeekly Revolt is for anyone to join. Our main focus was therefore to take the stereotypical harshness out of the equation. We gave shape to an inclusive design by using warm colours and softer shapes to increase a sense of positivity sprung by motivation. And what can be more motivating than a snack? Colours are inspired by the healthy goodies recommended in the recipe section; Banana Snack, Chocolate Shake, Raspberry Smoothie and Spinach Salad are just a few elements that set the colours to the palette. Yum!",
+      "designAndManerText": "We took the drama out of the harsh boot camp concept that is ever so often recurring in time- based training programmes. Instead, we gave life to an inviting, friendly and playful design. \n\nAnyone can join Weekly Revolt. Our main focus was to take the stereotypical harshness out of the equation. We gave shape to an inclusive design by using warm colours and softer shapes to increase a sense of positivity sprung by motivation. And what can be more motivating than a snack? Colours are inspired by the healthy goodies from the recipe section; Banana Snack, Chocolate Shake, Raspberry Smoothie and Spinach Salad are just a few elements that set the colours to the palette. Yum!",
       "motivatingImprovementsContent": [
-        {"title": "A motivating user journey", "text": "The main purpose of the app is to motivate you to reach your personal set goals. You check off your completed challenges, fill in your training diary and send messages to yourself for the future. The recipe section gives you access to a huge amount of healthy, nurturing and fun recipes to take you through the day.\n\nEvery week you unlock new challenges with professional instructions inside. Weekly Revolt makes it easy for you to follow your progress every week in the diary and gives you a chance to reflect on and enjoy the results of your transformation."},
+        {"title": "A motivating user journey", "text": "The main purpose of the app is to motivate you to reach your personal set goals. You check off your completed challenges, fill in your training diary and send messages to yourself for the future. The recipe section gives you access to a huge amount of healthy, nurturing and fun recipes to take you through the day.\n\nEvery week you unlock new challenges with professional instructions. Weekly Revolt makes it easy for you to follow your progress every week in the diary and gives you a chance to enjoy the results of your transformation."},
         {"title": "Continuous improvements", "text": "The app was designed for high scalability. It is constantly growing along with its number of users.\n\nShortly after the first release, we planned for the next. With the help of Weekly Revolt's members, we continuously collect fantastic user feedback via social media.  We iterate on new versions continuously.\n\nThe service is developed in close collaboration between our UX and UI designers together with Weekly Revolt. Weekly Revolt is growing rapidly, which places high demands on responsiveness and an iterative process to develop and evaluate new concepts and to help members to create and maintain a lifestyle change that lasts a lifetime."}
       ],
       "companyGrowthTitle": "A growing movement",
-      "companyGrowthText": "The founders of Weekly Revolt, Jonathan and Louise, knew there was a lacking form of exercise programmes on the market that worked for normal people. Their ideal health programme needed a softer approach without compromising on any results. They wanted to create a sustainable alternative and remove the aggressiveness out of the boot camp.\n\nLess than a year after their initial idea, Weekly Revolt had more than 3000 members.\n\nJoin the movement!"
+      "companyGrowthText": "The founders of Weekly Revolt, Jonathan and Louise, knew there was a gap on the market that works for normal people. Their ideal health programme needed a softer approach without compromising on results.\n\nLess than a year after their initial idea, Weekly Revolt had more than 3000 members.\n\nJoin the movement!"
     },
     "kludd": {
       "name": "Kludd",
@@ -1163,7 +1163,7 @@
       "aboutTitle": "Sharing is caring.",
       "aboutText": "When we write, we sometimes benefit from a extra pair of eyes or two. An editor, a publisher, a client or a friend. In Kludd, you write, share and create together. Your script, novel, story, essay or poem.",
       "visitTheSite": "Try Kludd",
-      "whoTitle": "Who’s it for?",
+      "whoTitle": "Who’s Kludd for?",
       "whoText": "Anyone who writes, really. You don't need all that many tools to do good work. You just need the right tools. We got along fine with only pen and paper and then the typewriter for quite some time, so Kludd just bridges the gap where you can get more people involved, when it's that time.\n\nUntil then, writing is as serene as efficient in Kludd as it should be.",
       "collaborateTitle": "Collaborate, anywhere.",
       "collaborateText": "Screenplay writers. Novelists. Journalists. Students. Copywriters. Or anyone who writes, really. Together, you elaborate, edit and rewrite whenever and wherever. Or withdraw, work on your edits alone and invite anyone else to help when it's time.\n\nKludd doesn't care about platforms or devices. Jump straight in, from any device and any location. Work on your own stuff or review and edit something you're already collaborating on. Your library is with you wherever you go.",
@@ -1215,7 +1215,7 @@
     "nyctea": {
       "name": "Nyctea Technologies",
       "title": "Nyctea Technologies",
-      "subtitle": "Affordable medecine",
+      "subtitle": "Affordable medicine",
       "desc": "A new technology platform for improved production of biopharmaceuticals.",
       "type": "Branding",
       "showcase": true,
@@ -1238,7 +1238,7 @@
       "aboutText": "Nyctea Technologies aims to radically lower the cost and complexity of production, analysis and delivery of biomedicine – by introducing a unique production innovation they unlock a huge number of new treatments.",
       "lowerCost": "We lower the cost and complexity of production, analysis & delivery of biomedicine.",
       "possibleTitle": "\bIm\bpossible.",
-      "possibleText": "A brand new visual identity for Nyctea Technologies that conveys its mission to bring true and lasting change to the biomedic scene.\n\nThe Nyctea brand has people at its heart, and our design team created an expressive brand symbol combined with colors that embodies this. Attached to the nordic roots, inspired by a snow-owl – it represents health and innovation to the core."
+      "possibleText": "A brand new visual identity for Nyctea Technologies that conveys its mission to bring true and lasting change to the biomedic scene.\n\nThe Nyctea brand has people at its heart, and our design team created an expressive brand symbol combined with colours that embodies this. Attached to the nordic roots, inspired by a snow owl – it represents health and innovation to the core."
     },
     "central-padel-nordic": {
       "name": "Central Padel Nordic",
