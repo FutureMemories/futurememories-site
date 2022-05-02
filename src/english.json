@@ -19,10 +19,10 @@
       "cases": [
         "eyescanner",
         "annotell",
+        "weekly-revolt",
         "stc",
         "picular",
         "retts-plus",
-        "nyctea",
         "central-padel-nordic"
       ]
     },
@@ -33,12 +33,14 @@
         "kludd",
         "eyescanner",
         "annotell",
+        "weekly-revolt",
         "stc",
         "proflight",
         "picular",
         "we-are-voice",
         "antistress",
-        "nordish-market"
+        "nordish-market",
+        "central-padel-nordic"
       ]
     },
     "web": {
@@ -113,8 +115,9 @@
         "annotell",
         "stc",
         "picadeli",
-        "bauer-university",
+        "weekly-revolt",
         "proflight",
+        "bauer-university",
         "mat-se",
         "we-are-voice",
         "bandbond",
@@ -134,8 +137,6 @@
         "wya-network",
         "nordish-market",
         "barseback",
-        "weekly-revolt",
-        "nyctea",
         "central-padel-nordic"
       ]
     }
@@ -1252,7 +1253,7 @@
       ],
       "subtitle": "A true padel experience.",
       "desc": "A unique padel experience where the human interaction is at the center.",
-      "type": "Branding, Web",
+      "type": "Branding, Design",
       "showcase": true,
       "style": [
         {
