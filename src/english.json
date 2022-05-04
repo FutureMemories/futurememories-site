@@ -23,7 +23,8 @@
         "stc",
         "picular",
         "retts-plus",
-        "central-padel-nordic"
+        "central-padel-nordic",
+        "nyctea"
       ]
     },
     "design": {
@@ -93,7 +94,7 @@
         "stc",
         "nordish-market",
         "sleep-cycle-dashboard",
-        "wya-network"
+          "wya-network"
       ]
     },
     "homegrown": {
@@ -137,7 +138,8 @@
         "wya-network",
         "nordish-market",
         "barseback",
-        "central-padel-nordic"
+        "central-padel-nordic",
+        "nyctea"
       ]
     }
   },
