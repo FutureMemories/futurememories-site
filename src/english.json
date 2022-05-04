@@ -19,11 +19,12 @@
       "cases": [
         "eyescanner",
         "annotell",
+        "weekly-revolt",
         "stc",
         "picular",
         "retts-plus",
-        "nyctea",
-        "central-padel-nordic"
+        "central-padel-nordic",
+        "nyctea"
       ]
     },
     "design": {
@@ -33,12 +34,14 @@
         "kludd",
         "eyescanner",
         "annotell",
+        "weekly-revolt",
         "stc",
         "proflight",
         "picular",
         "we-are-voice",
         "antistress",
-        "nordish-market"
+        "nordish-market",
+        "central-padel-nordic"
       ]
     },
     "web": {
@@ -91,7 +94,7 @@
         "stc",
         "nordish-market",
         "sleep-cycle-dashboard",
-        "wya-network"
+          "wya-network"
       ]
     },
     "homegrown": {
@@ -113,8 +116,9 @@
         "annotell",
         "stc",
         "picadeli",
-        "bauer-university",
+        "weekly-revolt",
         "proflight",
+        "bauer-university",
         "mat-se",
         "we-are-voice",
         "bandbond",
@@ -134,9 +138,8 @@
         "wya-network",
         "nordish-market",
         "barseback",
-        "weekly-revolt",
-        "nyctea",
-        "central-padel-nordic"
+        "central-padel-nordic",
+        "nyctea"
       ]
     }
   },
@@ -491,7 +494,7 @@
       "aboutTitle": "Intelligent food.",
       "aboutText": "Picadeli offers salladbars on site in stores all over Sweden. A high technology, digitized food bar with a focus on food safety with correct air flows. An intelligent solution for both customers and employees. The success in Sweden is now going global with Finland, France and Germany conquered Picadeli is now starting the journey in US with salad bars in New York and Washington DC.",
       "expressOrderTitle": "\bMost\b best sales.",
-      "expressOrderText":  "We redesigned the express order system that is used by the whole Picadeli team store managers, where the purpose is to help the stores to meet their demands and needs through recommendations. \n\nDeveloped with gamification in mind that will motivate salespersons to increase revenue through order and dialogue tracking. A more flexible way to manage clients with an overview in the same dashboard. \n\nIt's not about selling the most, it's about being the best. The system is developed as a web application that will primarily be served on desktop devices.",
+      "expressOrderText":  "We redesigned the express order system that is used by the whole Picadeli team, where the purpose is to help the stores to meet their demands and needs through recommendations. \n\nDeveloped with gamification in mind that will motivate salespersons to increase revenue through order and dialogue tracking. A more flexible way to manage clients with an overview in the same dashboard. \n\nIt's not about selling the most, it's about being the best. The system is developed as a web application that will primarily be served on desktop devices.",
       "djungleTitle": "A Zebra in the food jungle.",
       "djungleText": "In order to keep raw materials fresh, take care of food safety and increase customer satisfaction, we nailed precision down to the smallest detail. Picadeli solves this with the Zebra scanning unit. The purpose of the Zebra is to reduce food waste through a good overview of stock consumption, expiration date and fresh produce handling. With the help of machine learning, the store can order just as much needed in the near future. During an extensive collaboration, we have developed a new UX & UI design for the user interface in the Zebra to increase recognition, strengthen the brand and improve the user journey for Picadeli's store managers. User tests, observations and interviews with store staff and employees at Picadeli have contributed to new functionality, smoother inventory flows and more precise order placement.",
       "pointsOfSaleTitle": "Tasteful self-service.",
@@ -1252,7 +1255,7 @@
       ],
       "subtitle": "A true padel experience.",
       "desc": "A unique padel experience where the human interaction is at the center.",
-      "type": "Branding, Web",
+      "type": "Branding, Design",
       "showcase": true,
       "style": [
         {
