@@ -1318,6 +1318,14 @@
       "phoneOld": "+46 (0)707 959011",
       "email": "pontus@futurememories.se"
     },
+    "linda": {
+      "name": "Linda Däldborg Leech",
+      "image": "team/linda-daldborg-leech.jpg",
+      "title": "Digital Project Manager",
+      "desc": "Digital Project Manager with 10+ years experience in digital product development. Keeping it on time and on budget.",
+      "phone": "+46 (0)723 413151",
+      "email": "linda@futurememories.se"
+    },
     "pa": {
       "name": "P-A Gustafsson",
       "image": "team/pa-gustafsson.jpg",
@@ -1346,13 +1354,12 @@
       "label": "Come and work with us!",
       "to": "https://jobs.futurememories.se"
     },
-    "linda": {
-      "name": "Linda Däldborg Leech",
-      "image": "team/linda-daldborg-leech.jpg",
-      "title": "Digital Project Manager",
-      "desc": "Digital Project Manager with 10+ years experience in digital product development. Keeping it on time and on budget.",
-      "phone": "+46 (0)723 413151",
-      "email": "linda@futurememories.se"
+    "markus": {
+      "name": "Markus Johansson",
+      "image": "team/markus-johansson.jpg",
+      "title": "Software Developer",
+      "desc": "Software Developer, preferably working with Java and Kotlin in the cloud.",
+      "email": "markus@futurememories.se"
     },
     "anders": {
       "name": "Anders Dewrang",
