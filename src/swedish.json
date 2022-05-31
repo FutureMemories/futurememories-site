@@ -622,6 +622,10 @@
       "title": "Systemutvecklare",
       "desc": "Systemutvecklare som trivs bäst med Java och Kotlin och i molnet."
     },
+    "andy": {
+      "title": "Fullstackutvecklare",
+      "desc": "Systemutvecklare som har jobbat med alla teknologier som kommit och gått under de senaste 20 åren."
+    },
     "availablepositions": {
       "label": "Kanske du?\nLäs mer här!"
     }
