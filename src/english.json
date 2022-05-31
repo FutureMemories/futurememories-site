@@ -1389,6 +1389,13 @@
       "desc": "Senior Mobile Developer and a true software craftsman. iOS is his platform of choice.",
       "email": "donovan@futurememories.se"
     },
+    "andy": {
+      "name": "Andreas Pringle",
+      "image": "team/andreas-pringle.jpg",
+      "title": "Full Stack Software Developer",
+      "desc": "Software Engineer who has been working with all technologies popping up for the lastest 20 years.",
+      "email": "andreas.pringle@futurememories.se"
+    },
     "availablepositions": {
       "disabled": true,
       "button": true,
