@@ -2,7 +2,7 @@ import Button from '../../components/button'
 import cx from 'classnames'
 import s from './center-block.sass'
 
-export default ({ title, text, link, component, src, alt = 'image', background = '', color = '', children, modifier, className, enableOrderChange, inView, customLinkStyle }) => (
+export default ({ title, text, link, component, src, alt = 'image', background = '', color = '', children, modifier, className, enableOrderChange, inView }) => (
   <div
     class={cx(s.centerBlock, modifier && s[modifier], className)}
     style={{ background, color }}
