@@ -101,14 +101,14 @@ export default class extends Component {
             <SideBySideBlock
               blocks={[
                 { text: { title: content.uxTitle, p: content.uxText } },
-                { image: 'cases/bauer-university-tablet1.png' }
+                { image: 'cases/bauer-university-tablet-1.png' }
               ]}
               background={emptySpace}
             />
 
             <SideBySideBlock
               blocks={[
-                { image: 'cases/bauer-university-tablet2.png' },
+                { image: 'cases/bauer-university-tablet-2.png' },
                 { text: { title: content.elearningTitle, p: content.elearningText } }
               ]}
               background={emptySpace}
