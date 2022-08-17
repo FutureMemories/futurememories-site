@@ -96,7 +96,14 @@ export default class extends Component {
               background={cloudySky}
               color={textDark}
             />
-
+            <SideBySideBlock
+              blocks={[
+                { text: { title: content.uxTitle, p: content.uxText } },
+                { image: 'cases/bauer-university-tablet-1.png' }
+              ]}
+              background={emptySpace}
+              modifier='bauer-university'
+            />
             <SlideInBlock
               // inView='inViewRight'
               title={content.uxTitle}
