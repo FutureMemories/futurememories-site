@@ -46,9 +46,7 @@ export default class extends Component {
   // }
 
   render ({ data, root }) {
-    console.log('- data', data.projectsBlock)
     const content = data.allCases.find(c => c.id === 'bauer-university')
-    console.log('- content', content)
 
     return (
       <Base route='/cases/bauer-university' data={data} root={root}>
@@ -62,7 +60,7 @@ export default class extends Component {
             />
 
             <LargeImage
-              src='cases/bauer-university-1.png'
+              src='cases/bauer-university-hero.png'
               alt={content.tabletMockup}
             />
 
@@ -76,14 +74,14 @@ export default class extends Component {
             <section class={cx(s.designSection)}>
               <div class={cx(s.imageContainer)}>
                 <div class={cx(s.imageBlock)}>
-                  <img class={s.image} src={require('../images/cases/bauer-university-elements.png')} alt='' />
+                  <img class={s.image} src={require('../images/cases/bauer-university-components-1.png')} alt='' />
                 </div>
                 <div class={cx(s.imageBlock)}>
                   <img class={s.image} src={require('../images/cases/bauer-university-icons.png')} alt='' />
                 </div>
               </div>
               <div class={cx(s.imageBlock)}>
-                <img class={s.image} src={require('../images/cases/bauer-university-elements2.png')} alt='' />
+                <img class={s.image} src={require('../images/cases/bauer-university-components-2.png')} alt='' />
               </div>
             </section>
 
@@ -91,8 +89,8 @@ export default class extends Component {
               title={content.fromRookieTitle}
               text={content.fromRookieText}
               items={[
-                { image: 'cases/bauer-university-mobile1.png', alt: content.imageAlt, speed: -10, startPos: 15, width: '391px', align: 'left' },
-                { image: 'cases/bauer-university-mobile2.png', alt: content.imageAlt, speed: -20, startPos: -15, width: '391px', align: 'right' }
+                { image: 'cases/bauer-university-mobile-1.png', alt: content.imageAlt, speed: -10, startPos: 15, width: '391px', align: 'left' },
+                { image: 'cases/bauer-university-mobile-2.png', alt: content.imageAlt, speed: -20, startPos: -15, width: '391px', align: 'right' }
               ]}
               background='linear-gradient(90.28deg, #F9FDFD 0.24%, #FFFCF7 99.76%)'
               color={textDark}
