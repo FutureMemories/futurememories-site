@@ -1310,13 +1310,12 @@
       "phone": "+46 (0)723 411322",
       "email": "mikael@futurememories.se"
     },
-    "pontus": {
-      "name": "Pontus Börjesson",
-      "image": "team/pontus-borjesson.jpg",
-      "title": "Digital Designer",
-      "desc": "Digital Designer in pursuit of creating engaging digital experiences, always keeping the user in mind.",
-      "phoneOld": "+46 (0)707 959011",
-      "email": "pontus@futurememories.se"
+    "lovisa": {
+      "name": "Lovisa Sandberg",
+      "image": "team/lovisa-sandberg.jpg",
+      "title": "UX and Service Designer",
+      "desc": "UX Designer with focus on interaction design.",
+      "email": "lovisa@futurememories.se"
     },
     "linda": {
       "name": "Linda Däldborg Leech",
@@ -1374,6 +1373,13 @@
       "title": "Web Developer",
       "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
       "email": "mattias@futurememories.se"
+    },
+    "julia": {
+      "name": "Julia Klöfver",
+      "image": "team/julia-klofver.jpg",
+      "title": "Frontend Developer",
+      "desc": "Solution orientated web developer with great attention to detail.",
+      "email": "julia@futurememories.se"
     },
     "robert": {
       "name": "Robert Karlsson",
