@@ -9,10 +9,11 @@ import ParallaxBumpBlock from './components/parallax-bump-block'
 import ProjectsBlock from './components/projects-block'
 import TextBlock from './components/text-block'
 import SideBySideBlock from './components/side-by-side-block'
+import SlideInBlock from './components/slide-in-block'
 import ThreeBlock from './components/three-block'
 
 const emptySpace = '#141415'
-const cloudyHeaven = '#F1F5F7'
+const cloudySky = '#F1F5F7'
 const textDark = '#070B13'
 
 // const inViewClasses = [
@@ -72,16 +73,16 @@ export default class extends Component {
             />
 
             <section class={cx(s.designSection)}>
-              <div class={cx(s.imageContainer)}>
-                <div class={cx(s.imageBlock)}>
-                  <img class={s.image} src={require('../images/cases/bauer-university-components-1.png')} alt='' />
+              <div class={cx(s.imageGrid)}>
+                <div>
+                  <img class={s.image} src={require('../images/cases/bauer-university-components-1.png')} loading='lazy' alt='' />
                 </div>
-                <div class={cx(s.imageBlock)}>
-                  <img class={s.image} src={require('../images/cases/bauer-university-icons.png')} alt='' />
+                <div>
+                  <img class={s.image} src={require('../images/cases/bauer-university-icons.png')} loading='lazy' alt='' />
                 </div>
               </div>
-              <div class={cx(s.imageBlock)}>
-                <img class={s.image} src={require('../images/cases/bauer-university-components-2.png')} alt='' />
+              <div class={cx(s.imageHideOnMobile)}>
+                <img class={s.image} src={require('../images/cases/bauer-university-components-2.png')} loading='lazy' alt='' />
               </div>
             </section>
 
@@ -92,16 +93,19 @@ export default class extends Component {
                 { image: 'cases/bauer-university-mobile-1.png', alt: content.imageAlt, speed: -10, startPos: 15, width: '391px', align: 'left' },
                 { image: 'cases/bauer-university-mobile-2.png', alt: content.imageAlt, speed: -20, startPos: -15, width: '391px', align: 'right' }
               ]}
-              background='linear-gradient(90.28deg, #F9FDFD 0.24%, #FFFCF7 99.76%)'
+              background={cloudySky}
               color={textDark}
             />
 
-            <SideBySideBlock
-              blocks={[
-                { text: { title: content.uxTitle, p: content.uxText } },
-                { image: 'cases/bauer-university-tablet-1.png' }
-              ]}
+            <SlideInBlock
+              // inView='inViewRight'
+              title={content.uxTitle}
+              text={content.uxText}
+              image='cases/bauer-university-tablet-1.png'
+              alt='Bauer university tablet mockup'
               background={emptySpace}
+              color='#FFF'
+              align='right'
             />
 
             <SideBySideBlock
@@ -110,10 +114,11 @@ export default class extends Component {
                 { text: { title: content.elearningTitle, p: content.elearningText } }
               ]}
               background={emptySpace}
+              modifier='bauer-university'
             />
 
             <ThreeBlock
-              background={cloudyHeaven}
+              background={cloudySky}
               color={textDark}
               blocks={[
                 { type: 'text', title: content.engagementTitle, text: content.engagementText },
