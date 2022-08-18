@@ -140,16 +140,27 @@
 
     @media screen and (min-width: $small-grid)
       flex-direction: row
+
   &.bauer-university
     flex-direction: column
     @media screen and (min-width: $small-grid)
       flex-direction: row
+      min-height: 84rem
     .textWrapper
       background: $lighter-space
-    img 
-      @media screen and (min-width: $small-grid)
+      height: 100%
+    .block
+      display: flex
+      align-items: center  
+      img 
+        @media screen and (min-width: $small-grid)
+          height: 100%
+          max-height: 64rem
+          object-fit: cover
+      .right
+        object-position: left
         margin-left: 10rem
-        padding: 10rem 0
-        min-height: 100%
-        object-fit: cover
-        object-position: 0 0
+      .left
+        object-position: right
+        margin-left: -10rem
+

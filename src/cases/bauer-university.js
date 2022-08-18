@@ -9,7 +9,6 @@ import ParallaxBumpBlock from './components/parallax-bump-block'
 import ProjectsBlock from './components/projects-block'
 import TextBlock from './components/text-block'
 import SideBySideBlock from './components/side-by-side-block'
-import SlideInBlock from './components/slide-in-block'
 import ThreeBlock from './components/three-block'
 
 const emptySpace = '#141415'
@@ -96,28 +95,19 @@ export default class extends Component {
               background={cloudySky}
               color={textDark}
             />
+
             <SideBySideBlock
               blocks={[
                 { text: { title: content.uxTitle, p: content.uxText } },
-                { image: 'cases/bauer-university-tablet-1.png' }
+                { image: 'cases/bauer-university-tablet-1.png', align: 'right' }
               ]}
               background={emptySpace}
               modifier='bauer-university'
             />
-            <SlideInBlock
-              // inView='inViewRight'
-              title={content.uxTitle}
-              text={content.uxText}
-              image='cases/bauer-university-tablet-1.png'
-              alt='Bauer university tablet mockup'
-              background={emptySpace}
-              color='#FFF'
-              align='right'
-            />
 
             <SideBySideBlock
               blocks={[
-                { image: 'cases/bauer-university-tablet-2.png' },
+                { image: 'cases/bauer-university-tablet-2.png', align: 'left' },
                 { text: { title: content.elearningTitle, p: content.elearningText } }
               ]}
               background={emptySpace}
