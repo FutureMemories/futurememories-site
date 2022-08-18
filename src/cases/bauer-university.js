@@ -9,7 +9,7 @@ import ParallaxBumpBlock from './components/parallax-bump-block'
 import ProjectsBlock from './components/projects-block'
 import TextBlock from './components/text-block'
 import SideBySideBlock from './components/side-by-side-block'
-import ThreeBlock from './components/three-block'
+import BookmarkBlock from './components/bookmark-block'
 
 const emptySpace = '#141415'
 const cloudySky = '#F1F5F7'
@@ -114,16 +114,21 @@ export default class extends Component {
               modifier='bauer-university'
             />
 
-            <ThreeBlock
-              background={cloudySky}
+            <BookmarkBlock
+              className={s.statsSection}
+              title={content.engagementTitle}
+              text={content.engagementText}
+              // inView='inViewRight'
+              background='radial-gradient(83.04% 114.99% at 35.45% -17.26%, rgb(252 236 178) 0%, rgba(255, 255, 255, 1) 100%);'
+              align='left'
               color={textDark}
-              blocks={[
-                { type: 'text', title: content.engagementTitle, text: content.engagementText },
-                { type: 'image', image: 'cases/bauer-university-R.png' }
-              ]}
-            />
-            {/* //cases/bauer-university-A.png */}
-            {/* //cases/bauer-university-P.png */}
+            >
+              <div class={s.badges}>
+                <img class={s.image} src={require('../images/cases/bauer-university-A.png')} loading='lazy' alt='badge' />
+                <img class={s.image} src={require('../images/cases/bauer-university-R.png')} loading='lazy' alt='badge' />
+                <img class={s.image} src={require('../images/cases/bauer-university-P.png')} loading='lazy' alt='badge' />
+              </div>
+            </BookmarkBlock>
 
             <ContactBlock
               content={data.content.contactBlock}
