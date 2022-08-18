@@ -72,7 +72,7 @@
       > .parallaxes
         width: 55%
 
-  &:not(.nordish):not(.wearevoice)
+  &:not(.nordish):not(.wearevoice):not(.bauer-university)
     > .inner
       > .parallaxes
         margin: -7rem 0 -35% auto
@@ -115,6 +115,7 @@
 
       > .parallaxes
         margin: 0 auto
+        background: black
 
         > div:nth-child(1)
           left: -20%
@@ -205,3 +206,18 @@
 
           @media screen and (min-width: $breakpoint-desktop)
             left: -25%
+  &.bauer-university
+    overflow: visible
+
+    > .inner
+      > .content
+        @media screen and (min-width: $small-grid + 101px) //801
+          max-width: 35rem
+
+        @media screen and (min-width: 900px)
+          max-width: 45rem
+
+        @media screen and (min-width: 1100px)
+          max-width: 50rem
+        > .parallaxes
+            margin: 0 auto

@@ -26,13 +26,6 @@ const textDark = '#070B13'
 //   `${s.inner} > div:nth-child(8) > div:first-child > div`
 // ].join(',.')
 
-// const ProgressBar = ({ badge, percent, color }) => (
-//   <div class={s.progressBar}>
-//     <img src={require(`../images/cases/bauer-university-badge-${badge}.svg`)} />
-//     <span class={s.progress} style={`--progressWidth: ${(percent / 70) * 100}%; --progressColor: ${color};`}>{percent}%</span>
-//   </div>
-// )
-
 export default class extends Component {
   // componentDidMount () {
   //   inView.offset(200)
@@ -89,11 +82,12 @@ export default class extends Component {
               title={content.fromRookieTitle}
               text={content.fromRookieText}
               items={[
-                { image: 'cases/bauer-university-mobile-1.png', alt: content.imageAlt, speed: -10, startPos: 15, width: '391px', align: 'left' },
-                { image: 'cases/bauer-university-mobile-2.png', alt: content.imageAlt, speed: -20, startPos: -15, width: '391px', align: 'right' }
+                { image: 'cases/bauer-university-mobile-1.png', alt: content.imageAlt, speed: -10, startPos: 0, width: '30rem' },
+                { image: 'cases/bauer-university-mobile-2.png', alt: content.imageAlt, speed: -20, startPos: 0, width: '30rem' }
               ]}
               background={cloudySky}
               color={textDark}
+              modifier='bauer-university'
             />
 
             <SideBySideBlock
