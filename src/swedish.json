@@ -581,7 +581,7 @@
     },
     "lovisa": {
       "title": "UX & Service Designer",
-      "desc": "UX designer med fokus på interaktionsdesign."
+      "desc": "UX & Service Designer med fokus på interaktionsdesign."
     },
     "pa": {
       "title": "Grundare och VD.",
@@ -602,6 +602,10 @@
       "title": "Digital projektledare",
       "desc": "Digital projektledare med 10+ års erfarenhet inom digital produktutveckling. Linda håller oss på tidslinjen och inom budget."
     },
+    "julia": {
+      "title": "Webbutvecklare",
+      "desc": "Lösningsorienterad webbutvecklare med öga för detaljer."
+    },
     "anders": {
       "title": "Design Director och Partner.",
       "desc": "Prisbelönad designer med många års erfarenhet av digitala produkter med användbarhet i fokus."
@@ -610,10 +614,6 @@
       "title": "Webbutvecklare",
       "desc": "Webbutvecklare och expert på JavaScript. Mattias har ett Google Web Developer Scholarship i bakfickan."
     },
-    "julia": {
-      "title": "Webbutvecklare",
-      "desc": "Lösningsorienterad webbutvecklare med öga för detaljer."
-    },
     "robert": {
       "title": "Senior Frontend Utvecklare",
       "desc": "Erfaren frontendutvecklare och Tech Lead som även är riktigt vass interaktionsdesign."
@@ -621,10 +621,6 @@
     "donovan": {
       "title": "Senior Mobilutvecklare",
       "desc": "Senior mobilutvecklare som skapar fantastiska digitala hantverk. Specialist på iOS."
-    },
-    "markus": {
-      "title": "Systemutvecklare",
-      "desc": "Systemutvecklare som trivs bäst med Java och Kotlin och i molnet."
     },
     "andy": {
       "title": "Fullstackutvecklare",

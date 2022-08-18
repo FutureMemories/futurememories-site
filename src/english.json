@@ -1314,7 +1314,7 @@
       "name": "Lovisa Sandberg",
       "image": "team/lovisa-sandberg.jpg",
       "title": "UX and Service Designer",
-      "desc": "UX Designer with focus on interaction design.",
+      "desc": "UX and Service Designer with focus on interaction design.",
       "email": "lovisa@futurememories.se"
     },
     "linda": {
@@ -1353,12 +1353,12 @@
       "label": "Come and work with us!",
       "to": "https://jobs.futurememories.se"
     },
-    "markus": {
-      "name": "Markus Johansson",
-      "image": "team/markus-johansson.jpg",
-      "title": "Software Developer",
-      "desc": "Software Developer, preferably working with Java and Kotlin in the cloud.",
-      "email": "markus@futurememories.se"
+    "julia": {
+      "name": "Julia Klöfver",
+      "image": "team/julia-klofver.jpg",
+      "title": "Frontend Developer",
+      "desc": "Solution orientated web developer with great attention to detail.",
+      "email": "julia@futurememories.se"
     },
     "anders": {
       "name": "Anders Dewrang",
@@ -1373,13 +1373,6 @@
       "title": "Web Developer",
       "desc": "Web Developer and JavaScript expert with a Google Web Developer Scholarship in his pocket.",
       "email": "mattias@futurememories.se"
-    },
-    "julia": {
-      "name": "Julia Klöfver",
-      "image": "team/julia-klofver.jpg",
-      "title": "Frontend Developer",
-      "desc": "Solution orientated web developer with great attention to detail.",
-      "email": "julia@futurememories.se"
     },
     "robert": {
       "name": "Robert Karlsson",
