@@ -21,7 +21,8 @@ const inViewClasses = [
   `${s.inner} > div:nth-child(5) > div`, // Parallax
   `${s.inner} > div:nth-child(6) > div`, // Tablet
   `${s.inner} > div:nth-child(7) > div`, // Tablet
-  `${s.inner} > div:nth-child(8) > div > div` // Badges
+  `${s.inner} > div:nth-child(8) > div > div > div`, // Badges
+  `${s.inner} > div:nth-child(8) > div > div` // Engagement text
 ].join(',.')
 
 export default class extends Component {
@@ -110,15 +111,16 @@ export default class extends Component {
             />
 
             <BookmarkBlock
-              className={s.statsSection}
+              className={s.engagementSection}
               title={content.engagementTitle}
               text={content.engagementText}
               background='radial-gradient(83.04% 114.99% at 35.45% -17.26%, rgb(252 236 178) 0%, rgba(255, 255, 255, 1) 100%);'
               align='left'
               color={textDark}
-              inView='inViewRight'
+              inView='inViewBottom'
+              modifier='bauer-university'
             >
-              <div class={s.badges}>
+              <div class={cx(s.badges, 'inViewBottom')}>
                 <img class={s.image} src={require('../images/cases/bauer-university-A.png')} loading='lazy' alt='badge' />
                 <img class={s.image} src={require('../images/cases/bauer-university-R.png')} loading='lazy' alt='badge' />
                 <img class={s.image} src={require('../images/cases/bauer-university-P.png')} loading='lazy' alt='badge' />
