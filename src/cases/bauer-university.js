@@ -18,7 +18,6 @@ const textDark = '#070B13'
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child`,
   `${s.inner} > div:nth-child(4) > div:first-child`,
-  `${s.inner} > div:nth-child(5) > div`, // Parallax
   `${s.inner} > div:nth-child(6) > div`, // Tablet
   `${s.inner} > div:nth-child(7) > div`, // Tablet
   `${s.inner} > div:nth-child(8) > div > div > div`, // Badges
@@ -62,6 +61,7 @@ export default class extends Component {
               background={emptySpace}
               color='#FFF'
               inView='inViewBottom'
+              modifier='bauer-university'
             />
 
             <section class={cx(s.designSection)}>
@@ -87,7 +87,6 @@ export default class extends Component {
               ]}
               color={textDark}
               modifier='bauer-university'
-              inView='inViewBottom'
             />
 
             <SideBySideBlock

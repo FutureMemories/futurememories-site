@@ -206,22 +206,35 @@
           @media screen and (min-width: $breakpoint-desktop)
             left: -25%
   &.bauer-university
-    .inner
-      @media screen and (min-width: $breakpoint-tablet)
-        padding: 9.6rem 0 9.6rem 3rem
+    & .inner
+      padding: 20rem 0 9.6rem 0
+    .content 
+      padding: 0 3rem
     .parallaxes
       max-height: 70rem
-      width: 100%
+      width: auto
       display: flex
       flex-direction: column
-      margin: 0 0 9.6rem 0
+      margin: 0 -10% 9.6rem -10%
+      @media screen and (min-width: $small-grid - 100px)
+        margin: 0
       @media screen and (min-width: $breakpoint-tablet)
         margin: 0 0 0 5rem
-    & .parallaxObject:nth-child(2)
-      @media screen and (min-width: $breakpoint-tablet)
-        left: -35%
-        z-index: 0
-    & img:nth-child(1) 
-      filter: drop-shadow(0px 1.91493px 61.92px rgba(0, 93, 130, 0.18))
-    & img:nth-child(2)
-      filter: drop-shadow(0px 1.91593px 31.93px rgba(0, 93, 130, 0.08))
+        width: 100%
+
+      & div:nth-child(1)
+        left: 0
+        @media screen and (min-width: $small-grid)
+          left: 10%
+
+      & div:nth-child(2)
+        right: 0
+        @media screen and (min-width: $breakpoint-tablet)
+          left: -20%
+          z-index: 0
+        @media screen and (min-width: $breakpoint-desktop)  
+          left: 10%
+      & img:nth-child(1) 
+        filter: drop-shadow(0px 1.91493px 61.92px rgba(0, 93, 130, 0.18))
+      & img:nth-child(2)
+        filter: drop-shadow(0px 1.91593px 31.93px rgba(0, 93, 130, 0.08))
