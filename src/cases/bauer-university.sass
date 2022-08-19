@@ -1,7 +1,5 @@
 @import '../settings.sass'
 
-$cloudy-heaven: #F1F5F7
-
 .view
   position: relative
   padding-top: 14rem
@@ -9,12 +7,16 @@ $cloudy-heaven: #F1F5F7
   color: #FFF
   width: 100%
 
+  > .inner
+    background: none
+    overflow: hidden
+
   p
     font-size: 2rem
     opacity: .8
 
   .designSection 
-    background: $cloudy-heaven
+    background: $cloudy-sky
     display: flex
     flex-direction: column
     align-items: center

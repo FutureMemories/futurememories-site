@@ -1,42 +1,40 @@
 import cx from 'classnames'
+import inView from 'in-view'
 import { Component } from 'preact'
 import ContactBlock from '../components/contact-block'
 import Base from '../_base'
 import s from './bauer-university.sass'
+import BookmarkBlock from './components/bookmark-block'
 import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
 import ParallaxBumpBlock from './components/parallax-bump-block'
 import ProjectsBlock from './components/projects-block'
-import TextBlock from './components/text-block'
 import SideBySideBlock from './components/side-by-side-block'
-import BookmarkBlock from './components/bookmark-block'
+import TextBlock from './components/text-block'
 
 const emptySpace = '#141415'
-const cloudySky = '#F1F5F7'
 const textDark = '#070B13'
 
-// const inViewClasses = [
-//   `${s.inner} > div:nth-child(3) > div:first-child > div`,
-//   `${s.inner} > div:nth-child(4) > div:last-child > div`,
-//   `${s.inner} > div:nth-child(5) > div:first-child`,
-//   `${s.statsSection} > div:first-child > div`,
-//   `${s.globalSection} > div:first-child > div`,
-//   `${s.device}`,
-//   `${s.progressBar}`,
-//   `${s.inner} > div:nth-child(8) > div:first-child > div`
-// ].join(',.')
+const inViewClasses = [
+  `${s.inner} > div:nth-child(3) > div:first-child`,
+  `${s.inner} > div:nth-child(4) > div:first-child`,
+  `${s.inner} > div:nth-child(5) > div`, // Parallax
+  `${s.inner} > div:nth-child(6) > div`, // Tablet
+  `${s.inner} > div:nth-child(7) > div`, // Tablet
+  `${s.inner} > div:nth-child(8) > div > div` // Badges
+].join(',.')
 
 export default class extends Component {
-  // componentDidMount () {
-  //   inView.offset(200)
-  //   inView(`.${inViewClasses}`).on('enter', el => {
-  //     el.classList.add('inView')
-  //   })
-  // }
+  componentDidMount () {
+    inView.offset(200)
+    inView(`.${inViewClasses}`).on('enter', el => {
+      el.classList.add('inView')
+    })
+  }
 
-  // componentWillUnmount () {
-  //   inView(`.${inViewClasses}`).off('enter')
-  // }
+  componentWillUnmount () {
+    inView(`.${inViewClasses}`).off('enter')
+  }
 
   render ({ data, root }) {
     const content = data.allCases.find(c => c.id === 'bauer-university')
@@ -62,6 +60,7 @@ export default class extends Component {
               text={content.knowYourProductsText}
               background={emptySpace}
               color='#FFF'
+              inView='inViewBottom'
             />
 
             <section class={cx(s.designSection)}>
@@ -82,12 +81,12 @@ export default class extends Component {
               title={content.fromRookieTitle}
               text={content.fromRookieText}
               items={[
-                { image: 'cases/bauer-university-mobile-1.png', alt: content.imageAlt, speed: -10, startPos: 0, width: '30rem' },
-                { image: 'cases/bauer-university-mobile-2.png', alt: content.imageAlt, speed: -20, startPos: 0, width: '30rem' }
+                { image: 'cases/bauer-university-mobile-1.png', alt: content.imageAlt, speed: -10, startPos: 10, width: '30rem' },
+                { image: 'cases/bauer-university-mobile-2.png', alt: content.imageAlt, speed: -20, startPos: -10, width: '30rem' }
               ]}
-              background={cloudySky}
               color={textDark}
               modifier='bauer-university'
+              inView='inViewBottom'
             />
 
             <SideBySideBlock
@@ -97,6 +96,7 @@ export default class extends Component {
               ]}
               background={emptySpace}
               modifier='bauer-university'
+              inView='inViewRight'
             />
 
             <SideBySideBlock
@@ -106,16 +106,17 @@ export default class extends Component {
               ]}
               background={emptySpace}
               modifier='bauer-university'
+              inView='inViewLeft'
             />
 
             <BookmarkBlock
               className={s.statsSection}
               title={content.engagementTitle}
               text={content.engagementText}
-              // inView='inViewRight'
               background='radial-gradient(83.04% 114.99% at 35.45% -17.26%, rgb(252 236 178) 0%, rgba(255, 255, 255, 1) 100%);'
               align='left'
               color={textDark}
+              inView='inViewRight'
             >
               <div class={s.badges}>
                 <img class={s.image} src={require('../images/cases/bauer-university-A.png')} loading='lazy' alt='badge' />

@@ -95,7 +95,7 @@
 
     > .inner
       > .content
-        @media screen and (min-width: $small-grid + 101px) //801
+        @media screen and (min-width: $breakpoint-tablet) 
           max-width: 35rem
 
         @media screen and (min-width: 900px)
@@ -115,7 +115,6 @@
 
       > .parallaxes
         margin: 0 auto
-        background: black
 
         > div:nth-child(1)
           left: -20%
@@ -129,7 +128,7 @@
           > div:nth-child(1)
             left: -53%
 
-        @media screen and (min-width: $small-grid + 101px)
+        @media screen and (min-width: $breakpoint-tablet)
           > div:nth-child(1)
             left: 13%
 
@@ -148,7 +147,7 @@
       align-items: center
 
       > .content
-        @media screen and (min-width: $small-grid + 101px) //801
+        @media screen and (min-width: $breakpoint-tablet) 
           max-width: 35rem
 
         @media screen and (min-width: 900px)
@@ -176,7 +175,7 @@
         @media screen and (min-width: 550px)
           margin: 3rem auto 20rem
 
-        @media screen and (min-width: $small-grid + 101px)
+        @media screen and (min-width: $breakpoint-tablet)
           height: 50rem
 
         @media screen and (min-width: $breakpoint-desktop)
@@ -188,7 +187,7 @@
           z-index: 4
           margin: 0
 
-          @media screen and (min-width: $small-grid + 101px)
+          @media screen and (min-width: $breakpoint-tablet)
             left: 22%
 
           @media screen and (min-width: $breakpoint-desktop)
@@ -201,23 +200,29 @@
           left: -25%
           z-index: 3
 
-          @media screen and (min-width: $small-grid + 101px)
+          @media screen and (min-width: $breakpoint-tablet)
             left: -8%
 
           @media screen and (min-width: $breakpoint-desktop)
             left: -25%
   &.bauer-university
-    overflow: visible
-
-    > .inner
-      > .content
-        @media screen and (min-width: $small-grid + 101px) //801
-          max-width: 35rem
-
-        @media screen and (min-width: 900px)
-          max-width: 45rem
-
-        @media screen and (min-width: 1100px)
-          max-width: 50rem
-        > .parallaxes
-            margin: 0 auto
+    .inner
+      padding: 0 0 9.6rem 0
+      @media screen and (min-width: $breakpoint-tablet)
+        padding: 9.6rem 0 9.6rem 3rem
+    .parallaxes
+      max-height: 70rem
+      width: 100%
+      display: flex
+      flex-direction: column
+      margin: 0 0 9.6rem 0
+      @media screen and (min-width: $breakpoint-tablet)
+        margin: 0 0 0 5rem
+    & .parallaxObject:nth-child(2)
+      @media screen and (min-width: $breakpoint-tablet)
+        left: -35%
+        z-index: 0
+    & img:nth-child(1) 
+      filter: drop-shadow(0px 1.91493px 61.92px rgba(0, 93, 130, 0.18))
+    & img:nth-child(2)
+      filter: drop-shadow(0px 1.91593px 31.93px rgba(0, 93, 130, 0.08))
