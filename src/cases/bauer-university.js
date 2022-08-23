@@ -14,6 +14,7 @@ import TextBlock from './components/text-block'
 
 const emptySpace = '#141415'
 const textDark = '#070B13'
+const white = '#fff'
 
 const inViewClasses = [
   `${s.inner} > div:nth-child(3) > div:first-child`,
@@ -43,6 +44,7 @@ export default class extends Component {
       <Base route='/cases/bauer-university' data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
+
             <HeroHeader
               title={content.name.toUpperCase()}
               subtitle={content.subtitle}
@@ -59,7 +61,7 @@ export default class extends Component {
               title={content.knowYourProductsTitle}
               text={content.knowYourProductsText}
               background={emptySpace}
-              color='#FFF'
+              color={white}
               inView='inViewBottom'
               modifier='bauer-university'
             />
@@ -137,7 +139,7 @@ export default class extends Component {
               defaultOtherCases={data.defaultOtherCases}
               current='bauer-university'
               similar={['mat-se', 'nordish-market', 'bandbond']}
-              background='#FFF'
+              background={white}
               color={textDark}
             />
           </div>
