@@ -1395,6 +1395,13 @@
       "desc": "Software Engineer who has been working with all technologies popping up for the lastest 20 years.",
       "email": "andreas.pringle@futurememories.se"
     },
+    "louise": {
+      "name": "Louise Åslund Olow",
+      "image": "team/louise.jpg",
+      "title": "Digital Project Manager",
+      "desc": "Digital Project Manager with +15 years of experience from the industry. Keeping customers and team members happy at all times.",
+      "email": "louise@futurememories.se"
+    },
     "availablepositions": {
       "disabled": true,
       "button": true,
