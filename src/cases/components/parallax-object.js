@@ -29,7 +29,7 @@ export default class extends Component {
     return (
       <div
         class={cx(s.parallaxObject, modifier && s[modifier])}
-        style={{ transform: 'translateY(-12px)', [modifier === 'nordish' && 'top']: `${startPos}%` }}
+        style={{ transform: 'translateY(-12px)', [(modifier === 'nordish' || modifier === 'bauer-university') && 'top']: `${startPos}%` }}
         ref={(el) => {
           this.parallax = el
           this.speed = speed
@@ -38,7 +38,10 @@ export default class extends Component {
       >
         <img
           class={cx(s.parallaxBackground, diagonal && s.diagonal, horizontal && s.horizontal)}
-          style={{ [horizontal ? 'left' : modifier !== 'nordish' && 'top']: `${startPos}%`, [modifier === 'nordish' ? 'width' : 'max-width']: width }}
+          style={{
+            [horizontal ? 'left' : (modifier !== 'nordish' && modifier !== 'bauer-university') && 'top']: `${startPos}%`,
+            [modifier === 'nordish' ? 'width' : modifier === 'bauer-university' ? 'width' : 'max-width']: width
+          }}
           src={require(`../../images/${image}`)}
           alt={alt}
         />

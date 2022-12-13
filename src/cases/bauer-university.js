@@ -1,34 +1,29 @@
-import { Component } from 'preact'
+import cx from 'classnames'
 import inView from 'in-view'
-import s from './bauer-university.sass'
+import { Component } from 'preact'
+import ContactBlock from '../components/contact-block'
 import Base from '../_base'
+import s from './bauer-university.sass'
 import BookmarkBlock from './components/bookmark-block'
 import HeroHeader from './components/hero-header'
 import LargeImage from './components/large-image'
+import ParallaxBumpBlock from './components/parallax-bump-block'
 import ProjectsBlock from './components/projects-block'
-import TextGridBlock from './components/text-grid-block'
-import ThreeBlock from './components/three-block'
-import CenterBlock from './components/center-block'
-import MarkupCustomElement from '../components/markup-custom-element'
-import ContactBlock from '../components/contact-block'
+import SideBySideBlock from './components/side-by-side-block'
+import TextBlock from './components/text-block'
+
+const emptySpace = '#141415'
+const textDark = '#070B13'
+const white = '#fff'
 
 const inViewClasses = [
-  `${s.inner} > div:nth-child(3) > div:first-child > div`,
-  `${s.inner} > div:nth-child(4) > div:last-child > div`,
-  `${s.inner} > div:nth-child(5) > div:first-child`,
-  `${s.statsSection} > div:first-child > div`,
-  `${s.globalSection} > div:first-child > div`,
-  `${s.device}`,
-  `${s.progressBar}`,
-  `${s.inner} > div:nth-child(8) > div:first-child > div`
+  `${s.inner} > div:nth-child(3) > div:first-child`,
+  `${s.inner} > div:nth-child(4) > div:first-child`,
+  `${s.inner} > div:nth-child(6) > div`, // Tablet
+  `${s.inner} > div:nth-child(7) > div`, // Tablet
+  `${s.inner} > div:nth-child(8) > div > div > div`, // Badges
+  `${s.inner} > div:nth-child(8) > div > div` // Engagement text
 ].join(',.')
-
-const ProgressBar = ({ badge, percent, color }) => (
-  <div class={s.progressBar}>
-    <img src={require(`../images/cases/bauer-university-badge-${badge}.svg`)} />
-    <span class={s.progress} style={`--progressWidth: ${(percent / 70) * 100}%; --progressColor: ${color};`}>{percent}%</span>
-  </div>
-)
 
 export default class extends Component {
   componentDidMount () {
@@ -46,7 +41,7 @@ export default class extends Component {
     const content = data.allCases.find(c => c.id === 'bauer-university')
 
     return (
-      <Base route='/cases/bauer-university' dark data={data} root={root}>
+      <Base route='/cases/bauer-university' data={data} root={root}>
         <div class={s.view}>
           <div class={s.inner}>
 
@@ -54,83 +49,88 @@ export default class extends Component {
               title={content.name.toUpperCase()}
               subtitle={content.subtitle}
               type={content.type}
+              dark
             />
 
-            <LargeImage src='cases/bauer-university-1.jpg' alt={content.tabletMockup} />
+            <LargeImage
+              src='cases/bauer-university-hero.png'
+              alt={content.tabletMockup}
+            />
 
-            <CenterBlock
-              inView='inViewBottom'
+            <TextBlock
               title={content.knowYourProductsTitle}
               text={content.knowYourProductsText}
-            />
-
-            <TextGridBlock
-              blocks={[
-                { inView: 'inViewLeft', image: 'cases/bauer-university-2.png', alt: 'Bauer University (Sales Training) tablet mockup' },
-                { inView: 'inViewRight', title: content.fromRookieTitle, desc: content.fromRookieText },
-                { inView: 'inViewRight', image: 'cases/bauer-university-3.png', alt: 'Bauer University (Product Category) tablet mockup' },
-                { inView: 'inViewLeft', image: 'cases/bauer-university-4.png', alt: 'Bauer University (Product Training) tablet mockup' }
-              ]}
-              background='#151D20'
-              color='#ffffff'
-            />
-
-            <ThreeBlock
+              background={emptySpace}
+              color={white}
               inView='inViewBottom'
-              background='#F9F9FA'
-              blocks={[
-                { type: 'image', image: 'cases/bauer-university-5.png', modifier: 'matSeIpad' },
-                { type: 'text', title: content.uxTitle, text: content.uxText }
-              ]}
+              modifier='bauer-university'
             />
 
-            <BookmarkBlock
-              className={s.globalSection}
-              title={content.elearningTitle}
-              text={content.elearningText}
-              inView='inViewLeft'
-              background='#EFEFEF'
-            >
-              <div class={s.device}>
-                <img class={s.deviceImage} src={require('../images/cases/bauer-university-6.png')} />
-                <div class={s.backFlags}>
-                  <img class={s.germany} src={require('../images/icons/flag-germany.svg')} />
+            <section class={cx(s.designSection)}>
+              <div class={cx(s.imageGrid)}>
+                <div>
+                  <img class={s.image} src={require('../images/cases/bauer-university-components-1.png')} loading='lazy' alt='' />
                 </div>
-                <div class={s.frontFlags}>
-                  <img class={s.czechRepublic} src={require('../images/icons/flag-czech-republic.svg')} />
-                  <img class={s.sweden} src={require('../images/icons/flag-sweden.svg')} />
-                  <img class={s.canada} src={require('../images/icons/flag-canada.svg')} />
-                  <img class={s.unitedStates} src={require('../images/icons/flag-united-states.svg')} />
-                  <img class={s.finland} src={require('../images/icons/flag-finland.svg')} />
-                  <img class={s.russia} src={require('../images/icons/flag-russia.svg')} />
+                <div>
+                  <img class={s.image} src={require('../images/cases/bauer-university-icons.png')} loading='lazy' alt='' />
                 </div>
               </div>
-            </BookmarkBlock>
+              <div class={cx(s.imageHideOnMobile)}>
+                <img class={s.image} src={require('../images/cases/bauer-university-components-2.png')} loading='lazy' alt='' />
+              </div>
+            </section>
+
+            <ParallaxBumpBlock
+              title={content.fromRookieTitle}
+              text={content.fromRookieText}
+              items={[
+                { image: 'cases/bauer-university-mobile-1.png', alt: content.imageAlt, speed: -10, startPos: 10, width: '30rem' },
+                { image: 'cases/bauer-university-mobile-2.png', alt: content.imageAlt, speed: -20, startPos: -10, width: '30rem' }
+              ]}
+              color={textDark}
+              modifier='bauer-university'
+            />
+
+            <SideBySideBlock
+              blocks={[
+                { text: { title: content.uxTitle, p: content.uxText } },
+                { image: 'cases/bauer-university-tablet-1.png', align: 'right' }
+              ]}
+              background={emptySpace}
+              modifier='bauer-university'
+              inView='inViewRight'
+            />
+
+            <SideBySideBlock
+              blocks={[
+                { image: 'cases/bauer-university-tablet-2.png', align: 'left' },
+                { text: { title: content.elearningTitle, p: content.elearningText } }
+              ]}
+              background={emptySpace}
+              modifier='bauer-university'
+              inView='inViewLeft'
+            />
 
             <BookmarkBlock
-              className={s.statsSection}
+              className={s.engagementSection}
               title={content.engagementTitle}
               text={content.engagementText}
-              inView='inViewRight'
-              background='white'
+              background='radial-gradient(83.04% 114.99% at 35.45% -17.26%, rgb(252 236 178) 0%, rgba(255, 255, 255, 1) 100%);'
               align='left'
+              color={textDark}
+              inView='inViewBottom'
+              modifier='bauer-university'
             >
-              <div class={s.badges}>
-                <ProgressBar badge='pro' percent={70} color='#E2B74D' />
-                <ProgressBar badge='elite' percent={8} color='#AEAEAE' />
-                <ProgressBar badge='performance' percent={10} color='#D39962' />
-                <ProgressBar badge='competitive' percent={12} color='#009CDA' />
+              <div class={cx(s.badges, 'inViewBottom')}>
+                <img class={s.image} src={require('../images/cases/bauer-university-A.png')} loading='lazy' alt='badge' />
+                <img class={s.image} src={require('../images/cases/bauer-university-R.png')} loading='lazy' alt='badge' />
+                <img class={s.image} src={require('../images/cases/bauer-university-P.png')} loading='lazy' alt='badge' />
               </div>
             </BookmarkBlock>
-
-            <CenterBlock
-              inView='inViewBottom'
-              background='#F5F5F5'
-              component={<MarkupCustomElement element='p' markup={content.futurememories} trim={false} />}
-            />
 
             <ContactBlock
               content={data.content.contactBlock}
+              darkText
             />
 
             <ProjectsBlock
@@ -138,10 +138,10 @@ export default class extends Component {
               allCases={data.allCases}
               defaultOtherCases={data.defaultOtherCases}
               current='bauer-university'
-              similar={['stc', 'mat-se', 'retts-plus']}
-              background='#ffffff'
+              similar={['mat-se', 'nordish-market', 'bandbond']}
+              background={white}
+              color={textDark}
             />
-
           </div>
         </div>
       </Base>

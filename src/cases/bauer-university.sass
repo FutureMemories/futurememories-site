@@ -3,201 +3,76 @@
 .view
   position: relative
   padding-top: 14rem
-  background: #fff
-  color: #161D2B
+  background: $empty-space
+  color: $white
   width: 100%
 
   > .inner
-    position: relative
+    background: none
+    overflow: hidden
 
-    p
-      font-size: 2rem
-      opacity: .8
+  p
+    font-size: 2rem
+    opacity: .8
 
-    > .globalSection > div
-      @media screen and (min-width: 1100px)
-        padding: 8.6rem 3rem 0 0
+  .designSection 
+    background: $cloudy-sky
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: -10rem
+    padding-bottom: 15rem
+    padding: 0 2rem
+    @media screen and (min-width: 850px)
+      padding: 0      
+      margin-top: 15rem
 
-      > div
-        max-width: 45rem
+    .image  
+      display: flex
+      object-fit: cover
+      align-self: center
+      max-width: 100%
+      height: 100%
+      max-height: 50rem
+      @media screen and (min-width: 850px)
+        max-height: 70rem
+    
+    .imageHideOnMobile
+        display: none
+        @media screen and (min-width: 850px)
+          margin-bottom: 10rem
+          display: block
 
-      > .device
-        position: relative
-        margin-top: 5%
-        margin-right: 10%
-        max-width: 55%
-        height: auto
-        width: 100%
+    .imageGrid
+      position: relative
+      top: -10rem
+      display: flex
+      flex-direction: column
+      justify-content: center 
+      gap: 5rem
+      z-index: 1
+      @media screen and (min-width: 850px)
+        max-width: 145rem
+        flex-direction: row
+        margin: 0 5rem
 
-        @media screen and (max-width: 720px)
-          margin-right: 0
-          margin-bottom: 4rem
-          margin-left: 0
-          max-width: 80%
+  .engagementSection
+    & > div > .badges 
+      position: relative
+      height: 40rem
+      width: 32rem
 
-        > .deviceImage
-          position: relative
-          z-index: 1
-          margin-bottom: -7%
-          width: 100%
-          object-fit: cover
+      > img 
+        position: absolute
+      img:nth-child(1)
+        top: 0
+        left: 10%
+      img:nth-child(2)
+        right: 0
+        bottom: 10%
+      img:nth-child(3)
+        bottom: 0
+        left: 0
 
-        > .frontFlags > img
-          z-index: 2
+  
 
-        > .backFlags, > .frontFlags
-          position: absolute
-          top: 0
-          left: 0
-          height: 100%
-          width: 100%
-
-          > img
-            position: absolute
-            border: .3rem white solid
-            border-radius: 50%
-            background: white
-            box-shadow: 0 0 3rem .5rem rgba(0,0,0,0.1)
-            opacity: 0
-            transition: transform .2s ease, opacity .2s ease
-            transform: scale(0)
-            height: auto
-
-            &.unitedStates
-              top: -27%
-              left: 73%
-              width: 14%
-
-            &.sweden
-              top: -10%
-              left: 22%
-              transition-delay: .25s
-              width: 12%
-
-            &.canada
-              top: -12%
-              left: 60%
-              transition-delay: .3s
-              width: 11%
-
-            &.germany
-              top: 17%
-              left: -11%
-              transition-delay: .4s
-              width: 23%
-
-            &.finland
-              top: 23%
-              left: 95%
-              transition-delay: .45s
-              width: 10%
-
-            &.russia
-              top: 47%
-              left: 89%
-              transition-delay: .52s
-              width: 29%
-
-            &.czechRepublic
-              bottom: 9%
-              left: -6%
-              transition-delay: .58s
-              width: 12.5%
-
-        &:global(.inView)
-          .backFlags, .frontFlags
-            > img
-              opacity: 1
-              transform: none
-
-    > .statsSection > div
-      @media screen and (min-width: 1100px)
-        padding: 20rem 0
-
-      > div
-        max-width: 53rem
-
-      > .badges
-        display: flex
-        position: relative
-        flex-direction: column
-        margin-top: 5%
-        padding-right: 12rem
-        max-width: 50%
-        height: auto
-        width: 100%
-
-        > .progressBar
-          position: relative
-          width: 100%
-
-          > img
-            position: relative
-            z-index: 1
-            height: auto
-            width: 11rem
-
-          > .progress
-            display: inline-flex
-            position: absolute
-            top: 0
-            top: 2rem
-            left: 0
-            left: 10rem
-            color: var(--progressColor)
-            font-size: 4rem
-            width: 100%
-
-            &:before
-              content: ''
-              display: inline-block
-              position: relative
-              top: 1rem
-              right: 2rem
-              border-top-right-radius: 3rem
-              border-bottom-right-radius: 3rem
-              background: grey
-              background: linear-gradient(270deg, var(--progressColor) 10%, rgba(226, 183, 77, .1) 100%)
-              transition: width .8s ease-in-out
-              height: 3rem
-              width: 0rem
-
-          &:global(.inView)
-            > .progress
-              &:before
-                width: var(--progressWidth)
-
-    @media screen and (max-width: 1100px)
-      > .statsSection > div
-        flex-direction: column
-
-        > div
-          max-width: unset
-
-          > *
-            max-width: inherit
-
-        > .badges
-          padding-right: 8.5rem
-          max-width: 58rem
-          width: 100%
-
-          > .progressBar
-            position: relative
-            width: 100%
-
-            > img
-              position: relative
-              z-index: 1
-              height: auto
-              width: 8rem
-
-            > .progress
-              top: 1.5rem
-              left: 7.5rem
-              font-size: 2.5rem
-
-              &:before
-                top: .8rem
-                right: .8rem
-                height: 2rem

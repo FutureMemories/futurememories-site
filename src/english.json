@@ -390,7 +390,7 @@
     "bauer-university": {
       "name": "Bauer University",
       "imageBg": [
-        "cases/bauer-university-7.png"
+        "cases/bauer-university-tablet-1.png"
       ],
       "title": "",
       "subtitle": "Better knowledge, better sales",
@@ -401,10 +401,15 @@
       "style": [
         {
           "color": "#ffffff",
-          "background": "linear-gradient(132.56deg, #50A2DE 0%, #2E6389 100%)"
+          "background": "linear-gradient(110.46deg, #002F41 0%, #006C97 100%)"
         },
         {
-          "background": "linear-gradient(90deg, rgba(7, 9, 19, 0.7) 0%, rgba(7, 11, 19, 0.5) 100%)"
+          "background": "linear-gradient(93.11deg, #002F41 2.57%, rgba(0, 108, 151, 0) 98.07%)"
+        },
+        {
+          "position": "absolute",
+          "left": "50%",
+          "width": "auto"
         }
       ],
       "actions": [
